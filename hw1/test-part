@@ -27,8 +27,6 @@ compare_png() {
 sudo apt-get install -y imagemagick
 cp hw1/sample.png sample.png
 
-echo $PART
-
 case $PART in
 count)
     echo 6
