@@ -15,7 +15,7 @@ ifndef OS
 			ifeq ($(shell test $(VER) -ge 35; echo $$?),0)
 				OS ?= linux
 			else
-				OS ?= linux-old
+				OS ?= linux
 			endif
 		endif
 		ifeq ($(UNAME_S),Darwin)
