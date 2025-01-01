@@ -6,7 +6,6 @@ PART="$2"
 
 run_jplc() {
     FILE="$1"
-    ls
     ./jplc --eval "$DIR/$1"
 }
 
