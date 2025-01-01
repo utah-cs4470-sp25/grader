@@ -49,8 +49,6 @@ test-hw14:
 
 jplc:
 	curl -L 'https://github.com/utah-cs4470-sp23/class/releases/latest/download/jplc-$(OS)' -o ./jplc
-	pwd
-	ls
 	chmod +x jplc
 
 print-os:
