@@ -24,7 +24,7 @@ compare_png() {
     return $ERR
 }
 
-sudo apt-get install -y imagemagick
+sudo apt-get install -y imagemagick > /dev/null
 cp hw1/sample.png sample.png
 
 case $PART in
