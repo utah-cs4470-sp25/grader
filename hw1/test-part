@@ -6,9 +6,7 @@ PART="$2"
 
 run_jplc() {
     FILE="$1"
-    echo "Printing current directory: "
-    pwd
-    #./jplc --eval "$DIR/$1"
+    ./jplc --eval "$DIR/$1"
 }
 
 compare_stdout() {
