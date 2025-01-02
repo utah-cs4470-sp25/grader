@@ -1,4 +1,4 @@
-.PHONY: test-current test-hw1 test-hw2 count-hw1 count-hw2 upgrade
+.PHONY: test-current test-hw1 count-hw1 upgrade
 
 CURRENT=hw1
 PART=all
@@ -42,7 +42,7 @@ test-hw1: jplc
 	@ sh hw1/test-part $(DIR) $(PART)
 
 test-hw%:
-	@ python3 grader.py grade --hw $*
+	@ python3 grader.py run --hw $*
 
 test-hw14:
 	@ sh hw14/test-part $(DIR) $(PART)
