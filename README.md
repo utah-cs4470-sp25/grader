@@ -1,16 +1,19 @@
 CS 4470 Compilers Auto-grader
 =============================
 
-This repository contains the auto-grader for CS 4470 Compilers. The
-code inside will automatically run any time you push to your
-repository, via Github Actions. You can also download this repository
-to your own computer, and run it there.
+Public auto-grader for CS 4470 Compilers.
+
+Grader will **automatically** run any time you push to your repo,
+via GitHub Actions.
+
+You may also download this repo to run it anytime.
+
 
 Structure of the auto-grader
 ----------------------------
 
 The auto-grader contains one folder for each homework assignment,
-named `hw1`, `hw2`, and so on. Each folder contains scripts as well as
+named `hw1/`, `hw2/`, and so on. Each folder contains scripts as well as
 test files and directories.
 
 Each homework assignment consists of multiple *parts*---between 1 and
@@ -20,37 +23,42 @@ typically consists of a number of individual tests (usually about a
 hundred, though it varies). Your score for each part is typically the
 number of tests passed.
 
-Keep your auto-grader up to date. In certain cases the instructors
-will fix bugs, add or remove tests, or make other changes to the
-auto-grader. If you are using an out-of-date auto-grader, you may
-waste time fixing bugs or implementing features that you are not
-supposed to handle.
+Pull often to keep your auto-grader up to date. In certain cases the
+instructors will fix bugs, add or remove tests, or make other changes to the
+auto-grader. If you are using an out-of-date auto-grader, you may waste time
+fixing bugs or implementing features that you are not supposed to handle.
 
-Only runs of the auto-grader on Github matter for your score. If it
-works on your machine but not on Github, you will not receive credit.
-Push to Github early and often to maintain an understanding of your
-progress through the assignment.
+Grades are determined by the auto-grader on GitHub when you push to
+your compiler repository. If autograding works on your machine but not on
+GitHub, **you will not receive credit**.
+
+TLDR, push to GitHub early and often to check your progress.
+
 
 Running the auto-grader
 -----------------------
 
-To run the auto-grader, you will need to check out both the grader
-repository and your compiler repository and know the absolute path to
-both.
+Prerequisites:
 
-Additionally, you will need a number of dependencies installed on your
-machine, including at least a Unix shell (only Dash and Bash tested),
-Make (only GNU Make tested), standard Unix tools like `grep` and `sed`
-(only GNU versions tested), GCC or compatible compiler (only GCC
-tested), NASM or compatible assembler (only NASM tested), and, for the
-first assignment, the Imagemagick tools.
+* download this grader repo
+* download your compiler repo
+* know the absolute paths to both repos
+
+Dependencies:
+
+* Unix shell (we have tested with Dash and Bash)
+* Make (GNU Make)
+* `grep`, `sed`, and possibly other standard Unix tools
+* GCC (or compatible compiler, tested only GCC)
+* NASM (or compatible assembler, tested only NASM)
+* Imagemagick tools (for hw1)
 
 Run the auto-grader like so:
 
     make -C /autograder/repo test-current DIR=/compiler/repo PART=X
 
 Here both paths **must be absolute paths**.
-    
+
 Here the `X` is `PART=X` is a number from 1 to however many parts your
 assignment has. If you are unsure, check the assignment description.
 
@@ -65,6 +73,7 @@ Here you can choose any (released) homework assignment instead of
 
 If you see any unexpected error messages, contact the instructors.
 
+
 Troubleshooting
 ---------------
 
@@ -72,6 +81,8 @@ On Linux, you might get an error about the required GLIBC version. You
 may be able to fix it by running this command:
 
     make -C /autograder/repo -B jplc OS=linux-old
-    
+
 This downloads a special version of the JPL compiler made for older
 (2018-era) Linux distributions.
+
+
