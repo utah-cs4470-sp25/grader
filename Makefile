@@ -48,7 +48,7 @@ test-hw14:
 	@ sh hw14/test-part $(DIR) $(PART)
 
 jplc:
-	curl -L 'https://github.com/utah-cs4470-sp23/class/releases/latest/download/jpli-$(OS)' -o ./jplc
+	curl -L 'https://github.com/utah-cs4470-sp25/class/releases/latest/download/jpli-$(OS)' -o ./jplc
 	chmod +x jplc
 
 print-os:
