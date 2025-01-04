@@ -27,11 +27,8 @@ compare_png() {
 OS=$(uname -s)
 
 if [ "$OS" = "Linux" ]; then
-    echo "Detected Linux. Installing ImageMagick..."
-    sudo apt-get update > /dev/null
     sudo apt-get install -y imagemagick > /dev/null
 elif [ "$OS" = "Darwin" ]; then
-    echo "Detected macOS. Installing ImageMagick..."
     brew install imagemagick
 else
     echo "Unsupported OS: $OS"
