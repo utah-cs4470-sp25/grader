@@ -347,6 +347,8 @@ HWS = {
        "1": NullPart(DiffSpec, "hw2/lexer-tests1/", "-l"),
        "2": NullPart(ValidSpec, "hw2/lexer-tests2/", "-l"),
        "3": NullPart(InvalidSpec, "hw2/lexer-tests3/", "-l"),
+#       "4": NullPart(ValidSpec, "hw2/ok/", "-l"),
+#       "5": NullPart(InvalidSpec, "hw2/error/", "-l"),
    },
    "3": {
        "1": ManualPart(DiffSpec, "hw3/ok.jpl", "hw3/ok/", "-p", normalize=ppsexp),
