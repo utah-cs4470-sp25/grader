@@ -14,13 +14,13 @@ fn gamma_compress(x : float) : float {
    return pow(x, 2.2)
 }
 
-fn grayscale_pixel({r : float, g : float, b : float, a : float}) : {float,float,float,float} {
-   let r_linear = gamma_decompress(r)
-   let g_linear = gamma_decompress(g)
-   let b_linear = gamma_decompress(b)
+fn grayscale_pixel(x:rgba) : rgba {
+   let r_linear = gamma_decompress(x.r)
+   let g_linear = gamma_decompress(x.g)
+   let b_linear = gamma_decompress(x.b)
    let y_linear = 0.2126 * r_linear + 0.7152 * g_linear + 0.0722 * b_linear
    let y = gamma_compress(y_linear)
-   return {y, y, y, 1.0}
+   return rgba{y, y, y, 1.0}
 }
 
 read image "photo.png" to photo_image[W, H]

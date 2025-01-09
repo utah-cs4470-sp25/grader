@@ -1,11 +1,22 @@
 NEWLINE
-LET 'let'
+STRUCT 'struct'
+VARIABLE 'rect'
 LCURLY '{'
+NEWLINE
 VARIABLE 'W'
-COMMA ','
+COLON ':'
+INT 'int'
+NEWLINE
 VARIABLE 'H'
+COLON ':'
+INT 'int'
+NEWLINE
 RCURLY '}'
+NEWLINE
+LET 'let'
+VARIABLE 'r'
 EQUALS '='
+VARIABLE 'rect'
 LCURLY '{'
 INTVAL '800'
 COMMA ','
@@ -13,9 +24,14 @@ INTVAL '600'
 RCURLY '}'
 NEWLINE
 SHOW 'show'
+VARIABLE 'r'
+DOT '.'
 VARIABLE 'W'
 NEWLINE
 SHOW 'show'
+VARIABLE 'r'
+DOT '.'
 VARIABLE 'H'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

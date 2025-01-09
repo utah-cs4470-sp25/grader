@@ -1,7 +1,6 @@
 // OK
 
-let { { W, {{ H }} }, D } = { { 800, {{ 600 }} }, 33 }
+let abcd = [[[800], [600]]]
 
-show W
-show H
-show D
+show abcd[0][1][0]
+show abcd[0][0][0]

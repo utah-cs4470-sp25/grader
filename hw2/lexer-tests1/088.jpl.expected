@@ -1,18 +1,35 @@
 NEWLINE
+STRUCT 'struct'
+VARIABLE 'one'
+LCURLY '{'
+NEWLINE
+VARIABLE 'x'
+COLON ':'
+INT 'int'
+NEWLINE
+RCURLY '}'
+NEWLINE
 LET 'let'
 VARIABLE 'x'
 EQUALS '='
 LSQUARE '['
+VARIABLE 'one'
 LCURLY '{'
+INTVAL '1'
 RCURLY '}'
 COMMA ','
 TRUE 'true'
 COMMA ','
+VARIABLE 'one'
 LCURLY '{'
+INTVAL '1'
 RCURLY '}'
 COMMA ','
+VARIABLE 'one'
 LCURLY '{'
+INTVAL '1'
 RCURLY '}'
 RSQUARE ']'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

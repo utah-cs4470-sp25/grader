@@ -82,3 +82,4 @@ INTVAL '2'
 RPAREN ')'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

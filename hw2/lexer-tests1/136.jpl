@@ -1,5 +1,10 @@
 // ERROR
 
-let z={e,0,0,t000}
-let x = if z{0} then z{00400} else 0{0}
+struct pair {
+  aa: bool
+  bb: int
+}
+
+let z=pair{e,t000}
+let x = if z.aa then z.bb else 0.0
 

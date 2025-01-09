@@ -1,4 +1,2 @@
-// ERROR
-
-let z = {1, 2, false, 4, 5, true}
-assert z{{2}}, "hello!"
+END_OF_FILE
+Compilation succeeded: lexical analysis complete

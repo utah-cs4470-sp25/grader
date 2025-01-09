@@ -1,7 +1,18 @@
 NEWLINE
+STRUCT 'struct'
+VARIABLE 'cell'
+LCURLY '{'
+NEWLINE
+VARIABLE 'contents'
+COLON ':'
+INT 'int'
+NEWLINE
+RCURLY '}'
+NEWLINE
 LET 'let'
 VARIABLE 'F'
 EQUALS '='
+VARIABLE 'cell'
 LCURLY '{'
 INTVAL '3'
 RCURLY '}'
@@ -41,3 +52,4 @@ VARIABLE 'j'
 RSQUARE ']'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

@@ -1,5 +1,9 @@
 // OK
 
-let x = [[{}], [{}], [{}]]
+struct one {
+  aaa: int
+}
+
+let x = [[one{1}], [one{1}], [one{1}]]
 let y = x[1]
 let z = y[0]

@@ -23,9 +23,9 @@ fn blur2d(picture[W, H] : float[,], sigma : float) : float[,] {
 
 read image "photo.png" to photo_image[W, H]
 let sigma = 5.0
-let blur_r = blur2d(array[i : W, j : H] photo_image[i, j]{0}, sigma)
-let blur_g = blur2d(array[i : W, j : H] photo_image[i, j]{1}, sigma)
-let blur_b = blur2d(array[i : W, j : H] photo_image[i, j]{2}, sigma)
-let blur_a = blur2d(array[i : W, j : H] photo_image[i, j]{3}, sigma)
-let blur_image = array[i : W, j : H] { blur_r[i, j], blur_g[i, j], blur_b[i, j], blur_a[i, j] }
+let blur_r = blur2d(array[i : W, j : H] photo_image[i, j].r, sigma)
+let blur_g = blur2d(array[i : W, j : H] photo_image[i, j].g, sigma)
+let blur_b = blur2d(array[i : W, j : H] photo_image[i, j].b, sigma)
+let blur_a = blur2d(array[i : W, j : H] photo_image[i, j].a, sigma)
+let blur_image = array[i : W, j : H] rgba{ blur_r[i, j], blur_g[i, j], blur_b[i, j], blur_a[i, j] }
 write image blur_image to "photo_blur.png"

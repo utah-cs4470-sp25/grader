@@ -1,4 +1,4 @@
 // ERROR
 
 let z = false
-assert z{3}, "hello!"
+assert z.contents, "hello!"

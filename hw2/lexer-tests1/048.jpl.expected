@@ -1,19 +1,28 @@
 NEWLINE
+STRUCT 'struct'
+VARIABLE 'mt'
+LCURLY '{'
+NEWLINE
+RCURLY '}'
+NEWLINE
 LET 'let'
 VARIABLE 'x'
 EQUALS '='
 LSQUARE '['
 LSQUARE '['
+VARIABLE 'mt'
 LCURLY '{'
 RCURLY '}'
 RSQUARE ']'
 COMMA ','
 LSQUARE '['
+VARIABLE 'mt'
 LCURLY '{'
 RCURLY '}'
 RSQUARE ']'
 COMMA ','
 LSQUARE '['
+VARIABLE 'mt'
 LCURLY '{'
 RCURLY '}'
 RSQUARE ']'
@@ -27,8 +36,7 @@ COLON ':'
 INT 'int'
 RPAREN ')'
 COLON ':'
-LCURLY '{'
-RCURLY '}'
+VARIABLE 'mt'
 LSQUARE '['
 RSQUARE ']'
 LCURLY '{'
@@ -42,3 +50,4 @@ NEWLINE
 RCURLY '}'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

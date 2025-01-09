@@ -1,4 +1,26 @@
 NEWLINE
+STRUCT 'struct'
+VARIABLE 'f4'
+LCURLY '{'
+NEWLINE
+VARIABLE 'a'
+COLON ':'
+FLOAT 'float'
+NEWLINE
+VARIABLE 'b'
+COLON ':'
+FLOAT 'float'
+NEWLINE
+VARIABLE 'c'
+COLON ':'
+FLOAT 'float'
+NEWLINE
+VARIABLE 'd'
+COLON ':'
+FLOAT 'float'
+NEWLINE
+RCURLY '}'
+NEWLINE
 FN 'fn'
 VARIABLE 'gradient'
 LPAREN '('
@@ -19,18 +41,11 @@ COLON ':'
 INT 'int'
 RPAREN ')'
 COLON ':'
-LCURLY '{'
-FLOAT 'float'
-COMMA ','
-FLOAT 'float'
-COMMA ','
-FLOAT 'float'
-COMMA ','
-FLOAT 'float'
-RCURLY '}'
+VARIABLE 'f4'
 LCURLY '{'
 NEWLINE
 RETURN 'return'
+VARIABLE 'f4'
 LCURLY '{'
 FLOATVAL '0.0'
 COMMA ','
@@ -38,7 +53,7 @@ FLOATVAL '0.0'
 COMMA ','
 FLOATVAL '0.0'
 COMMA ','
-FLOAT 'float'
+VARIABLE 'to_float'
 LPAREN '('
 INTVAL '2'
 RPAREN ')'
@@ -49,3 +64,4 @@ NEWLINE
 RCURLY '}'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

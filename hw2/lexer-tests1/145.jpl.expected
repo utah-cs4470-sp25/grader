@@ -1,4 +1,14 @@
 NEWLINE
+STRUCT 'struct'
+VARIABLE 'one'
+LCURLY '{'
+NEWLINE
+VARIABLE 'x'
+COLON ':'
+INT 'int'
+NEWLINE
+RCURLY '}'
+NEWLINE
 LET 'let'
 VARIABLE 'f'
 EQUALS '='
@@ -20,7 +30,9 @@ NEWLINE
 LET 'let'
 VARIABLE 'j'
 EQUALS '='
+VARIABLE 'one'
 LCURLY '{'
+INTVAL '9'
 RCURLY '}'
 NEWLINE
 LET 'let'
@@ -31,3 +43,4 @@ FALSE 'false'
 RSQUARE ']'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

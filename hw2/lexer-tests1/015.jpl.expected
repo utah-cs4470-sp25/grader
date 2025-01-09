@@ -1,11 +1,13 @@
 NEWLINE
 LET 'let'
+VARIABLE 'circle'
 LCURLY '{'
 VARIABLE 'W'
 COMMA ','
 VARIABLE 'H'
 RCURLY '}'
 EQUALS '='
+VARIABLE 'cylinder'
 LCURLY '{'
 INTVAL '800'
 COMMA ','
@@ -15,3 +17,4 @@ INTVAL '13'
 RCURLY '}'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

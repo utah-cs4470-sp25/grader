@@ -1,6 +1,6 @@
 // OK
 
-fn test() : {} {
+fn test() : void {
 }
 
 show test()

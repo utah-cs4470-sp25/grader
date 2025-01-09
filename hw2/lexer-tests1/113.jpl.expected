@@ -2,7 +2,7 @@ NEWLINE
 LET 'let'
 VARIABLE 'x'
 EQUALS '='
-FLOAT 'float'
+VARIABLE 'to_float'
 LPAREN '('
 TRUE 'true'
 RPAREN ')'
@@ -16,3 +16,4 @@ FLOATVAL '0.3'
 RPAREN ')'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

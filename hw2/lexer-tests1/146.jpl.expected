@@ -18,3 +18,4 @@ SHOW 'show'
 VARIABLE 'b'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

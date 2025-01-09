@@ -1,7 +1,38 @@
 NEWLINE
+STRUCT 'struct'
+VARIABLE 'sixer'
+LCURLY '{'
+NEWLINE
+VARIABLE 'one'
+COLON ':'
+INT 'int'
+NEWLINE
+VARIABLE 'two'
+COLON ':'
+INT 'int'
+NEWLINE
+VARIABLE 'three'
+COLON ':'
+BOOL 'bool'
+NEWLINE
+VARIABLE 'four'
+COLON ':'
+INT 'int'
+NEWLINE
+VARIABLE 'five'
+COLON ':'
+INT 'int'
+NEWLINE
+VARIABLE 'six'
+COLON ':'
+BOOL 'bool'
+NEWLINE
+RCURLY '}'
+NEWLINE
 LET 'let'
 VARIABLE 'z'
 EQUALS '='
+VARIABLE 'sixer'
 LCURLY '{'
 INTVAL '1'
 COMMA ','
@@ -21,18 +52,16 @@ VARIABLE 'x'
 EQUALS '='
 IF 'if'
 VARIABLE 'z'
-LCURLY '{'
-INTVAL '2'
-RCURLY '}'
+DOT '.'
+VARIABLE 'three'
 THEN 'then'
 VARIABLE 'z'
-LCURLY '{'
-INTVAL '0'
-RCURLY '}'
+DOT '.'
+VARIABLE 'one'
 ELSE 'else'
 VARIABLE 'z'
-LCURLY '{'
-INTVAL '1'
-RCURLY '}'
+DOT '.'
+VARIABLE 'two'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

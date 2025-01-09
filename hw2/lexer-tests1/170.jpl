@@ -16,33 +16,48 @@ fn softmax(input[W, H] : float[,], weights[N, Wi, Hi] : float[,,]) : float[] {
     return array[n : N] exp(intermediate[n]) / expsum
 }
 
-fn bw(image[W, H] : float4[,], mi : float, ma : float) : float[,] {
-    return array[i : W, j : H] image[i, j]{1} * (ma - mi) + mi // Green is a good lazy monochrome
+fn bw(img[W, H] : rgba[,], mi : float, ma : float) : float[,] {
+    return array[i : W, j : H] img[i, j].g * (ma - mi) + mi // Green is a good lazy monochrome
 }
 
-fn max(a[N] : float[], i : int) : {int, float} {
-    let { idx, val } = if N == i + 1 then {0, 0.0} else max(a, i + 1)
-    return if val < a[i] then { i, a[i] } else { idx, val }
+struct intfloat {
+  ii: int
+  ff: float
 }
 
-fn reshape(weights[DW, DH] : float[,], N : int, W : int, H : int) : {float[,,,], float[,,,], float[,,]} {
+fn max(a[N] : float[], i : int) : intfloat {
+    let my_intfloat = if N == i + 1 then intfloat{0, 0.0} else max(a, i + 1)
+    let idx = my_intfloat.ii
+    let val = my_intfloat.ff
+    return if val < a[i] then intfloat{ i, a[i] } else intfloat{ idx, val }
+}
+
+struct floats {
+  layer1: float[,,,]
+  layer2: float[,,,]
+  layer3: float[,,]
+}
+
+fn reshape(weights[DW, DH] : float[,], N : int, W : int, H : int) : floats {
     assert DW == W*H + W*H + N, "Invalid data width"
     assert DH == W * H, "Invalid data height"
-    return { \
+    return floats{ \
         array[i : W, j : H, i2 : W, j2 : H] weights[i2 + j2 * W, i + j * W], \
         array[i : W, j : H, i2 : W, j2 : H] weights[W * H + i2 + j2 * W, i + j * W], \
         array[n : N, i2 : W, j2 : H] weights[2 * W * H + n, i2 + j2 * W] \
     }
 }
 
-fn recognize(image[W, H] : float[,], layer1 : float[,,,], layer2 : float[,,,], layer3 : float[,,]) : {int, float} {
-    let i1 = dense(image, layer1)
+fn recognize(img2[W, H] : float[,], layer1 : float[,,,], layer2 : float[,,,], layer3 : float[,,]) : intfloat {
+    let i1 = dense(img2, layer1)
     let i2 = dense(i1, layer2)
     let out = softmax(i2, layer3)
     return max(out, 0)
 }
 
-let { W, H, N } = { 28, 28, 10 }
+let W = 28
+let H = 28
+let N = 10
 
 read image "input.png" to input[IW, IH]
 assert IW == W, "Invalid input width"
@@ -51,6 +66,6 @@ assert IH == H, "Invalid input height"
 read image "layers.png" to layers[DW, DH]
 assert DW == W*H + W*H + N, "Invalid layer data width"
 assert DH == W * H, "Invalid layer data height"
-let {layer1, layer2, layer3} = reshape(bw(layers, -0.22206303, 0.23117281), N, W, H)
+let myfloats = reshape(bw(layers, -0.22206303, 0.23117281), N, W, H)
 
-time show recognize(bw(input, 0.0, 1.0), layer1, layer2, layer3)
+time show recognize(bw(input, 0.0, 1.0), myfloats.layer1, myfloats.layer2, myfloats.layer3)

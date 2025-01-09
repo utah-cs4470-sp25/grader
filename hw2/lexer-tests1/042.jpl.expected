@@ -2,6 +2,7 @@ NEWLINE
 LET 'let'
 VARIABLE 'z'
 EQUALS '='
+VARIABLE 'rgba'
 LCURLY '{'
 INTVAL '1'
 COMMA ','
@@ -18,10 +19,10 @@ RCURLY '}'
 NEWLINE
 ASSERT 'assert'
 VARIABLE 'z'
-LCURLY '{'
-INTVAL '3'
-RCURLY '}'
+DOT '.'
+VARIABLE 'g'
 COMMA ','
 STRING '"hello!"'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

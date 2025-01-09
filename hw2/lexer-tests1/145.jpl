@@ -1,6 +1,10 @@
 // OK
 
+struct one {
+  x: int
+}
+
 let f = [1.0, 0.0, -1.0]
 let i = []
-let j = {}
+let j = one{9}
 let b = [false]

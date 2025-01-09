@@ -1,7 +1,10 @@
 // OK
 
-let x = [[{}], [{}], [{}]]
+struct mt {
+}
 
-fn horrible(i : int) : {}[] {
+let x = [[mt{}], [mt{}], [mt{}]]
+
+fn horrible(i : int) : mt[] {
     return x[i]
 }

@@ -1,4 +1,8 @@
 // ERROR
 
-let x = [{}, true, {}, {}]
+struct one {
+  x: int
+}
+
+let x = [one{1}, true, one{1}, one{1}]
 

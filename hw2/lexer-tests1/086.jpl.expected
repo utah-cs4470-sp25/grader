@@ -2,12 +2,13 @@ NEWLINE
 LET 'let'
 VARIABLE 'x'
 EQUALS '='
+VARIABLE 'rgba'
 LCURLY '{'
-INTVAL '1'
+FLOATVAL '1.'
 COMMA ','
-INTVAL '2'
+FLOATVAL '2.'
 COMMA ','
-FALSE 'false'
+FLOATVAL '2.3'
 COMMA ','
 FLOATVAL '3.3'
 RCURLY '}'
@@ -20,3 +21,4 @@ OP '+'
 VARIABLE 'x'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

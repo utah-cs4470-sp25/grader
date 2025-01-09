@@ -49,8 +49,8 @@ fn sobel_edge_detector(a[N, M] : float[,]) : float[,] {
 read image "photo.png" to photo_image[W, H]
 // assume the input is grayscale, so R = G = B
 // project out the G (which will give good best-effort results on non-grayscale images)
-let green = array[i : W, j : H] photo_image[i,j]{1}
+let green = array[i : W, j : H] photo_image[i,j].g
 let green_edges = sobel_edge_detector(green)
 let gray_edges = array[i : W, j : H] \
-  {green_edges[i,j], green_edges[i,j], green_edges[i,j], 1.0}
+  rgba{green_edges[i,j], green_edges[i,j], green_edges[i,j], 1.0}
 write image gray_edges to "photo_edges.png"

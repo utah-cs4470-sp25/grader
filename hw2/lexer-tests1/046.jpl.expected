@@ -4,6 +4,12 @@ VARIABLE 'a'
 EQUALS '='
 INTVAL '8'
 NEWLINE
+STRUCT 'struct'
+VARIABLE 'mt'
+LCURLY '{'
+NEWLINE
+RCURLY '}'
+NEWLINE
 FN 'fn'
 VARIABLE 'd'
 LPAREN '('
@@ -20,10 +26,10 @@ COMMA ','
 RSQUARE ']'
 RPAREN ')'
 COLON ':'
-LCURLY '{'
-RCURLY '}'
+VARIABLE 'mt'
 LCURLY '{'
 NEWLINE
 RCURLY '}'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

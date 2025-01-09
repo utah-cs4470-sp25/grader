@@ -1,6 +1,11 @@
 // OK
 
-let { W, H } = { 800, 600 }
+struct rect {
+  W : int
+  H : int
+}
 
-show W
-show H
+let r = rect{ 800, 600 }
+
+show r.W
+show r.H

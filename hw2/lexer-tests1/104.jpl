@@ -1,5 +1,5 @@
 // ERROR
 
-let x = {1, 2, false, 3.3}
-let y = {3, 5, true, 3.3}
-let z =int+ y
+let x = 3
+let y = 4
+let z =int + y

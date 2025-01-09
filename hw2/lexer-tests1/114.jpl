@@ -2,5 +2,5 @@
 
 read image "blarg" to x
 let y[w,h]=x
-let red = x[3,5]{0}
+let red = x[3,5].r
 show red + 1.0

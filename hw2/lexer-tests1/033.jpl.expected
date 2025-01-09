@@ -25,15 +25,7 @@ COLON ':'
 FLOAT 'float'
 RPAREN ')'
 COLON ':'
-LCURLY '{'
-FLOAT 'float'
-COMMA ','
-FLOAT 'float'
-COMMA ','
-FLOAT 'float'
-COMMA ','
-FLOAT 'float'
-RCURLY '}'
+VARIABLE 'rgba'
 LCURLY '{'
 NEWLINE
 LET 'let'
@@ -45,6 +37,7 @@ VARIABLE 'r'
 RPAREN ')'
 NEWLINE
 RETURN 'return'
+VARIABLE 'rgba'
 LCURLY '{'
 VARIABLE 'y'
 COMMA ','
@@ -58,3 +51,4 @@ NEWLINE
 RCURLY '}'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

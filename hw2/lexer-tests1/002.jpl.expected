@@ -1,5 +1,6 @@
 NEWLINE
 LET 'let'
+VARIABLE 'rect3d'
 LCURLY '{'
 VARIABLE 'W'
 COMMA ','
@@ -8,6 +9,7 @@ COMMA ','
 VARIABLE 'D'
 RCURLY '}'
 EQUALS '='
+VARIABLE 'square'
 LCURLY '{'
 INTVAL '800'
 COMMA ','
@@ -15,3 +17,4 @@ INTVAL '600'
 RCURLY '}'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

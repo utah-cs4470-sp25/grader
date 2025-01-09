@@ -6,10 +6,10 @@ FALSE 'false'
 NEWLINE
 ASSERT 'assert'
 VARIABLE 'z'
-LCURLY '{'
-INTVAL '3'
-RCURLY '}'
+DOT '.'
+VARIABLE 'contents'
 COMMA ','
 STRING '"hello!"'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

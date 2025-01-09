@@ -4,8 +4,7 @@ VARIABLE 'test'
 LPAREN '('
 RPAREN ')'
 COLON ':'
-LCURLY '{'
-RCURLY '}'
+VOID 'void'
 LCURLY '{'
 NEWLINE
 RCURLY '}'
@@ -16,3 +15,4 @@ LPAREN '('
 RPAREN ')'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

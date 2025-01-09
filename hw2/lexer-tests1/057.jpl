@@ -1,5 +1,5 @@
 // ERROR
 
-let z = {1, 2, false, 4, 5, true}
-let x = if z{1} then z{0} else z{1}
+let z = container{1, 2, false, 4, 5, true}
+let x = if z.fst then z.snd else z.third
 

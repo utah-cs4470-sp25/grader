@@ -24,9 +24,8 @@ INTVAL '3'
 COMMA ','
 INTVAL '5'
 RSQUARE ']'
-LCURLY '{'
-INTVAL '0'
-RCURLY '}'
+DOT '.'
+VARIABLE 'r'
 NEWLINE
 SHOW 'show'
 VARIABLE 'red'
@@ -34,3 +33,4 @@ OP '+'
 FLOATVAL '1.0'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

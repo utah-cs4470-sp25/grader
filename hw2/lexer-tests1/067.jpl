@@ -1,7 +1,11 @@
 // OK
 
-fn test() : {} {
-   return {}
+struct one {
+  x: float
+}
+
+fn test() : one {
+   return one{}
 }
 
 show test()

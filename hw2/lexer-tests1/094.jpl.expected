@@ -1,16 +1,17 @@
 NEWLINE
 SHOW 'show'
-INT 'int'
+VARIABLE 'to_int'
 LPAREN '('
 FLOATVAL '3.3'
 RPAREN ')'
 OP '+'
-INT 'int'
+VARIABLE 'to_int'
 LPAREN '('
-FLOAT 'float'
+VARIABLE 'to_float'
 LPAREN '('
 INTVAL '10'
 RPAREN ')'
 RPAREN ')'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

@@ -1,4 +1,13 @@
 // OK
 
-let z = {1, 2, false, 4, 5, true}
-assert z{5}, "hello!"
+struct sixer {
+  one: int
+  two: int
+  three: bool
+  four: int
+  five: int
+  six: bool
+}
+
+let z = sixer{1, 2, false, 4, 5, true}
+assert z.six, "hello!"

@@ -3,14 +3,18 @@ LET 'let'
 VARIABLE 'x'
 EQUALS '='
 LSQUARE '['
+VARIABLE 'mt'
 LCURLY '{'
 RCURLY '}'
 COMMA ','
+VARIABLE 'mt'
 LCURLY '{'
 RCURLY '}'
 COMMA ','
+VARIABLE 'mt'
 LCURLY '{'
 RCURLY '}'
 RSQUARE ']'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

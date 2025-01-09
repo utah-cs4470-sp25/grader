@@ -1,20 +1,36 @@
 NEWLINE
+STRUCT 'struct'
+VARIABLE 'one'
+LCURLY '{'
+NEWLINE
+VARIABLE 'aaa'
+COLON ':'
+INT 'int'
+NEWLINE
+RCURLY '}'
+NEWLINE
 LET 'let'
 VARIABLE 'x'
 EQUALS '='
 LSQUARE '['
 LSQUARE '['
+VARIABLE 'one'
 LCURLY '{'
+INTVAL '1'
 RCURLY '}'
 RSQUARE ']'
 COMMA ','
 LSQUARE '['
+VARIABLE 'one'
 LCURLY '{'
+INTVAL '1'
 RCURLY '}'
 RSQUARE ']'
 COMMA ','
 LSQUARE '['
+VARIABLE 'one'
 LCURLY '{'
+INTVAL '1'
 RCURLY '}'
 RSQUARE ']'
 RSQUARE ']'
@@ -36,3 +52,4 @@ INTVAL '0'
 RSQUARE ']'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

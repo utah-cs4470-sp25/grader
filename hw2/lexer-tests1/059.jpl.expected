@@ -1,11 +1,13 @@
 NEWLINE
 LET 'let'
-LCURLY '{'
+VARIABLE 'arr'
+LSQUARE '['
 VARIABLE 'W'
 COMMA ','
 VARIABLE 'H'
-RCURLY '}'
+RSQUARE ']'
 EQUALS '='
 FLOATVAL '3.33'
 NEWLINE
 END_OF_FILE
+Compilation succeeded: lexical analysis complete

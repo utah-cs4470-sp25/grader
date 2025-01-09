@@ -1,3 +1,3 @@
 // ERROR
 
-let { W, H } = 3.33
+let arr[ W, H ] = 3.33
