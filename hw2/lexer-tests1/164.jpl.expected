@@ -25,4 +25,3 @@ INTVAL '1'
 RSQUARE ']'
 NEWLINE
 END_OF_FILE
-Compilation succeeded: lexical analysis complete

@@ -4,4 +4,3 @@ INTVAL '3'
 NEWLINE
 LET 'let'
 END_OF_FILE
-Compilation succeeded: lexical analysis complete
