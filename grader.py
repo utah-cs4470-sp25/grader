@@ -78,11 +78,11 @@ def run_compiler(flags, in_file):
     except ParseSuccessError as e:
         print(e)
         print(res.stdout)
-        raise 
+        raise
     if not success:
         raise ValueError(f"File {in_file} should have been accepted with {flags}")
     return out
-    
+
 @dataclass
 class FileSpec:
     in_file : Path
@@ -109,7 +109,7 @@ class FileSpec:
 class ValidSpec(FileSpec):
     def run(self):
         run_student(self.flags, self.in_file, require=True)
-        
+
     def regen(self):
         pass
 
@@ -117,7 +117,7 @@ class ValidSpec(FileSpec):
 class InvalidSpec(FileSpec):
     def run(self):
         run_student(self.flags, self.in_file, require=False)
-        
+
     def regen(self):
         pass
 
@@ -205,12 +205,12 @@ def print_fancy(name, out):
     print(out)
     print()
     print(f"=======================")
-    
+
 def makespec(T, path, *args, **kwargs):
     for f in sorted(path.iterdir(), key=lambda f: f.name):
         if f.name.endswith(".jpl"):
             yield T(f, *args, **kwargs)
-            
+
 def regen_all(filespecs):
     failures = 0
     for filespec in filespecs:
@@ -337,7 +337,7 @@ class FuzzerPart:
 
     def all(self):
         return makespec(self.spec, path, *self.args, **kwargs)
-            
+
 HERE = Path(__file__).parent.resolve()
 
 CURRENT_HW = "3"
@@ -455,7 +455,7 @@ def main(args):
             assert shutil.which("compare"), "Please install the `compare` tool to test this homework locally"
         else:
             assert shutil.which("make"), "Please install `make` to test this homework locally"
-            
+
         parts = get_keys(homework, args.part, f"hw{hwname} part")
         if args.tool == "count":
             return print(len([k for k in parts.keys() if k.isdigit()]))
@@ -483,6 +483,8 @@ if __name__ == "__main__":
                         help="What to do: test, count, regen, run")
     parser.add_argument("--hw", type=str, default="current",
                         help="Which homework assignment to test")
+    parser.add_argument("--dir", type=str, default="..",
+                        help="The compiler directory")
     parser.add_argument("--part", type=str, default="all",
                         help="Which phase assignment to test")
     parser.add_argument("--test", type=str, default="all",
@@ -490,6 +492,7 @@ if __name__ == "__main__":
     parser.add_argument("--threads", type=int, default=None,
                         help="When passed, run the compiler in parallel for more speed")
     args = parser.parse_args()
+    DIR = args.dir
     try:
         main(args)
     except KeyboardInterrupt:
