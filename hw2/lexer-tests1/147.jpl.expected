@@ -1,13 +1,13 @@
 NEWLINE
 RETURN 'return'
-FLOAT 'float'
+VARIABLE 'to_float'
 LPAREN '('
 VARIABLE 'i'
 OP '+'
 VARIABLE 'j'
 RPAREN ')'
 OP '/'
-FLOAT 'float'
+VARIABLE 'to_float'
 LPAREN '('
 VARIABLE 'W'
 OP '+'
@@ -15,4 +15,3 @@ VARIABLE 'H'
 RPAREN ')'
 NEWLINE
 END_OF_FILE
-Compilation succeeded: lexical analysis complete

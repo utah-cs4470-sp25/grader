@@ -5,7 +5,7 @@
 fn blur(picture[W] : float[], sigma : float) : float[] {
    return array[i : W] ( \
      sum[j : W] ( \
-       picture[j] * exp( 0.0 - float((i - j) * (i - j)) / (2.0 * sigma * sigma) ) ) )
+       picture[j] * exp( 0.0 - to_float((i - j) * (i - j)) / (2.0 * sigma * sigma) ) ) )
 }
 
 fn blur2d(picture[W, H] : float[,], sigma : float) : float[,] {

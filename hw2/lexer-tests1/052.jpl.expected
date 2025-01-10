@@ -23,6 +23,7 @@ VARIABLE 'rgba'
 LCURLY '{'
 NEWLINE
 RETURN 'return'
+VARIABLE 'rgba'
 LCURLY '{'
 FLOATVAL '0.0'
 COMMA ','
@@ -30,7 +31,7 @@ FLOATVAL '0.0'
 COMMA ','
 FLOATVAL '0.0'
 COMMA ','
-FLOAT 'float'
+VARIABLE 'to_float'
 LPAREN '('
 INTVAL '2'
 RPAREN ')'
@@ -39,4 +40,3 @@ NEWLINE
 RCURLY '}'
 NEWLINE
 END_OF_FILE
-Compilation succeeded: lexical analysis complete

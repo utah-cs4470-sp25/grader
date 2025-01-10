@@ -34,4 +34,3 @@ DOT '.'
 VARIABLE 'H'
 NEWLINE
 END_OF_FILE
-Compilation succeeded: lexical analysis complete
