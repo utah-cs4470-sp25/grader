@@ -44,6 +44,9 @@ test-hw1: jplc
 test-hw2:
 	@ python3 grader.py test --hw 2 --dir $(DIR) --part $(PART)
 
+test-hw3:
+	@ python3 grader.py test --hw 3 --dir $(DIR) --part $(PART)
+
 test-hw%:
 	@ python3 grader.py run --hw $*
 

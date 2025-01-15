@@ -1,5 +1,1 @@
-(TypeCmd asdflkj (VarType askldjfhjbaewr))
-(TypeCmd afkajsdflkasdjf (VarType askdljflkasdjfklads))
-(TypeCmd asdljkfasdlkfj (VarType asdfkjlasdlkjf))
-(TypeCmd aslkjdfklajsdfklj (VarType kljadskljadklfjasfd))
-(TypeCmd akjfdjlkasdfklasfd (VarType kasfkljasdfjkl))
+(TimeCmd (LetCmd (VarLValue b) (VarExpr a)))

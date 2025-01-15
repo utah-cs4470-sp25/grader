@@ -1,5 +1,5 @@
-(ReadCmd "asdf.png" (VarArgument bkahjsgdfbc_2341243))
-(WriteCmd (VarExpr mhjab__124124.41235sadc_____) "mkajhybcr576176387234.png")
+(ReadCmd "asdf.png" (VarLValue bkahjsgdfbc_2341243))
+(WriteCmd (VarExpr mhjab__1241241235sadc_____) "mkajhybcr576176387234.png")
 (PrintCmd
  "lmkjchfni 98765   86715248799_+_~!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:ZXCVBNM<>?|}}|}|?>?")
 (WriteCmd (IntExpr 1234) "7862341787cnhlkasufcn.png")
@@ -10,12 +10,12 @@
 (WriteCmd (FloatExpr 91042) " najno1i64910 nhpqc.png")
 (WriteCmd (VarExpr a877164_____) "17608 [ab ksnlmq876h.png")
 (WriteCmd
- (VarExpr hnab____8675124967.._.__...._lkjhagfscjq_1nkj14g1bc_124ac)
+ (VarExpr hnab____8675124967aa_lkjhagfscjq_1nkj14g1bc_124ac)
  "mliackuyt784165 ba.png")
 (WriteCmd (VarExpr amlisdfnvi) "167479 qnm.png")
 (WriteCmd (VarExpr asfd__) "jil14u719n.png")
 (WriteCmd (IntExpr 12354) "jil14u719n.png")
-(WriteCmd (VarExpr jmnkag__.1241.._123314) "1lmiu4hc.png")
+(WriteCmd (VarExpr jmnkag__1241_123314) "1lmiu4hc.png")
 (PrintCmd
  "k anchkfn ~!@#%^&*()_+QWERTYUIOP{}|ASDFGHJKL:ZXCVBNM<>?`1234567890-=qwertyuiop[]\asdfghjkl;'zxcvbnm,./~`")
 (ShowCmd (IntExpr 134))
@@ -23,5 +23,5 @@
 (ShowCmd (FloatExpr 0))
 (ShowCmd (FloatExpr 1241))
 (ShowCmd (FloatExpr 12948))
-(ShowCmd (VarExpr kajhgbq__..___214))
+(ShowCmd (VarExpr kajhgbq___214))
 (ShowCmd (VarExpr lkjmhna14433))

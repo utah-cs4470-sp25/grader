@@ -1,5 +1,5 @@
 (AssertCmd
- (VarExpr ahnkjcfcsdgiun____.__facsd...___124)
+ (VarExpr ahnkjcfcsdgiun___facsd___124)
  "mij1u947yncaom poaisjdfu9")
 (AssertCmd (IntExpr 124) "mij1u947yncaom poaisjdfu9")
 (AssertCmd (FloatExpr 0) "mij1u947yncaom poaisjdfu9")

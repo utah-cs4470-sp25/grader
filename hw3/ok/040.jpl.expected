@@ -1,1 +1,1 @@
-(TypeCmd a (IntType))
+(ShowCmd (IntExpr 1))

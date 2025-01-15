@@ -1,1 +1,1 @@
-(LetCmd (ArgLValue (VarArgument kajcmhn)) (FloatExpr 14124))
+(LetCmd (VarLValue kajcmhn) (FloatExpr 14124))

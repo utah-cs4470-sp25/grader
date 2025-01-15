@@ -1,1 +1,0 @@
-(TimeCmd (TimeCmd (TimeCmd (AssertCmd (VarExpr c) "asdf"))))

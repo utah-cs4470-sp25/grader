@@ -1,0 +1,4 @@
+(TimeCmd
+ (TimeCmd
+  (TimeCmd
+   (TimeCmd (TimeCmd (LetCmd (VarLValue a) (IntExpr 1)))))))

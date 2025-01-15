@@ -6,7 +6,7 @@ import traceback
 import shlex
 import difflib
 from normalize_asm import ppasm
-from ppsexp import ppsexp
+from ppsexp import ppsexp, unpp
 from pathlib import Path
 import subprocess
 import concurrent.futures as futures
@@ -349,8 +349,8 @@ HWS = {
        "3": NullPart(InvalidSpec, "hw2/lexer-tests3/", "-l"),
    },
    "3": {
-       "1": ManualPart(DiffSpec, "hw3/ok.jpl", "hw3/ok/", "-p", normalize=ppsexp),
-       "2": NullPart(DiffSpec, "hw3/ok-fuzzer/", "-p", normalize=ppsexp),
+       "1": NullPart(DiffSpec, "hw3/ok/", "-p", normalize=unpp), # TODO ppsexp
+       "2": NullPart(DiffSpec, "hw3/ok-fuzzer/", "-p", normalize=unpp),
        "3": NullPart(InvalidSpec, "hw3/fail-fuzzer1/", "-p"),
        "4": NullPart(InvalidSpec, "hw3/fail-fuzzer2/", "-p"),
        "5": NullPart(InvalidSpec, "hw3/fail-fuzzer3/", "-p"),

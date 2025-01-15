@@ -1,3 +1,4 @@
+import re
 
 def parse(s):
     i = 0
@@ -57,4 +58,8 @@ def ppsexp(lines):
     for term in s:
         out += pp(term, 0) + "\n"
     return out.split("\n")
-            
+
+def unpp(lines):
+    t = "\n".join(lines)
+    out = re.sub(r"\n\s+", " ", t)
+    return out.split("\n")
