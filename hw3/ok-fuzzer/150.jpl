@@ -1,4 +1,4 @@
 write image false to ""
 show true
-read image "z" to t5P.4F.9H.0x_9k_7c.9L.7d_
+read image "z" to t5P4F9H0x_9k_7c9L7d_
 assert false, ""

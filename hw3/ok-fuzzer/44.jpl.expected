@@ -1,5 +1,5 @@
-(ReadCmd "" (VarArgument K8L_8j_))
+(ReadCmd "" (VarLValue K8L_8j_))
 (WriteCmd (TrueExpr) ")u")
 (AssertCmd (TrueExpr) "T")
-(LetCmd (ArgLValue (VarArgument R4q_)) (VarExpr w))
-(LetCmd (ArgLValue (VarArgument Y)) (VarExpr Z))
+(LetCmd (VarLValue R4q_) (VarExpr w))
+(LetCmd (VarLValue Y) (VarExpr Z))

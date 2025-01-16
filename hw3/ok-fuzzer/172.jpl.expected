@@ -1,1 +1,1 @@
-(TypeCmd i (FloatType))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr i) (VarExpr myfloat))))

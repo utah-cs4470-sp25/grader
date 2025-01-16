@@ -1,5 +1,4 @@
-(AssertCmd (VarExpr V6m.7u.) "T+.{&")
+(AssertCmd (VarExpr V6m7u) "T+.{&")
 (AssertCmd (FalseExpr) "Fg")
 (AssertCmd (FalseExpr) "")
-(ReadCmd "" (VarArgument M9Y_2i_))
-(TypeCmd S (VarType s))
+(ReadCmd "" (VarLValue M9Y_2i_))

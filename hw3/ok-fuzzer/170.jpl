@@ -1,5 +1,5 @@
-read image "" to N6x.4U.
+read image "" to N6x4U
 read image "" to N
-let a1p.5p_4I_ = b8W.
+let a1p5p_4I_ = b8W
 let K = 13
-type j = bool
+time show [ j ]

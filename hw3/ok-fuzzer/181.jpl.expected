@@ -5,4 +5,4 @@
 (PrintCmd "?j u#4BW")
 (AssertCmd (IntExpr 4) "")
 (AssertCmd (FloatExpr 0) "7}4")
-(LetCmd (ArgLValue (VarArgument Q)) (IntExpr 1))
+(LetCmd (VarLValue Q) (IntExpr 1))

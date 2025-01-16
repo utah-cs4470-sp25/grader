@@ -1,6 +1,6 @@
 (AssertCmd (VarExpr c) "L")
-(ReadCmd ";" (VarArgument q))
+(ReadCmd ";" (VarLValue q))
 (PrintCmd "9#K461")
 (WriteCmd (VarExpr j9X_7H_) "&Jk")
 (ShowCmd (IntExpr 1))
-(LetCmd (ArgLValue (VarArgument h6E_)) (TrueExpr))
+(LetCmd (VarLValue h6E_) (TrueExpr))

@@ -2,6 +2,6 @@
 (AssertCmd (IntExpr 2) "`T")
 (PrintCmd "G2V")
 (ShowCmd (FloatExpr 0))
-(LetCmd (ArgLValue (VarArgument L9M_8v_)) (IntExpr 3))
+(LetCmd (VarLValue L9M_8v_) (IntExpr 3))
 (AssertCmd (TrueExpr) "_)\7X")
-(TypeCmd t (VarType P3A_))
+(TimeCmd (LetCmd (VarLValue x) (IntExpr 3)))

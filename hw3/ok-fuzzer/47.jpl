@@ -3,4 +3,4 @@ print "n"
 let v = false
 read image "yD" to y
 let A = true
-type u = float
+time show [ u ]

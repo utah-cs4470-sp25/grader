@@ -1,4 +1,4 @@
-(TypeCmd n8u_ (VarType P3E_))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (ArrayLiteralExpr (ArrayLiteralExpr (VarExpr n8u_))))))
 (ShowCmd (FloatExpr 0))
-(ReadCmd "Q" (VarArgument x9p_8Y.))
+(ReadCmd "Q" (VarLValue x9p_8Y))
 (AssertCmd (TrueExpr) "")

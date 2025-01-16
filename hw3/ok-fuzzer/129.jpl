@@ -1,4 +1,4 @@
-type R2F_ = int
+let R2F_ = [aint]
 read image "kd" to K
 show true
 write image true to "'`"

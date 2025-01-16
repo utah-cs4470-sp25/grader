@@ -1,4 +1,2 @@
-type y5w_3A_9W. = float
-type I5H.7x_9b_ = int
-type x = int
+time show [ x ]
 read image "" to a

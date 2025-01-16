@@ -1,2 +1,2 @@
-type s = G6p_
+time show [[ s ]]
 print ","

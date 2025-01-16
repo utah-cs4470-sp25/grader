@@ -1,6 +1,5 @@
-(TypeCmd T (BoolType))
 (PrintCmd "H")
 (PrintCmd "EbDK")
 (PrintCmd "")
 (PrintCmd "")
-(TypeCmd p5Y.9Q. (FloatType))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr p5Y) (VarExpr a9Q) (VarExpr myf))))

@@ -1,2 +1,2 @@
-type u = int
+time show [ u ]
 read image ")" to b

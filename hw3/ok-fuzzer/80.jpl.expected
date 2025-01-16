@@ -1,6 +1,6 @@
-(TypeCmd p (FloatType))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr p))))
 (ShowCmd (IntExpr 6))
-(ReadCmd "" (VarArgument T))
+(ReadCmd "" (VarLValue T))
 (AssertCmd (FloatExpr 0) "")
 (ShowCmd (FalseExpr))
 (AssertCmd (TrueExpr) "")

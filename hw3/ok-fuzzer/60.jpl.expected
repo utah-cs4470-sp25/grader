@@ -1,4 +1,4 @@
-(TypeCmd R0B_6I_ (BoolType))
-(TypeCmd q9k_ (IntType))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr R0B_6I_))))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr q9k_))))
 (ShowCmd (IntExpr 88))
 (PrintCmd "{T`")

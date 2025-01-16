@@ -1,2 +1,2 @@
 (AssertCmd (TrueExpr) "")
-(TypeCmd m (FloatType))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr m_float))))

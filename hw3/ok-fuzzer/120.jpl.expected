@@ -1,2 +1,2 @@
-(WriteCmd (VarExpr I4R.) "")
-(ShowCmd (VarExpr F5P_6b.0v.2D.7v_))
+(WriteCmd (VarExpr I4R) "")
+(ShowCmd (VarExpr F5P_6b0v2D7v_))

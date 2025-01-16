@@ -1,2 +1,2 @@
-(LetCmd (ArgLValue (VarArgument o)) (IntExpr 1))
-(ReadCmd ")" (VarArgument F))
+(LetCmd (VarLValue o) (IntExpr 1))
+(ReadCmd ")" (VarLValue F))

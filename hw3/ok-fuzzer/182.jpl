@@ -1,8 +1,6 @@
-read image "\" to V1s.
-type l = bool
-type Q = bool
+read image "\" to V1s
+time show [ l ]
 let N = false
 let O = 57
-type J = float
+time show [[ J ]]
 print ""
-type f5j. = int

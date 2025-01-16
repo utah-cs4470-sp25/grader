@@ -1,4 +1,3 @@
-type R6T.1i.4O_ = float
 show true
 print ""
 let s = false

@@ -1,4 +1,4 @@
-(ReadCmd "" (VarArgument O))
-(TypeCmd G4h_3e_ (VarType Y))
+(ReadCmd "" (VarLValue O))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr G4h_3e_))))
 (PrintCmd "l")
 (WriteCmd (TrueExpr) "5'j")

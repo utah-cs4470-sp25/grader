@@ -1,8 +1,8 @@
 read image "z5" to S
-type F2U. = bool
-type n = float
+time show F2U == true
+time show n == 3.3
 assert true, ""
 print "XE"
 show 31642
-type y2f. = float
-type d = float
+time show [ y2f ]
+time show [ d ]

@@ -1,3 +1,3 @@
 (AssertCmd (FalseExpr) "")
-(TypeCmd y5O.8a.9C_9k_6v. (FloatType))
+(LetCmd (VarLValue b) (ArrayLiteralExpr (IntExpr 1) (IntExpr 3) (VarExpr b) (IntExpr 5) (IntExpr 9)))
 (AssertCmd (FalseExpr) "")

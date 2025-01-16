@@ -1,1 +1,1 @@
-(TypeCmd H9P_ (IntType))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr HH) (VarExpr YY) (VarExpr ZZ))))

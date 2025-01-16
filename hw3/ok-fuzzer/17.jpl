@@ -3,4 +3,4 @@ write image 3152. to ""
 print "o"
 show 2
 assert true, ""
-type y = float
+time show [[ y ]]

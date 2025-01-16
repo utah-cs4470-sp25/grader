@@ -1,7 +1,5 @@
-(TypeCmd e (FloatType))
-(TypeCmd E (FloatType))
 (AssertCmd (TrueExpr) "E")
 (WriteCmd (VarExpr y) "e")
 (PrintCmd "EM")
 (PrintCmd "")
-(TypeCmd k (VarType C))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (ArrayLiteralExpr (ArrayLiteralExpr (VarExpr k)) (IntExpr 0)) (VarExpr c))))

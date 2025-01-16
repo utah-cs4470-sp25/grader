@@ -1,7 +1,7 @@
 let h = true
-type J = int
+time time show [3]
 print "("
 show false
-type d = s
-type H6T_ = r
+time show [d, s]
+time show [H6T_, b]
 print "k"

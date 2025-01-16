@@ -1,4 +1,4 @@
-(ReadCmd "~YA" (VarArgument M))
-(LetCmd (ArgLValue (VarArgument N)) (FloatExpr 0))
-(ReadCmd "." (VarArgument e4O_))
+(ReadCmd "~YA" (VarLValue M))
+(LetCmd (VarLValue N) (FloatExpr 0))
+(ReadCmd "." (VarLValue e4O_))
 (AssertCmd (IntExpr 929) "D")

@@ -1,2 +1,2 @@
 (AssertCmd (TrueExpr) "")
-(LetCmd (ArgLValue (VarArgument G)) (IntExpr 59998))
+(LetCmd (VarLValue G) (IntExpr 59998))

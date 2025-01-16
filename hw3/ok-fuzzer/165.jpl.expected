@@ -1,2 +1,2 @@
-(TypeCmd s (VarType G6p_))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (ArrayLiteralExpr (VarExpr s)))))
 (PrintCmd ",")

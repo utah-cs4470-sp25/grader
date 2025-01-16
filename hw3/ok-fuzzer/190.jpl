@@ -3,6 +3,6 @@ print ""
 assert true, ""
 read image "" to t
 write image true to ""
-type l = float
+time show [[ l ]]
 print "y&"
 show false

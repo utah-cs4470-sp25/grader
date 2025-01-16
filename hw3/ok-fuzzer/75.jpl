@@ -3,6 +3,6 @@ assert 8, "|"
 print ""
 print ""
 print "6"
-type e = J
+time show [ e ]
 assert K, ""
 read image "[" to X

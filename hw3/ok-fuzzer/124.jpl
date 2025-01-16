@@ -1,7 +1,7 @@
 print ""
-assert .1, "dv"
+assert 1, "dv"
 write image false to "?L"
-type x = y9v.
+time let x = [y9v]
 show true
-type n = float
+show [atype, n, afloat]
 write image true to "\"

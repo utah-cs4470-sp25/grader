@@ -1,3 +1,3 @@
 (PrintCmd "S")
 (PrintCmd "")
-(TypeCmd r (BoolType))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (ArrayLiteralExpr (VarExpr r)))))

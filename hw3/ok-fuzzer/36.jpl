@@ -1,8 +1,8 @@
-assert l3y.4V.2Y.5T_, ""
+assert l3y4V25T_, ""
 show false
 print "P"
 print ""
 print "|"
 let t = true
 let f = true
-let A0l_ = V0y.
+let A0l_ = V0y

@@ -1,5 +1,5 @@
-read image "" to A5i_7O_3F.5v_2Y.
+read image "" to A5i_7O_3F
 write image true to ""
 assert 6, ""
-type M4Y_4E.9g.4z.3J. = L4V_3Q_
+time show [ M4Y_4E9g4z3J ]
 read image "" to E

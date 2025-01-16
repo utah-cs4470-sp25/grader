@@ -4,5 +4,5 @@ print "5/"
 write image true to "/"
 read image "" to y
 show true
-let k3S. = false
+let k3S = false
 print "z"

@@ -1,1 +1,1 @@
-(TypeCmd T (IntType))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr T))))

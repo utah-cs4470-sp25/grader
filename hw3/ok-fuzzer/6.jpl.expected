@@ -1,2 +1,2 @@
 (PrintCmd "")
-(TypeCmd L (VarType M6J.))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr L))))

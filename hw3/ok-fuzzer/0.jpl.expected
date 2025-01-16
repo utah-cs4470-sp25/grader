@@ -1,1 +1,1 @@
-(ReadCmd "x" (VarArgument P3q.9r.))
+(ReadCmd "x" (VarLValue P3q9r))

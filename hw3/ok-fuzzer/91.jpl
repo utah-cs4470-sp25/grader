@@ -1,6 +1,6 @@
 write image 88602 to ""
 read image "*" to V6x_
 assert 961, "F"
-type c1E.3z_ = float
-type O5R_ = int
-type s6P_0j.6z_ = float
+time show [ c1E3z_ ]
+time show [ O5R_ ]
+time show [ s6P_0j ]

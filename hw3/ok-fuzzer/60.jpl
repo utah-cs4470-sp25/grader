@@ -1,4 +1,4 @@
-type R0B_6I_ = bool
-type q9k_ = int
+time show [ R0B_6I_ ]
+time show [ q9k_ ]
 show 88
 print "{T`"

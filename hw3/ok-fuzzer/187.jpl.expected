@@ -1,4 +1,3 @@
-(LetCmd (ArgLValue (VarArgument t)) (FalseExpr))
-(TypeCmd d (VarType C))
+(LetCmd (VarLValue t) (FalseExpr))
 (ShowCmd (VarExpr j1b_))
-(LetCmd (ArgLValue (VarArgument l)) (FalseExpr))
+(LetCmd (VarLValue l) (FalseExpr))

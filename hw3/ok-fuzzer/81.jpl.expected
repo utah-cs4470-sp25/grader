@@ -1,4 +1,4 @@
 (PrintCmd "")
-(ReadCmd "`" (VarArgument P))
+(ReadCmd "`" (VarLValue P))
 (ShowCmd (FloatExpr 7))
-(LetCmd (ArgLValue (VarArgument u)) (FloatExpr 4))
+(LetCmd (VarLValue u) (FloatExpr 4))

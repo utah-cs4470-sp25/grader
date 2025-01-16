@@ -1,1 +1,1 @@
-(TypeCmd z (BoolType))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr z))))

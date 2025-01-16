@@ -1,2 +1,2 @@
 assert true, ""
-type m = float
+time show [m_float]

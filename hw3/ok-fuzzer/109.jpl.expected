@@ -1,5 +1,5 @@
-(LetCmd (ArgLValue (VarArgument d)) (VarExpr L))
+(LetCmd (VarLValue d) (VarExpr L))
 (ShowCmd (FalseExpr))
-(ReadCmd "^V" (VarArgument J))
-(LetCmd (ArgLValue (VarArgument k)) (VarExpr T4D.2e.9A.))
+(ReadCmd "^V" (VarLValue J))
+(LetCmd (VarLValue k) (VarExpr T4D2e9A))
 (ShowCmd (TrueExpr))

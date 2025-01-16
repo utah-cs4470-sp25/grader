@@ -1,5 +1,5 @@
 read image "W>`" to C
-type T = int
+time show [ T ]
 let P = 8
 write image false to ")]"
 assert 58170.4275, ""

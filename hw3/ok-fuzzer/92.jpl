@@ -1,1 +1,1 @@
-type z = bool
+time show [ z ]

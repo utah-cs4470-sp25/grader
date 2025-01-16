@@ -2,6 +2,6 @@ print ""
 read image "s" to X
 assert .37352, ""
 write image 3234.58037756 to ""
-type J3s. = int
+time show [ J3s ]
 show .563535
 print ""

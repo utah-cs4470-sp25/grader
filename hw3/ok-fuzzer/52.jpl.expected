@@ -1,5 +1,5 @@
 (ShowCmd (TrueExpr))
 (PrintCmd "")
-(LetCmd (ArgLValue (VarArgument u6y.)) (FalseExpr))
+(LetCmd (VarLValue u6y) (FalseExpr))
 (PrintCmd "")
-(ReadCmd "" (VarArgument U))
+(ReadCmd "" (VarLValue U))

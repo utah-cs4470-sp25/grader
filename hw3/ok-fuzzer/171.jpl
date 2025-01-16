@@ -1,5 +1,5 @@
 write image true to "I:"
 let o = false
-type h = A2H.
+time show [ h , [[[[ A2H]]]]]
 show false
 print ""

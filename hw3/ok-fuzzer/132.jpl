@@ -5,5 +5,5 @@ let J6u_1r_ = 599450511437.
 read image "" to L
 write image 75969. to "a"
 read image "" to Y
-read image " " to f3J.
-type D1E.0v_ = int
+read image " " to f3J
+time show D1E0v_ == aint

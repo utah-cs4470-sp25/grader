@@ -4,6 +4,6 @@ let n = false
 print ""
 let S = c7d_
 read image "" to Z
-type u9T_8v_8I. = float
+time show [[ u9T, 8 , 8 ,I]]
 print "mA"
 let c = .9

@@ -1,4 +1,4 @@
-(ReadCmd "" (VarArgument p9a_))
+(ReadCmd "" (VarLValue p9a_))
 (AssertCmd (VarExpr e) "")
 (ShowCmd (FalseExpr))
-(LetCmd (ArgLValue (VarArgument Q3b.9j_)) (FloatExpr 0))
+(LetCmd (VarLValue Q3b9j_) (FloatExpr 0))

@@ -1,4 +1,4 @@
-type p = float
+time show [ p ]
 show 6
 read image "" to T
 assert .3, ""

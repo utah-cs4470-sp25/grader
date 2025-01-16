@@ -1,6 +1,5 @@
-(TypeCmd R6T.1i.4O_ (FloatType))
 (ShowCmd (TrueExpr))
 (PrintCmd "")
-(LetCmd (ArgLValue (VarArgument s)) (FalseExpr))
+(LetCmd (VarLValue s) (FalseExpr))
 (PrintCmd "")
 (WriteCmd (VarExpr w) "p")

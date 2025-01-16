@@ -1,7 +1,7 @@
-show D3D.
+show D3D
 assert false, "{"
 read image "" to e
-type B = X
+time show [ B ]
 write image 7 to ""
 assert true, "LJVu"
 show 99

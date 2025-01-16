@@ -3,4 +3,4 @@
 (PrintCmd "o")
 (ShowCmd (IntExpr 2))
 (AssertCmd (TrueExpr) "")
-(TypeCmd y (FloatType))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (ArrayLiteralExpr (VarExpr y)))))

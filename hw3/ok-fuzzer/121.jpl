@@ -1,9 +1,9 @@
-read image "" to N7f.
-type f9U_ = T5p.3r_
+read image "" to N7f
+let bbb = [4]
 write image s to ""
 print "g"
 show n
 read image "}Pv" to B
-type h = bool
+let h = []
 show false
 read image "s;`" to r

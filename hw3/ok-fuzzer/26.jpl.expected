@@ -1,4 +1,4 @@
-(LetCmd (ArgLValue (VarArgument P)) (FalseExpr))
+(LetCmd (VarLValue P) (FalseExpr))
 (ShowCmd (TrueExpr))
-(LetCmd (ArgLValue (VarArgument P)) (FalseExpr))
+(LetCmd (VarLValue P) (FalseExpr))
 (AssertCmd (TrueExpr) "j+{")

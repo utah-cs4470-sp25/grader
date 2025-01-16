@@ -1,4 +1,4 @@
-(ReadCmd "" (VarArgument b))
+(ReadCmd "" (VarLValue b))
 (WriteCmd (IntExpr 6) "7s")
 (ShowCmd (IntExpr 1))
-(ReadCmd "A" (VarArgument Y2k.))
+(ReadCmd "A" (VarLValue Y2k))

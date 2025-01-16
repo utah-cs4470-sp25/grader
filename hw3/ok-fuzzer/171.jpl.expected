@@ -1,5 +1,5 @@
 (WriteCmd (TrueExpr) "I:")
-(LetCmd (ArgLValue (VarArgument o)) (FalseExpr))
-(TypeCmd h (VarType A2H.))
+(LetCmd (VarLValue o) (FalseExpr))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr h) (ArrayLiteralExpr (ArrayLiteralExpr (ArrayLiteralExpr (ArrayLiteralExpr (VarExpr A2H))))))))
 (ShowCmd (FalseExpr))
 (PrintCmd "")

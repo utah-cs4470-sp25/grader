@@ -2,5 +2,5 @@
 (PrintCmd "(")
 (ShowCmd (VarExpr z))
 (AssertCmd (VarExpr s) "")
-(LetCmd (ArgLValue (VarArgument k)) (FloatExpr 920408))
+(LetCmd (VarLValue k) (FloatExpr 920408))
 (PrintCmd "")

@@ -3,5 +3,5 @@ write image .35 to ""
 read image "" to M
 print "^T-"
 read image "" to g1Y_
-read image "" to R8Q.6p_
-type b = float
+read image "" to R8Q6p_
+time show [ b ]

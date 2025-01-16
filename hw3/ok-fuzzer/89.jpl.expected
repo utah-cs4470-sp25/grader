@@ -1,6 +1,6 @@
 (ShowCmd (FloatExpr 0))
-(LetCmd (ArgLValue (VarArgument U)) (VarExpr I))
+(LetCmd (VarLValue U) (VarExpr I))
 (ShowCmd (IntExpr 1))
 (ShowCmd (FalseExpr))
-(TypeCmd g (VarType u2v.))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr g))))
 (AssertCmd (FloatExpr 45) "")

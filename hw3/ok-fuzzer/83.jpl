@@ -1,2 +1,2 @@
-type i = b
+time show [ i ]
 print "5P"

@@ -1,8 +1,6 @@
-type r2Y_1r_ = float
+time show [[ r2Y_1r_ ]]
 write image false to ""
-let D3w_6I.6R_ = z
+let D3w_6I6R_ = z
 let H = false
-type N3j_7a. = bool
-type q1I_ = int
 write image false to ""
 read image "`" to K

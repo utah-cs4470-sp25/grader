@@ -1,4 +1,4 @@
 show g
-read image "+" to U0G.
+read image "+" to U0G
 print ""
-type x = float
+time show [xfloat]

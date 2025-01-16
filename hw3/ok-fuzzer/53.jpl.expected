@@ -1,2 +1,2 @@
-(TypeCmd u (IntType))
-(ReadCmd ")" (VarArgument b))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr u))))
+(ReadCmd ")" (VarLValue b))

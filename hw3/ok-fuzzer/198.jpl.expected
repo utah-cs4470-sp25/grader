@@ -1,6 +1,4 @@
-(TypeCmd h3k_ (BoolType))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr h3k_))))
 (AssertCmd (IntExpr 5) "W")
 (AssertCmd (FalseExpr) "")
 (ShowCmd (TrueExpr))
-(TypeCmd z2T_3W. (FloatType))
-(TypeCmd s5O_ (IntType))

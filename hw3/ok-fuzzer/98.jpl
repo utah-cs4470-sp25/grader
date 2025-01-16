@@ -3,7 +3,7 @@ show 094.
 print "/U"
 show 1
 show m1I_
-type H6t. = int
+time show [ H6t ]
 show true
-type s = int
+time show [ s ]
 show 6

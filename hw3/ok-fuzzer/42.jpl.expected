@@ -1,6 +1,5 @@
 (AssertCmd (FalseExpr) "RT$Y$lR0")
 (AssertCmd (VarExpr S) "")
-(TypeCmd V (IntType))
 (AssertCmd (IntExpr 5789) "")
 (PrintCmd "")
 (PrintCmd "")

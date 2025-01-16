@@ -1,3 +1,3 @@
-(AssertCmd (VarExpr B2Y_3V_0m.7u.) "")
+(AssertCmd (VarExpr B2Y_3V_0m7u) "")
 (WriteCmd (VarExpr e) "")
-(TypeCmd p9e. (BoolType))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr p9e) (IntExpr 1))))

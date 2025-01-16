@@ -2,8 +2,8 @@ read image "" to f
 let S = .67424
 show false
 print "l"
-read image "3" to a5R.
-type a = float
+read image "3" to a5R
+time show [ a ]
 show 751.
 print ""
 print "kV"

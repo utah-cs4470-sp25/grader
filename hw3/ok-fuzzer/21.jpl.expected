@@ -1,4 +1,4 @@
-(ReadCmd "Y" (VarArgument b))
+(ReadCmd "Y" (VarLValue b))
 (AssertCmd (TrueExpr) "")
 (WriteCmd (FloatExpr 0) "")
 (WriteCmd (FalseExpr) "G")

@@ -1,1 +1,1 @@
-(TypeCmd o (IntType))
+(TimeCmd (TimeCmd (TimeCmd (ShowCmd (ArrayLiteralExpr (ArrayLiteralExpr (ArrayLiteralExpr (ArrayLiteralExpr (ArrayLiteralExpr (IntExpr 3))))) (IntExpr 2))))))

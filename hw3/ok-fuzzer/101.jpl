@@ -2,6 +2,6 @@ write image .4 to ""
 let D = true
 assert 90, ""
 print ""
-read image "" to g7u.8s_2F.
+read image "" to g7u8s_2F
 read image "" to t9W_0m_
 show true
