@@ -1,0 +1,14 @@
+(AssertCmd
+ (ArrayLiteralExpr
+  (VarExpr a)
+  (ArrayLiteralExpr
+   (ArrayLiteralExpr
+    (VarExpr a)
+    (ArrayLiteralExpr
+     (ArrayLiteralExpr
+      (ArrayLiteralExpr
+       (ArrayLiteralExpr
+        (ArrayLiteralExpr
+         (VarExpr a)
+         (ArrayLiteralExpr (VarExpr a) (VarExpr b))))))))))
+ "ai")

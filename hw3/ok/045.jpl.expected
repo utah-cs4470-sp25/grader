@@ -1,0 +1,2 @@
+(AssertCmd
+  (ArrayLiteralExpr (VarExpr a) (VarExpr b) (VarExpr c) (VarExpr d) (VarExpr e)) "")
