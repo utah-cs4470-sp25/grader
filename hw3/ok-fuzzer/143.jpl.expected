@@ -1,8 +1,0 @@
-(ReadCmd "z5" (VarLValue S))
-(TimeCmd (ShowCmd (BinopExpr (VarExpr F2U) == (TrueExpr))))
-(TimeCmd (ShowCmd (BinopExpr (VarExpr n) == (FloatExpr 3))))
-(AssertCmd (TrueExpr) "")
-(PrintCmd "XE")
-(ShowCmd (IntExpr 31642))
-(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr y2f))))
-(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr d))))

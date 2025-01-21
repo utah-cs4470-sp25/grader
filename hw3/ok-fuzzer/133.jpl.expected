@@ -1,6 +1,0 @@
-(LetCmd (VarLValue s2R_5x3g) (FloatExpr 0))
-(LetCmd (VarLValue f1s8H) (FloatExpr 84))
-(LetCmd (VarLValue w) (FalseExpr))
-(LetCmd (VarLValue z8u_8w) (VarExpr c7N_1p1m_))
-(TimeCmd (TimeCmd (ShowCmd (BinopExpr (VarExpr F) == (IntExpr 3)))))
-(ShowCmd (FalseExpr))

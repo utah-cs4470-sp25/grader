@@ -1,8 +1,0 @@
-read image "z5" to S
-time show F2U == true
-time show n == 3.3
-assert true, ""
-print "XE"
-show 31642
-time show [ y2f ]
-time show [ d ]
