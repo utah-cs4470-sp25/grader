@@ -1,1 +1,4 @@
-type a = {float[], a}
+struct looper {
+  first: float[]
+  second: looper
+}

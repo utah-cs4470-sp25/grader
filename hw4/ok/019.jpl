@@ -1,1 +1,4 @@
-let {} = a
+struct mt {
+}
+
+let mt1 = mt{}

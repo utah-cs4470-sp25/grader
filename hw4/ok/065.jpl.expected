@@ -1,1 +1,1 @@
-(FnCmd f () (IntType) (AssertStmt (ArrayIndexExpr (VarExpr a) (VarExpr a)) ""))
+(FnCmd f (()) (IntType) (AssertStmt (ArrayIndexExpr (VarExpr a) (VarExpr a)) ""))

@@ -1,11 +1,1 @@
-(AssertCmd
- (ArrayLiteralExpr
-  (CallExpr f)
-  (ArrayIndexExpr (VarExpr g) (IntExpr 3))
-  (ArrayIndexExpr
-   (VarExpr e)
-   (ArrayLiteralExpr
-    (ArrayLiteralExpr (VarExpr c))
-    (TupleIndexExpr (VarExpr d) 1)
-    (CallExpr g))))
- "")
+(AssertCmd (ArrayLiteralExpr (CallExpr f) (ArrayIndexExpr (VarExpr g) (IntExpr 3)) (ArrayIndexExpr (VarExpr e) (ArrayLiteralExpr (ArrayLiteralExpr (VarExpr c)) (StructLiteralExpr (IntExpr 1)) (DotExpr (VarExpr e) f) (CallExpr g)))) "")

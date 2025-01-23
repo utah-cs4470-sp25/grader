@@ -1,14 +1,1 @@
-(FnCmd
- f
- ((TupleBinding
-   (VarBinding (ArrayArgument a H W) (ArrayType (VarType a) 2))
-   (TupleBinding
-    (TupleBinding
-     (VarBinding (ArrayArgument b A) (ArrayType (VarType b) 1))
-     (TupleBinding))))
-  (TupleBinding)
-  (TupleBinding (VarBinding (VarArgument a) (VarType a)))
-  (TupleBinding
-   (VarBinding (VarArgument a) (TupleType (VarType a) (VarType a)))))
- (VarType a)
- (AssertStmt (TupleIndexExpr (VarExpr f) 1) ""))
+(FnCmd f (((ArrayLValue a H W) (ArrayType (StructType a) 2) (ArrayLValue b A) (ArrayType (StructType b) 1))) (StructType a) (AssertStmt (StructLiteralExpr (IntExpr 1)) ""))

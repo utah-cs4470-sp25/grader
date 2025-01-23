@@ -1,1 +1,1 @@
-(AssertCmd (TupleLiteralExpr (VarExpr a) (VarExpr a) (VarExpr a)) "asdf")
+(AssertCmd (StructLiteralExpr (VarExpr a) (VarExpr a) (VarExpr a)) "asdf")

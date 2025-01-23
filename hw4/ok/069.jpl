@@ -1,3 +1,3 @@
 fn f(a : a[]) : a {
-assert {{}, (b), [c]}, ""
+assert x{y{}, (b), [c]}, ""
 }

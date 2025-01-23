@@ -1,1 +1,2 @@
-(LetCmd (TupleLValue (ArgLValue (VarArgument a))) (VarExpr a))
+(StructCmd a elem (IntType))
+(LetCmd (VarLValue b) (StructLiteralExpr (IntExpr 3)))

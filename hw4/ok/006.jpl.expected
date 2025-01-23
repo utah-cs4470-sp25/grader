@@ -1,1 +1,1 @@
-(TypeCmd a (TupleType))
+(StructCmd mt)

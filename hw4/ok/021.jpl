@@ -1,1 +1,7 @@
-let {a[H], b} = a
+struct two {
+  fst: float[]
+  snd: int
+}
+let mya = two{[2.3], 0}
+let a[H] = mya.fst
+let b = mya.snd

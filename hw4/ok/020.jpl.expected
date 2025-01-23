@@ -1,3 +1,4 @@
-(LetCmd
- (TupleLValue (ArgLValue (VarArgument a)) (ArgLValue (VarArgument a)))
- (VarExpr a))
+(StructCmd pair x (IntType) y (FloatType))
+(LetCmd (VarLValue mypair) (StructLiteralExpr (IntExpr 1) (IntExpr 2)))
+(LetCmd (VarLValue myx) (DotExpr (VarExpr mypair) x))
+(LetCmd (VarLValue myy) (DotExpr (VarExpr mypair) y))

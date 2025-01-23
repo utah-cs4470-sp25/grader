@@ -1,4 +1,1 @@
-(ShowCmd
- (ArrayIndexExpr
-  (ArrayIndexExpr (VarExpr a) (ArrayIndexExpr (VarExpr b) (IntExpr 2)))
-  (ArrayIndexExpr (VarExpr a) (IntExpr 3))))
+(ShowCmd (ArrayIndexExpr (ArrayIndexExpr (VarExpr a) (ArrayIndexExpr (VarExpr b) (IntExpr 2))) (ArrayIndexExpr (VarExpr a) (IntExpr 3))))

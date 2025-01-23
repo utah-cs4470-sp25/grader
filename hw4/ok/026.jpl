@@ -1,1 +1,1 @@
-assert {a, a, a}, "asdf"
+assert x{a, a, a}, "asdf"

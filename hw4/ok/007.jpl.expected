@@ -1,1 +1,1 @@
-(TypeCmd a (TupleType (VarType a) (VarType a)))
+(StructCmd circlepair x (StructType circlepair) y (StructType circlepair))

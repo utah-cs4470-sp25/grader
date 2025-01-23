@@ -328,7 +328,7 @@ class FuzzerPart:
 
     def unpack(self):
         res = subprocess.run([
-            "python3", "~/jpl/pavpan/src/fuzzer.py",
+            "python3", DIR + "src/fuzzer.py",
             str(self.number),
             "--seed", str(self.seed),
             "--subset", str(self.subset),

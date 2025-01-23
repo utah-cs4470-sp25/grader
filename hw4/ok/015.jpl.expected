@@ -1,1 +1,1 @@
-(LetCmd (ArgLValue (ArrayArgument a H)) (VarExpr a))
+(LetCmd (ArrayLValue a H) (VarExpr a))

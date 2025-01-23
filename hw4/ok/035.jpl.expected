@@ -1,1 +1,1 @@
-(AssertCmd (TupleIndexExpr (VarExpr a) 1) "")
+(AssertCmd (StructLiteralExpr (IntExpr 1)) "")

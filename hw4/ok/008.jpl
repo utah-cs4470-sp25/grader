@@ -1,1 +1,4 @@
-type a = {float[], float[,]}
+struct floats {
+  aaa: float[]
+  bbb: float[,]
+}

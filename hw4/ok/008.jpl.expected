@@ -1,1 +1,1 @@
-(TypeCmd a (TupleType (ArrayType (FloatType) 1) (ArrayType (FloatType) 2)))
+(StructCmd floats aaa (ArrayType (FloatType) 1) bbb (ArrayType (FloatType) 2))

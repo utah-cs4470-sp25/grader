@@ -1,1 +1,2 @@
-(TypeCmd a (TupleType (IntType) (IntType)))
+(StructCmd b x (IntType) y (IntType))
+(StructCmd a c (StructType b))

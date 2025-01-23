@@ -1,1 +1,1 @@
-(TypeCmd a (TupleType (ArrayType (FloatType) 1) (VarType a)))
+(StructCmd looper first (ArrayType (FloatType) 1) second (StructType looper))
