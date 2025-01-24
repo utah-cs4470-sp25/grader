@@ -1,22 +1,19 @@
-fn H ( x_ [ r0 ] : { bool , { dN_8R , { float [ , ] } , int } } ) : { } [ , ] {
-assert { } , ""
+( IX0__ {
+Xn : int
+j__9N_ : float
+u_B23 : void
+z__ : int
 }
-print ""
-time show true { 15 }
-write image false [ ] to ""
-assert .03 , "/"
-let { { Y3 } , { } } = .291547
-fn x ( N5 : float ) : k {
+struct C__ {
+v : float
+iQ__o4 : o
+Kf__ : int
 }
-show false
-fn Jw_ ( D6_2l.Ay7 : float , { { } , a_2 [ Y0Dy , V.n2_xE_Z , x , A , H_t6 , l4_ , GE ] : CkV7 } , S [ V26 ] : bool ) : float [ , ] {
+let E__6__ = P1 { H__4I , true }
+let m37B__ = X_1M_5 struct .02933685 , false )
+struct K0v0_M {
+nC1 : int
+D : int
+T64_gN : float
 }
-write image { } to ")"
-fn M0.. ( { { W1lN : { { float , P82c9e11Aj81b , int } [ ] , { } , float , int } } } ) : int {
-assert false , "C+?"
-}
-read image ";" to Vm..0__ [ d.9i_1 ]
-fn w____4 ( yj9_. : int ) : { } [ ] {
-assert false , "&-|"
-let { { ] , si__..u [ } } = 6
-} 
+let G__ = ( X4W9l )

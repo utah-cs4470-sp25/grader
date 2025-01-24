@@ -1,3 +1,4 @@
 fn f(a[H, W] : a[]) : a {
 assert z{}, "asdf"
+return a[H]
 }

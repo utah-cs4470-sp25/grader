@@ -1,27 +1,70 @@
-fn x ( F_.1769Bh : bool , { {} , {} , { {} , { { { { i : C4__. , {} , {} , {} } } } , {} , { { M__C0.8.[] : KW54E_ [ , ] } } , l[] : xY3 , {} } , {} } , r8866__4D6_I [ p01s0La , a5_.6M2 ] : float , {} , E : int , C._.X [ S4. , E , KHCt3M_b ] : bool } ) : bool [  ] { 
+struct Q3_B  {
+j_6 : p   
+T : int   
+HY_e_d : float  
+//ni_(w""070
+i : int  
+F__ : float 
+}//4x1G
+//0I7b
+struct   C6Y__8   {//IO916AW_71cM}_
+hx__13 : void
+
+H_ : U
+d_0 : void [ ,, ]//i___[70?
+
+} 
+struct  p_8g  {//_P21_
   
- }
-write image 3334.9 { 00 } to ""
-fn o9Ga_8y_2_u_q553_N ( m. [ B , G__ , C46_m0 , o ] : {} ) : {} { 
+S445 : int//_)4_C
+
+U : float [ ,,, ] 
+f : F_0_//___Z+_:8y__!_S_o1$ 3F
+//3^_9&1j7_z1*_4D4d\
+TX_D0 : float 
+ 
+T_Yh0 : void//3_~_
+}
+struct   ex_v9T  {   
+
+RL_ : int
+   
+D_7_ : bool
+//6]0#
+}//t
+   
+struct h4  {//@__0/_I6_q)_3w~
+//_\08>y`_^7N
+KI_T : int [  ]
+
+l_O_ : z_ 
+
+y_0 : float
+ 
+b99 : int
   
- }
-time let r32 = 794
-write image t to "\:?"
-write image false to "&"
-show true
-type n. = int
-fn R_ ( {} ) : int { 
+}//_22|Ma'L{y_8_mQE0)3li_
+
+fn sW(R_8g[J,O_] : bool,G_e_ : void):J__1 [ , ]{
+   
+assert true , "_0_3_"
+   
+let df = b5_k { true,false,void }
+//4_g[__
+assert [ true ] , "\_3+S1_3"//-(.*4$E`3h,1
+   
+assert 85 , "9\"
+} 
   
- }
-print "~:}#"
-read image "" to s.r
-fn a_.F74 ( FO : bool [  ] , { {} } , tL[] : int ) : F.. { 
+fn g___(c[Z] : int,L0S1J_ : int):Ay_Lg{  
+assert A25Cd5 { true } , "9__7HL" 
+
+return 7.//1-[@7#7r__
+
+return Or 
+assert false , "71_W[=9=$"//m`_@(N,_bD1# 
   
- }
-time fn F__5_ ( {} , G9.a_1 [ P__A._ ] : { bool , float [  ] , int , { bool , {} , S , {} } } ) : OgP6 { 
- return .71898[] 
-  
- }
-type x341.E7Uu = JM
-type V.5 = { int }
-write image true[] to ""
+return [ true,m,false ]//
+return false//8~
+}//__a\_@_&16C2z6R
+

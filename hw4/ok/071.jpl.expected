@@ -1,1 +1,1 @@
-(FnCmd f (((ArrayLValue a H W) (ArrayType (StructType a) 1))) (StructType a) (AssertStmt (StructLiteralExpr) "asdf"))
+(FnCmd f (((ArrayLValue a H W) (ArrayType (StructType a) 1))) (StructType a) (AssertStmt (StructLiteralExpr) "asdf") (ReturnStmt (ArrayIndexExpr (VarExpr a) (VarExpr H))))

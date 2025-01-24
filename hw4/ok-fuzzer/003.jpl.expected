@@ -1,46 +1,8 @@
-(PrintCmd ".")
-(AssertCmd (FloatExpr 0) "")
-(FnCmd
- n9NkuYQ
- ((VarBinding (ArrayArgument oi v j_05) (IntType))
-  (TupleBinding
-   (VarBinding
-    (VarArgument z6H)
-    (TupleType
-     (TupleType (FloatType) (VarType c_7ll6_) (IntType))
-     (VarType c.)
-     (BoolType)
-     (FloatType)))))
- (FloatType)
- (ReturnStmt
-  (CallExpr
-   Hn
-   (ArrayIndexExpr (TupleIndexExpr (FloatExpr 0) 61187) (TrueExpr)))))
-(FnCmd
- Z_7b
- ((TupleBinding (TupleBinding)))
- (BoolType)
- (LetStmt
-  (TupleLValue (TupleLValue (ArgLValue (ArrayArgument a gT.2 N7S.0_. t.))))
-  (IntExpr 378339844973)))
-(TypeCmd yo_ (TupleType (IntType)))
-(FnCmd
- P1.3_
- ((TupleBinding)
-  (TupleBinding
-   (TupleBinding (TupleBinding) (TupleBinding) (TupleBinding))
-   (TupleBinding)
-   (TupleBinding)))
- (FloatType))
-(TypeCmd T (BoolType))
-(TimeCmd (WriteCmd (CallExpr w.hb4.) "\"))
-(TimeCmd (PrintCmd "("))
-(AssertCmd (TupleIndexExpr (TupleIndexExpr (IntExpr 9892) 685) 8) "\@")
-(LetCmd (ArgLValue (ArrayArgument pk_6_. a.)) (IntExpr 13))
-(ReadCmd "" (ArrayArgument c..2 b5w_.))
-(TypeCmd y7.0._40 (FloatType))
-(AssertCmd
- (TupleLiteralExpr
-  (CallExpr h__T6.3 (CallExpr O (VarExpr u.C)))
-  (ArrayLiteralExpr))
- "")
+(StructCmd yP_C8 Ga_L_ (ArrayType (FloatType) 1) Q__ (StructType T) q__ (StructType V4k1_) I9__X (IntType))
+(StructCmd F_a a_G39_ (FloatType) lGa1g1 (VoidType) P_K9_1 (StructType fka_) mvKkP_ (StructType r_SiA_))
+(FnCmd O (()) (VoidType) (AssertStmt (CallExpr K__Z (TrueExpr) (VarExpr s) (VarExpr E)) "C_2__59|("))
+(StructCmd V x5 (FloatType) v (FloatType))
+(StructCmd U00Qld mhhN80 (BoolType) H2938 (ArrayType (IntType) 1))
+(StructCmd B FtE_ (IntType) r_R0r (FloatType) h_35_i (FloatType))
+(StructCmd jM BL7y17 (StructType wt9_) c5Z1_ (BoolType))
+(FnCmd f3N (((VarLValue y782) (StructType U8E))) (VoidType) (LetStmt (VarLValue RC_) (IntExpr 4)) (ReturnStmt (ArrayIndexExpr (DotExpr (FalseExpr) F) (FalseExpr))) (LetStmt (ArrayLValue l j r) (CallExpr W6_32l (FalseExpr) (FalseExpr) (FalseExpr))) (AssertStmt (ArrayLiteralExpr (VoidExpr) (VarExpr Z) (FalseExpr) (TrueExpr)) "") (LetStmt (ArrayLValue j_5xY_ e F) (FalseExpr)) (AssertStmt (DotExpr (FalseExpr) K) ""))

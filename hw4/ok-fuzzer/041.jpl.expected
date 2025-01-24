@@ -1,38 +1,5 @@
-(FnCmd
- s0
- ((VarBinding (VarArgument o..) (TupleType)) (TupleBinding))
- (FloatType))
-(FnCmd
- vh
- ((TupleBinding))
- (TupleType)
- (ReturnStmt (ArrayIndexExpr (IntExpr 0)))
- (ReturnStmt (FloatExpr 75)))
-(LetCmd
- (TupleLValue
-  (ArgLValue (ArrayArgument ko F._c b_ Q.W))
-  (ArgLValue (ArrayArgument XYk85)))
- (FloatExpr 0))
-(WriteCmd (TupleLiteralExpr) "")
-(AssertCmd (CallExpr v8_2 (TupleIndexExpr (VarExpr Y.6__F) 556)) "")
-(FnCmd
- uU_.
- ((VarBinding (ArrayArgument k.) (ArrayType (TupleType) 1)))
- (IntType)
- (LetStmt
-  (ArgLValue (ArrayArgument B8_5s9))
-  (TupleIndexExpr (TupleIndexExpr (VarExpr Gu) 6) 1))
- (AssertStmt (CallExpr T.) "@= "))
-(LetCmd (ArgLValue (ArrayArgument u n)) (VarExpr V48a))
-(TypeCmd x4e_Qx (IntType))
-(LetCmd (ArgLValue (VarArgument D_)) (TrueExpr))
-(ShowCmd (ArrayLiteralExpr))
-(PrintCmd "")
-(PrintCmd "")
-(ShowCmd (IntExpr 65))
-(AssertCmd (VarExpr pP) "")
-(FnCmd m31 ((VarBinding (ArrayArgument O_) (FloatType))) (IntType))
-(ReadCmd "^" (VarArgument X8))
-(ReadCmd "" (ArrayArgument D r_ X_2k))
-(TimeCmd (TypeCmd q_._ (VarType s_co9.)))
-(LetCmd (ArgLValue (VarArgument l7UkF.5)) (VarExpr P_0._))
+(StructCmd I_ u_1_ (VoidType) L2Dr (StructType d_DHo) LKb_ (IntType) M8C__r (StructType D_3__) H (StructType N_Uk))
+(FnCmd p_W (((VarLValue n1_30_) (FloatType))) (BoolType) (ReturnStmt (TrueExpr)) (ReturnStmt (VarExpr xB_z3)) (AssertStmt (VoidExpr) "") (AssertStmt (FloatExpr 0) "3d4(") (AssertStmt (VoidExpr) "v1;U3^_P6"))
+(StructCmd P7 R (ArrayType (ArrayType (FloatType) 1) 1))
+(FnCmd A_Pu (((VarLValue V803_) (BoolType))) (FloatType) (LetStmt (VarLValue Z1_jde) (FloatExpr 0)) (ReturnStmt (VarExpr V_)) (LetStmt (VarLValue o) (VarExpr T3H__)) (LetStmt (ArrayLValue cW N H t n R) (IntExpr 7)) (ReturnStmt (FloatExpr 0)) (AssertStmt (FloatExpr 50234740) "X__9}BN9_w,") (LetStmt (VarLValue j96_6_) (VarExpr YXK1)))
+(FnCmd KM__0_ (((ArrayLValue c5_h T v eO_ arq) (StructType x3VN) (VarLValue d___) (StructType yo))) (BoolType) (AssertStmt (ArrayIndexExpr (VarExpr l) (VarExpr B) (FalseExpr) (FalseExpr) (VarExpr a)) "3__R48RR_[") (LetStmt (VarLValue l_99L6) (FalseExpr)) (ReturnStmt (FalseExpr)) (ReturnStmt (VarExpr N)) (ReturnStmt (FalseExpr)) (ReturnStmt (FalseExpr)))

@@ -1,3 +1,4 @@
 fn f(a : a) : a {
 assert a[a], ""
+return 3.2
 }

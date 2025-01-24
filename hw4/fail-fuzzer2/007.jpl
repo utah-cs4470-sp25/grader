@@ -1,24 +1,23 @@
-read image "," to VSj
-read image "%;`^?)`" to W_g4.34. [ ]
-print ""
-assert true , ""
-assert [ { .5498167420623 , true } , [ ] , true ] , " `{[`"
-let { j_ } = [ ]
-time print "{"
-time fn x ( { } ) : int {
-return j_._..3h8Qk_238 ( 95 ) [ ]
+struct I {
+F_6D : u1Xp2m [ ]
+i2 : CfAf5S
+R_9_ : bool
 }
-type z_s2.VRzl = { }
-write image [ J ( ) ] to ""
-read image "@(" to i_JqY21_Pl
-write image false [ ] to "`"
-let r.2U..1 r.2U..1 [ ] = { }
-show [ ] { 1649 }
-write image false to "."
-assert 0 { 45 } , "."
-read image "" to T7J0 [ X_y.5 ]
-show 845795
-fn c.4 ( { } ) : float {
-assert false , ""
+struct v6G {
+w1__l : void
+bool : bool
+t_ : bool
+f : E3_
 }
-assert 9 , "" 
+struct B7L_ {
+J : void
+}
+let WT = [ ( X ) , true . b5___w , false ]
+struct j {
+h4253_ : float
+gVZ_88 : int
+M8o_z : void
+J2 : e540_
+z4 : int [ , , , ]
+}
+let P [ T2c65 , k_9x_ ] = [ F ] . dH_ [ D5_ , MT_ ( w ) ]

@@ -1,24 +1,24 @@
-print "${"
-fn U_ ( { } , RA6_ : float , a_2F_ : bool ) : { } {
+let C_5_ [ O_D , F4_7 ] = I_2_ ( MIS ( true , void , B , true ) , lGD83 { false } , 18402214 . KKb , s35__d { false } , w3Q0_ ( void ) )
+struct F77G8 {
+RrB : void
+N : i6_f
+L__9 : Sv
+hN_ : void
+iP_ : int [ , , ]
 }
-assert { D } , ""
-let G [ Yc22479. , up , a9_8 ] = FN5
-print ""
-write image false to "|"
-show { l. (
-assert true , "%"
-let G_ [ ] = e5__TCaL4 ( { } [ ] { 8 } )
-assert { } [ 2904.5 , M_4_ZG73.P_83 , 448.4 , ZA4N } 57 ) , { { } , M8 } ] , ""
-read image "" to v_oU.3
-let M3 [ m_...1_B , r8 ] = true
-read image "" to J4_.
-print ""
-fn G.2___.5 ( { } ) : bool {
+struct t_h_2 {
+F42d : bool
+iE : void [ , ] [ , ]
+e__A0 : float
+A1__ : void
+{ : A
 }
-fn UV ( H9_wX_A4_N.S [ ] : float ) : int {
-assert 12898.83 , "?^"
+let l_ = true
+let egv_ [ k__Ts , I9 , P__ , y404_w , k_l_i7 ] = void
+struct jR__ {
+VE_U_w : int
+zD__9 : bool
 }
-assert 0 , ""
-assert [ 8 , m2IM ( 564 ) , true [ { } ] { 3 } , o2 , ( ey_ ( true , K7T0929__8_fp._2l__ ) ) , g_. , true , ai ( true , [ { false } ] , { } ) , false ] , ""
-write image 40.07091 to "."
-let { } = true 
+struct R0__A I5PY_R
+h8__w : void
+}

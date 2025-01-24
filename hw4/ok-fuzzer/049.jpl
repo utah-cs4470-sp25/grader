@@ -1,21 +1,33 @@
-print ""
-let m9C[] = x..A8.gp ( 7 )
-type H. = {}
-fn fC5F ( {} ) : bool { 
-  
- }
-type M3I__ = float
-fn Pa7._o__ ( { { {} } , { { x. : bool , {} , { b2_8j..9z._5 : int , Y2s96 : int } } , { { { {} } } } , { n8[] : float , { { R913w..5s [ n ] : M8_ } } } } , { { {} } } } , {} , { {} , {} , { {} } } , k4 [ c0IAx ] : X ) : {} { 
- assert 4, "" 
- return 7 
-  
- }
-read image "" to V
-read image "#!" to Q9fhV.5TT0.b4cE.w [ Y8Y__63691._r7E ]
-assert false { 47 }, ""
-show false
-write image [ .18693 ] to ""
-fn w2t ( { {} } ) : X { 
-  
- }
-type aSt_ = bool [  ]
+struct P  {//lBq__6_5608@:,_X623_
+   
+P__zT : bool//\6bK]_"ZFD_zf]_{_'[09
+lO : U79 
+P : int
+xE49 : int
+}//_7]3
+
+struct  s_67_  {//ax?"p_
+uo8b : int//&4x+{g_
+
+P_5_ : void 
+//X_g513\~e=_7V+
+}//td_8_H6
+struct  J__ {
+a_6__1 : int  
+v8__Y : float [ ,, ]
+w : void
+gk : float
+
+} 
+fn i__():void{//2c_a_x_V6_4o_f_@
+
+assert [ false,K ] , ""//=_#_'_R_981Lk0a_
+let I_Q_[j] = ( void )//aq
+let jT[u,e,p,n,y] = [ void ]//
+ 
+}//J~1.
+
+struct  p   {//
+
+e__tD : int
+}//6__Ty/mlA

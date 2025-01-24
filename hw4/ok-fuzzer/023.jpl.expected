@@ -1,52 +1,9 @@
-(AssertCmd (FloatExpr 9) "(")
-(ShowCmd (FalseExpr))
-(TimeCmd (WriteCmd (VarExpr D9) "^,~"))
-(FnCmd
- G
- ((TupleBinding))
- (BoolType)
- (AssertStmt (FloatExpr 0) "-")
- (ReturnStmt (TrueExpr)))
-(AssertCmd (IntExpr 77) "")
-(TimeCmd (AssertCmd (TrueExpr) ""))
-(ReadCmd "" (VarArgument q.))
-(WriteCmd (TrueExpr) ";")
-(PrintCmd "")
-(TimeCmd (TypeCmd kdz5__b (BoolType)))
-(TypeCmd ei0_FX9 (BoolType))
-(WriteCmd
- (ArrayIndexExpr
-  (ArrayIndexExpr
-   (ArrayIndexExpr
-    (TupleIndexExpr
-     (ArrayIndexExpr (ArrayLiteralExpr) (TupleIndexExpr (TrueExpr) 69))
-     22796))
-   (TupleIndexExpr (VarExpr F.__) 2)
-   (TrueExpr))
-  (VarExpr E.V_7)
-  (ArrayLiteralExpr
-   (ArrayLiteralExpr (VarExpr M.x) (TupleIndexExpr (VarExpr U) 2))))
- "'")
-(TimeCmd (ShowCmd (FalseExpr)))
-(TimeCmd
- (FnCmd
-  B
-  ((TupleBinding
-    (TupleBinding)
-    (TupleBinding
-     (TupleBinding (TupleBinding) (TupleBinding))
-     (VarBinding (VarArgument Y6) (IntType)))
-    (TupleBinding)
-    (TupleBinding (TupleBinding))
-    (VarBinding (VarArgument x9gF) (TupleType))
-    (TupleBinding)
-    (TupleBinding)
-    (VarBinding (ArrayArgument R) (FloatType))
-    (TupleBinding (TupleBinding))
-    (TupleBinding)
-    (TupleBinding)))
-  (TupleType)
-  (LetStmt
-   (ArgLValue (VarArgument F9))
-   (ArrayIndexExpr (FloatExpr 0) (TupleLiteralExpr)))))
-(ShowCmd (CallExpr aJ.))
+(StructCmd D_4G0 aC (ArrayType (FloatType) 3) X___7A (FloatType) f__4_i (StructType x__) U_ (ArrayType (VoidType) 4))
+(FnCmd pb6 (((ArrayLValue z_7 U_ fiX) (StructType K) (VarLValue p_) (IntType))) (IntType) (AssertStmt (FalseExpr) "_DT.`|P") (AssertStmt (StructLiteralExpr (FalseExpr) (TrueExpr)) "@h~") (LetStmt (VarLValue n5_59) (VarExpr e)))
+(FnCmd t__5X (()) (FloatType) (ReturnStmt (IntExpr 82164595)) (ReturnStmt (IntExpr 687913593)) (AssertStmt (DotExpr (DotExpr (FalseExpr) x) d44_) "F]5rO___"))
+(StructCmd En_KO6 f8_ (BoolType) p_ (BoolType) Z (FloatType) L (VoidType))
+(FnCmd r (((VarLValue DnK_) (ArrayType (BoolType) 4) (VarLValue jT) (VoidType))) (FloatType) (AssertStmt (ArrayIndexExpr (DotExpr (VarExpr a) U) (VarExpr d)) "Z_w6_}0!_TP") (ReturnStmt (TrueExpr)))
+(FnCmd g7__4 (((ArrayLValue a_K_4r W23___ f__054 f_) (IntType))) (StructType g) (LetStmt (VarLValue Z_8I) (FalseExpr)) (LetStmt (ArrayLValue i7R91_ I N) (FloatExpr 2)) (AssertStmt (IntExpr 2) "?2Y.S<\_8") (AssertStmt (CallExpr t_2_ (TrueExpr) (TrueExpr)) "___2%4=>") (AssertStmt (StructLiteralExpr (VarExpr D) (VoidExpr)) "O") (AssertStmt (CallExpr iwi67T (VarExpr t) (FalseExpr) (VoidExpr) (VoidExpr)) ":9K_8[6#5_&") (LetStmt (ArrayLValue f3Z_ G) (TrueExpr)) (ReturnStmt (ArrayLiteralExpr (VoidExpr))) (LetStmt (VarLValue F18aYa) (StructLiteralExpr (VoidExpr) (VarExpr S) (FalseExpr))))
+(StructCmd K_ f1_4 (FloatType) b6__A_ (VoidType) bX___ (ArrayType (VoidType) 4))
+(StructCmd M j_ (VoidType))
+(StructCmd m H_ (BoolType) n_edF (ArrayType (ArrayType (BoolType) 4) 3) a_76SU (VoidType) J (StructType L5) K_71_8 (FloatType))

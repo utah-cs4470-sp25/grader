@@ -1,39 +1,8 @@
-(PrintCmd "")
-(TypeCmd O84 (TupleType))
-(LetCmd
- (TupleLValue (ArgLValue (ArrayArgument V.A.0j_L__)))
- (TupleIndexExpr (CallExpr P51 (ArrayIndexExpr (IntExpr 97))) 8))
-(FnCmd
- iw_3O2_
- ((TupleBinding))
- (ArrayType (TupleType) 1)
- (LetStmt
-  (TupleLValue)
-  (TupleLiteralExpr
-   (TupleIndexExpr (FloatExpr 2) 9)
-   (ArrayLiteralExpr)
-   (FalseExpr)
-   (TupleLiteralExpr (ArrayIndexExpr (FalseExpr)) (CallExpr yZ (CallExpr N.M)))
-   (TrueExpr))))
-(TypeCmd R (IntType))
-(ReadCmd "" (VarArgument KnbY5))
-(FnCmd S60 ((TupleBinding)) (BoolType) (AssertStmt (VarExpr UP) ":"))
-(PrintCmd "'#}#*")
-(LetCmd
- (TupleLValue (TupleLValue) (ArgLValue (ArrayArgument U_ a6e..1_F)))
- (FalseExpr))
-(PrintCmd "")
-(AssertCmd (IntExpr 20) "'$\&,")
-(AssertCmd (FalseExpr) "")
-(ShowCmd (FloatExpr 0))
-(ShowCmd (FloatExpr 0))
-(FnCmd K1 ((TupleBinding)) (ArrayType (BoolType) 1))
-(ReadCmd "#" (ArrayArgument Fv._Mqh))
-(PrintCmd "")
-(TypeCmd i.3 (FloatType))
-(LetCmd
- (TupleLValue (TupleLValue) (ArgLValue (ArrayArgument U5)))
- (TupleLiteralExpr
-  (TupleLiteralExpr)
-  (ArrayIndexExpr (ArrayIndexExpr (TrueExpr) (FloatExpr 0)))
-  (FalseExpr)))
+(StructCmd FB l7_7 (FloatType) Q0__ (ArrayType (VoidType) 1))
+(StructCmd T__s g (FloatType) We (BoolType))
+(StructCmd h_P49_ Yt_4 (BoolType))
+(FnCmd k_849 (()) (BoolType) (ReturnStmt (FalseExpr)) (LetStmt (VarLValue j) (VoidExpr)) (AssertStmt (CallExpr f_ (FalseExpr) (VarExpr z) (VoidExpr)) "08o,0_4") (ReturnStmt (FalseExpr)))
+(StructCmd D x (ArrayType (ArrayType (IntType) 2) 2) E_1_ (IntType) z (IntType))
+(StructCmd U l__118 (ArrayType (BoolType) 1) h__ (IntType) t6e (ArrayType (IntType) 3) J___iC (BoolType))
+(StructCmd BH_H_d qYrw_ (IntType) N4xm (VoidType) UW0 (VoidType) l (IntType) g462__ (ArrayType (ArrayType (FloatType) 1) 2))
+(StructCmd R ed_M5Z (ArrayType (StructType bt6n) 1) nG_ (BoolType))

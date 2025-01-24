@@ -1,35 +1,9 @@
-(PrintCmd "")
-(FnCmd z ((TupleBinding)) (FloatType))
-(FnCmd
- TMX
- ((VarBinding (ArrayArgument Qvi cs56_o3c18) (TupleType)))
- (BoolType)
- (ReturnStmt (FloatExpr 9617714)))
-(PrintCmd "")
-(TimeCmd
- (LetCmd (ArgLValue (ArrayArgument G.z)) (TupleIndexExpr (TrueExpr) 0)))
-(TypeCmd C9 (ArrayType (TupleType) 2))
-(LetCmd (ArgLValue (ArrayArgument s3s.3H.)) (VarExpr L46_D..))
-(WriteCmd (TupleLiteralExpr) "*")
-(FnCmd
- hR
- ((TupleBinding (VarBinding (VarArgument s) (BoolType)))
-  (VarBinding (VarArgument oD8_x_H) (FloatType)))
- (VarType Xe0hM))
-(FnCmd
- H_5E
- ((TupleBinding
-   (VarBinding (VarArgument k.) (ArrayType (TupleType (FloatType)) 2))
-   (VarBinding (ArrayArgument Ap._ i7q1_0_1l6a0 v4s6yEL K.2) (FloatType))
-   (TupleBinding)
-   (TupleBinding
-    (TupleBinding
-     (TupleBinding)
-     (VarBinding (ArrayArgument J5f.iaC9jN) (VarType g5n))))
-   (TupleBinding)
-   (TupleBinding)
-   (VarBinding (VarArgument F2H9) (VarType S))))
- (IntType)
- (ReturnStmt (FloatExpr 0)))
-(TypeCmd vo21 (FloatType))
-(ReadCmd "{" (ArrayArgument T3_))
+(StructCmd V U (IntType) Z (BoolType))
+(StructCmd t6Y3 ZVi67E (ArrayType (FloatType) 3) Zi (VoidType) F1yw_j (FloatType) V (BoolType))
+(StructCmd a c27___ (IntType))
+(FnCmd H___4Q (((VarLValue m) (ArrayType (FloatType) 4) (VarLValue OKq2) (IntType))) (StructType yu_0_E) (ReturnStmt (StructLiteralExpr (FalseExpr) (VoidExpr) (VarExpr D))) (AssertStmt (IntExpr 18317) "y@j|_H _") (LetStmt (ArrayLValue F1__ N P o I i) (CallExpr ZV_ (VarExpr a) (VoidExpr) (VoidExpr))) (LetStmt (VarLValue F) (IntExpr 705)))
+(FnCmd S__R21 (((ArrayLValue e3 r__ AesI8_) (FloatType) (ArrayLValue Lz27C3 s j) (StructType O_a0))) (StructType v) (ReturnStmt (VoidExpr)) (ReturnStmt (StructLiteralExpr (FalseExpr) (FalseExpr) (VarExpr M) (VoidExpr))) (ReturnStmt (FloatExpr 754)) (ReturnStmt (ArrayIndexExpr (FalseExpr) (TrueExpr) (VarExpr c) (VarExpr B))) (AssertStmt (DotExpr (VarExpr J) I) "w4C3_0%@?n8"))
+(FnCmd C2 (()) (VoidType) (AssertStmt (FloatExpr 0) "_e"))
+(StructCmd B5L56T hW_ (ArrayType (ArrayType (ArrayType (FloatType) 4) 4) 2) F_ (ArrayType (IntType) 1))
+(StructCmd l9_Eg7 Pn (FloatType) J (StructType z))
+(FnCmd z4_ (()) (BoolType) (LetStmt (VarLValue JK_w) (IntExpr 300774990)) (AssertStmt (DotExpr (VarExpr W) X_fR) "903[x_5,Q") (LetStmt (ArrayLValue DO9 z) (VarExpr qT83)) (ReturnStmt (StructLiteralExpr (VarExpr L))))

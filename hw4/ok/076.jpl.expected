@@ -1,0 +1,1 @@
+(AssertCmd (DotExpr (DotExpr (DotExpr (DotExpr (VarExpr a) b) c) d) e) "f")

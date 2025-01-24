@@ -1,0 +1,1 @@
+(AssertCmd (DotExpr (ArrayIndexExpr (CallExpr f (DotExpr (ArrayLiteralExpr (IntExpr 3) (IntExpr 4)) y)) (IntExpr 0)) x) "tressa")

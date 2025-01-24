@@ -1,4 +1,5 @@
 struct looper {
   first: float[]
   second: looper
+  third: void
 }

@@ -1,16 +1,27 @@
-assert 97526. , ""
-time fn E. ( { } ) : { } [ , ] {
-return 416.24600
+struct i18t {
+RC__ : void
+q4Z_ : void
+CU_ : bool
+b12s : void
+i_J : bool [ ] [ , , ]
 }
-fn v ( { { { { } } } , { } , { } } ) : { } {
-assert 0 , ""
+let C_ [ M_ , a0 , c__eH , Td__ , A0Z ] = F ( i8k__ ( void ) , void , b33 ( false ) , [ void , false ] , [ h ] )
+let u62z8 = 14000562
+let y___ [ AC2 , g44_ ] = 84109859
+let M2S_6_ [ hT___z ] = [ x400 { false , S , t } , [ F , void
+, 6962616911 , O1IK { false } , false ]
+let T_R16v [ O65_ , N1 , g190j6 , RN_I ] = void
+struct u_6m6 {
+K39_ : int
+c_Q7 : void
+K_P3 : void
 }
-print ""
-let u.k_t_m_K_y. = 06.809
-fn Vi ( { { { } } } ) : { { } } {
-let { M_.b1b6 [ ] } = [ ]
+struct s {
+n_5 : float [ , ]
+Y_Zy : float
+p_8 : int
+w_ : void ] }
+struct a6nM_1 {
+G7F1 : bool
+g : bool
 }
-image true to ""
-read image "/}@" to X_1._d [ Z__945 ]
-time type r0w4 = K.9__P_
-assert 81 , "" 

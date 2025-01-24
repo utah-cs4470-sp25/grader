@@ -1,0 +1,9 @@
+image void to ""
+print ""
+show false
+show false
+read image "" to I
+read image "" to A
+read image "" to O
+read image "" to u
+assert false , ""

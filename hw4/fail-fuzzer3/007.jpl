@@ -1,25 +1,54 @@
-fn e1 ( { CJ. [ ] : int , R.49_X : int , { { } } } ) : bool {
-assert 14 [ ] , "==r"
-return { .98628 , true , h_ , 48 , false }
+fn e_0_z9 ( ) : bool {
+let l3O [ sa_ , ssq4_3 , q__ , omZ ] = [ false , void ]
+return 0162976384.
+let K_0_ = [ o . S , P ]
+let v [ I , cC0Ns_ , T__6b_ , x_ , O_ ] = [ false , z ]
 }
-write image 86.19 to "&L"
-time write image [ { } , 5 , ( { } ) , true ] to ""
-assert false , ""
-fn bQ ( { E [ W_7 , oj_8U. , cF43 , USue ] : bool , { } , { } , { } } ) : { x [ ] , { bool } , rqC.x3_..v } {
-let y1._ [ Y ] = 6002
+fn J9 ( ) : float [ , ] {
+return ( true . N_M )
+let m [ Qy ] = false
+let G__ = 2419112
+assert true [ void , V , ( void ) ] , ":!g"
 }
-fn fUxf ( { } ) : { } {
-assert 5 , "~"
+fn sS ( vOa__x [ y , Z2n39X ] : bool ) : void [ , ] {
+assert .9709 , ""
+assert ( void ) , "~070K_q"
+let OY4_W8 [ c4 , c_69I , t ] = false
+assert 8360845 , "4O1+Q7A"
+return .7685
 }
-show 64778539.
-read image "]" to Y_t.. [ ]
-fn C ( { } ) : int {
+fn oC6_ ( go156c : int ) : int [ , , , ] {
+return C1 ( j , 069 , true )
+return 509148940
+assert [ g , false . F , 0853 ] , "__%~__0_H"
+let Z_53_m = 558694106.
+let m_L__ = void
+let h2 [ q , k8A ] = f_w_ ( e , ( true ) , false , 831642011 )
+let R = true
+return void
 }
-let u = [ { oh..e ( ) [ g ( [ false , wP8x.s ] ) , false , true ) nu ] [ 6 ] , 9 , MS___S ( ) , 3.48540789 , D.4__01._0p_C ( { } [ 2977259. ] { 17 } ) } [ [ ] ] , false ] { 5 } { 11 }
-read image "" to HT862_x_ [ R6 , P9v_32 ]
-time time print "'"
-time print " *="
-fn m ( { } , { { } } , { } , : { } {
-assert 882 , ""
+fn Qr ( IkFk2_ : YH_ ) : j2z__ {
+let tg [ w , I0m9 , h05 ] = e__G ( a , true , void , false . F )
+assert void , "\_A__q"
+assert ( false ) . F0__5_ , ";F7f_O7@"
 }
-show Z ( ) 
+fn I9__0T ( F_89v : bool , Y_ : float , A3_7_N : bool [ ] [ ] ) : float {
+assert 9312 , "u_.55_yP86"
+assert ( false ) , "_+g"
+}
+fn U ( Q : int ) : float {
+assert kXJ , "___k}. o"
+assert Y_t2 ( 8668707 , false , 8144758949 , void ) , ""
+assert [ false , 50 , ( false ) ] , "1x*ynt"
+assert void , "9_Sk_n=4"
+return E { true }
+}
+fn Km__9_ ( ) : void [ ] {
+return saz_ ( false )
+assert true . ZL_rO , "99j97g.4M"
+return false
+assert ( true [ false , true ] , "j2&8__E"
+return void . ZE_
+let v_ = true
+return 8
+}

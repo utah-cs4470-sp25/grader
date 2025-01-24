@@ -1,63 +1,7 @@
-(ShowCmd (TrueExpr))
-(TypeCmd X.8036_ (ArrayType (TupleType (TupleType)) 1))
-(TimeCmd (TypeCmd b (FloatType)))
-(ReadCmd "&" (ArrayArgument te..8 H))
-(FnCmd
- E_.C
- ((VarBinding (VarArgument YXa3r) (VarType ZIF)))
- (BoolType)
- (ReturnStmt (IntExpr 2)))
-(TimeCmd
- (LetCmd
-  (TupleLValue
-   (ArgLValue (ArrayArgument sU__57 I_tmVZ6N2 YH S))
-   (ArgLValue (VarArgument O)))
-  (TupleIndexExpr (TrueExpr) 557)))
-(ReadCmd "" (ArrayArgument R905_292w u600k_g))
-(WriteCmd (FalseExpr) "'")
-(FnCmd
- L
- ((TupleBinding
-   (TupleBinding
-    (TupleBinding
-     (VarBinding
-      (ArrayArgument i)
-      (ArrayType
-       (TupleType
-        (IntType)
-        (TupleType)
-        (ArrayType (ArrayType (TupleType) 4) 1))
-       2))))))
- (BoolType)
- (AssertStmt (VarExpr pgQ_6hM2) ""))
-(PrintCmd "")
-(LetCmd (ArgLValue (ArrayArgument G)) (ArrayLiteralExpr))
-(AssertCmd (VarExpr O) "")
-(ShowCmd
- (TupleLiteralExpr
-  (ArrayIndexExpr (CallExpr K.sX2.) (TrueExpr) (ArrayLiteralExpr))))
-(AssertCmd (FalseExpr) "")
-(ReadCmd "\" (VarArgument S5))
-(FnCmd
- J58_3bf.58RG
- ((TupleBinding
-   (VarBinding (VarArgument P_) (VarType uRI))
-   (TupleBinding)
-   (TupleBinding)))
- (IntType)
- (AssertStmt (FloatExpr 70) "")
- (AssertStmt (FalseExpr) ""))
-(TypeCmd K (ArrayType (VarType bK_) 6))
-(FnCmd
- M._R
- ((TupleBinding)
-  (TupleBinding
-   (TupleBinding (TupleBinding))
-   (VarBinding (VarArgument qi00) (VarType a2B))))
- (TupleType (TupleType))
- (LetStmt (ArgLValue (VarArgument mH99)) (TrueExpr))
- (LetStmt
-  (TupleLValue)
-  (CallExpr H (FloatExpr 527) (VarExpr j3B) (ArrayLiteralExpr))))
-(LetCmd (ArgLValue (ArrayArgument A JkT7)) (VarExpr b.i))
-(ShowCmd (VarExpr F))
+(StructCmd u4____ os3 (IntType) Q (StructType cQP) R (IntType))
+(FnCmd NY8H2_ (((ArrayLValue D_ x) (VoidType) (ArrayLValue u Q0_ Q17 DR7_ J7) (StructType zZ))) (IntType) (AssertStmt (TrueExpr) "e8I") (AssertStmt (DotExpr (FalseExpr) U7p7m) ""))
+(StructCmd B1D47 b_O_ (ArrayType (BoolType) 1) m2vH_ (ArrayType (IntType) 1) u0o7 (IntType) Z (VoidType) O7 (BoolType))
+(StructCmd AsgcT i (BoolType) bn_ (FloatType) Kp_H__ (BoolType))
+(StructCmd Q__6S_ v67 (IntType) rI24 (ArrayType (FloatType) 1) L__S (ArrayType (ArrayType (VoidType) 1) 2) D_B1 (BoolType))
+(StructCmd vZ lrC___ (ArrayType (FloatType) 2) eQ___ (FloatType) W (IntType) Q_0__0 (ArrayType (ArrayType (VoidType) 1) 2) A81N5Y (StructType n0))
+(StructCmd r F (FloatType) A5R (VoidType))

@@ -1,35 +1,5 @@
-(LetCmd (ArgLValue (ArrayArgument P3_83T)) (CallExpr n (TrueExpr)))
-(FnCmd
- Im._M
- ((TupleBinding) (TupleBinding))
- (TupleType)
- (ReturnStmt (IntExpr 7))
- (AssertStmt (FloatExpr 8176) "")
- (LetStmt
-  (TupleLValue (ArgLValue (ArrayArgument v B_6)) (TupleLValue))
-  (TupleLiteralExpr)))
-(LetCmd (TupleLValue) (FloatExpr 3))
-(TimeCmd (ReadCmd "V" (ArrayArgument F P)))
-(LetCmd (TupleLValue (ArgLValue (VarArgument cY._)) (TupleLValue)) (FalseExpr))
-(PrintCmd "")
-(TimeCmd (TypeCmd de (VarType mE3)))
-(ReadCmd "=$" (VarArgument S))
-(LetCmd
- (TupleLValue (TupleLValue))
- (ArrayLiteralExpr (FloatExpr 0) (FloatExpr 0) (VarExpr d06)))
-(AssertCmd (IntExpr 2) "|")
-(ReadCmd "." (VarArgument T__))
-(PrintCmd "\}")
-(LetCmd
- (TupleLValue)
- (ArrayIndexExpr
-  (FalseExpr)
-  (CallExpr jN1_5j)
-  (CallExpr ID_.i7 (FloatExpr 738))
-  (VarExpr n)))
-(FnCmd
- D.0__YVj1
- ((TupleBinding
-   (TupleBinding (VarBinding (VarArgument J_) (BoolType)))
-   (TupleBinding)))
- (ArrayType (TupleType) 1))
+(FnCmd J3 (((VarLValue v_) (IntType))) (FloatType) (LetStmt (ArrayLValue o8X_ m p f k J) (TrueExpr)) (LetStmt (ArrayLValue dT__ A K r H) (IntExpr 422629)) (AssertStmt (FalseExpr) "] ") (LetStmt (VarLValue k) (ArrayLiteralExpr (VoidExpr) (VarExpr f) (VarExpr R))) (LetStmt (VarLValue J__3_f) (FalseExpr)) (AssertStmt (CallExpr PLY21 (VarExpr q)) ":O_i"))
+(FnCmd m6 (((VarLValue f_n__n) (BoolType))) (ArrayType (ArrayType (FloatType) 4) 4) (LetStmt (VarLValue d42a_) (DotExpr (FalseExpr) Ffa)) (ReturnStmt (TrueExpr)))
+(FnCmd S69 (()) (VoidType) (ReturnStmt (TrueExpr)) (LetStmt (ArrayLValue BX60_ p H) (ArrayIndexExpr (VoidExpr) (VoidExpr) (FalseExpr))) (AssertStmt (VoidExpr) "4") (ReturnStmt (ArrayIndexExpr (FalseExpr) (TrueExpr))) (LetStmt (VarLValue k) (ArrayIndexExpr (FalseExpr) (VarExpr j) (FalseExpr))))
+(StructCmd RY N___i (StructType Va))
+(FnCmd n (((VarLValue e9_1) (ArrayType (StructType Y_) 2) (ArrayLValue M_0_ m a_Fst7 XB A4) (FloatType))) (ArrayType (IntType) 4) (LetStmt (VarLValue f_8) (FalseExpr)) (ReturnStmt (VoidExpr)) (ReturnStmt (VarExpr C)) (LetStmt (VarLValue m83) (DotExpr (TrueExpr) t3)))

@@ -1,17 +1,39 @@
-assert true , "_+"
-assert 231 , ""
-fn P ( { { i_ : is. } , { { } } , { } } ) : { bool } {
+struct K_ {
+N : float
+p : float
+O_4 : l
+w_s511 : float
+z22 : float
 }
-read image "+" S.yfm67042_ [ k2 , d2iU6 , N_s_g ]
-let { } = [ ]
-read image "" to F [ ]
-fn a. ( { } ) : I {
-assert 38 , "-"
+let D8 = S5_5Dt ( 14393 ) [ void [ false , true , void ] , a ]
+: u2 {
+xar3 : void
+MM_ : bool
+k_O : sL31Q_
+z_P : bool
 }
-time time write image .099223 [ ] to ""
-write image true to ""
-fn w ( { } ) : int {
-let v = .82
-return false
-assert false , "&"
-} 
+struct U_6Q_5 {
+l6_1 : E3o_T0
+h_ : float
+}
+struct G66i_N {
+h_o09 : float
+WQ1 : float
+qG : float
+cU : bool [ , , , ] [ , , , ]
+Qm2_ struct int
+}
+let F74 = false
+let m_4hW_ [ dX_1hk , k , dW_ , j_2 ] = x
+struct U0_ {
+P_ : r1z379
+W_cnR : SN9k
+uJH2 : void
+u_5__ : float
+K25H : void
+}
+struct C2 {
+CT6 : bool
+t423Nr : float [ , ] [ , ]
+r_cB : int [ , , ]
+}

@@ -1,21 +1,82 @@
-assert 9., "("
-show false
-time write image D9 to "^,~"
-fn G ( {} ) : bool { 
- assert .52935, "-" 
- return true 
+struct   D_4G0 {
+
+aC : float [ ,, ]//_0_^=o3_0+
+
+X___7A : float//q\_M}105S1_$D\8_5H9'
+ 
+f__4_i : x__
   
- }
-assert 77, ""
-time assert true, ""
-read image "" to q.
-write image true to ";"
-print ""
-time type kdz5__b = bool
-type ei0_FX9 = bool
-write image [] [ true { 069 } ] { 22796 }[] [ F.__ { 2 } , true ] [ E.V_7 , [ [ M.x , ( ( U ) { 2 } ) ] ] ] to "'"
-time show false
-time fn B ( { {} , { { {} , {} } , Y6 : int } , {} , { {} } , x9gF : {} , {} , {} , R[] : float , { {} } , {} , {} } ) : {} { 
- let F9 = .1680 [ {} ] 
- }
-show aJ. ( )
+U_ : void [ ,,, ] 
+
+}
+//R_'_@s__@_8Z#_ T_7
+fn  pb6(z_7[U_,fiX] : K,p_ : int):int{  
+assert false , "_DT.`|P"//8#3
+
+assert l6_ { false,true } , "@h~"
+let n5_59 = ( e )//R+R])KJ_8_2____,
+//\V7_7+Ug
+}//_L42_#
+fn  t__5X():float{  
+return 82164595  
+return 687913593   
+assert false . x . d44_ , "F]5rO___" 
+ 
+}   
+
+struct   En_KO6   {//1."!D__y\2m
+  
+f8_ : bool   
+ 
+p_ : bool
+Z : float  
+//?\
+L : void//_hB\2R!7%CE
+//6>'O_^)
+} 
+fn r(DnK_ : bool [ ,,, ],jT : void):float{  
+   
+assert a . U [ d ] , "Z_w6_}0!_TP"//_
+
+return true
+//!g>.Ul2bM__0I
+}//6_JM345YM._Msq_*3]__$u
+fn g7__4(a_K_4r[W23___,f__054,f_] : int):g{
+//_,\281`_G__
+let Z_8I = false  
+let i7R91_[I,N] = 2.  
+assert 2 , "?2Y.S<\_8"
+//__s{3Gx*__,1_\"_J _
+assert t_2_ ( true,true ) , "___2%4=>"   
+assert Ky { D,void } , "O" 
+
+assert iwi67T ( t,false,void,void ) , ":9K_8[6#5_&"//>\61_x_}
+
+let f3Z_[G] = true//8@
+
+return [ void ]//`__D
+let F18aYa = Dq_ { void,S,false }//\1___T
+}
+  
+struct   K_ {
+f1_4 : float
+b6__A_ : void
+bX___ : void [ ,,, ]
+
+}
+struct M {//!8eK^H+3oS3]81&119
+  
+j_ : void 
+}//_Q820D;OvFh_4&.m;~j_Q_
+ 
+struct m   {//L_ 
+//WN_(0__1#71
+H_ : bool//_Z1M_9^r%4/_3
+n_edF : bool [ ,,, ] [ ,, ]
+a_76SU : void
+
+J : L5
+//__+1M___TDp;s|_%W_&%Zg
+K_71_8 : float//'_
+}  
+//4156Y_r-8~\2_5rz&

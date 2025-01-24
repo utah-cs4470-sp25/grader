@@ -1,37 +1,36 @@
-show { { false } , false [ ] } { 8901 }
-fn K._2..4 ( { } ) : int {
-assert n0 , ""
+struct R3_ {
+Nx : void
+DM_u : float
+Cf_ : float [ , , , ]
+K_ : p____x
+s : void [ }
+struct A8_l {
+E6w6t : float
 }
-read image "" to V [ Wa.B63 , x.j8E1v , cns4 , k_ , k4._71 ]
-time fn a__ ( W0455C8z : { int , { float
-[ , ] , float , bool } ) : { } {
-return true
+struct w_601 {
+R : W__v5
+iZ_E5 : float
+a : void
 }
-fn D_9 ( p_x : k.T ) : bool {
+struct iIYg {
+pT_G2_ : void [ , , ]
+r91 : float
+R_eB3 : void
+u : int
+Y_____ : bool
 }
-type D3 = Y14MWJ
-write image false [ D_a ( { } [ ] ) , ( [ true [ .91 { 9 } [ Y ] , false [ [ false , { } [ .1 ] { 1 } ] , false ] [ ] ] , 11 , 2. , 7553 [ true ] , o3 ( ) , ( N ( ) ) , [ ] , 6 , l__8._ ] ) ] to "&'`"
-fn lj_2_.Y1Q. ( { } ) : { float } {
-let t0m [ z3 ] = G ( )
+struct K__N51 {
+dl1_ : float
+Jy6__2 : float
+r9_51 : float [ ]
+, , , ]
+C : int
 }
-fn MN ( B_.0D [ G43 ] : m0u2T ) : { } {
-assert true , ""
+struct A_8 {
+D_84_ : void
+c6w9 : float
+J__P : bool
+G5688m : bool
 }
-print ""
-fn y_P.c ( Sg.6_U3 : f ) : { int , bool } {
-}
-type wn0z6g = { int , A5_5 }
-let eP_ [ v , pE ] = false
-read image "" to g..z0_P_H [ h , qJG , D9_3N , hu.0.x8 ]
-assert ( [ ] ) [ ] , ""
-fn K. ( { E7._80. [ ] : { AM_5_995N_t , X6. , int , bool , float } , { { { } , { } , { } } } , { } } ) : { } {
-return { false }
-let { } = h63
-} } fn t.35D_F.0.._MEWl._2R ( { { } } ) : { } {
-assert { false } [ ] , ""
-return gu._ ( )
-}
-time fn e.ok ( { { } , Y038SJ6_ : Dt4Q. } ) : int {
-assert false [ ] , ";"
-}
-assert true [ ] , "" 
+let W3_6_ [ b9__ , z50 ] = N2_ ( void ) [ J ] [ void , 32 , false , a04 { true , false , M , void } , void . w [ void ] ]
+let O4____ [ Z8 , l2_b , k_C64K , zc_p_ ] = void

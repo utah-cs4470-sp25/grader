@@ -1,24 +1,20 @@
-write image false to "."
-fn j ( { } ) : bool {
-let ir [ GW._ ] = { }
+struct l {
+KO4_ : int
+F : bool
+A1_ : g_d
+h62_ : bool
 }
-let { = 7
-fn qj.17 ( { { } } ) : { } {
-return false
+struct SU .
+wj : bool
+QA___ : bool
 }
-fn Q ( { } ) : fX5 {
-let { } = { }
+let P_a_7 = true { H__9O_
+let Cac_ = ( void . I__qCN )
+let b_47 [ Pd2tV ] = void
+struct s {
+i_ : void [ , , ]
+S2 : int
+x_92e : b1_1
+n8_D : bool
+t24_ : int
 }
-write image true to ""
-read image "" to F1
-write image 88 to ""
-fn i ( { F..r : bool } ) : o_tz {
-}
-type BA19. = { { } [ , ] }
-write image true to ""
-let bZ = u ( )
-time type s8 = { { } }
-time fn d. ( H5 : int ) : float {
-assert 2947. , ""
-let J_C_4u = [ { true } , 9 , false ]
-} 

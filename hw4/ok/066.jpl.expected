@@ -1,1 +1,1 @@
-(FnCmd f (((VarLValue a) (StructType a))) (StructType a) (AssertStmt (ArrayIndexExpr (VarExpr a) (VarExpr a)) ""))
+(FnCmd f (((VarLValue a) (StructType a))) (StructType a) (AssertStmt (ArrayIndexExpr (VarExpr a) (VarExpr a)) "") (ReturnStmt (FloatExpr 3)))

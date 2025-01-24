@@ -1,37 +1,8 @@
-(PrintCmd "=\,")
-(TimeCmd (LetCmd (ArgLValue (ArrayArgument K T_wQ_m55)) (TrueExpr)))
-(ShowCmd (VarExpr E4.yr))
-(AssertCmd
- (ArrayIndexExpr
-  (FloatExpr 440)
-  (ArrayIndexExpr (IntExpr 2) (TrueExpr) (VarExpr S7N) (CallExpr B3.5..s))
-  (IntExpr 0)
-  (CallExpr Y_F)
-  (ArrayLiteralExpr)
-  (IntExpr 834))
- "")
-(FnCmd
- e
- ((TupleBinding))
- (BoolType)
- (AssertStmt (ArrayIndexExpr (TrueExpr) (CallExpr OG7X76)) ""))
-(FnCmd y ((TupleBinding)) (VarType i) (ReturnStmt (FalseExpr)))
-(TypeCmd W5 (BoolType))
-(AssertCmd (CallExpr hi7OH (TupleIndexExpr (FalseExpr) 9) (TrueExpr)) "")
-(AssertCmd
- (TupleLiteralExpr
-  (ArrayIndexExpr
-   (IntExpr 2)
-   (CallExpr G2 (ArrayLiteralExpr (ArrayLiteralExpr)))
-   (ArrayLiteralExpr
-    (FloatExpr 0)
-    (VarExpr uW_53)
-    (CallExpr n__q_g1.KX.Q4. (TupleIndexExpr (VarExpr J_W) 5))
-    (ArrayLiteralExpr (ArrayLiteralExpr))))
-  (CallExpr s)
-  (ArrayLiteralExpr)
-  (TupleLiteralExpr (CallExpr h._) (VarExpr l_) (FalseExpr))
-  (VarExpr p)
-  (TupleLiteralExpr))
- ":]*,")
-(WriteCmd (TupleIndexExpr (IntExpr 2) 0) "")
+(FnCmd O4h (((VarLValue vg__5) (StructType X01))) (IntType) (ReturnStmt (TrueExpr)) (AssertStmt (TrueExpr) "*1") (AssertStmt (ArrayIndexExpr (VoidExpr) (VarExpr C)) "_"))
+(StructCmd z9_j_ g_ (FloatType) jp (IntType) k_th_6 (IntType) N_W (ArrayType (VoidType) 1) U9 (ArrayType (ArrayType (ArrayType (StructType W) 2) 4) 2))
+(FnCmd CuD_ (((VarLValue uK) (ArrayType (FloatType) 1))) (FloatType) (AssertStmt (CallExpr H (FalseExpr) (VoidExpr) (FalseExpr) (FalseExpr)) "H3") (LetStmt (ArrayLValue V F L V) (CallExpr I5A (VarExpr S) (FalseExpr))) (LetStmt (ArrayLValue Ytk_ O I G) (ArrayIndexExpr (VoidExpr) (TrueExpr))) (LetStmt (ArrayLValue ge b D J) (TrueExpr)) (ReturnStmt (FalseExpr)) (AssertStmt (VarExpr T) "b3A`8_") (ReturnStmt (VoidExpr)))
+(FnCmd V9x (((ArrayLValue s_ O72) (IntType) (VarLValue b4fn2) (FloatType))) (ArrayType (FloatType) 1) (LetStmt (VarLValue Q836) (CallExpr F (VarExpr c))) (LetStmt (VarLValue rZu_9) (VoidExpr)) (AssertStmt (CallExpr Io_8__ (TrueExpr)) "2I_'") (ReturnStmt (TrueExpr)) (LetStmt (VarLValue p73L8I) (DotExpr (VoidExpr) T)) (AssertStmt (FloatExpr 8106837828) "92_g%/") (LetStmt (ArrayLValue k i U) (IntExpr 318312)) (ReturnStmt (CallExpr dz_ (TrueExpr) (VoidExpr) (VoidExpr) (FalseExpr) (VarExpr h))) (AssertStmt (VoidExpr) "_G9<_c"))
+(StructCmd p_2j eM_69 (BoolType) x_B_Z_ (IntType) i____b (VoidType) L9Ce (VoidType))
+(StructCmd O3p_ Zsn (BoolType) F_f_ (BoolType))
+(FnCmd K_ (((VarLValue D7N) (StructType cO3) (VarLValue Z_w_) (BoolType))) (IntType) (AssertStmt (DotExpr (VoidExpr) z) "zl_C4p^68") (ReturnStmt (DotExpr (DotExpr (VarExpr L) b) J_kN)) (LetStmt (ArrayLValue o0__2 i) (TrueExpr)) (AssertStmt (IntExpr 3776580102) "__7_~!_FZ5_") (ReturnStmt (ArrayLiteralExpr (TrueExpr))) (LetStmt (VarLValue Do_k4_) (DotExpr (DotExpr (TrueExpr) H) G_)) (AssertStmt (TrueExpr) "_*gl") (LetStmt (VarLValue I64) (FalseExpr)) (LetStmt (VarLValue VY4q_) (DotExpr (VarExpr K) v_)))
+(FnCmd OV_k (((VarLValue o_j_R_) (ArrayType (VoidType) 4))) (ArrayType (IntType) 1) (ReturnStmt (FalseExpr)) (LetStmt (VarLValue y6) (CallExpr c0_ (FalseExpr) (VarExpr W) (TrueExpr) (TrueExpr) (VarExpr y))) (ReturnStmt (StructLiteralExpr (FalseExpr))) (LetStmt (ArrayLValue l9 p S E M) (ArrayIndexExpr (VarExpr S) (FalseExpr))) (AssertStmt (FalseExpr) "-") (LetStmt (VarLValue R_) (StructLiteralExpr (VarExpr o))) (ReturnStmt (ArrayIndexExpr (TrueExpr) (VarExpr q))) (LetStmt (VarLValue r) (DotExpr (TrueExpr) X_0u)))

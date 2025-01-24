@@ -1,37 +1,7 @@
-(AssertCmd
- (CallExpr
-  T_44_oYe_V
-  (CallExpr
-   t
-   (FloatExpr 6764368350)
-   (ArrayLiteralExpr (ArrayIndexExpr (TrueExpr) (TrueExpr)))
-   (FloatExpr 7949))
-  (IntExpr 0))
- "")
-(TypeCmd Ab.7c_ (TupleType))
-(TimeCmd (AssertCmd (ArrayLiteralExpr) ""))
-(PrintCmd "")
-(ShowCmd (ArrayLiteralExpr))
-(TimeCmd (PrintCmd ""))
-(FnCmd
- go.
- ((VarBinding (VarArgument T58) (TupleType (VarType m.b.j))) (TupleBinding))
- (TupleType (VarType Y))
- (AssertStmt (CallExpr V (FalseExpr)) "4\_\?"))
-(FnCmd
- SZ
- ((TupleBinding (VarBinding (ArrayArgument q_9499.3) (ArrayType (BoolType) 3)))
-  (TupleBinding (TupleBinding) (TupleBinding (TupleBinding))))
- (TupleType (IntType) (IntType))
- (ReturnStmt (ArrayIndexExpr (TrueExpr)))
- (ReturnStmt (TrueExpr)))
-(ShowCmd
- (TupleLiteralExpr
-  (IntExpr 183)
-  (VarExpr X91)
-  (TupleLiteralExpr)
-  (TupleLiteralExpr (FalseExpr))
-  (CallExpr t (FalseExpr))))
-(AssertCmd (ArrayIndexExpr (ArrayLiteralExpr)) "5")
-(TypeCmd j_2jy (VarType R6))
-(AssertCmd (ArrayIndexExpr (CallExpr P2.6.L6__.G_..) (VarExpr u)) " ")
+(StructCmd u739__ u_71 (IntType))
+(StructCmd Vo9_ W36Z (VoidType) X4_Y (IntType) H__ (VoidType))
+(StructCmd K0Q3i I (BoolType) vF_t4 (BoolType) aRh___ (VoidType) x_7 (ArrayType (FloatType) 1) Pma__ (BoolType))
+(FnCmd A___3Y (((VarLValue K3_4j) (StructType c_2he))) (VoidType) (ReturnStmt (DotExpr (VoidExpr) b)) (AssertStmt (ArrayIndexExpr (TrueExpr) (VoidExpr)) "P;W7") (ReturnStmt (CallExpr s_F5_Q (VoidExpr) (FalseExpr))) (ReturnStmt (CallExpr k_y1__ (FalseExpr) (VoidExpr) (TrueExpr) (VarExpr d) (VoidExpr))) (AssertStmt (CallExpr Jx1b_7 (VarExpr O)) "__r\3X_") (AssertStmt (FalseExpr) "hd*3206") (LetStmt (VarLValue Pq5L) (ArrayIndexExpr (FalseExpr) (FalseExpr) (VarExpr k) (TrueExpr))))
+(FnCmd Q__ (((ArrayLValue k3 S_C84 c) (StructType w0_) (VarLValue gR6) (ArrayType (BoolType) 4))) (FloatType) (ReturnStmt (ArrayLiteralExpr (VarExpr g) (FalseExpr) (FalseExpr) (TrueExpr))))
+(StructCmd W0W8I x (ArrayType (BoolType) 3))
+(StructCmd v1 K_7D (IntType) rc_6 (ArrayType (IntType) 4))

@@ -1,26 +1,5 @@
-(FnCmd K_6 ((TupleBinding)) (VarType X))
-(FnCmd
- c
- ((VarBinding (VarArgument av.) (BoolType))
-  (TupleBinding (VarBinding (VarArgument X.0G4_69.) (IntType)))
-  (VarBinding
-   (VarArgument NMSJ6D_)
-   (ArrayType (ArrayType (TupleType (ArrayType (TupleType) 2)) 4) 3)))
- (TupleType (FloatType))
- (AssertStmt (IntExpr 1) "")
- (LetStmt (TupleLValue (ArgLValue (ArrayArgument s_))) (ArrayLiteralExpr))
- (ReturnStmt (VarExpr T0g)))
-(ShowCmd (FalseExpr))
-(LetCmd (TupleLValue (ArgLValue (VarArgument a.))) (FalseExpr))
-(ReadCmd ")" (ArrayArgument S))
-(TimeCmd
- (FnCmd
-  B___4_O37.8_463.U0.0_5
-  ((VarBinding
-    (ArrayArgument C__ lw9_89)
-    (ArrayType (ArrayType (TupleType (FloatType)) 1) 1)))
-  (IntType)))
-(WriteCmd (VarExpr VI7.Kw.) ".")
-(TypeCmd D48U0 (TupleType))
-(AssertCmd (TupleIndexExpr (FalseExpr) 49976) "^_/")
-(LetCmd (TupleLValue) (IntExpr 885))
+(StructCmd y f9 (StructType v5L) m (IntType) T_3_ (StructType Y_7) Nk9 (VoidType))
+(FnCmd b_4 (((ArrayLValue g XB_313 MWX___) (ArrayType (IntType) 2) (VarLValue X_m) (ArrayType (ArrayType (VoidType) 3) 2) (VarLValue fRH) (StructType P4107))) (FloatType) (LetStmt (VarLValue NyVB9) (IntExpr 8362)) (LetStmt (ArrayLValue m3S J d) (StructLiteralExpr (TrueExpr) (VarExpr g))) (ReturnStmt (FalseExpr)) (AssertStmt (IntExpr 96191) "") (AssertStmt (ArrayLiteralExpr (VoidExpr)) "'__R<8'>19") (AssertStmt (FloatExpr 19436387) "#_45c_r8D") (ReturnStmt (StructLiteralExpr (VoidExpr) (TrueExpr))) (AssertStmt (VoidExpr) "") (LetStmt (ArrayLValue B9000 I D J) (VarExpr a_M_)))
+(FnCmd xd_68_ (((ArrayLValue Np4_7_ ga8Q Q846e xF315 o4c CWc07) (IntType) (ArrayLValue z__ zo IY y Yw Q3__1) (BoolType) (VarLValue d8I_RQ) (StructType MD_))) (IntType) (LetStmt (VarLValue q0_0) (FloatExpr 8720549314)) (ReturnStmt (CallExpr YP (TrueExpr) (VarExpr v))))
+(FnCmd I_3qB_ (((VarLValue ES7_) (ArrayType (IntType) 4) (VarLValue mUL6) (IntType))) (StructType N2e) (LetStmt (ArrayLValue q c a D M) (FalseExpr)))
+(FnCmd i7___5 (((VarLValue M2_) (VoidType) (VarLValue A_A6t) (IntType))) (FloatType) (LetStmt (ArrayLValue T v O K X) (ArrayLiteralExpr (FalseExpr))) (AssertStmt (TrueExpr) "2_l,_") (ReturnStmt (VoidExpr)))

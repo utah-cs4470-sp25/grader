@@ -1,21 +1,64 @@
-write image true to "%*"
-assert false, ""
-fn z ( { f0 : Z , { { mkmVc9 : x , W : float } , { Ka.[] : int , { {} , z.5[] : t0 [ , ] , T_ : { bool , int } [ , ] , P_w [ nw.E ] : bool [ , ] [ , ] [ ,,,, ] [ ,, ] } , {} , {} , { i : { { {} } [ ,,,,,,, ] } } } , m.B : bool , { {} } , GAq [ S_rq9J. ] : bool [ , ] , {} , { {} , { { {} , { {} , {} } , {} , {} , {} } , {} } , { {} , {} , {} , {} , y.. : bool , { Z [ G. , a , U , B2 , X_8r , xwhU1__ ] : int } } , {} , { { g_[] : {} } } , {} } , { {} , U [ S8f , e.0 , d297 , rNe. ] : {} } } } ) : int [  ] { 
- return false 
- }
-print "`"
-print "&"
-fn lb6.0.07446 ( { { { Zh : bool , { {} , { { { { {} } } , a__9w_ : Mu.5_.w } } , {} , { uE2e__aZ [ Uy ] : int } } } , {} } , y [ o.84Fs__. ] : bool } ) : int { 
- let { G4._ [ N.__ , t22. , wR4v ] , { {} } } = false 
+fn   q0O_():bool{
+return ( true )//3
+assert N . Z9_ , "X=^" 
+return void [ D,z,true,false ] 
+return u
+}//___@
+//A1U_32'
+struct Nw0  {   
+
+E9_3 : bool [ , ] [  ] [ ,, ]  
+J____3 : void  
+VL : float   
+//y__f>Ps!_a1':9_
+h_ : void [  ]//*2H4.#4_:5-E}
+V_AdH : int 
+}//4_WR4_5\^"L_tO@___R95_
+struct   N1_18   {//5
+ 
+YV5f8 : void   
+//4"_Kp5p_
+F266 : int   
+O20_ : int [ , ] 
+
+p : int [ ,, ]//47}G92w!9__^5?;-_s2
+//__>_W4_
+}//__56G`f\1,6?_
+fn gl():bool{ 
+//_L74_;M/7L7_x__8
+return h { true,false,true,true,true }   
+assert ( void . G ) , "+6\"//5CGK(45E_X_7__=Uu
+
+return ( void ) . DH
+
+assert i5 { s } , "K_i_4"
+
+return true  
+let r___X2 = ( B . k )
+}//C&Q+8146__Tb83
+
+fn   As_56(s_ : void,j_1[m,l_8__] : N):float{ 
   
- }
-type A = int
-read image "" to w0.P_7x
-time assert 5364536950., "?|"
-type k7 = {}
-fn Q_._ ( {} , { {} } ) : float { 
- assert e__ ( ), "" 
- return true 
+let j_0Qo6 = ( true )
+//&?__Z
+}//__V5_3=_#a3_86Q
+
+fn yON(p8_ : int):int{  
+return [ true ]  
+ 
+let mf6_1v = M ( p,false )
+
+return 8809
+assert void , "Rx_G6"//_D
+//q9[(d/k_u
+let uS4__[U,X,Y,G] = [ W,h ]
+assert void , "101"
+ 
+}//_0
+
+struct  b  {  
+   
+I4 : cL_//)__xI/00{/08v5_9^-(_6
+Ok0kp : bool
+} 
   
- }
-read image "{" to J5__

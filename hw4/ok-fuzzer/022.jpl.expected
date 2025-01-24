@@ -1,63 +1,7 @@
-(FnCmd
- x
- ((VarBinding (VarArgument F_.1769Bh) (BoolType))
-  (TupleBinding
-   (TupleBinding)
-   (TupleBinding)
-   (TupleBinding
-    (TupleBinding)
-    (TupleBinding
-     (TupleBinding
-      (TupleBinding
-       (TupleBinding
-        (VarBinding (VarArgument i) (VarType C4__.))
-        (TupleBinding)
-        (TupleBinding)
-        (TupleBinding))))
-     (TupleBinding)
-     (TupleBinding
-      (TupleBinding
-       (VarBinding (ArrayArgument M__C0.8.) (ArrayType (VarType KW54E_) 2))))
-     (VarBinding (ArrayArgument l) (VarType xY3))
-     (TupleBinding))
-    (TupleBinding))
-   (VarBinding (ArrayArgument r8866__4D6_I p01s0La a5_.6M2) (FloatType))
-   (TupleBinding)
-   (VarBinding (VarArgument E) (IntType))
-   (VarBinding (ArrayArgument C._.X S4. E KHCt3M_b) (BoolType))))
- (ArrayType (BoolType) 1))
-(WriteCmd (TupleIndexExpr (FloatExpr 3334) 0) "")
-(FnCmd
- o9Ga_8y_2_u_q553_N
- ((VarBinding (ArrayArgument m. B G__ C46_m0 o) (TupleType)))
- (TupleType))
-(TimeCmd (LetCmd (ArgLValue (VarArgument r32)) (IntExpr 794)))
-(WriteCmd (VarExpr t) "\:?")
-(WriteCmd (FalseExpr) "&")
-(ShowCmd (TrueExpr))
-(TypeCmd n. (IntType))
-(FnCmd R_ ((TupleBinding)) (IntType))
-(PrintCmd "~:}#")
-(ReadCmd "" (VarArgument s.r))
-(FnCmd
- a_.F74
- ((VarBinding (VarArgument FO) (ArrayType (BoolType) 1))
-  (TupleBinding (TupleBinding))
-  (VarBinding (ArrayArgument tL) (IntType)))
- (VarType F..))
-(TimeCmd
- (FnCmd
-  F__5_
-  ((TupleBinding)
-   (VarBinding
-    (ArrayArgument G9.a_1 P__A._)
-    (TupleType
-     (BoolType)
-     (ArrayType (FloatType) 1)
-     (IntType)
-     (TupleType (BoolType) (TupleType) (VarType S) (TupleType)))))
-  (VarType OgP6)
-  (ReturnStmt (ArrayIndexExpr (FloatExpr 0)))))
-(TypeCmd x341.E7Uu (VarType JM))
-(TypeCmd V.5 (TupleType (IntType)))
-(WriteCmd (ArrayIndexExpr (TrueExpr)) "")
+(StructCmd Q3_B j_6 (StructType p) T (IntType) HY_e_d (FloatType) i (IntType) F__ (FloatType))
+(StructCmd C6Y__8 hx__13 (VoidType) H_ (StructType U) d_0 (ArrayType (VoidType) 3))
+(StructCmd p_8g S445 (IntType) U (ArrayType (FloatType) 4) f (StructType F_0_) TX_D0 (FloatType) T_Yh0 (VoidType))
+(StructCmd ex_v9T RL_ (IntType) D_7_ (BoolType))
+(StructCmd h4 KI_T (ArrayType (IntType) 1) l_O_ (StructType z_) y_0 (FloatType) b99 (IntType))
+(FnCmd sW (((ArrayLValue R_8g J O_) (BoolType) (VarLValue G_e_) (VoidType))) (ArrayType (StructType J__1) 2) (AssertStmt (TrueExpr) "_0_3_") (LetStmt (VarLValue df) (StructLiteralExpr (TrueExpr) (FalseExpr) (VoidExpr))) (AssertStmt (ArrayLiteralExpr (TrueExpr)) "\_3+S1_3") (AssertStmt (IntExpr 85) "9\"))
+(FnCmd g___ (((ArrayLValue c Z) (IntType) (VarLValue L0S1J_) (IntType))) (StructType Ay_Lg) (AssertStmt (StructLiteralExpr (TrueExpr)) "9__7HL") (ReturnStmt (FloatExpr 7)) (ReturnStmt (VarExpr Or)) (AssertStmt (FalseExpr) "71_W[=9=$") (ReturnStmt (ArrayLiteralExpr (TrueExpr) (VarExpr m) (FalseExpr))) (ReturnStmt (FalseExpr)))

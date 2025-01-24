@@ -1,27 +1,7 @@
-(TimeCmd (ShowCmd (FloatExpr 0)))
-(LetCmd (ArgLValue (VarArgument T.)) (FalseExpr))
-(WriteCmd
- (ArrayIndexExpr (TupleLiteralExpr) (TupleIndexExpr (CallExpr r98) 65))
- "! ")
-(FnCmd
- yY3
- ((TupleBinding
-   (TupleBinding)
-   (TupleBinding)
-   (VarBinding (ArrayArgument P) (FloatType))))
- (FloatType))
-(WriteCmd (TupleIndexExpr (FalseExpr) 8) "")
-(ShowCmd (FloatExpr 804))
-(WriteCmd (FalseExpr) "")
-(FnCmd
- dC.kj_08
- ((TupleBinding
-   (TupleBinding (TupleBinding))
-   (VarBinding (ArrayArgument s8.7.d e.) (FloatType))))
- (VarType j)
- (ReturnStmt (TrueExpr)))
-(WriteCmd (CallExpr q (ArrayLiteralExpr)) "")
-(TypeCmd T (BoolType))
-(AssertCmd (FalseExpr) "`")
-(PrintCmd "")
-(PrintCmd "%")
+(StructCmd N1 i1_7_ (BoolType))
+(FnCmd y__ (()) (BoolType) (AssertStmt (VoidExpr) "7") (ReturnStmt (CallExpr i (FalseExpr) (TrueExpr) (TrueExpr))) (AssertStmt (FloatExpr 928) "9;(|k_')5f") (ReturnStmt (StructLiteralExpr (VoidExpr) (VarExpr v) (TrueExpr) (TrueExpr) (TrueExpr))) (ReturnStmt (VoidExpr)) (ReturnStmt (ArrayLiteralExpr (FalseExpr) (VarExpr S) (FalseExpr) (VarExpr V))) (AssertStmt (VoidExpr) "m'___"))
+(StructCmd DT__8 G5h (BoolType) O_T__Q (BoolType) Z (IntType))
+(FnCmd R4 (((VarLValue q) (VoidType))) (StructType FC_t3_) (AssertStmt (TrueExpr) "_9O_") (AssertStmt (ArrayIndexExpr (IntExpr 852840531) (VarExpr V)) "0UE") (ReturnStmt (FalseExpr)) (LetStmt (ArrayLValue r0u_ o w T v I) (IntExpr 4455077687)) (LetStmt (VarLValue h9f) (VoidExpr)))
+(StructCmd Fj X (FloatType) p (StructType g8) b3__K (ArrayType (ArrayType (VoidType) 3) 4) wPT (StructType b3) Q (FloatType))
+(FnCmd er9G6 (((VarLValue M4__) (ArrayType (ArrayType (BoolType) 1) 3) (VarLValue j7) (IntType) (VarLValue Y25) (VoidType))) (ArrayType (FloatType) 3) (AssertStmt (StructLiteralExpr (VoidExpr) (VoidExpr)) "E1_e0@1") (ReturnStmt (VarExpr b)) (LetStmt (ArrayLValue GxM85L T z b) (VoidExpr)))
+(FnCmd R_E_ (()) (IntType) (LetStmt (ArrayLValue cO__19 s) (FloatExpr 911308)) (AssertStmt (FalseExpr) "T2") (LetStmt (VarLValue tw_gp) (IntExpr 613684040)) (LetStmt (VarLValue X6) (VoidExpr)) (ReturnStmt (StructLiteralExpr (VoidExpr) (TrueExpr) (FalseExpr) (TrueExpr))) (AssertStmt (TrueExpr) "_4V]-_^_"))

@@ -1,20 +1,59 @@
-print ""
-fn z ( {} ) : float { 
+struct  V {   
+U : int
+Z : bool  
+}   
+//\_c4_cn
+struct t6Y3  {
   
- }
-fn TMX ( Qvi [ cs56_o3c18 ] : {} ) : bool { 
- return 9617714. 
- }
-print ""
-time let G.z[] = true { 0 }
-type C9 = {} [ , ]
-let s3s.3H.[] = L46_D..
-write image {} to "*"
-fn hR ( { s : bool } , oD8_x_H : float ) : Xe0hM { 
+ZVi67E : float [ ,, ]
+Zi : void 
+F1yw_j : float
+
+V : bool   
+}//Hx6
+struct  a  {
+c27___ : int  
+}  
+fn  H___4Q(m : float [ ,,, ],OKq2 : int):yu_0_E{//_____e_r#a_81
+//;9'i_7_X__,_-rk\c
+return Q3M4 { false,void,D }  
+
+assert 18317 , "y@j|_H _"
+//9
+let F1__[N,P,o,I,i] = ZV_ ( a,void,void )
+let F = 0705
+}
+ 
+fn S__R21(e3[r__,AesI8_] : float,Lz27C3[s,j] : O_a0):v{
+
+return void//Bn8}R_q'm%D2_>87__gn
+return p__ { false,false,M,void }//.WY4_n1_5PD>%_p
+return 0754.0377//T%Q$6N
+return false [ true,c,B ]//}pf6;_1_!"-j[10Qk\%_
+assert ( J . I ) , "w4C3_0%@?n8"  
+}  
+fn C2():void{//9W
+   
+assert .601 , "_e"
+
+}   
+struct B5L56T  {//c<>0i,j
+hW_ : float [ ,,, ] [ ,,, ] [ , ]
+F_ : int [  ]
+}//#J&20___44_!Wo5___x4~C
   
- }
-fn H_5E ( { k. : { float } [ , ] , Ap._ [ i7q1_0_1l6a0 , v4s6yEL , K.2 ] : float , {} , { { {} , J5f.iaC9jN[] : g5n } } , {} , {} , F2H9 : S } ) : int { 
- return .99 
- }
-type vo21 = float
-read image "{" to T3_[]
+struct  l9_Eg7   {//\___9#__{_2?/4j$___
+Pn : float//v_6y_}_0_=
+
+J : z
+}//\Z0_(6\0
+//.AN
+fn z4_():bool{   
+  
+let JK_w = 300774990   
+assert W . X_fR , "903[x_5,Q"
+let DO9[z] = qT83
+   
+return T { L }//P_R5B409_31Q8wm_N5_33
+
+}//o__2_|J_|_7as__

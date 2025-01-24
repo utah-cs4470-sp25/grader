@@ -1,1 +1,1 @@
-(FnCmd f (((ArrayLValue a H) (ArrayType (StructType a) 1))) (StructType a) (AssertStmt (ArrayIndexExpr (VarExpr a) (VarExpr a)) ""))
+(FnCmd f (((ArrayLValue a H) (ArrayType (StructType a) 1))) (StructType a) (AssertStmt (ArrayIndexExpr (VarExpr a) (VarExpr a)) "") (ReturnStmt (VarExpr x)))

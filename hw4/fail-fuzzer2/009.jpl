@@ -1,23 +1,19 @@
-assert ( true ) , ")[:"
-assert Z , ""
-read image "" to q9F [ ou_8MGK ]
-assert false , ""
-fn int ( { { } , V [ AP__y ] : { } } , { { } } , { } ) : F {
-return { false , false }
-assert 58 , "'"
+let et790_ = a6 { ( true ) }
+struct a23yd9 {
+c4 : bool
+Z : float
+o07_h : float
 }
-print ""
-let n [ Y_.._ ] = 7 { 7 }
-fn WJ.S.7 ( { c_ : Q.n , N8.6. : bool , t_ : z.H_.5et , R [ C4o.5 ] : int , A : float } , { } ) : bool {
+struct ms4 {
+P9s_ : bool
+A4__G : I_23
 }
-print "  "
-fn N ( { G_708 [ e4_ ] : int } , { q._F [ ] : bool } ) : { { { { int [ , ] } } , Z_j_y_Q } } {
+let Z4L_ [ c , C , k6f , E__J08 , t5P792 t5P792 ] = void
+struct M6_ {
+C_ : void [ , , ]
 }
-write image false to ""
-print "$"
-let K [ J23J. , c. , H.x ] = false
-write image [ { } , ( 3 ) [ false , 5 , [ false ] ] , { } , p. ( ) , false , H1.02D ( ) ] to ""
-assert 987.72 , "%"
-fn J. ( N [ VV ] : float ) : float {
-assert yc , ""
-} 
+let U_4 [ nR_l , PRRN1 , N , w_ ] = O_ { 27031. , void , cuGe { j } , void }
+struct qM_844 {
+i_RK4 : h0N
+r : void
+}

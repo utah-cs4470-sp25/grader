@@ -1,38 +1,7 @@
-(LetCmd (ArgLValue (ArrayArgument pG...1 i3)) (FloatExpr 8))
-(TimeCmd (WriteCmd (ArrayLiteralExpr) ""))
-(FnCmd
- M
- ((TupleBinding (TupleBinding (TupleBinding))))
- (TupleType (TupleType) (VarType JR4_))
- (LetStmt (TupleLValue) (VarExpr yj16_T9)))
-(ReadCmd "" (ArrayArgument g Ikiia))
-(TypeCmd o (TupleType))
-(FnCmd
- Y_.T
- ((TupleBinding (VarBinding (ArrayArgument x) (VarType U_))))
- (VarType F_))
-(PrintCmd "$'")
-(LetCmd (TupleLValue) (TupleLiteralExpr (FloatExpr 0) (TrueExpr)))
-(PrintCmd "")
-(ShowCmd (TrueExpr))
-(TimeCmd (TypeCmd S30BB_ (ArrayType (IntType) 1)))
-(FnCmd
- js19__K_Ns
- ((TupleBinding
-   (TupleBinding
-    (TupleBinding)
-    (TupleBinding
-     (TupleBinding
-      (TupleBinding (TupleBinding (TupleBinding) (TupleBinding)))
-      (VarBinding (VarArgument E) (ArrayType (TupleType (VarType c_P)) 2)))
-     (TupleBinding (TupleBinding)))
-    (VarBinding
-     (ArrayArgument J_.0X53X9.e0 s5_R.e7Z3R1_jg8.)
-     (TupleType (VarType m3)))
-    (TupleBinding))))
- (ArrayType (TupleType) 4))
-(LetCmd
- (ArgLValue (ArrayArgument J4105 q02))
- (ArrayIndexExpr
-  (FloatExpr 0)
-  (TupleLiteralExpr (TupleLiteralExpr (FalseExpr) (CallExpr B288.3l14)))))
+(FnCmd tb_S (((ArrayLValue z9 x j__HS U3_6 v__) (StructType D_))) (IntType) (LetStmt (VarLValue d) (ArrayIndexExpr (VoidExpr) (VarExpr f))))
+(StructCmd x__HS_ p_w (VoidType) kB06 (VoidType) B71 (VoidType))
+(FnCmd al (((VarLValue m_) (IntType))) (FloatType) (AssertStmt (IntExpr 6) "6_\'[s2_") (LetStmt (VarLValue Y) (FloatExpr 81420638)) (AssertStmt (DotExpr (VoidExpr) p5) "_0t1_") (LetStmt (ArrayLValue d6___ P F J I D) (TrueExpr)))
+(StructCmd hf5M C (ArrayType (IntType) 2) j (BoolType) r_v2_h (ArrayType (BoolType) 4) r7 (FloatType))
+(StructCmd Eg G__ (StructType iC) SJC (StructType FPTc_) a9_b (IntType) l (VoidType) v30vh0 (IntType))
+(StructCmd g_ jX (ArrayType (FloatType) 1) B (ArrayType (ArrayType (BoolType) 2) 3))
+(FnCmd f (((ArrayLValue v4q fu82u K5) (IntType))) (ArrayType (VoidType) 2) (LetStmt (VarLValue B) (VarExpr l_)) (LetStmt (ArrayLValue A__4__ d) (ArrayIndexExpr (VoidExpr) (VoidExpr))) (ReturnStmt (ArrayIndexExpr (FalseExpr) (TrueExpr))) (LetStmt (VarLValue S_) (VoidExpr)) (ReturnStmt (ArrayIndexExpr (TrueExpr) (FalseExpr))))
