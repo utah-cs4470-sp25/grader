@@ -1,5 +1,5 @@
 (StructCmd U_I_ iG__R (FloatType) J_G90_ (BoolType) G5O7 (FloatType))
 (StructCmd V v_ (StructType m0Q) e (FloatType) ts67 (BoolType) f_ (StructType S42___))
 (StructCmd t_80_ p8L (BoolType) J7__U_ (IntType))
-(FnCmd E8 (((ArrayLValue TQ_ AN7h__ Sq_U5_ f_dP) (FloatType))) (VoidType) (AssertStmt (ArrayIndexExpr (IntExpr 6) (TrueExpr)) "__>_>x7&Q9") (AssertStmt (StructLiteralExpr (VarExpr N) (FalseExpr)) ""))
+(FnCmd E8 (((ArrayLValue TQ_ AN7h__ Sq_U5_ f_dP) (FloatType))) (VoidType) (AssertStmt (ArrayIndexExpr (IntExpr 6) (TrueExpr)) "__>_>x7&Q9") (AssertStmt (StructLiteralExpr mx2y0 (VarExpr N) (FalseExpr)) ""))
 (StructCmd lX9__W U_aA (StructType o3_) x (BoolType) K83_ (BoolType) Z (FloatType))

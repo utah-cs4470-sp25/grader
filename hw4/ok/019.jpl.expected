@@ -1,2 +1,2 @@
 (StructCmd mt)
-(LetCmd (VarLValue mt1) (StructLiteralExpr))
+(LetCmd (VarLValue mt1) (StructLiteralExpr mt))

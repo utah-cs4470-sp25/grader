@@ -1,4 +1,4 @@
 (StructCmd pair x (IntType) y (FloatType))
-(LetCmd (VarLValue mypair) (StructLiteralExpr (IntExpr 1) (IntExpr 2)))
+(LetCmd (VarLValue mypair) (StructLiteralExpr pair (IntExpr 1) (IntExpr 2)))
 (LetCmd (VarLValue myx) (DotExpr (VarExpr mypair) x))
 (LetCmd (VarLValue myy) (DotExpr (VarExpr mypair) y))

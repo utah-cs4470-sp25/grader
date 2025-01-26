@@ -1,2 +1,2 @@
 (StructCmd a elem (IntType))
-(LetCmd (VarLValue b) (StructLiteralExpr (IntExpr 3)))
+(LetCmd (VarLValue b) (StructLiteralExpr a (IntExpr 3)))

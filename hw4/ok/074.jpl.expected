@@ -1,1 +1,1 @@
-(FnCmd f (((ArrayLValue a H W) (ArrayType (StructType a) 2) (ArrayLValue b A) (ArrayType (StructType b) 1) (VarLValue c) (VoidType) (VarLValue d) (BoolType))) (StructType a) (AssertStmt (StructLiteralExpr (IntExpr 1)) "") (ReturnStmt (IntExpr 9)))
+(FnCmd f (((ArrayLValue a H W) (ArrayType (StructType a) 2) (ArrayLValue b A) (ArrayType (StructType b) 1) (VarLValue c) (VoidType) (VarLValue d) (BoolType))) (StructType a) (AssertStmt (StructLiteralExpr f (IntExpr 1)) "") (ReturnStmt (IntExpr 9)))

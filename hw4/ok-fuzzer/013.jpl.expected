@@ -2,5 +2,5 @@
 (StructCmd oD dTId (IntType))
 (StructCmd v_3S VSH (BoolType) o_f__ (ArrayType (StructType m1rK__) 1) svn3_ (ArrayType (BoolType) 3))
 (StructCmd Rw2_ Ox0_n3 (FloatType))
-(FnCmd g___ (()) (BoolType) (ReturnStmt (IntExpr 40)) (LetStmt (VarLValue Y_5_) (DotExpr (VarExpr Y) v33_)) (LetStmt (ArrayLValue aQ_ B z U z) (ArrayIndexExpr (VarExpr y) (TrueExpr) (VarExpr G))) (LetStmt (ArrayLValue E0 o G p B o) (FalseExpr)) (AssertStmt (VoidExpr) "3`") (ReturnStmt (StructLiteralExpr (FalseExpr) (TrueExpr))))
+(FnCmd g___ (()) (BoolType) (ReturnStmt (IntExpr 40)) (LetStmt (VarLValue Y_5_) (DotExpr (VarExpr Y) v33_)) (LetStmt (ArrayLValue aQ_ B z U z) (ArrayIndexExpr (VarExpr y) (TrueExpr) (VarExpr G))) (LetStmt (ArrayLValue E0 o G p B o) (FalseExpr)) (AssertStmt (VoidExpr) "3`") (ReturnStmt (StructLiteralExpr F54a0_ (FalseExpr) (TrueExpr))))
 (StructCmd Q B36 (StructType S6M__) aY1 (VoidType) n (StructType UqW_3T) J90o (FloatType))

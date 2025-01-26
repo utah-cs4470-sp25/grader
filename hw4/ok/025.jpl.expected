@@ -1,1 +1,1 @@
-(AssertCmd (StructLiteralExpr (VarExpr a)) "asdf")
+(AssertCmd (StructLiteralExpr foo (VarExpr a)) "asdf")
