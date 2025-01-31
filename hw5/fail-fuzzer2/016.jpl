@@ -1,18 +1,21 @@
-time fn w__34_0 ( { } ) : float {
-let v4 = Yz.uU3zgN._ ( [ ] [ if true then ! - M1_l ( 0230679. , Ze27.. ( ) , 8 , i.6I4 ( ) , ! false ) [ ] else { } [ ] ] , { } , array [ F : true ] false ) { 787 }
+struct v {
+O__8 : bool
+mi : int [ , , , ]
+x_2 : int
 }
-type V = float
-show false
-let s8E_.00__.._ = QB8_3n ( 11 )
-fn l ( { } ) ) : s95720e_78 {
-return n3_1 ( { array [ Y9o : cu__1.388 ( ) ] iA && if v.. ( ) then 296488 else q. ( u..9_O.R , true ) , 029119958. , .2093024585 } , 1 )
-assert [ ] , ""
+fn L6_G ( AKP_P_ [ e ] : L7_9 , Q_ [ N5H , J ] : int , A_ [ S_2 , C6_3_5 ] : int ) : void {
+let l8 [ R_ ] = if if true != void then ! true else 2923.00700 then true else b1_8 ( x { void . A , void } , [ array [ ] o , R , false ] , false , ( true ) , 8. )
+assert true || array [ L : p9oGk , Il__ : ! void , u : void , GY85 : array [ i_03s_ : void , AfJ_K : array [ ] true , nZ : false ] array [ ] false % false ] xnU_2 , ";45P,[^_r"
+return if ( ( 3. ) ) then [ sum [ ] void , if K then true else true ] [ if false then void else void || false , if void then true != i else true , P > false . V , array [ ] false . uu2 ] . b else - false . f )
 }
-let SI6.78 = { } < ( true )
-assert r18O4 { 4 } , ""
-fn e... ( zl2 : S , { { { { { } , z18U6.2 : bool , ArQ6 [ ] : float } , F : { { { int [ ] } , int } } } , { { } , N.1._ : { } , CAFYKn47 : { int [ ] [ ] } , { uB...5M7. [ ] : e [ ] } } , { { { F3u : Oi9_1 , { s8RPj8_.._u. : float [ , ] } } } , { { } } , { } , { JG1h : int } } } , { } } , k7B.Q.4. : int ) : int {
+struct f7U_1_ {
+E___ : int
 }
-time print ""
-time assert A9b83_ [ ( array [ sz. : { } ] [ ] ) ] , "_%"
-read image "~o*(.(" to Z
-assert array [ HS__002MG.g : ( true ) , a76_9__3_ : .82 ] [ array [ ] { s ( ) , [ ] , 1425 % w61XDsj1629 ( ) , array [ ] false - sum [ ] false } , array [ E_1w.79Y : 7 ] .9 , sum [ RHl__ : 49 ] [ ] ] , ",&*y" 
+time struct Y3a7_i {
+RF39 : void
+J6 : float
+}
+let h [ PNT , A_Jdb , WQ_S__ ] = ( - false )
+let rrh_ = [ false , if sum [ ] false then G { n , t_n_ { sum [ ] void , array [ ] void , true . F , ( false ) } } else sum [ zmrO_ : void , j7l7__ : K , ro0 : Kp { false && true } ] iu9 ( F3_9_X ( true , true ) , 3653304.01155 , false , T_o_ , ( false ) ) ]
+assert [ array [ F : false ] sum [ k__3_ : array [ ] true [ true ] , If8 : if array [ ] J then false <= e else true , az3_R_ : false , m0L : [ false ] ] A8_ { if true then false else false , O , void } [ N ( ! E ) ] , sum [ YkJ : array [ XC : ( true ) , m : ( false ) , f_s_e9 : Q , Y88 : array [ ] false , j_fT1_ : array [ ] true ] if b then void else void , o_60 : array [ ] false . y || - false , e_1_0o : H__9_ ( void , false ) [ false - true , void . h , o ] , aHu_1_ : void < sum [ ] true > Z > void ] sum [ y8 : false >= D , TUT_ : false >= false > if C then false else y , y99_L_ : true ] - void . N [ [ sum [ m : false , c : true ] true , x__ ( false ) , ! true , false . M ] , e9_H ( false , sum [ ] true , kP3P_ ( N ) , qF2 { void , false , b , void } , true . j < void ) ] ] , "82____"
+read image "_(_lr" to fP_5__ [ EJ_8C ]

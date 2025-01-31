@@ -1,12 +1,18 @@
-time print "}#W"
-time print ""
-write image sum [ ] 0 { 97 } to ";N"
-write image true to ""
-fn v ( { } ) : { g8W , float , float } { } let { D1987u_.4 , { { { { { Ag } , { { { { } , { } } , { } } } } , { Y [ dt ] } } } } } = 90035.
+let e6__ [ X ] = void
+struct B_H8 {
+vy_6 : int
+d : void
+m_S3c0 : bool [ ]
+G_s_S_ : int
+O : int
 }
-let { K } = sum [ ] { .38 } [ ]
-read image "('" to X04f [ i.d.63..k_ ]
-type o.4T_. = bool [ , , ]
-type IR. = { int , float , { }
-
- show [ true [ { .4 < true } ] , [ 82 , ( 51 ) == 450 ] { 6 } { 2293 } ] 
+assert qL_ { void . T , "_+_18"
+struct y66v {
+X_E7 : void
+zlE8 : bool
+El0N6 : n7
+L_7 : t_ [ ]
+G7 : float
+}
+read image "9_{" to u_9
+let f9_3_ = false

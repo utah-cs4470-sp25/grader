@@ -1,11 +1,1 @@
-(ShowCmd
- (BinopExpr
-  (BinopExpr (VarExpr a) + (VarExpr b))
-  *
-  (BinopExpr
-   (VarExpr c)
-   -
-   (BinopExpr
-    (BinopExpr (VarExpr d) * (VarExpr e))
-    *
-    (BinopExpr (VarExpr f) + (VarExpr g))))))
+(ShowCmd (BinopExpr (BinopExpr (VarExpr a) + (VarExpr b)) * (BinopExpr (VarExpr c) - (BinopExpr (BinopExpr (VarExpr d) * (VarExpr e)) * (BinopExpr (VarExpr f) + (VarExpr g))))))

@@ -1,5 +1,1 @@
-(ShowCmd
- (BinopExpr
-  (BinopExpr (VarExpr a) != (VarExpr b))
-  <
-  (BinopExpr (VarExpr c) == (VarExpr d))))
+(ShowCmd (BinopExpr (BinopExpr (VarExpr a) != (VarExpr b)) < (BinopExpr (VarExpr c) == (VarExpr d))))

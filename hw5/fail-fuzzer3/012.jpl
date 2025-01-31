@@ -1,29 +1,36 @@
-fn F ( { { } } , { q_xu : { float } , { } } ) : float {
+struct S___4 {
+a_j : void
+B__R_ : int
+i_ : xW84I_
+T3l : int [ , ]
+b__ : bool [ , ]
 }
-let s_ = ( false ) [ ] [ ]
-fn Q ( { { } , { } } ) : bool {
-return cj..
-assert { } , ""
+read image "|" to c_4__6
+struct K {
+Vm_ : float
+H04_yI : bool
 }
-type Dd.4d_ = { { } }
-read image "`" to P
-print "@" , type b._. = { }
-time print "!"
-print ""
-fn L ( { } , Q [ ] : int ) : bool {
+struct DL__B {
+h_ : DZ
+L : void
+V_C9_ : float
 }
-fn B62 ( { PG_6O [ V , S098.52_ ] : { { { } , int } , bool } , V5 : float , { } } ) : bool {
+fn Q7M_sE ( ) : x_BSR [ , , , ] {
+let k5a__ [ c71q8 , H9 , v4b , Y__ ] = array [ ] W2u04 { false } [ array [ u : ( false ) , YQ___ : void , h8 : ( yl0 ( false . h , false . M ) ) , G3__ : ! rN , f8_q : void ] sum [ f : sum [ Q3_4 : true , p : void , pN_aG : false ] ! void , wI_7 : Z3R / - void ] if sum [ Xeq_M : l >= true , j__0 : W , Zk0_9W : sum [ ] false ] array [ B : void , s : void , g : false , q : void ] d then S9_ else void . shj4N1 ]
 }
-time fn m ( u2 [ z.3X.n_ ] : float , { { } , { } }
-{ { } } ) : T4 {
+fn t_M ( f [ W7i_ , sA_ ] : float , Ej4 [ sA__3 , uy__ ] : void ) : float {
+let m = sum [ b_ : q_7 { true , ! sum [ N_c0__ : ! true ] false } , Rj_99_ : A6_3__ { sum [ C__5 : array [ W0C7 : 723025 , N_5 : sum [ ] array [ ] true ] if 0 >= void then array [ ] true + void else void , a : ( 2 ) , et6G9 : ( ( true ) . e_ ) ] - false . L_5_ . U10J , true , [ false , ! O_ ( void ) , false , pF ] } , LAKH : [ 9184588363 , false , ! false . R5_S__ , if if 579183 then 885534709 else sum [ D6 : 737148 ] void then - false else 5617 , array [ p : S_2 , z3 : true ] K_6 ] , Ik31j_ : array [ F__8W : void ] void , hB_o : AK38_n { if false then false . B_7 else [ ( false ) . d3 , ( u . k ) ] [ 93404 , void , ( ! void >= true ) , ( void ) [ c != void , void ] , false ] , 8586179275 . k1 [ a_ { array [ ] w > true , 07884 } , 372220 , M , if sum [ G99 : false . L ] ( false ) / if void then void else Q then Y81 { true , true , true , void , void } - x5_a__ ( false , void ) else sum [ ] l . m7773 != array [ G : false ] array [ ] false ] , ( sum [ mtS16 : Ftw1 , S5 : 3 , r047 : CMqY_ { void , true , u , void } ] sum [ x_gW : false , O__s_ : true , r_0_ : true ] false && false . c . E ) } ] false
+assert if array [ P : qTu7W , r85q_ : [ o4 ( y { if false then void else true , h } ) ] , n__70 : [ I_4 { false % sum [ ] U . w , [ sum [ ] o , false . k ] , ( false ) , false , array [ a__ : true % D , CX2 : if Z then true else true ] array [ w : void ] true } , false , array [ Z5__ : Ax3z8 ( false . q ) , i : array [ d0_63 : ( true ) , K954_C : false , BuB_0 : false ] I % true , L9O : y ( false , ( void ) , false . Q , E ) , Vy__ : - false , E_92B : ! sum [ ] X ] array [ sc6 : false , s_ : 85589833 , d1 : ! true , e5_9__ : n_Zy , n : array [ ] true ] true % void ] , a4_5 : 1878686189 + z_lDGo [ [ ! true ] , true [ false , void , [ true ] , false && void . k ] , [ [ true , true , t ] , array [ g : T , e : true , N : false ] c , array [ g : false , p : B , U : true ] X , Y ( d , true , K , true , z ) , l ( false , g , true ) ] ] ] sum [ Xk : XMH_ ( a9a__6 , sum [ a : void , Q : C ] true / - j ) . J8 , j5_9 : false , Bs : array [ se__f_ : false ] 9264 , a31 : true , e_Ui : false ] void then 74693750 else sum [ Mq : true , tzO1_ : false / k7_V_ ( zyT21 , ( ON_J ( false ) . R_9I ) , void , void ) , P1l3_ : ( g { false , ( 364924 . g ) , 824 , ! if sum [ ] true then void . D else void , yUKGJ } ) ] array [ ] 98 [ b_w__ { array [ b : sum [ ] void , YU_ : true , V_ : array [ ] void ] ( R ) , void , array [ n4B_ : true >= false , EHz_ : Y , wZ : true , fg : sum [ ] true ] true <= void . b_ , [ true , c , true ] > u__L ( false , void ) } , false , [ H [ true , false ] . u53__ , false , sum [ hMU_6 : void . G , OlP_tR : false , l : ( void ) , M : false ] [ void , void ] , void . w , if void then sum [ ] true % sum [ ] true else true ] ] , "<9Z"
+let u2_j = if m_4 then Jf { array [ D5_6E : true , n_ : 2546062 , s : if void then C { 4472824 , l , void } . a else true , v1 : sum [ M_77o_ : s2a { void } , RH3_m : true [ true , y , 1246950717 , false , void ] ] if Q82k84 then 13415268 else array [ B8S_ : void , ME_ : ( void ) ] array [ A : void ] sum [ ] false ] PF0 ( c__ ( true , 5 , void * void ) , AC_F__ , 16581 , c { array [ X : true ] true , true } , ( 48 ) ) , ! 76776 [ array [ Fz_ : Q2n { true , true , true , void } [ true ] , F6L : if [ true , true , false , void ] then ( true ) else ( true ) % n . k , v0_71_ : U ( J , T ) ] void , false , 65901447 , Q__15_ ( array [ SN7_V8 : void , RJnf3W : void < y , gaqu : A , x : void ] L_3L__ ) , ! 7 . O ] , array [ S : array [ O_I__K : B2_6_ , jL_ : false ] [ array [ ] true ] && void , n9_53_ : u_I__ { 7390922038 [ false ] , true [ sum [ ] true , ( G ) ] } , MV_6 : T1C8 ( false ) || void [ true , 859 , ! l , s_ ( ( void ) ) ] , Z84_0 : [ void [ void , false + false , false . G , I , false ] , void >= ( true ) % true , array [ c : void , H7D : void ] A_V5j0 ( H , Z , false , void ) , void == sum [ ] false . z13 ] , u8_T : g_4_3N { false [ 521 , P . o , void ] , if ( false ) then 298285 else void . R , ( 4389948286 ) } ] W__Wil ( - true . z , ( ! S ) , 5886 % 9568456859 - sum [ b : F ] false ) % true , 66330 , array [ H83u6 : true , O30gr_ : void . zG8__ , x : ! - x , Am_g : if W_D0 { array [ ] true } then true else true , Zjy2 : if ( if array [ ] void then ( d ) else H ) then 7 else sum [ ] 98950668 ] array [ o__ : true , F10C : false , R : false , v : if 0012 then false else true ] sum [ ar_V : 4570 , gQ990 : m , H2S : true . U , Y_3 : false ] true . ot_7_ >= ! array [ v_ : sum [ ] void , G_ : false , fU5T : false , x49 : 0194 ] array [ ] void != - true } else sum [ ] false
+let XT21_8 [ C792 ] = sum [ k_D8 : true , E8 : void [ true , ( sum [ la__ : 8355 , c9 : true , M : void ] sum [ ] false . Do9V ) , array [ g4mY_l : Cd , H02__5 : sum [ o7__ : sum [ O : true ] 21 , A11N : true [ false , void , false ] , y_ : x4J { true , X } ] sum [ wZ3__ : true . r , Z7mO_ : void , Yw807 : 377 , nqI_ : false ] false , Z___ : false ] ES_1_7 ( false ) ] , b : sum [ XJ : true , O : false ] sum [ l : true , v78bQ1 : ! false [ ( N7_ { true , true } ) , f5_ ] ] void , X : array [ A2 : F62 ] void , X9h1 : true ] false . NM
+assert ( sum [ objQ57 : b2 [ 65937 , [ [ true , void , true , true ] , Y4_ ( false ) , Q , 533866702 , ( sum [ ] void ) ] ] ] 43039756 ) . m_5w8 , "_06_XK_"
+return 4942845491
+assert sum [ S_ : sum [ HM_1 : if void then 335 else T_F_ [ I { void , void } . g3i__L , ( false ) , false , true ] , z : aVo ( array [ E__u8 : false >= true , Dc_ : void , y__57_ : array [ ] void , g22 : true ] void , IZ ( B , c < false , true >= true , true , 5 ) ) [ void - 256 ] , C : fv9_5G ( if sum [ CP0h2_ : 1 , O : 24 , M : false , Q1_6 : false , hp_nk_ : void ] N { true , true } then false else void , 973169 ) , j_3gM_ : [ true ] , Pa9 : void ] sum [ z_0F : true , bm_ : void , w_ : 436 ] ! if ( true ) then void else false . l3___ * void , F4 : [ true , b_N ( void , ! 7606 ) ] ] [ eF_9 , ( D__kX { D_ { false , ( ( false ) ) , sum [ q : Z , F : true ] sum [ ] t , [ void , false , false , u ] } , false , array [ B : true , g : void , s : void ] B > V { void , true , true } < void , true , array [ tYA_ : ( false ) , i93 : 229329 , X : ( F ) , u : c , T227h : void . S ] array [ ] false . g0l_ } ) , ( e_v6_w . N2i__ [ true . e / 672 , h ( false ) T if false then false else array [ ] false ] ) [ H_6M_ , array [ XA4 : true , o_ : H3H ( false ) , jw8 : if false then true else true || array [ ] E ] void , true , mm_9 ( oelB_3 , true , T__9 , true ) , ! sum [ P : q , c : true , O : Z , , : false ] true ] [ array [ py_H_ : [ false , false ] [ A , void , false , false ] , qY_ : 520011744 / true , k21 : true ] ( [ false , q , void ] . F_ ) , if void then sk7_ else false > B + ! ( false ) != if false . M2VwwX [ 4378038158 , void ] then false else array [ r_47 : 5032132 , fD87_1 : sum [ ] void , h_7O__ : ( E ) ] [ void ] , false ] , void , false . D3_ * true [ false [ 1605375270 , - ( false ) , uu_ { ( void ) , 1 , 3552042247 } ] , void , false , ! y_XBi ( true ) [ if M0j then [ void ] else void , false || true [ true , false , H , false ] ] , VZ . Qi_ ] ] , "_j_W"
 }
-let u6m = false
-print ""
-assert W9P_6_C_127..75A , "8"
-time fn Ow637H5R6._7..1. ( { { } , oL [ d , WTT , L0 ] : H.41UG7.F [ ] , { } , d7 : bool } , kBv : v.0.3__ ) : { } {
-return sum [ x : zs3 { 8 } , Ao3 : bm7 , u7t : [ true [ ! [ ] , true , ( .386 ) ] ] ] if [ ] then array [ ] 449. else [ { } ]
+fn W ( EY8S [ bk_A , R_ , d , b_ , o919 ] : int ) : void {
+return v2 . j % array [ a9_42 : false ] false
+let S_2 = if array [ xZf : s_6 ] VWk then X2 else VJ__72 { false }
+let lRr [ V__C5_ , AZ2s_ , l6 , l8Q0F3 ] = array [ a6_1 : ! ( void [ void , if false . w then 7 else 386369 ] ) , Y_96 : false , TJ6 : false ] void && ! if ( jF_ . j_6 > array [ X_N7 : array [ r : x ] ( true ) , K : void , V_ZW : if 565 then e else void , Y9m9 : sum [ W : W , g : K , O : true ] false ] sum [ hZ47 : i , Ck46 : 91727806 ] void ) then ( 91884046 ) . A_ else sum [ D71 : z4_ , o16 : array [ Ea199 : - G , r12 : B [ true , true , void ] ] c2___f ] Z6_3
+let H__6z7 = true
+return 654575
 }
-print "d"
-fn li8_gp ( u44_ [ Xk7t , A2 ] : bool ) : { } {
-let { } = 80
-} 

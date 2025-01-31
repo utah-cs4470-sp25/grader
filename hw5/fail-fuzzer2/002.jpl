@@ -1,13 +1,28 @@
-fn H0.D.B ( R : bool [ ] ) : { } {
-let D [ Kb , wj5k_v. , F6Lm , Y. ] = [ ]
+struct mn_ {
+o : int
+R : float [ ]
 }
-let N15___Y [ ] = array [ ] true
-write image
-to ""
-let { { K } } = x ( PZw5d_ ( array [ ] ! d ( { } ) , false ) [ ] )
-type b.b_ = int
-write image D ( ) to ""
-fn X2_l2I. ( o : { float [ ] , int } [ , ] ) : int [ , ] {
+struct h7 {
+rRsD0 : float
 }
-time assert { } { 93 } , "" 11692.65 show C_.21
-type n2 = bool 
+struct C {
+t5P792 : bool
+k__MZ : int
+o_ : bool [ ]
+P : float
+w_ : void
+}
+read image "!`_$" to X34
+fn O4 ( g44__ : int , r4X [ yWq6 , Szl_Y , scLW_ , c0Z_ ] : d_i_ , U__1b7 [ h , U2_RK4 ] : h0N ) : p {
+let f0Wns = o1B
+assert void , "5.\_M<2__|@"
+return void [ ( void ) >= void && ! if false then H else false , sum [ SZRf2 : array [ ] , >= Q , s_w6_6 : Z [ void ] , S : ( void <= void ) ] void == void . Yi && sum [ d : void ] n ]
+let LQ = sum [ U4 : e ( void . x , void , ( B ) L false , sum [ ] void ) , K_12LF : kSN__ { L } . X , S : true > true , A7a9Z_ : sum [ p7z64a : void , e9_xiy : C , w____ : false , cw_13_ : false , OJ_qEC : true ] void ] [ sum [ V : false , u : f , o : void , S : false , S : void ] array [ ] void ] [ 05606.234171950 , ky_ , if true then sum [ q_ : false , D5_y : n ] a__Xx_ { Z , i } else [ void ] [ array [ ] true , false . i ] ]
+}
+fn BGo ( t1_57f : float , bmR_ [ c9_j , Rcg_ , b6w_ , h_3_ ] : float ) : int {
+return ( ( true ) . R____ )
+let joN6 [ t326_ , q__16 , p ] = sum [ aY_ : - void > - v && g_Wb , e : Nmt__ ( t ) != sum [ U5_g85 : ( true ) , tXlnw : B , h9_z : true . z ] sum [ R : true ] u ] true [ - void , true , B9Ihe_ ( array [ ] void , void , false , false , true . v ) ]
+return [ ( array [ ] p03_ ) , sum [ k : false . S , A_6N : void , ti : array [ ] I , RH : ( R ) , VW1__ : f % false ] t_ . Ku , 899716635.77706575 ]
+let y8j03 [ X36 , J___ ] = - sum [ H : true , T : o , R : true , G : n , C : void ] true != ( M ) . b51N68
+return J__ . P2
+}

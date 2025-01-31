@@ -1,14 +1,1 @@
-(ShowCmd
- (SumLoopExpr
-  i
-  (BinopExpr
-   (BinopExpr
-    (BinopExpr
-     (UnopExpr ! (VarExpr a))
-     +
-     (BinopExpr (VarExpr b) * (VarExpr c)))
-    <
-    (VarExpr e))
-   ==
-   (BinopExpr (VarExpr f) * (ArrayIndexExpr (VarExpr g) (IntExpr 1))))
-  (VarExpr a)))
+(ShowCmd (SumLoopExpr i (BinopExpr (BinopExpr (BinopExpr (UnopExpr ! (VarExpr a)) + (BinopExpr (VarExpr b) * (VarExpr c))) < (VarExpr e)) == (BinopExpr (VarExpr f) * (ArrayIndexExpr (VarExpr g) (IntExpr 1)))) (VarExpr a)))

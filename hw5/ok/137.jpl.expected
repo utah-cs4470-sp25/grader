@@ -1,4 +1,1 @@
-(ShowCmd
- (UnopExpr
-  -
-  (ArrayLoopExpr i (IntExpr 3) (ArrayIndexExpr (VarExpr a) (IntExpr 1)))))
+(ShowCmd (UnopExpr - (ArrayLoopExpr i (IntExpr 3) (ArrayIndexExpr (VarExpr a) (IntExpr 1)))))

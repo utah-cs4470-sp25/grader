@@ -1,7 +1,1 @@
-(ShowCmd
- (BinopExpr
-  (UnopExpr - (BinopExpr (VarExpr a) / (UnopExpr ! (VarExpr b))))
-  *
-  (UnopExpr
-   -
-   (BinopExpr (VarExpr c) % (BinopExpr (UnopExpr ! (VarExpr d)) * (VarExpr e))))))
+(ShowCmd (BinopExpr (UnopExpr - (BinopExpr (VarExpr a) / (UnopExpr ! (VarExpr b)))) * (UnopExpr - (BinopExpr (VarExpr c) % (BinopExpr (UnopExpr ! (VarExpr d)) * (VarExpr e))))))

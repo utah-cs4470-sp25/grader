@@ -1,5 +1,1 @@
-(ShowCmd
- (BinopExpr
-  (UnopExpr - (VarExpr a))
-  +
-  (ArrayIndexExpr (VarExpr b) (IntExpr 0))))
+(ShowCmd (BinopExpr (UnopExpr - (VarExpr a)) + (ArrayIndexExpr (VarExpr b) (IntExpr 0))))

@@ -1,4 +1,1 @@
-(ShowCmd
- (TupleIndexExpr
-  (UnopExpr ! (ArrayIndexExpr (UnopExpr - (VarExpr a)) (IntExpr 1)))
-  1))
+(ShowCmd (DotExpr (UnopExpr ! (ArrayIndexExpr (UnopExpr - (VarExpr a)) (IntExpr 1))) b))

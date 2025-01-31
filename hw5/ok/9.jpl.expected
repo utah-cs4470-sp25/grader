@@ -1,1 +1,1 @@
-(ShowCmd (ArrayIndexExpr (TupleIndexExpr (VarExpr a) 1) (VarExpr a)))
+(ShowCmd (ArrayIndexExpr (DotExpr (VarExpr a) b) (VarExpr a)))

@@ -1,1 +1,1 @@
-show -c * a{1} < b + c[d < e]
+show -c * a.b < b + c[d < e]

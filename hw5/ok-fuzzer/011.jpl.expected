@@ -1,28 +1,6 @@
-(ShowCmd (FloatExpr 3))
-(ShowCmd (TupleLiteralExpr (TupleLiteralExpr)))
-(PrintCmd "")
-(LetCmd
- (TupleLValue (TupleLValue (ArgLValue (VarArgument O))) (TupleLValue))
- (FloatExpr 795))
-(ShowCmd
- (SumLoopExpr
-  mo
-  (TupleLiteralExpr
-   (BinopExpr (VarExpr M) % (UnopExpr ! (SumLoopExpr (FalseExpr)))))
-  r
-  (CallExpr lU9s8m24.3R7)
-  (TupleLiteralExpr)))
-(PrintCmd "")
-(ShowCmd (FalseExpr))
-(TimeCmd (PrintCmd "|-|*("))
-(TypeCmd M (IntType))
-(TimeCmd
- (ShowCmd
-  (IfExpr
-   (TupleLiteralExpr (VarExpr q))
-   (SumLoopExpr r11.Ef. (FalseExpr) (VarExpr G6))
-   (FloatExpr 0))))
-(TypeCmd zCHi__TI (TupleType))
-(AssertCmd (TupleLiteralExpr) "")
-(ShowCmd (CallExpr F))
-(TypeCmd go. (IntType))
+(LetCmd (ArrayLValue F G0_8_0 Z__9) (StructLiteralExpr y_ (StructLiteralExpr w52Y_8 (CallExpr i_h (CallExpr y (VarExpr G)) (SumLoopExpr (BinopExpr (VarExpr w) >= (IntExpr 33)))) (IfExpr (IfExpr (IntExpr 88343) (SumLoopExpr M (VarExpr X) (VarExpr F)) (ArrayLiteralExpr (VarExpr A))) (VarExpr X3j8Y7) (CallExpr N (VarExpr G) (VarExpr e) (VarExpr s) (VarExpr e)))) (SumLoopExpr IE (ArrayLoopExpr U (IfExpr (VarExpr d) (DotExpr (VarExpr i) X) (VarExpr n)) U_ (SumLoopExpr (IntExpr 232056319)) f_E_IZ (BinopExpr (VarExpr G) * (VarExpr w)) xM_64 (UnopExpr - (VarExpr b)) Ye_5__ (SumLoopExpr (ArrayLoopExpr (VarExpr y))) (DotExpr (IntExpr 57133) T)) (ArrayLiteralExpr (StructLiteralExpr P (BinopExpr (VarExpr Z) >= (VarExpr c))) (StructLiteralExpr yi (VarExpr P) (VarExpr x) (SumLoopExpr (VarExpr x))) (VarExpr vx) (CallExpr Mfn (VarExpr D) (VarExpr z) (VarExpr w) (IntExpr 28506647)))) (ArrayIndexExpr (DotExpr (ArrayLiteralExpr (DotExpr (VarExpr s) p8_q2) (VarExpr yu)) a343dc) (DotExpr (CallExpr h (VarExpr I) (DotExpr (VarExpr x) j)) e)) (IntExpr 4338460897)))
+(PrintCmd "=\19___")
+(AssertCmd (SumLoopExpr Nl_1 (IntExpr 4709407192) h_k (ArrayLiteralExpr (IntExpr 8050) (DotExpr (VarExpr R) n)) S_8_ (UnopExpr - (DotExpr (VarExpr o) c)) M1Ky_g (UnopExpr ! (VarExpr h)) (BinopExpr (IntExpr 2455) && (ArrayLoopExpr v2z_2_ (BinopExpr (VarExpr J6455) <= (StructLiteralExpr x (VarExpr d))) gN3_ (IfExpr (IfExpr (VarExpr y) (IntExpr 76860413) (IntExpr 567)) (ArrayLoopExpr (VarExpr o)) (SumLoopExpr (ArrayIndexExpr (VarExpr J) (VarExpr v)))) nq_2 (IntExpr 58204) (SumLoopExpr q4 (UnopExpr ! (VarExpr z)) h5__ (StructLiteralExpr y5w (VarExpr n)) l_g_p (UnopExpr ! (VarExpr S)) VO_v (VarExpr B_J_) F (ArrayLoopExpr (BinopExpr (VarExpr T) - (VarExpr v))) (DotExpr (CallExpr G_s_ (SumLoopExpr (VarExpr D)) (IfExpr (VarExpr j) (VarExpr c) (VarExpr O)) (IfExpr (VarExpr U) (VarExpr F) (VarExpr C))) w__6))))) "\_2`G1V5")
+(ShowCmd (ArrayIndexExpr (VarExpr gX__) (BinopExpr (BinopExpr (UnopExpr - (VarExpr a)) - (ArrayIndexExpr (VarExpr y) (VarExpr m1_2_) (ArrayIndexExpr (IntExpr 15) (ArrayLoopExpr (VarExpr f))))) - (IntExpr 109054)) (VarExpr m_k) (ArrayLiteralExpr (DotExpr (IntExpr 81668) c36_) (CallExpr I_P4v (VarExpr C_7_p) (VarExpr v) (IfExpr (ArrayLoopExpr (VarExpr o)) (BinopExpr (VarExpr N) - (VarExpr W)) (DotExpr (VarExpr E) y)) (DotExpr (VarExpr H) M_n)))))
+(FnCmd B0 (((VarLValue Dm_Ip9) (BoolType) (VarLValue FWy) (BoolType) (VarLValue x3480) (IntType))) (ArrayType (FloatType) 4) (LetStmt (VarLValue q) (ArrayLiteralExpr (ArrayLoopExpr o_RP (VarExpr B_Ip8) ieb (ArrayLoopExpr L (VarExpr e) d (VarExpr p) S (VarExpr S) (IntExpr 917)) B_92G6 (CallExpr O (VarExpr c)) y1_ (DotExpr (IntExpr 9591915703) o_I1_) (CallExpr T_ (IntExpr 56) (DotExpr (VarExpr k) E) (VarExpr a) (VarExpr C))) (UnopExpr ! (ArrayIndexExpr (VarExpr I) (ArrayLoopExpr (IntExpr 328)))) (SumLoopExpr E6 (DotExpr (VarExpr J) l) (BinopExpr (UnopExpr - (VarExpr t)) >= (DotExpr (IntExpr 932732) AQ))))) (ReturnStmt (IfExpr (IfExpr (ArrayLiteralExpr (IntExpr 2434) (StructLiteralExpr X_ (VarExpr Z))) (VarExpr tD) (ArrayLoopExpr (ArrayLoopExpr G (VarExpr I) (VarExpr B)))) (BinopExpr (DotExpr (StructLiteralExpr y3_ (VarExpr V) (IntExpr 440544621)) XP4cY) * (IntExpr 877)) (IntExpr 800))) (ReturnStmt (ArrayLoopExpr d3_3 (UnopExpr ! (IntExpr 0)) jr66 (StructLiteralExpr b5Y06 (IntExpr 9525816) (VarExpr X) (SumLoopExpr (VarExpr T))) (DotExpr (CallExpr F_ (BinopExpr (VarExpr Z) > (DotExpr (VarExpr Z) O_2)) (VarExpr j4G8) (IntExpr 34) (UnopExpr - (VarExpr L)) (ArrayLiteralExpr (VarExpr c))) l84))) (ReturnStmt (IntExpr 38150)) (ReturnStmt (VarExpr Px57_3)))
+(PrintCmd "0!2:G")

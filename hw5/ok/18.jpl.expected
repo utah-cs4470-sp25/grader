@@ -1,16 +1,1 @@
-(ShowCmd
- (UnopExpr
-  !
-  (UnopExpr
-   !
-   (UnopExpr
-    !
-    (UnopExpr
-     !
-     (UnopExpr
-      !
-      (UnopExpr
-       !
-       (UnopExpr
-        !
-        (UnopExpr ! (UnopExpr ! (UnopExpr ! (UnopExpr ! (VarExpr a)))))))))))))
+(ShowCmd (UnopExpr ! (UnopExpr ! (UnopExpr ! (UnopExpr ! (UnopExpr ! (UnopExpr ! (UnopExpr ! (UnopExpr ! (UnopExpr ! (UnopExpr ! (UnopExpr ! (VarExpr a)))))))))))))

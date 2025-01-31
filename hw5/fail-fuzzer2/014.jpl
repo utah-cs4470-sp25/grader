@@ -1,26 +1,34 @@
-show ! b3
-assert [ [ true , false , 4. ] , ";"
-write image { } to "."
-assert F ( ) , ""
-print "'"
-print "}"
-write image [ if ! array [ ] sum [ Z : - 7 ] if true then 302 else array [ ] false [ ] { 6 } then [ ] else { } ] to "#!"
-type C.598.7M = int
-show U6s ( )
-read image "" to i3. [ Q.793m , b ]
-fn y ( K [ U ] : { } ) : bool {
-assert ( true ) , ""
-let { eb.. } = R
+read image "oO5_" to jH_Px [ y__ , G3x ]
+assert void [ array [ P_ : false . K , L_ : sum [ ] void , n92_t : m , F89o_ : true . s ] nmlW_ ( void , p ) , void [ [ sum [ q : O , u : true , z : i , A : void ] void , if x then b else true , O75_2 ( false , void , e ) , ! true ] , H_E ( void , true , R ) . t__A__ && array [ Kr3 : ( void ) , P_6 : true , t : void . p , C : if false then void else false , S6Y : false && true ] array [ G : true , W : A , c : M ] false , array [ s___2_ : array [ P : z ] true ] true . N [ false ] / sum [ ] i , l , void ] . A8_8__ . q1 , ";1=7[_8"
+read image "`z^5%7J<8" to Q
+struct T {
+S0_ : Znr8_
+K : float
+sD7_ : void
 }
-write image { ! 8 [ ] , H__U_97_6 ( ) } to ""
-fn l ( lv99 : { } ) : a5.m_ [ ] {
+time struct A1 {
+EE_8_ : bool
+fdEi__ : float
+nbv__y : float [ ]
+wU_5 : a_6
+e0 : void
+}
+fn er_nv_ ( ) : float {
+let I [ F_N7k_ ] = void
+return K9_w
+return void
+return array [ K_ : if w5 then sum [ jF_ : false , N_19B : void . m ] sum [ H : k ] ( void ) else true , EuF5_ : 5259812.8409557754 , e_w : [ if ( a ) then if true then false else R else void % void , false , false , .78794627 ] ] sum [ t_ : true , Qq3__ : false , U09Y : [ true ] , VN__ : [ q ] , quk7_j : void ] 504324965. . x84__ . e9_14
+assert false , "Z"
+let r_I = true
+let a2_0 = if [ true , ! o . a ] then mA545_ ( void , ( X . eg ) , .48884638 ) else true
+assert array [ t_0__w : sum [ T__U0 : true ] array [ F : false , s : f ] void [ false . H , a , N , u && true , l ] ] void , "r'"
+}
+assert array [ t3__9 : void , N_____ : E06Z4 { array [ d : o , N : F , z : false , m : false , B : void ] sum [ ] true , ( ( void ) ) , Q961 ( true , i , false , T , void ) } [ [ ( void ) , void , E ] , ! void . l , array [ D_5JMQ : true , i4_7_4 : ( true ) , a_ : true ] if true then false else void . c , true ] [ void , true . o , false , jwb2 * ! true . Y ] ] void , "8P"
+assert - void && void , "6_9633"
+fn n6_RP ( N15_qj [ cU ] : R0_4__ , t_1n : int [ , , , ] , hnz_ : void [ , , ] ) : float [ , , , ] {
+let u2m_i = void
+assert sum [ k24t : - E [ false > true , true , void . g , void ] , iF : .5429608 , P6_Ym_ : ( ( ( void ) ) ) ] ( sum [ ] void . J_ . Lo_4 ) [ array [ au16 : 58006079.344250977 , eI_2 : if false then false else false . c ] void [ void ] , sum [ ] array [ P : false , g : T ] array [ ] false / false , if k0 { q , if true then void else true } then iy_ { J >= void , void , Q , ( true ) } else ( b . S_a__ ) ] , "M8GS_27z95"
+assert T5r49_ ( false ) , "__H|01_\"
+return true . v [ .55305705 ]
 return true
 }
-write image 6615 to ""
-fn b.S3 ( { } ) : { p67V , bool } {
-let { } = - - false
-return { }
-}
-assert h. ( ) , "-~"
-write image 612. to ")%="
-let jBH.0QxJ7bW = { } 

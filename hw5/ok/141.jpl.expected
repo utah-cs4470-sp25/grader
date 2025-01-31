@@ -1,5 +1,1 @@
-(ShowCmd
- (IfExpr
-  (IfExpr (IfExpr (VarExpr a) (VarExpr b) (VarExpr c)) (VarExpr b) (VarExpr c))
-  (VarExpr b)
-  (VarExpr c)))
+(ShowCmd (IfExpr (IfExpr (IfExpr (VarExpr a) (VarExpr b) (VarExpr c)) (VarExpr b) (VarExpr c)) (VarExpr b) (VarExpr c)))

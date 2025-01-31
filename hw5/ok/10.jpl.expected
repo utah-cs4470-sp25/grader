@@ -1,10 +1,1 @@
-(ShowCmd
- (ArrayIndexExpr
-  (TupleIndexExpr
-   (ArrayIndexExpr
-    (TupleIndexExpr (VarExpr a) 1)
-    (ArrayIndexExpr
-     (TupleIndexExpr (VarExpr a) 1)
-     (TupleIndexExpr (VarExpr a) 1)))
-   1)
-  (TupleIndexExpr (VarExpr a) 1)))
+(ShowCmd (ArrayIndexExpr (DotExpr (ArrayIndexExpr (DotExpr (VarExpr a) b) (ArrayIndexExpr (DotExpr (VarExpr a) b) (DotExpr (VarExpr a) b))) b) (DotExpr (VarExpr a) b)))
