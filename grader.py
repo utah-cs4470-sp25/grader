@@ -67,7 +67,7 @@ def run_student(flags, in_file, require=None):
         except ParseSuccessError as e:
             raise CompilerInvalid(str(e), res.stdout, res.stderr)
         if require is not None and success != require:
-            raise CompilerInvalid(f"File should {' ' if require else 'not '}have been accepted", out, res.stderr)
+            raise CompilerInvalid(f"File should {'' if require else 'NOT '}have been accepted", out, res.stderr)
         return success, out, res.stderr
 
 def run_compiler(flags, in_file):
