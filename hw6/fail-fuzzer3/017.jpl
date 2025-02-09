@@ -1,2 +1,44 @@
-show (if true then true else (! false)){0}{2}[(if (! (187 > 663)) then 193 else 326), (if (! (! true)) then (if (734 <= (- 534)) then (if (! true) then (if true then 220 else 974) else 169) else (- 921)) else (- ((if false then 361 else 509) / 56))), (if (true || (! true)) then [(- 152), (841 % 893), (903 % 44)] else [(- 539), (- 549)])[136]]
+show [692]
+
+show (- 529)
+
+show (((47 == 855) && false)[(- [182][669]), ((- (- (- 298))) * [17, 406][941, (- 536)]), 365] < 367)
+
+show (222 == (- (- (if true then (if (! true) then (588 % 389) else false) else (if 17.26 then 159 else (243 + 143))))))
+
+struct a {
+a : bool
+}
+show a {(if (! ((if false then false else false) && true)) then (203 > (- 71)) else [false][((- 78) + (- 636))])}.a
+
+show (if [(if false then ((true == false) || 622) else ((- 751) == (910 + 693))), (if [true][935] then ((- 338) != 103) else false), ((- 71.98) >= 96.15)][106] then (834 <= 533) else (if ((((- 248) <= 99) && (! false)) && ((if true then (! false) else true) || (240 == 869))) then a {((if true then 15.11 else 21.41) == 99.31)}.a else ((! (! (511 == 408))) && (! a {true}.a))))
+
+struct b {
+a : int[,,]
+}
+show [(((979 < 501) || a {false}.a) && true), a {a {true}.a}.a]
+
+show b {(352 >= (if (20.46 == 24.59) then 545 else (- 12)))[(53 >= 532).a[721, (- 82), (- (- 795))], [false][(- (- 319))][((if (48 == 899) then 99 else 666) / (- 527)), 840]]}
+
+struct c {
+a : rgba
+b : bool
+}
+struct d {
+a : bool[,]
+b : int
+c : b
+}
+show [(! true)]
+
+struct e {
+a : void
+}
+show (! true)[(if (! (6.66 != 86.17)) then 896 else (- 377)), (((- 648) * (- 709)) + (- 410)), 560][(- (- (- (932 % 202)))), 108, [(778 * 142)][252]][235, (if ((825 + ((- 416) - (- 46))) < 10) then (- 612) else 76)]
+
+show ((80.12 - (if (((391 % 349) <= 117) || (! true)) then (63.84 - 23.04) else (- (80.07 + 80.86)))) - (if (! (! false)) then (- 9.56) else 99.76))
+
+show ((- (- 67.84)) < (- 95.63)).a.r
+
+show false
 

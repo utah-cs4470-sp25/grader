@@ -1,2 +1,51 @@
-show {18.47, {pict.{1}{0}}}{0}
+show [748, ((- ((- 957) + 872)) / ((- (211 - 453)) % (- ((- 769) - (if true then 622 else 496)))))]
 
+show [235][(- 930)].b
+
+struct a {
+a : void
+}
+struct b {
+a : int
+b : a
+}
+show (false || (14.21 <= 53.62))
+
+show 816
+
+show [rgba {27.55, (true || false), 86.69, 64.37}, rgba {((- 13.15) + 77.29), 96.49, 91.04, 59.47}][(if (((1.18 + 74.75) - (84.3 + 68.65)) >= 53.69) then ((- 51) - [405, 415][484]) else (689 + (- 44)))].a
+
+struct c {
+a : void
+b : float
+c : a
+}
+show ((if (! (! ((false || false) != (785 != 434)))) then (if true then (- 319) else (349 % 708)) else 716) != (- ((- (if (27.03 == 11.98) then (960 * 891) else (- 682))) % (- (- 231)))))
+
+show rgba {((if true then (- 43.74) else (- (- 66.47))) / (if (803 <= 0) then 39.59 else (- (51.5 * 69.93)))), (- (- 61.45)), ((- (- (- 13.9))) / ((77.31 - 6.06) + rgba {29.88, (- 59.04), 76.13, 5.14}.b)), rgba {58.5, 90.54, (- (if (true || true) then 81.62 else (if false then 46.79 else 58.77))), ((- (- 34.95)) % 33.9)}.g}
+
+struct d {
+a : rgba
+b : a[,]
+c : int
+}
+show ([true, false, (! (664 <= 347))][706, 232, (- 378)] && (! (! true)))
+
+show [((- 266) == 133), ((- (281 % 20)) == (- 814)), (if (if (true && false) then ((- 726) == 164) else true) then ((19.19 / (- 51.59)) >= 7.22) else ((! true) || ((! false) == false)))]
+
+struct e {
+a : int
+b : a
+}
+struct f {
+a : c
+b : e
+}
+show (! (! (if (511 >= (if true then 941 else 524)) then (23.32 < 54.01) else true)))
+
+show (731 == (if true then (49 + 942) else 136))
+
+struct g {
+a : float
+b : rgba
+}

@@ -1,2 +1,48 @@
-show ((if ((if true then 440 else 444) != 476) then [(98.86 % 10.67), 84.33] else [(if true then 75.79 else 68.61)])[((if false then (- 211) else (- 538)) / 463)] >= 13.47)
+show false
+
+show (37.99 > 23.7)
+
+show (! ((21.2 / (if (if (true != false) then (! false) else true) then 94.51 else 86.32)) < (- (- (- (- 34.53))))))
+
+struct a {
+a : void
+}
+show 15.87
+
+struct b {
+a : rgba[,]
+b : rgba
+c : a
+}
+show ((if ((! (! true)) || (true || (37 > (361 / 937)))) then 874 else 998) - ((34 % 504) * 551))
+
+struct c {
+a : rgba
+b : a
+}
+show true
+
+struct d {
+a : float
+b : c[]
+}
+struct e {
+a : int
+}
+show false
+
+struct f {
+a : bool
+}
+struct g {
+a : f
+b : rgba
+}
+show ((- (- (- (84.29 * (46.11 % 26.17))))) > (- 6.33))
+
+show (! (false && f {true}.a))
+
+show e {232}.a
+
+show ((- (if (if true then (! (! true)) else false) then (e {802}.a - e {338}.a) else (343 - 329))) <= (if (245 == e {166}.a) then (if f {true}.a then e {(- 561)} else e {(- 439)}) else e {e {253}.a}).a)
 

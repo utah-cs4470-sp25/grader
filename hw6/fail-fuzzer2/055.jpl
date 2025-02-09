@@ -1,2 +1,0 @@
-show (! (if false then [true][487] else (true{3} && (! true))))
-

@@ -1,1 +1,8 @@
-show { 1, true, 2, false }
+struct ibib {
+  a: int
+  b: bool
+  c: int
+  d: bool
+}
+
+show ibib{ 1, true, 2, false }

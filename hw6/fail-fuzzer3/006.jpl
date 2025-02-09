@@ -1,2 +1,67 @@
-show ((if true then pict. else pict.){2}{2}{0} - (if ((105 == (727 / 256)) != ((- 510) > 366)) then (- 249) else ((- (- 880)) / (605 % (627 / 119)))))
+struct a {
+a : void[]
+b : int
+c : int
+}
+struct b {
+a : int
+b : bool
+c : rgba
+}
+struct c {
+a : float
+b : void[][]
+}
+struct d {
+a : float
+b : rgba
+c : a
+}
+show rgba {(65.19 % rgba {90.1, ((35.94 / 64.48) * 83.79), (- 49.72), (if true then 9.67 else 0.03)}.b), [[501]][(400 % 287)][574], (38.54 * [59.46, (if false then (- 64.58) else 48.14), 96.54][(- (if (! false) then (- 204) else 746))]), (if (((! true) && (if true then (321 >= 58) else (518 == 23))) && (false && (! 577))) then ((- 86.33) - (if false then (- (- 48.75)) else 45.2)) else (if ((- (342 % 306)) < 800) then 56.07 else (false || false).a))}
 
+struct e {
+a : int
+}
+struct f {
+a : int
+b : c
+c : b
+}
+struct g {
+a : e
+b : f
+c : void
+}
+show e {179}.a
+
+show 60.23
+
+struct h {
+a : b
+b : bool
+c : bool
+}
+struct i {
+a : bool
+b : void
+}
+struct j {
+a : h
+b : g
+c : i
+}
+struct k {
+a : void
+}
+struct l {
+a : rgba
+b : k
+}
+show (((- (- (- (- 22.96)))) / (- 12.18)) / (9.2.a * 32.46))
+
+struct m {
+a : k
+}
+struct n {
+a : h
+}

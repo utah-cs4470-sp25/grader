@@ -1,35 +1,5 @@
-(ShowCmd
- (ArrayIndexExpr
-  (IntType)
-  (TupleIndexExpr
-   (ArrayType (IntType) 1)
-   (TupleIndexExpr
-    (TupleType
-     (TupleType (TupleType (IntType) (FloatType)) (BoolType))
-     (ArrayType (IntType) 1))
-    (TupleLiteralExpr
-     (TupleType
-      (IntType)
-      (TupleType
-       (TupleType (TupleType (IntType) (FloatType)) (BoolType))
-       (ArrayType (IntType) 1)))
-     (IntExpr (IntType) 1)
-     (TupleLiteralExpr
-      (TupleType
-       (TupleType (TupleType (IntType) (FloatType)) (BoolType))
-       (ArrayType (IntType) 1))
-      (TupleLiteralExpr
-       (TupleType (TupleType (IntType) (FloatType)) (BoolType))
-       (TupleLiteralExpr
-        (TupleType (IntType) (FloatType))
-        (IntExpr (IntType) 3)
-        (FloatExpr (FloatType) 4))
-       (FalseExpr (BoolType)))
-      (ArrayLiteralExpr
-       (ArrayType (IntType) 1)
-       (IntExpr (IntType) 1)
-       (IntExpr (IntType) 2)
-       (IntExpr (IntType) 3))))
-    1)
-   1)
-  (IntExpr (IntType) 2)))
+(StructCmd s4 s4a (IntType) s4b (FloatType))
+(StructCmd s3 s3a (StructType s4) s3b (BoolType))
+(StructCmd s2 s2a (StructType s3) s2b (ArrayType (IntType) 1))
+(StructCmd s1 s1a (IntType) s1b (StructType s2))
+(ShowCmd (ArrayIndexExpr (IntType) (DotExpr (ArrayType (IntType) 1) (DotExpr (StructType s2) (StructLiteralExpr (StructType s1) s1 (IntExpr (IntType) 1) (StructLiteralExpr (StructType s2) s2 (StructLiteralExpr (StructType s3) s3 (StructLiteralExpr (StructType s4) s4 (IntExpr (IntType) 3) (FloatExpr (FloatType) 4)) (FalseExpr (BoolType))) (ArrayLiteralExpr (ArrayType (IntType) 1) (IntExpr (IntType) 1) (IntExpr (IntType) 2) (IntExpr (IntType) 3)))) s1b) s2b) (IntExpr (IntType) 2)))

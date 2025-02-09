@@ -1,1 +1,2 @@
-(ShowCmd (TupleLiteralExpr (TupleType (BoolType)) (TrueExpr (BoolType))))
+(StructCmd mybool x (BoolType))
+(ShowCmd (StructLiteralExpr (StructType mybool) mybool (TrueExpr (BoolType))))

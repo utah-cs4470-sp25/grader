@@ -1,2 +1,56 @@
-show (- (- (- [613][(- 404)])))
+struct a {
+a : bool
+b : float
+}
+show [(- 46.03)]
 
+struct b {
+a : bool
+b : float
+}
+struct c {
+a : float
+b : void
+}
+show (rgba {(- (- 80.62)), (- (95.93 - (- 27.13))), (- 26.56), 12.48}.g == ((- (- 90.89)) - (- 50.91)))
+
+struct d {
+a : void
+}
+show 612
+
+struct e {
+a : c
+b : int
+}
+struct f {
+a : int
+}
+show f {(79 * 906)}
+
+struct g {
+a : d[]
+}
+struct h {
+a : f
+}
+struct i {
+a : int[,]
+}
+struct j {
+a : f
+b : int
+}
+show j {f {f {f {480}.a}.a}, 382}
+
+show ((if true then (- (- 25.4)) else 25.98) >= (if (88.14 > 82.58) then (if b {true, 21.74}.a then a {(! false), (- 16.8)} else a {(if true then false else false), 55.43}).b else b {(446 <= 75), 52.95}.b))
+
+struct k {
+a : void
+b : h
+c : c
+}
+struct l {
+a : e
+b : e
+}

@@ -1,2 +1,61 @@
-show (- ([17.52, (- 62.38)][((- 112) % 152)] + (if false then ((81.21 / 13.21) + 45.61) else (- (- 53.84)))))
+show (! (if (if (false || (! (99.19 < 14.93))) then ((if false then 505 else (925 / 686)) > ((- 187) + (if true then 245 else 73))) else true) then (! (if (5.13 == 32.62) then false else (694 == 322))) else ((- 847) == 445)))
 
+struct a {
+a : float
+b : void
+c : rgba
+}
+show 472
+
+struct b {
+a : rgba[,]
+b : rgba
+c : int
+}
+struct c {
+a : rgba
+}
+struct d {
+a : bool
+b : bool
+}
+show ((- [(- 97.01)][(- 448)]) < 45.04)
+
+show true
+
+show true
+
+struct e {
+a : bool
+b : a
+c : d
+}
+struct f {
+a : int
+b : bool
+}
+show d {true, (425 == (if (true || (false || true)) then 979 else (- 969)))}.a
+
+struct g {
+a : float
+b : a
+c : rgba
+}
+struct h {
+a : bool
+b : d
+}
+struct i {
+a : bool
+b : h
+}
+struct j {
+a : i
+}
+show (- 962)
+
+struct k {
+a : f
+b : g
+c : bool
+}

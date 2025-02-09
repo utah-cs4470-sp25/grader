@@ -1,2 +1,63 @@
-show (if (! ((- (- 75.91)) != (- (if false then 48.58 else 11.95)))) then {(- 74.74), false} else {false{0}}{0})
+struct a {
+a : float
+b : int[,,]
+}
+show ((- (- 69.47))[361, (956 / (- (- 948))), (- (- 650))][(- (if (! (! false)) then (if (61.09 == 41.93) then 658 else 691) else (- 245))), (if (765 != (- 522)) then ((561 % 463) + 550) else (((if true then 342 else 914) + (- 656)) / (if (33.97 > 59.32) then true else 902)))] >= (if (if true then (((! true) && true) && (! true)) else (! false)) then rgba {(- 66.23), 74.41, 7.87, 80.29}.r else 40.02))
+
+struct b {
+a : bool
+b : void
+c : bool
+}
+show rgba {(if (63.49 != true[(- 411), (- 849), 948].a) then [(if (42.53 <= 93.92) then 66.29 else 1.91), 32.77][296] else (if (true || (! (204 == 486))) then [31.27][687] else 27.42)), ((- 833) <= 158)[((- 947) % (if 443 then (430 * (- 953)) else (- 456))), (14.99 - 970), 802], (if ((228 != 852) || (! false)).c then 29.57 else ((if false then [99.89, 83.44][(873 - 672)] else (- 74.56)) / (- (32.43 % (98.89 + 89.91))))), a {34.88, (- 84.46)[737]}.a}
+
+struct c {
+a : void
+b : bool
+c : b
+}
+struct d {
+a : float
+b : bool
+c : rgba
+}
+struct e {
+a : int[,]
+b : rgba
+c : rgba
+}
+show (86.11 % rgba {(if ((- 427) == (- 973)) then false.a else 85.67), (((if true then 9.93 else 28.4) * 53.3) * 31.51), true.c.b, 90.1}.g)
+
+show e {81.08[(- (- 309))].a, d {44.81, (! (if false then (! true) else (! false))), rgba {(- (- 57.91)), (- 11.34), (- 69.57), 44.74}}.c, (if false then 615 else 237).b}
+
+struct f {
+a : a
+b : bool
+}
+struct g {
+a : rgba[,]
+b : f
+}
+struct h {
+a : g
+b : void
+c : float
+}
+struct i {
+a : f
+}
+struct j {
+a : f
+b : i
+c : g
+}
+show ([40, ((- 80) - 588)][(252 / (612 * 656))] == 283)
+
+struct k {
+a : i
+b : float
+}
+show 3.96[((- 780) * ((- (- 715)) * (167 * 782))), (- ((- (- 436)) + (408 / (- 252))))].b
+
+show (627 <= 461)[(- (if true then 452 else 663)), 89, 615][(if false then 958 else 388), ((if false then (- (231 - 641)) else (- 932)) + 746), (496 + (165 / (if false then (- 384) else 811)))][((- 864) % [(if (353 != 802) then 965 else 545), 40.31[366], (- 774)][(- (- 908))])]
 

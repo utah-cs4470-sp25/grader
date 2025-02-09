@@ -1,2 +1,0 @@
-show (! (((if true then (19.77 < 68.66) else true) || (if (324 > 600) then (! false) else false)) || false))
-

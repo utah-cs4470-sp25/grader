@@ -1,2 +1,0 @@
-show (! ((! (true || true)) || ((! 180) && (false && false))))
-

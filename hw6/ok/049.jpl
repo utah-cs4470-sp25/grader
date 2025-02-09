@@ -1,1 +1,5 @@
-show if true then {} else {}
+struct mt {
+
+}
+
+show if true then mt{} else mt{}

@@ -1,2 +1,1 @@
-(ShowCmd
- (BinopExpr (BoolType) (TrueExpr (BoolType)) == (FalseExpr (BoolType))))
+(ShowCmd (BinopExpr (BoolType) (TrueExpr (BoolType)) == (FalseExpr (BoolType))))

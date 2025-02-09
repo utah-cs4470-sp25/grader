@@ -1,2 +1,46 @@
-show (13.24 >= (if true then (- 30.17) else (if (if false then (62.21 < 28.55) else true) then ((40.49 / 87.88) - 67.95) else (29.41 + (- 44.99)))))
+show (92.87 <= (if (true || true) then rgba {(- 28.95), 75.72, (- (29.99 * 60.79)), ((- 65.0) * 51.55)} else rgba {71.54, 39.92, (99.26 / 88.8), (- (- 56.12))}).b)
+
+struct a {
+a : float[,,]
+}
+show 25
+
+struct b {
+a : float
+}
+struct c {
+a : rgba[,]
+}
+show ([(if false then 569 else (- (248 % 185))), [913, 650, (209 * 316)][443]][((if ((! true) && (true || true)) then (if false then 193 else 932) else 73) / ((- 229) - 808))] <= [(71 % 483), ((if (true || false) then (- 369) else 1) + (- (171 - 877))), (if (49.8 == 46.39) then (- (715 + 92)) else 685)][[[194]][(- 259)][440]])
+
+struct d {
+a : b
+b : c
+}
+struct e {
+a : c
+}
+struct f {
+a : int[]
+}
+struct g {
+a : rgba
+}
+show rgba {(- [(- 52.32)][((- 778) + ((- 195) % (- 933)))]), (- (b {96.55}.a - [(if false then 75.11 else 27.36), 54.84][(199 % (if true then 863 else 496))])), (if (527 == 508) then [(if (false && true) then (- 95.1) else (- 49.79)), 88.04] else [((- 67.39) / (30.0 - 96.6))])[[(- 66), [220, 213, 180][(- 949)]][556]], (- 14.34)}
+
+show (- (- (- 80.52)))
+
+struct h {
+a : rgba[]
+b : g
+}
+show (((695 % (498 % (- (- 488)))) <= (- ((- 945) + ((- 58) % 585)))) != (if (! (false && (false || false))) then ((if false then (! false) else true) || false) else (if (false && (true && (61.04 <= 13.99))) then true else [false][(if (true || false) then (- 15) else 223)])))
+
+show ((if (((- (- 376)) + 502) > ((- (- 124)) % (- 227))) then (- (if ((912 > 88) && (51 >= 233)) then 760 else (if false then 257 else 697))) else 658) <= (if (! (! (184 >= 169))) then ((if false then [48, 679] else [735, 369, 565])[(if (if false then true else false) then 262 else (- 539))] / 442) else 352))
+
+show 766
+
+show b {27.04}.a
+
+show b {(if (! true) then [(- 11.34), 5.4, 2.53] else [55.0, (if true then 83.68 else 14.24)])[((if (! true) then 850 else (if true then 343 else 593)) - (- 754))]}.a
 

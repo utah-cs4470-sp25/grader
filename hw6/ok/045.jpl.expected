@@ -1,16 +1,2 @@
-(ShowCmd
- (ArrayLiteralExpr
-  (ArrayType (TupleType (ArrayType (IntType) 1)) 1)
-  (TupleLiteralExpr
-   (TupleType (ArrayType (IntType) 1))
-   (ArrayLiteralExpr
-    (ArrayType (IntType) 1)
-    (IntExpr (IntType) 1)
-    (IntExpr (IntType) 2)))
-  (TupleLiteralExpr
-   (TupleType (ArrayType (IntType) 1))
-   (ArrayLiteralExpr
-    (ArrayType (IntType) 1)
-    (IntExpr (IntType) 3)
-    (IntExpr (IntType) 4)
-    (IntExpr (IntType) 5)))))
+(StructCmd arr v (ArrayType (IntType) 1))
+(ShowCmd (ArrayLiteralExpr (ArrayType (StructType arr) 1) (StructLiteralExpr (StructType arr) arr (ArrayLiteralExpr (ArrayType (IntType) 1) (IntExpr (IntType) 1) (IntExpr (IntType) 2))) (StructLiteralExpr (StructType arr) arr (ArrayLiteralExpr (ArrayType (IntType) 1) (IntExpr (IntType) 3) (IntExpr (IntType) 4) (IntExpr (IntType) 5)))))

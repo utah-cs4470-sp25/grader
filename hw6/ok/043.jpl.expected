@@ -1,7 +1,2 @@
-(ShowCmd
- (ArrayLiteralExpr
-  (ArrayType (TupleType) 1)
-  (TupleLiteralExpr (TupleType))
-  (TupleLiteralExpr (TupleType))
-  (TupleLiteralExpr (TupleType))
-  (TupleLiteralExpr (TupleType))))
+(StructCmd empty)
+(ShowCmd (ArrayLiteralExpr (ArrayType (StructType empty) 1) (StructLiteralExpr (StructType empty) empty) (StructLiteralExpr (StructType empty) empty) (StructLiteralExpr (StructType empty) empty) (StructLiteralExpr (StructType empty) empty)))

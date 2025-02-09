@@ -1,1 +1,4 @@
-show { }
+struct mt {
+}
+
+show mt{ }

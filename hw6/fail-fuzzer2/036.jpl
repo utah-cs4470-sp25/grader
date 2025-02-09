@@ -1,2 +1,0 @@
-show (if [true][(220 + 619)] then {false}{2}{0} else (115 % (- (- 629))))
-

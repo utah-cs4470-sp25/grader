@@ -1,2 +1,49 @@
-show (! (97.25 > (if (54.2 <= (- 28.94)) then (71.7 / (- 92.34)) else (if true then (- 55.19) else (- 84.1)))))
+show 224
 
+struct a {
+a : float
+}
+show ((((if (! false) then 579 else 261) - (- (if (! true) then (- 823) else 182))) >= (if (((798 - 787) != 685) && (144 >= (21 - 903))) then [195][(- 102)] else (- (- (- 367))))) || false)
+
+show ((- 367) >= (- 567))
+
+show (! false)
+
+show (- (if false then [(0.86 / 24.88)] else [(- 28.68), 39.72])[(if false then (if true then (if (! true) then 674 else 378) else 33) else 655)])
+
+struct b {
+a : bool
+}
+struct c {
+a : rgba
+}
+show ((((true != ((818 + 434) != (- 898))) && (if (if (true || false) then true else (994 <= 270)) then (if (! false) then false else (258 > 233)) else (! true))) && (true && ((832 - (660 * 335)) > ((- 991) % 551)))) == (! ((- 928) == (- 419))))
+
+show a {((if true then a {18.7} else a {(72.49 % 88.86)}).a + (- 52.01))}
+
+show [(! ((- 867) < (- 494))), (if ((- (231 / 6)) < (if (904 < 156) then (982 * 650) else (- 442))) then [(813 != (- 635)), (! (991 >= 827))] else [false, ((false && false) || (! true)), b {false}.a])[(- (if (if (false || false) then (false || false) else (! false)) then (- (463 / 321)) else (- (- 932))))], (if false then (if (897 < [632, 201][941]) then ((if (646 >= 243) then true else (364 >= 916)) || true) else false) else ((if ((! true) != (! true)) then (! (true || false)) else ((! true) && false)) == (((- 94.61) <= (if true then 70.42 else 26.12)) && (if (! true) then (! true) else true))))]
+
+show rgba {[(if false then 0.12 else 5.79)][((- 622) % 862)], (a {(- 79.89)}.a + a {40.0}.a), (- 83.71), rgba {((- 43.15) + (88.97 - 63.03)), 54.0, a {32.8}.a, (- 34.11)}.g}.b
+
+show (if [(! (! false)), (if b {false}.a then false else true), (63.46 <= (- (- 50.49)))][(if ((false || true) && false) then ((if (701 >= 96) then 833 else (547 * 115)) - 495) else (668 + (- (- 180))))] then 996 else (- ((- (- (196 + 277))) % 388)))
+
+struct d {
+a : float
+}
+struct e {
+a : bool[,,]
+b : void
+}
+struct f {
+a : bool
+b : void
+c : int
+}
+struct g {
+a : b
+b : e
+}
+struct h {
+a : e
+b : c
+}

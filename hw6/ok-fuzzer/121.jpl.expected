@@ -1,7 +1,0 @@
-(ShowCmd
- (TupleLiteralExpr
-  (TupleType (TupleType (BoolType)) (BoolType))
-  (TupleLiteralExpr
-   (TupleType (BoolType))
-   (BinopExpr (BoolType) (FalseExpr (BoolType)) == (FalseExpr (BoolType))))
-  (TrueExpr (BoolType))))

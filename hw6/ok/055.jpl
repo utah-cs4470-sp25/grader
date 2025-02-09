@@ -1,1 +1,13 @@
-show {1, {2.0, pict., false}, pict.}{2}
+struct s2 {
+  a: float
+  b: rgba
+  c: bool
+}
+
+struct s1 {
+  x: int
+  y: s2
+  z: rgba
+}
+
+show s1{1, s2{2.0, rgba{0.0, 1.0, 0.0, 0.0}, false}, rgba{1.0, 0.0, 1.0, 0.0}}.y

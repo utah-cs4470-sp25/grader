@@ -1,2 +1,53 @@
-show (((412 * 1) != [(- 79.16), (47.21 / 74.85)]) && (! true))
+show ([313, (if false then (false - 317) else 640), (833 * 904)][(if (330 != 439) then ((621 * (867 - 832)) + (371 + 126)) else (- 229)[(- (- 562)), true[982, (- 132)], (if false then 217 else 341)])] < 397)
 
+show (rgba {85.22, ((- 32.14) * (- 25.56)), (- 2.2), (if (false != (71 >= 119)) then 82.91 else 13.45)}.b < (- 92.73))
+
+struct a {
+a : int[,,]
+b : void[,,]
+c : float[,]
+}
+struct b {
+a : bool
+}
+show (if ((35.39 % (- (- (- 57.16)))) > 9.35) then 81.77 else ((- (- 92.14)) / 26[149]))
+
+show ([41.28][(if (if false then (! true) else false) then (451 - (if (! false) then (- 398) else 10)) else (if b {false}.a then 736 else ((- 41) / 627)))] > rgba {((46.87 + (- 41.09)) - (33.03 / 17.0)), 27.44, (if ((190 <= 907) == (! true)) then 86.42 else 75.05), (if (false || true) then (if (! true) then (75.49 / 26.54) else 14.78) else 42.54)}.r)
+
+struct c {
+a : a
+b : a[,]
+}
+show b {(! (if true then b {true}.a else (25.7 <= 98.76)))}
+
+struct d {
+a : int
+b : void
+}
+struct e {
+a : rgba
+}
+struct f {
+a : e
+b : void[,]
+c : void
+}
+struct g {
+a : rgba
+b : d
+}
+show b {(if false then true else true)}.a
+
+show false
+
+show (if true then b {false}.a else (d {209, 351.b}.a > ((- (- 363)) / 637)))
+
+struct h {
+a : e
+}
+struct i {
+a : e
+}
+struct j {
+a : i
+}

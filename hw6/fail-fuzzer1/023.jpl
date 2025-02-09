@@ -1,2 +1,0 @@
-show [(123 < 288), (if true then false else pict.)]
-

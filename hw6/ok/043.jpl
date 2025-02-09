@@ -1,1 +1,4 @@
-show [ {}, {}, {}, {} ]
+struct empty {
+}
+
+show [ empty{}, empty{}, empty{}, empty{} ]

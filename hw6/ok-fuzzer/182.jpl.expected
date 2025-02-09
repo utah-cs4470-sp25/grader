@@ -1,9 +1,0 @@
-(ShowCmd
- (UnopExpr
-  (FloatType)
-  -
-  (BinopExpr
-   (FloatType)
-   (FloatExpr (FloatType) 39)
-   *
-   (FloatExpr (FloatType) 20))))

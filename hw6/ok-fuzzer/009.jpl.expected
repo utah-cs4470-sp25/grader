@@ -1,37 +1,18 @@
-(ShowCmd
- (IfExpr
-  (BoolType)
-  (BinopExpr
-   (BoolType)
-   (IntExpr (IntType) 349)
-   !=
-   (IfExpr
-    (IntType)
-    (IfExpr
-     (BoolType)
-     (BinopExpr
-      (BoolType)
-      (FloatExpr (FloatType) 4)
-      ==
-      (FloatExpr (FloatType) 70))
-     (BinopExpr (BoolType) (TrueExpr (BoolType)) != (TrueExpr (BoolType)))
-     (TrueExpr (BoolType)))
-    (IfExpr
-     (IntType)
-     (UnopExpr (BoolType) ! (FalseExpr (BoolType)))
-     (UnopExpr (IntType) - (IntExpr (IntType) 769))
-     (IntExpr (IntType) 169))
-    (UnopExpr (IntType) - (UnopExpr (IntType) - (IntExpr (IntType) 929)))))
-  (UnopExpr (BoolType) ! (TrueExpr (BoolType)))
-  (BinopExpr
-   (BoolType)
-   (IntExpr (IntType) 71)
-   !=
-   (BinopExpr
-    (IntType)
-    (ArrayIndexExpr
-     (IntType)
-     (ArrayLiteralExpr (ArrayType (IntType) 1) (IntExpr (IntType) 3))
-     (BinopExpr (IntType) (IntExpr (IntType) 887) - (IntExpr (IntType) 484)))
-    %
-    (IntExpr (IntType) 217)))))
+(StructCmd a a (BoolType) b (StructType rgba))
+(StructCmd b a (ArrayType (ArrayType (FloatType) 3) 1) b (IntType) c (FloatType))
+(StructCmd c a (StructType rgba))
+(StructCmd d a (ArrayType (VoidType) 2) b (IntType) c (BoolType))
+(StructCmd e a (StructType d) b (BoolType))
+(ShowCmd (BinopExpr (BoolType) (BinopExpr (BoolType) (IfExpr (FloatType) (TrueExpr (BoolType)) (DotExpr (FloatType) (StructLiteralExpr (StructType rgba) rgba (UnopExpr (FloatType) - (FloatExpr (FloatType) 73)) (BinopExpr (FloatType) (FloatExpr (FloatType) 7) / (FloatExpr (FloatType) 5)) (FloatExpr (FloatType) 28) (FloatExpr (FloatType) 94)) r) (FloatExpr (FloatType) 6)) >= (FloatExpr (FloatType) 57)) == (UnopExpr (BoolType) ! (FalseExpr (BoolType)))))
+(StructCmd f a (StructType c))
+(ShowCmd (BinopExpr (BoolType) (UnopExpr (BoolType) ! (BinopExpr (BoolType) (UnopExpr (FloatType) - (FloatExpr (FloatType) 56)) < (BinopExpr (FloatType) (FloatExpr (FloatType) 47) + (BinopExpr (FloatType) (FloatExpr (FloatType) 71) / (FloatExpr (FloatType) 45))))) || (TrueExpr (BoolType))))
+(StructCmd g a (ArrayType (IntType) 3))
+(StructCmd h a (StructType c))
+(StructCmd i a (StructType e) b (StructType d) c (StructType a))
+(StructCmd j a (StructType d))
+(StructCmd k a (StructType rgba) b (StructType i) c (VoidType))
+(StructCmd l a (BoolType) b (StructType j))
+(StructCmd m a (StructType g))
+(StructCmd n a (StructType i) b (StructType b))
+(StructCmd o a (StructType a) b (StructType i) c (StructType rgba))
+(StructCmd p a (StructType g))

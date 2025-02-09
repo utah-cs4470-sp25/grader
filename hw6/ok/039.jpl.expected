@@ -1,5 +1,1 @@
-(ShowCmd
- (ArrayLiteralExpr
-  (ArrayType (BoolType) 1)
-  (FalseExpr (BoolType))
-  (TrueExpr (BoolType))))
+(ShowCmd (ArrayLiteralExpr (ArrayType (BoolType) 1) (FalseExpr (BoolType)) (TrueExpr (BoolType))))

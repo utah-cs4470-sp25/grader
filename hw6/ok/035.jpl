@@ -1,1 +1,5 @@
-show { true }
+struct mybool {
+  x: bool
+}
+
+show mybool{ true }

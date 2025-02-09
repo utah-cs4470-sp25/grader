@@ -1,4 +1,1 @@
-(ShowCmd
- (VarExpr
-  (ArrayType (TupleType (FloatType) (FloatType) (FloatType) (FloatType)) 2)
-  pict.))
+(ShowCmd (StructLiteralExpr (StructType rgba) rgba (FloatExpr (FloatType) 1) (FloatExpr (FloatType) 0) (FloatExpr (FloatType) 0) (FloatExpr (FloatType) 0)))

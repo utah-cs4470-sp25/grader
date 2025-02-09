@@ -1,6 +1,1 @@
-(ShowCmd
- (IfExpr
-  (IntType)
-  (TrueExpr (BoolType))
-  (IntExpr (IntType) 1)
-  (IntExpr (IntType) 2)))
+(ShowCmd (IfExpr (IntType) (TrueExpr (BoolType)) (IntExpr (IntType) 1) (IntExpr (IntType) 2)))

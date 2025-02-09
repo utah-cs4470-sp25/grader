@@ -1,26 +1,3 @@
-(ShowCmd
- (TupleIndexExpr
-  (ArrayType (TupleType (FloatType) (FloatType) (FloatType) (FloatType)) 2)
-  (TupleLiteralExpr
-   (TupleType
-    (IntType)
-    (TupleType
-     (FloatType)
-     (ArrayType (TupleType (FloatType) (FloatType) (FloatType) (FloatType)) 2)
-     (BoolType))
-    (ArrayType (TupleType (FloatType) (FloatType) (FloatType) (FloatType)) 2))
-   (IntExpr (IntType) 1)
-   (TupleLiteralExpr
-    (TupleType
-     (FloatType)
-     (ArrayType (TupleType (FloatType) (FloatType) (FloatType) (FloatType)) 2)
-     (BoolType))
-    (FloatExpr (FloatType) 2)
-    (VarExpr
-     (ArrayType (TupleType (FloatType) (FloatType) (FloatType) (FloatType)) 2)
-     pict.)
-    (FalseExpr (BoolType)))
-   (VarExpr
-    (ArrayType (TupleType (FloatType) (FloatType) (FloatType) (FloatType)) 2)
-    pict.))
-  2))
+(StructCmd s2 a (FloatType) b (StructType rgba) c (BoolType))
+(StructCmd s1 x (IntType) y (StructType s2) z (StructType rgba))
+(ShowCmd (DotExpr (StructType s2) (StructLiteralExpr (StructType s1) s1 (IntExpr (IntType) 1) (StructLiteralExpr (StructType s2) s2 (FloatExpr (FloatType) 2) (StructLiteralExpr (StructType rgba) rgba (FloatExpr (FloatType) 0) (FloatExpr (FloatType) 1) (FloatExpr (FloatType) 0) (FloatExpr (FloatType) 0)) (FalseExpr (BoolType))) (StructLiteralExpr (StructType rgba) rgba (FloatExpr (FloatType) 1) (FloatExpr (FloatType) 0) (FloatExpr (FloatType) 1) (FloatExpr (FloatType) 0))) y))

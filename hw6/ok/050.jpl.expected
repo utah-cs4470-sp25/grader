@@ -1,12 +1,2 @@
-(ShowCmd
- (IfExpr
-  (TupleType (IntType) (FloatType))
-  (TrueExpr (BoolType))
-  (TupleLiteralExpr
-   (TupleType (IntType) (FloatType))
-   (IntExpr (IntType) 1)
-   (FloatExpr (FloatType) 1))
-  (TupleLiteralExpr
-   (TupleType (IntType) (FloatType))
-   (IntExpr (IntType) 2)
-   (FloatExpr (FloatType) 1))))
+(StructCmd nums i (IntType) f (FloatType))
+(ShowCmd (IfExpr (StructType nums) (TrueExpr (BoolType)) (StructLiteralExpr (StructType nums) nums (IntExpr (IntType) 1) (FloatExpr (FloatType) 1)) (StructLiteralExpr (StructType nums) nums (IntExpr (IntType) 2) (FloatExpr (FloatType) 1))))

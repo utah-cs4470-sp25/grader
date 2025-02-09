@@ -1,2 +1,48 @@
-show (if (if (513 >= (- 480)) then true else {28.76, pict.}{3}) then (36.28 * (- (- 39.98))) else (- 52.82))
+show (- (if (((- 953) != 551) || (! true)) then [(- 446), (- (- 852)), 624] else [(if (! true) then 527 else 308), (- (764 / 455)), (- (- 625))])[(if ((if true then false else (318 >= 402)) || false) then (- 335) else (12 * 691))])
 
+struct a {
+a : void
+b : int
+}
+show a {(- 73.41)[(- 851)].a, (- (- (if true then 50.44 else 83.99))[((- (if false then 525 else 847)) / 200), ((- (170 + 883)) * (- 287)), (- 610)])}
+
+struct b {
+a : bool
+}
+struct c {
+a : b
+b : float
+c : b
+}
+show false
+
+struct d {
+a : int
+b : void
+}
+struct e {
+a : a
+b : void
+}
+show (((! ((if false then (! false) else false) && ((27.01 != 30.95) && false))) && ((if (if true then (! false) else (51.09 > 45.49)) then (57.91 > 97.73) else ((! true) && (7.28 <= 19.25))) || (! ((true || false) || (true == true))))) && ((- ((- (289 / 727)) % (- (if true then 412 else 570)))) >= (130 - true.b)))
+
+show rgba {(if (if (((- 126) / (- 693)) != 648) then (32.43 >= (- 27.69)) else ((29.04 - (- 63.84)) < 74.57)) then (if (false.b >= (if (true || true) then 13.4 else 39.81)) then (57.5 % 84.41) else (- 17.28)) else [(if false then 79.86 else (- 63.61))][12]), 11.31, (- (- ((14.29 - (- 6.34)) % (- (- 59.59))))), (if (((false || false) || b {false}.a) == false) then 25.45 else ([1.23][836] * (- (5.99 * 20.98))))}
+
+show c {b {true}, (- 58.31), b {true}}.c.a
+
+show (((- rgba {22.53, 7.46, (- 39.23), (- 89.03)}.g) > 76.05) && (if b {false}.a then (! (! false)) else (519 == (! (if true then true else false)))))
+
+show (((- (- 759)) % 983) == 986)
+
+show (if false then (78 * (if (! false) then (- 512) else 81)) else (if (true || (((! true) || false) && ((true && false) || (18.8 > 66.78)))) then (- 248) else (if (364 > 366) then ((663 % 851) + 625) else (925 / (- 772)))))
+
+struct f {
+a : void
+}
+show ((if (true != [true][(if true then 80 else 844)]) then ((516 % (354 / (- 919))) + (- 112)) else 551) != 244)
+
+show true
+
+struct g {
+a : a
+}

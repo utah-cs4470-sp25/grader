@@ -1,1 +1,22 @@
-show {1, { { { 3, 4.0}, false }, [1, 2, 3] } }{1}{1}[2]
+struct s4 {
+  s4a: int
+  s4b: float
+}
+
+struct s3 {
+  s3a: s4
+  s3b: bool
+}
+
+struct s2 {
+  s2a: s3
+  s2b: int[]
+}
+
+struct s1 {
+  s1a: int
+  s1b: s2
+}
+
+
+show s1{1, s2{ s3{ s4{ 3, 4.0}, false }, [1, 2, 3] } }.s1b.s2b[2]

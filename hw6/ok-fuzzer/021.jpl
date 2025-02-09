@@ -1,2 +1,52 @@
-show (((if ((- 53.33) <= (- 78.63)) then 132 else (270 - 23)) / [(179 / 654)][[754][730]]) % 479)
+show (- ([[81.87][(- 285)], (- (- 99.15)), 75.48][(- (- (- 270)))] + ((- 58.32) + (if false then [84.76] else [57.06, 79.25])[488])))
 
+show 543
+
+show 998
+
+show ((- 29.58) == ((- (if (false || (! false)) then (66.17 - 70.9) else (if (211 < 549) then 96.15 else 79.78))) + (- (- 82.48))))
+
+struct a {
+a : void
+b : int
+}
+struct b {
+a : void
+}
+show (((if true then 168 else 502) % 171) > 570)
+
+struct c {
+a : bool
+}
+struct d {
+a : a
+}
+struct e {
+a : b
+}
+show c {(! ([(438 == 139)][714] != (if false then ((- 896) >= 684) else false)))}
+
+show 41
+
+show c {[c {false}][926].a}
+
+struct f {
+a : void
+b : rgba
+}
+struct g {
+a : b
+b : c
+c : f
+}
+struct h {
+a : void
+b : b
+c : b
+}
+show c {(! ((- 78.84) == (- (14.94 % 31.27))))}.a
+
+struct i {
+a : rgba
+b : f
+}

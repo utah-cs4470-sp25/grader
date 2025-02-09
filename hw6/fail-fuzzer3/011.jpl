@@ -1,2 +1,49 @@
-show {pict.[(711 % 224), 610], {pict.[666, 693, 214], 84.96}, true}{2}{2}
+show 173
+
+struct a {
+a : void
+b : rgba
+c : float
+}
+struct b {
+a : rgba
+b : bool
+}
+show 674[740, 4][(- (497 % 292)), 278, 845].b.b
+
+show (91.03 % (if false then (- (rgba {49.79, 27.58, 9.41, 48.77}.r * ((if true then 83.22 else 42.88) / 19.42))) else 1.24))
+
+show ((927 / 490)[(986 - 938), (- 651)].a.a >= rgba {(! false), (- 27.59), 96.3, 1.03}.r)
+
+struct c {
+a : b
+}
+show ((555 - [(- 565), (- (- 488))][(- 827)]) - 114)
+
+show true
+
+struct d {
+a : c
+}
+show c {b {91.06.a, ((- 46.35) == (- 73.2))}}.a
+
+show b {[rgba {(- (- 42.99)), (- 11.29), (- 244), 88.36}, 175][692], c {(452 <= 830).a}}
+
+struct e {
+a : d
+}
+struct f {
+a : e
+b : e
+}
+struct g {
+a : c
+}
+show d {c {b {rgba {36.79, (- 88.35), 63.44, 86.8}, (! true)}}}.a
+
+struct h {
+a : g
+b : float
+}
+show d {c {b {rgba {11.24, 50.01, (6.12 - 40.19), 85.23}, ((if (448 >= 258) then (- 100) else (- 199)) != (- 252))}}}
 

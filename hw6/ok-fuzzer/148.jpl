@@ -1,2 +1,0 @@
-show {true, {(! (false && (857 != 187)))}, (if (! false) then false else ((- 51.78) == (- (50.9 + 70.84))))}
-

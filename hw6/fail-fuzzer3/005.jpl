@@ -1,2 +1,49 @@
-show ((- (if (! (! true)) then ((- 14.27) + 22.7) else (- 38.19))) - {pict.[715]}{1}[(if true then [590, 455] else [72, 94])[236], (- 713), (- 221)])
+struct a {
+a : rgba
+}
+show false
+
+struct b {
+a : bool
+}
+show (b {((- 31.64) != (56.03 + 90.1))}.a && (if true then (405 != 715) else (! (if (58.98 < (- 93.59)) then (! (89.09 == 42.87)) else (if false then false else true)))))
+
+show b {((! b {false}.a) && (false != 168))}.a
+
+show ((((- 4.49) % 63.47) <= ((- (- 87.28)) % 94.0)) != (! ((580 + (if false then 662 else 183)) != (if (true || true) then (- 389) else (- 69)))))
+
+struct c {
+a : bool
+}
+show c {false}.a
+
+struct d {
+a : int
+}
+show ((! true) || (! false))
+
+struct e {
+a : bool
+b : int
+}
+struct f {
+a : d
+b : float
+}
+show c {b {true}.a}.a
+
+show ((if (! e {true, 772}.a) then e {(! false), 825} else e {e {false, 594}.a, (- 867)}).a && false)
+
+struct g {
+a : e
+b : d
+}
+struct h {
+a : b
+}
+struct i {
+a : rgba
+b : d
+}
+show a {(! true)}.a
 

@@ -1,2 +1,36 @@
-show pict.{0}{1}
+show false
+
+show ((! false) || (! (if false then [(907 < 721), true][910] else false)))
+
+show (if ((- false.g) == (if (12 >= 772) then (84.31 * 22.04) else 3.81)) then [(true == (! (false == (40.42 == 66.1)))), (! ((96.42 != (2.98 % 75.96)) || (! (336 == 405)))), (((- (- 288)) >= (69 / 274)) != ((93.07 % 42.81) < (if true then 52.25 else 1.9)))] else [((- (- 47.46)) == 4.97), (((35.09 / 41.55) != (- 42.46)) != (if true then (! (true && true)) else (false && false))), (((! (true == true)) || (82.4 < 31.67)) || ((if false then (830 / 271) else (217 * 604)) != 968))])
+
+show (! true)
+
+show 919
+
+show (if (if (149 > 217) then true else (((558 + (- 919)) >= 566) && (true != false))) then ([54.48][(- (- 646))][377[(- 456)], (if (true && (true != true)) then 568 else 747), (540 - 781)] / (- (619 * 242))) else ((225 / (- (- (- 808)))) - (if [(if false then false else false)][(- 248)] then 27 else (324 % 668))))
+
+show (if (! (394 != ((- 752) * 123))) then [(true && false), (743 == 614)] else (if ((if false then (- 703) else 832) < 297) then [true] else [(746 != (if false then 593 else 374)), (! (! false))]))
+
+show ((- ((- (- false)) * (- (- (- 378))))) % ((- (if false then 611 else (- (- 819)))) * 86))
+
+show (647 >= (790 - (- 732)))
+
+show 10.4
+
+show 64.17
+
+show rgba {(if (! false) then (- 12.61) else (- (- 9.47))), (- (95 > 677)), (if (! 87.5) then (- (31.68 % 63.08)) else (if (38 <= 8) then 81.57.a else 895[241])), (if (false && (! (! false))) then 61.26 else 94.07)}.b
+
+show (if (82.0 < (- (- 67.96))) then 435 else (- 569))
+
+show ((if false then 511 else ([(838 - 779)][(- (if true then 284 else 62))] / ((145 - 604) * (232 / (- 100))))) % (- 503))
+
+show (! (! ((if ((if true then false else false) && (! true)) then (790 <= (900 / 941)) else (93.61 <= (4.44 % 3.14))) && (! (74.07 != (- 28.73))))))
+
+show (if (if (if true then ([520][292] >= 832) else true) then ((- (- (- 415))) > 8) else true) then ((if (! false) then (if ((165 + 212) <= 514) then (if (false || true) then false else (false && false)) else ((686 * 182) > (- 271))) else (false.b != 7.41)) && (! (! (! true)))) else false)
+
+show (if false then 165 else 612)
+
+show (false && true)
 

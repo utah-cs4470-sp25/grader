@@ -1,5 +1,2 @@
-(ShowCmd
- (TupleLiteralExpr
-  (TupleType (BoolType) (IntType))
-  (TrueExpr (BoolType))
-  (IntExpr (IntType) 1)))
+(StructCmd boolint a (BoolType) b (IntType))
+(ShowCmd (StructLiteralExpr (StructType boolint) boolint (TrueExpr (BoolType)) (IntExpr (IntType) 1)))

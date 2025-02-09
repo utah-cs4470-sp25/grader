@@ -1,1 +1,16 @@
-show [ { { { { } } } }, { { { { } } } } ]
+struct d {
+}
+
+struct c {
+  cc: d
+}
+
+struct b {
+  bb: c
+}
+
+struct a {
+  aa: b
+}
+
+show [ a{ b{ c{ d{ } } } }, a{ b{ c{ d{ } } } } ]

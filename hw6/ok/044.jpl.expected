@@ -1,15 +1,2 @@
-(ShowCmd
- (ArrayLiteralExpr
-  (ArrayType (TupleType (IntType) (BoolType)) 1)
-  (TupleLiteralExpr
-   (TupleType (IntType) (BoolType))
-   (IntExpr (IntType) 1)
-   (TrueExpr (BoolType)))
-  (TupleLiteralExpr
-   (TupleType (IntType) (BoolType))
-   (IntExpr (IntType) 2)
-   (FalseExpr (BoolType)))
-  (TupleLiteralExpr
-   (TupleType (IntType) (BoolType))
-   (IntExpr (IntType) 3)
-   (TrueExpr (BoolType)))))
+(StructCmd ib i (IntType) b (BoolType))
+(ShowCmd (ArrayLiteralExpr (ArrayType (StructType ib) 1) (StructLiteralExpr (StructType ib) ib (IntExpr (IntType) 1) (TrueExpr (BoolType))) (StructLiteralExpr (StructType ib) ib (IntExpr (IntType) 2) (FalseExpr (BoolType))) (StructLiteralExpr (StructType ib) ib (IntExpr (IntType) 3) (TrueExpr (BoolType)))))

@@ -1,2 +1,59 @@
-show (if (if (65.25 != (if (false != false) then 61.33 else 36.49)) then true else ((- 62.22) >= 1.01)) then (- ((- 148) / ((354 + 382) - (if true then 102 else 752)))) else 731)
+show (! (1.01 != (- 49.47)))
 
+show ((- ([471][(713 % 405)] / (if (true && true) then (- (- 677)) else 24))) == 527)
+
+struct a {
+a : bool
+b : rgba
+c : float
+}
+show ((if true then (rgba {78.37, 25.71, (- 39.73), (- 33.78)}.g % [42.88][((- 81) * (- 510))]) else (if (! true) then 38.4 else (- 39.43))) == ((- (if false then 68.22 else 28.15)) * (- 60.79)))
+
+struct b {
+a : float[,,]
+}
+show (if (! ((- ((- 655) / (if true then 652 else 298))) >= (- (355 / (- 854))))) then (((39 + (173 * 336)) / 851) < (if (! [true][(- 246)]) then 435 else 889)) else true)
+
+struct c {
+a : b
+b : float
+c : rgba
+}
+struct d {
+a : rgba
+}
+struct e {
+a : bool
+}
+show [false, (546 != (- (- 492)))]
+
+struct f {
+a : b
+b : d
+c : int
+}
+struct g {
+a : void
+b : e
+c : int
+}
+struct h {
+a : g
+b : void
+}
+struct i {
+a : a
+b : int
+}
+struct j {
+a : bool
+}
+show ((- (622 * (if true then 841 else (- 812)))) * (- (615 + (if false then (- 523) else 411))))
+
+show 838
+
+struct k {
+a : f
+b : h
+c : c
+}

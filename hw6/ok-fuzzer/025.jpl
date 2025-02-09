@@ -1,2 +1,59 @@
-show ((! false) && ((- (if (563 > 86) then 838 else 509)) >= 550))
+struct a {
+a : void
+b : rgba[,]
+c : bool
+}
+show false
 
+show false
+
+struct b {
+a : bool
+b : float
+c : void
+}
+show (if (752 != (- (- (- (- 290))))) then [956, (- (355 % (- (157 / 180))))] else (if (! (35.49 >= (47.78 * 4.72))) then (if (! false) then [(- (- 932)), (- (- 191))] else [(- 756), 505, 414]) else (if true then [(- (778 * 950))] else [751, 338])))
+
+show 418
+
+struct c {
+a : float
+b : int
+}
+struct d {
+a : c
+}
+struct e {
+a : c
+b : d[][,]
+c : c
+}
+struct f {
+a : rgba
+b : a
+c : int[,,]
+}
+struct g {
+a : rgba
+}
+show [6.02, (if ((if ((840 - 171) <= 503) then false else (if false then false else true)) == ((- 113) >= (- 443))) then [93.91][((183 / 417) + 308)] else c {c {43.89, 961}.a, (- 81)}.a)]
+
+struct h {
+a : g
+b : void
+c : bool
+}
+show (! ((- 242) != [[370], [788]][((104 / 174) / (324 % 899))][(- 435)]))
+
+show (d {c {36.98, 837}}.a.a + (79.16 * 40.12))
+
+show ((- (- (795 * 692))) != (- (- c {(- 12.61), 428}.b)))
+
+struct i {
+a : h
+b : f
+c : c
+}
+struct j {
+a : g[,,]
+}

@@ -1,16 +1,18 @@
-(ShowCmd
- (BinopExpr
-  (BoolType)
-  (FloatExpr (FloatType) 10)
-  <=
-  (UnopExpr
-   (FloatType)
-   -
-   (UnopExpr
-    (FloatType)
-    -
-    (IfExpr
-     (FloatType)
-     (TrueExpr (BoolType))
-     (FloatExpr (FloatType) 66)
-     (FloatExpr (FloatType) 27))))))
+(ShowCmd (BinopExpr (IntType) (BinopExpr (IntType) (IfExpr (IntType) (IfExpr (BoolType) (UnopExpr (BoolType) ! (UnopExpr (BoolType) ! (TrueExpr (BoolType)))) (TrueExpr (BoolType)) (BinopExpr (BoolType) (FloatExpr (FloatType) 38) < (FloatExpr (FloatType) 29))) (IfExpr (IntType) (IfExpr (BoolType) (FalseExpr (BoolType)) (UnopExpr (BoolType) ! (TrueExpr (BoolType))) (FalseExpr (BoolType))) (IfExpr (IntType) (UnopExpr (BoolType) ! (FalseExpr (BoolType))) (UnopExpr (IntType) - (IntExpr (IntType) 669)) (IntExpr (IntType) 885)) (IntExpr (IntType) 643)) (BinopExpr (IntType) (UnopExpr (IntType) - (BinopExpr (IntType) (IntExpr (IntType) 231) - (IntExpr (IntType) 47))) % (IntExpr (IntType) 708))) - (IfExpr (IntType) (UnopExpr (BoolType) ! (BinopExpr (BoolType) (TrueExpr (BoolType)) || (UnopExpr (BoolType) ! (FalseExpr (BoolType))))) (UnopExpr (IntType) - (IfExpr (IntType) (FalseExpr (BoolType)) (IfExpr (IntType) (TrueExpr (BoolType)) (IntExpr (IntType) 875) (IntExpr (IntType) 333)) (BinopExpr (IntType) (IntExpr (IntType) 180) / (IntExpr (IntType) 553)))) (UnopExpr (IntType) - (IntExpr (IntType) 669)))) / (BinopExpr (IntType) (BinopExpr (IntType) (UnopExpr (IntType) - (UnopExpr (IntType) - (IntExpr (IntType) 681))) / (IfExpr (IntType) (FalseExpr (BoolType)) (BinopExpr (IntType) (IntExpr (IntType) 731) % (IntExpr (IntType) 234)) (IfExpr (IntType) (BinopExpr (BoolType) (IntExpr (IntType) 896) < (IntExpr (IntType) 609)) (BinopExpr (IntType) (IntExpr (IntType) 816) - (IntExpr (IntType) 259)) (IntExpr (IntType) 706)))) / (IntExpr (IntType) 808))))
+(StructCmd a a (IntType) b (VoidType))
+(ShowCmd (IfExpr (BoolType) (FalseExpr (BoolType)) (TrueExpr (BoolType)) (BinopExpr (BoolType) (FalseExpr (BoolType)) || (UnopExpr (BoolType) ! (UnopExpr (BoolType) ! (IfExpr (BoolType) (TrueExpr (BoolType)) (BinopExpr (BoolType) (FloatExpr (FloatType) 9) >= (FloatExpr (FloatType) 76)) (BinopExpr (BoolType) (IntExpr (IntType) 371) != (IntExpr (IntType) 832))))))))
+(ShowCmd (BinopExpr (BoolType) (BinopExpr (BoolType) (IntExpr (IntType) 411) <= (BinopExpr (IntType) (IntExpr (IntType) 254) % (UnopExpr (IntType) - (IntExpr (IntType) 350)))) != (IfExpr (BoolType) (BinopExpr (BoolType) (IfExpr (FloatType) (FalseExpr (BoolType)) (FloatExpr (FloatType) 62) (IfExpr (FloatType) (FalseExpr (BoolType)) (BinopExpr (FloatType) (FloatExpr (FloatType) 85) + (FloatExpr (FloatType) 82)) (FloatExpr (FloatType) 67))) > (UnopExpr (FloatType) - (FloatExpr (FloatType) 16))) (UnopExpr (BoolType) ! (BinopExpr (BoolType) (UnopExpr (BoolType) ! (TrueExpr (BoolType))) || (BinopExpr (BoolType) (UnopExpr (BoolType) ! (FalseExpr (BoolType))) != (UnopExpr (BoolType) ! (FalseExpr (BoolType)))))) (FalseExpr (BoolType)))))
+(ShowCmd (IntExpr (IntType) 24))
+(StructCmd b a (IntType))
+(ShowCmd (StructLiteralExpr (StructType rgba) rgba (IfExpr (FloatType) (BinopExpr (BoolType) (BinopExpr (BoolType) (BinopExpr (FloatType) (UnopExpr (FloatType) - (FloatExpr (FloatType) 99)) * (FloatExpr (FloatType) 13)) > (FloatExpr (FloatType) 88)) != (FalseExpr (BoolType))) (DotExpr (FloatType) (StructLiteralExpr (StructType rgba) rgba (FloatExpr (FloatType) 94) (FloatExpr (FloatType) 31) (FloatExpr (FloatType) 42) (FloatExpr (FloatType) 59)) b) (BinopExpr (FloatType) (FloatExpr (FloatType) 71) / (UnopExpr (FloatType) - (BinopExpr (FloatType) (FloatExpr (FloatType) 32) * (FloatExpr (FloatType) 21))))) (FloatExpr (FloatType) 11) (DotExpr (FloatType) (StructLiteralExpr (StructType rgba) rgba (BinopExpr (FloatType) (UnopExpr (FloatType) - (UnopExpr (FloatType) - (FloatExpr (FloatType) 1))) % (UnopExpr (FloatType) - (FloatExpr (FloatType) 49))) (UnopExpr (FloatType) - (FloatExpr (FloatType) 60)) (BinopExpr (FloatType) (BinopExpr (FloatType) (UnopExpr (FloatType) - (FloatExpr (FloatType) 95)) * (FloatExpr (FloatType) 77)) % (IfExpr (FloatType) (FalseExpr (BoolType)) (FloatExpr (FloatType) 53) (UnopExpr (FloatType) - (FloatExpr (FloatType) 25)))) (BinopExpr (FloatType) (FloatExpr (FloatType) 85) / (FloatExpr (FloatType) 21))) b) (UnopExpr (FloatType) - (FloatExpr (FloatType) 55))))
+(ShowCmd (BinopExpr (BoolType) (IfExpr (BoolType) (BinopExpr (BoolType) (TrueExpr (BoolType)) != (BinopExpr (BoolType) (FloatExpr (FloatType) 45) < (IfExpr (FloatType) (TrueExpr (BoolType)) (FloatExpr (FloatType) 71) (IfExpr (FloatType) (TrueExpr (BoolType)) (FloatExpr (FloatType) 83) (FloatExpr (FloatType) 28))))) (UnopExpr (BoolType) ! (BinopExpr (BoolType) (IntExpr (IntType) 473) > (IntExpr (IntType) 166))) (BinopExpr (BoolType) (BinopExpr (BoolType) (TrueExpr (BoolType)) && (TrueExpr (BoolType))) || (UnopExpr (BoolType) ! (UnopExpr (BoolType) ! (FalseExpr (BoolType)))))) && (TrueExpr (BoolType))))
+(StructCmd c a (IntType))
+(StructCmd d a (StructType rgba) b (StructType rgba))
+(StructCmd e a (BoolType))
+(ShowCmd (DotExpr (BoolType) (StructLiteralExpr (StructType e) e (IfExpr (BoolType) (BinopExpr (BoolType) (TrueExpr (BoolType)) == (TrueExpr (BoolType))) (DotExpr (BoolType) (StructLiteralExpr (StructType e) e (FalseExpr (BoolType))) a) (BinopExpr (BoolType) (FalseExpr (BoolType)) || (BinopExpr (BoolType) (FloatExpr (FloatType) 38) != (FloatExpr (FloatType) 86))))) a))
+(StructCmd f a (ArrayType (IntType) 3))
+(StructCmd g a (FloatType))
+(StructCmd h a (StructType b))
+(StructCmd i a (StructType d) b (VoidType) c (StructType rgba))
+(ShowCmd (StructLiteralExpr (StructType e) e (FalseExpr (BoolType))))
+(StructCmd j a (StructType b))

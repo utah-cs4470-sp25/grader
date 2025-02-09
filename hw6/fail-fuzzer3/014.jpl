@@ -1,2 +1,49 @@
-show (((- [58.28][995]) / ((39.72 - (- 96.94)) * (- (- 78.74)))) != pict.[725, 67]{1}[(if false then 509 else 149), (- (if false then 477 else 13))][(if false then (431 / (- 618)) else (- (- 296)))])
+struct a {
+a : float
+}
+struct b {
+a : bool
+b : float
+}
+show b {true, 57.13}.b
+
+struct c {
+a : float
+}
+show true
+
+show c {[42.83[(- 847)]][(if ((true || true) || true) then ((- 302) % (- 607)) else (if true then (if true then 383 else 936) else 74))].a}
+
+show a {(if ((- (- 60.03)) != (if (! true) then (- 25.48) else 67.87)) then true[(- (- 667))] else true).g}
+
+show a {(- 74.82)}.a
+
+show a {58.71}
+
+struct d {
+a : int[,,]
+}
+show a {((! true).a + 84.12)}.a
+
+struct e {
+a : rgba
+b : a
+}
+show ((! (((- 700) % (if false then 889 else 168)) == (343 * (if false then (- 705) else 425)))) != (if (20.94 >= (50.88 - 46.66)) then (b {(! true), 21.39}.a && ((false && true) || [true, true][(- 623)])) else ((if (true || (24.83 > 19.56)) then ((- 16.43) <= (- 19.0)) else true) || (71 < (- 650)))))
+
+struct f {
+a : a
+b : e
+c : rgba
+}
+show 74.25
+
+struct g {
+a : rgba
+b : bool
+c : bool
+}
+show false[336, (644 / 276), (- 58)][(- (490 % (101 * 208))), 74].c.a
+
+show true.a
 

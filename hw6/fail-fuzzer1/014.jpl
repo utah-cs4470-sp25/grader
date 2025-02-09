@@ -1,2 +1,36 @@
-show ((if (false && true) then 966 else 653) == (69.66 % 427))
+show 44.68
+
+show 351
+
+show (63.03 % [[(if false then 82.86 else 36.83)], [0.65, false]][(36 % (- 188))][false])
+
+show ((if (false[(- 613), (- 803)] || false) then [(- (- 5.63)), (if true then 91.23 else (- 90.24))] else (if (84.48 > (- 74.02)) then [(29.96 / 91.52), 23.74, 51.08] else [(- 3.76), 31.2, (- 10.2)]))[(if true then 862 else 631)] / (- (- ((- 22.43) / 81.4))))
+
+show (9.47.a < (((if false then (- 88.72) else (53.46 - 77.79)) - (if false then (53.78 / (- 17.19)) else 85.34)) * (44.46 + 5.97)))
+
+show (((! true) != false) || ((- (if (348 < (- 647)) then ((- 219) / 783) else (- 209))) != (if false then (if true then ((682 * 791) - (- 223)) else (- (if true then 29 else 53))) else (if ((! false) && (50.99 < 94.79)) then (- (- 796)) else (- (650 + 884))))))
+
+show rgba {((- [23.14][(- (246 + 752))]) - (12.42 / ((5.21 - 98.3) % (if (false || false) then 98.91 else (96.48 + 98.18))))), (92.95 / (- 32.48)), (if false then [149] else [929]).b, (- 16.93)}
+
+show 685[[(if (25.11 < 4.77) then (- 590) else 423), 666, 379][(if ((11.19 > 94.36) || true) then 74 else (if true then 715 else 781))]].r
+
+show [(78.43 > ((47.45 + 8.18) * 42.65)), ((- 261) < (if true then (- (if (18.53 != 90.12) then (- 482) else 468)) else ((- 507) + 349)))]
+
+show rgba {(if true then rgba {(- 17.56), (- 18.39), (- 39.92), (- 1.95)} else rgba {(87.61 * 88.89), (- 13.48), (94.5 % 28.65), (if true then 86.81 else 41.24)}).r, (96.72 - 91.39), (- 98.33), 12.45}.r
+
+show (- ((- (- [23.32][20])) - (- (- 76.43))))
+
+show ((- (- 64.72)) * 99.94)
+
+show rgba {rgba {(- 62.94), ((- 23.37) + (5.52 * (- 72.09))), (- (- (- 44.08))), rgba {46.19, 61.29, 90.38, 56.26}.b}.r, 82.32, 1.39, [(((- 29.58) + 67.62) + ((- 31.37) + 49.61)), [55.58][(if (14 == 958) then (- 413) else 436)]][831]}
+
+show rgba {((if true then ((- (96.88 * 15.32)) + (- 84.12)) else rgba {65.35, 28.92, (- 70.01), 59.65}.a) + (- (- ((- 24.08) - 77.07)))), (if true then (true == false) else [(3.59 - 67.64)])[35], (if (89.75 < 41.25) then (if (- 44.39) then 20.88 else 85.34) else rgba {(- 94.25), (- 56.02), 74.69, 48.86}.b), (if (if ((! true) && true) then (if true then (false != (! false)) else true) else (! false)) then (- (- 75.39)) else (if (false != (true && false)) then [(15.26 - 16.48), 3.34][118] else 57.99))}
+
+show (942[((- (- 891)) / (- (- 260)))][(- (if (true && (! false)) then 139 else 923)), ((- (- 836)) * ((if false then (28 % 811) else 943) / (- (909 % 723))))] * (- (- (- (if false then 283 else (- 264))))))
+
+show true
+
+show (! ((if true then ((- 1.12) + (- (- 84.82))) else (14.66 % (if (! true) then (90.77 % 11.81) else 23.32))) == ((if ((948 != 565) && true) then 31.19 else (- (- 36.12))) / ((- (- 61.79)) * 0.71))))
+
+show rgba {(- (if ((60.4 * 55.5) == (- (- 35.44))) then 79.3 else 65.68)), ((- (- 20.22)) * (if false then ((- 50.37) - 51.03) else (- ((- 84.91) % 30.62)))), (if (862 != 870) then 67.21 else 1.15), (if true then (if ((if (false == false) then (299 <= 116) else false) && false) then (- (2.75 / 17.49)) else (- (if false then (if true then 88.81 else 59.14) else 97))) else rgba {(78.87 - 89.08), ((81.91 * 89.35) + 92.46), [91.34][386], 87.6}.a)}
 

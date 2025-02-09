@@ -1,2 +1,36 @@
-show false{1}[((464 + 932) - 441), ((727 * 290) % 970)]
+show (- rgba {rgba {38.85, 1.37, 13.52, 74.0}.g, (- (- 58.83)), rgba {45.13, (- 63.71), 63.13, 90.24}.b, (- (48.66 * 32.21))}.b)
+
+show (- (if 44.78 then ((- (- 183)) % (- (if true then (- 502) else 733))) else 792))
+
+show rgba {(32.67 + (- (- (if true then (if false then 57.28 else 29.06) else (- 87.96))))), (if (95.96 <= (- (! true))) then (64.65 - 21.85) else (- (true / 75.01))), [rgba {1.99, 64.25, 88.27, 74.49}, true][(if (! (485 == 289)) then [167][328] else (- (- 276)))].g, (if (if true then false else true) then 86.95 else (if true then (98.57 - (- 96.29)) else 48.79))}
+
+show 652
+
+show (if (if ((if true then 69.76 else (- (78.66 * 53.79))) > (- 97.98)) then (if (! false) then (((! true) != false) || (! (16.37 == 71.39))) else (! true)) else ((- (- (- 64))) < ([846][253] - (553 + 819)))) then (- (- ((- 60.99) % ((if false then 80.48 else 22.47) - (21.49 + 51.3))))) else (if (if false then (if (false || (! false)) then (if (true && false) then false else (true || false)) else (if true then true else (! true))) else (if (! false) then (true && true) else ((379 != 239) != (95.03 == 31.6)))) then 5.02 else 49.78))
+
+show 73.05
+
+show rgba {(if ((! (! (556 != 487))) || false) then (if ((41.09 - (- 13.69)) > 88.52) then 80.17 else 86.87) else ((- 24.05) - 415[(- 595), (95 / 543)].a)), (if ((if true then 12.08 else rgba {42.92, 10.6, 59.63, 2.11}.b) < ((82.01 + (- 47.11)) * (- (- 83.65)))) then (- (if ((98.01 == 66.9) || true) then 17.13 else (- (- 90.03)))) else ((19.64 / (214 == 768)) + ((- (- 44.95)) % [71.97][(158 - 232)]))), (if true then [(- 120), 66.23] else [(- 50.84), (- 1.55)])[174], 57.88}
+
+show true
+
+show ((! false) && (if ((if true then (if (629 < 802) then 15.37 else (- 68.52)) else (12.03 * 0.59)) != rgba {(- 34.37), true, 34.0, 47.98}.b) then (((16.09 * (82.14 + 5.97)) - 66.37) > ((- 43.27) + 536)) else false))
+
+show (! (([(- 278)][((- 540) - (- 407))] - (- 34.28)[(- (- 493)), 110, (- 971)]) < (if true then (if false then 512 else (- (- 952))) else (if (! (! true)) then (if true then 40 else 169) else 672))))
+
+show (! (if ((734 > 963) != ((true == (778 != 445)) != ((! false) || (! false)))) then true else (! ((- (326 + 41)) <= 694))))
+
+show (((- 29.36) / (if (26 <= 886) then (if (false || false) then 567 else 8.36)[(if 46.54 then 768 else 878), 415] else (32.8 % 90.97))) <= 29.42.g)
+
+show (- (if (if (if true then true else 627) then ((! true) != ((- 13.1) < 71.07)) else ((- 26.66) != 12.56)) then 60.36 else 8.73))
+
+show (792 + 98.26)
+
+show ((23.6 >= ((- 35.89) / (- 9.16))) > 83.93)
+
+show (if (! (! (! false))) then [(- 490)] else (if (! (! (! false))) then [2, 432] else 48.19[(592 * 415), (if (! true) then (- 34.55) else (- 945))]))
+
+show (- 480)
+
+show ((if (if true then (((- 124) < (739 - 997)) && ((! false) && (if false then true else false))) else false) then (! (37 > (882 / (947 * 846)))) else ((- 17.31) == [82.89, (28.91 - 66.82)][(- 901)])) && true)
 

@@ -1,2 +1,56 @@
-show (- (- (if [false, true][(- 547)] then (if true then 12 else (if false then 599 else 236)) else (- 182))))
+show 21.03
 
+struct a {
+a : void
+b : rgba
+c : void
+}
+show 90.31
+
+struct b {
+a : rgba[,,]
+b : void
+}
+struct c {
+a : void[,]
+b : a
+c : a
+}
+struct d {
+a : int
+b : a
+c : bool
+}
+struct e {
+a : d
+b : b
+c : void
+}
+show ((! (! ((if (! true) then (706 < 704) else true) && (! true)))) && (! (if true then false else ((- (35.08 + 68.04)) == 73.22))))
+
+show false
+
+struct f {
+a : int
+}
+struct g {
+a : a
+}
+struct h {
+a : void
+b : e
+c : void
+}
+show true
+
+show [(912 >= f {f {453}.a}.a), (! ((if (704 < (- 801)) then (- (- 82.29)) else 55.68) < (if (480 != (if false then 34 else 731)) then (- (- 31.64)) else (- 63.47))))]
+
+show (! (! ((- (- 63.93)) <= ((- 71.83) % (- 25.55)))))
+
+show (! (if (if (if (! false) then (! true) else true) then false else (true && (true && true))) then [true] else [(! (true || true))])[19])
+
+show (((if (! false) then (if false then (- 72.52) else 58.8) else 97.62) == 71.59) || ((((34.55 != (89.9 - 26.13)) || (162 == 287)) || ((if (true && false) then 61.37 else (71.69 - 30.97)) >= 43.98)) || true))
+
+struct i {
+a : f
+}

@@ -1,2 +1,0 @@
-show {350, [((if (! true) then (! true) else true) || (! true)), true], pict.}
-

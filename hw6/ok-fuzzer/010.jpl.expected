@@ -1,42 +1,18 @@
-(ShowCmd
- (BinopExpr
-  (BoolType)
-  (ArrayIndexExpr
-   (FloatType)
-   (IfExpr
-    (ArrayType (FloatType) 1)
-    (BinopExpr
-     (BoolType)
-     (IfExpr
-      (IntType)
-      (TrueExpr (BoolType))
-      (IntExpr (IntType) 440)
-      (IntExpr (IntType) 444))
-     !=
-     (IntExpr (IntType) 476))
-    (ArrayLiteralExpr
-     (ArrayType (FloatType) 1)
-     (BinopExpr
-      (FloatType)
-      (FloatExpr (FloatType) 98)
-      %
-      (FloatExpr (FloatType) 10))
-     (FloatExpr (FloatType) 84))
-    (ArrayLiteralExpr
-     (ArrayType (FloatType) 1)
-     (IfExpr
-      (FloatType)
-      (TrueExpr (BoolType))
-      (FloatExpr (FloatType) 75)
-      (FloatExpr (FloatType) 68))))
-   (BinopExpr
-    (IntType)
-    (IfExpr
-     (IntType)
-     (FalseExpr (BoolType))
-     (UnopExpr (IntType) - (IntExpr (IntType) 211))
-     (UnopExpr (IntType) - (IntExpr (IntType) 538)))
-    /
-    (IntExpr (IntType) 463)))
-  >=
-  (FloatExpr (FloatType) 13)))
+(ShowCmd (FalseExpr (BoolType)))
+(ShowCmd (BinopExpr (BoolType) (FloatExpr (FloatType) 37) > (FloatExpr (FloatType) 23)))
+(ShowCmd (UnopExpr (BoolType) ! (BinopExpr (BoolType) (BinopExpr (FloatType) (FloatExpr (FloatType) 21) / (IfExpr (FloatType) (IfExpr (BoolType) (BinopExpr (BoolType) (TrueExpr (BoolType)) != (FalseExpr (BoolType))) (UnopExpr (BoolType) ! (FalseExpr (BoolType))) (TrueExpr (BoolType))) (FloatExpr (FloatType) 94) (FloatExpr (FloatType) 86))) < (UnopExpr (FloatType) - (UnopExpr (FloatType) - (UnopExpr (FloatType) - (UnopExpr (FloatType) - (FloatExpr (FloatType) 34))))))))
+(StructCmd a a (VoidType))
+(ShowCmd (FloatExpr (FloatType) 15))
+(StructCmd b a (ArrayType (StructType rgba) 2) b (StructType rgba) c (StructType a))
+(ShowCmd (BinopExpr (IntType) (IfExpr (IntType) (BinopExpr (BoolType) (UnopExpr (BoolType) ! (UnopExpr (BoolType) ! (TrueExpr (BoolType)))) || (BinopExpr (BoolType) (TrueExpr (BoolType)) || (BinopExpr (BoolType) (IntExpr (IntType) 37) > (BinopExpr (IntType) (IntExpr (IntType) 361) / (IntExpr (IntType) 937))))) (IntExpr (IntType) 874) (IntExpr (IntType) 998)) - (BinopExpr (IntType) (BinopExpr (IntType) (IntExpr (IntType) 34) % (IntExpr (IntType) 504)) * (IntExpr (IntType) 551))))
+(StructCmd c a (StructType rgba) b (StructType a))
+(ShowCmd (TrueExpr (BoolType)))
+(StructCmd d a (FloatType) b (ArrayType (StructType c) 1))
+(StructCmd e a (IntType))
+(ShowCmd (FalseExpr (BoolType)))
+(StructCmd f a (BoolType))
+(StructCmd g a (StructType f) b (StructType rgba))
+(ShowCmd (BinopExpr (BoolType) (UnopExpr (FloatType) - (UnopExpr (FloatType) - (UnopExpr (FloatType) - (BinopExpr (FloatType) (FloatExpr (FloatType) 84) * (BinopExpr (FloatType) (FloatExpr (FloatType) 46) % (FloatExpr (FloatType) 26)))))) > (UnopExpr (FloatType) - (FloatExpr (FloatType) 6))))
+(ShowCmd (UnopExpr (BoolType) ! (BinopExpr (BoolType) (FalseExpr (BoolType)) && (DotExpr (BoolType) (StructLiteralExpr (StructType f) f (TrueExpr (BoolType))) a))))
+(ShowCmd (DotExpr (IntType) (StructLiteralExpr (StructType e) e (IntExpr (IntType) 232)) a))
+(ShowCmd (BinopExpr (BoolType) (UnopExpr (IntType) - (IfExpr (IntType) (IfExpr (BoolType) (TrueExpr (BoolType)) (UnopExpr (BoolType) ! (UnopExpr (BoolType) ! (TrueExpr (BoolType)))) (FalseExpr (BoolType))) (BinopExpr (IntType) (DotExpr (IntType) (StructLiteralExpr (StructType e) e (IntExpr (IntType) 802)) a) - (DotExpr (IntType) (StructLiteralExpr (StructType e) e (IntExpr (IntType) 338)) a)) (BinopExpr (IntType) (IntExpr (IntType) 343) - (IntExpr (IntType) 329)))) <= (DotExpr (IntType) (IfExpr (StructType e) (BinopExpr (BoolType) (IntExpr (IntType) 245) == (DotExpr (IntType) (StructLiteralExpr (StructType e) e (IntExpr (IntType) 166)) a)) (IfExpr (StructType e) (DotExpr (BoolType) (StructLiteralExpr (StructType f) f (TrueExpr (BoolType))) a) (StructLiteralExpr (StructType e) e (UnopExpr (IntType) - (IntExpr (IntType) 561))) (StructLiteralExpr (StructType e) e (UnopExpr (IntType) - (IntExpr (IntType) 439)))) (StructLiteralExpr (StructType e) e (DotExpr (IntType) (StructLiteralExpr (StructType e) e (IntExpr (IntType) 253)) a))) a)))

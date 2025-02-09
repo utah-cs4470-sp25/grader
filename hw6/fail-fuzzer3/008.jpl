@@ -1,2 +1,59 @@
-show [(58.74 % 27.89){2}[(- (if true then 497 else 336))][356]]
+show rgba {(! (! false)).a, 56.9, true[(850 - (- 639)), [628, 849][(- 336)], (((- 494) / 707) * (- (- 126)))], (if (if (! (false && false)) then true else 29.3) then (66.96 + (- 78.46)) else (((14.65 % 61.07) / 98.92) * (- 27.06)))}.g
 
+show 46.05
+
+show 86.02
+
+show 212
+
+struct a {
+a : int
+}
+struct b {
+a : float
+b : void[,,]
+c : int[,]
+}
+struct c {
+a : int
+b : void
+c : bool
+}
+struct d {
+a : a
+}
+struct e {
+a : float
+}
+struct f {
+a : void
+b : void
+}
+struct g {
+a : c
+b : c
+}
+struct h {
+a : g
+b : f
+c : rgba
+}
+struct i {
+a : void[,]
+b : b
+}
+show true
+
+show rgba {e {38.01}.a, (- e {21.48}.a), (- (if (! (185 < 643)) then e {(85.82 + 22.61)} else (if false then e {94.07} else e {66.77})).a), (- e {e {63.1}.a}.a)}
+
+struct j {
+a : e
+}
+struct k {
+a : f
+b : e
+}
+struct l {
+a : float
+b : a
+}

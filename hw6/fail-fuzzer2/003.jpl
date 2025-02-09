@@ -1,2 +1,53 @@
-show ((- [843, 399][814]) >= [630][(906 * (- 386)), (- (- 576))])
+struct a {
+a : void
+}
+show 731
 
+show rgba {(- rgba {75.22, (- 19.76), (- (- 63.33)), 43.77}.a), rgba {88.5, 47.53, (if ((- 48.83) <= 8.89) then 74.48 else (- 91.6)), (- (99.87 - 88.65))}.r, (((67.25 * (96.8 - 13.16)) * 3.29) + true[463, ((- 570) / 196), 751]), (if ((- (- (- 520))) <= ((- 597) + [902][(- 788)])) then (if ((! (true || true)) || ((! true) == (true == false))) then 31.14 else 34.23) else (- rgba {64.32, 96.47, true, 98.54}.g))}
+
+struct b {
+a : int
+b : rgba
+}
+struct c {
+a : void[][,,]
+b : rgba
+c : int
+}
+struct d {
+a : c
+b : rgba
+}
+struct e {
+a : a
+}
+struct f {
+a : b
+}
+show (61.88 >= rgba {(- (if true then 63.84 else 862)), 80.93.b.g, (6.5 + ((- 76.72) / 73.05)), 2.26}.r)
+
+struct g {
+a : float
+}
+show 25.23
+
+show g {(- (- [(- 43.92), 75.16][367]))}
+
+struct h {
+a : d
+b : d
+}
+show b {14, rgba {(if ((229 / 899) > (! true)) then g {97.65}.a else (if true then g {66.16} else g {91.43}).a), 38.01, (- ((249 - 164) / 585)), (- 39.13)[(530 - (- 154)), 393].a}}
+
+struct i {
+a : bool
+}
+show (- (i {false}.a == (! ((- 38.09) < 74.04))))
+
+show f {b {579, i {false}.b}}.a
+
+struct j {
+a : c
+b : float[,]
+c : f
+}

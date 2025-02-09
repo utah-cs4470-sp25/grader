@@ -1,7 +1,2 @@
-(ShowCmd
- (TupleLiteralExpr
-  (TupleType (IntType) (BoolType) (IntType) (BoolType))
-  (IntExpr (IntType) 1)
-  (TrueExpr (BoolType))
-  (IntExpr (IntType) 2)
-  (FalseExpr (BoolType))))
+(StructCmd ibib a (IntType) b (BoolType) c (IntType) d (BoolType))
+(ShowCmd (StructLiteralExpr (StructType ibib) ibib (IntExpr (IntType) 1) (TrueExpr (BoolType)) (IntExpr (IntType) 2) (FalseExpr (BoolType))))

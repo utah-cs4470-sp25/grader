@@ -1,2 +1,45 @@
-show ((! (! (if (! true) then true else (if false then false else true)))) || ((- (41.62 + (- 46.73))) == (- (if false then (95.47 % 79.49) else (if true then 60.98 else 38.43)))))
+show ([(- rgba {73.73, 11.49, 94.44, 7.11}.a), rgba {51.61, (- 43.89), (- 1.33), (if true then 63.38 else 1.1)}.b, 53.5][(- (576 * (- (- 363))))] % 39.13)
+
+show rgba {(if (! false) then (- ((79.78 % 51.39) % 18.91)) else (if false then (7.5 + 90.08) else (- 35.59))), (if false then ((- 58.4) + (31.78 + (- 75.45))) else (- (6.06 - (44.41 + 90.11)))), (if true then 62.07 else (if ((! false) || true) then 14.49 else (- 17.55))), (11.16 % (if false then (if true then 25.42 else 93.76) else (- 96.2)))}.b
+
+struct a {
+a : rgba
+b : int
+}
+show rgba {(- (- 32.41)), (- (if (! false) then 12.6 else (if [false][372] then 21.49 else 64.02))), 92.54, 29.14}
+
+show rgba {(if (if true then (((- 142) * (- 576)) > 894) else (! (if true then false else false))) then 72.24 else 26.35), ((if ((534 - 585) > ((- 10) * 49)) then (- (- (- 45.94))) else 87.67) * 38.7), (- 93.77), ((46.12 + (- 21.04)) / ((47.69 - 95.29) * 81.04))}
+
+show [(- (if ((true && (true || true)) && (if false then false else (58.48 > 31.7))) then ((- 218) / 751) else 909))]
+
+show rgba {76.46, 3.89, (if (! (if true then false else true)) then 83.42 else 94.23), rgba {96.69, (if (68.17 > (- 98.5)) then (- 91.62) else 30.84), 31.01, (- 43.47)}.b}
+
+show (158 >= 671)
+
+struct b {
+a : int
+}
+show (if (18.44 <= ((if false then 28.36 else (- 78.05)) + (- 69.04))) then b {(if true then (- 561) else b {111}.a)} else (if (if true then true else ((- 53) < (- 847))) then b {(- 125)} else b {672})).a
+
+show (! ((! (26.09 <= (- (- 67.93)))) && ((if ((! true) && false) then (- 60.84) else (- 2.34)) < 87.73)))
+
+show (- (- (- 884)))
+
+show 884
+
+struct c {
+a : void
+b : a
+}
+struct d {
+a : bool
+}
+struct e {
+a : int
+b : c
+c : int
+}
+show (! ((if ((! (371 == 914)) && false) then ((- 361) > 938) else d {(40.14 != 58.45)}.a) && ((! (! false)) == d {true}.a)))
+
+show false
 

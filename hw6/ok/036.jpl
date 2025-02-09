@@ -1,1 +1,6 @@
-show { true, 1 }
+struct boolint {
+  a: bool
+  b: int
+}
+
+show boolint{ true, 1 }

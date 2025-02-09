@@ -1,2 +1,45 @@
-show (if (true != ((if true then 19.28 else 97.63) <= 2.56)) then [[pict., pict.]] else [[pict.], (if (! false) then [pict., pict., pict.] else [pict., pict., pict.]), [pict., pict.]])[((738 / (- 851)) % (- 820))]
+show true
+
+show (if (if (true && true) then (! false) else true) then ((- (if (689 >= 145) then 99.25 else (- 24.69))) / rgba {45.74, (if true then (- 43.79) else 58.92), (if (if false then false else true) then 69.9 else 59.02), 10.72}.b) else (if (false == (! true)) then 16.67 else rgba {(if true then 31.14 else 1.78), 69.06, 66.58, (if (1.86 == 89.01) then 27.38 else (- 15.64))}.g))
+
+show ((if (! (80.52 < (49.05 - 84.95))) then (- (- (- (6.7 - 60.5)))) else (- 19.88)) % (if (([673][(- 213)] % 951) > 297) then (- 98.09) else (65.98 % rgba {(12.39 * 17.9), (if true then 1.65 else 49.09), 39.03, 47.78}.a)))
+
+show 896
+
+show (if (if false then (! ((- 70) >= 296)) else ((if true then (- 17.2) else 89.42) >= rgba {12.76, 42.08, 17.14, 29.08}.r)) then rgba {(if false then (if true then (56.92 * 37.12) else 13.78) else 43.0), (- (if (10.66 <= 77.56) then 39.51 else 21.15)), (82.14 - 26.98), (if ((258 + 537) != (587 + 251)) then 71.93 else 29.22)} else rgba {89.65, (11.87 % 69.49), 85.57, (- 55.49)}).g
+
+show ((! ((if (true || (true && true)) then (147 + 349) else 605) > (- (523 * (if false then 685 else 426))))) || (if (26.61 > (- (if true then 69.82 else (- 74.22)))) then (false && (if (true == false) then ((- 43.04) == (- 86.15)) else ((97.47 == 82.67) == (false || true)))) else ((! (! false)) && (0.15 >= 15.32))))
+
+struct a {
+a : void
+}
+show ((- rgba {(- 96.09), ((- 5.63) % (12.73 % 81.81)), (- (- 8.34)), 91.89}.a) != 4.19)
+
+struct b {
+a : a
+}
+struct c {
+a : float
+b : float
+c : int
+}
+struct d {
+a : int
+}
+struct e {
+a : float
+b : c
+}
+struct f {
+a : void
+}
+show 91.47
+
+show e {(if (! (true && true)) then 94.9 else (- 41.35)), c {44.0, (- (97.19 / 16.13)), [d {65}][(- (- 371))].a}}
+
+show (- [408][((if (! true) then (- 93) else 884) + 916)])
+
+show ((436 != (if true then 774 else 774)) && (681 <= d {223}.a))
+
+show ((e {48.79, c {(- 26.15), (21.33 % 8.49), 648}}.a + (- 54.43)) <= 55.12)
 

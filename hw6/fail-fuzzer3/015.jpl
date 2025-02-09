@@ -1,2 +1,54 @@
-show (if false then 29.17 else 61.68)[653, (425 % 602)]{2}[(- 235), 986]{0}
+struct a {
+a : int
+b : int[]
+c : void[]
+}
+struct b {
+a : rgba
+b : bool
+}
+struct c {
+a : a
+b : a
+c : rgba
+}
+show (! (! (if ((- 728) < 701) then (72 < 275) else ((- 937) == (- 79)))))
+
+struct d {
+a : int
+}
+struct e {
+a : b
+b : c
+}
+struct f {
+a : b
+b : rgba
+}
+show 571
+
+show false
+
+show 632
+
+struct g {
+a : float
+}
+show d {910}.a
+
+show 328
+
+struct h {
+a : c
+}
+struct i {
+a : d
+b : bool
+c : rgba
+}
+show 902.b.c.a
+
+show ((if false then [g {36.51}] else [g {87.71}])[(- 693)].a > 73.07)
+
+show ((((! ((- 17.76) <= (77.87 / 68.73))) && true) && ((((- 992) / 291) == ((177 - 430) - (- 596))) && false)) == (((- 927) == (- 452)) != ((((- 71.08) / 44.02) + g {60.39}.a) != (if (if (372 > 290) then (! true) else (3.01 != 42.61)) then (- (- 45.6)) else 32.54))))
 

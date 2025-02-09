@@ -1,13 +1,5 @@
-(ShowCmd
- (ArrayLiteralExpr
-  (ArrayType (TupleType (TupleType (TupleType (TupleType)))) 1)
-  (TupleLiteralExpr
-   (TupleType (TupleType (TupleType (TupleType))))
-   (TupleLiteralExpr
-    (TupleType (TupleType (TupleType)))
-    (TupleLiteralExpr (TupleType (TupleType)) (TupleLiteralExpr (TupleType)))))
-  (TupleLiteralExpr
-   (TupleType (TupleType (TupleType (TupleType))))
-   (TupleLiteralExpr
-    (TupleType (TupleType (TupleType)))
-    (TupleLiteralExpr (TupleType (TupleType)) (TupleLiteralExpr (TupleType)))))))
+(StructCmd d)
+(StructCmd c cc (StructType d))
+(StructCmd b bb (StructType c))
+(StructCmd a aa (StructType b))
+(ShowCmd (ArrayLiteralExpr (ArrayType (StructType a) 1) (StructLiteralExpr (StructType a) a (StructLiteralExpr (StructType b) b (StructLiteralExpr (StructType c) c (StructLiteralExpr (StructType d) d)))) (StructLiteralExpr (StructType a) a (StructLiteralExpr (StructType b) b (StructLiteralExpr (StructType c) c (StructLiteralExpr (StructType d) d))))))

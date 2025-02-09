@@ -1,2 +1,63 @@
-show ((- (- (75 / (- 924)))) >= (if (if (! true) then pict. else pict.)[(641 + (164 + 460))] then (- ((- 363) + 899)) else ((918 + 663) / (- (528 + 253)))))
+struct a {
+a : rgba[,,]
+b : void
+c : int
+}
+struct b {
+a : bool
+}
+struct c {
+a : void
+b : b
+c : b
+}
+show (rgba {rgba {9.3, (- 97.24), 81.5, 16.69}.g, 12.92, (- [52.09][(- 160)]), (- true)}.g * (if (! (if ((- 77.45) < 39.88) then (! true) else (! (! true)))) then (if (! (! false)) then 2.36 else ((if true then 96.58 else 5.11) - 2.28)) else (706 * 256)[(- (983 + 936)), 442, 617].a))
+
+struct d {
+a : b
+b : bool
+c : int
+}
+struct e {
+a : b
+b : float
+}
+struct f {
+a : b
+b : c
+}
+struct g {
+a : rgba
+b : e
+}
+show (- (- 90.64))
+
+struct h {
+a : float
+}
+show (- 64.47)
+
+struct i {
+a : f
+b : float[,,]
+c : float
+}
+show 21.39
+
+struct j {
+a : i
+b : f
+c : int[,,]
+}
+show (d {b {(! (! false))}, (b {true}.a && true), (- (- (- 320)))}.c != (if (h {(- 34.03)}.a <= 2.38) then (if true then (- (- 660)) else 585) else (if d {71, (if false then false else true), 248}.b then (- 502) else 26)))
+
+struct k {
+a : int
+b : bool
+}
+struct l {
+a : j
+b : i
+}
+show 83.57
 

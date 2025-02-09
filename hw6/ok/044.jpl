@@ -1,1 +1,6 @@
-show [ { 1, true }, { 2, false }, { 3, true } ]
+struct ib {
+  i: int
+  b: bool
+}
+
+show [ ib{ 1, true }, ib{ 2, false }, ib{ 3, true } ]

@@ -1,2 +1,54 @@
-show ([(438 + pict.)][519] < (if (594 != 721) then (- (- 879)) else [38, 832][(if false then 343 else 647)]))
+show (! ((- 50.17) >= 63.51))
 
+struct a {
+a : bool
+}
+show ((if (([44.55][475] < (31.05 - (- 99.72))) && false) then [a {false}.a] else (- (- 3.76))) >= (if (! true) then (- 492) else 939))
+
+struct b {
+a : rgba[][,]
+b : float
+}
+struct c {
+a : a[,]
+b : b
+c : int
+}
+struct d {
+a : rgba
+b : float
+}
+struct e {
+a : b
+}
+show (if (! (839 < 841)) then [24][(393 + (656 / 218))] else 56.19)[(- (- (- 252)))].b
+
+show (! [a {false}.a][(if a {false}.a then [(- 671), (if true then 395 else 929)] else [967])[230]])
+
+struct f {
+a : d[]
+}
+struct g {
+a : rgba
+b : c
+}
+show 28.95
+
+show (! false)
+
+struct h {
+a : e
+}
+struct i {
+a : float
+}
+struct j {
+a : rgba
+b : bool
+c : void
+}
+show (((if ((- 455) < 111) then (if a {true}.a then 6 else ((if false then 342 else 96) * (- 918))) else (if ((! false) || false) then (651 / 711) else (545 * 727))) - 487) < 970)
+
+struct k {
+a : rgba
+}

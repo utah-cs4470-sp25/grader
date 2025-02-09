@@ -1,2 +1,55 @@
-show ((- (- 1.8)) > (if (((90.42 > 54.16) && (534 <= 797)) || (578 <= 778)) then 77.87 else ((- (55.98 % 9.8)) / 5.37)))
+show (! ((if (if (! false) then (! true) else ((9.2 <= 12.38) || (true && false))) then 43.76 else (41.86 % ((if false then 13.3 else 13.27) * 76.15))) == (if [true][(966 + (if false then 206 else 229))] then (if ((false && true) || (47.64 != 93.96)) then (- (- 82.78)) else (11.94 * 18.3)) else rgba {(- 78.86), (- 84.84), 44.53, 73.56}.r)))
+
+show (if ((229 > 698) || (! true)) then rgba {(- (- (- 59.71))), (if false then 12.37 else (- (- 88.86))), 64.22, (- 7.66)} else rgba {1.09, (- (- (93.61 / 79.04))), ((if (! true) then (- 0.38) else 1.71) * (- 67.41)), (if true then (- 99.42) else (1.1 % (12.53 * 59.31)))}).g
+
+show 52.32
+
+show ((if ((- ((- 69.7) % 5.78)) > (- (77.94 + 34.79))) then (if (if (! false) then false else (52.25 >= 99.55)) then (- 263) else (- 792)) else 845) == (- 41))
+
+show rgba {(97.22 * rgba {(if true then 35.6 else 60.99), 18.45, (- 99.58), 16.22}.g), (if ((- (- 91.42)) == 35.33) then 87.63 else 44.73), 58.05, (if (320 > (- 226)) then (if (true && false) then (63.63 + 43.8) else 70.74) else (- (- (- 81.5))))}.r
+
+struct a {
+a : rgba
+b : rgba
+}
+show ((if (((! (87.4 < 3.63)) && true) || false) then (- (- (16.01 + 48.08))) else [43.96][((- (- 894)) + (if false then 320 else (- 170)))]) != 1.65)
+
+struct b {
+a : bool
+}
+struct c {
+a : int
+b : b
+}
+struct d {
+a : c
+b : rgba
+}
+struct e {
+a : void
+}
+struct f {
+a : b
+}
+struct g {
+a : f
+}
+struct h {
+a : int
+b : bool
+c : bool
+}
+struct i {
+a : a
+b : a
+c : g
+}
+struct j {
+a : h
+}
+struct k {
+a : rgba
+b : e
+}
+show g {f {b {(! true)}}}.a.a
 

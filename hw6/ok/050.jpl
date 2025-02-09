@@ -1,1 +1,6 @@
-show if true then {1, 1.0} else {2, 1.0}
+struct nums {
+  i: int
+  f: float
+}
+
+show if true then nums{1, 1.0} else nums{2, 1.0}
