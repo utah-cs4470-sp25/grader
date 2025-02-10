@@ -1,1 +1,0 @@
-(ShowCmd (SumLoopExpr (IntType) i (IntExpr (IntType) 3) (VarExpr (IntType) i)))

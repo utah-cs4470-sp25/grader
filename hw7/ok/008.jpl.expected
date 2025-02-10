@@ -1,1 +1,0 @@
-(TimeCmd (ShowCmd (ArrayLiteralExpr (ArrayType (TupleType) 1) (TupleLiteralExpr (TupleType)) (TupleLiteralExpr (TupleType)) (TupleLiteralExpr (TupleType)))))

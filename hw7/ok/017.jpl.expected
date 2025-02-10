@@ -1,3 +1,0 @@
-(LetCmd (ArgLValue (VarArgument x)) (IntExpr (IntType) 1))
-(LetCmd (ArgLValue (VarArgument y)) (VarExpr (IntType) x))
-(ShowCmd (VarExpr (IntType) y))

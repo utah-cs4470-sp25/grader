@@ -1,13 +1,44 @@
-let a = exp(to_float(to_int(atan(log(18.13)))))
-assert ((if {args, false, a}{1} then (array[b : (692 * 965), c : to_int(37.3), d : 406] (- argnum)) else (array[b : 988, c : to_int(9.79), d : 402] (- b)))[to_float(220)[20], (- (sum[b : 701, c : (- 221)] argnum)), argnum] != (if (true || ((! true) || true)) then argnum else argnum)), "b"
-let b = exp(tan((log(9.9) * exp(atan(7.38)))))
-let c = a
-let d = (if (if (! (args[520] > (if true then argnum else 729))) then false else (if (! false) then args[(- argnum), 605] else (401 >= (sum[d : argnum, e : argnum] d)))) then to_float((if [false][false] then to_int(c) else argnum)) else {(sum[d : argnum] atan(c)), (! true)}{0})
-let e = (pow(((sum[e : argnum, f : 895] a) - exp(tan(c))), (- to_float((- argnum)))) - (array[e : 367, f : 456] {a, b})[argnum, {argnum, 40}{0}]{0})
-let f[g, h, i] = (array[f : (sum[f : e[to_int((- 68.41)), (if true then 400 else to_int(b)), to_int((c * d))], g : (if (to_int(a) < (argnum - argnum)) then to_int(log(c)) else (533 - (sum[f : argnum, g : argnum] argnum))), h : ((sum[f : (866 % 184), g : (if false then argnum else argnum), h : (if false then argnum else argnum)] f) % (array[f : 977] f)[argnum])] argnum), g : (array[f : (sum[f : argnum, g : (argnum % 41)] (if false then f else argnum))] f)[(- (argnum % argnum))], h : (array[f : (483 + argnum), g : (476 + 564), h : (if false then 963 else argnum)] args)[(- {}), (- (- 147)), argnum][(- to_int((e % a)))]] (sum[i : h, j : (if true then h else (- f))] (j % 459)))
-let {j, {k[l, m, n], o[p, q]}} = {[tan(acos((- 96.02))), a], {(array[j : {h}{0}, k : 20, l : argnum] sin(pow(c, e))), (array[j : (array[j : i] 238)[(- g)], k : 735] {f, h, d}{2})}}
-let {r[s], {t, u}, v[w, x]} = {(array[r : g] (! ((true != true) && (! false)))), (if (d < acos((sum[r : p, s : i] d))) then {f, (sum[r : 770, s : args[i]] argnum)} else (if {true, e, g}{0} then {f, to_int(b)} else acos(b))), (if (! (d >= d)) then (if false then {l, o} else {q, o}) else {l, b}){1}}
-read image "y.png" to y
+let a[b, c, d] = (array[a : (array[a : 440] (- a))[(61 % (- 235))], b : (sum[a : (- 578), b : (sum[a : (- 707)] (sum[b : a] 812)), c : false] b)] (array[c : b] (array[d : (if true then a else a), e : (- 708), f : (b - c)] (array[g : a] 49.97))))[377, 258][(array[a : (868 - (- 723))] (array[b : 705, c : (a + 829), d : a] c))[(if (false && false) then 846 else (sum[a : (- 696), b : 122] (- 581)))][406, (sum[a : (- (if true then 856 else (- 302)))] 524), 373]]
+let e[f, g] = (if (! true) then (array[e : 318, f : (- c)] (array[g : (c * d), h : c] (array[i : g, j : 869] d))) else (if (c != 582) then 566 else c))[b, (c - c)][d, ((array[e : (- (- 830)), f : d] (if (e > 930) then (if true then b else b) else b))[c, d] / b)]
+let h = a[(sum[h : g, i : d, j : b] c), b, ((sum[h : (if (! (true && false)) then g else ((if true then b else g) / e[f, f])), i : (805 % c), j : (- d)] d) + ((sum[h : (sum[h : 121] b)] (array[i : c, j : c, k : d] d)[421, (if true then g else b), g]) / g))]
+let i[j] = h
+let k[l] = [i][g]
+time let m[n, o] = e
+let p = ((m[d, b] >= d) && (((sum[p : (- g), q : g] l) * o) < l))
+let q = (sum[q : j] (sum[r : ((- (if (b == b) then (g / d) else l)) / (sum[r : (if true then c else g)] (sum[s : l, t : r] b)))] b))
+let r[s] = (array[r : n] k)
+let t = (if (if p then false else p) then (if true then rgba {(if p then 9.48 else h[g]), 2.34, (31.13 - 23.03), 95.03} else (array[t : n] l)[n, n]) else rgba {(if (if (if p then false else true) then false else p) then 96.57 else 34.91), 16.92, 59.29, (array[t : (o + l), u : 299, v : 760] (43.88 % 93.03))[o, d, (if p then s else j)]}).a
+assert (array[u : (array[u : c, v : q, w : d] q)[(s * l), (- j), (d - f)]] (array[v : q, w : (sum[v : b, w : 418] d)] e))[q][129, g][(array[u : j, v : s, w : q] j)[408, o, d]], "u"
+fn u(v : float, w[x, y] : rgba[,], z : rgba) : float {
+  assert (if (false || (x == g)) then [(if (true || false) then (array[A : c, B : 993, C : n] false) else (array[A : g, B : o, C : g] true)), (array[A : c, B : c, C : o] false)][j][d, f, b] else (if (p || (! (v == t))) then (((sum[A : (sum[A : x, B : c] d), B : c] v) != (sum[A : (if true then o else o)] (- v))) || (! false)) else (! ((o < o) && ((f != 891) || p))))), "A"
+  let A = o
+  let B = r
+  let C[D, E, F] = A
+  let G = E
+  return u(u((if (array[H : n, I : l] (v <= 93.53))[f, d] then (if true then z else s).a else (sum[H : g, I : D, J : q] 24.51)), w, rgba {(sum[H : D] (sum[I : j] t)), (if (k[o] != v) then v else (28.43 + i[c])), v, t}), (array[H : A, I : g] (if p then z else rgba {(- (sum[J : 659, K : E, L : s] v)), z.r, z.g, (array[J : d, K : D] v)[f, y]})), (if (if (! ((sum[H : o] v) == (t - t))) then (! false) else ((false || p) == true)) then (array[H : (sum[H : b] x), I : g] rgba {(- v), (- 91.41), t, (v - v)})[(- (s % o)), y] else (array[H : s, I : (sum[H : A, I : (- F)] c)] z)[(b - o), f]))
+}
 
-let {} = (if (if ((e != a) || (false || true)) then {atan2(b, c), (q != m)} else (if (true && false) then {c, false} else {52.96, false})){1} then (array[z : 178, A : argnum] (array[B : argnum, C : l, D : n] {}))[x, p][219, x, (sum[z : x, A : p, B : (- (- h))] B)] else (if (cos(cos(a)) < (array[z : i, A : h] e)[75, (if false then h else x)]) then (if (! (e < a)) then {} else (array[z : i] {})[l]) else (if ((- 95.05) > a) then (if true then {} else {}) else {{}, n, v}{0})))
-assert (if (g <= {g, b}{0}) then {(! (false && false)), [atan(13.7), 57.74, to_float(w)], o} else (array[z : argnum, A : 108] {true, j, v})[n, u]){0}, "z"
+fn v(w : bool, x[y, z, A] : void[][,,]) : rgba {
+  let B = k
+  let C[D, E, F] = x
+  let G = E
+  let H = (E - g)
+  assert (A == y), "I"
+  return v(p, (array[I : s, J : o, K : d] (if ((array[L : I, M : n, N : d] true)[c, E, 500] && ((- 1.63) != t)) then x[J, j, E] else C[q, s, o])))
+}
+
+struct w {
+a : rgba
+}
+let x = (- (- rgba {(if (! false) then (t - t) else (if false then 47.04 else t)), 92.88, (- (sum[x : s, y : n] t)), 82.48}.g))
+let y = q
+let z[A, B] = m
+fn C(D : rgba) : float {
+  let E = q
+  let F[G, H] = z
+  assert p, "I"
+  let I = (n != l)
+  assert I, "J"
+  return (if p then D.b else (- x))
+}
+

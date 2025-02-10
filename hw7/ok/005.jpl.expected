@@ -1,1 +1,0 @@
-(TimeCmd (AssertCmd (FalseExpr (BoolType)) ""))

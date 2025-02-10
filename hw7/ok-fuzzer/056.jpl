@@ -1,15 +1,61 @@
-let {} = {{}, args, (sum[a : (- (- argnum)), b : (sum[a : (sum[a : 237, b : 80, c : 757] argnum), b : argnum] 669)] {31.63}{0})}{0}
-let {a, b} = {{{argnum, argnum}}}{0}{0}
-let c = b
-write image {(array[d : a, e : c] {51.34, (- 32.67), (- 86.19), (sum[f : b, g : d, h : e] 51.65)})}{0} to "d.png"
+let a[b] = [(- ((sum[a : 653, b : ((645 - 787) / (- 849)), c : 922] (if (b >= 716) then (sum[d : a, e : a, f : c] 18.45) else 68.33)) + (((- 60.01) / 94.56) / (sum[a : 484, b : 286, c : 498] (- 71.81))))), 5.33]
+let c[d, e] = (if true then (if ((array[c : (- 128)] (44.85 > 32.38))[(- b)] && (! [true, false][b])) then (if (! false) then (array[c : 743, d : (- (sum[c : b, d : b] c))] (array[e : 383, f : d] (- f))) else (array[c : b, d : b] (array[e : b, f : 548] (- b)))) else (if (! ((- 826) != 981)) then (array[c : b, d : 760] (array[e : d, f : (b % d)] (f - e))) else (array[c : (sum[c : 868] (c + c)), d : (527 * (- b))] (array[e : (975 * b), f : (- c)] d)))) else (array[c : 453, d : (if ((! (true != true)) == (! (! false))) then (sum[c : b] (b - 601)) else ((array[c : b, d : b, e : 461] c)[b, (sum[c : b] c), b] / b))] (array[e : b, f : [b][(- c)], g : (array[e : d, f : b] d)[971, (- d)]] (if true then (array[h : f, i : d] f) else (array[h : f, i : d] g)))[(if (if (d <= d) then true else (b <= c)) then c else d), (if false then (if (d < c) then (sum[e : d] c) else d) else b), c]))
+print "f"
 
-show ((sum[d : a, e : (array[d : argnum] args)[a][a]] (sum[f : e, g : 2, h : (array[f : argnum, g : b] a)[(660 % d), 377]] argnum)) >= (array[d : (sum[d : b] (- a)), e : 994, f : 129] d)[(sum[d : (b - a), e : ((- c) % (- c)), f : (if (! false) then (sum[d : argnum, e : a, f : argnum] e) else argnum)] c), b, (- a)])
+fn f(g : rgba, h : void, i : int[]) : void {
+  let j = 38.7
+  return f(rgba {(if ((! true) || (! true)) then [(- j)] else (if (true && false) then a else a))[306], j, (if (g.b >= a[(438 - b)]) then j else (sum[k : b] (- g.b))), (if ((b > (- e)) && false) then 32.56 else 74.99)}, h, (array[k : (sum[k : (sum[k : 359, l : (- b), m : (sum[k : b, l : e, m : d] d)] (m * 898)), l : (- d)] (- l))] i)[409])
+  let k = (rgba {j, (if ((- 66.24) > g.a) then j else (- (- j))), 88.6, (if ((sum[k : e, l : b] d) == 476) then (- a[b]) else (array[k : e, l : d] j)[(- d), (- d)])}.r / (array[k : ((- 903) * b)] (sum[l : b] j))[(- (array[k : b, l : (sum[k : d, l : e] l), m : (sum[k : b] k)] d)[e, 727, (e / (- d))])])
+  let l[m, n] = (array[l : (- (sum[l : (if false then (- b) else ((b * e) + 96)), m : (if true then i else i)[b], n : (sum[l : (if (e > d) then (- d) else 938)] (d % b))] (if (l != l) then e else e))), m : (sum[l : (d % b), m : d, n : 26] 858)] (sum[n : (m + (array[n : m, o : 403, p : 215] (e / 173))[(- d), e, (b - m)]), o : e, p : 591] ((sum[q : m, r : (- p)] (- (- j))) - (- a[o]))))
+  let o[p, q] = c
+}
 
-print "d"
+struct g {
+a : bool
+b : rgba
+}
+let h = a
+fn i(j[k] : rgba[,][], l[m, n, o] : rgba[,,]) : int {
+  let p[q] = j
+  assert (if (rgba {14.45, (sum[r : (- d), s : q] 77.39), [68.83][i(j, l)], ((sum[r : n, s : 659, t : d] 92.88) - 64.97)}.b <= 21.83) then g {((false || (97.16 == 4.81)) || (o == k)), rgba {(- 32.88), (array[r : n, s : n, t : 471] 57.59)[k, n, (- b)], (- 33.82), (sum[r : (b * o), s : k, t : (sum[r : o] b)] 10.87)}}.a else g {(if true then (if false then (b != k) else false) else (e < (- o))), g {false, l[o, m, b]}.b}.a), "r"
+  let r = q
+  let s[t, u] = (if ((- h[r]) > 80.82) then j else p)[o]
+  return k
+  return k
+}
 
-let d[e] = [args, (array[d : (if [true, false, true][(460 / argnum)] then a else 159)] (array[e : d] argnum)[d]), (array[d : (if ((b <= argnum) || (false && false)) then argnum else (707 / argnum))] c)]
-let f = {}
-let g = (((- {34.79, args, args}{0}) / (if (true && false) then (array[g : a, h : 144] 42.18) else (array[g : 299, h : e] 90.16))[537, e]) <= (if (! (true && false)) then (array[g : c] (- 5.75)) else [33.94, (- 47.94)])[a])
-assert ({{args, true}{1}}{0} && (if {true}{0} then {e, a, g} else {(sum[h : e, i : b] i), 85, (! true)}){2}), "h"
-let h[i, j, k] = [(array[h : 19, i : argnum, j : b] (array[k : e, l : j, m : e] a))][e][(if g then (- 707) else {args}{0}[(sum[h : 886] (e * 938))]), (array[h : (- (e - b)), i : (sum[h : c, i : c, j : argnum] argnum)] (array[j : argnum, k : argnum] j)[a, (i / argnum)])[b, c], c]
-let l = 10.31
+fn j(k : bool) : rgba {
+  let l = 27.52
+  let m = rgba {l, [(if k then a else h)[d], (sum[m : 945, n : (513 * e), o : e] l), l][(if (! true) then 668 else (sum[m : b] d))], (if k then (sum[m : d] (if k then 78.97 else 72.78)) else (if k then rgba {3.09, l, l, 35.48} else j(false)).g), (((- l) + 96.6) - 41.92)}.r
+  let n[o, p] = [(if ((sum[n : (sum[n : d] n)] b) <= (if (k == k) then 451 else (d / e))) then (array[n : (- (- e)), o : b] (array[p : o, q : o, r : o] 396)[e, (- d), n]) else (array[n : d, o : e] (if (107 >= n) then (sum[p : 899, q : o] b) else 163))), c[(- (sum[n : (681 - 74), o : (- d), p : (607 % b)] o)), (- (e - (sum[n : e] b)))], (array[n : d, o : ((b * (b / b)) * ((- b) + b))] 815)][d]
+  return (array[q : ((sum[q : d, r : p] b) + o)] (array[r : (e + q), s : (q + 549), t : (- (o / 453))] j(k)))[(p / (- d))][(if (! true) then (sum[q : (array[q : p, r : (sum[q : b, r : b] b), s : b] q)[b, o, d], r : 525] e) else e), (if (! false) then e else b), e]
+  let q = 0.04
+  return j(k)
+}
+
+let k = e
+let l[m, n, o] = (array[l : (if g {true, j((! false))}.a then 644 else k), m : (sum[l : (array[l : c[b, e][k, (149 * d)], m : (array[l : k, m : 790] e)[b, d]] d)[b, (if (false || true) then (array[l : 131, m : d] b) else (array[l : k, m : 849] d))[608, (- e)]], m : ((386 + d) + (- (array[l : e, m : k] e)[d, (- e)]))] 424), n : (if (if (! (false || true)) then ((27.9 > (8.38 + 97.7)) || (! (! false))) else ((array[l : e, m : d, n : k] m)[b, e, 841] > d)) then e else k)] g {(l <= e), (array[o : b, p : b] j(true))[n, l]})
+let p[q, r, s] = l
+fn t(u[v] : rgba[], w : float, x : int) : void {
+  let y = (w % (w - j(((! true) && false)).b))
+  let z = false
+  assert (! (e > v)), "A"
+  let A[B, C] = (array[A : o, B : s] (if (if (if true then z else true) then [(! z), (! false), (z && true)] else [false])[567] then f(u[159], t(u, y, v), [n, v, 449]) else f(rgba {w, 86.21, (- (w * 67.81)), (if z then (sum[C : A, D : o] w) else 13.28)}, t(u, a[n], (b + 65)), (array[C : m] B))))
+  assert (((if ((r + B) != (- r)) then 71.76 else (- (w / 94.6))) + (- j(z).g)) > (if (true != (! z)) then (array[D : k, E : m, F : x] y) else (array[D : C, E : b, F : b] (- w)))[[n, b, k][B], x, e]), "D"
+}
+
+fn u(v : void, w : float, x[y] : int[,][,,][]) : bool {
+  assert true, "z"
+  let z[A, B] = c
+  let C = p
+  let D[E] = a
+  let F[G, H] = z
+  return ((E < b) && true)
+}
+
+let v = (array[v : m, w : m] s)[(if ((667 <= d) != (! true)) then (array[v : 387, w : r, x : o] [o]) else (array[v : s, w : q, x : e] (array[y : r] m)))[((sum[v : (sum[v : b, w : d, x : k] q)] r) * m), 326, b][q], (sum[v : (sum[v : (array[v : 315, w : b] (- s))[s, r], w : (array[v : o, w : k] o)[b, (array[v : m, w : k] m)[d, o]]] v), w : r, x : (- e)] (sum[y : r, z : e] s))]
+read image "w.png" to w[x, y]
+
+let z[A, B] = (if (if (! ((! true) == ((y * m) == e))) then (if true then ((sum[z : b] (3.47 + 82.12)) == (- 1.93)) else true) else (false && (b != s))) then (array[z : o] c)[e] else (array[z : n, A : y] (array[B : q, C : r, D : b] c)[v, r, 977])[613, q])
+let C = n
+assert (if (! (20.93 < 75.29)) then u(t((array[D : q] w[s, e]), 28.15, d), (if (false && [false, false][o]) then 58.87 else (array[D : (r + d), E : e] 90.65)[e, r]), [(if false then (array[D : C, E : m, F : n] (array[G : m, H : C] b)) else (array[D : q, E : s, F : (B + C)] (array[G : k, H : r] E)))]) else (! u(t((array[D : B] j(false)), (- (- 44.79)), r), (sum[D : k, E : e, F : v] (- 77.3)), (array[D : C] (array[E : x, F : B, G : A] (array[H : E, I : y] r)))))), "D"
