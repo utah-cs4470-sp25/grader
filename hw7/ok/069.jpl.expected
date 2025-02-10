@@ -1,0 +1,4 @@
+(StructCmd a x (IntType))
+(StructCmd b y (ArrayType (StructType a) 1))
+(FnCmd f (()) (StructType b) (ReturnStmt (StructLiteralExpr (StructType b) b (ArrayLiteralExpr (ArrayType (StructType a) 1) (StructLiteralExpr (StructType a) a (IntExpr (IntType) 1))))))
+(ShowCmd (CallExpr (StructType b) f))

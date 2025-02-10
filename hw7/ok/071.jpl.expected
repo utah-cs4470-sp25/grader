@@ -1,0 +1,4 @@
+(StructCmd a x (IntType))
+(StructCmd c y (StructType a))
+(FnCmd f (((VarLValue b) (StructType a))) (StructType c) (ReturnStmt (StructLiteralExpr (StructType c) c (VarExpr (StructType a) b))))
+(ShowCmd (CallExpr (StructType c) f (StructLiteralExpr (StructType a) a (IntExpr (IntType) 7))))

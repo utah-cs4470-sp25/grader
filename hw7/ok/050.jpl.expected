@@ -1,0 +1,4 @@
+(ReadCmd "a.png" (ArrayLValue a b c))
+(ShowCmd (VarExpr (ArrayType (StructType rgba) 2) a))
+(ShowCmd (VarExpr (IntType) b))
+(ShowCmd (VarExpr (IntType) c))

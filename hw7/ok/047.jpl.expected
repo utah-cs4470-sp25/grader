@@ -1,0 +1,5 @@
+(StructCmd s3 d (IntType))
+(StructCmd s2 c (StructType s3))
+(StructCmd s1 b (StructType s2))
+(LetCmd (VarLValue a) (StructLiteralExpr (StructType s1) s1 (StructLiteralExpr (StructType s2) s2 (StructLiteralExpr (StructType s3) s3 (IntExpr (IntType) 3)))))
+(ShowCmd (DotExpr (IntType) (DotExpr (StructType s3) (DotExpr (StructType s2) (VarExpr (StructType s1) a) b) c) d))

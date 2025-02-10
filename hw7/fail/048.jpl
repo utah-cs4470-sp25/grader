@@ -1,0 +1,5 @@
+struct a {
+  x: int
+}
+
+show a{1}()

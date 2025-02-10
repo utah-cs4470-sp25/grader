@@ -1,0 +1,4 @@
+(StructCmd pair a (IntType) b (BoolType))
+(LetCmd (VarLValue p) (StructLiteralExpr (StructType pair) pair (IntExpr (IntType) 1) (FalseExpr (BoolType))))
+(ShowCmd (DotExpr (IntType) (VarExpr (StructType pair) p) a))
+(ShowCmd (DotExpr (BoolType) (VarExpr (StructType pair) p) b))

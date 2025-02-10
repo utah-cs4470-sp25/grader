@@ -1,1 +1,1 @@
-let {a, a} = {1, 2}
+let rgba{a, a, a, a} = rgba{1, 2}

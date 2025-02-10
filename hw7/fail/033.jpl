@@ -1,1 +1,1 @@
-let {} = 1
+let rgba{a,b,c,d} = 1

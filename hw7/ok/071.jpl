@@ -1,0 +1,13 @@
+struct a {
+  x: int
+}
+
+struct c {
+  y: a
+}
+
+fn f(b : a) : c {
+   return c{b}
+}
+
+show f(a{7})

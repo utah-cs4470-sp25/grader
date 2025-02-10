@@ -1,0 +1,3 @@
+(StructCmd box y (VoidType))
+(LetCmd (VarLValue x) (ArrayLiteralExpr (ArrayType (ArrayType (StructType box) 1) 1) (ArrayLiteralExpr (ArrayType (StructType box) 1) (StructLiteralExpr (StructType box) box (VoidExpr (VoidType))))))
+(ShowCmd (VarExpr (ArrayType (ArrayType (StructType box) 1) 1) x))

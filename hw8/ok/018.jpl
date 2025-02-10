@@ -1,6 +1,0 @@
-
-type a = int
-fn f() : a {
-   return 1
-}
-show f()

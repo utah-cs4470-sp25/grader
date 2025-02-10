@@ -1,0 +1,9 @@
+struct mpair {
+  a: int
+  b: int
+}
+
+fn f(mp: mpair) : int {
+   return mp.a - mp.b
+}
+show f(mpair{1, 2})

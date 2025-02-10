@@ -1,0 +1,3 @@
+(StructCmd a elem (IntType))
+(StructCmd b inner (ArrayType (StructType a) 1))
+(LetCmd (VarLValue x) (StructLiteralExpr (StructType b) b (ArrayLiteralExpr (ArrayType (StructType a) 1) (StructLiteralExpr (StructType a) a (IntExpr (IntType) 9001)))))

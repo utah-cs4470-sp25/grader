@@ -1,0 +1,8 @@
+struct a {
+  x: int
+}
+
+fn f(b : a) : int {
+   return b.x
+}
+show f(a{3})

@@ -1,2 +1,0 @@
-(TypeCmd a (IntType))
-(TypeCmd b (VarType a))

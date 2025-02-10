@@ -1,0 +1,8 @@
+struct a {
+  elem: int
+}
+
+struct b {
+  inner: a[]
+}
+

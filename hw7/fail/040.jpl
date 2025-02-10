@@ -1,2 +1,2 @@
-read image "a.png" to {a}
+read image "a.png" to rgba{a,b, c,d }
 

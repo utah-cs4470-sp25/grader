@@ -1,0 +1,8 @@
+struct posn {
+  x: int
+  y: float
+}
+
+fn f() : posn {
+   assert true, ""
+}

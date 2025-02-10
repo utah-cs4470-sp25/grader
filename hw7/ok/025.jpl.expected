@@ -1,0 +1,2 @@
+(LetCmd (VarLValue x) (IntExpr (IntType) 1))
+(ShowCmd (ArrayLoopExpr (ArrayType (IntType) 1) i (VarExpr (IntType) x) (VarExpr (IntType) i)))

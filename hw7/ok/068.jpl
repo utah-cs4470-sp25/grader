@@ -1,0 +1,9 @@
+
+struct a {
+  x: int
+}
+
+fn f() : a {
+   return a{1}
+}
+show f()

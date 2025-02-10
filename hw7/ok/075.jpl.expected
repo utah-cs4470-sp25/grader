@@ -1,0 +1,1 @@
+(FnCmd f (()) (IntType) (LetStmt (VarLValue x) (IntExpr (IntType) 7)) (ReturnStmt (VarExpr (IntType) x)))

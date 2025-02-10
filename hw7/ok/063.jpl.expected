@@ -1,0 +1,2 @@
+(FnCmd f (((VarLValue a) (IntType))) (IntType) (ReturnStmt (VarExpr (IntType) a)))
+(ShowCmd (CallExpr (IntType) f (IntExpr (IntType) 1)))

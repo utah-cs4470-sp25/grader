@@ -1,2 +1,0 @@
-(FnCmd f () (IntType) (ReturnStmt (IntExpr (IntType) 1)))
-(ShowCmd (CallExpr (IntType) f))

@@ -1,0 +1,2 @@
+(TimeCmd (LetCmd (VarLValue x) (IntExpr (IntType) 1)))
+(ShowCmd (VarExpr (IntType) x))

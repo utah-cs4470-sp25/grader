@@ -1,0 +1,1 @@
+(WriteCmd (ArrayLoopExpr (ArrayType (StructType rgba) 2) i (IntExpr (IntType) 3) j (IntExpr (IntType) 3) (StructLiteralExpr (StructType rgba) rgba (FloatExpr (FloatType) 0) (FloatExpr (FloatType) 0) (FloatExpr (FloatType) 0) (FloatExpr (FloatType) 1))) "a.png")

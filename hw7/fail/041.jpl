@@ -1,0 +1,5 @@
+struct a {
+  b: void
+}
+
+a{1}

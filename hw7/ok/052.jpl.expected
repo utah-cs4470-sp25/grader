@@ -1,0 +1,2 @@
+(StructCmd a elem (IntType))
+(StructCmd b inner (StructType a))

@@ -1,0 +1,3 @@
+(StructCmd a x (IntType))
+(FnCmd f (((VarLValue b) (StructType a))) (IntType) (ReturnStmt (DotExpr (IntType) (VarExpr (StructType a) b) x)))
+(ShowCmd (CallExpr (IntType) f (StructLiteralExpr (StructType a) a (IntExpr (IntType) 3))))

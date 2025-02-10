@@ -1,0 +1,10 @@
+struct a {
+  elem: int
+}
+
+struct b {
+  inner: a[]
+}
+
+let x = b{[a{9001}]}
+

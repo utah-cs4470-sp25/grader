@@ -1,2 +1,14 @@
-let {{{a}}} = {{{3}}}
-show a
+struct s3 {
+  d: int
+}
+
+struct s2 {
+  c: s3
+}
+
+struct s1 {
+  b: s2
+}
+
+let a = s1{s2{s3{3}}}
+show a.b.c.d

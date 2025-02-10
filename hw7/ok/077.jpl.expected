@@ -1,0 +1,1 @@
+(FnCmd f (()) (VoidType) (AssertStmt (TrueExpr (BoolType)) ""))

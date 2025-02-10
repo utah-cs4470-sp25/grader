@@ -1,0 +1,4 @@
+fn f(x: void) : int {
+   return 1
+}
+show f(void)

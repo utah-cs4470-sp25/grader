@@ -1,0 +1,3 @@
+(LetCmd (VarLValue x) (IntExpr (IntType) 1))
+(LetCmd (VarLValue y) (VarExpr (IntType) x))
+(ShowCmd (VarExpr (IntType) y))

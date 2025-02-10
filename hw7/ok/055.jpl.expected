@@ -1,0 +1,2 @@
+(StructCmd a x (IntType))
+(StructCmd b a1 (StructType a) a2 (StructType a))

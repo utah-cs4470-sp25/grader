@@ -1,0 +1,3 @@
+(StructCmd mpair a (IntType) b (IntType))
+(FnCmd f (((VarLValue mp) (StructType mpair))) (IntType) (ReturnStmt (BinopExpr (IntType) (DotExpr (IntType) (VarExpr (StructType mpair) mp) a) - (DotExpr (IntType) (VarExpr (StructType mpair) mp) b))))
+(ShowCmd (CallExpr (IntType) f (StructLiteralExpr (StructType mpair) mpair (IntExpr (IntType) 1) (IntExpr (IntType) 2))))

@@ -1,0 +1,2 @@
+(FnCmd f (((VarLValue x) (VoidType))) (IntType) (ReturnStmt (IntExpr (IntType) 1)))
+(ShowCmd (CallExpr (IntType) f (VoidExpr (VoidType))))

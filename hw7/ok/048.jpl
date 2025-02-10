@@ -1,4 +1,9 @@
-let {a, b} = {1, false}
-let {x, y} = {{a, b}}{0}
-show x
-show y
+struct mpair {
+  x: int
+  y: bool
+}
+
+let ab = mpair{1, false}
+let xx = ab.x
+show xx
+show ab.y
