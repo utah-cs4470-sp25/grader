@@ -1,0 +1,6 @@
+struct foo {
+  a: int
+  a: float
+}
+
+show foo{1, 1.0}
