@@ -1,0 +1,5 @@
+struct num {
+  x: int
+}
+let a = num{1}
+show a

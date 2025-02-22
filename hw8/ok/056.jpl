@@ -1,0 +1,11 @@
+struct inner {
+  x: int
+  y: int
+}
+struct outer {
+  a: int
+  b: inner
+  c: int
+}
+let a = outer{1, inner{2, 3}, 4}
+show a

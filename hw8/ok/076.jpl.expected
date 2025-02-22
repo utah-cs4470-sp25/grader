@@ -1,0 +1,57 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+typedef struct {
+  long long d0;
+  long long *data;
+} _a1_long_long;
+
+void jpl_main(struct args args) {
+    long long _0 = 1ll;
+    bool _1 = false;
+    _a1_long_long _2;
+    if (!_1)
+    goto _jump1;
+    long long _3 = 1ll;
+    long long _4 = 2ll;
+    long long _5 = 3ll;
+    long long _7 = 1ll;
+    long long _8 = 2ll;
+    long long _9 = 3ll;
+    _a1_long_long _6;
+    _6.d0 = 3;
+    _6.data = jpl_alloc(sizeof(long long) * 3);
+    _6.data[0] = _7;
+    _6.data[1] = _8;
+    _6.data[2] = _9;
+    _2 = _6;
+    goto _jump2;
+    _jump1:;
+    long long _10 = 4ll;
+    long long _11 = 5ll;
+    long long _12 = 6ll;
+    long long _14 = 4ll;
+    long long _15 = 5ll;
+    long long _16 = 6ll;
+    _a1_long_long _13;
+    _13.d0 = 3;
+    _13.data = jpl_alloc(sizeof(long long) * 3);
+    _13.data[0] = _14;
+    _13.data[1] = _15;
+    _13.data[2] = _16;
+    _2 = _13;
+    _jump2:;
+    show("(ArrayType (IntType) 1)", &_2);
+}
+

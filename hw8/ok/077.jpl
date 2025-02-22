@@ -1,0 +1,10 @@
+struct m {
+  b: int
+}
+struct n {
+  c: int
+  d: int
+  e: int
+}
+let a = 1
+show if m{1}.b < n{0,1,2}.c  then [1, 2, 3] else [4, 5, 6]

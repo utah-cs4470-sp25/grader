@@ -1,0 +1,58 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+typedef struct {
+    long long a;
+    long long b;
+    long long c;
+} one;
+
+typedef struct {
+    long long d;
+    long long e;
+} two;
+
+typedef struct {
+    long long f;
+    long long g;
+    long long h;
+} three;
+
+typedef struct {
+    one i;
+    two j;
+    three k;
+} four;
+
+void jpl_main(struct args args) {
+    long long _0 = 1ll;
+    long long _1 = 2ll;
+    long long _2 = 3ll;
+    one _3 = { _0, _1, _2 };
+    long long _4 = 1ll;
+    long long _5 = 2ll;
+    two _6 = { _4, _5 };
+    long long _7 = 3ll;
+    long long _8 = 4ll;
+    long long _9 = 5ll;
+    three _10 = { _7, _8, _9 };
+    four _11 = { _3, _6, _10 };
+    one _12 = _11.i;
+    show("(TupleType (IntType) (IntType) (IntType))", &_12);
+    two _13 = _11.j;
+    show("(TupleType (IntType) (IntType))", &_13);
+    three _14 = _11.k;
+    show("(TupleType (IntType) (IntType) (IntType))", &_14);
+}
+

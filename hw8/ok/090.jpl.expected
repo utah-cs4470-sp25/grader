@@ -1,0 +1,65 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+typedef struct {
+    long long x;
+    long long y;
+} posn;
+
+typedef struct {
+  long long d0;
+  posn *data;
+} _a1_posn;
+
+void jpl_main(struct args args) {
+    long long _0 = 1ll;
+    long long _1 = 2ll;
+    posn _2 = { _0, _1 };
+    long long _3 = 3ll;
+    long long _4 = 4ll;
+    posn _5 = { _3, _4 };
+    long long _6 = 5ll;
+    long long _7 = 6ll;
+    posn _8 = { _6, _7 };
+    long long _10 = 1ll;
+    long long _11 = 2ll;
+    posn _12 = { _10, _11 };
+    long long _13 = 3ll;
+    long long _14 = 4ll;
+    posn _15 = { _13, _14 };
+    long long _16 = 5ll;
+    long long _17 = 6ll;
+    posn _18 = { _16, _17 };
+    _a1_posn _9;
+    _9.d0 = 3;
+    _9.data = jpl_alloc(sizeof(posn) * 3);
+    _9.data[0] = _12;
+    _9.data[1] = _15;
+    _9.data[2] = _18;
+    long long _19 = 2ll;
+    if (_19 >= 0ll)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_19 < _9.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    long long _20 = 0ll;
+    _20 *= _9.d0;
+    _20 += _19;
+    posn _21 = _9.data[_20];
+    show("(TupleType (IntType) (IntType))", &_21);
+}
+

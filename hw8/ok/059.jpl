@@ -1,0 +1,10 @@
+struct i4 {
+  m: int
+  n: int
+  o: int
+  p: int
+}
+let a = 1
+let b = i4{a, a, a, a}
+let c = b.n
+show c

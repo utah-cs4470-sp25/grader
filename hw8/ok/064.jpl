@@ -1,0 +1,23 @@
+struct one {
+  a: int
+  b: int
+  c: int
+}
+struct two {
+  d: int
+  e: int
+}
+struct three {
+  f: int
+  g: int
+  h: int
+}
+struct four {
+  i: one
+  j: two
+  k: three
+}
+let myfour = four{one{1, 2, 3}, two{1, 2}, three{3, 4, 5}}
+show myfour.i
+show myfour.j
+show myfour.k

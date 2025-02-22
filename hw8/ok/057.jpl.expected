@@ -1,0 +1,72 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+typedef struct {
+    long long x;
+    long long y;
+} ipair;
+
+typedef struct {
+  long long d0;
+  long long *data;
+} _a1_long_long;
+
+typedef struct {
+    long long left;
+    _a1_long_long right;
+} iapair;
+
+typedef struct {
+  long long d0;
+  ipair *data;
+} _a1_ipair;
+
+typedef struct {
+    iapair fst;
+    _a1_ipair snd;
+} outer;
+
+void jpl_main(struct args args) {
+    long long _0 = 1ll;
+    long long _1 = 2ll;
+    long long _2 = 3ll;
+    long long _4 = 2ll;
+    long long _5 = 3ll;
+    _a1_long_long _3;
+    _3.d0 = 2;
+    _3.data = jpl_alloc(sizeof(long long) * 2);
+    _3.data[0] = _4;
+    _3.data[1] = _5;
+    iapair _6 = { _0, _3 };
+    long long _7 = 4ll;
+    long long _8 = 5ll;
+    ipair _9 = { _7, _8 };
+    long long _10 = 6ll;
+    long long _11 = 7ll;
+    ipair _12 = { _10, _11 };
+    long long _14 = 4ll;
+    long long _15 = 5ll;
+    ipair _16 = { _14, _15 };
+    long long _17 = 6ll;
+    long long _18 = 7ll;
+    ipair _19 = { _17, _18 };
+    _a1_ipair _13;
+    _13.d0 = 2;
+    _13.data = jpl_alloc(sizeof(ipair) * 2);
+    _13.data[0] = _16;
+    _13.data[1] = _19;
+    outer _20 = { _6, _13 };
+    show("(TupleType (TupleType (IntType) (ArrayType (IntType) 1)) (ArrayType (TupleType (IntType) (IntType)) 1))", &_20);
+}
+

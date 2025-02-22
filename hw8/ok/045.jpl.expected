@@ -1,0 +1,25 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+void jpl_main(struct args args) {
+    double _0 = 0.0;
+    double _1 = -_0;
+    double _2 = 0.0;
+    bool _3 = _1 < _2;
+    if (0 != _3)
+    goto _jump1;
+    fail_assertion("");
+    _jump1:;
+}
+

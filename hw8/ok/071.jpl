@@ -1,0 +1,9 @@
+struct one {
+  a: int
+}
+struct three {
+  b: int
+  c: int
+  d: int
+}
+show if one{1}.a< three{0,1,2}.c then [1, 2, 3] else [4, 5, 6]

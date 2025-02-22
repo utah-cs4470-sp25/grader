@@ -1,0 +1,32 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+void jpl_main(struct args args) {
+    long long _0 = 1ll;
+    long long _1 = 1ll;
+    long long _2 = 0ll;
+    bool _3 = _1 < _2;
+    long long _4;
+    if (!_3)
+    goto _jump1;
+    long long _5 = 1ll;
+    _4 = _5;
+    goto _jump2;
+    _jump1:;
+    long long _6 = 0ll;
+    _4 = _6;
+    _jump2:;
+    show("(IntType)", &_4);
+}
+

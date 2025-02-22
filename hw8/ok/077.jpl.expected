@@ -1,0 +1,75 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+typedef struct {
+    long long b;
+} m;
+
+typedef struct {
+    long long c;
+    long long d;
+    long long e;
+} n;
+
+typedef struct {
+  long long d0;
+  long long *data;
+} _a1_long_long;
+
+void jpl_main(struct args args) {
+    long long _0 = 1ll;
+    long long _1 = 1ll;
+    m _2 = { _1 };
+    long long _3 = _2.b;
+    long long _4 = 0ll;
+    long long _5 = 1ll;
+    long long _6 = 2ll;
+    n _7 = { _4, _5, _6 };
+    long long _8 = _7.c;
+    bool _9 = _3 < _8;
+    _a1_long_long _10;
+    if (!_9)
+    goto _jump1;
+    long long _11 = 1ll;
+    long long _12 = 2ll;
+    long long _13 = 3ll;
+    long long _15 = 1ll;
+    long long _16 = 2ll;
+    long long _17 = 3ll;
+    _a1_long_long _14;
+    _14.d0 = 3;
+    _14.data = jpl_alloc(sizeof(long long) * 3);
+    _14.data[0] = _15;
+    _14.data[1] = _16;
+    _14.data[2] = _17;
+    _10 = _14;
+    goto _jump2;
+    _jump1:;
+    long long _18 = 4ll;
+    long long _19 = 5ll;
+    long long _20 = 6ll;
+    long long _22 = 4ll;
+    long long _23 = 5ll;
+    long long _24 = 6ll;
+    _a1_long_long _21;
+    _21.d0 = 3;
+    _21.data = jpl_alloc(sizeof(long long) * 3);
+    _21.data[0] = _22;
+    _21.data[1] = _23;
+    _21.data[2] = _24;
+    _10 = _21;
+    _jump2:;
+    show("(ArrayType (IntType) 1)", &_10);
+}
+

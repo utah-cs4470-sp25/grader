@@ -1,0 +1,21 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+void jpl_main(struct args args) {
+    long long _0 = 5ll;
+    long long _1 = 2ll;
+    long long _2 = _0 % _1;
+    show("(IntType)", &_2);
+}
+

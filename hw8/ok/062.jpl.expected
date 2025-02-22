@@ -1,0 +1,22 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+typedef struct {
+} empty;
+
+void jpl_main(struct args args) {
+    empty _0 = {  };
+    show("(TupleType )", &_0);
+}
+

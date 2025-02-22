@@ -1,0 +1,14 @@
+struct ipair {
+  x: int
+  y: int
+}
+struct iapair {
+  left: int
+  right: int[]
+}
+struct outer {
+  fst: iapair
+  snd: ipair[]
+}
+let a = outer{ iapair{ 1, [2, 3] }, [ipair{4, 5}, ipair{6, 7}]}
+show a

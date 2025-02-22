@@ -1,0 +1,6 @@
+struct posn {
+  x: int
+  y: int
+}
+let a = [posn{1, 2}, posn{3, 4}, posn{5, 6}]
+show a[1]

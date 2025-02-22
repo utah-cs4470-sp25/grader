@@ -1,0 +1,5 @@
+struct nonempty {
+  x: int
+}
+let a = nonempty{1}
+show a.x

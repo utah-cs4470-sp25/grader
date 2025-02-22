@@ -1,0 +1,35 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+typedef struct {
+    long long x;
+    long long y;
+} inner;
+
+typedef struct {
+    long long a;
+    inner b;
+    long long c;
+} outer;
+
+void jpl_main(struct args args) {
+    long long _0 = 1ll;
+    long long _1 = 2ll;
+    long long _2 = 3ll;
+    inner _3 = { _1, _2 };
+    long long _4 = 4ll;
+    outer _5 = { _0, _3, _4 };
+    show("(TupleType (IntType) (TupleType (IntType) (IntType)) (IntType))", &_5);
+}
+
