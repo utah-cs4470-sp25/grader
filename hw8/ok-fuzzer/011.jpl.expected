@@ -1,0 +1,99 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+typedef struct {
+  long long d0;
+  rgba *data;
+} _a1_rgba;
+
+typedef struct {
+  long long d0;
+  _a1_rgba *data;
+} _a1__a1_rgba;
+
+typedef struct {
+  long long d0;
+  bool *data;
+} _a1_bool;
+
+void jpl_main(struct args args) {
+    double _0 = 20.02;
+    double _1 = 92.2;
+    bool _2 = _0 > _1;
+    bool _3 = !_2;
+    double _4 = 69.82;
+    double _5 = 48.66;
+    double _6 = _5 * _4;
+    bool _7 = _6 == _4;
+    show("(BoolType)", &_7);
+    double _8 = 5.88;
+    rgba _9 = { _4, _8, _4, _4 };
+    double _11 = 5.88;
+    rgba _12 = { _4, _11, _4, _4 };
+    _a1_rgba _10;
+    _10.d0 = 1;
+    _10.data = jpl_alloc(sizeof(rgba) * 1);
+    _10.data[0] = _12;
+    double _14 = 5.88;
+    rgba _15 = { _4, _14, _4, _4 };
+    double _17 = 5.88;
+    rgba _18 = { _4, _17, _4, _4 };
+    _a1_rgba _16;
+    _16.d0 = 1;
+    _16.data = jpl_alloc(sizeof(rgba) * 1);
+    _16.data[0] = _18;
+    _a1__a1_rgba _13;
+    _13.d0 = 1;
+    _13.data = jpl_alloc(sizeof(_a1_rgba) * 1);
+    _13.data[0] = _16;
+    long long _19 = 937ll;
+    long long _20 = 680ll;
+    long long _21 = _19 - _20;
+    long long _22 = -_21;
+    if (_22 >= 0ll)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_22 < _13.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    long long _23 = 0ll;
+    _23 *= _13.d0;
+    _23 += _22;
+    _a1_rgba _24 = _13.data[_23];
+    bool _25 = false;
+    double _26 = -_4;
+    double _27 = _4 + _26;
+    double _28 = 25.74;
+    bool _29 = _27 != _28;
+    bool _31 = false;
+    double _32 = -_4;
+    double _33 = _4 + _32;
+    double _34 = 25.74;
+    bool _35 = _33 != _34;
+    _a1_bool _30;
+    _30.d0 = 2;
+    _30.data = jpl_alloc(sizeof(bool) * 2);
+    _30.data[0] = _31;
+    _30.data[1] = _35;
+    double _36 = _4 + _4;
+    double _37 = -_36;
+    bool _38 = _4 != _4;
+    if (0 != _38)
+    goto _jump3;
+    fail_assertion("h");
+    _jump3:;
+}
+

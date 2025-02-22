@@ -1,0 +1,9 @@
+print "a"
+
+let a[b] = [(! (! false)), true]
+let c[d] = a
+let e[f] = a
+let g[h] = e
+let i = (! a[140])
+let j = c[(- f)]
+let k = a

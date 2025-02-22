@@ -1,0 +1,95 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+typedef struct {
+  long long d0;
+  double *data;
+} _a1_double;
+
+void jpl_main(struct args args) {
+    double _0 = 24.87;
+    double _1 = 66.8;
+    bool _2 = _0 >= _1;
+    bool _3 = !_2;
+    bool _4 = !_3;
+    show("(BoolType)", &_4);
+    long long _5 = 929ll;
+    long long _6 = -_5;
+    long long _7 = 740ll;
+    bool _8 = _6 == _7;
+    bool _9 = !_8;
+    long long _10 = 687ll;
+    long long _11 = 866ll;
+    long long _12 = 867ll;
+    long long _13 = -_12;
+    long long _14 = _11 - _13;
+    bool _15 = _10 > _14;
+    double _16 = 3.75;
+    double _18 = 3.75;
+    _a1_double _17;
+    _17.d0 = 1;
+    _17.data = jpl_alloc(sizeof(double) * 1);
+    _17.data[0] = _18;
+    long long _19 = 720ll;
+    if (_19 >= 0ll)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_19 < _17.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    long long _20 = 0ll;
+    _20 *= _17.d0;
+    _20 += _19;
+    double _21 = _17.data[_20];
+    double _22 = -_21;
+    double _24 = 3.75;
+    double _26 = 3.75;
+    _a1_double _25;
+    _25.d0 = 1;
+    _25.data = jpl_alloc(sizeof(double) * 1);
+    _25.data[0] = _26;
+    long long _27 = 720ll;
+    if (_27 >= 0ll)
+    goto _jump3;
+    fail_assertion("negative array index");
+    _jump3:;
+    if (_27 < _25.d0)
+    goto _jump4;
+    fail_assertion("index too large");
+    _jump4:;
+    long long _28 = 0ll;
+    _28 *= _25.d0;
+    _28 += _27;
+    double _29 = _25.data[_28];
+    double _30 = -_29;
+    _a1_double _23;
+    _23.d0 = 1;
+    _23.data = jpl_alloc(sizeof(double) * 1);
+    _23.data[0] = _30;
+    bool _31 = false;
+    show("(BoolType)", &_31);
+    bool _32 = false;
+    if (0 != _32)
+    goto _jump5;
+    fail_assertion("f");
+    _jump5:;
+    bool _33 = true;
+    if (0 != _33)
+    goto _jump6;
+    fail_assertion("f");
+    _jump6:;
+}
+

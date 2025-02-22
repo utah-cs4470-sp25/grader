@@ -1,0 +1,103 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+typedef struct {
+    double a;
+} a;
+
+typedef struct {
+  long long d0;
+  long long *data;
+} _a1_long_long;
+
+typedef struct {
+  long long d0;
+  _a1_long_long *data;
+} _a1__a1_long_long;
+
+typedef struct {
+    double a;
+} e;
+
+typedef struct {
+  long long d0;
+  double *data;
+} _a1_double;
+
+void jpl_main(struct args args) {
+    long long _0 = 904ll;
+    long long _1 = -_0;
+    long long _2 = 41ll;
+    long long _4 = 904ll;
+    long long _5 = -_4;
+    long long _6 = 41ll;
+    _a1_long_long _3;
+    _3.d0 = 2;
+    _3.data = jpl_alloc(sizeof(long long) * 2);
+    _3.data[0] = _5;
+    _3.data[1] = _6;
+    long long _8 = 904ll;
+    long long _9 = -_8;
+    long long _10 = 41ll;
+    long long _12 = 904ll;
+    long long _13 = -_12;
+    long long _14 = 41ll;
+    _a1_long_long _11;
+    _11.d0 = 2;
+    _11.data = jpl_alloc(sizeof(long long) * 2);
+    _11.data[0] = _13;
+    _11.data[1] = _14;
+    _a1__a1_long_long _7;
+    _7.d0 = 1;
+    _7.data = jpl_alloc(sizeof(_a1_long_long) * 1);
+    _7.data[0] = _11;
+    long long _15 = 309ll;
+    if (_15 >= 0ll)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_15 < _7.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    long long _16 = 0ll;
+    _16 *= _7.d0;
+    _16 += _15;
+    _a1_long_long _17 = _7.data[_16];
+    double _18 = 70.13;
+    double _19 = 43.21;
+    double _20 = _18 + _19;
+    double _21 = 7.47;
+    bool _22 = _20 <= _21;
+    long long _23 = 325ll;
+    bool _24 = _23 < _17.d0;
+    bool _25 = !_24;
+    bool _26 = _22 == _25;
+    bool _27 = !_26;
+    print("e");
+    print("f");
+    double _28 = 11.19;
+    double _30 = 11.19;
+    _a1_double _29;
+    _29.d0 = 1;
+    _29.data = jpl_alloc(sizeof(double) * 1);
+    _29.data[0] = _30;
+    bool _31 = false;
+    bool _32 = !_31;
+    if (0 != _32)
+    goto _jump3;
+    fail_assertion("h");
+    _jump3:;
+}
+

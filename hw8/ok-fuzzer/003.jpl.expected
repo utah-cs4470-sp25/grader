@@ -1,0 +1,151 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+typedef struct {
+  long long d0;
+  double *data;
+} _a1_double;
+
+typedef struct {
+  long long d0;
+  _a1_double *data;
+} _a1__a1_double;
+
+typedef struct {
+  long long d0;
+  bool *data;
+} _a1_bool;
+
+void jpl_main(struct args args) {
+    double _0 = 10.04;
+    double _2 = 10.04;
+    _a1_double _1;
+    _1.d0 = 1;
+    _1.data = jpl_alloc(sizeof(double) * 1);
+    _1.data[0] = _2;
+    double _4 = 10.04;
+    double _6 = 10.04;
+    _a1_double _5;
+    _5.d0 = 1;
+    _5.data = jpl_alloc(sizeof(double) * 1);
+    _5.data[0] = _6;
+    _a1__a1_double _3;
+    _3.d0 = 1;
+    _3.data = jpl_alloc(sizeof(_a1_double) * 1);
+    _3.data[0] = _5;
+    long long _7 = 128ll;
+    if (_7 >= 0ll)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_7 < _3.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    long long _8 = 0ll;
+    _8 *= _3.d0;
+    _8 += _7;
+    _a1_double _9 = _3.data[_8];
+    if (_9.d0 >= 0ll)
+    goto _jump3;
+    fail_assertion("negative array index");
+    _jump3:;
+    if (_9.d0 < _9.d0)
+    goto _jump4;
+    fail_assertion("index too large");
+    _jump4:;
+    long long _10 = 0ll;
+    _10 *= _9.d0;
+    _10 += _9.d0;
+    double _11 = _9.data[_10];
+    double _12 = 58.76;
+    double _13 = -_12;
+    double _14 = 0.59;
+    double _15 = -_14;
+    if (_9.d0 >= 0ll)
+    goto _jump5;
+    fail_assertion("negative array index");
+    _jump5:;
+    if (_9.d0 < _9.d0)
+    goto _jump6;
+    fail_assertion("index too large");
+    _jump6:;
+    long long _16 = 0ll;
+    _16 *= _9.d0;
+    _16 += _9.d0;
+    double _17 = _9.data[_16];
+    rgba _18 = { _11, _13, _15, _17 };
+    double _19 = _18.b;
+    double _20 = 24.37;
+    double _21 = -_20;
+    double _22 = 61.89;
+    double _23 = fmod(_21, _22);
+    double _24 = -_23;
+    bool _25 = _19 > _24;
+    if (0 != _25)
+    goto _jump7;
+    fail_assertion("c");
+    _jump7:;
+    bool _26 = false;
+    if (0 != _26)
+    goto _jump8;
+    fail_assertion("c");
+    _jump8:;
+    long long _27 = 219ll;
+    long long _28 = _9.d0 - _27;
+    long long _29 = _9.d0 * _28;
+    bool _30 = false;
+    bool _32 = false;
+    _a1_bool _31;
+    _31.d0 = 1;
+    _31.data = jpl_alloc(sizeof(bool) * 1);
+    _31.data[0] = _32;
+    long long _33 = 449ll;
+    if (_33 >= 0ll)
+    goto _jump9;
+    fail_assertion("negative array index");
+    _jump9:;
+    if (_33 < _31.d0)
+    goto _jump10;
+    fail_assertion("index too large");
+    _jump10:;
+    long long _34 = 0ll;
+    _34 *= _31.d0;
+    _34 += _33;
+    bool _35 = _31.data[_34];
+    bool _36 = !_35;
+    if (0 != _36)
+    goto _jump11;
+    fail_assertion("d");
+    _jump11:;
+    bool _37 = true;
+    bool _38 = !_37;
+    long long _39 = 622ll;
+    long long _40 = _9.d0 % _39;
+    bool _41 = _29 != _40;
+    bool _42 = !_41;
+    bool _44 = true;
+    bool _45 = !_44;
+    long long _46 = 622ll;
+    long long _47 = _9.d0 % _46;
+    bool _48 = _29 != _47;
+    bool _49 = !_48;
+    _a1_bool _43;
+    _43.d0 = 2;
+    _43.data = jpl_alloc(sizeof(bool) * 2);
+    _43.data[0] = _45;
+    _43.data[1] = _49;
+    long long _50 = 760ll;
+}
+

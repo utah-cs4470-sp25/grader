@@ -1,0 +1,11 @@
+let a = (! ((663 + 207) == 930))
+let b = 56.2
+let c = 334
+let d = 617
+show true
+
+let e[f] = [[rgba {b, 34.0, 51.02, 18.15}, rgba {23.55, b, 28.07, b}]][c]
+struct g {
+a : float
+}
+let h = 72.0

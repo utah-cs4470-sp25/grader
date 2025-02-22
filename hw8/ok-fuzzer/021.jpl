@@ -1,0 +1,9 @@
+let a = rgba {83.6, (- 40.09), 48.03, 91.92}.b
+let b = ((- a) == 46.83)
+assert true, "c"
+show true
+
+let c[d] = [a, rgba {(- 52.86), a, 37.54, a}.b]
+assert (456 != (((d * 615) / (- d)) - [719][(- d)])), "e"
+let e[f] = [b]
+let g[h] = c

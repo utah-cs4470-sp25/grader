@@ -1,0 +1,8 @@
+let a[b] = [[10.04]][128]
+assert (rgba {a[b], (- 58.76), (- 0.59), a[b]}.b > (- ((- 24.37) % 61.89))), "c"
+assert false, "c"
+let c = (b * (b - 219))
+assert (! [false][449]), "d"
+let d = a
+let e = [(! true), (! (c != (b % 622)))]
+let f = 760

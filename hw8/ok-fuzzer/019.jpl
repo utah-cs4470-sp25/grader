@@ -1,0 +1,9 @@
+let a[b] = [(! false)]
+let c[d] = [a][(- 606)]
+print "e"
+
+assert (! false), "e"
+let e[f] = [(b * d)]
+let g = [706, d]
+let h[i] = e
+let j = a

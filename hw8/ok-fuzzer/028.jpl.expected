@@ -1,0 +1,63 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+typedef struct {
+  long long d0;
+  bool *data;
+} _a1_bool;
+
+void jpl_main(struct args args) {
+    print("a");
+    bool _0 = false;
+    bool _1 = !_0;
+    bool _2 = !_1;
+    bool _3 = true;
+    bool _5 = false;
+    bool _6 = !_5;
+    bool _7 = !_6;
+    bool _8 = true;
+    _a1_bool _4;
+    _4.d0 = 2;
+    _4.data = jpl_alloc(sizeof(bool) * 2);
+    _4.data[0] = _7;
+    _4.data[1] = _8;
+    long long _9 = 140ll;
+    if (_9 >= 0ll)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_9 < _4.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    long long _10 = 0ll;
+    _10 *= _4.d0;
+    _10 += _9;
+    bool _11 = _4.data[_10];
+    bool _12 = !_11;
+    long long _13 = -_4.d0;
+    if (_13 >= 0ll)
+    goto _jump3;
+    fail_assertion("negative array index");
+    _jump3:;
+    if (_13 < _4.d0)
+    goto _jump4;
+    fail_assertion("index too large");
+    _jump4:;
+    long long _14 = 0ll;
+    _14 *= _4.d0;
+    _14 += _13;
+    bool _15 = _4.data[_14];
+}
+

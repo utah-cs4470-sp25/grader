@@ -1,0 +1,14 @@
+struct a {
+a : rgba
+b : void
+}
+assert [false][(- ((- 937) - 290))], "b"
+let b = (689 != [(- 469)][(- 840)])
+assert ((- 144) < (- 794)), "c"
+let c = (- 15.87)
+let d[e] = [c]
+struct f {
+a : a
+b : rgba[][]
+}
+let g[h] = d

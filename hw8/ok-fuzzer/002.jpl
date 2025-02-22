@@ -1,0 +1,15 @@
+struct a {
+a : rgba
+b : rgba
+}
+struct b {
+a : rgba
+b : a[,]
+}
+let c[d] = [(13.09 < 86.14), ((32.16 / 61.77) != 54.33)]
+let e[f] = c
+let g[h] = [[c]][[d, f][d]][(- (- 610))]
+let i = g
+show false
+
+assert ((false == (88.75 < 70.52)) != (! ((h + 31) >= (- 132)))), "j"

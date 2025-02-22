@@ -1,0 +1,112 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+typedef struct {
+  long long d0;
+  double *data;
+} _a1_double;
+
+typedef struct {
+  long long d0;
+  bool *data;
+} _a1_bool;
+
+void jpl_main(struct args args) {
+    double _0 = 93.93;
+    double _1 = 80.89;
+    bool _2 = _0 < _1;
+    show("(BoolType)", &_2);
+    double _3 = 5.39;
+    double _4 = 21.87;
+    double _6 = 21.87;
+    _a1_double _5;
+    _5.d0 = 1;
+    _5.data = jpl_alloc(sizeof(double) * 1);
+    _5.data[0] = _6;
+    long long _7 = 871ll;
+    if (_7 >= 0ll)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_7 < _5.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    long long _8 = 0ll;
+    _8 *= _5.d0;
+    _8 += _7;
+    double _9 = _5.data[_8];
+    double _10 = 74.13;
+    double _11 = _9 * _10;
+    bool _12 = _3 > _11;
+    _a1_bool _13;
+    _13.d0 = 1;
+    _13.data = jpl_alloc(sizeof(bool) * 1);
+    _13.data[0] = _12;
+    show("(ArrayType (BoolType) 1)", &_13);
+    print("c");
+    double _14 = 83.33;
+    double _16 = 83.33;
+    _a1_double _15;
+    _15.d0 = 1;
+    _15.data = jpl_alloc(sizeof(double) * 1);
+    _15.data[0] = _16;
+    long long _17 = 752ll;
+    long long _18 = -_17;
+    if (_18 >= 0ll)
+    goto _jump3;
+    fail_assertion("negative array index");
+    _jump3:;
+    if (_18 < _15.d0)
+    goto _jump4;
+    fail_assertion("index too large");
+    _jump4:;
+    long long _19 = 0ll;
+    _19 *= _15.d0;
+    _19 += _18;
+    double _20 = _15.data[_19];
+    double _21 = -_20;
+    double _22 = 79.78;
+    double _24 = 79.78;
+    _a1_double _23;
+    _23.d0 = 1;
+    _23.data = jpl_alloc(sizeof(double) * 1);
+    _23.data[0] = _24;
+    long long _25 = 447ll;
+    if (_25 >= 0ll)
+    goto _jump5;
+    fail_assertion("negative array index");
+    _jump5:;
+    if (_25 < _23.d0)
+    goto _jump6;
+    fail_assertion("index too large");
+    _jump6:;
+    long long _26 = 0ll;
+    _26 *= _23.d0;
+    _26 += _25;
+    double _27 = _23.data[_26];
+    double _28 = fmod(_21, _27);
+    print("d");
+    double _29 = 82.59;
+    double _30 = 94.9;
+    rgba _31 = { _28, _29, _30, _28 };
+    double _32 = _31.a;
+    double _33 = 23.12;
+    double _34 = fmod(_32, _33);
+    double _35 = 39.61;
+    double _36 = 63.33;
+    double _37 = _35 - _36;
+    bool _38 = _34 < _37;
+}
+

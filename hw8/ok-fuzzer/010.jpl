@@ -1,0 +1,13 @@
+print "a"
+
+struct a {
+a : void
+b : rgba
+}
+print "b"
+
+let b = (849 == ([439, 608][477] - (- 655)))
+let c[d] = [[(! false)], [b]][721]
+let e = b
+let f = c
+let g = (411 <= ((d * d) - (- 593)))

@@ -1,0 +1,109 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+typedef struct {
+  long long d0;
+  long long *data;
+} _a1_long_long;
+
+typedef struct {
+  long long d0;
+  double *data;
+} _a1_double;
+
+void jpl_main(struct args args) {
+    long long _0 = 61ll;
+    long long _1 = 224ll;
+    long long _2 = 172ll;
+    long long _3 = -_2;
+    long long _5 = 224ll;
+    long long _6 = 172ll;
+    long long _7 = -_6;
+    _a1_long_long _4;
+    _4.d0 = 2;
+    _4.data = jpl_alloc(sizeof(long long) * 2);
+    _4.data[0] = _5;
+    _4.data[1] = _7;
+    long long _8 = 910ll;
+    if (_8 >= 0ll)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_8 < _4.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    long long _9 = 0ll;
+    _9 *= _4.d0;
+    _9 += _8;
+    long long _10 = _4.data[_9];
+    bool _11 = _0 != _10;
+    bool _12 = !_11;
+    bool _13 = true;
+    print("d");
+    double _14 = 70.01;
+    double _15 = -_14;
+    double _16 = 37.63;
+    double _17 = 51.85;
+    double _18 = 0.02;
+    rgba _19 = { _15, _16, _17, _18 };
+    double _20 = _19.a;
+    double _21 = 43.22;
+    double _22 = 66.29;
+    double _23 = 68.38;
+    double _24 = 50.41;
+    double _25 = 55.64;
+    double _26 = 81.25;
+    double _27 = 75.84;
+    double _28 = fmod(_26, _27);
+    rgba _29 = { _23, _24, _25, _28 };
+    double _30 = _29.g;
+    rgba _31 = { _20, _21, _22, _30 };
+    double _32 = 47.81;
+    double _33 = -_32;
+    double _34 = -_33;
+    double _35 = _31.b;
+    double _37 = _31.b;
+    _a1_double _36;
+    _36.d0 = 1;
+    _36.data = jpl_alloc(sizeof(double) * 1);
+    _36.data[0] = _37;
+    long long _38 = 177ll;
+    if (_38 >= 0ll)
+    goto _jump3;
+    fail_assertion("negative array index");
+    _jump3:;
+    if (_38 < _36.d0)
+    goto _jump4;
+    fail_assertion("index too large");
+    _jump4:;
+    long long _39 = 0ll;
+    _39 *= _36.d0;
+    _39 += _38;
+    double _40 = _36.data[_39];
+    double _41 = 54.89;
+    double _42 = -_41;
+    double _43 = 29.79;
+    double _44 = 95.05;
+    double _45 = 1.44;
+    double _46 = 62.97;
+    double _47 = -_46;
+    rgba _48 = { _43, _44, _45, _47 };
+    double _49 = _48.g;
+    rgba _50 = { _34, _40, _42, _49 };
+    show("(TupleType (FloatType) (FloatType) (FloatType) (FloatType))", &_50);
+    print("e");
+    double _51 = 81.45;
+}
+

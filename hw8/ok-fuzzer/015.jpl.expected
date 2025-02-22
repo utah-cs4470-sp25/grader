@@ -1,0 +1,81 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+typedef struct {
+  long long d0;
+  bool *data;
+} _a1_bool;
+
+typedef struct {
+  long long d0;
+  long long *data;
+} _a1_long_long;
+
+typedef struct {
+    double a;
+    long long b;
+} i;
+
+void jpl_main(struct args args) {
+    long long _0 = 363ll;
+    long long _1 = -_0;
+    long long _2 = 869ll;
+    long long _3 = -_2;
+    long long _4 = -_3;
+    bool _5 = _1 == _4;
+    bool _6 = false;
+    bool _7 = !_6;
+    bool _8 = !_7;
+    long long _10 = 363ll;
+    long long _11 = -_10;
+    long long _12 = 869ll;
+    long long _13 = -_12;
+    long long _14 = -_13;
+    bool _15 = _11 == _14;
+    bool _16 = false;
+    bool _17 = !_16;
+    bool _18 = !_17;
+    _a1_bool _9;
+    _9.d0 = 2;
+    _9.data = jpl_alloc(sizeof(bool) * 2);
+    _9.data[0] = _15;
+    _9.data[1] = _18;
+    double _19 = 7.29;
+    double _20 = 93.51;
+    double _21 = -_20;
+    bool _22 = _19 == _21;
+    long long _23 = -_9.d0;
+    long long _24 = -_23;
+    long long _25 = 846ll;
+    long long _26 = -_9.d0;
+    long long _27 = _25 % _26;
+    long long _28 = _24 / _27;
+    long long _29 = 602ll;
+    long long _30 = -_29;
+    long long _32 = -_9.d0;
+    long long _33 = -_32;
+    long long _34 = 846ll;
+    long long _35 = -_9.d0;
+    long long _36 = _34 % _35;
+    long long _37 = _33 / _36;
+    long long _38 = 602ll;
+    long long _39 = -_38;
+    _a1_long_long _31;
+    _31.d0 = 2;
+    _31.data = jpl_alloc(sizeof(long long) * 2);
+    _31.data[0] = _37;
+    _31.data[1] = _39;
+    bool _40 = false;
+}
+

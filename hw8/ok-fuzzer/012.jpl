@@ -1,0 +1,12 @@
+show 92.36
+
+let a = (- (9.27 - 47.06))
+struct b {
+a : int
+}
+print "c"
+
+let c = (- a)
+let d[e] = [rgba {(- 30.3), (- (c / c)), a, (c - a)}, rgba {a, c, rgba {c, 59.2, c, a}.a, ((a + a) % 38.08)}]
+let f[g] = d
+assert true, "h"

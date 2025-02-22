@@ -1,0 +1,9 @@
+let a = (! (20.02 > 92.2))
+let b = 69.82
+show ((48.66 * b) == b)
+
+let c = b
+let d[e] = [[rgba {b, 5.88, c, b}]][(- (937 - 680))]
+let f = [false, ((b + (- b)) != 25.74)]
+let g = (- (b + b))
+assert (b != b), "h"

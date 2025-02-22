@@ -1,0 +1,14 @@
+struct a {
+a : float
+}
+let b = [(225 * (- 737)), (((- 602) * (- 182)) - 887)]
+let c = (- [b][744][(- 654)])
+struct d {
+a : bool
+}
+assert (a {20.05}.a == (- (- 51.61))), "e"
+let e[f] = [d {d {false}.a}, d {(c == c)}]
+struct g {
+a : d
+}
+let h[i] = e

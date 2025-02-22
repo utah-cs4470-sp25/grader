@@ -1,0 +1,11 @@
+let a = false
+let b[c] = [[(741 * 343), (- 634)]][[465, (- 43)][((660 + 821) - 6)]]
+let d = c
+show c
+
+let e[f] = b
+let g = 28.55
+show ((- (- c)) % (- 970))
+
+print "h"
+

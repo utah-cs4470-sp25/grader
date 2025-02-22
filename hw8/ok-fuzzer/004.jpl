@@ -1,0 +1,14 @@
+struct a {
+a : float
+}
+let b[c] = [[(- 904), 41]][309]
+let d = (! (((70.13 + 43.21) <= 7.47) == (! (325 < c))))
+print "e"
+
+struct e {
+a : float
+}
+print "f"
+
+let f[g] = [11.19]
+assert (! false), "h"

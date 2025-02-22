@@ -1,0 +1,11 @@
+let a[b] = [((- 363) == (- (- 869))), (! (! false))]
+let c = (7.29 == (- 93.51))
+let d = c
+let e[f] = [((- (- b)) / (846 % (- b))), (- 602)]
+let g[h] = e
+struct i {
+a : float
+b : int
+}
+let j[k] = g
+let l = false

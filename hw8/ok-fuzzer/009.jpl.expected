@@ -1,0 +1,157 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+typedef struct {
+  double r;
+  double g;
+  double b;
+  double a;
+} rgba;
+
+typedef struct {
+  long long d0;
+  double *data;
+} _a1_double;
+
+typedef struct {
+  long long d0;
+  rgba *data;
+} _a1_rgba;
+
+typedef struct {
+  long long d0;
+  _a1_rgba *data;
+} _a1__a1_rgba;
+
+typedef struct {
+  long long d0;
+  void_t *data;
+} _a1_void_t;
+
+typedef struct {
+    _a1_void_t a;
+    double b;
+} e;
+
+void jpl_main(struct args args) {
+    double _0 = 42.24;
+    double _1 = 73.18;
+    double _2 = 25.6;
+    double _4 = 25.6;
+    _a1_double _3;
+    _3.d0 = 1;
+    _3.data = jpl_alloc(sizeof(double) * 1);
+    _3.data[0] = _4;
+    long long _5 = 574ll;
+    if (_5 >= 0ll)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_5 < _3.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    long long _6 = 0ll;
+    _6 *= _3.d0;
+    _6 += _5;
+    double _7 = _3.data[_6];
+    double _8 = fmod(_1, _7);
+    bool _9 = _0 < _8;
+    if (0 != _9)
+    goto _jump3;
+    fail_assertion("a");
+    _jump3:;
+    double _10 = 10.69;
+    double _11 = 27.29;
+    double _12 = _10 / _11;
+    double _13 = 51.04;
+    double _14 = -_13;
+    double _15 = 46.01;
+    double _16 = 26.28;
+    double _17 = -_16;
+    rgba _18 = { _12, _14, _15, _17 };
+    double _19 = 84.68;
+    double _20 = 72.39;
+    double _21 = 32.83;
+    double _22 = 66.96;
+    rgba _23 = { _19, _20, _21, _22 };
+    double _25 = 10.69;
+    double _26 = 27.29;
+    double _27 = _25 / _26;
+    double _28 = 51.04;
+    double _29 = -_28;
+    double _30 = 46.01;
+    double _31 = 26.28;
+    double _32 = -_31;
+    rgba _33 = { _27, _29, _30, _32 };
+    double _34 = 84.68;
+    double _35 = 72.39;
+    double _36 = 32.83;
+    double _37 = 66.96;
+    rgba _38 = { _34, _35, _36, _37 };
+    _a1_rgba _24;
+    _24.d0 = 2;
+    _24.data = jpl_alloc(sizeof(rgba) * 2);
+    _24.data[0] = _33;
+    _24.data[1] = _38;
+    double _40 = 10.69;
+    double _41 = 27.29;
+    double _42 = _40 / _41;
+    double _43 = 51.04;
+    double _44 = -_43;
+    double _45 = 46.01;
+    double _46 = 26.28;
+    double _47 = -_46;
+    rgba _48 = { _42, _44, _45, _47 };
+    double _49 = 84.68;
+    double _50 = 72.39;
+    double _51 = 32.83;
+    double _52 = 66.96;
+    rgba _53 = { _49, _50, _51, _52 };
+    double _55 = 10.69;
+    double _56 = 27.29;
+    double _57 = _55 / _56;
+    double _58 = 51.04;
+    double _59 = -_58;
+    double _60 = 46.01;
+    double _61 = 26.28;
+    double _62 = -_61;
+    rgba _63 = { _57, _59, _60, _62 };
+    double _64 = 84.68;
+    double _65 = 72.39;
+    double _66 = 32.83;
+    double _67 = 66.96;
+    rgba _68 = { _64, _65, _66, _67 };
+    _a1_rgba _54;
+    _54.d0 = 2;
+    _54.data = jpl_alloc(sizeof(rgba) * 2);
+    _54.data[0] = _63;
+    _54.data[1] = _68;
+    _a1__a1_rgba _39;
+    _39.d0 = 1;
+    _39.data = jpl_alloc(sizeof(_a1_rgba) * 1);
+    _39.data[0] = _54;
+    print("b");
+    long long _69 = 939ll;
+    if (_69 >= 0ll)
+    goto _jump4;
+    fail_assertion("negative array index");
+    _jump4:;
+    if (_69 < _39.d0)
+    goto _jump5;
+    fail_assertion("index too large");
+    _jump5:;
+    long long _70 = 0ll;
+    _70 *= _39.d0;
+    _70 += _69;
+    _a1_rgba _71 = _39.data[_70];
+    show("(ArrayType (TupleType (FloatType) (FloatType) (FloatType) (FloatType)) 1)", &_71);
+    bool _72 = true;
+    show("(BoolType)", &_72);
+    double _73 = 53.74;
+}
+

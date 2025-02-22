@@ -1,0 +1,17 @@
+struct a {
+a : bool
+}
+let b[c] = [true]
+struct d {
+a : a
+b : void
+}
+show 22.9
+
+let e = a {[b[358]][421]}
+let f = (((- (c % c)) - c) == [(657 * 297)][(341 * c)])
+struct g {
+a : a
+b : rgba
+}
+let h[i] = b
