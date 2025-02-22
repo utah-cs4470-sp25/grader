@@ -13,5 +13,7 @@ typedef struct {
 } rgba;
 
 void jpl_main(struct args args) {
+    long long _0 = 1ll;
+    show("(IntType)", &_0);
 }
 
