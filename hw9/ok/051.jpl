@@ -1,0 +1,7 @@
+struct box {
+  a: int
+}
+fn f() : box{int} {
+    return box{1}
+}
+show f()

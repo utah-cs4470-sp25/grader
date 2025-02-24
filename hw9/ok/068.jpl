@@ -1,0 +1,4 @@
+fn f(m: void, n: void, k: void) : int {
+   return 4
+}
+show f(void, void, void)

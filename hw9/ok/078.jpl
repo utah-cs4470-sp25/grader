@@ -1,0 +1,11 @@
+struct pair {
+  a: int
+  b: int
+}
+fn f(d : int) : int {
+   let x = d * d
+   let y = pair{x, x}
+   let mypair = y
+   return mypair.a + mypair.b
+}
+show f(13)

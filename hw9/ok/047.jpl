@@ -1,0 +1,6 @@
+struct empty {
+}
+fn f() : empty {
+   return empty{}
+}
+show f()

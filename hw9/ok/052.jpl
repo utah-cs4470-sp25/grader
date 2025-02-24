@@ -1,0 +1,8 @@
+struct poin {
+  a: int
+  b: int
+}
+fn f() : poin {
+    return poin{1, 2}
+}
+show f()

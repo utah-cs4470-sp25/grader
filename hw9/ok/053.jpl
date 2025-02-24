@@ -1,0 +1,9 @@
+struct iii {
+  a: int
+  b: int
+  c: int
+}
+fn f() : iii{int, int, int} {
+    return iii{1, 2, 3}
+}
+show f()
