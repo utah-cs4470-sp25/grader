@@ -1,0 +1,14 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+void jpl_main(struct args args) {
+    show("(IntType)", &args.d0);
+    show("(ArrayType (IntType) 1)", &args);
+}
+

@@ -1,0 +1,291 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  int64_t *data;
+} _a3_int64_t;
+
+void jpl_main(struct args args) {
+    _a3_int64_t _0;
+    // Computing bound for i
+    int64_t _1 = 100;
+    _0.d0 = _1;
+    if (_1 > 0) 
+    goto _jump1;
+    fail_assertion("non-positive loop bound");
+    _jump1:;
+    // Computing bound for j
+    int64_t _2 = 100;
+    _0.d1 = _2;
+    if (_2 > 0) 
+    goto _jump2;
+    fail_assertion("non-positive loop bound");
+    _jump2:;
+    // Computing bound for k
+    int64_t _3 = 100;
+    _0.d2 = _3;
+    if (_3 > 0) 
+    goto _jump3;
+    fail_assertion("non-positive loop bound");
+    _jump3:;
+    // Computing total size of heap memory to allocate
+    int64_t _4 = 1;
+    _4 *= _1;
+    _4 *= _2;
+    _4 *= _3;
+    _4 *= sizeof(int64_t);
+    _0.data = jpl_alloc(_4);
+    int64_t _5 = 0; // k
+    int64_t _6 = 0; // j
+    int64_t _7 = 0; // i
+    _jump4:; // Begin body of loop
+    int64_t _8 = _7 + _6;
+    int64_t _9 = _8 + _5;
+    int64_t _10 = 0;
+    _10 *= _0.d0;
+    _10 += _7;
+    _10 *= _0.d1;
+    _10 += _6;
+    _10 *= _0.d2;
+    _10 += _5;
+    _0.data[_10] = _9;
+    _5++;
+    if (_5 < _3)
+    goto _jump4;
+    _5 = 0;
+    _6++;
+    if (_6 < _2)
+    goto _jump4;
+    _6 = 0;
+    _7++;
+    if (_7 < _1)
+    goto _jump4;
+    // End body of loop
+    int64_t _11 = 0;
+    int64_t _12 = 0;
+    int64_t _13 = 0;
+    if (_11 >= 0)
+    goto _jump5;
+    fail_assertion("negative array index");
+    _jump5:;
+    if (_11 < _0.d0)
+    goto _jump6;
+    fail_assertion("index too large");
+    _jump6:;
+    if (_12 >= 0)
+    goto _jump7;
+    fail_assertion("negative array index");
+    _jump7:;
+    if (_12 < _0.d1)
+    goto _jump8;
+    fail_assertion("index too large");
+    _jump8:;
+    if (_13 >= 0)
+    goto _jump9;
+    fail_assertion("negative array index");
+    _jump9:;
+    if (_13 < _0.d2)
+    goto _jump10;
+    fail_assertion("index too large");
+    _jump10:;
+    int64_t _14 = 0;
+    _14 *= _0.d0;
+    _14 += _11;
+    _14 *= _0.d1;
+    _14 += _12;
+    _14 *= _0.d2;
+    _14 += _13;
+    int64_t _15 = _0.data[_14];
+    show("(IntType)", &_15);
+    int64_t _16 = 0;
+    int64_t _17 = 0;
+    int64_t _18 = 1;
+    if (_16 >= 0)
+    goto _jump11;
+    fail_assertion("negative array index");
+    _jump11:;
+    if (_16 < _0.d0)
+    goto _jump12;
+    fail_assertion("index too large");
+    _jump12:;
+    if (_17 >= 0)
+    goto _jump13;
+    fail_assertion("negative array index");
+    _jump13:;
+    if (_17 < _0.d1)
+    goto _jump14;
+    fail_assertion("index too large");
+    _jump14:;
+    if (_18 >= 0)
+    goto _jump15;
+    fail_assertion("negative array index");
+    _jump15:;
+    if (_18 < _0.d2)
+    goto _jump16;
+    fail_assertion("index too large");
+    _jump16:;
+    int64_t _19 = 0;
+    _19 *= _0.d0;
+    _19 += _16;
+    _19 *= _0.d1;
+    _19 += _17;
+    _19 *= _0.d2;
+    _19 += _18;
+    int64_t _20 = _0.data[_19];
+    show("(IntType)", &_20);
+    int64_t _21 = 0;
+    int64_t _22 = 1;
+    int64_t _23 = 0;
+    if (_21 >= 0)
+    goto _jump17;
+    fail_assertion("negative array index");
+    _jump17:;
+    if (_21 < _0.d0)
+    goto _jump18;
+    fail_assertion("index too large");
+    _jump18:;
+    if (_22 >= 0)
+    goto _jump19;
+    fail_assertion("negative array index");
+    _jump19:;
+    if (_22 < _0.d1)
+    goto _jump20;
+    fail_assertion("index too large");
+    _jump20:;
+    if (_23 >= 0)
+    goto _jump21;
+    fail_assertion("negative array index");
+    _jump21:;
+    if (_23 < _0.d2)
+    goto _jump22;
+    fail_assertion("index too large");
+    _jump22:;
+    int64_t _24 = 0;
+    _24 *= _0.d0;
+    _24 += _21;
+    _24 *= _0.d1;
+    _24 += _22;
+    _24 *= _0.d2;
+    _24 += _23;
+    int64_t _25 = _0.data[_24];
+    show("(IntType)", &_25);
+    int64_t _26 = 1;
+    int64_t _27 = 0;
+    int64_t _28 = 0;
+    if (_26 >= 0)
+    goto _jump23;
+    fail_assertion("negative array index");
+    _jump23:;
+    if (_26 < _0.d0)
+    goto _jump24;
+    fail_assertion("index too large");
+    _jump24:;
+    if (_27 >= 0)
+    goto _jump25;
+    fail_assertion("negative array index");
+    _jump25:;
+    if (_27 < _0.d1)
+    goto _jump26;
+    fail_assertion("index too large");
+    _jump26:;
+    if (_28 >= 0)
+    goto _jump27;
+    fail_assertion("negative array index");
+    _jump27:;
+    if (_28 < _0.d2)
+    goto _jump28;
+    fail_assertion("index too large");
+    _jump28:;
+    int64_t _29 = 0;
+    _29 *= _0.d0;
+    _29 += _26;
+    _29 *= _0.d1;
+    _29 += _27;
+    _29 *= _0.d2;
+    _29 += _28;
+    int64_t _30 = _0.data[_29];
+    show("(IntType)", &_30);
+    int64_t _31 = 1;
+    int64_t _32 = -_31;
+    int64_t _33 = 0;
+    int64_t _34 = 0;
+    if (_32 >= 0)
+    goto _jump29;
+    fail_assertion("negative array index");
+    _jump29:;
+    if (_32 < _0.d0)
+    goto _jump30;
+    fail_assertion("index too large");
+    _jump30:;
+    if (_33 >= 0)
+    goto _jump31;
+    fail_assertion("negative array index");
+    _jump31:;
+    if (_33 < _0.d1)
+    goto _jump32;
+    fail_assertion("index too large");
+    _jump32:;
+    if (_34 >= 0)
+    goto _jump33;
+    fail_assertion("negative array index");
+    _jump33:;
+    if (_34 < _0.d2)
+    goto _jump34;
+    fail_assertion("index too large");
+    _jump34:;
+    int64_t _35 = 0;
+    _35 *= _0.d0;
+    _35 += _32;
+    _35 *= _0.d1;
+    _35 += _33;
+    _35 *= _0.d2;
+    _35 += _34;
+    int64_t _36 = _0.data[_35];
+    show("(IntType)", &_36);
+    int64_t _37 = 1000;
+    int64_t _38 = 0;
+    int64_t _39 = 0;
+    if (_37 >= 0)
+    goto _jump35;
+    fail_assertion("negative array index");
+    _jump35:;
+    if (_37 < _0.d0)
+    goto _jump36;
+    fail_assertion("index too large");
+    _jump36:;
+    if (_38 >= 0)
+    goto _jump37;
+    fail_assertion("negative array index");
+    _jump37:;
+    if (_38 < _0.d1)
+    goto _jump38;
+    fail_assertion("index too large");
+    _jump38:;
+    if (_39 >= 0)
+    goto _jump39;
+    fail_assertion("negative array index");
+    _jump39:;
+    if (_39 < _0.d2)
+    goto _jump40;
+    fail_assertion("index too large");
+    _jump40:;
+    int64_t _40 = 0;
+    _40 *= _0.d0;
+    _40 += _37;
+    _40 *= _0.d1;
+    _40 += _38;
+    _40 *= _0.d2;
+    _40 += _39;
+    int64_t _41 = _0.data[_40];
+    show("(IntType)", &_41);
+}
+

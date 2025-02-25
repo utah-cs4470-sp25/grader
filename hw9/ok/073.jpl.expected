@@ -1,0 +1,24 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+int64_t f(int64_t d) {
+    int64_t _0 = W * H;
+    int64_t _1 = _0 + d;
+    return _1;
+}
+
+void jpl_main(struct args args) {
+    _a2_rgba _0 = read_image("a.png");
+    int64_t W = _0.d0;
+    int64_t H = _0.d1;
+    int64_t _1 = 13;
+    int64_t _2 = f(_1);
+    show("(IntType)", &_2);
+}
+

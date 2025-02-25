@@ -1,0 +1,29 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+int64_t f(int64_t a, int64_t b, int64_t c, int64_t d, int64_t e, int64_t g) {
+    int64_t _0 = a + b;
+    int64_t _1 = _0 + c;
+    int64_t _2 = _1 + d;
+    int64_t _3 = _2 + e;
+    int64_t _4 = _3 + g;
+    return _4;
+}
+
+void jpl_main(struct args args) {
+    int64_t _0 = 1;
+    int64_t _1 = 2;
+    int64_t _2 = 3;
+    int64_t _3 = 4;
+    int64_t _4 = 5;
+    int64_t _5 = 6;
+    int64_t _6 = f(_0, _1, _2, _3, _4, _5);
+    show("(IntType)", &_6);
+}
+

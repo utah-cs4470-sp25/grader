@@ -1,0 +1,19 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+double f() {
+    double _0 = 4.0;
+    return _0;
+}
+
+void jpl_main(struct args args) {
+    double _0 = f();
+    show("(FloatType)", &_0);
+}
+

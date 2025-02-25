@@ -1,0 +1,40 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+void jpl_main(struct args args) {
+    _a2_rgba _0 = read_image("a.png");
+    int64_t H = _0.d0;
+    int64_t W = _0.d1;
+    int64_t _1 = 1;
+    int64_t _2 = 0;
+    if (_1 >= 0)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_1 < _0.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    if (_2 >= 0)
+    goto _jump3;
+    fail_assertion("negative array index");
+    _jump3:;
+    if (_2 < _0.d1)
+    goto _jump4;
+    fail_assertion("index too large");
+    _jump4:;
+    int64_t _3 = 0;
+    _3 *= _0.d0;
+    _3 += _1;
+    _3 *= _0.d1;
+    _3 += _2;
+    rgba _4 = _0.data[_3];
+    show("(TupleType (FloatType) (FloatType) (FloatType) (FloatType))", &_4);
+}
+

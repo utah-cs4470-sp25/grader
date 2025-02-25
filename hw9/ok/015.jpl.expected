@@ -1,0 +1,19 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+void jpl_main(struct args args) {
+    int64_t _0 = 7;
+    _a2_rgba _1 = read_image("a.png");
+    int64_t H = _1.d0;
+    int64_t W = _1.d1;
+    show("(ArrayType (TupleType (FloatType) (FloatType) (FloatType) (FloatType)) 2)", &_1);
+    show("(IntType)", &_1.d0);
+    show("(IntType)", &_1.d1);
+}
+

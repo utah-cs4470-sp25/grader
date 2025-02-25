@@ -1,0 +1,44 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+void jpl_main(struct args args) {
+    double _0;
+    // Computing bound for i
+    int64_t _1 = 10;
+    if (_1 > 0) 
+    goto _jump1;
+    fail_assertion("non-positive loop bound");
+    _jump1:;
+    // Computing bound for j
+    int64_t _2 = 10;
+    if (_2 > 0) 
+    goto _jump2;
+    fail_assertion("non-positive loop bound");
+    _jump2:;
+    _0 = 0;
+    int64_t _3 = 0; // j
+    int64_t _4 = 0; // i
+    _jump3:; // Begin body of loop
+    double _5 = to_float(_4);
+    double _6 = 1.0;
+    double _7 = _5 + _6;
+    double _8 = to_float(_3);
+    double _9 = pow(_7, _8);
+    _0 += _9;
+    _3++;
+    if (_3 < _2)
+    goto _jump3;
+    _3 = 0;
+    _4++;
+    if (_4 < _1)
+    goto _jump3;
+    // End body of loop
+    show("(FloatType)", &_0);
+}
+

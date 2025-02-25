@@ -1,0 +1,75 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  int64_t *data;
+} _a3_int64_t;
+
+void jpl_main(struct args args) {
+    _a3_int64_t _0;
+    // Computing bound for i
+    int64_t _1 = 10;
+    _0.d0 = _1;
+    if (_1 > 0) 
+    goto _jump1;
+    fail_assertion("non-positive loop bound");
+    _jump1:;
+    // Computing bound for j
+    int64_t _2 = 10;
+    _0.d1 = _2;
+    if (_2 > 0) 
+    goto _jump2;
+    fail_assertion("non-positive loop bound");
+    _jump2:;
+    // Computing bound for k
+    int64_t _3 = 10;
+    _0.d2 = _3;
+    if (_3 > 0) 
+    goto _jump3;
+    fail_assertion("non-positive loop bound");
+    _jump3:;
+    // Computing total size of heap memory to allocate
+    int64_t _4 = 1;
+    _4 *= _1;
+    _4 *= _2;
+    _4 *= _3;
+    _4 *= sizeof(int64_t);
+    _0.data = jpl_alloc(_4);
+    int64_t _5 = 0; // k
+    int64_t _6 = 0; // j
+    int64_t _7 = 0; // i
+    _jump4:; // Begin body of loop
+    int64_t _8 = _7 + _6;
+    int64_t _9 = _8 + _5;
+    int64_t _10 = 0;
+    _10 *= _0.d0;
+    _10 += _7;
+    _10 *= _0.d1;
+    _10 += _6;
+    _10 *= _0.d2;
+    _10 += _5;
+    _0.data[_10] = _9;
+    _5++;
+    if (_5 < _3)
+    goto _jump4;
+    _5 = 0;
+    _6++;
+    if (_6 < _2)
+    goto _jump4;
+    _6 = 0;
+    _7++;
+    if (_7 < _1)
+    goto _jump4;
+    // End body of loop
+    show("(ArrayType (IntType) 3)", &_0);
+}
+

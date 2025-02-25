@@ -1,0 +1,21 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+void jpl_main(struct args args) {
+    int64_t _0 = 1;
+    bool _2 = true;
+    bool _1 = _2;
+    if (0 != _2)
+    goto _jump1;
+    bool _3 = false;
+    _1 = _3;
+    _jump1:;
+    show("(BoolType)", &_1);
+}
+

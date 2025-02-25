@@ -1,0 +1,42 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t *data;
+} _a1_int64_t;
+
+void jpl_main(struct args args) {
+    _a1_int64_t _0;
+    // Computing bound for i
+    int64_t _1 = 10;
+    _0.d0 = _1;
+    if (_1 > 0) 
+    goto _jump1;
+    fail_assertion("non-positive loop bound");
+    _jump1:;
+    // Computing total size of heap memory to allocate
+    int64_t _2 = 1;
+    _2 *= _1;
+    _2 *= sizeof(int64_t);
+    _0.data = jpl_alloc(_2);
+    int64_t _3 = 0; // i
+    _jump2:; // Begin body of loop
+    int64_t _4 = 0;
+    int64_t _5 = 0;
+    _5 *= _0.d0;
+    _5 += _3;
+    _0.data[_5] = _4;
+    _3++;
+    if (_3 < _1)
+    goto _jump2;
+    // End body of loop
+    show("(ArrayType (IntType) 1)", &_0);
+}
+

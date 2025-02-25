@@ -1,0 +1,64 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+void jpl_main(struct args args) {
+    int64_t _0;
+    // Computing bound for i
+    int64_t _1 = 65536;
+    if (_1 > 0) 
+    goto _jump1;
+    fail_assertion("non-positive loop bound");
+    _jump1:;
+    // Computing bound for j
+    int64_t _2 = 65536;
+    if (_2 > 0) 
+    goto _jump2;
+    fail_assertion("non-positive loop bound");
+    _jump2:;
+    // Computing bound for k
+    int64_t _3 = 65536;
+    if (_3 > 0) 
+    goto _jump3;
+    fail_assertion("non-positive loop bound");
+    _jump3:;
+    // Computing bound for l
+    int64_t _4 = 65536;
+    if (_4 > 0) 
+    goto _jump4;
+    fail_assertion("non-positive loop bound");
+    _jump4:;
+    _0 = 0;
+    int64_t _5 = 0; // l
+    int64_t _6 = 0; // k
+    int64_t _7 = 0; // j
+    int64_t _8 = 0; // i
+    _jump5:; // Begin body of loop
+    int64_t _9 = _8 + _7;
+    int64_t _10 = _9 + _6;
+    int64_t _11 = _10 + _5;
+    _0 += _11;
+    _5++;
+    if (_5 < _4)
+    goto _jump5;
+    _5 = 0;
+    _6++;
+    if (_6 < _3)
+    goto _jump5;
+    _6 = 0;
+    _7++;
+    if (_7 < _2)
+    goto _jump5;
+    _7 = 0;
+    _8++;
+    if (_8 < _1)
+    goto _jump5;
+    // End body of loop
+    show("(IntType)", &_0);
+}
+

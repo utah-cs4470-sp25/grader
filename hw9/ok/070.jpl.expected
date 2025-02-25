@@ -1,0 +1,22 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t *data;
+} _a2_int64_t;
+
+_a2_int64_t f(_a2_int64_t a) {
+    return a;
+}
+
+void jpl_main(struct args args) {
+}
+

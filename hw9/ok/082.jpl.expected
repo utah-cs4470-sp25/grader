@@ -1,0 +1,15 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+void jpl_main(struct args args) {
+    int64_t _0 = 1;
+    double _1 = to_float(_0);
+    show("(FloatType)", &_1);
+}
+

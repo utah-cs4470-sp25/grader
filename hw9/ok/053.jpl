@@ -3,7 +3,7 @@ struct iii {
   b: int
   c: int
 }
-fn f() : iii{int, int, int} {
+fn f() : iii {
     return iii{1, 2, 3}
 }
 show f()

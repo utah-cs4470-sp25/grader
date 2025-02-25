@@ -1,0 +1,28 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+    int64_t a;
+    int64_t b;
+    int64_t c;
+} iii;
+
+iii f() {
+    int64_t _0 = 1;
+    int64_t _1 = 2;
+    int64_t _2 = 3;
+    iii _3 = { _0, _1, _2 };
+    return _3;
+}
+
+void jpl_main(struct args args) {
+    iii _0 = f();
+    show("(TupleType (IntType) (IntType) (IntType))", &_0);
+}
+

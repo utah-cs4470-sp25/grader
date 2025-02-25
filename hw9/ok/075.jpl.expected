@@ -1,0 +1,21 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+void_t f(int64_t d) {
+    int64_t _0 = 1;
+    void_t _1 = {};
+    return _1;
+}
+
+void jpl_main(struct args args) {
+    int64_t _0 = 13;
+    void_t _1 = f(_0);
+    show("(VoidType)", &_1);
+}
+
