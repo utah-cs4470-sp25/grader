@@ -5,14 +5,6 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
-typedef struct { } void_t;
-typedef struct {
-  double r;
-  double g;
-  double b;
-  double a;
-} rgba;
-
 typedef struct {
     int64_t b;
 } m;

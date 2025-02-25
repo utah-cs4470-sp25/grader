@@ -1,109 +1,98 @@
 
 #include <math.h>
 #include <stdbool.h>
+#include <stdint.h>
 #include <stdio.h>
 #include "rt/runtime.h"
 
-typedef struct { } void_t;
 typedef struct {
-  double r;
-  double g;
-  double b;
-  double a;
-} rgba;
+  int64_t d0;
+  int64_t *data;
+} _a1_int64_t;
 
 typedef struct {
-  long long d0;
-  long long *data;
-} _a1_long_long;
-
-typedef struct {
-  long long d0;
+  int64_t d0;
   double *data;
 } _a1_double;
 
 void jpl_main(struct args args) {
-    long long _0 = 61ll;
-    long long _1 = 224ll;
-    long long _2 = 172ll;
-    long long _3 = -_2;
-    long long _5 = 224ll;
-    long long _6 = 172ll;
-    long long _7 = -_6;
-    _a1_long_long _4;
+    int64_t _0 = 61;
+    int64_t _1 = 224;
+    int64_t _2 = 172;
+    int64_t _3 = -_2;
+    _a1_int64_t _4;
     _4.d0 = 2;
-    _4.data = jpl_alloc(sizeof(long long) * 2);
-    _4.data[0] = _5;
-    _4.data[1] = _7;
-    long long _8 = 910ll;
-    if (_8 >= 0ll)
+    _4.data = jpl_alloc(sizeof(int64_t) * 2);
+    _4.data[0] = _1;
+    _4.data[1] = _3;
+    int64_t _5 = 910;
+    if (_5 >= 0)
     goto _jump1;
     fail_assertion("negative array index");
     _jump1:;
-    if (_8 < _4.d0)
+    if (_5 < _4.d0)
     goto _jump2;
     fail_assertion("index too large");
     _jump2:;
-    long long _9 = 0ll;
-    _9 *= _4.d0;
-    _9 += _8;
-    long long _10 = _4.data[_9];
-    bool _11 = _0 != _10;
-    bool _12 = !_11;
-    bool _13 = true;
+    int64_t _6 = 0;
+    _6 *= _4.d0;
+    _6 += _5;
+    int64_t _7 = _4.data[_6];
+    bool _8 = _0 != _7;
+    bool _9 = !_8;
+    bool _10 = true;
     print("d");
-    double _14 = 70.01;
-    double _15 = -_14;
-    double _16 = 37.63;
-    double _17 = 51.85;
-    double _18 = 0.02;
-    rgba _19 = { _15, _16, _17, _18 };
-    double _20 = _19.a;
-    double _21 = 43.22;
-    double _22 = 66.29;
-    double _23 = 68.38;
-    double _24 = 50.41;
-    double _25 = 55.64;
-    double _26 = 81.25;
-    double _27 = 75.84;
-    double _28 = fmod(_26, _27);
-    rgba _29 = { _23, _24, _25, _28 };
-    double _30 = _29.g;
-    rgba _31 = { _20, _21, _22, _30 };
-    double _32 = 47.81;
-    double _33 = -_32;
-    double _34 = -_33;
-    double _35 = _31.b;
-    double _37 = _31.b;
-    _a1_double _36;
-    _36.d0 = 1;
-    _36.data = jpl_alloc(sizeof(double) * 1);
-    _36.data[0] = _37;
-    long long _38 = 177ll;
-    if (_38 >= 0ll)
+    double _11 = 70.0;
+    double _12 = -_11;
+    double _13 = 37.0;
+    double _14 = 51.0;
+    double _15 = 0.0;
+    rgba _16 = { _12, _13, _14, _15 };
+    double _17 = _16.a;
+    double _18 = 43.0;
+    double _19 = 66.0;
+    double _20 = 68.0;
+    double _21 = 50.0;
+    double _22 = 55.0;
+    double _23 = 81.0;
+    double _24 = 75.0;
+    double _25 = fmod(_23, _24);
+    rgba _26 = { _20, _21, _22, _25 };
+    double _27 = _26.g;
+    rgba _28 = { _17, _18, _19, _27 };
+    double _29 = 47.0;
+    double _30 = -_29;
+    double _31 = -_30;
+    double _32 = _28.b;
+    _a1_double _33;
+    _33.d0 = 1;
+    _33.data = jpl_alloc(sizeof(double) * 1);
+    _33.data[0] = _32;
+    int64_t _34 = 177;
+    if (_34 >= 0)
     goto _jump3;
     fail_assertion("negative array index");
     _jump3:;
-    if (_38 < _36.d0)
+    if (_34 < _33.d0)
     goto _jump4;
     fail_assertion("index too large");
     _jump4:;
-    long long _39 = 0ll;
-    _39 *= _36.d0;
-    _39 += _38;
-    double _40 = _36.data[_39];
-    double _41 = 54.89;
-    double _42 = -_41;
-    double _43 = 29.79;
-    double _44 = 95.05;
-    double _45 = 1.44;
-    double _46 = 62.97;
-    double _47 = -_46;
-    rgba _48 = { _43, _44, _45, _47 };
-    double _49 = _48.g;
-    rgba _50 = { _34, _40, _42, _49 };
-    show("(TupleType (FloatType) (FloatType) (FloatType) (FloatType))", &_50);
+    int64_t _35 = 0;
+    _35 *= _33.d0;
+    _35 += _34;
+    double _36 = _33.data[_35];
+    double _37 = 54.0;
+    double _38 = -_37;
+    double _39 = 29.0;
+    double _40 = 95.0;
+    double _41 = 1.0;
+    double _42 = 62.0;
+    double _43 = -_42;
+    rgba _44 = { _39, _40, _41, _43 };
+    double _45 = _44.g;
+    rgba _46 = { _31, _36, _38, _45 };
+    show("(TupleType (FloatType) (FloatType) (FloatType) (FloatType))", &_46);
     print("e");
-    double _51 = 81.45;
+    double _47 = 81.0;
 }
 

@@ -1,16 +1,9 @@
 
 #include <math.h>
 #include <stdbool.h>
+#include <stdint.h>
 #include <stdio.h>
 #include "rt/runtime.h"
-
-typedef struct { } void_t;
-typedef struct {
-  double r;
-  double g;
-  double b;
-  double a;
-} rgba;
 
 typedef struct {
     void_t a;
@@ -22,46 +15,46 @@ typedef struct {
 } e;
 
 typedef struct {
-  long long d0;
+  int64_t d0;
   bool *data;
 } _a1_bool;
 
 void jpl_main(struct args args) {
     bool _0 = true;
     bool _1 = !_0;
-    double _2 = 32.2;
-    double _3 = 23.36;
-    double _4 = 87.76;
+    double _2 = 32.0;
+    double _3 = 23.0;
+    double _4 = 87.0;
     double _5 = -_4;
     double _6 = _3 - _5;
     bool _7 = _2 == _6;
     bool _8 = _1 == _7;
-    long long _9 = 208ll;
-    long long _10 = 379ll;
-    long long _11 = 806ll;
-    long long _12 = _10 + _11;
-    long long _13 = _9 - _12;
-    long long _14 = -_13;
-    long long _15 = 351ll;
-    long long _16 = -_15;
-    long long _17 = 721ll;
-    long long _18 = 938ll;
-    long long _19 = _17 * _18;
-    long long _20 = _16 + _19;
-    long long _21 = -_20;
-    long long _22 = _14 * _21;
+    int64_t _9 = 208;
+    int64_t _10 = 379;
+    int64_t _11 = 806;
+    int64_t _12 = _10 + _11;
+    int64_t _13 = _9 - _12;
+    int64_t _14 = -_13;
+    int64_t _15 = 351;
+    int64_t _16 = -_15;
+    int64_t _17 = 721;
+    int64_t _18 = 938;
+    int64_t _19 = _17 * _18;
+    int64_t _20 = _16 + _19;
+    int64_t _21 = -_20;
+    int64_t _22 = _14 * _21;
     show("(IntType)", &_22);
-    double _23 = 34.12;
+    double _23 = 34.0;
     show("(FloatType)", &_23);
-    double _24 = 10.11;
-    long long _25 = 728ll;
-    long long _26 = 647ll;
-    long long _27 = 997ll;
-    long long _28 = _26 * _27;
-    long long _29 = -_28;
-    long long _30 = _25 - _29;
-    long long _31 = 715ll;
-    long long _32 = _30 * _31;
+    double _24 = 10.0;
+    int64_t _25 = 728;
+    int64_t _26 = 647;
+    int64_t _27 = 997;
+    int64_t _28 = _26 * _27;
+    int64_t _29 = -_28;
+    int64_t _30 = _25 - _29;
+    int64_t _31 = 715;
+    int64_t _32 = _30 * _31;
     _a1_bool _33;
     _33.d0 = 2;
     _33.data = jpl_alloc(sizeof(bool) * 2);

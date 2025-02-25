@@ -1,127 +1,81 @@
 
 #include <math.h>
 #include <stdbool.h>
+#include <stdint.h>
 #include <stdio.h>
 #include "rt/runtime.h"
 
-typedef struct { } void_t;
 typedef struct {
-  double r;
-  double g;
-  double b;
-  double a;
-} rgba;
-
-typedef struct {
-  long long d0;
+  int64_t d0;
   bool *data;
 } _a1_bool;
 
 typedef struct {
-  long long d0;
+  int64_t d0;
   double *data;
 } _a1_double;
 
 typedef struct {
-  long long d0;
+  int64_t d0;
   _a1_bool *data;
 } _a1__a1_bool;
 
 typedef struct {
-  long long d0;
-  long long *data;
-} _a1_long_long;
+  int64_t d0;
+  int64_t *data;
+} _a1_int64_t;
 
 void jpl_main(struct args args) {
     bool _0 = false;
-    double _1 = 82.01;
-    double _2 = 89.59;
+    double _1 = 82.0;
+    double _2 = 89.0;
     double _3 = _1 / _2;
-    double _4 = 55.46;
-    double _5 = 50.03;
+    double _4 = 55.0;
+    double _5 = 50.0;
     double _6 = _4 * _5;
-    double _7 = 39.63;
+    double _7 = 39.0;
     double _8 = _6 / _7;
     bool _9 = _3 > _8;
-    bool _11 = false;
-    double _12 = 82.01;
-    double _13 = 89.59;
-    double _14 = _12 / _13;
-    double _15 = 55.46;
-    double _16 = 50.03;
-    double _17 = _15 * _16;
-    double _18 = 39.63;
-    double _19 = _17 / _18;
-    bool _20 = _14 > _19;
     _a1_bool _10;
     _10.d0 = 2;
     _10.data = jpl_alloc(sizeof(bool) * 2);
-    _10.data[0] = _11;
-    _10.data[1] = _20;
-    double _21 = 22.77;
-    double _22 = -_21;
-    double _24 = 22.77;
-    double _25 = -_24;
-    _a1_double _23;
-    _23.d0 = 1;
-    _23.data = jpl_alloc(sizeof(double) * 1);
-    _23.data[0] = _25;
+    _10.data[0] = _0;
+    _10.data[1] = _9;
+    double _11 = 22.0;
+    double _12 = -_11;
+    _a1_double _13;
+    _13.d0 = 1;
+    _13.data = jpl_alloc(sizeof(double) * 1);
+    _13.data[0] = _12;
     show("(ArrayType (BoolType) 1)", &_10);
-    long long _26 = 106ll;
-    show("(IntType)", &_26);
+    int64_t _14 = 106;
+    show("(IntType)", &_14);
     print("d");
-    long long _27 = 717ll;
-    long long _28 = 811ll;
-    bool _29 = _27 != _28;
-    bool _30 = !_29;
-    double _31 = 75.05;
-    double _32 = 80.81;
-    bool _33 = _31 == _32;
-    long long _35 = 717ll;
-    long long _36 = 811ll;
-    bool _37 = _35 != _36;
-    bool _38 = !_37;
-    double _39 = 75.05;
-    double _40 = 80.81;
-    bool _41 = _39 == _40;
-    _a1_bool _34;
-    _34.d0 = 2;
-    _34.data = jpl_alloc(sizeof(bool) * 2);
-    _34.data[0] = _38;
-    _34.data[1] = _41;
-    long long _43 = 717ll;
-    long long _44 = 811ll;
-    bool _45 = _43 != _44;
-    bool _46 = !_45;
-    double _47 = 75.05;
-    double _48 = 80.81;
-    bool _49 = _47 == _48;
-    long long _51 = 717ll;
-    long long _52 = 811ll;
-    bool _53 = _51 != _52;
-    bool _54 = !_53;
-    double _55 = 75.05;
-    double _56 = 80.81;
-    bool _57 = _55 == _56;
-    _a1_bool _50;
-    _50.d0 = 2;
-    _50.data = jpl_alloc(sizeof(bool) * 2);
-    _50.data[0] = _54;
-    _50.data[1] = _57;
-    _a1__a1_bool _42;
-    _42.d0 = 2;
-    _42.data = jpl_alloc(sizeof(_a1_bool) * 2);
-    _42.data[0] = _50;
-    _42.data[1] = _10;
-    long long _58 = 91ll;
-    long long _60 = 91ll;
-    _a1_long_long _59;
-    _59.d0 = 2;
-    _59.data = jpl_alloc(sizeof(long long) * 2);
-    _59.data[0] = _60;
-    _59.data[1] = _42.d0;
-    bool _61 = false;
-    if (0 != _61)
+    int64_t _15 = 717;
+    int64_t _16 = 811;
+    bool _17 = _15 != _16;
+    bool _18 = !_17;
+    double _19 = 75.0;
+    double _20 = 80.0;
+    bool _21 = _19 == _20;
+    _a1_bool _22;
+    _22.d0 = 2;
+    _22.data = jpl_alloc(sizeof(bool) * 2);
+    _22.data[0] = _18;
+    _22.data[1] = _21;
+    _a1__a1_bool _23;
+    _23.d0 = 2;
+    _23.data = jpl_alloc(sizeof(_a1_bool) * 2);
+    _23.data[0] = _22;
+    _23.data[1] = _10;
+    int64_t _24 = 91;
+    _a1_int64_t _25;
+    _25.d0 = 2;
+    _25.data = jpl_alloc(sizeof(int64_t) * 2);
+    _25.data[0] = _24;
+    _25.data[1] = _23.d0;
+    bool _26 = false;
+    if (0 != _26)
     goto _jump1;
     fail_assertion("h");
     _jump1:;

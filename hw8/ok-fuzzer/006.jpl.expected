@@ -1,124 +1,107 @@
 
 #include <math.h>
 #include <stdbool.h>
+#include <stdint.h>
 #include <stdio.h>
 #include "rt/runtime.h"
 
-typedef struct { } void_t;
 typedef struct {
-  double r;
-  double g;
-  double b;
-  double a;
-} rgba;
-
-typedef struct {
-  long long d0;
+  int64_t d0;
   double *data;
 } _a1_double;
 
 typedef struct {
-  long long d0;
-  long long *data;
-} _a1_long_long;
+  int64_t d0;
+  int64_t *data;
+} _a1_int64_t;
 
 typedef struct {
-  long long d0;
+  int64_t d0;
   bool *data;
 } _a1_bool;
 
 void jpl_main(struct args args) {
-    double _0 = 19.98;
-    double _1 = 66.47;
+    double _0 = 19.0;
+    double _1 = 66.0;
     double _2 = -_1;
-    double _3 = 56.56;
+    double _3 = 56.0;
     double _4 = -_3;
-    double _5 = 87.96;
-    double _6 = 31.01;
+    double _5 = 87.0;
+    double _6 = 31.0;
     double _7 = _5 - _6;
     rgba _8 = { _0, _2, _4, _7 };
     double _9 = _8.g;
     double _10 = -_9;
-    long long _11 = 299ll;
-    long long _12 = -_11;
-    long long _13 = -_12;
-    long long _14 = -_13;
-    long long _15 = -_14;
-    double _16 = 32.23;
+    int64_t _11 = 299;
+    int64_t _12 = -_11;
+    int64_t _13 = -_12;
+    int64_t _14 = -_13;
+    int64_t _15 = -_14;
+    double _16 = 32.0;
     double _17 = _10 + _16;
     double _18 = fmod(_17, _10);
-    double _19 = 93.89;
+    double _19 = 93.0;
     double _20 = _18 - _19;
-    double _21 = 23.23;
-    double _22 = 34.03;
+    double _21 = 23.0;
+    double _22 = 34.0;
     double _23 = -_22;
-    double _25 = 23.23;
-    double _26 = 34.03;
-    double _27 = -_26;
     _a1_double _24;
     _24.d0 = 2;
     _24.data = jpl_alloc(sizeof(double) * 2);
-    _24.data[0] = _25;
-    _24.data[1] = _27;
-    long long _28 = 468ll;
-    long long _30 = 468ll;
-    _a1_long_long _29;
-    _29.d0 = 2;
-    _29.data = jpl_alloc(sizeof(long long) * 2);
-    _29.data[0] = _15;
-    _29.data[1] = _30;
-    long long _31 = _15 * _15;
-    if (_31 >= 0ll)
+    _24.data[0] = _21;
+    _24.data[1] = _23;
+    int64_t _25 = 468;
+    _a1_int64_t _26;
+    _26.d0 = 2;
+    _26.data = jpl_alloc(sizeof(int64_t) * 2);
+    _26.data[0] = _15;
+    _26.data[1] = _25;
+    int64_t _27 = _15 * _15;
+    if (_27 >= 0)
     goto _jump1;
     fail_assertion("negative array index");
     _jump1:;
-    if (_31 < _29.d0)
+    if (_27 < _26.d0)
     goto _jump2;
     fail_assertion("index too large");
     _jump2:;
-    long long _32 = 0ll;
-    _32 *= _29.d0;
-    _32 += _31;
-    long long _33 = _29.data[_32];
-    if (_33 >= 0ll)
+    int64_t _28 = 0;
+    _28 *= _26.d0;
+    _28 += _27;
+    int64_t _29 = _26.data[_28];
+    if (_29 >= 0)
     goto _jump3;
     fail_assertion("negative array index");
     _jump3:;
-    if (_33 < _24.d0)
+    if (_29 < _24.d0)
     goto _jump4;
     fail_assertion("index too large");
     _jump4:;
-    long long _34 = 0ll;
-    _34 *= _24.d0;
-    _34 += _33;
-    double _35 = _24.data[_34];
-    double _36 = _20 + _35;
-    show("(FloatType)", &_36);
-    double _37 = 58.28;
-    long long _38 = 522ll;
-    long long _39 = _15 + _38;
-    long long _40 = -_15;
-    long long _41 = -_40;
-    bool _42 = _39 > _41;
-    bool _43 = false;
-    long long _45 = 522ll;
-    long long _46 = _15 + _45;
-    long long _47 = -_15;
-    long long _48 = -_47;
-    bool _49 = _46 > _48;
-    bool _50 = false;
-    _a1_bool _44;
-    _44.d0 = 2;
-    _44.data = jpl_alloc(sizeof(bool) * 2);
-    _44.data[0] = _49;
-    _44.data[1] = _50;
-    double _51 = 37.09;
-    double _52 = 5.04;
-    double _53 = 3.3;
-    rgba _54 = { _51, _52, _37, _53 };
-    double _55 = _54.g;
-    rgba _56 = { _37, _55, _10, _37 };
-    double _57 = _56.b;
+    int64_t _30 = 0;
+    _30 *= _24.d0;
+    _30 += _29;
+    double _31 = _24.data[_30];
+    double _32 = _20 + _31;
+    show("(FloatType)", &_32);
+    double _33 = 58.0;
+    int64_t _34 = 522;
+    int64_t _35 = _15 + _34;
+    int64_t _36 = -_15;
+    int64_t _37 = -_36;
+    bool _38 = _35 > _37;
+    bool _39 = false;
+    _a1_bool _40;
+    _40.d0 = 2;
+    _40.data = jpl_alloc(sizeof(bool) * 2);
+    _40.data[0] = _38;
+    _40.data[1] = _39;
+    double _41 = 37.0;
+    double _42 = 5.0;
+    double _43 = 3.0;
+    rgba _44 = { _41, _42, _33, _43 };
+    double _45 = _44.g;
+    rgba _46 = { _33, _45, _10, _33 };
+    double _47 = _46.b;
     print("h");
 }
 
