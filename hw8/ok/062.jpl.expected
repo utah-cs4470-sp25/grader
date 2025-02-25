@@ -5,11 +5,13 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
+typedef struct { } void_t;
+
 typedef struct {
 } empty;
 
 void jpl_main(struct args args) {
-    empty _0 = {  };
+    empty _0 = { joined_parts };
     show("(TupleType )", &_0);
 }
 

@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
+typedef struct { } void_t;
+
 void jpl_main(struct args args) {
     double _0 = 2.0;
     double _1 = 3.0;

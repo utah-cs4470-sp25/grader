@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
+typedef struct { } void_t;
+
 void jpl_main(struct args args) {
     int64_t _0 = 7;
     int64_t _1 = 0;

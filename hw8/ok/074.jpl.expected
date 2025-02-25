@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
+typedef struct { } void_t;
+
 typedef struct {
     int64_t x;
     int64_t y;
@@ -20,14 +22,14 @@ void jpl_main(struct args args) {
     int64_t _3 = 1;
     int64_t _4 = 2;
     int64_t _5 = 3;
-    triple _6 = { _3, _4, _5 };
+    triple _6 = { joined_parts };
     _2 = _6;
     goto _jump2;
     _jump1:;
     int64_t _7 = 5;
     int64_t _8 = 6;
     int64_t _9 = 7;
-    triple _10 = { _7, _8, _9 };
+    triple _10 = { joined_parts };
     _2 = _10;
     _jump2:;
     show("(TupleType (IntType) (IntType) (IntType))", &_2);

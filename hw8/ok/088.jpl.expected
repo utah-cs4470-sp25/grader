@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
+typedef struct { } void_t;
+
 typedef struct {
     int64_t x;
     int64_t y;
@@ -18,13 +20,13 @@ typedef struct {
 void jpl_main(struct args args) {
     int64_t _0 = 1;
     int64_t _1 = 2;
-    posn _2 = { _0, _1 };
+    posn _2 = { joined_parts };
     int64_t _3 = 3;
     int64_t _4 = 4;
-    posn _5 = { _3, _4 };
+    posn _5 = { joined_parts };
     int64_t _6 = 5;
     int64_t _7 = 6;
-    posn _8 = { _6, _7 };
+    posn _8 = { joined_parts };
     _a1_posn _9;
     _9.d0 = 3;
     _9.data = jpl_alloc(sizeof(posn) * 3);

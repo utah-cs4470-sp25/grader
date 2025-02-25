@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
+typedef struct { } void_t;
+
 typedef struct {
   int64_t d0;
   double *data;
@@ -90,7 +92,7 @@ void jpl_main(struct args args) {
     print("d");
     double _26 = 82.0;
     double _27 = 94.0;
-    rgba _28 = { _25, _26, _27, _25 };
+    rgba _28 = { joined_parts };
     double _29 = _28.a;
     double _30 = 23.0;
     double _31 = fmod(_29, _30);

@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
+typedef struct { } void_t;
+
 typedef struct {
   int64_t d0;
   bool *data;
@@ -87,7 +89,7 @@ void jpl_main(struct args args) {
     _40 += _39;
     double _41 = _36.data[_40];
     double _42 = fmod(_33, _41);
-    rgba _43 = { _28, _29, _30, _42 };
+    rgba _43 = { joined_parts };
     bool _44 = !_23;
     if (0 != _44)
     goto _jump5;
@@ -99,7 +101,7 @@ void jpl_main(struct args args) {
     double _48 = 14.0;
     double _49 = 93.0;
     double _50 = _48 / _49;
-    rgba _51 = { _45, _46, _47, _50 };
+    rgba _51 = { joined_parts };
     double _52 = _51.b;
     double _53 = 94.0;
     double _54 = -_53;

@@ -5,13 +5,15 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
+typedef struct { } void_t;
+
 typedef struct {
     int64_t x;
 } nonempty;
 
 void jpl_main(struct args args) {
     int64_t _0 = 1;
-    nonempty _1 = { _0 };
+    nonempty _1 = { joined_parts };
     int64_t _2 = _1.x;
     show("(IntType)", &_2);
 }
