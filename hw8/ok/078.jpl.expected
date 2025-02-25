@@ -1,6 +1,7 @@
 
 #include <math.h>
 #include <stdbool.h>
+#include <stdint.h>
 #include <stdio.h>
 #include "rt/runtime.h"
 
@@ -13,36 +14,33 @@ typedef struct {
 } rgba;
 
 typedef struct {
-  long long d0;
-  long long *data;
-} _a1_long_long;
+  int64_t d0;
+  int64_t *data;
+} _a1_int64_t;
 
 void jpl_main(struct args args) {
-    long long _0 = 1ll;
-    long long _1 = 2ll;
-    long long _2 = 3ll;
-    long long _4 = 1ll;
-    long long _5 = 2ll;
-    long long _6 = 3ll;
-    _a1_long_long _3;
+    int64_t _0 = 1;
+    int64_t _1 = 2;
+    int64_t _2 = 3;
+    _a1_int64_t _3;
     _3.d0 = 3;
-    _3.data = jpl_alloc(sizeof(long long) * 3);
-    _3.data[0] = _4;
-    _3.data[1] = _5;
-    _3.data[2] = _6;
-    long long _7 = 0ll;
-    if (_7 >= 0ll)
+    _3.data = jpl_alloc(sizeof(int64_t) * 3);
+    _3.data[0] = _0;
+    _3.data[1] = _1;
+    _3.data[2] = _2;
+    int64_t _4 = 0;
+    if (_4 >= 0)
     goto _jump1;
     fail_assertion("negative array index");
     _jump1:;
-    if (_7 < _3.d0)
+    if (_4 < _3.d0)
     goto _jump2;
     fail_assertion("index too large");
     _jump2:;
-    long long _8 = 0ll;
-    _8 *= _3.d0;
-    _8 += _7;
-    long long _9 = _3.data[_8];
-    show("(IntType)", &_9);
+    int64_t _5 = 0;
+    _5 *= _3.d0;
+    _5 += _4;
+    int64_t _6 = _3.data[_5];
+    show("(IntType)", &_6);
 }
 

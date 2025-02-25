@@ -1,6 +1,7 @@
 
 #include <math.h>
 #include <stdbool.h>
+#include <stdint.h>
 #include <stdio.h>
 #include "rt/runtime.h"
 
@@ -13,8 +14,8 @@ typedef struct {
 } rgba;
 
 void jpl_main(struct args args) {
-    long long _0 = 23ll;
-    long long _1 = -_0;
+    int64_t _0 = 23;
+    int64_t _1 = -_0;
     show("(IntType)", &_1);
 }
 

@@ -1,6 +1,7 @@
 
 #include <math.h>
 #include <stdbool.h>
+#include <stdint.h>
 #include <stdio.h>
 #include "rt/runtime.h"
 
@@ -13,40 +14,35 @@ typedef struct {
 } rgba;
 
 typedef struct {
-  long long d0;
-  long long *data;
-} _a1_long_long;
+  int64_t d0;
+  int64_t *data;
+} _a1_int64_t;
 
 typedef struct {
-  long long d0;
-  _a1_long_long *data;
-} _a1__a1_long_long;
+  int64_t d0;
+  _a1_int64_t *data;
+} _a1__a1_int64_t;
 
 void jpl_main(struct args args) {
-    long long _0 = 1ll;
-    long long _1 = 2ll;
-    long long _2 = 3ll;
-    long long _3 = 4ll;
-    long long _4 = 5ll;
-    long long _6 = 1ll;
-    long long _7 = 2ll;
-    long long _8 = 3ll;
-    long long _9 = 4ll;
-    long long _10 = 5ll;
-    _a1_long_long _5;
+    int64_t _0 = 1;
+    int64_t _1 = 2;
+    int64_t _2 = 3;
+    int64_t _3 = 4;
+    int64_t _4 = 5;
+    _a1_int64_t _5;
     _5.d0 = 5;
-    _5.data = jpl_alloc(sizeof(long long) * 5);
-    _5.data[0] = _6;
-    _5.data[1] = _7;
-    _5.data[2] = _8;
-    _5.data[3] = _9;
-    _5.data[4] = _10;
-    _a1__a1_long_long _11;
-    _11.d0 = 3;
-    _11.data = jpl_alloc(sizeof(_a1_long_long) * 3);
-    _11.data[0] = _5;
-    _11.data[1] = _5;
-    _11.data[2] = _5;
-    show("(ArrayType (ArrayType (IntType) 1) 1)", &_11);
+    _5.data = jpl_alloc(sizeof(int64_t) * 5);
+    _5.data[0] = _0;
+    _5.data[1] = _1;
+    _5.data[2] = _2;
+    _5.data[3] = _3;
+    _5.data[4] = _4;
+    _a1__a1_int64_t _6;
+    _6.d0 = 3;
+    _6.data = jpl_alloc(sizeof(_a1_int64_t) * 3);
+    _6.data[0] = _5;
+    _6.data[1] = _5;
+    _6.data[2] = _5;
+    show("(ArrayType (ArrayType (IntType) 1) 1)", &_6);
 }
 

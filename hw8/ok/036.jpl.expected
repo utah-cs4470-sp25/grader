@@ -1,6 +1,7 @@
 
 #include <math.h>
 #include <stdbool.h>
+#include <stdint.h>
 #include <stdio.h>
 #include "rt/runtime.h"
 
@@ -13,8 +14,8 @@ typedef struct {
 } rgba;
 
 void jpl_main(struct args args) {
-    long long _0 = 3ll;
-    long long _1 = 3ll;
+    int64_t _0 = 3;
+    int64_t _1 = 3;
     bool _2 = _0 <= _1;
     if (0 != _2)
     goto _jump1;

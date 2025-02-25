@@ -1,6 +1,7 @@
 
 #include <math.h>
 #include <stdbool.h>
+#include <stdint.h>
 #include <stdio.h>
 #include "rt/runtime.h"
 
@@ -13,22 +14,22 @@ typedef struct {
 } rgba;
 
 typedef struct {
-    long long x;
-    long long y;
+    int64_t x;
+    int64_t y;
 } inner;
 
 typedef struct {
-    long long a;
+    int64_t a;
     inner b;
-    long long c;
+    int64_t c;
 } outer;
 
 void jpl_main(struct args args) {
-    long long _0 = 1ll;
-    long long _1 = 2ll;
-    long long _2 = 3ll;
+    int64_t _0 = 1;
+    int64_t _1 = 2;
+    int64_t _2 = 3;
     inner _3 = { _1, _2 };
-    long long _4 = 4ll;
+    int64_t _4 = 4;
     outer _5 = { _0, _3, _4 };
     show("(TupleType (IntType) (TupleType (IntType) (IntType)) (IntType))", &_5);
 }

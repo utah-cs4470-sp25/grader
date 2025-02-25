@@ -1,6 +1,7 @@
 
 #include <math.h>
 #include <stdbool.h>
+#include <stdint.h>
 #include <stdio.h>
 #include "rt/runtime.h"
 
@@ -13,61 +14,55 @@ typedef struct {
 } rgba;
 
 typedef struct {
-    long long a;
+    int64_t a;
 } one;
 
 typedef struct {
-    long long b;
-    long long c;
-    long long d;
+    int64_t b;
+    int64_t c;
+    int64_t d;
 } three;
 
 typedef struct {
-  long long d0;
-  long long *data;
-} _a1_long_long;
+  int64_t d0;
+  int64_t *data;
+} _a1_int64_t;
 
 void jpl_main(struct args args) {
-    long long _0 = 1ll;
+    int64_t _0 = 1;
     one _1 = { _0 };
-    long long _2 = _1.a;
-    long long _3 = 0ll;
-    long long _4 = 1ll;
-    long long _5 = 2ll;
+    int64_t _2 = _1.a;
+    int64_t _3 = 0;
+    int64_t _4 = 1;
+    int64_t _5 = 2;
     three _6 = { _3, _4, _5 };
-    long long _7 = _6.c;
+    int64_t _7 = _6.c;
     bool _8 = _2 < _7;
-    _a1_long_long _9;
+    _a1_int64_t _9;
     if (!_8)
     goto _jump1;
-    long long _10 = 1ll;
-    long long _11 = 2ll;
-    long long _12 = 3ll;
-    long long _14 = 1ll;
-    long long _15 = 2ll;
-    long long _16 = 3ll;
-    _a1_long_long _13;
+    int64_t _10 = 1;
+    int64_t _11 = 2;
+    int64_t _12 = 3;
+    _a1_int64_t _13;
     _13.d0 = 3;
-    _13.data = jpl_alloc(sizeof(long long) * 3);
-    _13.data[0] = _14;
-    _13.data[1] = _15;
-    _13.data[2] = _16;
+    _13.data = jpl_alloc(sizeof(int64_t) * 3);
+    _13.data[0] = _10;
+    _13.data[1] = _11;
+    _13.data[2] = _12;
     _9 = _13;
     goto _jump2;
     _jump1:;
-    long long _17 = 4ll;
-    long long _18 = 5ll;
-    long long _19 = 6ll;
-    long long _21 = 4ll;
-    long long _22 = 5ll;
-    long long _23 = 6ll;
-    _a1_long_long _20;
-    _20.d0 = 3;
-    _20.data = jpl_alloc(sizeof(long long) * 3);
-    _20.data[0] = _21;
-    _20.data[1] = _22;
-    _20.data[2] = _23;
-    _9 = _20;
+    int64_t _14 = 4;
+    int64_t _15 = 5;
+    int64_t _16 = 6;
+    _a1_int64_t _17;
+    _17.d0 = 3;
+    _17.data = jpl_alloc(sizeof(int64_t) * 3);
+    _17.data[0] = _14;
+    _17.data[1] = _15;
+    _17.data[2] = _16;
+    _9 = _17;
     _jump2:;
     show("(ArrayType (IntType) 1)", &_9);
 }
