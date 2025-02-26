@@ -25,12 +25,12 @@ typedef struct {
 void jpl_main(struct args args) {
     int64_t _0 = 1;
     int64_t _1 = 1;
-    m _2 = { joined_parts };
+    m _2 = { _1 };
     int64_t _3 = _2.b;
     int64_t _4 = 0;
     int64_t _5 = 1;
     int64_t _6 = 2;
-    n _7 = { joined_parts };
+    n _7 = { _4, _5, _6 };
     int64_t _8 = _7.c;
     bool _9 = _3 < _8;
     _a1_int64_t _10;

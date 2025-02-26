@@ -22,14 +22,14 @@ void jpl_main(struct args args) {
     int64_t _3 = 1;
     int64_t _4 = 2;
     int64_t _5 = 3;
-    triple _6 = { joined_parts };
+    triple _6 = { _3, _4, _5 };
     _2 = _6;
     goto _jump2;
     _jump1:;
     int64_t _7 = 5;
     int64_t _8 = 6;
     int64_t _9 = 7;
-    triple _10 = { joined_parts };
+    triple _10 = { _7, _8, _9 };
     _2 = _10;
     _jump2:;
     show("(TupleType (IntType) (IntType) (IntType))", &_2);

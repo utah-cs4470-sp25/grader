@@ -22,9 +22,9 @@ void jpl_main(struct args args) {
     int64_t _0 = 1;
     int64_t _1 = 2;
     int64_t _2 = 3;
-    inner _3 = { joined_parts };
+    inner _3 = { _1, _2 };
     int64_t _4 = 4;
-    outer _5 = { joined_parts };
+    outer _5 = { _0, _3, _4 };
     show("(TupleType (IntType) (TupleType (IntType) (IntType)) (IntType))", &_5);
 }
 

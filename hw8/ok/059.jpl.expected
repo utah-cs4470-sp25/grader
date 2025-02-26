@@ -16,7 +16,7 @@ typedef struct {
 
 void jpl_main(struct args args) {
     int64_t _0 = 1;
-    i4 _1 = { joined_parts };
+    i4 _1 = { _0, _0, _0, _0 };
     int64_t _2 = _1.n;
     show("(IntType)", &_2);
 }

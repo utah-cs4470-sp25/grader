@@ -11,7 +11,7 @@ typedef struct {
 } empty;
 
 void jpl_main(struct args args) {
-    empty _0 = { joined_parts };
+    empty _0 = {  };
     show("(TupleType )", &_0);
 }
 

@@ -41,19 +41,19 @@ void jpl_main(struct args args) {
     _3.data = jpl_alloc(sizeof(int64_t) * 2);
     _3.data[0] = _1;
     _3.data[1] = _2;
-    iapair _4 = { joined_parts };
+    iapair _4 = { _0, _3 };
     int64_t _5 = 4;
     int64_t _6 = 5;
-    ipair _7 = { joined_parts };
+    ipair _7 = { _5, _6 };
     int64_t _8 = 6;
     int64_t _9 = 7;
-    ipair _10 = { joined_parts };
+    ipair _10 = { _8, _9 };
     _a1_ipair _11;
     _11.d0 = 2;
     _11.data = jpl_alloc(sizeof(ipair) * 2);
     _11.data[0] = _7;
     _11.data[1] = _10;
-    outer _12 = { joined_parts };
+    outer _12 = { _4, _11 };
     show("(TupleType (TupleType (IntType) (ArrayType (IntType) 1)) (ArrayType (TupleType (IntType) (IntType)) 1))", &_12);
 }
 

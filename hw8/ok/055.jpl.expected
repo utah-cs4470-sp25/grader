@@ -17,7 +17,7 @@ void jpl_main(struct args args) {
     int64_t _0 = 1;
     int64_t _1 = 2;
     int64_t _2 = 3;
-    triple _3 = { joined_parts };
+    triple _3 = { _0, _1, _2 };
     show("(TupleType (IntType) (IntType) (IntType))", &_3);
 }
 

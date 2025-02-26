@@ -13,7 +13,7 @@ typedef struct {
 
 void jpl_main(struct args args) {
     int64_t _0 = 1;
-    num _1 = { joined_parts };
+    num _1 = { _0 };
     show("(TupleType (IntType))", &_1);
 }
 
