@@ -73,7 +73,7 @@ void jpl_main(struct args args) {
     _12 *= _5.d0;
     _12 += _5.d0;
     double _13 = _5.data[_12];
-    rgba _14 = { joined_parts };
+    rgba _14 = { _7, _9, _11, _13 };
     double _15 = _14.b;
     double _16 = 24.0;
     double _17 = -_16;

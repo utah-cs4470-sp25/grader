@@ -42,7 +42,7 @@ void jpl_main(struct args args) {
     double _8 = _6 - _7;
     double _9 = 71.0;
     double _10 = 28.0;
-    rgba _11 = { joined_parts };
+    rgba _11 = { _3, _8, _9, _10 };
     int64_t _12 = 102;
     int64_t _13 = 754;
     int64_t _14 = _12 - _13;

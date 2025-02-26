@@ -59,7 +59,7 @@ void jpl_main(struct args args) {
     _21 *= _14.d0;
     _21 += _20;
     double _22 = _14.data[_21];
-    rgba _23 = { joined_parts };
+    rgba _23 = { _15, _18, _19, _22 };
     double _24 = _23.g;
     double _25 = 94.0;
     bool _26 = _24 < _25;
@@ -79,7 +79,7 @@ void jpl_main(struct args args) {
     double _36 = _34 / _35;
     double _37 = -_36;
     double _38 = 41.0;
-    rgba _39 = { joined_parts };
+    rgba _39 = { _30, _33, _37, _38 };
     double _40 = _39.g;
     _a1__a1_double _41;
     _41.d0 = 1;

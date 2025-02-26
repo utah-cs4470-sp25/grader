@@ -30,14 +30,14 @@ void jpl_main(struct args args) {
     double _8 = _5 / _5;
     double _9 = -_8;
     double _10 = _5 - _4;
-    rgba _11 = { joined_parts };
+    rgba _11 = { _7, _9, _4, _10 };
     double _12 = 59.0;
-    rgba _13 = { joined_parts };
+    rgba _13 = { _5, _12, _5, _4 };
     double _14 = _13.a;
     double _15 = _4 + _4;
     double _16 = 38.0;
     double _17 = fmod(_15, _16);
-    rgba _18 = { joined_parts };
+    rgba _18 = { _4, _5, _14, _17 };
     _a1_rgba _19;
     _19.d0 = 2;
     _19.data = jpl_alloc(sizeof(rgba) * 2);

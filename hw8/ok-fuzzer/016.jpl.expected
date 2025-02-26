@@ -84,7 +84,7 @@ void jpl_main(struct args args) {
     int64_t _19 = _15.data[_18];
     int64_t _20 = -_19;
     double _21 = 20.0;
-    a _22 = { joined_parts };
+    a _22 = { _21 };
     double _23 = _22.a;
     double _24 = 51.0;
     double _25 = -_24;
@@ -95,11 +95,11 @@ void jpl_main(struct args args) {
     fail_assertion("e");
     _jump5:;
     bool _28 = false;
-    d _29 = { joined_parts };
+    d _29 = { _28 };
     bool _30 = _29.a;
-    d _31 = { joined_parts };
+    d _31 = { _30 };
     bool _32 = _20 == _20;
-    d _33 = { joined_parts };
+    d _33 = { _32 };
     _a1_d _34;
     _34.d0 = 2;
     _34.data = jpl_alloc(sizeof(d) * 2);

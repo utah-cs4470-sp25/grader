@@ -49,7 +49,7 @@ void jpl_main(struct args args) {
     double _13 = 37.0;
     double _14 = 51.0;
     double _15 = 0.0;
-    rgba _16 = { joined_parts };
+    rgba _16 = { _12, _13, _14, _15 };
     double _17 = _16.a;
     double _18 = 43.0;
     double _19 = 66.0;
@@ -59,9 +59,9 @@ void jpl_main(struct args args) {
     double _23 = 81.0;
     double _24 = 75.0;
     double _25 = fmod(_23, _24);
-    rgba _26 = { joined_parts };
+    rgba _26 = { _20, _21, _22, _25 };
     double _27 = _26.g;
-    rgba _28 = { joined_parts };
+    rgba _28 = { _17, _18, _19, _27 };
     double _29 = 47.0;
     double _30 = -_29;
     double _31 = -_30;
@@ -90,9 +90,9 @@ void jpl_main(struct args args) {
     double _41 = 1.0;
     double _42 = 62.0;
     double _43 = -_42;
-    rgba _44 = { joined_parts };
+    rgba _44 = { _39, _40, _41, _43 };
     double _45 = _44.g;
-    rgba _46 = { joined_parts };
+    rgba _46 = { _31, _36, _38, _45 };
     show("(TupleType (FloatType) (FloatType) (FloatType) (FloatType))", &_46);
     print("e");
     double _47 = 81.0;

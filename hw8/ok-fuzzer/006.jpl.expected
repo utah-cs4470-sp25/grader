@@ -31,7 +31,7 @@ void jpl_main(struct args args) {
     double _5 = 87.0;
     double _6 = 31.0;
     double _7 = _5 - _6;
-    rgba _8 = { joined_parts };
+    rgba _8 = { _0, _2, _4, _7 };
     double _9 = _8.g;
     double _10 = -_9;
     int64_t _11 = 299;
@@ -100,9 +100,9 @@ void jpl_main(struct args args) {
     double _41 = 37.0;
     double _42 = 5.0;
     double _43 = 3.0;
-    rgba _44 = { joined_parts };
+    rgba _44 = { _41, _42, _33, _43 };
     double _45 = _44.g;
-    rgba _46 = { joined_parts };
+    rgba _46 = { _33, _45, _10, _33 };
     double _47 = _46.b;
     print("h");
 }

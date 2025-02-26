@@ -33,7 +33,7 @@ void jpl_main(struct args args) {
     bool _7 = _6 == _4;
     show("(BoolType)", &_7);
     double _8 = 5.0;
-    rgba _9 = { joined_parts };
+    rgba _9 = { _4, _8, _4, _4 };
     _a1_rgba _10;
     _10.d0 = 1;
     _10.data = jpl_alloc(sizeof(rgba) * 1);

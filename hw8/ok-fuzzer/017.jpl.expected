@@ -36,10 +36,10 @@ void jpl_main(struct args args) {
     double _10 = 34.0;
     double _11 = 51.0;
     double _12 = 18.0;
-    rgba _13 = { joined_parts };
+    rgba _13 = { _6, _10, _11, _12 };
     double _14 = 23.0;
     double _15 = 28.0;
-    rgba _16 = { joined_parts };
+    rgba _16 = { _14, _6, _15, _6 };
     _a1_rgba _17;
     _17.d0 = 2;
     _17.data = jpl_alloc(sizeof(rgba) * 2);

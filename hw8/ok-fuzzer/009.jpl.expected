@@ -67,12 +67,12 @@ void jpl_main(struct args args) {
     double _14 = 46.0;
     double _15 = 26.0;
     double _16 = -_15;
-    rgba _17 = { joined_parts };
+    rgba _17 = { _11, _13, _14, _16 };
     double _18 = 84.0;
     double _19 = 72.0;
     double _20 = 32.0;
     double _21 = 66.0;
-    rgba _22 = { joined_parts };
+    rgba _22 = { _18, _19, _20, _21 };
     _a1_rgba _23;
     _23.d0 = 2;
     _23.data = jpl_alloc(sizeof(rgba) * 2);
