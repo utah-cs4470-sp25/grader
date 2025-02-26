@@ -62,6 +62,9 @@ test-hw7:
 test-hw8:
 	@ python3 grader.py test --hw 8 --dir $(DIR) --part $(PART)
 
+test-hw9:
+	@ python3 grader.py test --hw 9 --dir $(DIR) --part $(PART)
+
 # ben: completely useless??
 test-hw%:
 	@ python3 grader.py run --hw $*

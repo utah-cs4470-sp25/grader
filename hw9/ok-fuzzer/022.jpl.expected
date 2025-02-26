@@ -1,0 +1,7548 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  bool *data;
+} _a2_bool;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  _a2_bool *data;
+} _a2__a2_bool;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  _a2_rgba *data;
+} _a2__a2_rgba;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  _a2__a2_rgba *data;
+} _a2__a2__a2_rgba;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  int64_t *data;
+} _a3_int64_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t *data;
+} _a1_int64_t;
+
+typedef struct {
+  int64_t d0;
+  _a1_int64_t *data;
+} _a1__a1_int64_t;
+
+typedef struct {
+  int64_t d0;
+  bool *data;
+} _a1_bool;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  bool *data;
+} _a3_bool;
+
+typedef struct {
+  int64_t d0;
+  _a3_int64_t *data;
+} _a1__a3_int64_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  _a2_bool *data;
+} _a3__a2_bool;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  rgba *data;
+} _a3_rgba;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  void_t *data;
+} _a3_void_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  _a3_bool *data;
+} _a3__a3_bool;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  _a3_rgba *data;
+} _a3__a3_rgba;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  _a3__a3_rgba *data;
+} _a3__a3__a3_rgba;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  _a3_rgba *data;
+} _a2__a3_rgba;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  _a3__a3_rgba *data;
+} _a2__a3__a3_rgba;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  double *data;
+} _a3_double;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  _a1_bool *data;
+} _a2__a1_bool;
+
+typedef struct {
+  int64_t d0;
+  _a2__a1_bool *data;
+} _a1__a2__a1_bool;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  _a3_double *data;
+} _a3__a3_double;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t *data;
+} _a2_int64_t;
+
+typedef struct {
+  int64_t d0;
+  _a3_double *data;
+} _a1__a3_double;
+
+typedef struct {
+  int64_t d0;
+  double *data;
+} _a1_double;
+
+typedef struct {
+  int64_t d0;
+  _a2_int64_t *data;
+} _a1__a2_int64_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  _a1_int64_t *data;
+} _a2__a1_int64_t;
+
+typedef struct {
+  int64_t d0;
+  _a1_bool *data;
+} _a1__a1_bool;
+
+typedef struct {
+  int64_t d0;
+  _a2_rgba *data;
+} _a1__a2_rgba;
+
+typedef struct {
+  int64_t d0;
+  void_t *data;
+} _a1_void_t;
+
+typedef struct {
+  int64_t d0;
+  _a1_void_t *data;
+} _a1__a1_void_t;
+
+typedef struct {
+  int64_t d0;
+  _a1__a1_void_t *data;
+} _a1__a1__a1_void_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  _a2_rgba *data;
+} _a3__a2_rgba;
+
+typedef struct {
+  int64_t d0;
+  _a3__a2_rgba *data;
+} _a1__a3__a2_rgba;
+
+typedef struct {
+    rgba a;
+    void_t b;
+    int64_t c;
+} A;
+
+bool l(_a3_rgba m, _a3_void_t q, double u) {
+    _a3__a3_bool _1;
+    // Computing bound for A
+    _1.d0 = q.d1;
+    if (q.d1 > 0) 
+    goto _jump289;
+    fail_assertion("non-positive loop bound");
+    _jump289:;
+    // Computing bound for B
+    _1.d1 = h;
+    if (h > 0) 
+    goto _jump290;
+    fail_assertion("non-positive loop bound");
+    _jump290:;
+    // Computing bound for C
+    _1.d2 = m.d1;
+    if (m.d1 > 0) 
+    goto _jump291;
+    fail_assertion("non-positive loop bound");
+    _jump291:;
+    // Computing total size of heap memory to allocate
+    int64_t _2 = 1;
+    _2 *= q.d1;
+    _2 *= h;
+    _2 *= m.d1;
+    _2 *= sizeof(_a3_bool);
+    _1.data = jpl_alloc(_2);
+    int64_t _3 = 0; // C
+    int64_t _4 = 0; // B
+    int64_t _5 = 0; // A
+    _jump292:; // Begin body of loop
+    _a3_bool _6;
+    // Computing bound for D
+    _6.d0 = q.d1;
+    if (q.d1 > 0) 
+    goto _jump293;
+    fail_assertion("non-positive loop bound");
+    _jump293:;
+    // Computing bound for E
+    int64_t _7 = 40;
+    _6.d1 = _7;
+    if (_7 > 0) 
+    goto _jump294;
+    fail_assertion("non-positive loop bound");
+    _jump294:;
+    // Computing bound for F
+    _6.d2 = m.d0;
+    if (m.d0 > 0) 
+    goto _jump295;
+    fail_assertion("non-positive loop bound");
+    _jump295:;
+    // Computing total size of heap memory to allocate
+    int64_t _8 = 1;
+    _8 *= q.d1;
+    _8 *= _7;
+    _8 *= m.d0;
+    _8 *= sizeof(bool);
+    _6.data = jpl_alloc(_8);
+    int64_t _9 = 0; // F
+    int64_t _10 = 0; // E
+    int64_t _11 = 0; // D
+    _jump296:; // Begin body of loop
+    bool _12 = _5 < m.d1;
+    int64_t _13 = 0;
+    _13 *= _6.d0;
+    _13 += _11;
+    _13 *= _6.d1;
+    _13 += _10;
+    _13 *= _6.d2;
+    _13 += _9;
+    _6.data[_13] = _12;
+    _9++;
+    if (_9 < m.d0)
+    goto _jump296;
+    _9 = 0;
+    _10++;
+    if (_10 < _7)
+    goto _jump296;
+    _10 = 0;
+    _11++;
+    if (_11 < q.d1)
+    goto _jump296;
+    // End body of loop
+    int64_t _14 = 0;
+    _14 *= _1.d0;
+    _14 += _5;
+    _14 *= _1.d1;
+    _14 += _4;
+    _14 *= _1.d2;
+    _14 += _3;
+    _1.data[_14] = _6;
+    _3++;
+    if (_3 < m.d1)
+    goto _jump292;
+    _3 = 0;
+    _4++;
+    if (_4 < h)
+    goto _jump292;
+    _4 = 0;
+    _5++;
+    if (_5 < q.d1)
+    goto _jump292;
+    // End body of loop
+    int64_t _15 = 673;
+    if (_15 >= 0)
+    goto _jump297;
+    fail_assertion("negative array index");
+    _jump297:;
+    if (_15 < _1.d0)
+    goto _jump298;
+    fail_assertion("index too large");
+    _jump298:;
+    if (i >= 0)
+    goto _jump299;
+    fail_assertion("negative array index");
+    _jump299:;
+    if (i < _1.d1)
+    goto _jump300;
+    fail_assertion("index too large");
+    _jump300:;
+    if (f.d0 >= 0)
+    goto _jump301;
+    fail_assertion("negative array index");
+    _jump301:;
+    if (f.d0 < _1.d2)
+    goto _jump302;
+    fail_assertion("index too large");
+    _jump302:;
+    int64_t _16 = 0;
+    _16 *= _1.d0;
+    _16 += _15;
+    _16 *= _1.d1;
+    _16 += i;
+    _16 *= _1.d2;
+    _16 += f.d0;
+    _a3_bool _17 = _1.data[_16];
+    int64_t _18 = 453;
+    bool _19 = q.d1 == f.d1;
+    int64_t _20;
+    if (!_19)
+    goto _jump303;
+    _20 = q.d1;
+    goto _jump304;
+    _jump303:;
+    _20 = g;
+    _jump304:;
+    if (_18 >= 0)
+    goto _jump305;
+    fail_assertion("negative array index");
+    _jump305:;
+    if (_18 < _17.d0)
+    goto _jump306;
+    fail_assertion("index too large");
+    _jump306:;
+    if (i >= 0)
+    goto _jump307;
+    fail_assertion("negative array index");
+    _jump307:;
+    if (i < _17.d1)
+    goto _jump308;
+    fail_assertion("index too large");
+    _jump308:;
+    if (_20 >= 0)
+    goto _jump309;
+    fail_assertion("negative array index");
+    _jump309:;
+    if (_20 < _17.d2)
+    goto _jump310;
+    fail_assertion("index too large");
+    _jump310:;
+    int64_t _21 = 0;
+    _21 *= _17.d0;
+    _21 += _18;
+    _21 *= _17.d1;
+    _21 += i;
+    _21 *= _17.d2;
+    _21 += _20;
+    bool _22 = _17.data[_21];
+    bool _0 = _22;
+    if (0 != _22)
+    goto _jump311;
+    bool _23 = f.d0 < f.d2;
+    _0 = _23;
+    _jump311:;
+    _a1_int64_t _24;
+    if (!_0)
+    goto _jump312;
+    int64_t _25;
+    // Computing bound for A
+    int64_t _26;
+    // Computing bound for A
+    if (d > 0) 
+    goto _jump313;
+    fail_assertion("non-positive loop bound");
+    _jump313:;
+    _26 = 0;
+    int64_t _27 = 0; // A
+    _jump314:; // Begin body of loop
+    _26 += g;
+    _27++;
+    if (_27 < d)
+    goto _jump314;
+    // End body of loop
+    if (_26 > 0) 
+    goto _jump315;
+    fail_assertion("non-positive loop bound");
+    _jump315:;
+    // Computing bound for B
+    if (f.d2 > 0) 
+    goto _jump316;
+    fail_assertion("non-positive loop bound");
+    _jump316:;
+    _25 = 0;
+    int64_t _28 = 0; // B
+    int64_t _29 = 0; // A
+    _jump317:; // Begin body of loop
+    int64_t _30;
+    // Computing bound for C
+    if (q.d1 > 0) 
+    goto _jump318;
+    fail_assertion("non-positive loop bound");
+    _jump318:;
+    _30 = 0;
+    int64_t _31 = 0; // C
+    _jump319:; // Begin body of loop
+    _30 += m.d0;
+    _31++;
+    if (_31 < q.d1)
+    goto _jump319;
+    // End body of loop
+    _25 += _30;
+    _28++;
+    if (_28 < f.d2)
+    goto _jump317;
+    _28 = 0;
+    _29++;
+    if (_29 < _26)
+    goto _jump317;
+    // End body of loop
+    int64_t _32 = -_25;
+    int64_t _33 = _32 % d;
+    int64_t _34 = h + f.d1;
+    _a1_int64_t _35;
+    _35.d0 = 3;
+    _35.data = jpl_alloc(sizeof(int64_t) * 3);
+    _35.data[0] = q.d2;
+    _35.data[1] = _33;
+    _35.data[2] = _34;
+    _24 = _35;
+    goto _jump320;
+    _jump312:;
+    _a1_int64_t _36;
+    _36.d0 = 1;
+    _36.data = jpl_alloc(sizeof(int64_t) * 1);
+    _36.data[0] = q.d2;
+    _24 = _36;
+    _jump320:;
+    _a3__a3__a3_rgba _37;
+    // Computing bound for E
+    _37.d0 = c;
+    if (c > 0) 
+    goto _jump321;
+    fail_assertion("non-positive loop bound");
+    _jump321:;
+    // Computing bound for F
+    int64_t _38;
+    // Computing bound for E
+    int64_t _39 = h / f.d1;
+    if (_39 > 0) 
+    goto _jump322;
+    fail_assertion("non-positive loop bound");
+    _jump322:;
+    // Computing bound for F
+    if (q.d1 >= 0)
+    goto _jump323;
+    fail_assertion("negative array index");
+    _jump323:;
+    if (q.d1 < f.d0)
+    goto _jump324;
+    fail_assertion("index too large");
+    _jump324:;
+    if (c >= 0)
+    goto _jump325;
+    fail_assertion("negative array index");
+    _jump325:;
+    if (c < f.d1)
+    goto _jump326;
+    fail_assertion("index too large");
+    _jump326:;
+    if (h >= 0)
+    goto _jump327;
+    fail_assertion("negative array index");
+    _jump327:;
+    if (h < f.d2)
+    goto _jump328;
+    fail_assertion("index too large");
+    _jump328:;
+    int64_t _40 = 0;
+    _40 *= f.d0;
+    _40 += q.d1;
+    _40 *= f.d1;
+    _40 += c;
+    _40 *= f.d2;
+    _40 += h;
+    int64_t _41 = f.data[_40];
+    if (_41 > 0) 
+    goto _jump329;
+    fail_assertion("non-positive loop bound");
+    _jump329:;
+    _38 = 0;
+    int64_t _42 = 0; // F
+    int64_t _43 = 0; // E
+    _jump330:; // Begin body of loop
+    int64_t _44 = 473;
+    _38 += _44;
+    _42++;
+    if (_42 < _41)
+    goto _jump330;
+    _42 = 0;
+    _43++;
+    if (_43 < _39)
+    goto _jump330;
+    // End body of loop
+    if (_38 >= 0)
+    goto _jump331;
+    fail_assertion("negative array index");
+    _jump331:;
+    if (_38 < f.d0)
+    goto _jump332;
+    fail_assertion("index too large");
+    _jump332:;
+    if (q.d0 >= 0)
+    goto _jump333;
+    fail_assertion("negative array index");
+    _jump333:;
+    if (q.d0 < f.d1)
+    goto _jump334;
+    fail_assertion("index too large");
+    _jump334:;
+    if (m.d2 >= 0)
+    goto _jump335;
+    fail_assertion("negative array index");
+    _jump335:;
+    if (m.d2 < f.d2)
+    goto _jump336;
+    fail_assertion("index too large");
+    _jump336:;
+    int64_t _45 = 0;
+    _45 *= f.d0;
+    _45 += _38;
+    _45 *= f.d1;
+    _45 += q.d0;
+    _45 *= f.d2;
+    _45 += m.d2;
+    int64_t _46 = f.data[_45];
+    int64_t _47 = q.d2 / _46;
+    _37.d1 = _47;
+    if (_47 > 0) 
+    goto _jump337;
+    fail_assertion("non-positive loop bound");
+    _jump337:;
+    // Computing bound for G
+    _37.d2 = m.d1;
+    if (m.d1 > 0) 
+    goto _jump338;
+    fail_assertion("non-positive loop bound");
+    _jump338:;
+    // Computing total size of heap memory to allocate
+    int64_t _48 = 1;
+    _48 *= c;
+    _48 *= _47;
+    _48 *= m.d1;
+    _48 *= sizeof(_a3__a3_rgba);
+    _37.data = jpl_alloc(_48);
+    int64_t _49 = 0; // G
+    int64_t _50 = 0; // F
+    int64_t _51 = 0; // E
+    _jump339:; // Begin body of loop
+    _a3__a3__a3_rgba _52;
+    // Computing bound for H
+    bool _53 = true;
+    bool _54;
+    if (!_53)
+    goto _jump340;
+    _54 = e;
+    goto _jump341;
+    _jump340:;
+    _54 = e;
+    _jump341:;
+    int64_t _55;
+    if (!_54)
+    goto _jump342;
+    _55 = m.d2;
+    goto _jump343;
+    _jump342:;
+    _55 = _51;
+    _jump343:;
+    _52.d0 = _55;
+    if (_55 > 0) 
+    goto _jump344;
+    fail_assertion("non-positive loop bound");
+    _jump344:;
+    // Computing bound for I
+    _52.d1 = j.d0;
+    if (j.d0 > 0) 
+    goto _jump345;
+    fail_assertion("non-positive loop bound");
+    _jump345:;
+    // Computing bound for J
+    _52.d2 = _49;
+    if (_49 > 0) 
+    goto _jump346;
+    fail_assertion("non-positive loop bound");
+    _jump346:;
+    // Computing total size of heap memory to allocate
+    int64_t _56 = 1;
+    _56 *= _55;
+    _56 *= j.d0;
+    _56 *= _49;
+    _56 *= sizeof(_a3__a3_rgba);
+    _52.data = jpl_alloc(_56);
+    int64_t _57 = 0; // J
+    int64_t _58 = 0; // I
+    int64_t _59 = 0; // H
+    _jump347:; // Begin body of loop
+    _a3__a3_rgba _60;
+    // Computing bound for K
+    _60.d0 = i;
+    if (i > 0) 
+    goto _jump348;
+    fail_assertion("non-positive loop bound");
+    _jump348:;
+    // Computing bound for L
+    _60.d1 = _51;
+    if (_51 > 0) 
+    goto _jump349;
+    fail_assertion("non-positive loop bound");
+    _jump349:;
+    // Computing bound for M
+    _60.d2 = m.d1;
+    if (m.d1 > 0) 
+    goto _jump350;
+    fail_assertion("non-positive loop bound");
+    _jump350:;
+    // Computing total size of heap memory to allocate
+    int64_t _61 = 1;
+    _61 *= i;
+    _61 *= _51;
+    _61 *= m.d1;
+    _61 *= sizeof(_a3_rgba);
+    _60.data = jpl_alloc(_61);
+    int64_t _62 = 0; // M
+    int64_t _63 = 0; // L
+    int64_t _64 = 0; // K
+    _jump351:; // Begin body of loop
+    bool _65 = false;
+    _a3_rgba _66;
+    if (!_65)
+    goto _jump352;
+    _66 = m;
+    goto _jump353;
+    _jump352:;
+    _66 = m;
+    _jump353:;
+    int64_t _67 = 0;
+    _67 *= _60.d0;
+    _67 += _64;
+    _67 *= _60.d1;
+    _67 += _63;
+    _67 *= _60.d2;
+    _67 += _62;
+    _60.data[_67] = _66;
+    _62++;
+    if (_62 < m.d1)
+    goto _jump351;
+    _62 = 0;
+    _63++;
+    if (_63 < _51)
+    goto _jump351;
+    _63 = 0;
+    _64++;
+    if (_64 < i)
+    goto _jump351;
+    // End body of loop
+    int64_t _68 = 0;
+    _68 *= _52.d0;
+    _68 += _59;
+    _68 *= _52.d1;
+    _68 += _58;
+    _68 *= _52.d2;
+    _68 += _57;
+    _52.data[_68] = _60;
+    _57++;
+    if (_57 < _49)
+    goto _jump347;
+    _57 = 0;
+    _58++;
+    if (_58 < j.d0)
+    goto _jump347;
+    _58 = 0;
+    _59++;
+    if (_59 < _55)
+    goto _jump347;
+    // End body of loop
+    if (f.d0 >= 0)
+    goto _jump354;
+    fail_assertion("negative array index");
+    _jump354:;
+    if (f.d0 < _52.d0)
+    goto _jump355;
+    fail_assertion("index too large");
+    _jump355:;
+    if (q.d0 >= 0)
+    goto _jump356;
+    fail_assertion("negative array index");
+    _jump356:;
+    if (q.d0 < _52.d1)
+    goto _jump357;
+    fail_assertion("index too large");
+    _jump357:;
+    if (_49 >= 0)
+    goto _jump358;
+    fail_assertion("negative array index");
+    _jump358:;
+    if (_49 < _52.d2)
+    goto _jump359;
+    fail_assertion("index too large");
+    _jump359:;
+    int64_t _69 = 0;
+    _69 *= _52.d0;
+    _69 += f.d0;
+    _69 *= _52.d1;
+    _69 += q.d0;
+    _69 *= _52.d2;
+    _69 += _49;
+    _a3__a3_rgba _70 = _52.data[_69];
+    int64_t _71 = 0;
+    _71 *= _37.d0;
+    _71 += _51;
+    _71 *= _37.d1;
+    _71 += _50;
+    _71 *= _37.d2;
+    _71 += _49;
+    _37.data[_71] = _70;
+    _49++;
+    if (_49 < m.d1)
+    goto _jump339;
+    _49 = 0;
+    _50++;
+    if (_50 < _47)
+    goto _jump339;
+    _50 = 0;
+    _51++;
+    if (_51 < c)
+    goto _jump339;
+    // End body of loop
+    if (f.d2 >= 0)
+    goto _jump360;
+    fail_assertion("negative array index");
+    _jump360:;
+    if (f.d2 < _37.d0)
+    goto _jump361;
+    fail_assertion("index too large");
+    _jump361:;
+    if (m.d1 >= 0)
+    goto _jump362;
+    fail_assertion("negative array index");
+    _jump362:;
+    if (m.d1 < _37.d1)
+    goto _jump363;
+    fail_assertion("index too large");
+    _jump363:;
+    if (m.d2 >= 0)
+    goto _jump364;
+    fail_assertion("negative array index");
+    _jump364:;
+    if (m.d2 < _37.d2)
+    goto _jump365;
+    fail_assertion("index too large");
+    _jump365:;
+    int64_t _72 = 0;
+    _72 *= _37.d0;
+    _72 += f.d2;
+    _72 *= _37.d1;
+    _72 += m.d1;
+    _72 *= _37.d2;
+    _72 += m.d2;
+    _a3__a3_rgba _73 = _37.data[_72];
+    if (f.d0 >= 0)
+    goto _jump366;
+    fail_assertion("negative array index");
+    _jump366:;
+    if (f.d0 < _73.d0)
+    goto _jump367;
+    fail_assertion("index too large");
+    _jump367:;
+    if (k >= 0)
+    goto _jump368;
+    fail_assertion("negative array index");
+    _jump368:;
+    if (k < _73.d1)
+    goto _jump369;
+    fail_assertion("index too large");
+    _jump369:;
+    if (m.d2 >= 0)
+    goto _jump370;
+    fail_assertion("negative array index");
+    _jump370:;
+    if (m.d2 < _73.d2)
+    goto _jump371;
+    fail_assertion("index too large");
+    _jump371:;
+    int64_t _74 = 0;
+    _74 *= _73.d0;
+    _74 += f.d0;
+    _74 *= _73.d1;
+    _74 += k;
+    _74 *= _73.d2;
+    _74 += m.d2;
+    _a3_rgba _75 = _73.data[_74];
+    _a2__a3_rgba _77;
+    // Computing bound for J
+    int64_t _78;
+    // Computing bound for J
+    if (q.d0 > 0) 
+    goto _jump372;
+    fail_assertion("non-positive loop bound");
+    _jump372:;
+    // Computing bound for K
+    if (q.d0 > 0) 
+    goto _jump373;
+    fail_assertion("non-positive loop bound");
+    _jump373:;
+    // Computing bound for L
+    if (f.d0 > 0) 
+    goto _jump374;
+    fail_assertion("non-positive loop bound");
+    _jump374:;
+    _78 = 0;
+    int64_t _79 = 0; // L
+    int64_t _80 = 0; // K
+    int64_t _81 = 0; // J
+    _jump375:; // Begin body of loop
+    _78 += _79;
+    _79++;
+    if (_79 < f.d0)
+    goto _jump375;
+    _79 = 0;
+    _80++;
+    if (_80 < q.d0)
+    goto _jump375;
+    _80 = 0;
+    _81++;
+    if (_81 < q.d0)
+    goto _jump375;
+    // End body of loop
+    _77.d0 = _78;
+    if (_78 > 0) 
+    goto _jump376;
+    fail_assertion("non-positive loop bound");
+    _jump376:;
+    // Computing bound for K
+    _77.d1 = m.d2;
+    if (m.d2 > 0) 
+    goto _jump377;
+    fail_assertion("non-positive loop bound");
+    _jump377:;
+    // Computing total size of heap memory to allocate
+    int64_t _82 = 1;
+    _82 *= _78;
+    _82 *= m.d2;
+    _82 *= sizeof(_a3_rgba);
+    _77.data = jpl_alloc(_82);
+    int64_t _83 = 0; // K
+    int64_t _84 = 0; // J
+    _jump378:; // Begin body of loop
+    int64_t _85 = 0;
+    _85 *= _77.d0;
+    _85 += _84;
+    _85 *= _77.d1;
+    _85 += _83;
+    _77.data[_85] = _75;
+    _83++;
+    if (_83 < m.d2)
+    goto _jump378;
+    _83 = 0;
+    _84++;
+    if (_84 < _78)
+    goto _jump378;
+    // End body of loop
+    if (d >= 0)
+    goto _jump379;
+    fail_assertion("negative array index");
+    _jump379:;
+    if (d < _77.d0)
+    goto _jump380;
+    fail_assertion("index too large");
+    _jump380:;
+    if (_24.d0 >= 0)
+    goto _jump381;
+    fail_assertion("negative array index");
+    _jump381:;
+    if (_24.d0 < _77.d1)
+    goto _jump382;
+    fail_assertion("index too large");
+    _jump382:;
+    int64_t _86 = 0;
+    _86 *= _77.d0;
+    _86 += d;
+    _86 *= _77.d1;
+    _86 += _24.d0;
+    _a3_rgba _87 = _77.data[_86];
+    double _88 = 68.0;
+    bool _89 = l(_87, q, _88);
+    bool _90;
+    if (!_89)
+    goto _jump383;
+    _a3_bool _91;
+    // Computing bound for J
+    _91.d0 = j.d0;
+    if (j.d0 > 0) 
+    goto _jump384;
+    fail_assertion("non-positive loop bound");
+    _jump384:;
+    // Computing bound for K
+    _91.d1 = f.d1;
+    if (f.d1 > 0) 
+    goto _jump385;
+    fail_assertion("non-positive loop bound");
+    _jump385:;
+    // Computing bound for L
+    _91.d2 = d;
+    if (d > 0) 
+    goto _jump386;
+    fail_assertion("non-positive loop bound");
+    _jump386:;
+    // Computing total size of heap memory to allocate
+    int64_t _92 = 1;
+    _92 *= j.d0;
+    _92 *= f.d1;
+    _92 *= d;
+    _92 *= sizeof(bool);
+    _91.data = jpl_alloc(_92);
+    int64_t _93 = 0; // L
+    int64_t _94 = 0; // K
+    int64_t _95 = 0; // J
+    _jump387:; // Begin body of loop
+    bool _97 = q.d1 < k;
+    bool _96 = _97;
+    if (0 == _97)
+    goto _jump388;
+    bool _98 = true;
+    _96 = _98;
+    _jump388:;
+    int64_t _99 = 0;
+    _99 *= _91.d0;
+    _99 += _95;
+    _99 *= _91.d1;
+    _99 += _94;
+    _99 *= _91.d2;
+    _99 += _93;
+    _91.data[_99] = _96;
+    _93++;
+    if (_93 < d)
+    goto _jump387;
+    _93 = 0;
+    _94++;
+    if (_94 < f.d1)
+    goto _jump387;
+    _94 = 0;
+    _95++;
+    if (_95 < j.d0)
+    goto _jump387;
+    // End body of loop
+    int64_t _100 = 389;
+    if (_100 >= 0)
+    goto _jump389;
+    fail_assertion("negative array index");
+    _jump389:;
+    if (_100 < _91.d0)
+    goto _jump390;
+    fail_assertion("index too large");
+    _jump390:;
+    if (g >= 0)
+    goto _jump391;
+    fail_assertion("negative array index");
+    _jump391:;
+    if (g < _91.d1)
+    goto _jump392;
+    fail_assertion("index too large");
+    _jump392:;
+    if (d >= 0)
+    goto _jump393;
+    fail_assertion("negative array index");
+    _jump393:;
+    if (d < _91.d2)
+    goto _jump394;
+    fail_assertion("index too large");
+    _jump394:;
+    int64_t _101 = 0;
+    _101 *= _91.d0;
+    _101 += _100;
+    _101 *= _91.d1;
+    _101 += g;
+    _101 *= _91.d2;
+    _101 += d;
+    bool _102 = _91.data[_101];
+    _90 = _102;
+    goto _jump395;
+    _jump383:;
+    bool _103 = true;
+    double _104;
+    if (!_103)
+    goto _jump396;
+    double _105 = 48.0;
+    double _106;
+    // Computing bound for J
+    if (q.d1 > 0) 
+    goto _jump397;
+    fail_assertion("non-positive loop bound");
+    _jump397:;
+    _106 = 0;
+    int64_t _107 = 0; // J
+    _jump398:; // Begin body of loop
+    double _108 = 87.0;
+    _106 += _108;
+    _107++;
+    if (_107 < q.d1)
+    goto _jump398;
+    // End body of loop
+    double _109;
+    // Computing bound for J
+    if (j.d0 > 0) 
+    goto _jump399;
+    fail_assertion("non-positive loop bound");
+    _jump399:;
+    // Computing bound for K
+    if (m.d0 > 0) 
+    goto _jump400;
+    fail_assertion("non-positive loop bound");
+    _jump400:;
+    // Computing bound for L
+    if (j.d0 > 0) 
+    goto _jump401;
+    fail_assertion("non-positive loop bound");
+    _jump401:;
+    _109 = 0;
+    int64_t _110 = 0; // L
+    int64_t _111 = 0; // K
+    int64_t _112 = 0; // J
+    _jump402:; // Begin body of loop
+    double _113 = 56.0;
+    _109 += _113;
+    _110++;
+    if (_110 < j.d0)
+    goto _jump402;
+    _110 = 0;
+    _111++;
+    if (_111 < m.d0)
+    goto _jump402;
+    _111 = 0;
+    _112++;
+    if (_112 < j.d0)
+    goto _jump402;
+    // End body of loop
+    rgba _114 = { u, _105, _106, _109 };
+    double _115 = _114.a;
+    _104 = _115;
+    goto _jump403;
+    _jump396:;
+    double _116;
+    // Computing bound for J
+    if (_24.d0 > 0) 
+    goto _jump404;
+    fail_assertion("non-positive loop bound");
+    _jump404:;
+    // Computing bound for K
+    if (g > 0) 
+    goto _jump405;
+    fail_assertion("non-positive loop bound");
+    _jump405:;
+    _116 = 0;
+    int64_t _117 = 0; // K
+    int64_t _118 = 0; // J
+    _jump406:; // Begin body of loop
+    if (_75.d0 >= 0)
+    goto _jump407;
+    fail_assertion("negative array index");
+    _jump407:;
+    if (_75.d0 < b.d0)
+    goto _jump408;
+    fail_assertion("index too large");
+    _jump408:;
+    if (j.d0 >= 0)
+    goto _jump409;
+    fail_assertion("negative array index");
+    _jump409:;
+    if (j.d0 < b.d1)
+    goto _jump410;
+    fail_assertion("index too large");
+    _jump410:;
+    int64_t _119 = 0;
+    _119 *= b.d0;
+    _119 += _75.d0;
+    _119 *= b.d1;
+    _119 += j.d0;
+    rgba _120 = b.data[_119];
+    double _121 = _120.g;
+    _116 += _121;
+    _117++;
+    if (_117 < g)
+    goto _jump406;
+    _117 = 0;
+    _118++;
+    if (_118 < _24.d0)
+    goto _jump406;
+    // End body of loop
+    _104 = _116;
+    _jump403:;
+    double _122 = 82.0;
+    double _123 = -_122;
+    double _124 = -_123;
+    double _125 = -_124;
+    bool _126 = _104 < _125;
+    _90 = _126;
+    _jump395:;
+    bool _76 = _90;
+    if (0 != _90)
+    goto _jump411;
+    _a2__a3__a3_rgba _127;
+    // Computing bound for J
+    _127.d0 = _75.d2;
+    if (_75.d2 > 0) 
+    goto _jump412;
+    fail_assertion("non-positive loop bound");
+    _jump412:;
+    // Computing bound for K
+    _127.d1 = _75.d2;
+    if (_75.d2 > 0) 
+    goto _jump413;
+    fail_assertion("non-positive loop bound");
+    _jump413:;
+    // Computing total size of heap memory to allocate
+    int64_t _128 = 1;
+    _128 *= _75.d2;
+    _128 *= _75.d2;
+    _128 *= sizeof(_a3__a3_rgba);
+    _127.data = jpl_alloc(_128);
+    int64_t _129 = 0; // K
+    int64_t _130 = 0; // J
+    _jump414:; // Begin body of loop
+    _a3__a3_rgba _131;
+    // Computing bound for L
+    _131.d0 = c;
+    if (c > 0) 
+    goto _jump415;
+    fail_assertion("non-positive loop bound");
+    _jump415:;
+    // Computing bound for M
+    _131.d1 = _129;
+    if (_129 > 0) 
+    goto _jump416;
+    fail_assertion("non-positive loop bound");
+    _jump416:;
+    // Computing bound for N
+    _131.d2 = q.d1;
+    if (q.d1 > 0) 
+    goto _jump417;
+    fail_assertion("non-positive loop bound");
+    _jump417:;
+    // Computing total size of heap memory to allocate
+    int64_t _132 = 1;
+    _132 *= c;
+    _132 *= _129;
+    _132 *= q.d1;
+    _132 *= sizeof(_a3_rgba);
+    _131.data = jpl_alloc(_132);
+    int64_t _133 = 0; // N
+    int64_t _134 = 0; // M
+    int64_t _135 = 0; // L
+    _jump418:; // Begin body of loop
+    int64_t _136 = 0;
+    _136 *= _131.d0;
+    _136 += _135;
+    _136 *= _131.d1;
+    _136 += _134;
+    _136 *= _131.d2;
+    _136 += _133;
+    _131.data[_136] = _75;
+    _133++;
+    if (_133 < q.d1)
+    goto _jump418;
+    _133 = 0;
+    _134++;
+    if (_134 < _129)
+    goto _jump418;
+    _134 = 0;
+    _135++;
+    if (_135 < c)
+    goto _jump418;
+    // End body of loop
+    int64_t _137 = 0;
+    _137 *= _127.d0;
+    _137 += _130;
+    _137 *= _127.d1;
+    _137 += _129;
+    _127.data[_137] = _131;
+    _129++;
+    if (_129 < _75.d2)
+    goto _jump414;
+    _129 = 0;
+    _130++;
+    if (_130 < _75.d2)
+    goto _jump414;
+    // End body of loop
+    if (m.d2 >= 0)
+    goto _jump419;
+    fail_assertion("negative array index");
+    _jump419:;
+    if (m.d2 < _127.d0)
+    goto _jump420;
+    fail_assertion("index too large");
+    _jump420:;
+    if (q.d2 >= 0)
+    goto _jump421;
+    fail_assertion("negative array index");
+    _jump421:;
+    if (q.d2 < _127.d1)
+    goto _jump422;
+    fail_assertion("index too large");
+    _jump422:;
+    int64_t _138 = 0;
+    _138 *= _127.d0;
+    _138 += m.d2;
+    _138 *= _127.d1;
+    _138 += q.d2;
+    _a3__a3_rgba _139 = _127.data[_138];
+    if (q.d1 >= 0)
+    goto _jump423;
+    fail_assertion("negative array index");
+    _jump423:;
+    if (q.d1 < _139.d0)
+    goto _jump424;
+    fail_assertion("index too large");
+    _jump424:;
+    if (_75.d2 >= 0)
+    goto _jump425;
+    fail_assertion("negative array index");
+    _jump425:;
+    if (_75.d2 < _139.d1)
+    goto _jump426;
+    fail_assertion("index too large");
+    _jump426:;
+    if (q.d2 >= 0)
+    goto _jump427;
+    fail_assertion("negative array index");
+    _jump427:;
+    if (q.d2 < _139.d2)
+    goto _jump428;
+    fail_assertion("index too large");
+    _jump428:;
+    int64_t _140 = 0;
+    _140 *= _139.d0;
+    _140 += q.d1;
+    _140 *= _139.d1;
+    _140 += _75.d2;
+    _140 *= _139.d2;
+    _140 += q.d2;
+    _a3_rgba _141 = _139.data[_140];
+    _a3_void_t _142;
+    // Computing bound for J
+    _142.d0 = j.d0;
+    if (j.d0 > 0) 
+    goto _jump429;
+    fail_assertion("non-positive loop bound");
+    _jump429:;
+    // Computing bound for K
+    _142.d1 = i;
+    if (i > 0) 
+    goto _jump430;
+    fail_assertion("non-positive loop bound");
+    _jump430:;
+    // Computing bound for L
+    _142.d2 = _75.d1;
+    if (_75.d1 > 0) 
+    goto _jump431;
+    fail_assertion("non-positive loop bound");
+    _jump431:;
+    // Computing total size of heap memory to allocate
+    int64_t _143 = 1;
+    _143 *= j.d0;
+    _143 *= i;
+    _143 *= _75.d1;
+    _143 *= sizeof(void_t);
+    _142.data = jpl_alloc(_143);
+    int64_t _144 = 0; // L
+    int64_t _145 = 0; // K
+    int64_t _146 = 0; // J
+    _jump432:; // Begin body of loop
+    if (f.d0 >= 0)
+    goto _jump433;
+    fail_assertion("negative array index");
+    _jump433:;
+    if (f.d0 < q.d0)
+    goto _jump434;
+    fail_assertion("index too large");
+    _jump434:;
+    if (h >= 0)
+    goto _jump435;
+    fail_assertion("negative array index");
+    _jump435:;
+    if (h < q.d1)
+    goto _jump436;
+    fail_assertion("index too large");
+    _jump436:;
+    if (h >= 0)
+    goto _jump437;
+    fail_assertion("negative array index");
+    _jump437:;
+    if (h < q.d2)
+    goto _jump438;
+    fail_assertion("index too large");
+    _jump438:;
+    int64_t _147 = 0;
+    _147 *= q.d0;
+    _147 += f.d0;
+    _147 *= q.d1;
+    _147 += h;
+    _147 *= q.d2;
+    _147 += h;
+    void_t _148 = q.data[_147];
+    int64_t _149 = 0;
+    _149 *= _142.d0;
+    _149 += _146;
+    _149 *= _142.d1;
+    _149 += _145;
+    _149 *= _142.d2;
+    _149 += _144;
+    _142.data[_149] = _148;
+    _144++;
+    if (_144 < _75.d1)
+    goto _jump432;
+    _144 = 0;
+    _145++;
+    if (_145 < i)
+    goto _jump432;
+    _145 = 0;
+    _146++;
+    if (_146 < j.d0)
+    goto _jump432;
+    // End body of loop
+    bool _150 = l(_141, _142, u);
+    _76 = _150;
+    _jump411:;
+    return _76;
+}
+
+int64_t q(double r, int64_t s) {
+    int64_t _0 = -i;
+    _a1_int64_t _1;
+    _1.d0 = 1;
+    _1.data = jpl_alloc(sizeof(int64_t) * 1);
+    _1.data[0] = _0;
+    bool _2 = d != i;
+    _a1_bool _3;
+    if (!_2)
+    goto _jump439;
+    _a1_bool _4;
+    // Computing bound for v
+    int64_t _5;
+    if (!e)
+    goto _jump440;
+    _5 = s;
+    goto _jump441;
+    _jump440:;
+    bool _6 = k != h;
+    bool _7 = !_6;
+    bool _8 = !_7;
+    int64_t _9;
+    if (!_8)
+    goto _jump442;
+    _a3_double _10;
+    // Computing bound for v
+    _10.d0 = s;
+    if (s > 0) 
+    goto _jump443;
+    fail_assertion("non-positive loop bound");
+    _jump443:;
+    // Computing bound for w
+    _10.d1 = h;
+    if (h > 0) 
+    goto _jump444;
+    fail_assertion("non-positive loop bound");
+    _jump444:;
+    // Computing bound for x
+    _10.d2 = n;
+    if (n > 0) 
+    goto _jump445;
+    fail_assertion("non-positive loop bound");
+    _jump445:;
+    // Computing total size of heap memory to allocate
+    int64_t _11 = 1;
+    _11 *= s;
+    _11 *= h;
+    _11 *= n;
+    _11 *= sizeof(double);
+    _10.data = jpl_alloc(_11);
+    int64_t _12 = 0; // x
+    int64_t _13 = 0; // w
+    int64_t _14 = 0; // v
+    _jump446:; // Begin body of loop
+    int64_t _15 = 0;
+    _15 *= _10.d0;
+    _15 += _14;
+    _15 *= _10.d1;
+    _15 += _13;
+    _15 *= _10.d2;
+    _15 += _12;
+    _10.data[_15] = r;
+    _12++;
+    if (_12 < n)
+    goto _jump446;
+    _12 = 0;
+    _13++;
+    if (_13 < h)
+    goto _jump446;
+    _13 = 0;
+    _14++;
+    if (_14 < s)
+    goto _jump446;
+    // End body of loop
+    int64_t _16 = o * i;
+    if (i >= 0)
+    goto _jump447;
+    fail_assertion("negative array index");
+    _jump447:;
+    if (i < _10.d0)
+    goto _jump448;
+    fail_assertion("index too large");
+    _jump448:;
+    if (c >= 0)
+    goto _jump449;
+    fail_assertion("negative array index");
+    _jump449:;
+    if (c < _10.d1)
+    goto _jump450;
+    fail_assertion("index too large");
+    _jump450:;
+    if (_16 >= 0)
+    goto _jump451;
+    fail_assertion("negative array index");
+    _jump451:;
+    if (_16 < _10.d2)
+    goto _jump452;
+    fail_assertion("index too large");
+    _jump452:;
+    int64_t _17 = 0;
+    _17 *= _10.d0;
+    _17 += i;
+    _17 *= _10.d1;
+    _17 += c;
+    _17 *= _10.d2;
+    _17 += _16;
+    double _18 = _10.data[_17];
+    int64_t _19 = q(_18, h);
+    _9 = _19;
+    goto _jump453;
+    _jump442:;
+    _9 = g;
+    _jump453:;
+    _5 = _9;
+    _jump441:;
+    _4.d0 = _5;
+    if (_5 > 0) 
+    goto _jump454;
+    fail_assertion("non-positive loop bound");
+    _jump454:;
+    // Computing total size of heap memory to allocate
+    int64_t _20 = 1;
+    _20 *= _5;
+    _20 *= sizeof(bool);
+    _4.data = jpl_alloc(_20);
+    int64_t _21 = 0; // v
+    _jump455:; // Begin body of loop
+    int64_t _22 = 0;
+    _22 *= _4.d0;
+    _22 += _21;
+    _4.data[_22] = e;
+    _21++;
+    if (_21 < _5)
+    goto _jump455;
+    // End body of loop
+    _3 = _4;
+    goto _jump456;
+    _jump439:;
+    _a2__a1_bool _23;
+    // Computing bound for v
+    _23.d0 = i;
+    if (i > 0) 
+    goto _jump457;
+    fail_assertion("non-positive loop bound");
+    _jump457:;
+    // Computing bound for w
+    _23.d1 = h;
+    if (h > 0) 
+    goto _jump458;
+    fail_assertion("non-positive loop bound");
+    _jump458:;
+    // Computing total size of heap memory to allocate
+    int64_t _24 = 1;
+    _24 *= i;
+    _24 *= h;
+    _24 *= sizeof(_a1_bool);
+    _23.data = jpl_alloc(_24);
+    int64_t _25 = 0; // w
+    int64_t _26 = 0; // v
+    _jump459:; // Begin body of loop
+    _a1_bool _27;
+    // Computing bound for x
+    int64_t _28 = _26 + h;
+    _27.d0 = _28;
+    if (_28 > 0) 
+    goto _jump460;
+    fail_assertion("non-positive loop bound");
+    _jump460:;
+    // Computing total size of heap memory to allocate
+    int64_t _29 = 1;
+    _29 *= _28;
+    _29 *= sizeof(bool);
+    _27.data = jpl_alloc(_29);
+    int64_t _30 = 0; // x
+    _jump461:; // Begin body of loop
+    bool _31;
+    if (!e)
+    goto _jump462;
+    _31 = e;
+    goto _jump463;
+    _jump462:;
+    _31 = e;
+    _jump463:;
+    int64_t _32 = 0;
+    _32 *= _27.d0;
+    _32 += _30;
+    _27.data[_32] = _31;
+    _30++;
+    if (_30 < _28)
+    goto _jump461;
+    // End body of loop
+    int64_t _33 = 0;
+    _33 *= _23.d0;
+    _33 += _26;
+    _33 *= _23.d1;
+    _33 += _25;
+    _23.data[_33] = _27;
+    _25++;
+    if (_25 < h)
+    goto _jump459;
+    _25 = 0;
+    _26++;
+    if (_26 < i)
+    goto _jump459;
+    // End body of loop
+    _a2__a1_bool _34;
+    // Computing bound for v
+    int64_t _35 = s % i;
+    _34.d0 = _35;
+    if (_35 > 0) 
+    goto _jump464;
+    fail_assertion("non-positive loop bound");
+    _jump464:;
+    // Computing bound for w
+    int64_t _36 = -s;
+    if (_36 >= 0)
+    goto _jump465;
+    fail_assertion("negative array index");
+    _jump465:;
+    if (_36 < j.d0)
+    goto _jump466;
+    fail_assertion("index too large");
+    _jump466:;
+    int64_t _37 = 0;
+    _37 *= j.d0;
+    _37 += _36;
+    int64_t _38 = j.data[_37];
+    _34.d1 = _38;
+    if (_38 > 0) 
+    goto _jump467;
+    fail_assertion("non-positive loop bound");
+    _jump467:;
+    // Computing total size of heap memory to allocate
+    int64_t _39 = 1;
+    _39 *= _35;
+    _39 *= _38;
+    _39 *= sizeof(_a1_bool);
+    _34.data = jpl_alloc(_39);
+    int64_t _40 = 0; // w
+    int64_t _41 = 0; // v
+    _jump468:; // Begin body of loop
+    _a1_bool _42;
+    // Computing bound for x
+    _42.d0 = g;
+    if (g > 0) 
+    goto _jump469;
+    fail_assertion("non-positive loop bound");
+    _jump469:;
+    // Computing total size of heap memory to allocate
+    int64_t _43 = 1;
+    _43 *= g;
+    _43 *= sizeof(bool);
+    _42.data = jpl_alloc(_43);
+    int64_t _44 = 0; // x
+    _jump470:; // Begin body of loop
+    bool _45 = false;
+    int64_t _46 = 0;
+    _46 *= _42.d0;
+    _46 += _44;
+    _42.data[_46] = _45;
+    _44++;
+    if (_44 < g)
+    goto _jump470;
+    // End body of loop
+    int64_t _47 = 0;
+    _47 *= _34.d0;
+    _47 += _41;
+    _47 *= _34.d1;
+    _47 += _40;
+    _34.data[_47] = _42;
+    _40++;
+    if (_40 < _38)
+    goto _jump468;
+    _40 = 0;
+    _41++;
+    if (_41 < _35)
+    goto _jump468;
+    // End body of loop
+    _a1__a2__a1_bool _48;
+    _48.d0 = 2;
+    _48.data = jpl_alloc(sizeof(_a2__a1_bool) * 2);
+    _48.data[0] = _23;
+    _48.data[1] = _34;
+    int64_t _49;
+    // Computing bound for v
+    if (d > 0) 
+    goto _jump471;
+    fail_assertion("non-positive loop bound");
+    _jump471:;
+    _49 = 0;
+    int64_t _50 = 0; // v
+    _jump472:; // Begin body of loop
+    _49 += s;
+    _50++;
+    if (_50 < d)
+    goto _jump472;
+    // End body of loop
+    if (_49 >= 0)
+    goto _jump473;
+    fail_assertion("negative array index");
+    _jump473:;
+    if (_49 < _48.d0)
+    goto _jump474;
+    fail_assertion("index too large");
+    _jump474:;
+    int64_t _51 = 0;
+    _51 *= _48.d0;
+    _51 += _49;
+    _a2__a1_bool _52 = _48.data[_51];
+    double _53;
+    // Computing bound for v
+    if (s > 0) 
+    goto _jump475;
+    fail_assertion("non-positive loop bound");
+    _jump475:;
+    // Computing bound for w
+    if (c > 0) 
+    goto _jump476;
+    fail_assertion("non-positive loop bound");
+    _jump476:;
+    _53 = 0;
+    int64_t _54 = 0; // w
+    int64_t _55 = 0; // v
+    _jump477:; // Begin body of loop
+    double _56 = 14.0;
+    _53 += _56;
+    _54++;
+    if (_54 < c)
+    goto _jump477;
+    _54 = 0;
+    _55++;
+    if (_55 < s)
+    goto _jump477;
+    // End body of loop
+    double _57;
+    // Computing bound for v
+    if (c > 0) 
+    goto _jump478;
+    fail_assertion("non-positive loop bound");
+    _jump478:;
+    // Computing bound for w
+    if (h > 0) 
+    goto _jump479;
+    fail_assertion("non-positive loop bound");
+    _jump479:;
+    _57 = 0;
+    int64_t _58 = 0; // w
+    int64_t _59 = 0; // v
+    _jump480:; // Begin body of loop
+    double _60 = 53.0;
+    _57 += _60;
+    _58++;
+    if (_58 < h)
+    goto _jump480;
+    _58 = 0;
+    _59++;
+    if (_59 < c)
+    goto _jump480;
+    // End body of loop
+    bool _61 = _53 > _57;
+    double _62;
+    if (!_61)
+    goto _jump481;
+    _62 = r;
+    goto _jump482;
+    _jump481:;
+    double _63;
+    // Computing bound for v
+    if (k > 0) 
+    goto _jump483;
+    fail_assertion("non-positive loop bound");
+    _jump483:;
+    _63 = 0;
+    int64_t _64 = 0; // v
+    _jump484:; // Begin body of loop
+    double _65 = 60.0;
+    _63 += _65;
+    _64++;
+    if (_64 < k)
+    goto _jump484;
+    // End body of loop
+    double _66 = fmod(r, _63);
+    _62 = _66;
+    _jump482:;
+    int64_t _67 = q(_62, d);
+    int64_t _68 = _67 - d;
+    double _69 = 67.0;
+    int64_t _70 = q(_69, s);
+    if (_68 >= 0)
+    goto _jump485;
+    fail_assertion("negative array index");
+    _jump485:;
+    if (_68 < _52.d0)
+    goto _jump486;
+    fail_assertion("index too large");
+    _jump486:;
+    if (_70 >= 0)
+    goto _jump487;
+    fail_assertion("negative array index");
+    _jump487:;
+    if (_70 < _52.d1)
+    goto _jump488;
+    fail_assertion("index too large");
+    _jump488:;
+    int64_t _71 = 0;
+    _71 *= _52.d0;
+    _71 += _68;
+    _71 *= _52.d1;
+    _71 += _70;
+    _a1_bool _72 = _52.data[_71];
+    _3 = _72;
+    _jump456:;
+    _a2_bool _73;
+    if (!e)
+    goto _jump489;
+    bool _74 = k <= k;
+    _a2_bool _75;
+    if (!_74)
+    goto _jump490;
+    _a2_bool _76;
+    // Computing bound for z
+    _76.d0 = c;
+    if (c > 0) 
+    goto _jump491;
+    fail_assertion("non-positive loop bound");
+    _jump491:;
+    // Computing bound for A
+    _76.d1 = k;
+    if (k > 0) 
+    goto _jump492;
+    fail_assertion("non-positive loop bound");
+    _jump492:;
+    // Computing total size of heap memory to allocate
+    int64_t _77 = 1;
+    _77 *= c;
+    _77 *= k;
+    _77 *= sizeof(bool);
+    _76.data = jpl_alloc(_77);
+    int64_t _78 = 0; // A
+    int64_t _79 = 0; // z
+    _jump493:; // Begin body of loop
+    int64_t _80 = 0;
+    _80 *= _76.d0;
+    _80 += _79;
+    _80 *= _76.d1;
+    _80 += _78;
+    _76.data[_80] = e;
+    _78++;
+    if (_78 < k)
+    goto _jump493;
+    _78 = 0;
+    _79++;
+    if (_79 < c)
+    goto _jump493;
+    // End body of loop
+    _75 = _76;
+    goto _jump494;
+    _jump490:;
+    _a2_bool _81;
+    // Computing bound for z
+    _81.d0 = _3.d0;
+    if (_3.d0 > 0) 
+    goto _jump495;
+    fail_assertion("non-positive loop bound");
+    _jump495:;
+    // Computing bound for A
+    _81.d1 = k;
+    if (k > 0) 
+    goto _jump496;
+    fail_assertion("non-positive loop bound");
+    _jump496:;
+    // Computing total size of heap memory to allocate
+    int64_t _82 = 1;
+    _82 *= _3.d0;
+    _82 *= k;
+    _82 *= sizeof(bool);
+    _81.data = jpl_alloc(_82);
+    int64_t _83 = 0; // A
+    int64_t _84 = 0; // z
+    _jump497:; // Begin body of loop
+    int64_t _85 = 0;
+    _85 *= _81.d0;
+    _85 += _84;
+    _85 *= _81.d1;
+    _85 += _83;
+    _81.data[_85] = _2;
+    _83++;
+    if (_83 < k)
+    goto _jump497;
+    _83 = 0;
+    _84++;
+    if (_84 < _3.d0)
+    goto _jump497;
+    // End body of loop
+    _75 = _81;
+    _jump494:;
+    _73 = _75;
+    goto _jump498;
+    _jump489:;
+    _a3_bool _86;
+    // Computing bound for z
+    _86.d0 = h;
+    if (h > 0) 
+    goto _jump499;
+    fail_assertion("non-positive loop bound");
+    _jump499:;
+    // Computing bound for A
+    _86.d1 = _3.d0;
+    if (_3.d0 > 0) 
+    goto _jump500;
+    fail_assertion("non-positive loop bound");
+    _jump500:;
+    // Computing bound for B
+    int64_t _87 = 269;
+    _86.d2 = _87;
+    if (_87 > 0) 
+    goto _jump501;
+    fail_assertion("non-positive loop bound");
+    _jump501:;
+    // Computing total size of heap memory to allocate
+    int64_t _88 = 1;
+    _88 *= h;
+    _88 *= _3.d0;
+    _88 *= _87;
+    _88 *= sizeof(bool);
+    _86.data = jpl_alloc(_88);
+    int64_t _89 = 0; // B
+    int64_t _90 = 0; // A
+    int64_t _91 = 0; // z
+    _jump502:; // Begin body of loop
+    int64_t _92 = 0;
+    _92 *= _86.d0;
+    _92 += _91;
+    _92 *= _86.d1;
+    _92 += _90;
+    _92 *= _86.d2;
+    _92 += _89;
+    _86.data[_92] = _2;
+    _89++;
+    if (_89 < _87)
+    goto _jump502;
+    _89 = 0;
+    _90++;
+    if (_90 < _3.d0)
+    goto _jump502;
+    _90 = 0;
+    _91++;
+    if (_91 < h)
+    goto _jump502;
+    // End body of loop
+    int64_t _93 = -k;
+    int64_t _94 = -_3.d0;
+    int64_t _95 = q(r, c);
+    if (_93 >= 0)
+    goto _jump503;
+    fail_assertion("negative array index");
+    _jump503:;
+    if (_93 < _86.d0)
+    goto _jump504;
+    fail_assertion("index too large");
+    _jump504:;
+    if (_94 >= 0)
+    goto _jump505;
+    fail_assertion("negative array index");
+    _jump505:;
+    if (_94 < _86.d1)
+    goto _jump506;
+    fail_assertion("index too large");
+    _jump506:;
+    if (_95 >= 0)
+    goto _jump507;
+    fail_assertion("negative array index");
+    _jump507:;
+    if (_95 < _86.d2)
+    goto _jump508;
+    fail_assertion("index too large");
+    _jump508:;
+    int64_t _96 = 0;
+    _96 *= _86.d0;
+    _96 += _93;
+    _96 *= _86.d1;
+    _96 += _94;
+    _96 *= _86.d2;
+    _96 += _95;
+    bool _97 = _86.data[_96];
+    _a2_bool _98;
+    if (!_97)
+    goto _jump509;
+    _a2_bool _99;
+    if (!e)
+    goto _jump510;
+    _a2_bool _100;
+    // Computing bound for z
+    _100.d0 = g;
+    if (g > 0) 
+    goto _jump511;
+    fail_assertion("non-positive loop bound");
+    _jump511:;
+    // Computing bound for A
+    _100.d1 = c;
+    if (c > 0) 
+    goto _jump512;
+    fail_assertion("non-positive loop bound");
+    _jump512:;
+    // Computing total size of heap memory to allocate
+    int64_t _101 = 1;
+    _101 *= g;
+    _101 *= c;
+    _101 *= sizeof(bool);
+    _100.data = jpl_alloc(_101);
+    int64_t _102 = 0; // A
+    int64_t _103 = 0; // z
+    _jump513:; // Begin body of loop
+    int64_t _104 = 0;
+    _104 *= _100.d0;
+    _104 += _103;
+    _104 *= _100.d1;
+    _104 += _102;
+    _100.data[_104] = _2;
+    _102++;
+    if (_102 < c)
+    goto _jump513;
+    _102 = 0;
+    _103++;
+    if (_103 < g)
+    goto _jump513;
+    // End body of loop
+    _99 = _100;
+    goto _jump514;
+    _jump510:;
+    _a2_bool _105;
+    // Computing bound for z
+    _105.d0 = _3.d0;
+    if (_3.d0 > 0) 
+    goto _jump515;
+    fail_assertion("non-positive loop bound");
+    _jump515:;
+    // Computing bound for A
+    _105.d1 = o;
+    if (o > 0) 
+    goto _jump516;
+    fail_assertion("non-positive loop bound");
+    _jump516:;
+    // Computing total size of heap memory to allocate
+    int64_t _106 = 1;
+    _106 *= _3.d0;
+    _106 *= o;
+    _106 *= sizeof(bool);
+    _105.data = jpl_alloc(_106);
+    int64_t _107 = 0; // A
+    int64_t _108 = 0; // z
+    _jump517:; // Begin body of loop
+    int64_t _109 = 0;
+    _109 *= _105.d0;
+    _109 += _108;
+    _109 *= _105.d1;
+    _109 += _107;
+    _105.data[_109] = _2;
+    _107++;
+    if (_107 < o)
+    goto _jump517;
+    _107 = 0;
+    _108++;
+    if (_108 < _3.d0)
+    goto _jump517;
+    // End body of loop
+    _99 = _105;
+    _jump514:;
+    _98 = _99;
+    goto _jump518;
+    _jump509:;
+    _a2_bool _110;
+    // Computing bound for z
+    _110.d0 = k;
+    if (k > 0) 
+    goto _jump519;
+    fail_assertion("non-positive loop bound");
+    _jump519:;
+    // Computing bound for A
+    int64_t _111 = 649;
+    _110.d1 = _111;
+    if (_111 > 0) 
+    goto _jump520;
+    fail_assertion("non-positive loop bound");
+    _jump520:;
+    // Computing total size of heap memory to allocate
+    int64_t _112 = 1;
+    _112 *= k;
+    _112 *= _111;
+    _112 *= sizeof(bool);
+    _110.data = jpl_alloc(_112);
+    int64_t _113 = 0; // A
+    int64_t _114 = 0; // z
+    _jump521:; // Begin body of loop
+    int64_t _115 = 0;
+    _115 *= _110.d0;
+    _115 += _114;
+    _115 *= _110.d1;
+    _115 += _113;
+    _110.data[_115] = _2;
+    _113++;
+    if (_113 < _111)
+    goto _jump521;
+    _113 = 0;
+    _114++;
+    if (_114 < k)
+    goto _jump521;
+    // End body of loop
+    _98 = _110;
+    _jump518:;
+    _73 = _98;
+    _jump498:;
+    int64_t _116 = 339;
+    if (_116 >= 0)
+    goto _jump522;
+    fail_assertion("negative array index");
+    _jump522:;
+    if (_116 < _73.d0)
+    goto _jump523;
+    fail_assertion("index too large");
+    _jump523:;
+    if (o >= 0)
+    goto _jump524;
+    fail_assertion("negative array index");
+    _jump524:;
+    if (o < _73.d1)
+    goto _jump525;
+    fail_assertion("index too large");
+    _jump525:;
+    int64_t _117 = 0;
+    _117 *= _73.d0;
+    _117 += _116;
+    _117 *= _73.d1;
+    _117 += o;
+    bool _118 = _73.data[_117];
+    double _119;
+    if (!_118)
+    goto _jump526;
+    _119 = r;
+    goto _jump527;
+    _jump526:;
+    double _120;
+    // Computing bound for z
+    if (_3.d0 > 0) 
+    goto _jump528;
+    fail_assertion("non-positive loop bound");
+    _jump528:;
+    _120 = 0;
+    int64_t _121 = 0; // z
+    _jump529:; // Begin body of loop
+    bool _122 = e;
+    if (0 == e)
+    goto _jump530;
+    bool _123 = true;
+    _122 = _123;
+    _jump530:;
+    bool _124 = !_122;
+    double _125;
+    if (!_124)
+    goto _jump531;
+    double _126;
+    // Computing bound for A
+    if (h > 0) 
+    goto _jump532;
+    fail_assertion("non-positive loop bound");
+    _jump532:;
+    _126 = 0;
+    int64_t _127 = 0; // A
+    _jump533:; // Begin body of loop
+    double _128 = -r;
+    _126 += _128;
+    _127++;
+    if (_127 < h)
+    goto _jump533;
+    // End body of loop
+    double _129 = -r;
+    double _130 = -_129;
+    double _131 = fmod(_126, _130);
+    _125 = _131;
+    goto _jump534;
+    _jump531:;
+    double _132;
+    // Computing bound for A
+    if (k > 0) 
+    goto _jump535;
+    fail_assertion("non-positive loop bound");
+    _jump535:;
+    _132 = 0;
+    int64_t _133 = 0; // A
+    _jump536:; // Begin body of loop
+    double _134;
+    // Computing bound for B
+    int64_t _135 = 950;
+    if (_135 > 0) 
+    goto _jump537;
+    fail_assertion("non-positive loop bound");
+    _jump537:;
+    // Computing bound for C
+    if (c > 0) 
+    goto _jump538;
+    fail_assertion("non-positive loop bound");
+    _jump538:;
+    _134 = 0;
+    int64_t _136 = 0; // C
+    int64_t _137 = 0; // B
+    _jump539:; // Begin body of loop
+    _134 += r;
+    _136++;
+    if (_136 < c)
+    goto _jump539;
+    _136 = 0;
+    _137++;
+    if (_137 < _135)
+    goto _jump539;
+    // End body of loop
+    double _138 = -_134;
+    _132 += _138;
+    _133++;
+    if (_133 < k)
+    goto _jump536;
+    // End body of loop
+    _125 = _132;
+    _jump534:;
+    _120 += _125;
+    _121++;
+    if (_121 < _3.d0)
+    goto _jump529;
+    // End body of loop
+    _119 = _120;
+    _jump527:;
+    int64_t _139;
+    // Computing bound for z
+    if (c > 0) 
+    goto _jump540;
+    fail_assertion("non-positive loop bound");
+    _jump540:;
+    // Computing bound for A
+    int64_t _140 = -g;
+    if (_140 > 0) 
+    goto _jump541;
+    fail_assertion("non-positive loop bound");
+    _jump541:;
+    _139 = 0;
+    int64_t _141 = 0; // A
+    int64_t _142 = 0; // z
+    _jump542:; // Begin body of loop
+    int64_t _143;
+    if (!_2)
+    goto _jump543;
+    _143 = n;
+    goto _jump544;
+    _jump543:;
+    _143 = h;
+    _jump544:;
+    _139 += _143;
+    _141++;
+    if (_141 < _140)
+    goto _jump542;
+    _141 = 0;
+    _142++;
+    if (_142 < c)
+    goto _jump542;
+    // End body of loop
+    int64_t _144 = 528;
+    bool _145 = _139 == _144;
+    rgba _146;
+    if (!_145)
+    goto _jump545;
+    _a3_rgba _147;
+    // Computing bound for z
+    _147.d0 = _3.d0;
+    if (_3.d0 > 0) 
+    goto _jump546;
+    fail_assertion("non-positive loop bound");
+    _jump546:;
+    // Computing bound for A
+    _147.d1 = g;
+    if (g > 0) 
+    goto _jump547;
+    fail_assertion("non-positive loop bound");
+    _jump547:;
+    // Computing bound for B
+    _147.d2 = _3.d0;
+    if (_3.d0 > 0) 
+    goto _jump548;
+    fail_assertion("non-positive loop bound");
+    _jump548:;
+    // Computing total size of heap memory to allocate
+    int64_t _148 = 1;
+    _148 *= _3.d0;
+    _148 *= g;
+    _148 *= _3.d0;
+    _148 *= sizeof(rgba);
+    _147.data = jpl_alloc(_148);
+    int64_t _149 = 0; // B
+    int64_t _150 = 0; // A
+    int64_t _151 = 0; // z
+    _jump549:; // Begin body of loop
+    double _152 = 44.0;
+    rgba _153 = { r, _152, r, r };
+    int64_t _154 = 0;
+    _154 *= _147.d0;
+    _154 += _151;
+    _154 *= _147.d1;
+    _154 += _150;
+    _154 *= _147.d2;
+    _154 += _149;
+    _147.data[_154] = _153;
+    _149++;
+    if (_149 < _3.d0)
+    goto _jump549;
+    _149 = 0;
+    _150++;
+    if (_150 < g)
+    goto _jump549;
+    _150 = 0;
+    _151++;
+    if (_151 < _3.d0)
+    goto _jump549;
+    // End body of loop
+    int64_t _155;
+    // Computing bound for z
+    if (_3.d0 > 0) 
+    goto _jump550;
+    fail_assertion("non-positive loop bound");
+    _jump550:;
+    // Computing bound for A
+    if (c > 0) 
+    goto _jump551;
+    fail_assertion("non-positive loop bound");
+    _jump551:;
+    _155 = 0;
+    int64_t _156 = 0; // A
+    int64_t _157 = 0; // z
+    _jump552:; // Begin body of loop
+    int64_t _158 = -s;
+    _155 += _158;
+    _156++;
+    if (_156 < c)
+    goto _jump552;
+    _156 = 0;
+    _157++;
+    if (_157 < _3.d0)
+    goto _jump552;
+    // End body of loop
+    _a1_int64_t _159;
+    // Computing bound for z
+    _159.d0 = k;
+    if (k > 0) 
+    goto _jump553;
+    fail_assertion("non-positive loop bound");
+    _jump553:;
+    // Computing total size of heap memory to allocate
+    int64_t _160 = 1;
+    _160 *= k;
+    _160 *= sizeof(int64_t);
+    _159.data = jpl_alloc(_160);
+    int64_t _161 = 0; // z
+    _jump554:; // Begin body of loop
+    int64_t _162 = 0;
+    _162 *= _159.d0;
+    _162 += _161;
+    _159.data[_162] = c;
+    _161++;
+    if (_161 < k)
+    goto _jump554;
+    // End body of loop
+    if (s >= 0)
+    goto _jump555;
+    fail_assertion("negative array index");
+    _jump555:;
+    if (s < _159.d0)
+    goto _jump556;
+    fail_assertion("index too large");
+    _jump556:;
+    int64_t _163 = 0;
+    _163 *= _159.d0;
+    _163 += s;
+    int64_t _164 = _159.data[_163];
+    if (d >= 0)
+    goto _jump557;
+    fail_assertion("negative array index");
+    _jump557:;
+    if (d < _147.d0)
+    goto _jump558;
+    fail_assertion("index too large");
+    _jump558:;
+    if (_155 >= 0)
+    goto _jump559;
+    fail_assertion("negative array index");
+    _jump559:;
+    if (_155 < _147.d1)
+    goto _jump560;
+    fail_assertion("index too large");
+    _jump560:;
+    if (_164 >= 0)
+    goto _jump561;
+    fail_assertion("negative array index");
+    _jump561:;
+    if (_164 < _147.d2)
+    goto _jump562;
+    fail_assertion("index too large");
+    _jump562:;
+    int64_t _165 = 0;
+    _165 *= _147.d0;
+    _165 += d;
+    _165 *= _147.d1;
+    _165 += _155;
+    _165 *= _147.d2;
+    _165 += _164;
+    rgba _166 = _147.data[_165];
+    _146 = _166;
+    goto _jump563;
+    _jump545:;
+    double _167;
+    // Computing bound for z
+    int64_t _168 = c / g;
+    if (_168 > 0) 
+    goto _jump564;
+    fail_assertion("non-positive loop bound");
+    _jump564:;
+    // Computing bound for A
+    if (c > 0) 
+    goto _jump565;
+    fail_assertion("non-positive loop bound");
+    _jump565:;
+    // Computing bound for B
+    if (h > 0) 
+    goto _jump566;
+    fail_assertion("non-positive loop bound");
+    _jump566:;
+    _167 = 0;
+    int64_t _169 = 0; // B
+    int64_t _170 = 0; // A
+    int64_t _171 = 0; // z
+    _jump567:; // Begin body of loop
+    double _172 = 4.0;
+    _167 += _172;
+    _169++;
+    if (_169 < h)
+    goto _jump567;
+    _169 = 0;
+    _170++;
+    if (_170 < c)
+    goto _jump567;
+    _170 = 0;
+    _171++;
+    if (_171 < _168)
+    goto _jump567;
+    // End body of loop
+    double _173;
+    // Computing bound for z
+    int64_t _174 = h / s;
+    if (_174 > 0) 
+    goto _jump568;
+    fail_assertion("non-positive loop bound");
+    _jump568:;
+    // Computing bound for A
+    if (o > 0) 
+    goto _jump569;
+    fail_assertion("non-positive loop bound");
+    _jump569:;
+    // Computing bound for B
+    int64_t _175 = c % g;
+    if (_175 > 0) 
+    goto _jump570;
+    fail_assertion("non-positive loop bound");
+    _jump570:;
+    _173 = 0;
+    int64_t _176 = 0; // B
+    int64_t _177 = 0; // A
+    int64_t _178 = 0; // z
+    _jump571:; // Begin body of loop
+    _173 += r;
+    _176++;
+    if (_176 < _175)
+    goto _jump571;
+    _176 = 0;
+    _177++;
+    if (_177 < o)
+    goto _jump571;
+    _177 = 0;
+    _178++;
+    if (_178 < _174)
+    goto _jump571;
+    // End body of loop
+    double _179;
+    // Computing bound for z
+    int64_t _180;
+    if (!e)
+    goto _jump572;
+    _180 = n;
+    goto _jump573;
+    _jump572:;
+    _180 = g;
+    _jump573:;
+    if (_180 > 0) 
+    goto _jump574;
+    fail_assertion("non-positive loop bound");
+    _jump574:;
+    _179 = 0;
+    int64_t _181 = 0; // z
+    _jump575:; // Begin body of loop
+    double _182 = 87.0;
+    _179 += _182;
+    _181++;
+    if (_181 < _180)
+    goto _jump575;
+    // End body of loop
+    double _183 = 25.0;
+    double _184 = -_183;
+    double _185 = -_184;
+    rgba _186 = { _167, _173, _179, _185 };
+    _146 = _186;
+    _jump563:;
+    double _187 = _146.b;
+    _a3__a3_double _188;
+    // Computing bound for z
+    _188.d0 = _3.d0;
+    if (_3.d0 > 0) 
+    goto _jump576;
+    fail_assertion("non-positive loop bound");
+    _jump576:;
+    // Computing bound for A
+    _188.d1 = n;
+    if (n > 0) 
+    goto _jump577;
+    fail_assertion("non-positive loop bound");
+    _jump577:;
+    // Computing bound for B
+    int64_t _189 = 309;
+    _188.d2 = _189;
+    if (_189 > 0) 
+    goto _jump578;
+    fail_assertion("non-positive loop bound");
+    _jump578:;
+    // Computing total size of heap memory to allocate
+    int64_t _190 = 1;
+    _190 *= _3.d0;
+    _190 *= n;
+    _190 *= _189;
+    _190 *= sizeof(_a3_double);
+    _188.data = jpl_alloc(_190);
+    int64_t _191 = 0; // B
+    int64_t _192 = 0; // A
+    int64_t _193 = 0; // z
+    _jump579:; // Begin body of loop
+    if (g >= 0)
+    goto _jump580;
+    fail_assertion("negative array index");
+    _jump580:;
+    if (g < _3.d0)
+    goto _jump581;
+    fail_assertion("index too large");
+    _jump581:;
+    int64_t _194 = 0;
+    _194 *= _3.d0;
+    _194 += g;
+    bool _195 = _3.data[_194];
+    _a3_double _196;
+    if (!_195)
+    goto _jump582;
+    _a3_double _197;
+    // Computing bound for C
+    _197.d0 = _192;
+    if (_192 > 0) 
+    goto _jump583;
+    fail_assertion("non-positive loop bound");
+    _jump583:;
+    // Computing bound for D
+    _197.d1 = c;
+    if (c > 0) 
+    goto _jump584;
+    fail_assertion("non-positive loop bound");
+    _jump584:;
+    // Computing bound for E
+    _197.d2 = g;
+    if (g > 0) 
+    goto _jump585;
+    fail_assertion("non-positive loop bound");
+    _jump585:;
+    // Computing total size of heap memory to allocate
+    int64_t _198 = 1;
+    _198 *= _192;
+    _198 *= c;
+    _198 *= g;
+    _198 *= sizeof(double);
+    _197.data = jpl_alloc(_198);
+    int64_t _199 = 0; // E
+    int64_t _200 = 0; // D
+    int64_t _201 = 0; // C
+    _jump586:; // Begin body of loop
+    int64_t _202 = 0;
+    _202 *= _197.d0;
+    _202 += _201;
+    _202 *= _197.d1;
+    _202 += _200;
+    _202 *= _197.d2;
+    _202 += _199;
+    _197.data[_202] = r;
+    _199++;
+    if (_199 < g)
+    goto _jump586;
+    _199 = 0;
+    _200++;
+    if (_200 < c)
+    goto _jump586;
+    _200 = 0;
+    _201++;
+    if (_201 < _192)
+    goto _jump586;
+    // End body of loop
+    _196 = _197;
+    goto _jump587;
+    _jump582:;
+    _a3_double _203;
+    // Computing bound for C
+    _203.d0 = g;
+    if (g > 0) 
+    goto _jump588;
+    fail_assertion("non-positive loop bound");
+    _jump588:;
+    // Computing bound for D
+    _203.d1 = o;
+    if (o > 0) 
+    goto _jump589;
+    fail_assertion("non-positive loop bound");
+    _jump589:;
+    // Computing bound for E
+    _203.d2 = _193;
+    if (_193 > 0) 
+    goto _jump590;
+    fail_assertion("non-positive loop bound");
+    _jump590:;
+    // Computing total size of heap memory to allocate
+    int64_t _204 = 1;
+    _204 *= g;
+    _204 *= o;
+    _204 *= _193;
+    _204 *= sizeof(double);
+    _203.data = jpl_alloc(_204);
+    int64_t _205 = 0; // E
+    int64_t _206 = 0; // D
+    int64_t _207 = 0; // C
+    _jump591:; // Begin body of loop
+    double _208 = 22.0;
+    int64_t _209 = 0;
+    _209 *= _203.d0;
+    _209 += _207;
+    _209 *= _203.d1;
+    _209 += _206;
+    _209 *= _203.d2;
+    _209 += _205;
+    _203.data[_209] = _208;
+    _205++;
+    if (_205 < _193)
+    goto _jump591;
+    _205 = 0;
+    _206++;
+    if (_206 < o)
+    goto _jump591;
+    _206 = 0;
+    _207++;
+    if (_207 < g)
+    goto _jump591;
+    // End body of loop
+    _196 = _203;
+    _jump587:;
+    int64_t _210 = 0;
+    _210 *= _188.d0;
+    _210 += _193;
+    _210 *= _188.d1;
+    _210 += _192;
+    _210 *= _188.d2;
+    _210 += _191;
+    _188.data[_210] = _196;
+    _191++;
+    if (_191 < _189)
+    goto _jump579;
+    _191 = 0;
+    _192++;
+    if (_192 < n)
+    goto _jump579;
+    _192 = 0;
+    _193++;
+    if (_193 < _3.d0)
+    goto _jump579;
+    // End body of loop
+    int64_t _211;
+    // Computing bound for z
+    if (g > 0) 
+    goto _jump592;
+    fail_assertion("non-positive loop bound");
+    _jump592:;
+    _211 = 0;
+    int64_t _212 = 0; // z
+    _jump593:; // Begin body of loop
+    _211 += n;
+    _212++;
+    if (_212 < g)
+    goto _jump593;
+    // End body of loop
+    int64_t _213 = 406;
+    double _214 = 66.0;
+    double _215 = 96.0;
+    double _216 = _214 + _215;
+    int64_t _217 = 625;
+    int64_t _218 = -_217;
+    int64_t _219 = q(_216, _218);
+    int64_t _220 = _213 * _219;
+    if (_211 >= 0)
+    goto _jump594;
+    fail_assertion("negative array index");
+    _jump594:;
+    if (_211 < _188.d0)
+    goto _jump595;
+    fail_assertion("index too large");
+    _jump595:;
+    if (k >= 0)
+    goto _jump596;
+    fail_assertion("negative array index");
+    _jump596:;
+    if (k < _188.d1)
+    goto _jump597;
+    fail_assertion("index too large");
+    _jump597:;
+    if (_220 >= 0)
+    goto _jump598;
+    fail_assertion("negative array index");
+    _jump598:;
+    if (_220 < _188.d2)
+    goto _jump599;
+    fail_assertion("index too large");
+    _jump599:;
+    int64_t _221 = 0;
+    _221 *= _188.d0;
+    _221 += _211;
+    _221 *= _188.d1;
+    _221 += k;
+    _221 *= _188.d2;
+    _221 += _220;
+    _a3_double _222 = _188.data[_221];
+    bool _223 = true;
+    int64_t _224;
+    if (!_223)
+    goto _jump600;
+    _224 = s;
+    goto _jump601;
+    _jump600:;
+    _224 = i;
+    _jump601:;
+    int64_t _225 = 178;
+    if (_224 >= 0)
+    goto _jump602;
+    fail_assertion("negative array index");
+    _jump602:;
+    if (_224 < _222.d0)
+    goto _jump603;
+    fail_assertion("index too large");
+    _jump603:;
+    if (_225 >= 0)
+    goto _jump604;
+    fail_assertion("negative array index");
+    _jump604:;
+    if (_225 < _222.d1)
+    goto _jump605;
+    fail_assertion("index too large");
+    _jump605:;
+    if (o >= 0)
+    goto _jump606;
+    fail_assertion("negative array index");
+    _jump606:;
+    if (o < _222.d2)
+    goto _jump607;
+    fail_assertion("index too large");
+    _jump607:;
+    int64_t _226 = 0;
+    _226 *= _222.d0;
+    _226 += _224;
+    _226 *= _222.d1;
+    _226 += _225;
+    _226 *= _222.d2;
+    _226 += o;
+    double _227 = _222.data[_226];
+    double _228 = _187 / _227;
+    bool _229 = _119 > _228;
+    return h;
+}
+
+_a2_int64_t r() {
+    double _0;
+    // Computing bound for s
+    int64_t _1 = -h;
+    if (i >= 0)
+    goto _jump608;
+    fail_assertion("negative array index");
+    _jump608:;
+    if (i < f.d0)
+    goto _jump609;
+    fail_assertion("index too large");
+    _jump609:;
+    if (_1 >= 0)
+    goto _jump610;
+    fail_assertion("negative array index");
+    _jump610:;
+    if (_1 < f.d1)
+    goto _jump611;
+    fail_assertion("index too large");
+    _jump611:;
+    if (d >= 0)
+    goto _jump612;
+    fail_assertion("negative array index");
+    _jump612:;
+    if (d < f.d2)
+    goto _jump613;
+    fail_assertion("index too large");
+    _jump613:;
+    int64_t _2 = 0;
+    _2 *= f.d0;
+    _2 += i;
+    _2 *= f.d1;
+    _2 += _1;
+    _2 *= f.d2;
+    _2 += d;
+    int64_t _3 = f.data[_2];
+    if (_3 > 0) 
+    goto _jump614;
+    fail_assertion("non-positive loop bound");
+    _jump614:;
+    // Computing bound for t
+    if (k > 0) 
+    goto _jump615;
+    fail_assertion("non-positive loop bound");
+    _jump615:;
+    // Computing bound for u
+    if (o > 0) 
+    goto _jump616;
+    fail_assertion("non-positive loop bound");
+    _jump616:;
+    _0 = 0;
+    int64_t _4 = 0; // u
+    int64_t _5 = 0; // t
+    int64_t _6 = 0; // s
+    _jump617:; // Begin body of loop
+    double _7 = 43.0;
+    _0 += _7;
+    _4++;
+    if (_4 < o)
+    goto _jump617;
+    _4 = 0;
+    _5++;
+    if (_5 < k)
+    goto _jump617;
+    _5 = 0;
+    _6++;
+    if (_6 < _3)
+    goto _jump617;
+    // End body of loop
+    double _8;
+    // Computing bound for s
+    if (g > 0) 
+    goto _jump618;
+    fail_assertion("non-positive loop bound");
+    _jump618:;
+    // Computing bound for t
+    int64_t _9 = -c;
+    int64_t _10 = o * _9;
+    if (_10 > 0) 
+    goto _jump619;
+    fail_assertion("non-positive loop bound");
+    _jump619:;
+    _8 = 0;
+    int64_t _11 = 0; // t
+    int64_t _12 = 0; // s
+    _jump620:; // Begin body of loop
+    double _13 = 88.0;
+    _8 += _13;
+    _11++;
+    if (_11 < _10)
+    goto _jump620;
+    _11 = 0;
+    _12++;
+    if (_12 < g)
+    goto _jump620;
+    // End body of loop
+    double _14 = fmod(_0, _8);
+    bool _15 = !e;
+    bool _16 = !_15;
+    _a3_double _17;
+    if (!_16)
+    goto _jump621;
+    _a3_double _18;
+    // Computing bound for t
+    _18.d0 = d;
+    if (d > 0) 
+    goto _jump622;
+    fail_assertion("non-positive loop bound");
+    _jump622:;
+    // Computing bound for u
+    int64_t _19 = n % h;
+    _18.d1 = _19;
+    if (_19 > 0) 
+    goto _jump623;
+    fail_assertion("non-positive loop bound");
+    _jump623:;
+    // Computing bound for v
+    _18.d2 = k;
+    if (k > 0) 
+    goto _jump624;
+    fail_assertion("non-positive loop bound");
+    _jump624:;
+    // Computing total size of heap memory to allocate
+    int64_t _20 = 1;
+    _20 *= d;
+    _20 *= _19;
+    _20 *= k;
+    _20 *= sizeof(double);
+    _18.data = jpl_alloc(_20);
+    int64_t _21 = 0; // v
+    int64_t _22 = 0; // u
+    int64_t _23 = 0; // t
+    _jump625:; // Begin body of loop
+    int64_t _24 = 0;
+    _24 *= _18.d0;
+    _24 += _23;
+    _24 *= _18.d1;
+    _24 += _22;
+    _24 *= _18.d2;
+    _24 += _21;
+    _18.data[_24] = _14;
+    _21++;
+    if (_21 < k)
+    goto _jump625;
+    _21 = 0;
+    _22++;
+    if (_22 < _19)
+    goto _jump625;
+    _22 = 0;
+    _23++;
+    if (_23 < d)
+    goto _jump625;
+    // End body of loop
+    _17 = _18;
+    goto _jump626;
+    _jump621:;
+    _a3_double _25;
+    // Computing bound for t
+    _25.d0 = n;
+    if (n > 0) 
+    goto _jump627;
+    fail_assertion("non-positive loop bound");
+    _jump627:;
+    // Computing bound for u
+    int64_t _26 = 84;
+    _25.d1 = _26;
+    if (_26 > 0) 
+    goto _jump628;
+    fail_assertion("non-positive loop bound");
+    _jump628:;
+    // Computing bound for v
+    _25.d2 = c;
+    if (c > 0) 
+    goto _jump629;
+    fail_assertion("non-positive loop bound");
+    _jump629:;
+    // Computing total size of heap memory to allocate
+    int64_t _27 = 1;
+    _27 *= n;
+    _27 *= _26;
+    _27 *= c;
+    _27 *= sizeof(double);
+    _25.data = jpl_alloc(_27);
+    int64_t _28 = 0; // v
+    int64_t _29 = 0; // u
+    int64_t _30 = 0; // t
+    _jump630:; // Begin body of loop
+    double _31;
+    // Computing bound for w
+    if (_30 > 0) 
+    goto _jump631;
+    fail_assertion("non-positive loop bound");
+    _jump631:;
+    _31 = 0;
+    int64_t _32 = 0; // w
+    _jump632:; // Begin body of loop
+    _31 += _14;
+    _32++;
+    if (_32 < _30)
+    goto _jump632;
+    // End body of loop
+    int64_t _33 = 0;
+    _33 *= _25.d0;
+    _33 += _30;
+    _33 *= _25.d1;
+    _33 += _29;
+    _33 *= _25.d2;
+    _33 += _28;
+    _25.data[_33] = _31;
+    _28++;
+    if (_28 < c)
+    goto _jump630;
+    _28 = 0;
+    _29++;
+    if (_29 < _26)
+    goto _jump630;
+    _29 = 0;
+    _30++;
+    if (_30 < n)
+    goto _jump630;
+    // End body of loop
+    _a3_double _34;
+    // Computing bound for t
+    _34.d0 = o;
+    if (o > 0) 
+    goto _jump633;
+    fail_assertion("non-positive loop bound");
+    _jump633:;
+    // Computing bound for u
+    _34.d1 = d;
+    if (d > 0) 
+    goto _jump634;
+    fail_assertion("non-positive loop bound");
+    _jump634:;
+    // Computing bound for v
+    int64_t _35 = c * o;
+    _34.d2 = _35;
+    if (_35 > 0) 
+    goto _jump635;
+    fail_assertion("non-positive loop bound");
+    _jump635:;
+    // Computing total size of heap memory to allocate
+    int64_t _36 = 1;
+    _36 *= o;
+    _36 *= d;
+    _36 *= _35;
+    _36 *= sizeof(double);
+    _34.data = jpl_alloc(_36);
+    int64_t _37 = 0; // v
+    int64_t _38 = 0; // u
+    int64_t _39 = 0; // t
+    _jump636:; // Begin body of loop
+    double _40 = -_14;
+    int64_t _41 = 0;
+    _41 *= _34.d0;
+    _41 += _39;
+    _41 *= _34.d1;
+    _41 += _38;
+    _41 *= _34.d2;
+    _41 += _37;
+    _34.data[_41] = _40;
+    _37++;
+    if (_37 < _35)
+    goto _jump636;
+    _37 = 0;
+    _38++;
+    if (_38 < d)
+    goto _jump636;
+    _38 = 0;
+    _39++;
+    if (_39 < o)
+    goto _jump636;
+    // End body of loop
+    _a3_double _42;
+    // Computing bound for t
+    int64_t _43 = 926;
+    _42.d0 = _43;
+    if (_43 > 0) 
+    goto _jump637;
+    fail_assertion("non-positive loop bound");
+    _jump637:;
+    // Computing bound for u
+    int64_t _44 = 258;
+    _42.d1 = _44;
+    if (_44 > 0) 
+    goto _jump638;
+    fail_assertion("non-positive loop bound");
+    _jump638:;
+    // Computing bound for v
+    _42.d2 = g;
+    if (g > 0) 
+    goto _jump639;
+    fail_assertion("non-positive loop bound");
+    _jump639:;
+    // Computing total size of heap memory to allocate
+    int64_t _45 = 1;
+    _45 *= _43;
+    _45 *= _44;
+    _45 *= g;
+    _45 *= sizeof(double);
+    _42.data = jpl_alloc(_45);
+    int64_t _46 = 0; // v
+    int64_t _47 = 0; // u
+    int64_t _48 = 0; // t
+    _jump640:; // Begin body of loop
+    double _49 = 99.0;
+    int64_t _50 = 0;
+    _50 *= _42.d0;
+    _50 += _48;
+    _50 *= _42.d1;
+    _50 += _47;
+    _50 *= _42.d2;
+    _50 += _46;
+    _42.data[_50] = _49;
+    _46++;
+    if (_46 < g)
+    goto _jump640;
+    _46 = 0;
+    _47++;
+    if (_47 < _44)
+    goto _jump640;
+    _47 = 0;
+    _48++;
+    if (_48 < _43)
+    goto _jump640;
+    // End body of loop
+    _a1__a3_double _51;
+    _51.d0 = 3;
+    _51.data = jpl_alloc(sizeof(_a3_double) * 3);
+    _51.data[0] = _25;
+    _51.data[1] = _34;
+    _51.data[2] = _42;
+    int64_t _52 = 810;
+    if (_52 >= 0)
+    goto _jump641;
+    fail_assertion("negative array index");
+    _jump641:;
+    if (_52 < _51.d0)
+    goto _jump642;
+    fail_assertion("index too large");
+    _jump642:;
+    int64_t _53 = 0;
+    _53 *= _51.d0;
+    _53 += _52;
+    _a3_double _54 = _51.data[_53];
+    _17 = _54;
+    _jump626:;
+    int64_t _55;
+    // Computing bound for t
+    int64_t _56 = 277;
+    if (_56 > 0) 
+    goto _jump643;
+    fail_assertion("non-positive loop bound");
+    _jump643:;
+    _55 = 0;
+    int64_t _57 = 0; // t
+    _jump644:; // Begin body of loop
+    _55 += _57;
+    _57++;
+    if (_57 < _56)
+    goto _jump644;
+    // End body of loop
+    int64_t _58 = 981;
+    int64_t _59 = 548;
+    if (_55 >= 0)
+    goto _jump645;
+    fail_assertion("negative array index");
+    _jump645:;
+    if (_55 < _17.d0)
+    goto _jump646;
+    fail_assertion("index too large");
+    _jump646:;
+    if (_58 >= 0)
+    goto _jump647;
+    fail_assertion("negative array index");
+    _jump647:;
+    if (_58 < _17.d1)
+    goto _jump648;
+    fail_assertion("index too large");
+    _jump648:;
+    if (_59 >= 0)
+    goto _jump649;
+    fail_assertion("negative array index");
+    _jump649:;
+    if (_59 < _17.d2)
+    goto _jump650;
+    fail_assertion("index too large");
+    _jump650:;
+    int64_t _60 = 0;
+    _60 *= _17.d0;
+    _60 += _55;
+    _60 *= _17.d1;
+    _60 += _58;
+    _60 *= _17.d2;
+    _60 += _59;
+    double _61 = _17.data[_60];
+    double _62 = 80.0;
+    bool _63 = _61 >= _62;
+    if (0 != _63)
+    goto _jump651;
+    fail_assertion("t");
+    _jump651:;
+    _a1_bool _64;
+    // Computing bound for t
+    int64_t _65 = 355;
+    _64.d0 = _65;
+    if (_65 > 0) 
+    goto _jump652;
+    fail_assertion("non-positive loop bound");
+    _jump652:;
+    // Computing total size of heap memory to allocate
+    int64_t _66 = 1;
+    _66 *= _65;
+    _66 *= sizeof(bool);
+    _64.data = jpl_alloc(_66);
+    int64_t _67 = 0; // t
+    _jump653:; // Begin body of loop
+    int64_t _68 = 851;
+    if (g >= 0)
+    goto _jump654;
+    fail_assertion("negative array index");
+    _jump654:;
+    if (g < f.d0)
+    goto _jump655;
+    fail_assertion("index too large");
+    _jump655:;
+    if (o >= 0)
+    goto _jump656;
+    fail_assertion("negative array index");
+    _jump656:;
+    if (o < f.d1)
+    goto _jump657;
+    fail_assertion("index too large");
+    _jump657:;
+    if (_68 >= 0)
+    goto _jump658;
+    fail_assertion("negative array index");
+    _jump658:;
+    if (_68 < f.d2)
+    goto _jump659;
+    fail_assertion("index too large");
+    _jump659:;
+    int64_t _69 = 0;
+    _69 *= f.d0;
+    _69 += g;
+    _69 *= f.d1;
+    _69 += o;
+    _69 *= f.d2;
+    _69 += _68;
+    int64_t _70 = f.data[_69];
+    bool _71 = _70 != c;
+    bool _72;
+    if (!_71)
+    goto _jump660;
+    double _73 = 94.0;
+    _a1_double _74;
+    // Computing bound for u
+    int64_t _75 = 472;
+    _74.d0 = _75;
+    if (_75 > 0) 
+    goto _jump661;
+    fail_assertion("non-positive loop bound");
+    _jump661:;
+    // Computing total size of heap memory to allocate
+    int64_t _76 = 1;
+    _76 *= _75;
+    _76 *= sizeof(double);
+    _74.data = jpl_alloc(_76);
+    int64_t _77 = 0; // u
+    _jump662:; // Begin body of loop
+    int64_t _78 = 0;
+    _78 *= _74.d0;
+    _78 += _77;
+    _74.data[_78] = _14;
+    _77++;
+    if (_77 < _75)
+    goto _jump662;
+    // End body of loop
+    if (c >= 0)
+    goto _jump663;
+    fail_assertion("negative array index");
+    _jump663:;
+    if (c < _74.d0)
+    goto _jump664;
+    fail_assertion("index too large");
+    _jump664:;
+    int64_t _79 = 0;
+    _79 *= _74.d0;
+    _79 += c;
+    double _80 = _74.data[_79];
+    bool _81 = _73 != _80;
+    _72 = _81;
+    goto _jump665;
+    _jump660:;
+    bool _83 = false;
+    bool _82 = _83;
+    if (0 != _83)
+    goto _jump666;
+    _82 = e;
+    _jump666:;
+    _72 = _82;
+    _jump665:;
+    int64_t _84 = 0;
+    _84 *= _64.d0;
+    _84 += _67;
+    _64.data[_84] = _72;
+    _67++;
+    if (_67 < _65)
+    goto _jump653;
+    // End body of loop
+    if (c >= 0)
+    goto _jump667;
+    fail_assertion("negative array index");
+    _jump667:;
+    if (c < _64.d0)
+    goto _jump668;
+    fail_assertion("index too large");
+    _jump668:;
+    int64_t _85 = 0;
+    _85 *= _64.d0;
+    _85 += c;
+    bool _86 = _64.data[_85];
+    _a2_int64_t _87;
+    if (!_86)
+    goto _jump669;
+    bool _88 = false;
+    _a2_int64_t _89;
+    if (!_88)
+    goto _jump670;
+    bool _90 = false;
+    bool _91 = !_90;
+    _a2_int64_t _92;
+    if (!_91)
+    goto _jump671;
+    _a1__a2_int64_t _93;
+    // Computing bound for t
+    _93.d0 = k;
+    if (k > 0) 
+    goto _jump672;
+    fail_assertion("non-positive loop bound");
+    _jump672:;
+    // Computing total size of heap memory to allocate
+    int64_t _94 = 1;
+    _94 *= k;
+    _94 *= sizeof(_a2_int64_t);
+    _93.data = jpl_alloc(_94);
+    int64_t _95 = 0; // t
+    _jump673:; // Begin body of loop
+    _a2_int64_t _96 = r();
+    int64_t _97 = 0;
+    _97 *= _93.d0;
+    _97 += _95;
+    _93.data[_97] = _96;
+    _95++;
+    if (_95 < k)
+    goto _jump673;
+    // End body of loop
+    if (o >= 0)
+    goto _jump674;
+    fail_assertion("negative array index");
+    _jump674:;
+    if (o < _93.d0)
+    goto _jump675;
+    fail_assertion("index too large");
+    _jump675:;
+    int64_t _98 = 0;
+    _98 *= _93.d0;
+    _98 += o;
+    _a2_int64_t _99 = _93.data[_98];
+    _92 = _99;
+    goto _jump676;
+    _jump671:;
+    _a2_int64_t _100 = r();
+    _92 = _100;
+    _jump676:;
+    _a1__a2_int64_t _101;
+    _101.d0 = 1;
+    _101.data = jpl_alloc(sizeof(_a2_int64_t) * 1);
+    _101.data[0] = _92;
+    if (g >= 0)
+    goto _jump677;
+    fail_assertion("negative array index");
+    _jump677:;
+    if (g < _101.d0)
+    goto _jump678;
+    fail_assertion("index too large");
+    _jump678:;
+    int64_t _102 = 0;
+    _102 *= _101.d0;
+    _102 += g;
+    _a2_int64_t _103 = _101.data[_102];
+    _89 = _103;
+    goto _jump679;
+    _jump670:;
+    _a2_int64_t _104 = r();
+    _89 = _104;
+    _jump679:;
+    _87 = _89;
+    goto _jump680;
+    _jump669:;
+    _a2_int64_t _105 = r();
+    _87 = _105;
+    _jump680:;
+    return _87;
+    bool _106 = e;
+    if (0 == e)
+    goto _jump681;
+    bool _107 = false;
+    _106 = _107;
+    _jump681:;
+    _a2_bool _108;
+    if (!_106)
+    goto _jump682;
+    _a2_bool _109;
+    // Computing bound for t
+    bool _110 = d == g;
+    int64_t _111;
+    if (!_110)
+    goto _jump683;
+    _111 = n;
+    goto _jump684;
+    _jump683:;
+    _111 = g;
+    _jump684:;
+    _109.d0 = _111;
+    if (_111 > 0) 
+    goto _jump685;
+    fail_assertion("non-positive loop bound");
+    _jump685:;
+    // Computing bound for u
+    int64_t _112 = 139;
+    _109.d1 = _112;
+    if (_112 > 0) 
+    goto _jump686;
+    fail_assertion("non-positive loop bound");
+    _jump686:;
+    // Computing total size of heap memory to allocate
+    int64_t _113 = 1;
+    _113 *= _111;
+    _113 *= _112;
+    _113 *= sizeof(bool);
+    _109.data = jpl_alloc(_113);
+    int64_t _114 = 0; // u
+    int64_t _115 = 0; // t
+    _jump687:; // Begin body of loop
+    bool _116 = o < h;
+    int64_t _117 = 0;
+    _117 *= _109.d0;
+    _117 += _115;
+    _117 *= _109.d1;
+    _117 += _114;
+    _109.data[_117] = _116;
+    _114++;
+    if (_114 < _112)
+    goto _jump687;
+    _114 = 0;
+    _115++;
+    if (_115 < _111)
+    goto _jump687;
+    // End body of loop
+    _108 = _109;
+    goto _jump688;
+    _jump682:;
+    bool _118 = false;
+    _a2_bool _119;
+    if (!_118)
+    goto _jump689;
+    _a2_bool _120;
+    // Computing bound for t
+    int64_t _121 = 354;
+    _120.d0 = _121;
+    if (_121 > 0) 
+    goto _jump690;
+    fail_assertion("non-positive loop bound");
+    _jump690:;
+    // Computing bound for u
+    _120.d1 = c;
+    if (c > 0) 
+    goto _jump691;
+    fail_assertion("non-positive loop bound");
+    _jump691:;
+    // Computing total size of heap memory to allocate
+    int64_t _122 = 1;
+    _122 *= _121;
+    _122 *= c;
+    _122 *= sizeof(bool);
+    _120.data = jpl_alloc(_122);
+    int64_t _123 = 0; // u
+    int64_t _124 = 0; // t
+    _jump692:; // Begin body of loop
+    int64_t _125 = 0;
+    _125 *= _120.d0;
+    _125 += _124;
+    _125 *= _120.d1;
+    _125 += _123;
+    _120.data[_125] = e;
+    _123++;
+    if (_123 < c)
+    goto _jump692;
+    _123 = 0;
+    _124++;
+    if (_124 < _121)
+    goto _jump692;
+    // End body of loop
+    _119 = _120;
+    goto _jump693;
+    _jump689:;
+    _a2_bool _126;
+    if (!e)
+    goto _jump694;
+    _a2_bool _127;
+    // Computing bound for t
+    _127.d0 = c;
+    if (c > 0) 
+    goto _jump695;
+    fail_assertion("non-positive loop bound");
+    _jump695:;
+    // Computing bound for u
+    _127.d1 = g;
+    if (g > 0) 
+    goto _jump696;
+    fail_assertion("non-positive loop bound");
+    _jump696:;
+    // Computing total size of heap memory to allocate
+    int64_t _128 = 1;
+    _128 *= c;
+    _128 *= g;
+    _128 *= sizeof(bool);
+    _127.data = jpl_alloc(_128);
+    int64_t _129 = 0; // u
+    int64_t _130 = 0; // t
+    _jump697:; // Begin body of loop
+    bool _131 = true;
+    int64_t _132 = 0;
+    _132 *= _127.d0;
+    _132 += _130;
+    _132 *= _127.d1;
+    _132 += _129;
+    _127.data[_132] = _131;
+    _129++;
+    if (_129 < g)
+    goto _jump697;
+    _129 = 0;
+    _130++;
+    if (_130 < c)
+    goto _jump697;
+    // End body of loop
+    _126 = _127;
+    goto _jump698;
+    _jump694:;
+    _a2_bool _133;
+    // Computing bound for t
+    _133.d0 = c;
+    if (c > 0) 
+    goto _jump699;
+    fail_assertion("non-positive loop bound");
+    _jump699:;
+    // Computing bound for u
+    _133.d1 = o;
+    if (o > 0) 
+    goto _jump700;
+    fail_assertion("non-positive loop bound");
+    _jump700:;
+    // Computing total size of heap memory to allocate
+    int64_t _134 = 1;
+    _134 *= c;
+    _134 *= o;
+    _134 *= sizeof(bool);
+    _133.data = jpl_alloc(_134);
+    int64_t _135 = 0; // u
+    int64_t _136 = 0; // t
+    _jump701:; // Begin body of loop
+    bool _137 = true;
+    int64_t _138 = 0;
+    _138 *= _133.d0;
+    _138 += _136;
+    _138 *= _133.d1;
+    _138 += _135;
+    _133.data[_138] = _137;
+    _135++;
+    if (_135 < o)
+    goto _jump701;
+    _135 = 0;
+    _136++;
+    if (_136 < c)
+    goto _jump701;
+    // End body of loop
+    _126 = _133;
+    _jump698:;
+    _119 = _126;
+    _jump693:;
+    _108 = _119;
+    _jump688:;
+    bool _139 = true;
+    _a1_int64_t _140;
+    if (!_139)
+    goto _jump702;
+    _a1_int64_t _141;
+    // Computing bound for t
+    _141.d0 = i;
+    if (i > 0) 
+    goto _jump703;
+    fail_assertion("non-positive loop bound");
+    _jump703:;
+    // Computing total size of heap memory to allocate
+    int64_t _142 = 1;
+    _142 *= i;
+    _142 *= sizeof(int64_t);
+    _141.data = jpl_alloc(_142);
+    int64_t _143 = 0; // t
+    _jump704:; // Begin body of loop
+    int64_t _144 = 0;
+    _144 *= _141.d0;
+    _144 += _143;
+    _141.data[_144] = o;
+    _143++;
+    if (_143 < i)
+    goto _jump704;
+    // End body of loop
+    _140 = _141;
+    goto _jump705;
+    _jump702:;
+    _a2__a1_int64_t _145;
+    // Computing bound for t
+    _145.d0 = h;
+    if (h > 0) 
+    goto _jump706;
+    fail_assertion("non-positive loop bound");
+    _jump706:;
+    // Computing bound for u
+    int64_t _146 = 311;
+    _145.d1 = _146;
+    if (_146 > 0) 
+    goto _jump707;
+    fail_assertion("non-positive loop bound");
+    _jump707:;
+    // Computing total size of heap memory to allocate
+    int64_t _147 = 1;
+    _147 *= h;
+    _147 *= _146;
+    _147 *= sizeof(_a1_int64_t);
+    _145.data = jpl_alloc(_147);
+    int64_t _148 = 0; // u
+    int64_t _149 = 0; // t
+    _jump708:; // Begin body of loop
+    int64_t _150 = 0;
+    _150 *= _145.d0;
+    _150 += _149;
+    _150 *= _145.d1;
+    _150 += _148;
+    _145.data[_150] = j;
+    _148++;
+    if (_148 < _146)
+    goto _jump708;
+    _148 = 0;
+    _149++;
+    if (_149 < h)
+    goto _jump708;
+    // End body of loop
+    if (i >= 0)
+    goto _jump709;
+    fail_assertion("negative array index");
+    _jump709:;
+    if (i < f.d0)
+    goto _jump710;
+    fail_assertion("index too large");
+    _jump710:;
+    if (o >= 0)
+    goto _jump711;
+    fail_assertion("negative array index");
+    _jump711:;
+    if (o < f.d1)
+    goto _jump712;
+    fail_assertion("index too large");
+    _jump712:;
+    if (i >= 0)
+    goto _jump713;
+    fail_assertion("negative array index");
+    _jump713:;
+    if (i < f.d2)
+    goto _jump714;
+    fail_assertion("index too large");
+    _jump714:;
+    int64_t _151 = 0;
+    _151 *= f.d0;
+    _151 += i;
+    _151 *= f.d1;
+    _151 += o;
+    _151 *= f.d2;
+    _151 += i;
+    int64_t _152 = f.data[_151];
+    if (_152 >= 0)
+    goto _jump715;
+    fail_assertion("negative array index");
+    _jump715:;
+    if (_152 < _145.d0)
+    goto _jump716;
+    fail_assertion("index too large");
+    _jump716:;
+    if (d >= 0)
+    goto _jump717;
+    fail_assertion("negative array index");
+    _jump717:;
+    if (d < _145.d1)
+    goto _jump718;
+    fail_assertion("index too large");
+    _jump718:;
+    int64_t _153 = 0;
+    _153 *= _145.d0;
+    _153 += _152;
+    _153 *= _145.d1;
+    _153 += d;
+    _a1_int64_t _154 = _145.data[_153];
+    _140 = _154;
+    _jump705:;
+    int64_t _155;
+    // Computing bound for t
+    int64_t _156;
+    // Computing bound for t
+    if (g > 0) 
+    goto _jump719;
+    fail_assertion("non-positive loop bound");
+    _jump719:;
+    // Computing bound for u
+    if (d > 0) 
+    goto _jump720;
+    fail_assertion("non-positive loop bound");
+    _jump720:;
+    // Computing bound for v
+    if (k > 0) 
+    goto _jump721;
+    fail_assertion("non-positive loop bound");
+    _jump721:;
+    _156 = 0;
+    int64_t _157 = 0; // v
+    int64_t _158 = 0; // u
+    int64_t _159 = 0; // t
+    _jump722:; // Begin body of loop
+    int64_t _160;
+    // Computing bound for w
+    if (_159 > 0) 
+    goto _jump723;
+    fail_assertion("non-positive loop bound");
+    _jump723:;
+    _160 = 0;
+    int64_t _161 = 0; // w
+    _jump724:; // Begin body of loop
+    _160 += _161;
+    _161++;
+    if (_161 < _159)
+    goto _jump724;
+    // End body of loop
+    _156 += _160;
+    _157++;
+    if (_157 < k)
+    goto _jump722;
+    _157 = 0;
+    _158++;
+    if (_158 < d)
+    goto _jump722;
+    _158 = 0;
+    _159++;
+    if (_159 < g)
+    goto _jump722;
+    // End body of loop
+    if (_156 > 0) 
+    goto _jump725;
+    fail_assertion("non-positive loop bound");
+    _jump725:;
+    // Computing bound for u
+    if (g > 0) 
+    goto _jump726;
+    fail_assertion("non-positive loop bound");
+    _jump726:;
+    _155 = 0;
+    int64_t _162 = 0; // u
+    int64_t _163 = 0; // t
+    _jump727:; // Begin body of loop
+    _155 += n;
+    _162++;
+    if (_162 < g)
+    goto _jump727;
+    _162 = 0;
+    _163++;
+    if (_163 < _156)
+    goto _jump727;
+    // End body of loop
+    if (_155 >= 0)
+    goto _jump728;
+    fail_assertion("negative array index");
+    _jump728:;
+    if (_155 < _140.d0)
+    goto _jump729;
+    fail_assertion("index too large");
+    _jump729:;
+    int64_t _164 = 0;
+    _164 *= _140.d0;
+    _164 += _155;
+    int64_t _165 = _140.data[_164];
+    if (c >= 0)
+    goto _jump730;
+    fail_assertion("negative array index");
+    _jump730:;
+    if (c < _108.d0)
+    goto _jump731;
+    fail_assertion("index too large");
+    _jump731:;
+    if (_165 >= 0)
+    goto _jump732;
+    fail_assertion("negative array index");
+    _jump732:;
+    if (_165 < _108.d1)
+    goto _jump733;
+    fail_assertion("index too large");
+    _jump733:;
+    int64_t _166 = 0;
+    _166 *= _108.d0;
+    _166 += c;
+    _166 *= _108.d1;
+    _166 += _165;
+    bool _167 = _108.data[_166];
+    bool _168 = !_167;
+    bool _169;
+    if (!_168)
+    goto _jump734;
+    int64_t _170 = 513;
+    bool _171 = k < _170;
+    bool _172 = !_171;
+    bool _173;
+    if (!_172)
+    goto _jump735;
+    _a1__a1_bool _174;
+    // Computing bound for t
+    int64_t _175 = 674;
+    _174.d0 = _175;
+    if (_175 > 0) 
+    goto _jump736;
+    fail_assertion("non-positive loop bound");
+    _jump736:;
+    // Computing total size of heap memory to allocate
+    int64_t _176 = 1;
+    _176 *= _175;
+    _176 *= sizeof(_a1_bool);
+    _174.data = jpl_alloc(_176);
+    int64_t _177 = 0; // t
+    _jump737:; // Begin body of loop
+    _a1_bool _178;
+    // Computing bound for u
+    _178.d0 = o;
+    if (o > 0) 
+    goto _jump738;
+    fail_assertion("non-positive loop bound");
+    _jump738:;
+    // Computing total size of heap memory to allocate
+    int64_t _179 = 1;
+    _179 *= o;
+    _179 *= sizeof(bool);
+    _178.data = jpl_alloc(_179);
+    int64_t _180 = 0; // u
+    _jump739:; // Begin body of loop
+    int64_t _181 = 0;
+    _181 *= _178.d0;
+    _181 += _180;
+    _178.data[_181] = e;
+    _180++;
+    if (_180 < o)
+    goto _jump739;
+    // End body of loop
+    int64_t _182 = 0;
+    _182 *= _174.d0;
+    _182 += _177;
+    _174.data[_182] = _178;
+    _177++;
+    if (_177 < _175)
+    goto _jump737;
+    // End body of loop
+    if (c >= 0)
+    goto _jump740;
+    fail_assertion("negative array index");
+    _jump740:;
+    if (c < _174.d0)
+    goto _jump741;
+    fail_assertion("index too large");
+    _jump741:;
+    int64_t _183 = 0;
+    _183 *= _174.d0;
+    _183 += c;
+    _a1_bool _184 = _174.data[_183];
+    double _185 = -_14;
+    int64_t _186 = q(_14, k);
+    int64_t _187 = q(_185, _186);
+    int64_t _188 = -_187;
+    if (_188 >= 0)
+    goto _jump742;
+    fail_assertion("negative array index");
+    _jump742:;
+    if (_188 < _184.d0)
+    goto _jump743;
+    fail_assertion("index too large");
+    _jump743:;
+    int64_t _189 = 0;
+    _189 *= _184.d0;
+    _189 += _188;
+    bool _190 = _184.data[_189];
+    bool _191 = !_190;
+    _173 = _191;
+    goto _jump744;
+    _jump735:;
+    bool _192 = false;
+    _173 = _192;
+    _jump744:;
+    _169 = _173;
+    goto _jump745;
+    _jump734:;
+    double _194 = 40.0;
+    double _195 = 35.0;
+    double _196 = _195 / _14;
+    double _197 = -_196;
+    double _198 = 73.0;
+    double _199 = -_198;
+    double _200 = fmod(_197, _199);
+    bool _201 = _194 >= _200;
+    bool _193 = _201;
+    if (0 != _201)
+    goto _jump746;
+    int64_t _202 = 215;
+    bool _203 = c != _202;
+    _193 = _203;
+    _jump746:;
+    bool _204;
+    if (!_193)
+    goto _jump747;
+    bool _205 = true;
+    _204 = _205;
+    goto _jump748;
+    _jump747:;
+    _204 = e;
+    _jump748:;
+    _169 = _204;
+    _jump745:;
+    if (0 != _169)
+    goto _jump749;
+    fail_assertion("t");
+    _jump749:;
+    bool _207;
+    if (!e)
+    goto _jump750;
+    bool _208 = e;
+    if (0 != e)
+    goto _jump751;
+    bool _209 = !e;
+    _208 = _209;
+    _jump751:;
+    _207 = _208;
+    goto _jump752;
+    _jump750:;
+    bool _210 = false;
+    bool _211 = !_210;
+    bool _212;
+    if (!_211)
+    goto _jump753;
+    bool _213 = i != h;
+    _212 = _213;
+    goto _jump754;
+    _jump753:;
+    bool _214 = false;
+    _212 = _214;
+    _jump754:;
+    _207 = _212;
+    _jump752:;
+    bool _206 = _207;
+    if (0 != _207)
+    goto _jump755;
+    double _215;
+    // Computing bound for t
+    int64_t _216;
+    if (!e)
+    goto _jump756;
+    _216 = i;
+    goto _jump757;
+    _jump756:;
+    _216 = c;
+    _jump757:;
+    if (_216 > 0) 
+    goto _jump758;
+    fail_assertion("non-positive loop bound");
+    _jump758:;
+    _215 = 0;
+    int64_t _217 = 0; // t
+    _jump759:; // Begin body of loop
+    _a1_double _218;
+    // Computing bound for u
+    _218.d0 = c;
+    if (c > 0) 
+    goto _jump760;
+    fail_assertion("non-positive loop bound");
+    _jump760:;
+    // Computing total size of heap memory to allocate
+    int64_t _219 = 1;
+    _219 *= c;
+    _219 *= sizeof(double);
+    _218.data = jpl_alloc(_219);
+    int64_t _220 = 0; // u
+    _jump761:; // Begin body of loop
+    double _221 = 26.0;
+    int64_t _222 = 0;
+    _222 *= _218.d0;
+    _222 += _220;
+    _218.data[_222] = _221;
+    _220++;
+    if (_220 < c)
+    goto _jump761;
+    // End body of loop
+    if (o >= 0)
+    goto _jump762;
+    fail_assertion("negative array index");
+    _jump762:;
+    if (o < j.d0)
+    goto _jump763;
+    fail_assertion("index too large");
+    _jump763:;
+    int64_t _223 = 0;
+    _223 *= j.d0;
+    _223 += o;
+    int64_t _224 = j.data[_223];
+    if (_224 >= 0)
+    goto _jump764;
+    fail_assertion("negative array index");
+    _jump764:;
+    if (_224 < _218.d0)
+    goto _jump765;
+    fail_assertion("index too large");
+    _jump765:;
+    int64_t _225 = 0;
+    _225 *= _218.d0;
+    _225 += _224;
+    double _226 = _218.data[_225];
+    _215 += _226;
+    _217++;
+    if (_217 < _216)
+    goto _jump759;
+    // End body of loop
+    double _227;
+    // Computing bound for t
+    if (n > 0) 
+    goto _jump766;
+    fail_assertion("non-positive loop bound");
+    _jump766:;
+    _227 = 0;
+    int64_t _228 = 0; // t
+    _jump767:; // Begin body of loop
+    double _229 = -_14;
+    _227 += _229;
+    _228++;
+    if (_228 < n)
+    goto _jump767;
+    // End body of loop
+    double _230 = -_227;
+    bool _231 = _215 == _230;
+    _206 = _231;
+    _jump755:;
+    bool _232 = !_206;
+    _a2_rgba _233;
+    if (!_232)
+    goto _jump768;
+    _a2_bool _236;
+    // Computing bound for t
+    int64_t _237 = o % i;
+    _236.d0 = _237;
+    if (_237 > 0) 
+    goto _jump769;
+    fail_assertion("non-positive loop bound");
+    _jump769:;
+    // Computing bound for u
+    _236.d1 = o;
+    if (o > 0) 
+    goto _jump770;
+    fail_assertion("non-positive loop bound");
+    _jump770:;
+    // Computing total size of heap memory to allocate
+    int64_t _238 = 1;
+    _238 *= _237;
+    _238 *= o;
+    _238 *= sizeof(bool);
+    _236.data = jpl_alloc(_238);
+    int64_t _239 = 0; // u
+    int64_t _240 = 0; // t
+    _jump771:; // Begin body of loop
+    bool _241 = true;
+    int64_t _242 = 0;
+    _242 *= _236.d0;
+    _242 += _240;
+    _242 *= _236.d1;
+    _242 += _239;
+    _236.data[_242] = _241;
+    _239++;
+    if (_239 < o)
+    goto _jump771;
+    _239 = 0;
+    _240++;
+    if (_240 < _237)
+    goto _jump771;
+    // End body of loop
+    bool _243 = k == n;
+    int64_t _244;
+    if (!_243)
+    goto _jump772;
+    int64_t _245 = 569;
+    int64_t _246 = _245 / c;
+    _244 = _246;
+    goto _jump773;
+    _jump772:;
+    int64_t _247;
+    // Computing bound for t
+    if (c > 0) 
+    goto _jump774;
+    fail_assertion("non-positive loop bound");
+    _jump774:;
+    // Computing bound for u
+    if (c > 0) 
+    goto _jump775;
+    fail_assertion("non-positive loop bound");
+    _jump775:;
+    // Computing bound for v
+    if (o > 0) 
+    goto _jump776;
+    fail_assertion("non-positive loop bound");
+    _jump776:;
+    _247 = 0;
+    int64_t _248 = 0; // v
+    int64_t _249 = 0; // u
+    int64_t _250 = 0; // t
+    _jump777:; // Begin body of loop
+    _247 += _250;
+    _248++;
+    if (_248 < o)
+    goto _jump777;
+    _248 = 0;
+    _249++;
+    if (_249 < c)
+    goto _jump777;
+    _249 = 0;
+    _250++;
+    if (_250 < c)
+    goto _jump777;
+    // End body of loop
+    _244 = _247;
+    _jump773:;
+    if (_244 >= 0)
+    goto _jump778;
+    fail_assertion("negative array index");
+    _jump778:;
+    if (_244 < _236.d0)
+    goto _jump779;
+    fail_assertion("index too large");
+    _jump779:;
+    if (d >= 0)
+    goto _jump780;
+    fail_assertion("negative array index");
+    _jump780:;
+    if (d < _236.d1)
+    goto _jump781;
+    fail_assertion("index too large");
+    _jump781:;
+    int64_t _251 = 0;
+    _251 *= _236.d0;
+    _251 += _244;
+    _251 *= _236.d1;
+    _251 += d;
+    bool _252 = _236.data[_251];
+    bool _235 = _252;
+    if (0 == _252)
+    goto _jump782;
+    bool _253 = k != g;
+    bool _254 = !_253;
+    bool _255 = e == _254;
+    _235 = _255;
+    _jump782:;
+    bool _234 = _235;
+    if (0 == _235)
+    goto _jump783;
+    bool _256;
+    if (!e)
+    goto _jump784;
+    int64_t _257 = -d;
+    bool _258 = h < _257;
+    _256 = _258;
+    goto _jump785;
+    _jump784:;
+    bool _259 = true;
+    bool _260 = !_259;
+    bool _261 = !_260;
+    bool _262 = !_261;
+    _256 = _262;
+    _jump785:;
+    _234 = _256;
+    _jump783:;
+    _a2_rgba _263;
+    if (!_234)
+    goto _jump786;
+    bool _265 = _14 == _14;
+    bool _264 = _265;
+    if (0 != _265)
+    goto _jump787;
+    bool _266 = e;
+    if (0 == e)
+    goto _jump788;
+    _266 = e;
+    _jump788:;
+    _264 = _266;
+    _jump787:;
+    _a1__a2_rgba _267;
+    if (!_264)
+    goto _jump789;
+    _a1__a2_rgba _268;
+    // Computing bound for t
+    _268.d0 = o;
+    if (o > 0) 
+    goto _jump790;
+    fail_assertion("non-positive loop bound");
+    _jump790:;
+    // Computing total size of heap memory to allocate
+    int64_t _269 = 1;
+    _269 *= o;
+    _269 *= sizeof(_a2_rgba);
+    _268.data = jpl_alloc(_269);
+    int64_t _270 = 0; // t
+    _jump791:; // Begin body of loop
+    _a2_rgba _271;
+    if (!e)
+    goto _jump792;
+    _271 = a;
+    goto _jump793;
+    _jump792:;
+    _271 = m;
+    _jump793:;
+    int64_t _272 = 0;
+    _272 *= _268.d0;
+    _272 += _270;
+    _268.data[_272] = _271;
+    _270++;
+    if (_270 < o)
+    goto _jump791;
+    // End body of loop
+    _267 = _268;
+    goto _jump794;
+    _jump789:;
+    bool _273 = _14 < _14;
+    _a1__a2_rgba _274;
+    if (!_273)
+    goto _jump795;
+    _a1__a2_rgba _275;
+    // Computing bound for t
+    _275.d0 = g;
+    if (g > 0) 
+    goto _jump796;
+    fail_assertion("non-positive loop bound");
+    _jump796:;
+    // Computing total size of heap memory to allocate
+    int64_t _276 = 1;
+    _276 *= g;
+    _276 *= sizeof(_a2_rgba);
+    _275.data = jpl_alloc(_276);
+    int64_t _277 = 0; // t
+    _jump797:; // Begin body of loop
+    int64_t _278 = 0;
+    _278 *= _275.d0;
+    _278 += _277;
+    _275.data[_278] = m;
+    _277++;
+    if (_277 < g)
+    goto _jump797;
+    // End body of loop
+    _274 = _275;
+    goto _jump798;
+    _jump795:;
+    _a1__a2_rgba _279;
+    // Computing bound for t
+    _279.d0 = d;
+    if (d > 0) 
+    goto _jump799;
+    fail_assertion("non-positive loop bound");
+    _jump799:;
+    // Computing total size of heap memory to allocate
+    int64_t _280 = 1;
+    _280 *= d;
+    _280 *= sizeof(_a2_rgba);
+    _279.data = jpl_alloc(_280);
+    int64_t _281 = 0; // t
+    _jump800:; // Begin body of loop
+    int64_t _282 = 0;
+    _282 *= _279.d0;
+    _282 += _281;
+    _279.data[_282] = m;
+    _281++;
+    if (_281 < d)
+    goto _jump800;
+    // End body of loop
+    _274 = _279;
+    _jump798:;
+    _267 = _274;
+    _jump794:;
+    int64_t _283;
+    // Computing bound for t
+    if (i > 0) 
+    goto _jump801;
+    fail_assertion("non-positive loop bound");
+    _jump801:;
+    // Computing bound for u
+    if (g > 0) 
+    goto _jump802;
+    fail_assertion("non-positive loop bound");
+    _jump802:;
+    // Computing bound for v
+    bool _284 = true;
+    int64_t _285;
+    if (!_284)
+    goto _jump803;
+    _285 = o;
+    goto _jump804;
+    _jump803:;
+    int64_t _286 = 231;
+    _285 = _286;
+    _jump804:;
+    if (_285 > 0) 
+    goto _jump805;
+    fail_assertion("non-positive loop bound");
+    _jump805:;
+    _283 = 0;
+    int64_t _287 = 0; // v
+    int64_t _288 = 0; // u
+    int64_t _289 = 0; // t
+    _jump806:; // Begin body of loop
+    _283 += _287;
+    _287++;
+    if (_287 < _285)
+    goto _jump806;
+    _287 = 0;
+    _288++;
+    if (_288 < g)
+    goto _jump806;
+    _288 = 0;
+    _289++;
+    if (_289 < i)
+    goto _jump806;
+    // End body of loop
+    bool _290 = _283 < o;
+    int64_t _291;
+    if (!_290)
+    goto _jump807;
+    int64_t _292 = q(_14, g);
+    int64_t _293 = q(_14, d);
+    int64_t _294 = _292 % _293;
+    _291 = _294;
+    goto _jump808;
+    _jump807:;
+    _291 = n;
+    _jump808:;
+    if (_291 >= 0)
+    goto _jump809;
+    fail_assertion("negative array index");
+    _jump809:;
+    if (_291 < _267.d0)
+    goto _jump810;
+    fail_assertion("index too large");
+    _jump810:;
+    int64_t _295 = 0;
+    _295 *= _267.d0;
+    _295 += _291;
+    _a2_rgba _296 = _267.data[_295];
+    _263 = _296;
+    goto _jump811;
+    _jump786:;
+    _263 = m;
+    _jump811:;
+    _233 = _263;
+    goto _jump812;
+    _jump768:;
+    _a2_rgba _297;
+    // Computing bound for t
+    double _298 = 61.0;
+    bool _299 = _298 == _14;
+    bool _300 = !_299;
+    bool _301 = _300 == e;
+    int64_t _302;
+    if (!_301)
+    goto _jump813;
+    _302 = i;
+    goto _jump814;
+    _jump813:;
+    _302 = c;
+    _jump814:;
+    int64_t _303 = -n;
+    if (_302 >= 0)
+    goto _jump815;
+    fail_assertion("negative array index");
+    _jump815:;
+    if (_302 < p.d0)
+    goto _jump816;
+    fail_assertion("index too large");
+    _jump816:;
+    if (o >= 0)
+    goto _jump817;
+    fail_assertion("negative array index");
+    _jump817:;
+    if (o < p.d1)
+    goto _jump818;
+    fail_assertion("index too large");
+    _jump818:;
+    if (_303 >= 0)
+    goto _jump819;
+    fail_assertion("negative array index");
+    _jump819:;
+    if (_303 < p.d2)
+    goto _jump820;
+    fail_assertion("index too large");
+    _jump820:;
+    int64_t _304 = 0;
+    _304 *= p.d0;
+    _304 += _302;
+    _304 *= p.d1;
+    _304 += o;
+    _304 *= p.d2;
+    _304 += _303;
+    int64_t _305 = p.data[_304];
+    _297.d0 = _305;
+    if (_305 > 0) 
+    goto _jump821;
+    fail_assertion("non-positive loop bound");
+    _jump821:;
+    // Computing bound for u
+    _297.d1 = k;
+    if (k > 0) 
+    goto _jump822;
+    fail_assertion("non-positive loop bound");
+    _jump822:;
+    // Computing total size of heap memory to allocate
+    int64_t _306 = 1;
+    _306 *= _305;
+    _306 *= k;
+    _306 *= sizeof(rgba);
+    _297.data = jpl_alloc(_306);
+    int64_t _307 = 0; // u
+    int64_t _308 = 0; // t
+    _jump823:; // Begin body of loop
+    _a3_int64_t _309;
+    // Computing bound for v
+    _309.d0 = o;
+    if (o > 0) 
+    goto _jump824;
+    fail_assertion("non-positive loop bound");
+    _jump824:;
+    // Computing bound for w
+    int64_t _310 = -k;
+    _309.d1 = _310;
+    if (_310 > 0) 
+    goto _jump825;
+    fail_assertion("non-positive loop bound");
+    _jump825:;
+    // Computing bound for x
+    bool _311 = true;
+    bool _312 = !_311;
+    int64_t _313;
+    if (!_312)
+    goto _jump826;
+    _313 = k;
+    goto _jump827;
+    _jump826:;
+    _313 = i;
+    _jump827:;
+    _309.d2 = _313;
+    if (_313 > 0) 
+    goto _jump828;
+    fail_assertion("non-positive loop bound");
+    _jump828:;
+    // Computing total size of heap memory to allocate
+    int64_t _314 = 1;
+    _314 *= o;
+    _314 *= _310;
+    _314 *= _313;
+    _314 *= sizeof(int64_t);
+    _309.data = jpl_alloc(_314);
+    int64_t _315 = 0; // x
+    int64_t _316 = 0; // w
+    int64_t _317 = 0; // v
+    _jump829:; // Begin body of loop
+    int64_t _318;
+    // Computing bound for y
+    int64_t _319 = 231;
+    if (_319 > 0) 
+    goto _jump830;
+    fail_assertion("non-positive loop bound");
+    _jump830:;
+    _318 = 0;
+    int64_t _320 = 0; // y
+    _jump831:; // Begin body of loop
+    _318 += _316;
+    _320++;
+    if (_320 < _319)
+    goto _jump831;
+    // End body of loop
+    int64_t _321 = 0;
+    _321 *= _309.d0;
+    _321 += _317;
+    _321 *= _309.d1;
+    _321 += _316;
+    _321 *= _309.d2;
+    _321 += _315;
+    _309.data[_321] = _318;
+    _315++;
+    if (_315 < _313)
+    goto _jump829;
+    _315 = 0;
+    _316++;
+    if (_316 < _310)
+    goto _jump829;
+    _316 = 0;
+    _317++;
+    if (_317 < o)
+    goto _jump829;
+    // End body of loop
+    if (_308 >= 0)
+    goto _jump832;
+    fail_assertion("negative array index");
+    _jump832:;
+    if (_308 < _309.d0)
+    goto _jump833;
+    fail_assertion("index too large");
+    _jump833:;
+    if (_307 >= 0)
+    goto _jump834;
+    fail_assertion("negative array index");
+    _jump834:;
+    if (_307 < _309.d1)
+    goto _jump835;
+    fail_assertion("index too large");
+    _jump835:;
+    if (_307 >= 0)
+    goto _jump836;
+    fail_assertion("negative array index");
+    _jump836:;
+    if (_307 < _309.d2)
+    goto _jump837;
+    fail_assertion("index too large");
+    _jump837:;
+    int64_t _322 = 0;
+    _322 *= _309.d0;
+    _322 += _308;
+    _322 *= _309.d1;
+    _322 += _307;
+    _322 *= _309.d2;
+    _322 += _307;
+    int64_t _323 = _309.data[_322];
+    int64_t _324 = 628;
+    if (_324 >= 0)
+    goto _jump838;
+    fail_assertion("negative array index");
+    _jump838:;
+    if (_324 < p.d0)
+    goto _jump839;
+    fail_assertion("index too large");
+    _jump839:;
+    if (g >= 0)
+    goto _jump840;
+    fail_assertion("negative array index");
+    _jump840:;
+    if (g < p.d1)
+    goto _jump841;
+    fail_assertion("index too large");
+    _jump841:;
+    if (k >= 0)
+    goto _jump842;
+    fail_assertion("negative array index");
+    _jump842:;
+    if (k < p.d2)
+    goto _jump843;
+    fail_assertion("index too large");
+    _jump843:;
+    int64_t _325 = 0;
+    _325 *= p.d0;
+    _325 += _324;
+    _325 *= p.d1;
+    _325 += g;
+    _325 *= p.d2;
+    _325 += k;
+    int64_t _326 = p.data[_325];
+    if (_323 >= 0)
+    goto _jump844;
+    fail_assertion("negative array index");
+    _jump844:;
+    if (_323 < a.d0)
+    goto _jump845;
+    fail_assertion("index too large");
+    _jump845:;
+    if (_326 >= 0)
+    goto _jump846;
+    fail_assertion("negative array index");
+    _jump846:;
+    if (_326 < a.d1)
+    goto _jump847;
+    fail_assertion("index too large");
+    _jump847:;
+    int64_t _327 = 0;
+    _327 *= a.d0;
+    _327 += _323;
+    _327 *= a.d1;
+    _327 += _326;
+    rgba _328 = a.data[_327];
+    int64_t _329 = 0;
+    _329 *= _297.d0;
+    _329 += _308;
+    _329 *= _297.d1;
+    _329 += _307;
+    _297.data[_329] = _328;
+    _307++;
+    if (_307 < k)
+    goto _jump823;
+    _307 = 0;
+    _308++;
+    if (_308 < _305)
+    goto _jump823;
+    // End body of loop
+    _233 = _297;
+    _jump812:;
+    _a2_bool _330;
+    // Computing bound for w
+    bool _331 = !e;
+    bool _332 = false;
+    bool _333 = _331 == _332;
+    bool _334 = e == _333;
+    int64_t _335;
+    if (!_334)
+    goto _jump848;
+    _335 = _233.d0;
+    goto _jump849;
+    _jump848:;
+    _335 = g;
+    _jump849:;
+    _330.d0 = _335;
+    if (_335 > 0) 
+    goto _jump850;
+    fail_assertion("non-positive loop bound");
+    _jump850:;
+    // Computing bound for x
+    int64_t _336 = i + g;
+    _330.d1 = _336;
+    if (_336 > 0) 
+    goto _jump851;
+    fail_assertion("non-positive loop bound");
+    _jump851:;
+    // Computing total size of heap memory to allocate
+    int64_t _337 = 1;
+    _337 *= _335;
+    _337 *= _336;
+    _337 *= sizeof(bool);
+    _330.data = jpl_alloc(_337);
+    int64_t _338 = 0; // x
+    int64_t _339 = 0; // w
+    _jump852:; // Begin body of loop
+    bool _341 = true;
+    bool _340 = _341;
+    if (0 == _341)
+    goto _jump853;
+    bool _342 = false;
+    bool _343 = !_342;
+    bool _344 = !_343;
+    _340 = _344;
+    _jump853:;
+    int64_t _345 = 0;
+    _345 *= _330.d0;
+    _345 += _339;
+    _345 *= _330.d1;
+    _345 += _338;
+    _330.data[_345] = _340;
+    _338++;
+    if (_338 < _336)
+    goto _jump852;
+    _338 = 0;
+    _339++;
+    if (_339 < _335)
+    goto _jump852;
+    // End body of loop
+    _a2_int64_t _346 = r();
+    return _346;
+}
+
+rgba t(_a1__a1_void_t u) {
+    rgba _0;
+    if (!e)
+    goto _jump854;
+    _a1__a1__a1_void_t _1;
+    // Computing bound for z
+    int64_t _2;
+    // Computing bound for z
+    if (o > 0) 
+    goto _jump855;
+    fail_assertion("non-positive loop bound");
+    _jump855:;
+    // Computing bound for A
+    bool _3 = true;
+    int64_t _4;
+    if (!_3)
+    goto _jump856;
+    _4 = k;
+    goto _jump857;
+    _jump856:;
+    _4 = g;
+    _jump857:;
+    int64_t _5 = c - _4;
+    if (_5 > 0) 
+    goto _jump858;
+    fail_assertion("non-positive loop bound");
+    _jump858:;
+    // Computing bound for B
+    if (m.d0 > 0) 
+    goto _jump859;
+    fail_assertion("non-positive loop bound");
+    _jump859:;
+    _2 = 0;
+    int64_t _6 = 0; // B
+    int64_t _7 = 0; // A
+    int64_t _8 = 0; // z
+    _jump860:; // Begin body of loop
+    int64_t _9 = -_7;
+    _2 += _9;
+    _6++;
+    if (_6 < m.d0)
+    goto _jump860;
+    _6 = 0;
+    _7++;
+    if (_7 < _5)
+    goto _jump860;
+    _7 = 0;
+    _8++;
+    if (_8 < o)
+    goto _jump860;
+    // End body of loop
+    _1.d0 = _2;
+    if (_2 > 0) 
+    goto _jump861;
+    fail_assertion("non-positive loop bound");
+    _jump861:;
+    // Computing total size of heap memory to allocate
+    int64_t _10 = 1;
+    _10 *= _2;
+    _10 *= sizeof(_a1__a1_void_t);
+    _1.data = jpl_alloc(_10);
+    int64_t _11 = 0; // z
+    _jump862:; // Begin body of loop
+    int64_t _12 = 0;
+    _12 *= _1.d0;
+    _12 += _11;
+    _1.data[_12] = u;
+    _11++;
+    if (_11 < _2)
+    goto _jump862;
+    // End body of loop
+    if (c >= 0)
+    goto _jump863;
+    fail_assertion("negative array index");
+    _jump863:;
+    if (c < _1.d0)
+    goto _jump864;
+    fail_assertion("index too large");
+    _jump864:;
+    int64_t _13 = 0;
+    _13 *= _1.d0;
+    _13 += c;
+    _a1__a1_void_t _14 = _1.data[_13];
+    rgba _15 = t(_14);
+    _0 = _15;
+    goto _jump865;
+    _jump854:;
+    if (m.d1 >= 0)
+    goto _jump866;
+    fail_assertion("negative array index");
+    _jump866:;
+    if (m.d1 < b.d0)
+    goto _jump867;
+    fail_assertion("index too large");
+    _jump867:;
+    if (i >= 0)
+    goto _jump868;
+    fail_assertion("negative array index");
+    _jump868:;
+    if (i < b.d1)
+    goto _jump869;
+    fail_assertion("index too large");
+    _jump869:;
+    int64_t _16 = 0;
+    _16 *= b.d0;
+    _16 += m.d1;
+    _16 *= b.d1;
+    _16 += i;
+    rgba _17 = b.data[_16];
+    _0 = _17;
+    _jump865:;
+    return _0;
+    _a2__a2_rgba _18;
+    // Computing bound for H
+    _18.d0 = m.d0;
+    if (m.d0 > 0) 
+    goto _jump870;
+    fail_assertion("non-positive loop bound");
+    _jump870:;
+    // Computing bound for I
+    _18.d1 = i;
+    if (i > 0) 
+    goto _jump871;
+    fail_assertion("non-positive loop bound");
+    _jump871:;
+    // Computing total size of heap memory to allocate
+    int64_t _19 = 1;
+    _19 *= m.d0;
+    _19 *= i;
+    _19 *= sizeof(_a2_rgba);
+    _18.data = jpl_alloc(_19);
+    int64_t _20 = 0; // I
+    int64_t _21 = 0; // H
+    _jump872:; // Begin body of loop
+    int64_t _22 = 0;
+    _22 *= _18.d0;
+    _22 += _21;
+    _22 *= _18.d1;
+    _22 += _20;
+    _18.data[_22] = a;
+    _20++;
+    if (_20 < i)
+    goto _jump872;
+    _20 = 0;
+    _21++;
+    if (_21 < m.d0)
+    goto _jump872;
+    // End body of loop
+    _a3__a2_rgba _23;
+    if (!e)
+    goto _jump873;
+    double _24 = 91.0;
+    double _25;
+    if (!e)
+    goto _jump874;
+    double _26 = 9.0;
+    _25 = _26;
+    goto _jump875;
+    _jump874:;
+    double _27;
+    // Computing bound for K
+    if (_18.d1 > 0) 
+    goto _jump876;
+    fail_assertion("non-positive loop bound");
+    _jump876:;
+    // Computing bound for L
+    if (u.d0 > 0) 
+    goto _jump877;
+    fail_assertion("non-positive loop bound");
+    _jump877:;
+    // Computing bound for M
+    if (i > 0) 
+    goto _jump878;
+    fail_assertion("non-positive loop bound");
+    _jump878:;
+    _27 = 0;
+    int64_t _28 = 0; // M
+    int64_t _29 = 0; // L
+    int64_t _30 = 0; // K
+    _jump879:; // Begin body of loop
+    double _31 = 28.0;
+    _27 += _31;
+    _28++;
+    if (_28 < i)
+    goto _jump879;
+    _28 = 0;
+    _29++;
+    if (_29 < u.d0)
+    goto _jump879;
+    _29 = 0;
+    _30++;
+    if (_30 < _18.d1)
+    goto _jump879;
+    // End body of loop
+    _25 = _27;
+    _jump875:;
+    bool _32 = _24 == _25;
+    _a3__a2_rgba _33;
+    if (!_32)
+    goto _jump880;
+    _a1__a3__a2_rgba _34;
+    // Computing bound for K
+    _34.d0 = g;
+    if (g > 0) 
+    goto _jump881;
+    fail_assertion("non-positive loop bound");
+    _jump881:;
+    // Computing total size of heap memory to allocate
+    int64_t _35 = 1;
+    _35 *= g;
+    _35 *= sizeof(_a3__a2_rgba);
+    _34.data = jpl_alloc(_35);
+    int64_t _36 = 0; // K
+    _jump882:; // Begin body of loop
+    _a3__a2_rgba _37;
+    // Computing bound for L
+    _37.d0 = b.d1;
+    if (b.d1 > 0) 
+    goto _jump883;
+    fail_assertion("non-positive loop bound");
+    _jump883:;
+    // Computing bound for M
+    _37.d1 = f.d0;
+    if (f.d0 > 0) 
+    goto _jump884;
+    fail_assertion("non-positive loop bound");
+    _jump884:;
+    // Computing bound for N
+    _37.d2 = _18.d1;
+    if (_18.d1 > 0) 
+    goto _jump885;
+    fail_assertion("non-positive loop bound");
+    _jump885:;
+    // Computing total size of heap memory to allocate
+    int64_t _38 = 1;
+    _38 *= b.d1;
+    _38 *= f.d0;
+    _38 *= _18.d1;
+    _38 *= sizeof(_a2_rgba);
+    _37.data = jpl_alloc(_38);
+    int64_t _39 = 0; // N
+    int64_t _40 = 0; // M
+    int64_t _41 = 0; // L
+    _jump886:; // Begin body of loop
+    int64_t _42 = 0;
+    _42 *= _37.d0;
+    _42 += _41;
+    _42 *= _37.d1;
+    _42 += _40;
+    _42 *= _37.d2;
+    _42 += _39;
+    _37.data[_42] = b;
+    _39++;
+    if (_39 < _18.d1)
+    goto _jump886;
+    _39 = 0;
+    _40++;
+    if (_40 < f.d0)
+    goto _jump886;
+    _40 = 0;
+    _41++;
+    if (_41 < b.d1)
+    goto _jump886;
+    // End body of loop
+    int64_t _43 = 0;
+    _43 *= _34.d0;
+    _43 += _36;
+    _34.data[_43] = _37;
+    _36++;
+    if (_36 < g)
+    goto _jump882;
+    // End body of loop
+    if (b.d1 >= 0)
+    goto _jump887;
+    fail_assertion("negative array index");
+    _jump887:;
+    if (b.d1 < _34.d0)
+    goto _jump888;
+    fail_assertion("index too large");
+    _jump888:;
+    int64_t _44 = 0;
+    _44 *= _34.d0;
+    _44 += b.d1;
+    _a3__a2_rgba _45 = _34.data[_44];
+    _33 = _45;
+    goto _jump889;
+    _jump880:;
+    _a3__a2_rgba _46;
+    // Computing bound for K
+    _46.d0 = i;
+    if (i > 0) 
+    goto _jump890;
+    fail_assertion("non-positive loop bound");
+    _jump890:;
+    // Computing bound for L
+    _46.d1 = b.d0;
+    if (b.d0 > 0) 
+    goto _jump891;
+    fail_assertion("non-positive loop bound");
+    _jump891:;
+    // Computing bound for M
+    _46.d2 = o;
+    if (o > 0) 
+    goto _jump892;
+    fail_assertion("non-positive loop bound");
+    _jump892:;
+    // Computing total size of heap memory to allocate
+    int64_t _47 = 1;
+    _47 *= i;
+    _47 *= b.d0;
+    _47 *= o;
+    _47 *= sizeof(_a2_rgba);
+    _46.data = jpl_alloc(_47);
+    int64_t _48 = 0; // M
+    int64_t _49 = 0; // L
+    int64_t _50 = 0; // K
+    _jump893:; // Begin body of loop
+    int64_t _51 = 0;
+    _51 *= _46.d0;
+    _51 += _50;
+    _51 *= _46.d1;
+    _51 += _49;
+    _51 *= _46.d2;
+    _51 += _48;
+    _46.data[_51] = m;
+    _48++;
+    if (_48 < o)
+    goto _jump893;
+    _48 = 0;
+    _49++;
+    if (_49 < b.d0)
+    goto _jump893;
+    _49 = 0;
+    _50++;
+    if (_50 < i)
+    goto _jump893;
+    // End body of loop
+    _33 = _46;
+    _jump889:;
+    _23 = _33;
+    goto _jump894;
+    _jump873:;
+    _a3__a2_rgba _52;
+    // Computing bound for K
+    int64_t _53 = d - m.d0;
+    _52.d0 = _53;
+    if (_53 > 0) 
+    goto _jump895;
+    fail_assertion("non-positive loop bound");
+    _jump895:;
+    // Computing bound for L
+    _52.d1 = g;
+    if (g > 0) 
+    goto _jump896;
+    fail_assertion("non-positive loop bound");
+    _jump896:;
+    // Computing bound for M
+    _52.d2 = f.d1;
+    if (f.d1 > 0) 
+    goto _jump897;
+    fail_assertion("non-positive loop bound");
+    _jump897:;
+    // Computing total size of heap memory to allocate
+    int64_t _54 = 1;
+    _54 *= _53;
+    _54 *= g;
+    _54 *= f.d1;
+    _54 *= sizeof(_a2_rgba);
+    _52.data = jpl_alloc(_54);
+    int64_t _55 = 0; // M
+    int64_t _56 = 0; // L
+    int64_t _57 = 0; // K
+    _jump898:; // Begin body of loop
+    int64_t _58 = 0;
+    _58 *= _52.d0;
+    _58 += _57;
+    _58 *= _52.d1;
+    _58 += _56;
+    _58 *= _52.d2;
+    _58 += _55;
+    _52.data[_58] = m;
+    _55++;
+    if (_55 < f.d1)
+    goto _jump898;
+    _55 = 0;
+    _56++;
+    if (_56 < g)
+    goto _jump898;
+    _56 = 0;
+    _57++;
+    if (_57 < _53)
+    goto _jump898;
+    // End body of loop
+    _23 = _52;
+    _jump894:;
+    int64_t _59 = -f.d1;
+    bool _60 = !e;
+    int64_t _61;
+    if (!_60)
+    goto _jump899;
+    _61 = m.d1;
+    goto _jump900;
+    _jump899:;
+    _61 = b.d1;
+    _jump900:;
+    if (_59 >= 0)
+    goto _jump901;
+    fail_assertion("negative array index");
+    _jump901:;
+    if (_59 < _23.d0)
+    goto _jump902;
+    fail_assertion("index too large");
+    _jump902:;
+    if (_61 >= 0)
+    goto _jump903;
+    fail_assertion("negative array index");
+    _jump903:;
+    if (_61 < _23.d1)
+    goto _jump904;
+    fail_assertion("index too large");
+    _jump904:;
+    if (b.d0 >= 0)
+    goto _jump905;
+    fail_assertion("negative array index");
+    _jump905:;
+    if (b.d0 < _23.d2)
+    goto _jump906;
+    fail_assertion("index too large");
+    _jump906:;
+    int64_t _62 = 0;
+    _62 *= _23.d0;
+    _62 += _59;
+    _62 *= _23.d1;
+    _62 += _61;
+    _62 *= _23.d2;
+    _62 += b.d0;
+    _a2_rgba _63 = _23.data[_62];
+    int64_t _64 = -f.d0;
+    int64_t _65 = o + _64;
+    int64_t _66 = 979;
+    if (_65 >= 0)
+    goto _jump907;
+    fail_assertion("negative array index");
+    _jump907:;
+    if (_65 < f.d0)
+    goto _jump908;
+    fail_assertion("index too large");
+    _jump908:;
+    if (d >= 0)
+    goto _jump909;
+    fail_assertion("negative array index");
+    _jump909:;
+    if (d < f.d1)
+    goto _jump910;
+    fail_assertion("index too large");
+    _jump910:;
+    if (_66 >= 0)
+    goto _jump911;
+    fail_assertion("negative array index");
+    _jump911:;
+    if (_66 < f.d2)
+    goto _jump912;
+    fail_assertion("index too large");
+    _jump912:;
+    int64_t _67 = 0;
+    _67 *= f.d0;
+    _67 += _65;
+    _67 *= f.d1;
+    _67 += d;
+    _67 *= f.d2;
+    _67 += _66;
+    int64_t _68 = f.data[_67];
+    if (_68 >= 0)
+    goto _jump913;
+    fail_assertion("negative array index");
+    _jump913:;
+    if (_68 < _63.d0)
+    goto _jump914;
+    fail_assertion("index too large");
+    _jump914:;
+    if (_18.d1 >= 0)
+    goto _jump915;
+    fail_assertion("negative array index");
+    _jump915:;
+    if (_18.d1 < _63.d1)
+    goto _jump916;
+    fail_assertion("index too large");
+    _jump916:;
+    int64_t _69 = 0;
+    _69 *= _63.d0;
+    _69 += _68;
+    _69 *= _63.d1;
+    _69 += _18.d1;
+    rgba _70 = _63.data[_69];
+    return _70;
+}
+
+void jpl_main(struct args args) {
+    _a2_rgba _0 = read_image("a.png");
+    bool _1 = true;
+    bool _2 = false;
+    bool _3 = _1 != _2;
+    bool _4 = !_3;
+    _a2__a2_bool _5;
+    if (!_4)
+    goto _jump1;
+    _a2__a2_bool _6;
+    // Computing bound for b
+    int64_t _7 = 676;
+    int64_t _8 = -_7;
+    _6.d0 = _8;
+    if (_8 > 0) 
+    goto _jump2;
+    fail_assertion("non-positive loop bound");
+    _jump2:;
+    // Computing bound for c
+    int64_t _9 = 555;
+    _6.d1 = _9;
+    if (_9 > 0) 
+    goto _jump3;
+    fail_assertion("non-positive loop bound");
+    _jump3:;
+    // Computing total size of heap memory to allocate
+    int64_t _10 = 1;
+    _10 *= _8;
+    _10 *= _9;
+    _10 *= sizeof(_a2_bool);
+    _6.data = jpl_alloc(_10);
+    int64_t _11 = 0; // c
+    int64_t _12 = 0; // b
+    _jump4:; // Begin body of loop
+    _a2_bool _13;
+    // Computing bound for d
+    _13.d0 = _12;
+    if (_12 > 0) 
+    goto _jump5;
+    fail_assertion("non-positive loop bound");
+    _jump5:;
+    // Computing bound for e
+    int64_t _14;
+    // Computing bound for d
+    int64_t _15 = 782;
+    if (_15 > 0) 
+    goto _jump6;
+    fail_assertion("non-positive loop bound");
+    _jump6:;
+    // Computing bound for e
+    if (_11 > 0) 
+    goto _jump7;
+    fail_assertion("non-positive loop bound");
+    _jump7:;
+    // Computing bound for f
+    if (_11 > 0) 
+    goto _jump8;
+    fail_assertion("non-positive loop bound");
+    _jump8:;
+    _14 = 0;
+    int64_t _16 = 0; // f
+    int64_t _17 = 0; // e
+    int64_t _18 = 0; // d
+    _jump9:; // Begin body of loop
+    int64_t _19 = 297;
+    _14 += _19;
+    _16++;
+    if (_16 < _11)
+    goto _jump9;
+    _16 = 0;
+    _17++;
+    if (_17 < _11)
+    goto _jump9;
+    _17 = 0;
+    _18++;
+    if (_18 < _15)
+    goto _jump9;
+    // End body of loop
+    _13.d1 = _14;
+    if (_14 > 0) 
+    goto _jump10;
+    fail_assertion("non-positive loop bound");
+    _jump10:;
+    // Computing total size of heap memory to allocate
+    int64_t _20 = 1;
+    _20 *= _12;
+    _20 *= _14;
+    _20 *= sizeof(bool);
+    _13.data = jpl_alloc(_20);
+    int64_t _21 = 0; // e
+    int64_t _22 = 0; // d
+    _jump11:; // Begin body of loop
+    int64_t _23 = 858;
+    bool _24 = _21 == _23;
+    int64_t _25 = 0;
+    _25 *= _13.d0;
+    _25 += _22;
+    _25 *= _13.d1;
+    _25 += _21;
+    _13.data[_25] = _24;
+    _21++;
+    if (_21 < _14)
+    goto _jump11;
+    _21 = 0;
+    _22++;
+    if (_22 < _12)
+    goto _jump11;
+    // End body of loop
+    int64_t _26 = 0;
+    _26 *= _6.d0;
+    _26 += _12;
+    _26 *= _6.d1;
+    _26 += _11;
+    _6.data[_26] = _13;
+    _11++;
+    if (_11 < _9)
+    goto _jump4;
+    _11 = 0;
+    _12++;
+    if (_12 < _8)
+    goto _jump4;
+    // End body of loop
+    _5 = _6;
+    goto _jump12;
+    _jump1:;
+    _a2__a2_bool _27;
+    // Computing bound for b
+    int64_t _28 = 103;
+    _27.d0 = _28;
+    if (_28 > 0) 
+    goto _jump13;
+    fail_assertion("non-positive loop bound");
+    _jump13:;
+    // Computing bound for c
+    bool _29 = false;
+    int64_t _30;
+    if (!_29)
+    goto _jump14;
+    int64_t _31 = 188;
+    int64_t _32 = -_31;
+    _30 = _32;
+    goto _jump15;
+    _jump14:;
+    int64_t _33 = 337;
+    _30 = _33;
+    _jump15:;
+    _27.d1 = _30;
+    if (_30 > 0) 
+    goto _jump16;
+    fail_assertion("non-positive loop bound");
+    _jump16:;
+    // Computing total size of heap memory to allocate
+    int64_t _34 = 1;
+    _34 *= _28;
+    _34 *= _30;
+    _34 *= sizeof(_a2_bool);
+    _27.data = jpl_alloc(_34);
+    int64_t _35 = 0; // c
+    int64_t _36 = 0; // b
+    _jump17:; // Begin body of loop
+    _a2_bool _37;
+    // Computing bound for d
+    int64_t _38 = _36 % _36;
+    _37.d0 = _38;
+    if (_38 > 0) 
+    goto _jump18;
+    fail_assertion("non-positive loop bound");
+    _jump18:;
+    // Computing bound for e
+    _37.d1 = _35;
+    if (_35 > 0) 
+    goto _jump19;
+    fail_assertion("non-positive loop bound");
+    _jump19:;
+    // Computing total size of heap memory to allocate
+    int64_t _39 = 1;
+    _39 *= _38;
+    _39 *= _35;
+    _39 *= sizeof(bool);
+    _37.data = jpl_alloc(_39);
+    int64_t _40 = 0; // e
+    int64_t _41 = 0; // d
+    _jump20:; // Begin body of loop
+    bool _42 = false;
+    int64_t _43 = 0;
+    _43 *= _37.d0;
+    _43 += _41;
+    _43 *= _37.d1;
+    _43 += _40;
+    _37.data[_43] = _42;
+    _40++;
+    if (_40 < _35)
+    goto _jump20;
+    _40 = 0;
+    _41++;
+    if (_41 < _38)
+    goto _jump20;
+    // End body of loop
+    int64_t _44 = 0;
+    _44 *= _27.d0;
+    _44 += _36;
+    _44 *= _27.d1;
+    _44 += _35;
+    _27.data[_44] = _37;
+    _35++;
+    if (_35 < _30)
+    goto _jump17;
+    _35 = 0;
+    _36++;
+    if (_36 < _28)
+    goto _jump17;
+    // End body of loop
+    _5 = _27;
+    _jump12:;
+    bool _45 = false;
+    int64_t _46;
+    if (!_45)
+    goto _jump21;
+    int64_t _47 = 796;
+    _46 = _47;
+    goto _jump22;
+    _jump21:;
+    int64_t _48 = 310;
+    _46 = _48;
+    _jump22:;
+    int64_t _49 = 553;
+    int64_t _50 = -_49;
+    if (_46 >= 0)
+    goto _jump23;
+    fail_assertion("negative array index");
+    _jump23:;
+    if (_46 < _5.d0)
+    goto _jump24;
+    fail_assertion("index too large");
+    _jump24:;
+    if (_50 >= 0)
+    goto _jump25;
+    fail_assertion("negative array index");
+    _jump25:;
+    if (_50 < _5.d1)
+    goto _jump26;
+    fail_assertion("index too large");
+    _jump26:;
+    int64_t _51 = 0;
+    _51 *= _5.d0;
+    _51 += _46;
+    _51 *= _5.d1;
+    _51 += _50;
+    _a2_bool _52 = _5.data[_51];
+    int64_t _53 = 102;
+    int64_t _54 = 765;
+    int64_t _55 = -_54;
+    int64_t _56 = 154;
+    bool _57 = _55 >= _56;
+    bool _58 = true;
+    bool _59 = !_58;
+    bool _60 = _57 == _59;
+    int64_t _61;
+    if (!_60)
+    goto _jump27;
+    int64_t _62 = 25;
+    _61 = _62;
+    goto _jump28;
+    _jump27:;
+    int64_t _64 = 25;
+    int64_t _65 = 876;
+    bool _66 = _64 >= _65;
+    bool _63 = _66;
+    if (0 != _66)
+    goto _jump29;
+    bool _67 = true;
+    bool _68 = !_67;
+    _63 = _68;
+    _jump29:;
+    int64_t _69;
+    if (!_63)
+    goto _jump30;
+    int64_t _70 = 343;
+    _69 = _70;
+    goto _jump31;
+    _jump30:;
+    int64_t _71 = 586;
+    int64_t _72 = -_71;
+    int64_t _73 = 998;
+    int64_t _74 = _72 % _73;
+    _69 = _74;
+    _jump31:;
+    _61 = _69;
+    _jump28:;
+    int64_t _75 = -_61;
+    if (_53 >= 0)
+    goto _jump32;
+    fail_assertion("negative array index");
+    _jump32:;
+    if (_53 < _52.d0)
+    goto _jump33;
+    fail_assertion("index too large");
+    _jump33:;
+    if (_75 >= 0)
+    goto _jump34;
+    fail_assertion("negative array index");
+    _jump34:;
+    if (_75 < _52.d1)
+    goto _jump35;
+    fail_assertion("index too large");
+    _jump35:;
+    int64_t _76 = 0;
+    _76 *= _52.d0;
+    _76 += _53;
+    _76 *= _52.d1;
+    _76 += _75;
+    bool _77 = _52.data[_76];
+    _a2_rgba _78;
+    if (!_77)
+    goto _jump36;
+    _a2__a2__a2_rgba _79;
+    // Computing bound for b
+    int64_t _80;
+    // Computing bound for b
+    int64_t _81 = 369;
+    if (_81 > 0) 
+    goto _jump37;
+    fail_assertion("non-positive loop bound");
+    _jump37:;
+    _80 = 0;
+    int64_t _82 = 0; // b
+    _jump38:; // Begin body of loop
+    _80 += _82;
+    _82++;
+    if (_82 < _81)
+    goto _jump38;
+    // End body of loop
+    _79.d0 = _80;
+    if (_80 > 0) 
+    goto _jump39;
+    fail_assertion("non-positive loop bound");
+    _jump39:;
+    // Computing bound for c
+    int64_t _83 = 927;
+    int64_t _84 = 495;
+    int64_t _85 = _83 + _84;
+    _79.d1 = _85;
+    if (_85 > 0) 
+    goto _jump40;
+    fail_assertion("non-positive loop bound");
+    _jump40:;
+    // Computing total size of heap memory to allocate
+    int64_t _86 = 1;
+    _86 *= _80;
+    _86 *= _85;
+    _86 *= sizeof(_a2__a2_rgba);
+    _79.data = jpl_alloc(_86);
+    int64_t _87 = 0; // c
+    int64_t _88 = 0; // b
+    _jump41:; // Begin body of loop
+    _a2__a2_rgba _89;
+    // Computing bound for d
+    _89.d0 = _88;
+    if (_88 > 0) 
+    goto _jump42;
+    fail_assertion("non-positive loop bound");
+    _jump42:;
+    // Computing bound for e
+    int64_t _90 = 512;
+    int64_t _91 = _87 - _90;
+    _89.d1 = _91;
+    if (_91 > 0) 
+    goto _jump43;
+    fail_assertion("non-positive loop bound");
+    _jump43:;
+    // Computing total size of heap memory to allocate
+    int64_t _92 = 1;
+    _92 *= _88;
+    _92 *= _91;
+    _92 *= sizeof(_a2_rgba);
+    _89.data = jpl_alloc(_92);
+    int64_t _93 = 0; // e
+    int64_t _94 = 0; // d
+    _jump44:; // Begin body of loop
+    int64_t _95 = 0;
+    _95 *= _89.d0;
+    _95 += _94;
+    _95 *= _89.d1;
+    _95 += _93;
+    _89.data[_95] = _0;
+    _93++;
+    if (_93 < _91)
+    goto _jump44;
+    _93 = 0;
+    _94++;
+    if (_94 < _88)
+    goto _jump44;
+    // End body of loop
+    int64_t _96 = 0;
+    _96 *= _79.d0;
+    _96 += _88;
+    _96 *= _79.d1;
+    _96 += _87;
+    _79.data[_96] = _89;
+    _87++;
+    if (_87 < _85)
+    goto _jump41;
+    _87 = 0;
+    _88++;
+    if (_88 < _80)
+    goto _jump41;
+    // End body of loop
+    int64_t _97;
+    // Computing bound for b
+    bool _98 = false;
+    int64_t _99;
+    if (!_98)
+    goto _jump45;
+    int64_t _100 = 332;
+    _99 = _100;
+    goto _jump46;
+    _jump45:;
+    int64_t _101 = 311;
+    _99 = _101;
+    _jump46:;
+    if (_99 > 0) 
+    goto _jump47;
+    fail_assertion("non-positive loop bound");
+    _jump47:;
+    // Computing bound for c
+    int64_t _102 = 361;
+    int64_t _103 = -_102;
+    int64_t _104 = -_103;
+    if (_104 > 0) 
+    goto _jump48;
+    fail_assertion("non-positive loop bound");
+    _jump48:;
+    _97 = 0;
+    int64_t _105 = 0; // c
+    int64_t _106 = 0; // b
+    _jump49:; // Begin body of loop
+    int64_t _107;
+    // Computing bound for d
+    if (_106 > 0) 
+    goto _jump50;
+    fail_assertion("non-positive loop bound");
+    _jump50:;
+    // Computing bound for e
+    int64_t _108 = 293;
+    if (_108 > 0) 
+    goto _jump51;
+    fail_assertion("non-positive loop bound");
+    _jump51:;
+    _107 = 0;
+    int64_t _109 = 0; // e
+    int64_t _110 = 0; // d
+    _jump52:; // Begin body of loop
+    int64_t _111 = -_110;
+    _107 += _111;
+    _109++;
+    if (_109 < _108)
+    goto _jump52;
+    _109 = 0;
+    _110++;
+    if (_110 < _106)
+    goto _jump52;
+    // End body of loop
+    _97 += _107;
+    _105++;
+    if (_105 < _104)
+    goto _jump49;
+    _105 = 0;
+    _106++;
+    if (_106 < _99)
+    goto _jump49;
+    // End body of loop
+    int64_t _112;
+    // Computing bound for b
+    int64_t _113 = 226;
+    if (_113 > 0) 
+    goto _jump53;
+    fail_assertion("non-positive loop bound");
+    _jump53:;
+    // Computing bound for c
+    int64_t _114 = 616;
+    if (_114 > 0) 
+    goto _jump54;
+    fail_assertion("non-positive loop bound");
+    _jump54:;
+    // Computing bound for d
+    int64_t _115;
+    // Computing bound for b
+    int64_t _116 = 27;
+    int64_t _117 = -_116;
+    if (_117 > 0) 
+    goto _jump55;
+    fail_assertion("non-positive loop bound");
+    _jump55:;
+    _115 = 0;
+    int64_t _118 = 0; // b
+    _jump56:; // Begin body of loop
+    int64_t _119 = 497;
+    _115 += _119;
+    _118++;
+    if (_118 < _117)
+    goto _jump56;
+    // End body of loop
+    if (_115 > 0) 
+    goto _jump57;
+    fail_assertion("non-positive loop bound");
+    _jump57:;
+    _112 = 0;
+    int64_t _120 = 0; // d
+    int64_t _121 = 0; // c
+    int64_t _122 = 0; // b
+    _jump58:; // Begin body of loop
+    _a3_int64_t _123;
+    // Computing bound for e
+    int64_t _124 = -_122;
+    _123.d0 = _124;
+    if (_124 > 0) 
+    goto _jump59;
+    fail_assertion("non-positive loop bound");
+    _jump59:;
+    // Computing bound for f
+    int64_t _125 = 838;
+    int64_t _126 = _125 - _120;
+    _123.d1 = _126;
+    if (_126 > 0) 
+    goto _jump60;
+    fail_assertion("non-positive loop bound");
+    _jump60:;
+    // Computing bound for g
+    int64_t _127;
+    // Computing bound for e
+    if (_122 > 0) 
+    goto _jump61;
+    fail_assertion("non-positive loop bound");
+    _jump61:;
+    // Computing bound for f
+    if (_120 > 0) 
+    goto _jump62;
+    fail_assertion("non-positive loop bound");
+    _jump62:;
+    _127 = 0;
+    int64_t _128 = 0; // f
+    int64_t _129 = 0; // e
+    _jump63:; // Begin body of loop
+    _127 += _120;
+    _128++;
+    if (_128 < _120)
+    goto _jump63;
+    _128 = 0;
+    _129++;
+    if (_129 < _122)
+    goto _jump63;
+    // End body of loop
+    _123.d2 = _127;
+    if (_127 > 0) 
+    goto _jump64;
+    fail_assertion("non-positive loop bound");
+    _jump64:;
+    // Computing total size of heap memory to allocate
+    int64_t _130 = 1;
+    _130 *= _124;
+    _130 *= _126;
+    _130 *= _127;
+    _130 *= sizeof(int64_t);
+    _123.data = jpl_alloc(_130);
+    int64_t _131 = 0; // g
+    int64_t _132 = 0; // f
+    int64_t _133 = 0; // e
+    _jump65:; // Begin body of loop
+    int64_t _134 = 0;
+    _134 *= _123.d0;
+    _134 += _133;
+    _134 *= _123.d1;
+    _134 += _132;
+    _134 *= _123.d2;
+    _134 += _131;
+    _123.data[_134] = _131;
+    _131++;
+    if (_131 < _127)
+    goto _jump65;
+    _131 = 0;
+    _132++;
+    if (_132 < _126)
+    goto _jump65;
+    _132 = 0;
+    _133++;
+    if (_133 < _124)
+    goto _jump65;
+    // End body of loop
+    int64_t _135 = 278;
+    int64_t _136 = _135 * _120;
+    if (_136 >= 0)
+    goto _jump66;
+    fail_assertion("negative array index");
+    _jump66:;
+    if (_136 < _123.d0)
+    goto _jump67;
+    fail_assertion("index too large");
+    _jump67:;
+    if (_120 >= 0)
+    goto _jump68;
+    fail_assertion("negative array index");
+    _jump68:;
+    if (_120 < _123.d1)
+    goto _jump69;
+    fail_assertion("index too large");
+    _jump69:;
+    if (_120 >= 0)
+    goto _jump70;
+    fail_assertion("negative array index");
+    _jump70:;
+    if (_120 < _123.d2)
+    goto _jump71;
+    fail_assertion("index too large");
+    _jump71:;
+    int64_t _137 = 0;
+    _137 *= _123.d0;
+    _137 += _136;
+    _137 *= _123.d1;
+    _137 += _120;
+    _137 *= _123.d2;
+    _137 += _120;
+    int64_t _138 = _123.data[_137];
+    _112 += _138;
+    _120++;
+    if (_120 < _115)
+    goto _jump58;
+    _120 = 0;
+    _121++;
+    if (_121 < _114)
+    goto _jump58;
+    _121 = 0;
+    _122++;
+    if (_122 < _113)
+    goto _jump58;
+    // End body of loop
+    if (_97 >= 0)
+    goto _jump72;
+    fail_assertion("negative array index");
+    _jump72:;
+    if (_97 < _79.d0)
+    goto _jump73;
+    fail_assertion("index too large");
+    _jump73:;
+    if (_112 >= 0)
+    goto _jump74;
+    fail_assertion("negative array index");
+    _jump74:;
+    if (_112 < _79.d1)
+    goto _jump75;
+    fail_assertion("index too large");
+    _jump75:;
+    int64_t _139 = 0;
+    _139 *= _79.d0;
+    _139 += _97;
+    _139 *= _79.d1;
+    _139 += _112;
+    _a2__a2_rgba _140 = _79.data[_139];
+    int64_t _141 = 483;
+    _a1__a1_int64_t _142;
+    // Computing bound for b
+    int64_t _143 = 222;
+    int64_t _144 = -_143;
+    _142.d0 = _144;
+    if (_144 > 0) 
+    goto _jump76;
+    fail_assertion("non-positive loop bound");
+    _jump76:;
+    // Computing total size of heap memory to allocate
+    int64_t _145 = 1;
+    _145 *= _144;
+    _145 *= sizeof(_a1_int64_t);
+    _142.data = jpl_alloc(_145);
+    int64_t _146 = 0; // b
+    _jump77:; // Begin body of loop
+    _a1_int64_t _147;
+    // Computing bound for c
+    _147.d0 = _146;
+    if (_146 > 0) 
+    goto _jump78;
+    fail_assertion("non-positive loop bound");
+    _jump78:;
+    // Computing total size of heap memory to allocate
+    int64_t _148 = 1;
+    _148 *= _146;
+    _148 *= sizeof(int64_t);
+    _147.data = jpl_alloc(_148);
+    int64_t _149 = 0; // c
+    _jump79:; // Begin body of loop
+    int64_t _150 = 228;
+    int64_t _151 = 0;
+    _151 *= _147.d0;
+    _151 += _149;
+    _147.data[_151] = _150;
+    _149++;
+    if (_149 < _146)
+    goto _jump79;
+    // End body of loop
+    int64_t _152 = 0;
+    _152 *= _142.d0;
+    _152 += _146;
+    _142.data[_152] = _147;
+    _146++;
+    if (_146 < _144)
+    goto _jump77;
+    // End body of loop
+    int64_t _153;
+    // Computing bound for b
+    int64_t _154;
+    // Computing bound for b
+    int64_t _155 = 429;
+    if (_155 > 0) 
+    goto _jump80;
+    fail_assertion("non-positive loop bound");
+    _jump80:;
+    // Computing bound for c
+    int64_t _156 = 864;
+    if (_156 > 0) 
+    goto _jump81;
+    fail_assertion("non-positive loop bound");
+    _jump81:;
+    // Computing bound for d
+    int64_t _157 = 492;
+    if (_157 > 0) 
+    goto _jump82;
+    fail_assertion("non-positive loop bound");
+    _jump82:;
+    _154 = 0;
+    int64_t _158 = 0; // d
+    int64_t _159 = 0; // c
+    int64_t _160 = 0; // b
+    _jump83:; // Begin body of loop
+    _154 += _159;
+    _158++;
+    if (_158 < _157)
+    goto _jump83;
+    _158 = 0;
+    _159++;
+    if (_159 < _156)
+    goto _jump83;
+    _159 = 0;
+    _160++;
+    if (_160 < _155)
+    goto _jump83;
+    // End body of loop
+    if (_154 > 0) 
+    goto _jump84;
+    fail_assertion("non-positive loop bound");
+    _jump84:;
+    _153 = 0;
+    int64_t _161 = 0; // b
+    _jump85:; // Begin body of loop
+    int64_t _162 = 942;
+    int64_t _163 = -_162;
+    _153 += _163;
+    _161++;
+    if (_161 < _154)
+    goto _jump85;
+    // End body of loop
+    if (_153 >= 0)
+    goto _jump86;
+    fail_assertion("negative array index");
+    _jump86:;
+    if (_153 < _142.d0)
+    goto _jump87;
+    fail_assertion("index too large");
+    _jump87:;
+    int64_t _164 = 0;
+    _164 *= _142.d0;
+    _164 += _153;
+    _a1_int64_t _165 = _142.data[_164];
+    int64_t _166;
+    // Computing bound for b
+    int64_t _167 = 682;
+    int64_t _168 = -_167;
+    if (_168 > 0) 
+    goto _jump88;
+    fail_assertion("non-positive loop bound");
+    _jump88:;
+    _166 = 0;
+    int64_t _169 = 0; // b
+    _jump89:; // Begin body of loop
+    int64_t _170;
+    // Computing bound for c
+    if (_169 > 0) 
+    goto _jump90;
+    fail_assertion("non-positive loop bound");
+    _jump90:;
+    _170 = 0;
+    int64_t _171 = 0; // c
+    _jump91:; // Begin body of loop
+    _170 += _171;
+    _171++;
+    if (_171 < _169)
+    goto _jump91;
+    // End body of loop
+    int64_t _172 = _169 * _170;
+    _166 += _172;
+    _169++;
+    if (_169 < _168)
+    goto _jump89;
+    // End body of loop
+    if (_166 >= 0)
+    goto _jump92;
+    fail_assertion("negative array index");
+    _jump92:;
+    if (_166 < _165.d0)
+    goto _jump93;
+    fail_assertion("index too large");
+    _jump93:;
+    int64_t _173 = 0;
+    _173 *= _165.d0;
+    _173 += _166;
+    int64_t _174 = _165.data[_173];
+    int64_t _175 = -_174;
+    if (_141 >= 0)
+    goto _jump94;
+    fail_assertion("negative array index");
+    _jump94:;
+    if (_141 < _140.d0)
+    goto _jump95;
+    fail_assertion("index too large");
+    _jump95:;
+    if (_175 >= 0)
+    goto _jump96;
+    fail_assertion("negative array index");
+    _jump96:;
+    if (_175 < _140.d1)
+    goto _jump97;
+    fail_assertion("index too large");
+    _jump97:;
+    int64_t _176 = 0;
+    _176 *= _140.d0;
+    _176 += _141;
+    _176 *= _140.d1;
+    _176 += _175;
+    _a2_rgba _177 = _140.data[_176];
+    _78 = _177;
+    goto _jump98;
+    _jump36:;
+    _78 = _0;
+    _jump98:;
+    _a1_bool _179;
+    // Computing bound for e
+    _179.d0 = _78.d0;
+    if (_78.d0 > 0) 
+    goto _jump99;
+    fail_assertion("non-positive loop bound");
+    _jump99:;
+    // Computing total size of heap memory to allocate
+    int64_t _180 = 1;
+    _180 *= _78.d0;
+    _180 *= sizeof(bool);
+    _179.data = jpl_alloc(_180);
+    int64_t _181 = 0; // e
+    _jump100:; // Begin body of loop
+    bool _183 = true;
+    bool _182 = _183;
+    if (0 != _183)
+    goto _jump101;
+    bool _184 = true;
+    _182 = _184;
+    _jump101:;
+    int64_t _185 = 0;
+    _185 *= _179.d0;
+    _185 += _181;
+    _179.data[_185] = _182;
+    _181++;
+    if (_181 < _78.d0)
+    goto _jump100;
+    // End body of loop
+    int64_t _186 = 171;
+    int64_t _187 = 732;
+    int64_t _188 = _186 - _187;
+    int64_t _189 = -_188;
+    if (_189 >= 0)
+    goto _jump102;
+    fail_assertion("negative array index");
+    _jump102:;
+    if (_189 < _179.d0)
+    goto _jump103;
+    fail_assertion("index too large");
+    _jump103:;
+    int64_t _190 = 0;
+    _190 *= _179.d0;
+    _190 += _189;
+    bool _191 = _179.data[_190];
+    bool _192;
+    if (!_191)
+    goto _jump104;
+    _a2_bool _193;
+    // Computing bound for e
+    int64_t _194 = 68;
+    _193.d0 = _194;
+    if (_194 > 0) 
+    goto _jump105;
+    fail_assertion("non-positive loop bound");
+    _jump105:;
+    // Computing bound for f
+    _193.d1 = _78.d0;
+    if (_78.d0 > 0) 
+    goto _jump106;
+    fail_assertion("non-positive loop bound");
+    _jump106:;
+    // Computing total size of heap memory to allocate
+    int64_t _195 = 1;
+    _195 *= _194;
+    _195 *= _78.d0;
+    _195 *= sizeof(bool);
+    _193.data = jpl_alloc(_195);
+    int64_t _196 = 0; // f
+    int64_t _197 = 0; // e
+    _jump107:; // Begin body of loop
+    int64_t _198 = 106;
+    bool _199 = _198 < _196;
+    int64_t _200 = 0;
+    _200 *= _193.d0;
+    _200 += _197;
+    _200 *= _193.d1;
+    _200 += _196;
+    _193.data[_200] = _199;
+    _196++;
+    if (_196 < _78.d0)
+    goto _jump107;
+    _196 = 0;
+    _197++;
+    if (_197 < _194)
+    goto _jump107;
+    // End body of loop
+    int64_t _201;
+    // Computing bound for e
+    int64_t _202 = -_78.d1;
+    if (_202 > 0) 
+    goto _jump108;
+    fail_assertion("non-positive loop bound");
+    _jump108:;
+    // Computing bound for f
+    int64_t _203 = _78.d0 % _78.d0;
+    if (_203 > 0) 
+    goto _jump109;
+    fail_assertion("non-positive loop bound");
+    _jump109:;
+    // Computing bound for g
+    int64_t _204 = 304;
+    int64_t _205 = -_204;
+    if (_205 > 0) 
+    goto _jump110;
+    fail_assertion("non-positive loop bound");
+    _jump110:;
+    _201 = 0;
+    int64_t _206 = 0; // g
+    int64_t _207 = 0; // f
+    int64_t _208 = 0; // e
+    _jump111:; // Begin body of loop
+    bool _209 = true;
+    int64_t _210;
+    if (!_209)
+    goto _jump112;
+    _210 = _78.d0;
+    goto _jump113;
+    _jump112:;
+    _210 = _208;
+    _jump113:;
+    _201 += _210;
+    _206++;
+    if (_206 < _205)
+    goto _jump111;
+    _206 = 0;
+    _207++;
+    if (_207 < _203)
+    goto _jump111;
+    _207 = 0;
+    _208++;
+    if (_208 < _202)
+    goto _jump111;
+    // End body of loop
+    int64_t _211 = 94;
+    if (_201 >= 0)
+    goto _jump114;
+    fail_assertion("negative array index");
+    _jump114:;
+    if (_201 < _193.d0)
+    goto _jump115;
+    fail_assertion("index too large");
+    _jump115:;
+    if (_211 >= 0)
+    goto _jump116;
+    fail_assertion("negative array index");
+    _jump116:;
+    if (_211 < _193.d1)
+    goto _jump117;
+    fail_assertion("index too large");
+    _jump117:;
+    int64_t _212 = 0;
+    _212 *= _193.d0;
+    _212 += _201;
+    _212 *= _193.d1;
+    _212 += _211;
+    bool _213 = _193.data[_212];
+    _192 = _213;
+    goto _jump118;
+    _jump104:;
+    bool _214 = true;
+    _192 = _214;
+    _jump118:;
+    bool _215;
+    if (!_192)
+    goto _jump119;
+    _a2_bool _216;
+    // Computing bound for e
+    _216.d0 = _78.d0;
+    if (_78.d0 > 0) 
+    goto _jump120;
+    fail_assertion("non-positive loop bound");
+    _jump120:;
+    // Computing bound for f
+    int64_t _217;
+    // Computing bound for e
+    int64_t _218 = _78.d1 + _78.d0;
+    if (_218 > 0) 
+    goto _jump121;
+    fail_assertion("non-positive loop bound");
+    _jump121:;
+    // Computing bound for f
+    bool _219 = false;
+    int64_t _220;
+    if (!_219)
+    goto _jump122;
+    _220 = _78.d1;
+    goto _jump123;
+    _jump122:;
+    _220 = _78.d1;
+    _jump123:;
+    if (_220 > 0) 
+    goto _jump124;
+    fail_assertion("non-positive loop bound");
+    _jump124:;
+    _217 = 0;
+    int64_t _221 = 0; // f
+    int64_t _222 = 0; // e
+    _jump125:; // Begin body of loop
+    _217 += _78.d0;
+    _221++;
+    if (_221 < _220)
+    goto _jump125;
+    _221 = 0;
+    _222++;
+    if (_222 < _218)
+    goto _jump125;
+    // End body of loop
+    _216.d1 = _217;
+    if (_217 > 0) 
+    goto _jump126;
+    fail_assertion("non-positive loop bound");
+    _jump126:;
+    // Computing total size of heap memory to allocate
+    int64_t _223 = 1;
+    _223 *= _78.d0;
+    _223 *= _217;
+    _223 *= sizeof(bool);
+    _216.data = jpl_alloc(_223);
+    int64_t _224 = 0; // f
+    int64_t _225 = 0; // e
+    _jump127:; // Begin body of loop
+    bool _227 = false;
+    bool _226 = _227;
+    if (0 == _227)
+    goto _jump128;
+    double _228 = 14.0;
+    double _229 = 42.0;
+    bool _230 = _228 <= _229;
+    _226 = _230;
+    _jump128:;
+    int64_t _231 = 0;
+    _231 *= _216.d0;
+    _231 += _225;
+    _231 *= _216.d1;
+    _231 += _224;
+    _216.data[_231] = _226;
+    _224++;
+    if (_224 < _217)
+    goto _jump127;
+    _224 = 0;
+    _225++;
+    if (_225 < _78.d0)
+    goto _jump127;
+    // End body of loop
+    _a3_int64_t _232;
+    // Computing bound for e
+    int64_t _233 = 58;
+    _232.d0 = _233;
+    if (_233 > 0) 
+    goto _jump129;
+    fail_assertion("non-positive loop bound");
+    _jump129:;
+    // Computing bound for f
+    int64_t _234 = 988;
+    _232.d1 = _234;
+    if (_234 > 0) 
+    goto _jump130;
+    fail_assertion("non-positive loop bound");
+    _jump130:;
+    // Computing bound for g
+    int64_t _235 = _78.d1 / _78.d1;
+    _232.d2 = _235;
+    if (_235 > 0) 
+    goto _jump131;
+    fail_assertion("non-positive loop bound");
+    _jump131:;
+    // Computing total size of heap memory to allocate
+    int64_t _236 = 1;
+    _236 *= _233;
+    _236 *= _234;
+    _236 *= _235;
+    _236 *= sizeof(int64_t);
+    _232.data = jpl_alloc(_236);
+    int64_t _237 = 0; // g
+    int64_t _238 = 0; // f
+    int64_t _239 = 0; // e
+    _jump132:; // Begin body of loop
+    int64_t _240 = 178;
+    int64_t _241 = 0;
+    _241 *= _232.d0;
+    _241 += _239;
+    _241 *= _232.d1;
+    _241 += _238;
+    _241 *= _232.d2;
+    _241 += _237;
+    _232.data[_241] = _240;
+    _237++;
+    if (_237 < _235)
+    goto _jump132;
+    _237 = 0;
+    _238++;
+    if (_238 < _234)
+    goto _jump132;
+    _238 = 0;
+    _239++;
+    if (_239 < _233)
+    goto _jump132;
+    // End body of loop
+    int64_t _242 = -_78.d1;
+    int64_t _243 = 149;
+    int64_t _244 = _242 / _243;
+    int64_t _245 = 204;
+    int64_t _246 = 141;
+    if (_244 >= 0)
+    goto _jump133;
+    fail_assertion("negative array index");
+    _jump133:;
+    if (_244 < _232.d0)
+    goto _jump134;
+    fail_assertion("index too large");
+    _jump134:;
+    if (_245 >= 0)
+    goto _jump135;
+    fail_assertion("negative array index");
+    _jump135:;
+    if (_245 < _232.d1)
+    goto _jump136;
+    fail_assertion("index too large");
+    _jump136:;
+    if (_246 >= 0)
+    goto _jump137;
+    fail_assertion("negative array index");
+    _jump137:;
+    if (_246 < _232.d2)
+    goto _jump138;
+    fail_assertion("index too large");
+    _jump138:;
+    int64_t _247 = 0;
+    _247 *= _232.d0;
+    _247 += _244;
+    _247 *= _232.d1;
+    _247 += _245;
+    _247 *= _232.d2;
+    _247 += _246;
+    int64_t _248 = _232.data[_247];
+    if (_248 >= 0)
+    goto _jump139;
+    fail_assertion("negative array index");
+    _jump139:;
+    if (_248 < _216.d0)
+    goto _jump140;
+    fail_assertion("index too large");
+    _jump140:;
+    if (_78.d1 >= 0)
+    goto _jump141;
+    fail_assertion("negative array index");
+    _jump141:;
+    if (_78.d1 < _216.d1)
+    goto _jump142;
+    fail_assertion("index too large");
+    _jump142:;
+    int64_t _249 = 0;
+    _249 *= _216.d0;
+    _249 += _248;
+    _249 *= _216.d1;
+    _249 += _78.d1;
+    bool _250 = _216.data[_249];
+    _215 = _250;
+    goto _jump143;
+    _jump119:;
+    int64_t _251 = 716;
+    int64_t _252 = -_251;
+    bool _253 = _78.d1 != _252;
+    _215 = _253;
+    _jump143:;
+    bool _254;
+    if (!_215)
+    goto _jump144;
+    bool _255 = false;
+    _254 = _255;
+    goto _jump145;
+    _jump144:;
+    bool _256 = false;
+    bool _257 = !_256;
+    bool _258;
+    if (!_257)
+    goto _jump146;
+    bool _260 = true;
+    bool _259 = _260;
+    if (0 != _260)
+    goto _jump147;
+    bool _261 = true;
+    _259 = _261;
+    _jump147:;
+    bool _262;
+    if (!_259)
+    goto _jump148;
+    bool _263 = true;
+    bool _264 = !_263;
+    _262 = _264;
+    goto _jump149;
+    _jump148:;
+    bool _265 = false;
+    bool _266 = !_265;
+    _262 = _266;
+    _jump149:;
+    _258 = _262;
+    goto _jump150;
+    _jump146:;
+    bool _267 = false;
+    bool _268;
+    if (!_267)
+    goto _jump151;
+    bool _269 = false;
+    _268 = _269;
+    goto _jump152;
+    _jump151:;
+    bool _270 = true;
+    bool _271 = !_270;
+    _268 = _271;
+    _jump152:;
+    _258 = _268;
+    _jump150:;
+    bool _272;
+    if (!_258)
+    goto _jump153;
+    _a2_bool _273;
+    // Computing bound for e
+    int64_t _274;
+    // Computing bound for e
+    if (_78.d0 > 0) 
+    goto _jump154;
+    fail_assertion("non-positive loop bound");
+    _jump154:;
+    // Computing bound for f
+    if (_78.d0 > 0) 
+    goto _jump155;
+    fail_assertion("non-positive loop bound");
+    _jump155:;
+    // Computing bound for g
+    int64_t _275 = 408;
+    if (_275 > 0) 
+    goto _jump156;
+    fail_assertion("non-positive loop bound");
+    _jump156:;
+    _274 = 0;
+    int64_t _276 = 0; // g
+    int64_t _277 = 0; // f
+    int64_t _278 = 0; // e
+    _jump157:; // Begin body of loop
+    _274 += _78.d0;
+    _276++;
+    if (_276 < _275)
+    goto _jump157;
+    _276 = 0;
+    _277++;
+    if (_277 < _78.d0)
+    goto _jump157;
+    _277 = 0;
+    _278++;
+    if (_278 < _78.d0)
+    goto _jump157;
+    // End body of loop
+    _273.d0 = _274;
+    if (_274 > 0) 
+    goto _jump158;
+    fail_assertion("non-positive loop bound");
+    _jump158:;
+    // Computing bound for f
+    _273.d1 = _78.d0;
+    if (_78.d0 > 0) 
+    goto _jump159;
+    fail_assertion("non-positive loop bound");
+    _jump159:;
+    // Computing total size of heap memory to allocate
+    int64_t _279 = 1;
+    _279 *= _274;
+    _279 *= _78.d0;
+    _279 *= sizeof(bool);
+    _273.data = jpl_alloc(_279);
+    int64_t _280 = 0; // f
+    int64_t _281 = 0; // e
+    _jump160:; // Begin body of loop
+    bool _282 = true;
+    bool _283;
+    if (!_282)
+    goto _jump161;
+    bool _284 = true;
+    _283 = _284;
+    goto _jump162;
+    _jump161:;
+    bool _285 = false;
+    _283 = _285;
+    _jump162:;
+    int64_t _286 = 0;
+    _286 *= _273.d0;
+    _286 += _281;
+    _286 *= _273.d1;
+    _286 += _280;
+    _273.data[_286] = _283;
+    _280++;
+    if (_280 < _78.d0)
+    goto _jump160;
+    _280 = 0;
+    _281++;
+    if (_281 < _274)
+    goto _jump160;
+    // End body of loop
+    if (_78.d0 >= 0)
+    goto _jump163;
+    fail_assertion("negative array index");
+    _jump163:;
+    if (_78.d0 < _273.d0)
+    goto _jump164;
+    fail_assertion("index too large");
+    _jump164:;
+    if (_78.d1 >= 0)
+    goto _jump165;
+    fail_assertion("negative array index");
+    _jump165:;
+    if (_78.d1 < _273.d1)
+    goto _jump166;
+    fail_assertion("index too large");
+    _jump166:;
+    int64_t _287 = 0;
+    _287 *= _273.d0;
+    _287 += _78.d0;
+    _287 *= _273.d1;
+    _287 += _78.d1;
+    bool _288 = _273.data[_287];
+    _272 = _288;
+    goto _jump167;
+    _jump153:;
+    bool _290 = false;
+    bool _289 = _290;
+    if (0 == _290)
+    goto _jump168;
+    bool _291 = _78.d1 != _78.d1;
+    _289 = _291;
+    _jump168:;
+    bool _292;
+    if (!_289)
+    goto _jump169;
+    bool _294 = true;
+    bool _293 = _294;
+    if (0 == _294)
+    goto _jump170;
+    bool _295 = true;
+    _293 = _295;
+    _jump170:;
+    _292 = _293;
+    goto _jump171;
+    _jump169:;
+    bool _296 = false;
+    int64_t _297 = 680;
+    int64_t _298 = 339;
+    bool _299 = _297 > _298;
+    bool _300 = _296 == _299;
+    _292 = _300;
+    _jump171:;
+    _272 = _292;
+    _jump167:;
+    bool _301;
+    if (!_272)
+    goto _jump172;
+    bool _303 = _78.d1 != _78.d1;
+    bool _302 = _303;
+    if (0 == _303)
+    goto _jump173;
+    bool _306 = true;
+    bool _305 = _306;
+    if (0 == _306)
+    goto _jump174;
+    bool _307 = true;
+    _305 = _307;
+    _jump174:;
+    bool _304 = _305;
+    if (0 == _305)
+    goto _jump175;
+    bool _308 = true;
+    bool _309 = !_308;
+    _304 = _309;
+    _jump175:;
+    _302 = _304;
+    _jump173:;
+    _301 = _302;
+    goto _jump176;
+    _jump172:;
+    _a3_bool _311;
+    // Computing bound for e
+    _311.d0 = _78.d0;
+    if (_78.d0 > 0) 
+    goto _jump177;
+    fail_assertion("non-positive loop bound");
+    _jump177:;
+    // Computing bound for f
+    int64_t _312 = 4;
+    _311.d1 = _312;
+    if (_312 > 0) 
+    goto _jump178;
+    fail_assertion("non-positive loop bound");
+    _jump178:;
+    // Computing bound for g
+    _311.d2 = _78.d0;
+    if (_78.d0 > 0) 
+    goto _jump179;
+    fail_assertion("non-positive loop bound");
+    _jump179:;
+    // Computing total size of heap memory to allocate
+    int64_t _313 = 1;
+    _313 *= _78.d0;
+    _313 *= _312;
+    _313 *= _78.d0;
+    _313 *= sizeof(bool);
+    _311.data = jpl_alloc(_313);
+    int64_t _314 = 0; // g
+    int64_t _315 = 0; // f
+    int64_t _316 = 0; // e
+    _jump180:; // Begin body of loop
+    bool _317 = _316 == _316;
+    int64_t _318 = 0;
+    _318 *= _311.d0;
+    _318 += _316;
+    _318 *= _311.d1;
+    _318 += _315;
+    _318 *= _311.d2;
+    _318 += _314;
+    _311.data[_318] = _317;
+    _314++;
+    if (_314 < _78.d0)
+    goto _jump180;
+    _314 = 0;
+    _315++;
+    if (_315 < _312)
+    goto _jump180;
+    _315 = 0;
+    _316++;
+    if (_316 < _78.d0)
+    goto _jump180;
+    // End body of loop
+    int64_t _319 = 489;
+    int64_t _320 = _319 * _78.d1;
+    int64_t _321 = 918;
+    int64_t _322 = -_78.d0;
+    int64_t _323 = _321 * _322;
+    int64_t _324;
+    // Computing bound for e
+    int64_t _325;
+    // Computing bound for e
+    int64_t _326 = 255;
+    if (_326 > 0) 
+    goto _jump181;
+    fail_assertion("non-positive loop bound");
+    _jump181:;
+    _325 = 0;
+    int64_t _327 = 0; // e
+    _jump182:; // Begin body of loop
+    _325 += _78.d1;
+    _327++;
+    if (_327 < _326)
+    goto _jump182;
+    // End body of loop
+    if (_325 > 0) 
+    goto _jump183;
+    fail_assertion("non-positive loop bound");
+    _jump183:;
+    // Computing bound for f
+    int64_t _328 = 790;
+    if (_328 > 0) 
+    goto _jump184;
+    fail_assertion("non-positive loop bound");
+    _jump184:;
+    // Computing bound for g
+    if (_78.d1 > 0) 
+    goto _jump185;
+    fail_assertion("non-positive loop bound");
+    _jump185:;
+    _324 = 0;
+    int64_t _329 = 0; // g
+    int64_t _330 = 0; // f
+    int64_t _331 = 0; // e
+    _jump186:; // Begin body of loop
+    _324 += _78.d0;
+    _329++;
+    if (_329 < _78.d1)
+    goto _jump186;
+    _329 = 0;
+    _330++;
+    if (_330 < _328)
+    goto _jump186;
+    _330 = 0;
+    _331++;
+    if (_331 < _325)
+    goto _jump186;
+    // End body of loop
+    if (_320 >= 0)
+    goto _jump187;
+    fail_assertion("negative array index");
+    _jump187:;
+    if (_320 < _311.d0)
+    goto _jump188;
+    fail_assertion("index too large");
+    _jump188:;
+    if (_323 >= 0)
+    goto _jump189;
+    fail_assertion("negative array index");
+    _jump189:;
+    if (_323 < _311.d1)
+    goto _jump190;
+    fail_assertion("index too large");
+    _jump190:;
+    if (_324 >= 0)
+    goto _jump191;
+    fail_assertion("negative array index");
+    _jump191:;
+    if (_324 < _311.d2)
+    goto _jump192;
+    fail_assertion("index too large");
+    _jump192:;
+    int64_t _332 = 0;
+    _332 *= _311.d0;
+    _332 += _320;
+    _332 *= _311.d1;
+    _332 += _323;
+    _332 *= _311.d2;
+    _332 += _324;
+    bool _333 = _311.data[_332];
+    bool _310 = _333;
+    if (0 == _333)
+    goto _jump193;
+    bool _334 = true;
+    _310 = _334;
+    _jump193:;
+    _301 = _310;
+    _jump176:;
+    _254 = _301;
+    _jump145:;
+    bool _178 = _254;
+    if (0 != _254)
+    goto _jump194;
+    bool _335 = true;
+    bool _336 = !_335;
+    _a1_bool _337;
+    if (!_336)
+    goto _jump195;
+    bool _338 = false;
+    bool _339 = !_338;
+    bool _340 = true;
+    bool _341 = !_340;
+    bool _342 = _339 == _341;
+    bool _343 = !_342;
+    int64_t _345 = 173;
+    int64_t _346 = 562;
+    bool _347 = _345 > _346;
+    bool _344 = _347;
+    if (0 != _347)
+    goto _jump196;
+    bool _348 = true;
+    bool _349;
+    if (!_348)
+    goto _jump197;
+    bool _350 = false;
+    _349 = _350;
+    goto _jump198;
+    _jump197:;
+    bool _351 = true;
+    _349 = _351;
+    _jump198:;
+    _344 = _349;
+    _jump196:;
+    bool _352;
+    if (!_344)
+    goto _jump199;
+    int64_t _353 = 225;
+    bool _354 = _353 <= _78.d0;
+    bool _355 = !_354;
+    _352 = _355;
+    goto _jump200;
+    _jump199:;
+    int64_t _356 = 974;
+    bool _357 = _78.d1 == _356;
+    bool _358 = false;
+    bool _359 = !_358;
+    bool _360 = _357 != _359;
+    _352 = _360;
+    _jump200:;
+    _a1_bool _361;
+    _361.d0 = 2;
+    _361.data = jpl_alloc(sizeof(bool) * 2);
+    _361.data[0] = _343;
+    _361.data[1] = _352;
+    _337 = _361;
+    goto _jump201;
+    _jump195:;
+    int64_t _362;
+    // Computing bound for e
+    int64_t _363 = 760;
+    if (_363 > 0) 
+    goto _jump202;
+    fail_assertion("non-positive loop bound");
+    _jump202:;
+    // Computing bound for f
+    int64_t _364 = 492;
+    if (_364 > 0) 
+    goto _jump203;
+    fail_assertion("non-positive loop bound");
+    _jump203:;
+    // Computing bound for g
+    if (_78.d0 > 0) 
+    goto _jump204;
+    fail_assertion("non-positive loop bound");
+    _jump204:;
+    _362 = 0;
+    int64_t _365 = 0; // g
+    int64_t _366 = 0; // f
+    int64_t _367 = 0; // e
+    _jump205:; // Begin body of loop
+    _362 += _367;
+    _365++;
+    if (_365 < _78.d0)
+    goto _jump205;
+    _365 = 0;
+    _366++;
+    if (_366 < _364)
+    goto _jump205;
+    _366 = 0;
+    _367++;
+    if (_367 < _363)
+    goto _jump205;
+    // End body of loop
+    bool _368 = _78.d1 != _362;
+    bool _369 = !_368;
+    _a1_bool _370;
+    _370.d0 = 1;
+    _370.data = jpl_alloc(sizeof(bool) * 1);
+    _370.data[0] = _369;
+    _337 = _370;
+    _jump201:;
+    if (_78.d1 >= 0)
+    goto _jump206;
+    fail_assertion("negative array index");
+    _jump206:;
+    if (_78.d1 < _337.d0)
+    goto _jump207;
+    fail_assertion("index too large");
+    _jump207:;
+    int64_t _371 = 0;
+    _371 *= _337.d0;
+    _371 += _78.d1;
+    bool _372 = _337.data[_371];
+    _178 = _372;
+    _jump194:;
+    _a1__a3_int64_t _373;
+    // Computing bound for f
+    bool _375 = _78.d1 != _78.d0;
+    bool _374 = _375;
+    if (0 == _375)
+    goto _jump208;
+    bool _376 = true;
+    _374 = _376;
+    _jump208:;
+    int64_t _377;
+    if (!_374)
+    goto _jump209;
+    int64_t _378;
+    // Computing bound for f
+    int64_t _379 = 417;
+    if (_379 > 0) 
+    goto _jump210;
+    fail_assertion("non-positive loop bound");
+    _jump210:;
+    _378 = 0;
+    int64_t _380 = 0; // f
+    _jump211:; // Begin body of loop
+    int64_t _381 = 944;
+    _378 += _381;
+    _380++;
+    if (_380 < _379)
+    goto _jump211;
+    // End body of loop
+    int64_t _382 = -_378;
+    _377 = _382;
+    goto _jump212;
+    _jump209:;
+    int64_t _383 = 348;
+    int64_t _384 = 750;
+    int64_t _385 = 542;
+    _a1_int64_t _386;
+    _386.d0 = 3;
+    _386.data = jpl_alloc(sizeof(int64_t) * 3);
+    _386.data[0] = _383;
+    _386.data[1] = _384;
+    _386.data[2] = _385;
+    if (_78.d0 >= 0)
+    goto _jump213;
+    fail_assertion("negative array index");
+    _jump213:;
+    if (_78.d0 < _386.d0)
+    goto _jump214;
+    fail_assertion("index too large");
+    _jump214:;
+    int64_t _387 = 0;
+    _387 *= _386.d0;
+    _387 += _78.d0;
+    int64_t _388 = _386.data[_387];
+    _377 = _388;
+    _jump212:;
+    _a1_int64_t _389;
+    // Computing bound for f
+    _389.d0 = _78.d1;
+    if (_78.d1 > 0) 
+    goto _jump215;
+    fail_assertion("non-positive loop bound");
+    _jump215:;
+    // Computing total size of heap memory to allocate
+    int64_t _390 = 1;
+    _390 *= _78.d1;
+    _390 *= sizeof(int64_t);
+    _389.data = jpl_alloc(_390);
+    int64_t _391 = 0; // f
+    _jump216:; // Begin body of loop
+    int64_t _392 = 33;
+    int64_t _393 = 0;
+    _393 *= _389.d0;
+    _393 += _391;
+    _389.data[_393] = _392;
+    _391++;
+    if (_391 < _78.d1)
+    goto _jump216;
+    // End body of loop
+    int64_t _394;
+    // Computing bound for f
+    int64_t _395 = 425;
+    int64_t _396 = _78.d1 / _395;
+    if (_396 > 0) 
+    goto _jump217;
+    fail_assertion("non-positive loop bound");
+    _jump217:;
+    // Computing bound for g
+    if (_78.d0 > 0) 
+    goto _jump218;
+    fail_assertion("non-positive loop bound");
+    _jump218:;
+    // Computing bound for h
+    int64_t _397;
+    if (!_178)
+    goto _jump219;
+    int64_t _398 = 675;
+    _397 = _398;
+    goto _jump220;
+    _jump219:;
+    _397 = _78.d0;
+    _jump220:;
+    if (_397 > 0) 
+    goto _jump221;
+    fail_assertion("non-positive loop bound");
+    _jump221:;
+    _394 = 0;
+    int64_t _399 = 0; // h
+    int64_t _400 = 0; // g
+    int64_t _401 = 0; // f
+    _jump222:; // Begin body of loop
+    int64_t _402;
+    // Computing bound for i
+    if (_78.d0 > 0) 
+    goto _jump223;
+    fail_assertion("non-positive loop bound");
+    _jump223:;
+    // Computing bound for j
+    if (_78.d0 > 0) 
+    goto _jump224;
+    fail_assertion("non-positive loop bound");
+    _jump224:;
+    _402 = 0;
+    int64_t _403 = 0; // j
+    int64_t _404 = 0; // i
+    _jump225:; // Begin body of loop
+    _402 += _401;
+    _403++;
+    if (_403 < _78.d0)
+    goto _jump225;
+    _403 = 0;
+    _404++;
+    if (_404 < _78.d0)
+    goto _jump225;
+    // End body of loop
+    _394 += _402;
+    _399++;
+    if (_399 < _397)
+    goto _jump222;
+    _399 = 0;
+    _400++;
+    if (_400 < _78.d0)
+    goto _jump222;
+    _400 = 0;
+    _401++;
+    if (_401 < _396)
+    goto _jump222;
+    // End body of loop
+    if (_394 >= 0)
+    goto _jump226;
+    fail_assertion("negative array index");
+    _jump226:;
+    if (_394 < _389.d0)
+    goto _jump227;
+    fail_assertion("index too large");
+    _jump227:;
+    int64_t _405 = 0;
+    _405 *= _389.d0;
+    _405 += _394;
+    int64_t _406 = _389.data[_405];
+    int64_t _407 = _377 % _406;
+    int64_t _408 = 835;
+    int64_t _409 = _407 % _408;
+    _373.d0 = _409;
+    if (_409 > 0) 
+    goto _jump228;
+    fail_assertion("non-positive loop bound");
+    _jump228:;
+    // Computing total size of heap memory to allocate
+    int64_t _410 = 1;
+    _410 *= _409;
+    _410 *= sizeof(_a3_int64_t);
+    _373.data = jpl_alloc(_410);
+    int64_t _411 = 0; // f
+    _jump229:; // Begin body of loop
+    _a3__a2_bool _412;
+    // Computing bound for g
+    int64_t _413 = 727;
+    int64_t _414 = _413 * _78.d1;
+    _412.d0 = _414;
+    if (_414 > 0) 
+    goto _jump230;
+    fail_assertion("non-positive loop bound");
+    _jump230:;
+    // Computing bound for h
+    int64_t _415 = 93;
+    _412.d1 = _415;
+    if (_415 > 0) 
+    goto _jump231;
+    fail_assertion("non-positive loop bound");
+    _jump231:;
+    // Computing bound for i
+    _412.d2 = _78.d0;
+    if (_78.d0 > 0) 
+    goto _jump232;
+    fail_assertion("non-positive loop bound");
+    _jump232:;
+    // Computing total size of heap memory to allocate
+    int64_t _416 = 1;
+    _416 *= _414;
+    _416 *= _415;
+    _416 *= _78.d0;
+    _416 *= sizeof(_a2_bool);
+    _412.data = jpl_alloc(_416);
+    int64_t _417 = 0; // i
+    int64_t _418 = 0; // h
+    int64_t _419 = 0; // g
+    _jump233:; // Begin body of loop
+    _a2_bool _420;
+    // Computing bound for j
+    _420.d0 = _418;
+    if (_418 > 0) 
+    goto _jump234;
+    fail_assertion("non-positive loop bound");
+    _jump234:;
+    // Computing bound for k
+    _420.d1 = _411;
+    if (_411 > 0) 
+    goto _jump235;
+    fail_assertion("non-positive loop bound");
+    _jump235:;
+    // Computing total size of heap memory to allocate
+    int64_t _421 = 1;
+    _421 *= _418;
+    _421 *= _411;
+    _421 *= sizeof(bool);
+    _420.data = jpl_alloc(_421);
+    int64_t _422 = 0; // k
+    int64_t _423 = 0; // j
+    _jump236:; // Begin body of loop
+    int64_t _424 = 0;
+    _424 *= _420.d0;
+    _424 += _423;
+    _424 *= _420.d1;
+    _424 += _422;
+    _420.data[_424] = _178;
+    _422++;
+    if (_422 < _411)
+    goto _jump236;
+    _422 = 0;
+    _423++;
+    if (_423 < _418)
+    goto _jump236;
+    // End body of loop
+    int64_t _425 = 0;
+    _425 *= _412.d0;
+    _425 += _419;
+    _425 *= _412.d1;
+    _425 += _418;
+    _425 *= _412.d2;
+    _425 += _417;
+    _412.data[_425] = _420;
+    _417++;
+    if (_417 < _78.d0)
+    goto _jump233;
+    _417 = 0;
+    _418++;
+    if (_418 < _415)
+    goto _jump233;
+    _418 = 0;
+    _419++;
+    if (_419 < _414)
+    goto _jump233;
+    // End body of loop
+    int64_t _426 = 756;
+    if (_78.d1 >= 0)
+    goto _jump237;
+    fail_assertion("negative array index");
+    _jump237:;
+    if (_78.d1 < _412.d0)
+    goto _jump238;
+    fail_assertion("index too large");
+    _jump238:;
+    if (_426 >= 0)
+    goto _jump239;
+    fail_assertion("negative array index");
+    _jump239:;
+    if (_426 < _412.d1)
+    goto _jump240;
+    fail_assertion("index too large");
+    _jump240:;
+    if (_78.d0 >= 0)
+    goto _jump241;
+    fail_assertion("negative array index");
+    _jump241:;
+    if (_78.d0 < _412.d2)
+    goto _jump242;
+    fail_assertion("index too large");
+    _jump242:;
+    int64_t _427 = 0;
+    _427 *= _412.d0;
+    _427 += _78.d1;
+    _427 *= _412.d1;
+    _427 += _426;
+    _427 *= _412.d2;
+    _427 += _78.d0;
+    _a2_bool _428 = _412.data[_427];
+    int64_t _429 = 869;
+    int64_t _430 = 603;
+    if (_429 >= 0)
+    goto _jump243;
+    fail_assertion("negative array index");
+    _jump243:;
+    if (_429 < _428.d0)
+    goto _jump244;
+    fail_assertion("index too large");
+    _jump244:;
+    if (_430 >= 0)
+    goto _jump245;
+    fail_assertion("negative array index");
+    _jump245:;
+    if (_430 < _428.d1)
+    goto _jump246;
+    fail_assertion("index too large");
+    _jump246:;
+    int64_t _431 = 0;
+    _431 *= _428.d0;
+    _431 += _429;
+    _431 *= _428.d1;
+    _431 += _430;
+    bool _432 = _428.data[_431];
+    _a3_int64_t _433;
+    if (!_432)
+    goto _jump247;
+    _a3_int64_t _434;
+    // Computing bound for g
+    _434.d0 = _411;
+    if (_411 > 0) 
+    goto _jump248;
+    fail_assertion("non-positive loop bound");
+    _jump248:;
+    // Computing bound for h
+    _434.d1 = _78.d0;
+    if (_78.d0 > 0) 
+    goto _jump249;
+    fail_assertion("non-positive loop bound");
+    _jump249:;
+    // Computing bound for i
+    bool _435 = !_178;
+    int64_t _436;
+    if (!_435)
+    goto _jump250;
+    bool _437 = false;
+    int64_t _438;
+    if (!_437)
+    goto _jump251;
+    _438 = _411;
+    goto _jump252;
+    _jump251:;
+    _438 = _411;
+    _jump252:;
+    _436 = _438;
+    goto _jump253;
+    _jump250:;
+    _436 = _78.d1;
+    _jump253:;
+    _434.d2 = _436;
+    if (_436 > 0) 
+    goto _jump254;
+    fail_assertion("non-positive loop bound");
+    _jump254:;
+    // Computing total size of heap memory to allocate
+    int64_t _439 = 1;
+    _439 *= _411;
+    _439 *= _78.d0;
+    _439 *= _436;
+    _439 *= sizeof(int64_t);
+    _434.data = jpl_alloc(_439);
+    int64_t _440 = 0; // i
+    int64_t _441 = 0; // h
+    int64_t _442 = 0; // g
+    _jump255:; // Begin body of loop
+    int64_t _443 = 622;
+    int64_t _444 = _443 * _78.d1;
+    int64_t _445 = 0;
+    _445 *= _434.d0;
+    _445 += _442;
+    _445 *= _434.d1;
+    _445 += _441;
+    _445 *= _434.d2;
+    _445 += _440;
+    _434.data[_445] = _444;
+    _440++;
+    if (_440 < _436)
+    goto _jump255;
+    _440 = 0;
+    _441++;
+    if (_441 < _78.d0)
+    goto _jump255;
+    _441 = 0;
+    _442++;
+    if (_442 < _411)
+    goto _jump255;
+    // End body of loop
+    _433 = _434;
+    goto _jump256;
+    _jump247:;
+    _a3_int64_t _446;
+    // Computing bound for g
+    int64_t _447 = -_78.d0;
+    _446.d0 = _447;
+    if (_447 > 0) 
+    goto _jump257;
+    fail_assertion("non-positive loop bound");
+    _jump257:;
+    // Computing bound for h
+    int64_t _448 = -_78.d1;
+    _446.d1 = _448;
+    if (_448 > 0) 
+    goto _jump258;
+    fail_assertion("non-positive loop bound");
+    _jump258:;
+    // Computing bound for i
+    int64_t _449 = 14;
+    _446.d2 = _449;
+    if (_449 > 0) 
+    goto _jump259;
+    fail_assertion("non-positive loop bound");
+    _jump259:;
+    // Computing total size of heap memory to allocate
+    int64_t _450 = 1;
+    _450 *= _447;
+    _450 *= _448;
+    _450 *= _449;
+    _450 *= sizeof(int64_t);
+    _446.data = jpl_alloc(_450);
+    int64_t _451 = 0; // i
+    int64_t _452 = 0; // h
+    int64_t _453 = 0; // g
+    _jump260:; // Begin body of loop
+    int64_t _454 = 0;
+    _454 *= _446.d0;
+    _454 += _453;
+    _454 *= _446.d1;
+    _454 += _452;
+    _454 *= _446.d2;
+    _454 += _451;
+    _446.data[_454] = _411;
+    _451++;
+    if (_451 < _449)
+    goto _jump260;
+    _451 = 0;
+    _452++;
+    if (_452 < _448)
+    goto _jump260;
+    _452 = 0;
+    _453++;
+    if (_453 < _447)
+    goto _jump260;
+    // End body of loop
+    _433 = _446;
+    _jump256:;
+    int64_t _455 = 0;
+    _455 *= _373.d0;
+    _455 += _411;
+    _373.data[_455] = _433;
+    _411++;
+    if (_411 < _409)
+    goto _jump229;
+    // End body of loop
+    int64_t _456 = 444;
+    int64_t _457;
+    // Computing bound for f
+    if (_78.d0 > 0) 
+    goto _jump261;
+    fail_assertion("non-positive loop bound");
+    _jump261:;
+    // Computing bound for g
+    if (_78.d0 > 0) 
+    goto _jump262;
+    fail_assertion("non-positive loop bound");
+    _jump262:;
+    // Computing bound for h
+    if (_78.d0 > 0) 
+    goto _jump263;
+    fail_assertion("non-positive loop bound");
+    _jump263:;
+    _457 = 0;
+    int64_t _458 = 0; // h
+    int64_t _459 = 0; // g
+    int64_t _460 = 0; // f
+    _jump264:; // Begin body of loop
+    int64_t _461 = 948;
+    _457 += _461;
+    _458++;
+    if (_458 < _78.d0)
+    goto _jump264;
+    _458 = 0;
+    _459++;
+    if (_459 < _78.d0)
+    goto _jump264;
+    _459 = 0;
+    _460++;
+    if (_460 < _78.d0)
+    goto _jump264;
+    // End body of loop
+    int64_t _462;
+    // Computing bound for f
+    int64_t _463 = -_78.d1;
+    if (_463 > 0) 
+    goto _jump265;
+    fail_assertion("non-positive loop bound");
+    _jump265:;
+    // Computing bound for g
+    int64_t _464;
+    if (!_178)
+    goto _jump266;
+    int64_t _465;
+    // Computing bound for f
+    if (_78.d1 > 0) 
+    goto _jump267;
+    fail_assertion("non-positive loop bound");
+    _jump267:;
+    // Computing bound for g
+    if (_78.d1 > 0) 
+    goto _jump268;
+    fail_assertion("non-positive loop bound");
+    _jump268:;
+    _465 = 0;
+    int64_t _466 = 0; // g
+    int64_t _467 = 0; // f
+    _jump269:; // Begin body of loop
+    _465 += _467;
+    _466++;
+    if (_466 < _78.d1)
+    goto _jump269;
+    _466 = 0;
+    _467++;
+    if (_467 < _78.d1)
+    goto _jump269;
+    // End body of loop
+    _464 = _465;
+    goto _jump270;
+    _jump266:;
+    _464 = _78.d1;
+    _jump270:;
+    if (_464 > 0) 
+    goto _jump271;
+    fail_assertion("non-positive loop bound");
+    _jump271:;
+    // Computing bound for h
+    int64_t _468 = 630;
+    _a1_int64_t _469;
+    _469.d0 = 2;
+    _469.data = jpl_alloc(sizeof(int64_t) * 2);
+    _469.data[0] = _468;
+    _469.data[1] = _78.d0;
+    int64_t _470 = -_78.d1;
+    if (_470 >= 0)
+    goto _jump272;
+    fail_assertion("negative array index");
+    _jump272:;
+    if (_470 < _469.d0)
+    goto _jump273;
+    fail_assertion("index too large");
+    _jump273:;
+    int64_t _471 = 0;
+    _471 *= _469.d0;
+    _471 += _470;
+    int64_t _472 = _469.data[_471];
+    if (_472 > 0) 
+    goto _jump274;
+    fail_assertion("non-positive loop bound");
+    _jump274:;
+    _462 = 0;
+    int64_t _473 = 0; // h
+    int64_t _474 = 0; // g
+    int64_t _475 = 0; // f
+    _jump275:; // Begin body of loop
+    int64_t _476;
+    // Computing bound for i
+    int64_t _477 = 852;
+    if (_477 > 0) 
+    goto _jump276;
+    fail_assertion("non-positive loop bound");
+    _jump276:;
+    // Computing bound for j
+    if (_473 > 0) 
+    goto _jump277;
+    fail_assertion("non-positive loop bound");
+    _jump277:;
+    _476 = 0;
+    int64_t _478 = 0; // j
+    int64_t _479 = 0; // i
+    _jump278:; // Begin body of loop
+    _476 += _479;
+    _478++;
+    if (_478 < _473)
+    goto _jump278;
+    _478 = 0;
+    _479++;
+    if (_479 < _477)
+    goto _jump278;
+    // End body of loop
+    _462 += _476;
+    _473++;
+    if (_473 < _472)
+    goto _jump275;
+    _473 = 0;
+    _474++;
+    if (_474 < _464)
+    goto _jump275;
+    _474 = 0;
+    _475++;
+    if (_475 < _463)
+    goto _jump275;
+    // End body of loop
+    bool _480 = _457 <= _462;
+    int64_t _481;
+    if (!_480)
+    goto _jump279;
+    int64_t _482;
+    if (!_178)
+    goto _jump280;
+    int64_t _483;
+    // Computing bound for f
+    if (_78.d0 > 0) 
+    goto _jump281;
+    fail_assertion("non-positive loop bound");
+    _jump281:;
+    _483 = 0;
+    int64_t _484 = 0; // f
+    _jump282:; // Begin body of loop
+    bool _485 = false;
+    int64_t _486;
+    if (!_485)
+    goto _jump283;
+    _486 = _484;
+    goto _jump284;
+    _jump283:;
+    int64_t _487 = 461;
+    _486 = _487;
+    _jump284:;
+    _483 += _486;
+    _484++;
+    if (_484 < _78.d0)
+    goto _jump282;
+    // End body of loop
+    _482 = _483;
+    goto _jump285;
+    _jump280:;
+    _482 = _78.d1;
+    _jump285:;
+    int64_t _488 = _78.d0 * _482;
+    _481 = _488;
+    goto _jump286;
+    _jump279:;
+    int64_t _489 = 304;
+    int64_t _490 = _489 - _78.d1;
+    _481 = _490;
+    _jump286:;
+    int64_t _491 = _456 - _481;
+    if (_491 >= 0)
+    goto _jump287;
+    fail_assertion("negative array index");
+    _jump287:;
+    if (_491 < _373.d0)
+    goto _jump288;
+    fail_assertion("index too large");
+    _jump288:;
+    int64_t _492 = 0;
+    _492 *= _373.d0;
+    _492 += _491;
+    _a3_int64_t _493 = _373.data[_492];
+    int64_t _494 = 165;
+    _a1_int64_t _495;
+    _495.d0 = 1;
+    _495.data = jpl_alloc(sizeof(int64_t) * 1);
+    _495.data[0] = _494;
+    print("l");
+    show("(IntType)", &_493.d1);
+    _a2_rgba _496 = read_image("s.png");
+    _a1__a2_rgba _497;
+    // Computing bound for u
+    double _498;
+    if (!_178)
+    goto _jump917;
+    double _499 = 54.0;
+    double _500 = -_499;
+    double _501 = -_500;
+    double _502 = -_501;
+    _498 = _502;
+    goto _jump918;
+    _jump917:;
+    double _503 = 7.0;
+    double _504 = 1.0;
+    double _505 = _503 - _504;
+    _498 = _505;
+    _jump918:;
+    int64_t _506 = 758;
+    int64_t _507 = q(_498, _506);
+    _497.d0 = _507;
+    if (_507 > 0) 
+    goto _jump919;
+    fail_assertion("non-positive loop bound");
+    _jump919:;
+    // Computing total size of heap memory to allocate
+    int64_t _508 = 1;
+    _508 *= _507;
+    _508 *= sizeof(_a2_rgba);
+    _497.data = jpl_alloc(_508);
+    int64_t _509 = 0; // u
+    _jump920:; // Begin body of loop
+    int64_t _510 = 0;
+    _510 *= _497.d0;
+    _510 += _509;
+    _497.data[_510] = _78;
+    _509++;
+    if (_509 < _507)
+    goto _jump920;
+    // End body of loop
+    bool _511 = true;
+    bool _512 = _497.d0 > _497.d0;
+    bool _513 = !_512;
+    if (0 != _178)
+    goto _jump921;
+    fail_assertion("H");
+    _jump921:;
+}
+
