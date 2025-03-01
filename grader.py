@@ -5,7 +5,7 @@ from dataclasses import dataclass
 import traceback
 import shlex
 import difflib
-from normalize_asm import ppasm
+from normalize_asm import ppasm, ppc
 from ppsexp import ppsexp, unpp
 from pathlib import Path
 import subprocess
@@ -383,12 +383,12 @@ HWS = {
        "4": NullPart(InvalidSpec, "hw7/fail-fuzzer/", "-t"),
    },
    "8": {
-       "1": NullPart(DiffSpec, "hw8/ok/", "-i", normalize=ppasm),
-       "2": NullPart(DiffSpec, "hw8/ok-fuzzer/", "-i", normalize=ppasm),
+       "1": NullPart(DiffSpec, "hw8/ok/", "-i", normalize=ppc),
+       "2": NullPart(DiffSpec, "hw8/ok-fuzzer/", "-i", normalize=ppc),
    },
    "9": {
-       "1": NullPart(DiffSpec, "hw9/ok/", "-i", normalize=ppasm),
-       "2": NullPart(DiffSpec, "hw9/ok-fuzzer/", "-i", normalize=ppasm),
+       "1": NullPart(DiffSpec, "hw9/ok/", "-i", normalize=ppc),
+       "2": NullPart(DiffSpec, "hw9/ok-fuzzer/", "-i", normalize=ppc),
    },
    "10": {
        "1": ManualPart(DiffSpec, "hw10/ok1.jpl", "hw10/ok1/", "-s", normalize=ppasm),

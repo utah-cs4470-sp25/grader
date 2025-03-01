@@ -53,6 +53,24 @@ def ppasm(lines):
         if line2 and not line2.isspace():
             yield line2
 
+def normalize_cline(line):
+    if ";" in line:
+        # TODO this is a backwards compatibility hack for 2025 hw8
+        line = line.split(";", 1)[0]
+    if "//" in line:
+        line = line.split("//", 1)[0]
+    line = ADDRESS_RE.sub(domath, line)
+    line = FLOAT_RE.sub(redo_float, line)
+    line = line.strip()
+    line = " ".join(line.split())
+    return line
+
+def ppc(lines):
+    for line in lines:
+        line2 = normalize_cline(line)
+        if line2 and not line2.isspace():
+            yield line2
+
 if __name__ == "__main__":
     import sys
     for line in ppasm(sys.stdin):
