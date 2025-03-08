@@ -27,7 +27,6 @@ endif
 test-current: test-$(CURRENT)
 count-current: count-$(CURRENT)
 
-
 count-hw1:
 	@ sh hw1/test-part $(DIR) count
 
@@ -65,8 +64,8 @@ test-hw8:
 test-hw9:
 	@ python3 grader.py test --hw 9 --dir $(DIR) --part $(PART)
 
-test-hw89: test-hw8 test-hw9
-	echo "done"
+test-hw89:
+	@ python3 grader.py test --hw 89 --dir $(DIR) --part $(PART)
 
 # ben: completely useless??
 test-hw%:
