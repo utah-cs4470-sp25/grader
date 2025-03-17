@@ -1,0 +1,24 @@
+show (77.73 * 81.23)
+
+show 703
+
+show ((- 6.26) == (- 78.83))
+
+show true
+
+show (! (! (! (! true))))
+
+show 42.68
+
+show 52
+
+show 866
+
+show false
+
+show ((- 33.0) % (- 40.16))
+
+show 38.9
+
+show (- 167)
+
