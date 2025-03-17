@@ -1,4 +1,0 @@
-fn f() : float {
-   return 4.0
-}
-show f()

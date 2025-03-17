@@ -1,5 +1,0 @@
-read image "a.png" to x[W, H]
-fn f(d : int) : int {
-   return W * H + d
-}
-show f(13)

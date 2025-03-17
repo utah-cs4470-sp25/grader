@@ -1,4 +1,0 @@
-fn f(a : int) : int {
-    return 1
-}
-show f(2)

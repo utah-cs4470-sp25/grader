@@ -1,5 +1,0 @@
-let x = 7
-read image "a.png" to a[H, W]
-show a
-show H
-show W

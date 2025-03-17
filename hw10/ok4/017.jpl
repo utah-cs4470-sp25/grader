@@ -1,4 +1,0 @@
-fn f(a : float, b : float) : float {
-    return a + b
-}
-show f(1.0, 2.0)

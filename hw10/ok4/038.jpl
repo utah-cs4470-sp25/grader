@@ -1,4 +1,0 @@
-fn f(d : int) : {} {
-   let a = 1
-}
-show f(13)

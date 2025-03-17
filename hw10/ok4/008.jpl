@@ -1,4 +1,0 @@
-fn f() : {int, int} {
-    return {1, 2}
-}
-show f()
