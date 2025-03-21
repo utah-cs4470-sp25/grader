@@ -1,0 +1,5 @@
+let x[W] = [10, 20, 30]
+fn f(d : int) : int {
+   return W * d
+}
+show f(W)

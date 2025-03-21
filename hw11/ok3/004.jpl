@@ -1,0 +1,7 @@
+let x = 1
+let y = 2
+let z = 3
+fn f(d : int) : int {
+   return d + y + z
+}
+show f(x)

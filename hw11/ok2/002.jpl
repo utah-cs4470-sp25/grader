@@ -1,0 +1,4 @@
+fn f() : bool {
+   return false != false
+}
+show f()

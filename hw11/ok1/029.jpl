@@ -1,0 +1,4 @@
+let a = [false]
+let b = [a]
+let c = [b, b, b]
+show a

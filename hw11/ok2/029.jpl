@@ -1,0 +1,4 @@
+fn f(a[x] : int[], b[y] : float[], c[z] : bool[]) : int[] {
+   return [x, y, z]
+}
+show f([1, 2], [3.0, 4.0], [true, true])

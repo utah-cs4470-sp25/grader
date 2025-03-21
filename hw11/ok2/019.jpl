@@ -1,0 +1,4 @@
+fn f(a : int, b : float) : int {
+   return a + 2
+}
+show f(1, 2.0)

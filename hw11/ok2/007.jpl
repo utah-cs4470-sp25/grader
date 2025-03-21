@@ -1,0 +1,5 @@
+fn f() : int[][] {
+    let b = [1]
+    return [b]
+}
+show f()

@@ -1,0 +1,4 @@
+fn f() : bool[] {
+    return [true, false]
+}
+show f()

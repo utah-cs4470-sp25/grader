@@ -1,0 +1,6 @@
+fn f() : int[][][] {
+    let a = [3]
+    let b = [a]
+    return [b]
+}
+show f()

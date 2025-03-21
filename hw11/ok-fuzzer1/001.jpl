@@ -1,0 +1,13 @@
+let a = 33.11
+let b = a
+let c[d] = [(! (b <= a)), ((- (87 / 646)) <= (- ((- 240) / 175))), true]
+let e = (- (d % (d * (- d))))
+let f = 193
+let g[h] = [[c, [true], [((b / a) <= (b * 80.95)), (! false)]]]
+let i = (! (d != (- ((f + d) - (f - d)))))
+let j = 736
+let k = 98
+let l[m] = g
+show ((- d) >= ((- (f % e)) * f))
+
+let n = m

@@ -1,0 +1,4 @@
+fn f(x[w]: int[]) : int {
+   return w
+}
+show f([1111])

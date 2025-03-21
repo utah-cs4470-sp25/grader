@@ -1,0 +1,13 @@
+let a[b] = [(- (- (- (- 32.99))))]
+let c = (! false)
+let d = (- (- 55.99))
+let e = d
+let f = c
+let g = 92.19
+let h = [b, (- b), (- b)]
+let i = [(! c), (d < (12.97 + e))]
+let j = true
+let k = a
+show [[[17.54, g], [g]], [a, k, a], [k]]
+
+let l = 50.41

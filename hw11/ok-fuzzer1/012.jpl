@@ -1,0 +1,16 @@
+show false
+
+let a = false
+show (a != (! true))
+
+let b = true
+let c = ((- (83.95 - 69.16)) / ((- (- 40.25)) * (- 88.26)))
+let d[e] = [(- (- (361 % (- 598)))), (- 222)]
+show [c]
+
+let f = a
+show a
+
+let g = a
+let h = f
+let i = f

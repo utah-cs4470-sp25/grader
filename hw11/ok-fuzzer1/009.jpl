@@ -1,0 +1,15 @@
+let a[b] = [((- (- (- 865))) - 100)]
+let c = ((- 2.19) == ((47.62 / (- (54.4 - 63.52))) - 2.19))
+show [false, false]
+
+show b
+
+let d[e] = a
+let f = d
+let g = e
+show (- (g * b))
+
+let h[i] = [(! ((! (28.83 == 57.43)) == (! (e <= 752))))]
+let j = [true]
+let k = f
+let l = e

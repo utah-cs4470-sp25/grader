@@ -1,0 +1,14 @@
+let a = (667 % (- 838))
+let b[c] = [true, ((((- 8.01) / 6.99) / ((- 50.11) / 12.74)) <= (- 70.04))]
+let d[e] = b
+let f = a
+show f
+
+let g[h] = d
+let i[j] = b
+let k = a
+show 423
+
+let l = d
+let m = i
+let n[o] = b

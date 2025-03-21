@@ -1,0 +1,14 @@
+let a = false
+let b = 986
+let c[d] = [b, b]
+let e = c
+let f[g] = c
+let h[i] = e
+show (44.6 == (74.34 / (- (- 26.28))))
+
+show ((- ((- 58.98) % 92.24)) == ((- 89.27) % 4.19))
+
+let j = f
+let k = 19.81
+let l = c
+let m[n] = j

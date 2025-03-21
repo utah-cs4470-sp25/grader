@@ -1,0 +1,4 @@
+fn f(a: bool[], b[d]: bool[], c: bool[]) : int {
+   return 4
+}
+show f([true], [false], [true])

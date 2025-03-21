@@ -1,0 +1,14 @@
+let a = 16.68
+let b = a
+let c[d] = [true, true]
+show 561
+
+show a
+
+let e = 38.1
+let f = [(- ((- (d * 983)) / ((- d) * (- 600)))), 271]
+let g[h] = c
+let i = f
+let j = false
+let k[l] = f
+let m[n] = [i, i, f]

@@ -1,0 +1,4 @@
+fn f(a : int, c: bool[], b : int) : int {
+   return a + b
+}
+show f(13, [true], 21)

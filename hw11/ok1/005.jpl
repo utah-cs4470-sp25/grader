@@ -1,0 +1,2 @@
+let a = false
+show a == a

@@ -1,0 +1,288 @@
+fn a() : int {
+  let b = ((! ((((- 526) / (924 * ((- 621) - (- 983)))) * (- (- (- (((- (- 51)) / ((745 * 781) / (- 359))) - (- (- (- 232)))))))) <= ((((- 520) + 753) % 287) % (- (951 - 686))))) != (false != true))
+  let c = (- ((- (274 / (- (((- 848) * (- (- (- (- 458))))) % 669)))) - (- 86)))
+  let d = (! b)
+  return (859 % c)
+  let e = (- ((- 118) % (932 % c)))
+  return 320
+  let f = ((- 401) + e)
+  return 173
+  return (- e)
+  return 424
+  return f
+}
+
+show 447
+
+let b = 348
+let c = ((- 530) % 284)
+let d = ((- ((- 8.81) + 74.4)) < 48.76)
+let e = ((- c) * b)
+let f = a()
+let g = (c > f)
+let h = d
+let i = f
+let j = 779
+fn k(l : bool, m : int, n : float, o : int) : int {
+  let p = l
+  let q = a()
+  let r = c
+  return f
+  let s = false
+  let t = (- o)
+  let u = f
+  let v = t
+  let w = f
+  let x = t
+  return c
+}
+
+let l = b
+let m = 13.5
+fn n() : bool {
+  let o = (b == a())
+  let p = b
+  return o
+  let q = i
+  let r = j
+  let s = c
+  return h
+  let t = e
+  let u = k(((! (b >= l)) != o), r, 56.27, b)
+  let v = f
+  return false
+}
+
+fn o(p : int) : int {
+  let q = d
+  return (- c)
+  let r = 829
+  let s = c
+  let t = s
+  let u = ((96.49 + m) < (- (m % m)))
+  let v = 61
+  let w = l
+  let x = 656
+  let y = b
+  return r
+}
+
+show b
+
+let p = n()
+fn q(r : float, s : bool, t : float) : bool {
+  let u = j
+  let v = 852
+  let w = s
+  let x = (- ((r % (- (- r))) * (- (r / t))))
+  let y = (x < (t / t))
+  let z = (v >= b)
+  let A = 32.86
+  let B = r
+  let C = i
+  let D = 677
+  return w
+}
+
+let r = (! (p != p))
+let s = (! d)
+let t = d
+let u = k(d, j, 7.59, c)
+show o(k(t, k((b == l), (- (a() + a())), m, k(true, j, (- m), a())), (- ((- (2.02 * ((- 91.2) % (- m)))) - m)), o((- a()))))
+
+let v = n()
+let w = ((- 83.15) < ((- m) - m))
+fn x(y : bool, z : bool, A : float, B : float) : bool {
+  let C = d
+  let D = t
+  let E = i
+  let F = false
+  let G = h
+  let H = j
+  let I = F
+  return I
+  return D
+  let J = g
+  return I
+}
+
+let y = 16.48
+fn z(A : int, B : bool, C : int, D : int) : int {
+  let E = e
+  return 745
+  let F = e
+  let G = 225
+  return i
+  let H = (- (m - y))
+  let I = g
+  let J = E
+  let K = q(H, g, y)
+  return f
+  return i
+}
+
+fn A(B : float, C : int, D : float) : float {
+  let E = ((y - D) != 90.25)
+  let F = (! x(E, g, (- y), 31.38))
+  let G = D
+  let H = D
+  let I = (l == z((85 + j), x(h, d, H, H), u, k(r, 362, (- y), 387)))
+  let J = s
+  let K = a()
+  let L = B
+  let M = (! r)
+  let N = m
+  return H
+}
+
+show y
+
+fn B(C : bool, D : int, E : bool) : int {
+  let F = v
+  let G = k(h, z(l, C, u, i), y, j)
+  let H = e
+  let I = (! q(m, w, A((94.5 * 7.83), (b - e), m)))
+  let J = u
+  let K = (11.03 >= y)
+  let L = (b != j)
+  let M = i
+  let N = F
+  let O = 59
+  return 402
+}
+
+show o(i)
+
+let C = v
+show c
+
+let D = z(l, p, a(), c)
+fn E(F : float) : float {
+  let G = p
+  let H = 717
+  let I = o(e)
+  let J = (- (- (17.73 * A(y, j, m))))
+  let K = a()
+  let L = I
+  let M = K
+  let N = M
+  let O = c
+  let P = o(N)
+  return ((- F) / ((- (- m)) - (- 48.81)))
+}
+
+fn F() : float {
+  let G = i
+  let H = r
+  let I = n()
+  let J = B(g, 9, d)
+  let K = k((! t), i, A(m, j, y), (- (- l)))
+  let L = E(((m / (- (- A((- ((- (- E(m))) / m)), l, 81.76)))) + E(A(E((- y)), j, y))))
+  let M = z(f, H, G, B(g, G, p))
+  return E(E(E((- L))))
+  let N = I
+  let O = v
+  return E((A(L, j, 73.34) - L))
+}
+
+fn G() : float {
+  let H = F()
+  return 15.72
+  let I = k(s, c, 53.18, a())
+  let J = E(82.97)
+  return E(F())
+  let K = I
+  let L = g
+  let M = I
+  let N = L
+  let O = N
+  return (- J)
+}
+
+let H = C
+let I = B(d, i, p)
+let J = j
+fn K() : float {
+  let L = i
+  let M = 54.39
+  return A((- y), c, E(A(A(y, 461, F()), l, M)))
+  return M
+  let N = C
+  let O = true
+  let P = w
+  return M
+  let Q = a()
+  let R = M
+  return 30.11
+}
+
+fn L() : bool {
+  let M = 471
+  let N = (M + c)
+  let O = x(s, false, (- A(G(), o(o(l)), F())), F())
+  let P = M
+  let Q = c
+  let R = u
+  let S = g
+  let T = R
+  let U = I
+  let V = n()
+  return v
+}
+
+let M = l
+let N = e
+let O = q(G(), H, G())
+let P = c
+let Q = L()
+let R = q(F(), n(), F())
+let S = K()
+fn T(U : bool) : bool {
+  let V = D
+  let W = t
+  let X = k(O, o(B(n(), a(), w)), (- K()), B(U, i, d))
+  return W
+  return v
+  return h
+  let Y = w
+  let Z = U
+  return Y
+  return q((m + (A(A(y, (- a()), S), (V + c), m) * A(F(), (z(u, Y, o(X), J) * J), F()))), s, F())
+  return L()
+}
+
+fn U(V : bool) : int {
+  return D
+  let W = q(A(S, f, (- (K() / K()))), r, E(F()))
+  let X = n()
+  let Y = x(x(Q, r, F(), 84.14), ((- G()) < G()), S, E((G() - (- 56.01))))
+  let Z = H
+  let aa = A(65.43, b, G())
+  return I
+  return z(z(M, Q, J, J), p, b, 135)
+  let ab = o(z(299, w, u, 548))
+  let ac = t
+  return B((! (aa != S)), o(a()), ac)
+}
+
+let V = Q
+let W = c
+show f
+
+fn X(Y : int, Z : int, aa : int) : bool {
+  let ab = S
+  let ac = U(V)
+  return p
+  let ad = U(d)
+  let ae = Y
+  return V
+  let af = L()
+  let ag = o(Y)
+  let ah = i
+  let ai = g
+  return (E(m) < (- K()))
+}
+
+let Y = s
+let Z = V
+let aa = f

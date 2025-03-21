@@ -1,0 +1,5 @@
+fn f(a : int[]) : int {
+   let b[w] = a
+   return w + 1
+}
+show f([13, 14, 15])

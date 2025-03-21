@@ -1,0 +1,4 @@
+fn f(a : float) : float {
+    return a
+}
+show f(2.0)

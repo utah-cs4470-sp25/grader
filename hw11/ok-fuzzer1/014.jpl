@@ -1,0 +1,13 @@
+let a = (- (- (((526 * 212) - 961) - (114 * 138))))
+show a
+
+let b = (! (! ((- 91.73) != 73.24)))
+let c = [a, 752]
+let d[e] = c
+let f = [a, e]
+let g = f
+let h = b
+let i = [g, c]
+let j[k] = [31, (- (e - (a / (- 806))))]
+let l = h
+let m[n] = i

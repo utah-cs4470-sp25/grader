@@ -1,0 +1,5 @@
+fn f(d : int) : int {
+   let a = 1
+   return 3
+}
+show f(13)

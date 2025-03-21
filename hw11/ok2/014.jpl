@@ -1,0 +1,4 @@
+fn f(a : float) : int {
+    return 444
+}
+show f(1.0)

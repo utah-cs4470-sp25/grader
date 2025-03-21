@@ -1,0 +1,7 @@
+fn f(d : int) : int {
+   let x = d * d
+   let y = [x, x]
+   let z[w] = y
+   return d + w
+}
+show f(13)
