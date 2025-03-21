@@ -34,8 +34,8 @@ _jpl_main:
 	push rbp
 	mov rbp, rsp
 	push r12
-	mov r12, rbp
-	sub rsp, 8 ; Align stack
+	mov r12, rbp ; end of jpl_main prelude
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const0] ; 2
 	push rax
 	mov rax, [rel const1] ; 1
@@ -56,7 +56,7 @@ _jpl_main:
 	call _show
 	add rsp, 16
 	add rsp, 8 ; Remove alignment
-	pop r12
+	pop r12 ; begin jpl_main postlude
 	pop rbp
 	ret
 

@@ -62,8 +62,8 @@ _jpl_main:
 	push rbp
 	mov rbp, rsp
 	push r12
-	mov r12, rbp
-	sub rsp, 8 ; Align stack
+	mov r12, rbp ; end of jpl_main prelude
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const0] ; 47.21
 	push rax
 	mov rax, [rel const1] ; 84.08
@@ -71,7 +71,7 @@ _jpl_main:
 	mov rax, [rel const2] ; 57.72
 	push rax
 	mov rdi, 24
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	call _jpl_alloc
 	add rsp, 8 ; Remove alignment
 	; Moving 24 bytes from rsp to rax 
@@ -102,6 +102,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const7] ; 73.59
 	push rax
 	mov rax, [rel const8] ; 53.31
@@ -129,6 +130,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	movsd xmm1, [rsp]
@@ -288,6 +290,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const23] ; 14.96
 	push rax
 	mov rax, [rel const24] ; 87.98
@@ -297,6 +300,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	mov rax, [rel const25] ; 21.71
@@ -354,7 +358,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	pop r12
+	pop r12 ; begin jpl_main postlude
 	pop rbp
 	ret
 

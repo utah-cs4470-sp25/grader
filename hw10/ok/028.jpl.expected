@@ -34,7 +34,8 @@ _jpl_main:
 	push rbp
 	mov rbp, rsp
 	push r12
-	mov r12, rbp
+	mov r12, rbp ; end of jpl_main prelude
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const0] ; 4.3
 	push rax
 	mov rax, [rel const1] ; 3.4
@@ -44,13 +45,14 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	lea rdi, [rel const2] ; '(FloatType)'
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	pop r12
+	pop r12 ; begin jpl_main postlude
 	pop rbp
 	ret
 

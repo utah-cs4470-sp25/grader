@@ -35,7 +35,7 @@ _jpl_main:
 	push rbp
 	mov rbp, rsp
 	push r12
-	mov r12, rbp
+	mov r12, rbp ; end of jpl_main prelude
 	mov rax, [rel const0] ; 0
 	push rax
 	mov rax, [rel const1] ; 5
@@ -44,7 +44,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump1
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const2] ; 'mod by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -57,7 +57,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	pop r12
+	pop r12 ; begin jpl_main postlude
 	pop rbp
 	ret
 

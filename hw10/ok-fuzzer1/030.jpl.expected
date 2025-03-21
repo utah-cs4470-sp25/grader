@@ -77,7 +77,8 @@ _jpl_main:
 	push rbp
 	mov rbp, rsp
 	push r12
-	mov r12, rbp
+	mov r12, rbp ; end of jpl_main prelude
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const0] ; 60.44
 	push rax
 	movsd xmm1, [rsp]
@@ -114,6 +115,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	movsd xmm1, [rsp]
@@ -186,7 +188,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const10] ; 450
 	push rax
 	pop rax
@@ -204,7 +206,7 @@ _jpl_main:
 	and rax, 1
 	push rax
 	mov rdi, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	call _jpl_alloc
 	add rsp, 8 ; Remove alignment
 	; Moving 8 bytes from rsp to rax 
@@ -240,7 +242,7 @@ _jpl_main:
 	and rax, 1
 	push rax
 	mov rdi, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	call _jpl_alloc
 	add rsp, 8 ; Remove alignment
 	; Moving 8 bytes from rsp to rax 
@@ -253,7 +255,7 @@ _jpl_main:
 	mov rax, [rel const16] ; False
 	push rax
 	mov rdi, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	call _jpl_alloc
 	add rsp, 8 ; Remove alignment
 	; Moving 8 bytes from rsp to rax 
@@ -313,7 +315,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump1
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const24] ; 'mod by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -365,6 +367,7 @@ _jpl_main:
 	movsd [rsp], xmm0
 	mov rax, [rel const28] ; 15.7
 	push rax
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const29] ; 3.72
 	push rax
 	mov rax, [rel const30] ; 28.52
@@ -374,6 +377,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	movsd xmm0, [rsp]
@@ -440,7 +444,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const16] ; False
 	push rax
 	pop rax
@@ -607,7 +611,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	pop r12
+	pop r12 ; begin jpl_main postlude
 	pop rbp
 	ret
 

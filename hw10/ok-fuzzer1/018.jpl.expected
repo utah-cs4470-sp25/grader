@@ -72,14 +72,14 @@ _jpl_main:
 	push rbp
 	mov rbp, rsp
 	push r12
-	mov r12, rbp
+	mov r12, rbp ; end of jpl_main prelude
 	mov rax, [rel const0] ; 14.1
 	push rax
 	lea rdi, [rel const1] ; '(FloatType)'
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const2] ; 628
 	push rax
 	mov rax, [rel const3] ; 707
@@ -252,7 +252,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump3
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const21] ; 'divide by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -298,7 +298,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const9] ; False
 	push rax
 	mov rax, [rel const30] ; 613
@@ -419,7 +419,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	pop r12
+	pop r12 ; begin jpl_main postlude
 	pop rbp
 	ret
 

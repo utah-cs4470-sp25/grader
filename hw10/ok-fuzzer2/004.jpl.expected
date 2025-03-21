@@ -373,7 +373,7 @@ _jpl_main:
 	push rbp
 	mov rbp, rsp
 	push r12
-	mov r12, rbp
+	mov r12, rbp ; end of jpl_main prelude
 	mov rax, [rel const0] ; 92.3
 	push rax
 	mov rax, [rel const1] ; 6.49
@@ -387,6 +387,7 @@ _jpl_main:
 	divsd xmm0, xmm1
 	sub rsp, 8
 	movsd [rsp], xmm0
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const3] ; 71.98
 	push rax
 	movsd xmm1, [rsp]
@@ -402,6 +403,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	mov rax, [rel const5] ; 47.18
@@ -530,7 +532,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const16] ; True
 	push rax
 	pop rax
@@ -585,6 +587,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const21] ; 56.3
 	push rax
 	movsd xmm1, [rsp]
@@ -599,6 +602,7 @@ _jpl_main:
 	subsd xmm0, xmm1
 	sub rsp, 8
 	movsd [rsp], xmm0
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const22] ; 89.56
 	push rax
 	movsd xmm1, [rsp]
@@ -614,6 +618,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	mov rax, [rel const24] ; 74.91
@@ -642,6 +647,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	mov rax, [rel const25] ; 71.55
@@ -679,7 +685,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const28] ; 768
 	push rax
 	mov rax, [rel const29] ; 292
@@ -690,7 +696,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump1
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const31] ; 'mod by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -886,6 +892,7 @@ _jpl_main:
 	subsd xmm0, xmm1
 	sub rsp, 8
 	movsd [rsp], xmm0
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const52] ; 33.76
 	push rax
 	mov rax, [rel const53] ; 41.97
@@ -895,6 +902,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	mov rax, [rel const54] ; 41.47
@@ -1014,7 +1022,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const60] ; 93
 	push rax
 	mov rax, [rel const61] ; 906
@@ -1239,7 +1247,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump7
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const37] ; 'divide by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -1276,7 +1284,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump9
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const31] ; 'mod by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -1328,7 +1336,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const16] ; True
 	push rax
 	mov rax, [rel const93] ; 37.1
@@ -1413,7 +1421,7 @@ _jpl_main:
 	xor rax, 1
 	push rax
 	mov rdi, 24
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	call _jpl_alloc
 	add rsp, 8 ; Remove alignment
 	; Moving 24 bytes from rsp to rax 
@@ -1464,7 +1472,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const102] ; 136
 	push rax
 	pop rax
@@ -1503,7 +1511,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump11
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const37] ; 'divide by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -1522,7 +1530,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump12
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const37] ; 'divide by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -1536,7 +1544,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump13
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const31] ; 'mod by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -1572,7 +1580,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump14
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const37] ; 'divide by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -1603,7 +1611,7 @@ _jpl_main:
 	imul rax, r10
 	push rax
 	mov rdi, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	call _jpl_alloc
 	add rsp, 8 ; Remove alignment
 	; Moving 8 bytes from rsp to rax 
@@ -1636,7 +1644,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump15
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const31] ; 'mod by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -1693,7 +1701,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump17
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const31] ; 'mod by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -1776,9 +1784,10 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const131] ; 63.62
 	push rax
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const132] ; 92.14
 	push rax
 	movsd xmm1, [rsp]
@@ -1848,6 +1857,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	mov rax, [rel const138] ; 57.74
@@ -1876,6 +1886,7 @@ _jpl_main:
 	movsd [rsp], xmm0
 	mov rax, [rel const140] ; 48.13
 	push rax
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const141] ; 78.13
 	push rax
 	mov rax, [rel const142] ; 20.4
@@ -1894,6 +1905,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	mov rax, [rel const144] ; 72.65
@@ -2126,6 +2138,7 @@ _jpl_main:
 	subsd xmm0, xmm1
 	sub rsp, 8
 	movsd [rsp], xmm0
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const163] ; 94.7
 	push rax
 	movsd xmm1, [rsp]
@@ -2147,6 +2160,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	movsd xmm1, [rsp]
@@ -2234,7 +2248,7 @@ _jpl_main:
 	sub rsp, 8
 	movsd [rsp], xmm0
 	mov rdi, 24
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	call _jpl_alloc
 	add rsp, 8 ; Remove alignment
 	; Moving 24 bytes from rsp to rax 
@@ -2253,6 +2267,7 @@ _jpl_main:
 	call _show
 	add rsp, 16
 	add rsp, 8 ; Remove alignment
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const169] ; 46.46
 	push rax
 	mov rax, [rel const170] ; 6.9
@@ -2262,6 +2277,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	mov rax, [rel const171] ; 66.66
@@ -2430,7 +2446,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const184] ; 5.11
 	push rax
 	movsd xmm1, [rsp]
@@ -2504,7 +2520,7 @@ _jpl_main:
 	sub rsp, 8
 	movsd [rsp], xmm0
 	mov rdi, 24
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	call _jpl_alloc
 	add rsp, 8 ; Remove alignment
 	; Moving 24 bytes from rsp to rax 
@@ -2612,7 +2628,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump19
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const31] ; 'mod by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -2659,7 +2675,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump21
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const37] ; 'divide by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -2735,6 +2751,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const209] ; 5.31
 	push rax
 	mov rax, [rel const210] ; 93.27
@@ -2807,6 +2824,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	mov rax, [rel const216] ; 4.57
@@ -2934,6 +2952,7 @@ _jpl_main:
 	divsd xmm0, xmm1
 	sub rsp, 8
 	movsd [rsp], xmm0
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const224] ; 83.46
 	push rax
 	movsd xmm1, [rsp]
@@ -2958,6 +2977,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	movsd xmm0, [rsp]
@@ -3062,7 +3082,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const16] ; True
 	push rax
 	pop rax
@@ -3193,7 +3213,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump23
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const31] ; 'mod by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -3269,7 +3289,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump26
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const37] ; 'divide by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -3303,6 +3323,7 @@ _jpl_main:
 	subsd xmm0, xmm1
 	sub rsp, 8
 	movsd [rsp], xmm0
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const248] ; 67.49
 	push rax
 	movsd xmm1, [rsp]
@@ -3381,6 +3402,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	mov rax, [rel const253] ; 44.72
@@ -3458,7 +3480,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump27
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const37] ; 'divide by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -3476,11 +3498,11 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const16] ; True
 	push rax
 	mov rdi, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	call _jpl_alloc
 	add rsp, 8 ; Remove alignment
 	; Moving 8 bytes from rsp to rax 
@@ -3502,6 +3524,7 @@ _jpl_main:
 	movq rax, xmm0
 	and rax, 1
 	push rax
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const262] ; 80.69
 	push rax
 	mov rax, [rel const263] ; 41.81
@@ -3556,6 +3579,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	movsd xmm1, [rsp]
@@ -3851,7 +3875,7 @@ _jpl_main:
 	and rax, 1
 	push rax
 	mov rdi, 24
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	call _jpl_alloc
 	add rsp, 8 ; Remove alignment
 	; Moving 24 bytes from rsp to rax 
@@ -3885,11 +3909,11 @@ _jpl_main:
 	call _show
 	add rsp, 16
 	add rsp, 8 ; Remove alignment
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const16] ; True
 	push rax
 	mov rdi, 8
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	call _jpl_alloc
 	add rsp, 8 ; Remove alignment
 	; Moving 8 bytes from rsp to rax 
@@ -4080,7 +4104,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump29
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const37] ; 'divide by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -4149,6 +4173,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const306] ; 19.25
 	push rax
 	mov rax, [rel const307] ; 0.32
@@ -4215,6 +4240,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	mov rax, [rel const311] ; 37.4
@@ -4249,6 +4275,7 @@ _jpl_main:
 	call _fmod
 	sub rsp, 8
 	movsd [rsp], xmm0
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const314] ; 77.57
 	push rax
 	movsd xmm1, [rsp]
@@ -4257,6 +4284,7 @@ _jpl_main:
 	subsd xmm0, xmm1
 	sub rsp, 8
 	movsd [rsp], xmm0
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const315] ; 59.52
 	push rax
 	mov rax, [rel const215] ; 93.82
@@ -4266,6 +4294,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	movsd xmm0, [rsp]
@@ -4273,6 +4302,7 @@ _jpl_main:
 	movsd xmm1, [rsp]
 	add rsp, 8
 	call _fmod
+	add rsp, 8 ; Remove alignment
 	sub rsp, 8
 	movsd [rsp], xmm0
 	mov rax, [rel const316] ; 95.83
@@ -4526,7 +4556,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump31
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const37] ; 'divide by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -4593,7 +4623,7 @@ _jpl_main:
 	pop r10
 	cmp r10, 0
 	jne .jump34
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const37] ; 'divide by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
@@ -4629,7 +4659,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	pop r12
+	pop r12 ; begin jpl_main postlude
 	pop rbp
 	ret
 
