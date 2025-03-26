@@ -412,13 +412,15 @@ HWS = {
    },
    "1011": {
        "1": NullPart(DiffSpec, "hw10/ok/", "-s", normalize=ppasm),
-       "2": NullPart(DiffSpec, "hw10/ok-fuzzer1/", "-s", normalize=ppasm),
-       "3": NullPart(DiffSpec, "hw10/ok-fuzzer2/", "-s", normalize=ppasm),
-       "4": NullPart(DiffSpec, "hw11/ok1/", "-s", normalize=ppasm),
-       "5": NullPart(DiffSpec, "hw11/ok2/", "-s", normalize=ppasm),
-       "6": NullPart(DiffSpec, "hw11/ok3/", "-s", normalize=ppasm),
-       "7": NullPart(DiffSpec, "hw11/ok-fuzzer1/", "-s", normalize=ppasm),
-       "8": NullPart(DiffSpec, "hw11/ok-fuzzer2/", "-s", normalize=ppasm),
+       "2": NullPart(DiffSpec, "hw10/ok-fuzzer12/", "-s", normalize=ppasm),
+       ##"2": NullPart(DiffSpec, "hw10/ok-fuzzer1/", "-s", normalize=ppasm),
+       ## "3": NullPart(DiffSpec, "hw10/ok-fuzzer2/", "-s", normalize=ppasm),
+       "3": NullPart(DiffSpec, "hw11/ok1/", "-s", normalize=ppasm),
+       "4": NullPart(DiffSpec, "hw11/ok2/", "-s", normalize=ppasm),
+       "5": NullPart(DiffSpec, "hw11/ok3/", "-s", normalize=ppasm),
+       "6": NullPart(DiffSpec, "hw11/ok-fuzzer12/", "-s", normalize=ppasm),
+       ##"7": NullPart(DiffSpec, "hw11/ok-fuzzer1/", "-s", normalize=ppasm),
+       ##"8": NullPart(DiffSpec, "hw11/ok-fuzzer2/", "-s", normalize=ppasm),
    },
 
 
