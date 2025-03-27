@@ -47,11 +47,15 @@ def normalize_line(line):
     line = " ".join(line.split())
     return line
 
-def ppasm(lines):
-    for line in lines:
-        line2 = normalize_line(line)
-        if line2 and not line2.isspace():
-            yield line2
+def ppasm(lines, commentmode=False):
+    if commentmode:
+        for x in gather_comments(lines, ";"):
+            yield x
+    else:
+        for line in lines:
+            line2 = normalize_line(line)
+            if line2 and not line2.isspace():
+                yield line2
 
 def normalize_cline(line):
     if ";" in line:
@@ -65,11 +69,27 @@ def normalize_cline(line):
     line = " ".join(line.split())
     return line
 
-def ppc(lines):
+def ppc(lines, commentmode=False):
+    if commentmode:
+        for x in gather_comments(lines, "//"):
+            yield x
+    else:
+        for line in lines:
+            line2 = normalize_cline(line)
+            if line2 and not line2.isspace():
+                yield line2
+
+def gather_comments(lines, comment_str):
+    ii = 1
     for line in lines:
-        line2 = normalize_cline(line)
-        if line2 and not line2.isspace():
-            yield line2
+        if comment_str in line:
+            [pre_ln, post_ln] = line.split(comment_str, 1)
+            if bool(pre_ln.strip()):
+                yield (ii, " " + comment_str + post_ln)
+                ii += 1
+        else:
+            if bool(line.strip()):
+                ii += 1
 
 if __name__ == "__main__":
     import sys

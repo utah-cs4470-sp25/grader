@@ -12,6 +12,7 @@ import subprocess
 import concurrent.futures as futures
 import argparse, sys, os
 import shutil
+import re
 
 DIR=os.environ.get("DIR", "~/jpl/pavpan/")
 TIMEOUT=60 # Seconds
@@ -121,12 +122,57 @@ class InvalidSpec(FileSpec):
     def regen(self):
         pass
 
-def diff(fromtext, totext, fromfile=None, tofile=None):
+def diff(fromtext, totext, fromfile=None, tofile=None, fromcomments=None, tocomments=None):
+    frommap = fromcomments or {}
+    tomap = tocomments or {}
     diff_lines = list(difflib.context_diff(
         fromtext, totext, lineterm="", fromfile=fromfile, tofile=tofile))
     if diff_lines:
         count = len([line for line in diff_lines if line.startswith("- ") or line.startswith("+ ") or line.startswith("! ")])
-        raise CompilerInvalid(f"{count} lines differ", "\n".join(diff_lines), None)
+        raise CompilerInvalid(f"{count} lines differ", "\n".join(readd_comments(diff_lines, frommap, tomap)), None)
+
+FROM_RE = re.compile(r"\*\*\* ([0-9]+),[0-9]+ \*\*\*\*")
+TO_RE = re.compile(r"--- ([0-9]+),[0-9]+ ----")
+
+def readd_comments(diff_lines, from_map, to_map):
+    lns = []
+    to_linenum = None
+    from_linenum = None
+    for ln in diff_lines:
+        if ln.startswith("*****") or ln.startswith("===="):
+            # reset
+            from_linenum = None
+            to_linenum = None
+            lns.append(ln)
+            continue
+        from_m = re.match(FROM_RE, ln)
+        if from_m:
+            # parse current line num
+            to_linenum = None
+            from_linenum = int(from_m.group(1))
+            lns.append(ln)
+            continue
+        to_m = re.match(TO_RE, ln)
+        if to_m:
+            from_linenum = None
+            to_linenum = int(to_m.group(1))
+            lns.append(ln)
+            continue
+        if from_linenum:
+            # add comment, if one exists
+            lns.append(ln + from_map.get(from_linenum, ""))
+            from_linenum += 1
+            continue
+        if to_linenum:
+            # ditto
+            lns.append(ln + to_map.get(to_linenum, ""))
+            to_linenum += 1
+            continue
+        if True:
+            # boring line
+            lns.append(ln)
+            continue
+    return lns
 
 @dataclass
 class DiffSpec(FileSpec):
@@ -147,10 +193,13 @@ class DiffSpec(FileSpec):
         success, out, err = run_student(self.flags, self.in_file, require=True)
         expected = expected.strip().split("\n")
         out = out.strip().split("\n")
+        lcmap = {}
         if self.normalize:
+            exp_cmap = dict(self.normalize(expected, commentmode=True))
             expected = list(self.normalize(expected))
+            out_cmap = dict(self.normalize(out, commentmode=True))
             out = list(self.normalize(out))
-        diff(expected, out, fromfile=self.expected_file.name, tofile="Your compiler")
+        diff(expected, out, fromfile=self.expected_file.name, tofile="Your compiler", fromcomments=exp_cmap, tocomments=out_cmap)
 
     def regen(self):
         out = run_compiler(self.flags, self.in_file)
