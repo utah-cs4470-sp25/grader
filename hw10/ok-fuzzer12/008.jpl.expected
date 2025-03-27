@@ -24,364 +24,57 @@ extern _to_int
 extern _to_float
 
 section .data
-const0: dq 82.41
-const1: dq 58.58
-const2: db `(FloatType)`, 0
-const3: dq 29.4
-const4: dq 845
-const5: db `(IntType)`, 0
-const6: dq 43.42
-const7: dq 21.76
-const8: dq 43.26
-const9: dq 3.75
-const10: dq 98.88
-const11: dq 14.31
-const12: dq 37.84
-const13: dq 47.47
-const14: dq 66.62
-const15: dq 96.76
-const16: dq 79.04
-const17: dq 28.29
-const18: dq 51.28
-const19: dq 78.92
-const20: dq 12.7
-const21: dq 65.38
-const22: dq 11.11
-const23: dq 48.73
-const24: dq 62.33
-const25: dq 84.2
-const26: dq 57.33
-const27: dq 30.77
-const28: dq 4.75
-const29: dq 99.94
-const30: dq 29.87
-const31: dq 87.61
-const32: db `(BoolType)`, 0
-const33: dq 679
-const34: dq 237
-const35: dq 880
-const36: dq 903
-const37: dq 485
-const38: dq 826
-const39: dq 226
-const40: dq 585
-const41: dq 624
-const42: dq 504
-const43: dq 948
-const44: dq 993
-const45: dq 735
-const46: db `divide by zero`, 0
-const47: db `mod by zero`, 0
-const48: dq 124
-const49: dq 69
-const50: dq 790
-const51: dq 93.11
-const52: dq 79.84
-const53: dq 29.58
-const54: dq 86.46
-const55: dq 68.29
-const56: dq 30.94
-const57: dq 2.24
-const58: dq 3.3
-const59: dq 47.15
-const60: dq 27.71
-const61: dq 93.64
-const62: dq 27.94
-const63: dq 2.46
-const64: dq 36.73
-const65: dq 12.96
-const66: dq 54.9
-const67: dq 2.99
-const68: dq 16.98
-const69: dq 90.6
-const70: dq 15.59
-const71: dq 1.68
-const72: dq 13.57
-const73: dq 91.31
-const74: dq 93.06
-const75: dq 31.72
-const76: dq 40.6
-const77: dq 56.52
-const78: dq 39.88
-const79: dq 83.77
-const80: dq 32.72
-const81: dq 3.47
-const82: dq 14.86
-const83: dq 43.34
-const84: dq 87.23
-const85: dq 48.11
-const86: dq 18.59
-const87: dq 1.79
-const88: dq 778
-const89: dq 0
-const90: dq 70.74
-const91: dq 9.27
-const92: dq 26.78
-const93: dq 97.3
-const94: dq 90.96
-const95: dq 56.06
-const96: dq 45.49
-const97: dq 189
-const98: dq 258
-const99: dq 2.4
-const100: dq 7.46
-const101: dq 75.1
-const102: dq 1
-const103: dq 98.64
-const104: dq 73.92
-const105: dq 51.34
-const106: dq 78.41
-const107: db `(ArrayType (BoolType) 1)`, 0
-const108: dq 858
-const109: dq 743
-const110: dq 632
-const111: dq 484
-const112: dq 178
-const113: dq 871
-const114: dq 136
-const115: dq 415
-const116: dq 387
-const117: dq 645
-const118: dq 578
-const119: dq 479
-const120: dq 680
-const121: dq 332
-const122: dq 768
-const123: dq 284
-const124: dq 537
-const125: dq 750
-const126: dq 596
-const127: dq 943
-const128: dq 648
-const129: dq 493
-const130: dq 614
-const131: dq 994
-const132: dq 924
-const133: dq 984
-const134: dq 923
-const135: dq 58.93
-const136: dq 467
-const137: dq 606
-const138: dq 995
-const139: dq 530
-const140: dq 620
-const141: dq 70.11
-const142: dq 21.39
-const143: dq 996
-const144: dq 92.65
-const145: dq 3.2
-const146: dq 68.48
-const147: dq 12.01
-const148: dq 297
-const149: dq 696
-const150: dq 572
-const151: dq 922
-const152: dq 762
-const153: dq 781
-const154: dq 174
-const155: dq 500
-const156: dq 96
-const157: dq 575
-const158: dq 934
-const159: dq 549
-const160: dq 218
-const161: dq 91
-const162: dq 970
-const163: dq 523
-const164: dq 289
-const165: dq 90.32
-const166: dq 110
-const167: dq 610
-const168: dq 266
-const169: dq 390
-const170: dq 927
-const171: dq 860
-const172: dq 854
-const173: dq 296
-const174: dq 182
-const175: dq 708
-const176: dq 230
-const177: dq 288
-const178: dq 75
-const179: dq 519
-const180: dq 83
-const181: dq 891
-const182: dq 741
-const183: dq 341
-const184: dq 90
-const185: dq 442
-const186: dq 932
-const187: dq 305
-const188: dq 725
-const189: dq 560
-const190: dq 421
-const191: dq 667
-const192: dq 58
-const193: dq 783
-const194: dq 945
-const195: dq 658
-const196: dq 125
-const197: dq 50
-const198: dq 690
-const199: dq 739
-const200: dq 199
-const201: dq 120
-const202: dq 749
-const203: dq 752
-const204: dq 709
-const205: dq 183
-const206: dq 44
-const207: dq 54.29
-const208: dq 31.06
-const209: dq 91.13
-const210: dq 26.69
-const211: dq 58.43
-const212: dq 0.07
-const213: dq 27.58
-const214: dq 63.79
-const215: dq 40.48
-const216: dq 66.1
-const217: dq 86.94
-const218: dq 89.36
-const219: dq 78.09
-const220: dq 96.45
-const221: dq 37.99
-const222: dq 81.11
-const223: dq 18.71
-const224: dq 40.19
-const225: dq 41.2
-const226: dq 52.97
-const227: dq 5.43
-const228: dq 19.0
-const229: dq 79.83
-const230: dq 38.2
-const231: dq 64.0
-const232: dq 98.13
-const233: dq 96.99
-const234: dq 10.45
-const235: dq 71.43
-const236: dq 53.38
-const237: dq 49.48
-const238: dq 12.47
-const239: dq 90.31
-const240: dq 32
-const241: dq 428
-const242: dq 405
-const243: dq 225
-const244: dq 326
-const245: dq 833
-const246: dq 597
-const247: dq 693
-const248: dq 438
-const249: dq 330
-const250: dq 528
-const251: dq 718
-const252: dq 675
-const253: dq 247
-const254: dq 393
-const255: dq 5
-const256: dq 813
-const257: dq 190
-const258: dq 426
-const259: dq 135
-const260: dq 12.22
-const261: dq 3.61
-const262: dq 46.44
-const263: dq 12.69
-const264: dq 53.61
-const265: dq 46.63
-const266: dq 10.59
-const267: dq 78.3
-const268: dq 5.98
-const269: dq 49.2
-const270: dq 58.23
-const271: dq 63.08
-const272: dq 94.17
-const273: dq 53.08
-const274: dq 12.51
-const275: dq 14.49
-const276: dq 24.83
-const277: dq 807
-const278: dq 434
-const279: dq 911
-const280: dq 28
-const281: dq 534
-const282: dq 141
-const283: dq 878
-const284: dq 555
-const285: dq 836
-const286: dq 938
-const287: dq 420
-const288: dq 786
-const289: dq 197
-const290: dq 874
-const291: dq 104
-const292: dq 151
-const293: dq 114
-const294: dq 582
-const295: dq 651
-const296: dq 282
-const297: dq 47
-const298: dq 23.76
-const299: dq 47.26
-const300: dq 99.58
-const301: dq 87.11
-const302: dq 64.98
-const303: dq 64.69
-const304: dq 47.64
-const305: dq 48.7
-const306: dq 2.78
-const307: dq 79.32
-const308: dq 46.8
-const309: dq 42.38
-const310: dq 63.07
-const311: dq 73.13
-const312: dq 8.4
-const313: dq 15.98
-const314: dq 77.18
-const315: dq 69.78
-const316: dq 75.27
-const317: dq 52.89
-const318: dq 67.99
-const319: dq 83.47
-const320: dq 929
-const321: dq 714
-const322: dq 474
-const323: dq 716
-const324: dq 127
-const325: dq 882
-const326: dq 13.39
-const327: dq 25.59
-const328: dq 563
-const329: dq 863
-const330: dq 969
-const331: dq 949
-const332: dq 966
-const333: db `(ArrayType (ArrayType (ArrayType (BoolType) 1) 1) 1)`, 0
-const334: dq 904
-const335: dq 464
-const336: dq 755
-const337: dq 814
-const338: dq 644
-const339: dq 261
-const340: dq 299
-const341: dq 765
-const342: dq 21.53
-const343: dq 56.94
-const344: dq 84.78
-const345: db `(ArrayType (FloatType) 1)`, 0
-const346: dq 204
-const347: dq 511
-const348: dq 837
-const349: dq 605
-const350: dq 378
-const351: dq 916
-const352: dq 902
-const353: dq 848
-const354: dq 344
-const355: dq 368
-const356: dq 384
-const357: dq 154
+const0: dq 44.14
+const1: dq 0.05
+const2: dq 45.08
+const3: dq 6.6
+const4: dq 88.65
+const5: dq 31.15
+const6: dq 7.73
+const7: dq 93.53
+const8: dq 73.83
+const9: db `(BoolType)`, 0
+const10: dq 18.53
+const11: dq 71.51
+const12: dq 76.66
+const13: dq 69.19
+const14: dq 42.98
+const15: dq 50.01
+const16: dq 83.53
+const17: dq 31.58
+const18: db `(FloatType)`, 0
+const19: dq 97.48
+const20: dq 55.43
+const21: dq 65.81
+const22: dq 93.64
+const23: dq 33.0
+const24: dq 25.56
+const25: dq 12.2
+const26: dq 72.26
+const27: dq 98.35
+const28: dq 308
+const29: dq 241
+const30: db `(ArrayType (IntType) 1)`, 0
+const31: dq 8.85
+const32: dq 9.7
+const33: dq 54.24
+const34: dq 77.57
+const35: dq 81.58
+const36: dq 667
+const37: db `(IntType)`, 0
+const38: dq 916
+const39: dq 537
+const40: db `divide by zero`, 0
+const41: dq 735
+const42: dq 265
+const43: dq 717
+const44: db `mod by zero`, 0
+const45: dq 519
+const46: dq 171
+const47: dq 15
+const48: dq 834
+const49: dq 559
+const50: dq 64.43
 
 section .text
 jpl_main:
@@ -390,7 +83,9 @@ _jpl_main:
 	mov rbp, rsp
 	push r12
 	mov r12, rbp ; end of jpl_main prelude
-	mov rax, [rel const0] ; 82.41
+	mov rax, [rel const0] ; 44.14
+	push rax
+	mov rax, [rel const1] ; 0.05
 	push rax
 	movsd xmm1, [rsp]
 	add rsp, 8
@@ -398,8 +93,6 @@ _jpl_main:
 	subsd xmm0, xmm1
 	sub rsp, 8
 	movsd [rsp], xmm0
-	mov rax, [rel const1] ; 58.58
-	push rax
 	movsd xmm0, [rsp]
 	add rsp, 8
 	movsd xmm1, [rsp]
@@ -407,57 +100,8 @@ _jpl_main:
 	subsd xmm0, xmm1
 	sub rsp, 8
 	movsd [rsp], xmm0
-	lea rdi, [rel const2] ; '(FloatType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const3] ; 29.4
+	mov rax, [rel const2] ; 45.08
 	push rax
-	lea rdi, [rel const2] ; '(FloatType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const4] ; 845
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const6] ; 43.42
-	push rax
-	lea rdi, [rel const2] ; '(FloatType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const7] ; 21.76
-	push rax
-	mov rax, [rel const8] ; 43.26
-	push rax
-	sub rsp, 8 ; Add alignment
-	mov rax, [rel const9] ; 3.75
-	push rax
-	mov rax, [rel const10] ; 98.88
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	sub rsp, 8 ; Add alignment
-	mov rax, [rel const11] ; 14.31
-	push rax
-	mov rax, [rel const12] ; 37.84
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	add rsp, 8 ; Remove alignment
-	sub rsp, 8
-	movsd [rsp], xmm0
 	movsd xmm0, [rsp]
 	add rsp, 8
 	movsd xmm1, [rsp]
@@ -465,16 +109,8 @@ _jpl_main:
 	divsd xmm0, xmm1
 	sub rsp, 8
 	movsd [rsp], xmm0
-	mov rax, [rel const13] ; 47.47
+	mov rax, [rel const3] ; 6.6
 	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	add rsp, 8 ; Remove alignment
-	sub rsp, 8
-	movsd [rsp], xmm0
 	movsd xmm1, [rsp]
 	add rsp, 8
 	pxor xmm0, xmm0
@@ -487,88 +123,7 @@ _jpl_main:
 	subsd xmm0, xmm1
 	sub rsp, 8
 	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const14] ; 66.62
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const15] ; 96.76
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const16] ; 79.04
-	push rax
-	sub rsp, 8 ; Add alignment
-	mov rax, [rel const17] ; 28.29
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const18] ; 51.28
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const19] ; 78.92
-	push rax
-	mov rax, [rel const20] ; 12.7
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const21] ; 65.38
+	mov rax, [rel const4] ; 88.65
 	push rax
 	movsd xmm0, [rsp]
 	add rsp, 8
@@ -581,257 +136,445 @@ _jpl_main:
 	add rsp, 8
 	movsd xmm1, [rsp]
 	add rsp, 8
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	sub rsp, 8 ; Add alignment
-	mov rax, [rel const22] ; 11.11
-	push rax
-	mov rax, [rel const23] ; 48.73
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const24] ; 62.33
-	push rax
-	mov rax, [rel const25] ; 84.2
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const26] ; 57.33
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	add rsp, 8 ; Remove alignment
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const27] ; 30.77
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const28] ; 4.75
-	push rax
-	mov rax, [rel const29] ; 99.94
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	add rsp, 8 ; Remove alignment
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	sub rsp, 8 ; Add alignment
-	mov rax, [rel const30] ; 29.87
-	push rax
-	mov rax, [rel const31] ; 87.61
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	add rsp, 8 ; Remove alignment
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmplesd xmm1, xmm0
-	movq rax, xmm1
+	cmpneqsd xmm0, xmm1
+	movq rax, xmm0
 	and rax, 1
 	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
+	mov rax, [rel const5] ; 31.15
+	push rax
+	movsd xmm1, [rsp]
 	add rsp, 8
-	mov rax, [rel const33] ; 679
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const6] ; 7.73
 	push rax
-	mov rax, [rel const34] ; 237
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const7] ; 93.53
 	push rax
-	mov rax, [rel const35] ; 880
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const8] ; 73.83
 	push rax
-	mov rax, [rel const36] ; 903
-	push rax
-	mov rax, [rel const37] ; 485
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmpneqsd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
 	push rax
 	pop rax
 	pop r10
-	sub rax, r10
+	cmp rax, r10
+	setne al
+	and rax, 1
 	push rax
-	mov rax, [rel const38] ; 826
+	lea rdi, [rel const9] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const10] ; 18.53
+	push rax
+	mov rax, [rel const11] ; 71.51
+	push rax
+	mov rax, [rel const12] ; 76.66
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const13] ; 69.19
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmplesd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
+	push rax
+	lea rdi, [rel const9] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const14] ; 42.98
+	push rax
+	mov rax, [rel const15] ; 50.01
+	push rax
+	mov rax, [rel const16] ; 83.53
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const17] ; 31.58
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	lea rdi, [rel const18] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const19] ; 97.48
+	push rax
+	mov rax, [rel const20] ; 55.43
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const21] ; 65.81
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const22] ; 93.64
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const23] ; 33.0
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	lea rdi, [rel const18] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const24] ; 25.56
+	push rax
+	lea rdi, [rel const18] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const25] ; 12.2
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	lea rdi, [rel const18] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const26] ; 72.26
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const27] ; 98.35
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmpeqsd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
+	push rax
+	lea rdi, [rel const9] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const28] ; 308
+	push rax
+	mov rax, [rel const29] ; 241
 	push rax
 	pop rax
 	neg rax
 	push rax
-	mov rax, [rel const39] ; 226
+	pop rax
+	neg rax
 	push rax
 	pop rax
 	pop r10
 	imul rax, r10
 	push rax
 	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	mov rax, [rel const40] ; 585
-	push rax
-	mov rax, [rel const41] ; 624
-	push rax
-	pop rax
 	neg rax
 	push rax
-	mov rax, [rel const42] ; 504
+	mov rdi, 8
+	sub rsp, 8 ; Add alignment
+	call _jpl_alloc
+	add rsp, 8 ; Remove alignment
+	; Moving 8 bytes from rsp to rax 
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 8
 	push rax
-	pop rax
-	neg rax
+	mov rax, 1
 	push rax
-	pop rax
-	pop r10
-	add rax, r10
+	lea rdi, [rel const30] ; '(ArrayType (IntType) 1)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 16
+	add rsp, 8 ; Remove alignment
+	mov rax, [rel const31] ; 8.85
 	push rax
-	mov rax, [rel const43] ; 948
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const32] ; 9.7
 	push rax
-	pop rax
-	pop r10
-	add rax, r10
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const33] ; 54.24
 	push rax
-	pop rax
-	neg rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const34] ; 77.57
 	push rax
-	mov rax, [rel const44] ; 993
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const35] ; 81.58
 	push rax
-	pop rax
-	pop r10
-	sub rax, r10
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmpeqsd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
 	push rax
-	mov rax, [rel const45] ; 735
+	lea rdi, [rel const9] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const36] ; 667
 	push rax
-	pop rax
-	pop r10
-	sub rax, r10
+	lea rdi, [rel const37] ; '(IntType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const38] ; 916
+	push rax
+	mov rax, [rel const39] ; 537
 	push rax
 	pop rax
 	pop r10
 	cmp r10, 0
 	jne .jump1
-	lea rdi, [rel const46] ; 'divide by zero'
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const40] ; 'divide by zero'
 	call _fail_assertion
+	add rsp, 8 ; Remove alignment
 .jump1:
 	cqo
 	idiv r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const41] ; 735
+	push rax
+	mov rax, [rel const42] ; 265
+	push rax
+	mov rax, [rel const43] ; 717
 	push rax
 	pop rax
 	pop r10
 	cmp r10, 0
 	jne .jump2
 	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
+	lea rdi, [rel const44] ; 'mod by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
 .jump2:
@@ -840,3698 +583,57 @@ _jpl_main:
 	mov rax, rdx
 	push rax
 	pop rax
-	neg rax
+	pop r10
+	sub rax, r10
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	mov rax, [rel const45] ; 519
 	push rax
 	pop rax
 	pop r10
 	cmp r10, 0
 	jne .jump3
-	lea rdi, [rel const46] ; 'divide by zero'
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const40] ; 'divide by zero'
 	call _fail_assertion
+	add rsp, 8 ; Remove alignment
 .jump3:
 	cqo
 	idiv r10
+	push rax
+	mov rax, [rel const46] ; 171
+	push rax
+	mov rax, [rel const47] ; 15
+	push rax
+	mov rax, [rel const48] ; 834
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	mov rax, [rel const49] ; 559
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
 	push rax
 	pop rax
 	pop r10
 	cmp r10, 0
 	jne .jump4
 	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const46] ; 'divide by zero'
+	lea rdi, [rel const44] ; 'mod by zero'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
 .jump4:
 	cqo
 	idiv r10
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const35] ; 880
-	push rax
-	mov rax, [rel const48] ; 124
-	push rax
-	mov rax, [rel const49] ; 69
-	push rax
-	mov rax, [rel const50] ; 790
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump5
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-.jump5:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump6
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump6:
-	cqo
-	idiv r10
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const51] ; 93.11
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const52] ; 79.84
-	push rax
-	mov rax, [rel const53] ; 29.58
-	push rax
-	mov rax, [rel const54] ; 86.46
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const55] ; 68.29
-	push rax
-	mov rax, [rel const56] ; 30.94
-	push rax
-	mov rax, [rel const57] ; 2.24
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const58] ; 3.3
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const59] ; 47.15
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const60] ; 27.71
-	push rax
-	mov rax, [rel const61] ; 93.64
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const62] ; 27.94
-	push rax
-	mov rax, [rel const63] ; 2.46
-	push rax
-	mov rax, [rel const64] ; 36.73
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const65] ; 12.96
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const66] ; 54.9
-	push rax
-	mov rax, [rel const67] ; 2.99
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const68] ; 16.98
-	push rax
-	mov rax, [rel const69] ; 90.6
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmplesd xmm1, xmm0
-	movq rax, xmm1
-	and rax, 1
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const70] ; 15.59
-	push rax
-	lea rdi, [rel const2] ; '(FloatType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const71] ; 1.68
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const72] ; 13.57
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const73] ; 91.31
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const74] ; 93.06
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const75] ; 31.72
-	push rax
-	mov rax, [rel const76] ; 40.6
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const77] ; 56.52
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const78] ; 39.88
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const79] ; 83.77
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const80] ; 32.72
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const81] ; 3.47
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const82] ; 14.86
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const83] ; 43.34
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	lea rdi, [rel const2] ; '(FloatType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const84] ; 87.23
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const85] ; 48.11
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmpeqsd xmm0, xmm1
-	movq rax, xmm0
-	and rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const86] ; 18.59
-	push rax
-	lea rdi, [rel const2] ; '(FloatType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const87] ; 1.79
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	lea rdi, [rel const2] ; '(FloatType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const88] ; 778
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const89] ; False
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const90] ; 70.74
-	push rax
-	lea rdi, [rel const2] ; '(FloatType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const91] ; 9.27
-	push rax
-	lea rdi, [rel const2] ; '(FloatType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const92] ; 26.78
-	push rax
-	lea rdi, [rel const2] ; '(FloatType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const93] ; 97.3
-	push rax
-	mov rax, [rel const94] ; 90.96
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	lea rdi, [rel const2] ; '(FloatType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const95] ; 56.06
-	push rax
-	mov rax, [rel const96] ; 45.49
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmpeqsd xmm0, xmm1
-	movq rax, xmm0
-	and rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const97] ; 189
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const98] ; 258
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump7
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump7:
-	cqo
-	idiv r10
 	mov rax, rdx
-	push rax
-	pop rax
-	neg rax
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	sub rsp, 8 ; Add alignment
-	mov rax, [rel const89] ; False
-	push rax
-	mov rax, [rel const99] ; 2.4
-	push rax
-	mov rax, [rel const100] ; 7.46
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const101] ; 75.1
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmpeqsd xmm0, xmm1
-	movq rax, xmm0
-	and rax, 1
-	push rax
-	mov rax, [rel const102] ; True
-	push rax
-	mov rax, [rel const103] ; 98.64
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const104] ; 73.92
-	push rax
-	mov rax, [rel const105] ; 51.34
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const106] ; 78.41
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmplesd xmm1, xmm0
-	movq rax, xmm1
-	and rax, 1
-	push rax
-	mov rdi, 32
-	call _jpl_alloc
-	; Moving 32 bytes from rsp to rax 
-		mov r10, [rsp + 24]
-		mov [rax + 24], r10
-		mov r10, [rsp + 16]
-		mov [rax + 16], r10
-		mov r10, [rsp + 8]
-		mov [rax + 8], r10
-		mov r10, [rsp + 0]
-		mov [rax + 0], r10
-	add rsp, 32
-	push rax
-	mov rax, 4
-	push rax
-	lea rdi, [rel const107] ; '(ArrayType (BoolType) 1)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 16
-	add rsp, 8 ; Remove alignment
-	mov rax, [rel const108] ; 858
-	push rax
-	mov rax, [rel const109] ; 743
-	push rax
-	mov rax, [rel const110] ; 632
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump8
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-.jump8:
-	cqo
-	idiv r10
-	push rax
-	mov rax, [rel const111] ; 484
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump9
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-.jump9:
-	cqo
-	idiv r10
-	push rax
-	mov rax, [rel const112] ; 178
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const113] ; 871
-	push rax
-	mov rax, [rel const38] ; 826
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump10
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump10:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump11
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump11:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const114] ; 136
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump12
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump12:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump13
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump13:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const115] ; 415
-	push rax
-	mov rax, [rel const116] ; 387
-	push rax
-	mov rax, [rel const117] ; 645
-	push rax
-	mov rax, [rel const118] ; 578
-	push rax
-	mov rax, [rel const119] ; 479
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump14
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-.jump14:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump15
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump15:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	mov rax, [rel const120] ; 680
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump16
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump16:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const121] ; 332
-	push rax
-	mov rax, [rel const122] ; 768
-	push rax
-	mov rax, [rel const123] ; 284
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	mov rax, [rel const124] ; 537
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump17
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump17:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	mov rax, [rel const125] ; 750
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const126] ; 596
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	mov rax, [rel const127] ; 943
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const128] ; 648
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump18
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-.jump18:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump19
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump19:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	mov rax, [rel const129] ; 493
-	push rax
-	mov rax, [rel const130] ; 614
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	mov rax, [rel const131] ; 994
-	push rax
-	mov rax, [rel const132] ; 924
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	mov rax, [rel const133] ; 984
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump20
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-.jump20:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	mov rax, [rel const134] ; 923
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	setg al
-	and rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const102] ; True
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const135] ; 58.93
-	push rax
-	lea rdi, [rel const2] ; '(FloatType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const136] ; 467
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const137] ; 606
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const138] ; 995
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const102] ; True
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	sub rsp, 8 ; Add alignment
-	mov rax, [rel const139] ; 530
-	push rax
-	mov rax, [rel const140] ; 620
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	setl al
-	and rax, 1
-	push rax
-	mov rax, [rel const141] ; 70.11
-	push rax
-	mov rax, [rel const142] ; 21.39
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmpeqsd xmm0, xmm1
-	movq rax, xmm0
-	and rax, 1
-	push rax
-	mov rax, [rel const102] ; True
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	mov rdi, 24
-	sub rsp, 8 ; Add alignment
-	call _jpl_alloc
-	add rsp, 8 ; Remove alignment
-	; Moving 24 bytes from rsp to rax 
-		mov r10, [rsp + 16]
-		mov [rax + 16], r10
-		mov r10, [rsp + 8]
-		mov [rax + 8], r10
-		mov r10, [rsp + 0]
-		mov [rax + 0], r10
-	add rsp, 24
-	push rax
-	mov rax, 3
-	push rax
-	lea rdi, [rel const107] ; '(ArrayType (BoolType) 1)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 16
-	add rsp, 8 ; Remove alignment
-	mov rax, [rel const143] ; 996
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const144] ; 92.65
-	push rax
-	mov rax, [rel const145] ; 3.2
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const146] ; 68.48
-	push rax
-	mov rax, [rel const147] ; 12.01
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmplesd xmm1, xmm0
-	movq rax, xmm1
-	and rax, 1
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const148] ; 297
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const149] ; 696
-	push rax
-	mov rax, [rel const98] ; 258
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump21
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump21:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const150] ; 572
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump22
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump22:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump23
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump23:
-	cqo
-	idiv r10
-	push rax
-	mov rax, [rel const151] ; 922
-	push rax
-	mov rax, [rel const152] ; 762
-	push rax
-	mov rax, [rel const153] ; 781
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	mov rax, [rel const154] ; 174
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	setg al
-	and rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	mov rax, [rel const102] ; True
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	setne al
-	and rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const102] ; True
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const155] ; 500
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const156] ; 96
-	push rax
-	mov rax, [rel const157] ; 575
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump24
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump24:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	mov rax, [rel const139] ; 530
-	push rax
-	mov rax, [rel const158] ; 934
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump25
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump25:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump26
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump26:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	mov rax, [rel const110] ; 632
-	push rax
-	mov rax, [rel const159] ; 549
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const160] ; 218
-	push rax
-	mov rax, [rel const161] ; 91
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump27
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump27:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	mov rax, [rel const162] ; 970
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const163] ; 523
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump28
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump28:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const164] ; 289
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump29
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump29:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const165] ; 90.32
-	push rax
-	lea rdi, [rel const2] ; '(FloatType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	sub rsp, 8 ; Add alignment
-	mov rax, [rel const166] ; 110
-	push rax
-	mov rax, [rel const167] ; 610
-	push rax
-	mov rax, [rel const37] ; 485
-	push rax
-	mov rax, [rel const168] ; 266
-	push rax
-	mov rax, [rel const131] ; 994
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump30
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump30:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const115] ; 415
-	push rax
-	mov rax, [rel const169] ; 390
-	push rax
-	mov rax, [rel const170] ; 927
-	push rax
-	mov rax, [rel const171] ; 860
-	push rax
-	mov rax, [rel const172] ; 854
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump31
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-.jump31:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump32
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump32:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	mov rax, [rel const173] ; 296
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const174] ; 182
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	setle al
-	and rax, 1
-	push rax
-	mov rdi, 8
-	sub rsp, 8 ; Add alignment
-	call _jpl_alloc
-	add rsp, 8 ; Remove alignment
-	; Moving 8 bytes from rsp to rax 
-		mov r10, [rsp + 0]
-		mov [rax + 0], r10
-	add rsp, 8
-	push rax
-	mov rax, 1
-	push rax
-	lea rdi, [rel const107] ; '(ArrayType (BoolType) 1)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 16
-	add rsp, 8 ; Remove alignment
-	mov rax, [rel const89] ; False
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const175] ; 708
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const176] ; 230
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const177] ; 288
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const178] ; 75
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump33
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-.jump33:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const179] ; 519
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const180] ; 83
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump34
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump34:
-	cqo
-	idiv r10
-	push rax
-	mov rax, [rel const178] ; 75
-	push rax
-	mov rax, [rel const181] ; 891
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump35
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump35:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	mov rax, [rel const182] ; 741
-	push rax
-	mov rax, [rel const183] ; 341
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump36
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump36:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump37
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-.jump37:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const184] ; 90
-	push rax
-	mov rax, [rel const185] ; 442
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump38
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump38:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	mov rax, [rel const186] ; 932
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const187] ; 305
-	push rax
-	mov rax, [rel const188] ; 725
-	push rax
-	mov rax, [rel const189] ; 560
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	mov rax, [rel const190] ; 421
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump39
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-.jump39:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump40
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump40:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump41
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump41:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump42
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump42:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	mov rax, [rel const191] ; 667
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump43
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump43:
-	cqo
-	idiv r10
-	push rax
-	mov rax, [rel const192] ; 58
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const193] ; 783
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const194] ; 945
-	push rax
-	mov rax, [rel const195] ; 658
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const196] ; 125
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const197] ; 50
-	push rax
-	mov rax, [rel const156] ; 96
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump44
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump44:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	mov rax, [rel const198] ; 690
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	mov rax, [rel const199] ; 739
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump45
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-.jump45:
-	cqo
-	idiv r10
-	push rax
-	mov rax, [rel const200] ; 199
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	mov rax, [rel const201] ; 120
-	push rax
-	mov rax, [rel const41] ; 624
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump46
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump46:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const202] ; 749
-	push rax
-	mov rax, [rel const203] ; 752
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	mov rax, [rel const204] ; 709
-	push rax
-	mov rax, [rel const205] ; 183
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump47
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-.jump47:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump48
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump48:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	mov rax, [rel const206] ; 44
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump49
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump49:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	setle al
-	and rax, 1
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const89] ; False
-	push rax
-	mov rax, [rel const207] ; 54.29
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	sub rsp, 8 ; Add alignment
-	mov rax, [rel const208] ; 31.06
-	push rax
-	mov rax, [rel const209] ; 91.13
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	add rsp, 8 ; Remove alignment
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	sub rsp, 8 ; Add alignment
-	mov rax, [rel const210] ; 26.69
-	push rax
-	mov rax, [rel const211] ; 58.43
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const212] ; 0.07
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const213] ; 27.58
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const214] ; 63.79
-	push rax
-	mov rax, [rel const215] ; 40.48
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	add rsp, 8 ; Remove alignment
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const216] ; 66.1
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmplesd xmm0, xmm1
-	movq rax, xmm0
-	and rax, 1
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	setne al
-	and rax, 1
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	sub rsp, 8 ; Add alignment
-	mov rax, [rel const217] ; 86.94
-	push rax
-	mov rax, [rel const218] ; 89.36
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	sub rsp, 8
-	movsd [rsp], xmm0
-	sub rsp, 8 ; Add alignment
-	mov rax, [rel const219] ; 78.09
-	push rax
-	mov rax, [rel const220] ; 96.45
-	push rax
-	mov rax, [rel const221] ; 37.99
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const222] ; 81.11
-	push rax
-	mov rax, [rel const223] ; 18.71
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const224] ; 40.19
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const225] ; 41.2
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	add rsp, 8 ; Remove alignment
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const226] ; 52.97
-	push rax
-	mov rax, [rel const227] ; 5.43
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const228] ; 19.0
-	push rax
-	mov rax, [rel const229] ; 79.83
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const230] ; 38.2
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const231] ; 64.0
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const232] ; 98.13
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const233] ; 96.99
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const234] ; 10.45
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const235] ; 71.43
-	push rax
-	mov rax, [rel const236] ; 53.38
-	push rax
-	mov rax, [rel const237] ; 49.48
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const238] ; 12.47
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const239] ; 90.31
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	add rsp, 8 ; Remove alignment
-	sub rsp, 8
-	movsd [rsp], xmm0
-	lea rdi, [rel const2] ; '(FloatType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const240] ; 32
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const241] ; 428
-	push rax
-	mov rax, [rel const242] ; 405
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const243] ; 225
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump50
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump50:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	mov rax, [rel const244] ; 326
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump51
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump51:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const245] ; 833
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump52
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump52:
-	cqo
-	idiv r10
-	push rax
-	mov rax, [rel const246] ; 597
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	mov rax, [rel const247] ; 693
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const248] ; 438
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump53
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-.jump53:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const249] ; 330
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump54
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump54:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const250] ; 528
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	mov rax, [rel const251] ; 718
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	mov rax, [rel const252] ; 675
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const253] ; 247
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump55
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump55:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	mov rax, [rel const254] ; 393
-	push rax
-	mov rax, [rel const255] ; 5
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const256] ; 813
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump56
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump56:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	mov rax, [rel const257] ; 190
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump57
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump57:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	mov rax, [rel const258] ; 426
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump58
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump58:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	setg al
-	and rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const259] ; 135
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const89] ; False
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const260] ; 12.22
-	push rax
-	mov rax, [rel const261] ; 3.61
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmplesd xmm0, xmm1
-	movq rax, xmm0
-	and rax, 1
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const102] ; True
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const262] ; 46.44
-	push rax
-	mov rax, [rel const263] ; 12.69
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmpeqsd xmm0, xmm1
-	movq rax, xmm0
-	and rax, 1
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const264] ; 53.61
-	push rax
-	mov rax, [rel const265] ; 46.63
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmpneqsd xmm0, xmm1
-	movq rax, xmm0
-	and rax, 1
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const266] ; 10.59
-	push rax
-	lea rdi, [rel const2] ; '(FloatType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const267] ; 78.3
-	push rax
-	mov rax, [rel const268] ; 5.98
-	push rax
-	mov rax, [rel const269] ; 49.2
-	push rax
-	mov rax, [rel const270] ; 58.23
-	push rax
-	mov rax, [rel const271] ; 63.08
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const272] ; 94.17
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const273] ; 53.08
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const274] ; 12.51
-	push rax
-	mov rax, [rel const275] ; 14.49
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const276] ; 24.83
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmpeqsd xmm0, xmm1
-	movq rax, xmm0
-	and rax, 1
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	sub rsp, 8 ; Add alignment
-	mov rax, [rel const89] ; False
-	push rax
-	mov rax, [rel const277] ; 807
-	push rax
-	mov rax, [rel const278] ; 434
-	push rax
-	mov rax, [rel const279] ; 911
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	mov rax, [rel const280] ; 28
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const281] ; 534
-	push rax
-	mov rax, [rel const282] ; 141
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const283] ; 878
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump59
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump59:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump60
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-.jump60:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump61
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump61:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const120] ; 680
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	setle al
-	and rax, 1
-	push rax
-	mov rdi, 16
-	call _jpl_alloc
-	; Moving 16 bytes from rsp to rax 
-		mov r10, [rsp + 8]
-		mov [rax + 8], r10
-		mov r10, [rsp + 0]
-		mov [rax + 0], r10
-	add rsp, 16
-	push rax
-	mov rax, 2
-	push rax
-	lea rdi, [rel const107] ; '(ArrayType (BoolType) 1)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 16
-	add rsp, 8 ; Remove alignment
-	sub rsp, 8 ; Add alignment
-	mov rax, [rel const102] ; True
-	push rax
-	mov rax, [rel const102] ; True
-	push rax
-	mov rax, [rel const89] ; False
-	push rax
-	mov rdi, 24
-	sub rsp, 8 ; Add alignment
-	call _jpl_alloc
-	add rsp, 8 ; Remove alignment
-	; Moving 24 bytes from rsp to rax 
-		mov r10, [rsp + 16]
-		mov [rax + 16], r10
-		mov r10, [rsp + 8]
-		mov [rax + 8], r10
-		mov r10, [rsp + 0]
-		mov [rax + 0], r10
-	add rsp, 24
-	push rax
-	mov rax, 3
-	push rax
-	mov rax, [rel const102] ; True
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	mov rax, [rel const284] ; 555
-	push rax
-	mov rax, [rel const285] ; 836
-	push rax
-	mov rax, [rel const245] ; 833
-	push rax
-	mov rax, [rel const286] ; 938
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	mov rax, [rel const287] ; 420
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump62
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump62:
-	cqo
-	idiv r10
-	push rax
-	mov rax, [rel const288] ; 786
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	mov rax, [rel const289] ; 197
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump63
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump63:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump64
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump64:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump65
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump65:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	mov rax, [rel const290] ; 874
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	setl al
-	and rax, 1
-	push rax
-	mov rax, [rel const102] ; True
-	push rax
-	mov rax, [rel const89] ; False
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	setne al
-	and rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	mov rax, [rel const291] ; 104
-	push rax
-	mov rax, [rel const292] ; 151
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const293] ; 114
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump66
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump66:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump67
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump67:
-	cqo
-	idiv r10
-	push rax
-	mov rax, [rel const294] ; 582
-	push rax
-	mov rax, [rel const295] ; 651
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	mov rax, [rel const296] ; 282
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	mov rax, [rel const297] ; 47
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const110] ; 632
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump68
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump68:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	sete al
-	and rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	mov rdi, 32
-	call _jpl_alloc
-	; Moving 32 bytes from rsp to rax 
-		mov r10, [rsp + 24]
-		mov [rax + 24], r10
-		mov r10, [rsp + 16]
-		mov [rax + 16], r10
-		mov r10, [rsp + 8]
-		mov [rax + 8], r10
-		mov r10, [rsp + 0]
-		mov [rax + 0], r10
-	add rsp, 32
-	push rax
-	mov rax, 4
-	push rax
-	mov rax, [rel const298] ; 23.76
-	push rax
-	mov rax, [rel const299] ; 47.26
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const300] ; 99.58
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const301] ; 87.11
-	push rax
-	mov rax, [rel const302] ; 64.98
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const303] ; 64.69
-	push rax
-	mov rax, [rel const304] ; 47.64
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const305] ; 48.7
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const306] ; 2.78
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const307] ; 79.32
-	push rax
-	mov rax, [rel const308] ; 46.8
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmpeqsd xmm0, xmm1
-	movq rax, xmm0
-	and rax, 1
-	push rax
-	mov rax, [rel const309] ; 42.38
-	push rax
-	mov rax, [rel const310] ; 63.07
-	push rax
-	mov rax, [rel const311] ; 73.13
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	call _fmod
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmpneqsd xmm0, xmm1
-	movq rax, xmm0
-	and rax, 1
-	push rax
-	mov rax, [rel const312] ; 8.4
-	push rax
-	mov rax, [rel const313] ; 15.98
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmplesd xmm1, xmm0
-	movq rax, xmm1
-	and rax, 1
-	push rax
-	mov rdi, 24
-	sub rsp, 8 ; Add alignment
-	call _jpl_alloc
-	add rsp, 8 ; Remove alignment
-	; Moving 24 bytes from rsp to rax 
-		mov r10, [rsp + 16]
-		mov [rax + 16], r10
-		mov r10, [rsp + 8]
-		mov [rax + 8], r10
-		mov r10, [rsp + 0]
-		mov [rax + 0], r10
-	add rsp, 24
-	push rax
-	mov rax, 3
-	push rax
-	mov rdi, 48
-	call _jpl_alloc
-	; Moving 48 bytes from rsp to rax 
-		mov r10, [rsp + 40]
-		mov [rax + 40], r10
-		mov r10, [rsp + 32]
-		mov [rax + 32], r10
-		mov r10, [rsp + 24]
-		mov [rax + 24], r10
-		mov r10, [rsp + 16]
-		mov [rax + 16], r10
-		mov r10, [rsp + 8]
-		mov [rax + 8], r10
-		mov r10, [rsp + 0]
-		mov [rax + 0], r10
-	add rsp, 48
-	push rax
-	mov rax, 3
-	push rax
-	mov rax, [rel const314] ; 77.18
-	push rax
-	mov rax, [rel const315] ; 69.78
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const316] ; 75.27
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const317] ; 52.89
-	push rax
-	mov rax, [rel const318] ; 67.99
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	addsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	divsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	mov rax, [rel const319] ; 83.47
-	push rax
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmpltsd xmm1, xmm0
-	movq rax, xmm1
-	and rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	mov rax, [rel const89] ; False
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	mov rax, [rel const320] ; 929
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const321] ; 714
-	push rax
-	mov rax, [rel const322] ; 474
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump69
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump69:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	setl al
-	and rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	setne al
-	and rax, 1
-	push rax
-	mov rax, [rel const126] ; 596
-	push rax
-	mov rax, [rel const323] ; 716
-	push rax
-	mov rax, [rel const196] ; 125
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	mov rax, [rel const324] ; 127
-	push rax
-	mov rax, [rel const182] ; 741
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump70
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump70:
-	cqo
-	idiv r10
-	push rax
-	mov rax, [rel const325] ; 882
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	setl al
-	and rax, 1
-	push rax
-	mov rax, [rel const89] ; False
-	push rax
-	mov rdi, 32
-	call _jpl_alloc
-	; Moving 32 bytes from rsp to rax 
-		mov r10, [rsp + 24]
-		mov [rax + 24], r10
-		mov r10, [rsp + 16]
-		mov [rax + 16], r10
-		mov r10, [rsp + 8]
-		mov [rax + 8], r10
-		mov r10, [rsp + 0]
-		mov [rax + 0], r10
-	add rsp, 32
-	push rax
-	mov rax, 4
-	push rax
-	mov rax, [rel const326] ; 13.39
-	push rax
-	mov rax, [rel const327] ; 25.59
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmpneqsd xmm0, xmm1
-	movq rax, xmm0
-	and rax, 1
-	push rax
-	mov rax, [rel const328] ; 563
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const329] ; 863
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	mov rax, [rel const330] ; 969
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const331] ; 949
-	push rax
-	mov rax, [rel const116] ; 387
 	push rax
 	pop rax
 	pop r10
@@ -4540,410 +642,16 @@ _jpl_main:
 	pop rax
 	pop r10
 	cmp rax, r10
-	setne al
+	setl al
 	and rax, 1
 	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	mov rax, [rel const332] ; 966
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const138] ; 995
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	setg al
-	and rax, 1
-	push rax
-	mov rdi, 24
-	sub rsp, 8 ; Add alignment
-	call _jpl_alloc
-	add rsp, 8 ; Remove alignment
-	; Moving 24 bytes from rsp to rax 
-		mov r10, [rsp + 16]
-		mov [rax + 16], r10
-		mov r10, [rsp + 8]
-		mov [rax + 8], r10
-		mov r10, [rsp + 0]
-		mov [rax + 0], r10
-	add rsp, 24
-	push rax
-	mov rax, 3
-	push rax
-	mov rax, [rel const89] ; False
-	push rax
-	mov rdi, 8
-	sub rsp, 8 ; Add alignment
-	call _jpl_alloc
-	add rsp, 8 ; Remove alignment
-	; Moving 8 bytes from rsp to rax 
-		mov r10, [rsp + 0]
-		mov [rax + 0], r10
-	add rsp, 8
-	push rax
-	mov rax, 1
-	push rax
-	mov rax, [rel const89] ; False
-	push rax
-	mov rax, [rel const102] ; True
-	push rax
-	mov rdi, 16
-	call _jpl_alloc
-	; Moving 16 bytes from rsp to rax 
-		mov r10, [rsp + 8]
-		mov [rax + 8], r10
-		mov r10, [rsp + 0]
-		mov [rax + 0], r10
-	add rsp, 16
-	push rax
-	mov rax, 2
-	push rax
-	mov rdi, 64
-	call _jpl_alloc
-	; Moving 64 bytes from rsp to rax 
-		mov r10, [rsp + 56]
-		mov [rax + 56], r10
-		mov r10, [rsp + 48]
-		mov [rax + 48], r10
-		mov r10, [rsp + 40]
-		mov [rax + 40], r10
-		mov r10, [rsp + 32]
-		mov [rax + 32], r10
-		mov r10, [rsp + 24]
-		mov [rax + 24], r10
-		mov r10, [rsp + 16]
-		mov [rax + 16], r10
-		mov r10, [rsp + 8]
-		mov [rax + 8], r10
-		mov r10, [rsp + 0]
-		mov [rax + 0], r10
-	add rsp, 64
-	push rax
-	mov rax, 4
-	push rax
-	mov rdi, 32
-	call _jpl_alloc
-	; Moving 32 bytes from rsp to rax 
-		mov r10, [rsp + 24]
-		mov [rax + 24], r10
-		mov r10, [rsp + 16]
-		mov [rax + 16], r10
-		mov r10, [rsp + 8]
-		mov [rax + 8], r10
-		mov r10, [rsp + 0]
-		mov [rax + 0], r10
-	add rsp, 32
-	push rax
-	mov rax, 2
-	push rax
-	lea rdi, [rel const333] ; '(ArrayType (ArrayType (ArrayType (BoolType) 1) 1) 1)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 16
-	add rsp, 8 ; Remove alignment
-	mov rax, [rel const334] ; 904
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const335] ; 464
-	push rax
-	mov rax, [rel const336] ; 755
-	push rax
-	pop rax
-	pop r10
-	sub rax, r10
-	push rax
-	mov rax, [rel const337] ; 814
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump71
-	lea rdi, [rel const46] ; 'divide by zero'
-	call _fail_assertion
-.jump71:
-	cqo
-	idiv r10
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const338] ; 644
-	push rax
-	mov rax, [rel const339] ; 261
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	mov rax, [rel const340] ; 299
-	push rax
-	mov rax, [rel const143] ; 996
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump72
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-.jump72:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const341] ; 765
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump73
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump73:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
+	lea rdi, [rel const9] ; '(BoolType)'
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	mov rax, [rel const102] ; True
+	mov rax, [rel const50] ; 64.43
 	push rax
-	mov rax, [rel const342] ; 21.53
-	push rax
-	mov rax, [rel const343] ; 56.94
-	push rax
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm1, [rsp]
-	add rsp, 8
-	pxor xmm0, xmm0
-	subsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	cmpltsd xmm0, xmm1
-	movq rax, xmm0
-	and rax, 1
-	push rax
-	pop rax
-	pop r10
-	cmp rax, r10
-	sete al
-	and rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	pop rax
-	xor rax, 1
-	push rax
-	lea rdi, [rel const32] ; '(BoolType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	sub rsp, 8 ; Add alignment
-	mov rax, [rel const344] ; 84.78
-	push rax
-	mov rdi, 8
-	sub rsp, 8 ; Add alignment
-	call _jpl_alloc
-	add rsp, 8 ; Remove alignment
-	; Moving 8 bytes from rsp to rax 
-		mov r10, [rsp + 0]
-		mov [rax + 0], r10
-	add rsp, 8
-	push rax
-	mov rax, 1
-	push rax
-	lea rdi, [rel const345] ; '(ArrayType (FloatType) 1)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 16
-	add rsp, 8 ; Remove alignment
-	mov rax, [rel const346] ; 204
-	push rax
-	mov rax, [rel const347] ; 511
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const348] ; 837
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	mov rax, [rel const349] ; 605
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const350] ; 378
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	cmp r10, 0
-	jne .jump74
-	sub rsp, 8 ; Add alignment
-	lea rdi, [rel const47] ; 'mod by zero'
-	call _fail_assertion
-	add rsp, 8 ; Remove alignment
-.jump74:
-	cqo
-	idiv r10
-	mov rax, rdx
-	push rax
-	mov rax, [rel const351] ; 916
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	mov rax, [rel const352] ; 902
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	pop r10
-	add rax, r10
-	push rax
-	mov rax, [rel const353] ; 848
-	push rax
-	pop rax
-	pop r10
-	imul rax, r10
-	push rax
-	pop rax
-	neg rax
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const354] ; 344
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const355] ; 368
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const356] ; 384
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
-	lea rsi, [rsp]
-	call _show
-	add rsp, 8
-	mov rax, [rel const357] ; 154
-	push rax
-	lea rdi, [rel const5] ; '(IntType)'
+	lea rdi, [rel const18] ; '(FloatType)'
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8

@@ -1,0 +1,4061 @@
+global jpl_main
+global _jpl_main
+extern _fail_assertion
+extern _jpl_alloc
+extern _get_time
+extern _show
+extern _print
+extern _print_time
+extern _read_image
+extern _write_image
+extern _fmod
+extern _sqrt
+extern _exp
+extern _sin
+extern _cos
+extern _tan
+extern _asin
+extern _acos
+extern _atan
+extern _log
+extern _pow
+extern _atan2
+extern _to_int
+extern _to_float
+
+section .data
+const0: dq 7.48
+const1: dq 69.44
+const2: db `(FloatType)`, 0
+const3: dq 586
+const4: dq 308
+const5: dq 184
+const6: dq 813
+const7: dq 939
+const8: dq 689
+const9: dq 799
+const10: dq 127
+const11: dq 1
+const12: db `(BoolType)`, 0
+const13: dq 576
+const14: db `(IntType)`, 0
+const15: dq 4.68
+const16: dq 89.03
+const17: dq 37.02
+const18: dq 84.91
+const19: dq 0
+const20: dq 82.09
+const21: dq 39.94
+const22: dq 52.07
+const23: dq 2.09
+const24: dq 77.45
+const25: dq 70.2
+const26: dq 5.96
+const27: dq 22.11
+const28: dq 4.82
+const29: dq 906
+const30: dq 690
+const31: dq 869
+const32: dq 145
+const33: dq 460
+const34: db `mod by zero`, 0
+const35: dq 74
+const36: dq 770
+const37: dq 298
+const38: dq 427
+const39: dq 557
+const40: dq 534
+const41: dq 772
+const42: db `divide by zero`, 0
+const43: dq 13
+const44: dq 325
+const45: dq 9.27
+const46: dq 90.02
+const47: dq 74.42
+const48: dq 42.63
+const49: dq 14.51
+const50: dq 708
+const51: dq 889
+const52: dq 550
+const53: dq 77
+const54: dq 522
+const55: dq 864
+const56: dq 856
+const57: dq 23.6
+const58: dq 16.09
+const59: dq 74.13
+const60: dq 95.81
+const61: dq 79.86
+const62: dq 12.53
+const63: dq 501
+const64: dq 877
+const65: dq 84.65
+const66: dq 57.41
+const67: dq 35.3
+const68: dq 58.83
+const69: dq 62.87
+const70: dq 24.46
+const71: dq 7.86
+const72: dq 96.16
+const73: dq 73.26
+const74: dq 46.83
+const75: dq 27.76
+const76: dq 92.07
+const77: dq 62.75
+const78: dq 37.58
+const79: dq 30.71
+const80: dq 73.63
+const81: dq 66.35
+const82: dq 3.31
+const83: dq 88.66
+const84: dq 70.94
+const85: dq 20.48
+const86: dq 13.86
+const87: dq 61.97
+const88: dq 44.92
+const89: dq 68.88
+const90: dq 80.54
+const91: dq 55.03
+const92: dq 34.66
+const93: dq 17.37
+const94: dq 19.91
+const95: dq 53.14
+const96: dq 696
+const97: dq 7.79
+const98: dq 49.91
+const99: dq 6.05
+const100: dq 27.66
+const101: dq 50.7
+const102: dq 45.86
+const103: dq 96.76
+const104: dq 97.24
+const105: dq 2.34
+const106: dq 53.64
+const107: dq 55.49
+const108: dq 197
+const109: dq 648
+const110: dq 914
+const111: dq 558
+const112: dq 904
+const113: dq 495
+const114: dq 842
+const115: dq 365
+const116: dq 629
+const117: dq 997
+const118: db `(ArrayType (IntType) 1)`, 0
+const119: dq 668
+const120: dq 975
+const121: dq 384
+const122: db `(ArrayType (BoolType) 1)`, 0
+const123: dq 67.67
+const124: dq 14.33
+const125: dq 187
+const126: dq 434
+const127: dq 768
+const128: dq 742
+const129: dq 368
+const130: dq 941
+const131: dq 366
+const132: dq 727
+const133: dq 715
+const134: dq 354
+const135: dq 784
+const136: dq 465
+const137: dq 23
+const138: dq 395
+const139: dq 448
+const140: dq 537
+const141: dq 123
+const142: dq 703
+const143: dq 355
+const144: dq 469
+const145: dq 323
+const146: dq 36
+const147: dq 517
+const148: dq 658
+const149: dq 667
+const150: dq 69
+const151: dq 0.92
+const152: dq 62.66
+const153: dq 514
+const154: dq 909
+const155: dq 647
+const156: dq 228
+const157: dq 215
+const158: dq 399
+const159: dq 593
+const160: dq 382
+const161: dq 281
+const162: dq 476
+const163: dq 316
+const164: dq 957
+const165: dq 619
+const166: dq 202
+const167: db `(ArrayType (ArrayType (IntType) 1) 1)`, 0
+const168: dq 53.54
+const169: dq 38.73
+const170: dq 88.75
+const171: dq 73.05
+const172: dq 48.55
+const173: dq 85.55
+const174: dq 0.83
+const175: dq 82.96
+const176: dq 72.6
+const177: dq 54.77
+const178: dq 1.64
+const179: dq 814
+const180: dq 287
+const181: dq 223
+const182: dq 428
+const183: dq 685
+const184: dq 52.73
+const185: dq 27.79
+const186: dq 62.07
+const187: dq 29
+const188: dq 591
+const189: dq 63
+const190: dq 53
+const191: dq 559
+const192: dq 295
+const193: dq 834
+const194: dq 86.41
+const195: dq 41.54
+const196: dq 77.56
+const197: dq 27.23
+const198: dq 7.42
+const199: dq 69.21
+const200: dq 31.9
+const201: dq 23.53
+const202: dq 4.65
+const203: dq 34.62
+const204: dq 34.37
+const205: dq 91.81
+const206: dq 64.58
+const207: dq 89.57
+const208: dq 38.64
+const209: dq 72.97
+const210: dq 88.74
+const211: dq 76.14
+const212: dq 3.51
+const213: dq 78.09
+const214: dq 91.32
+const215: dq 38.91
+const216: dq 79.29
+const217: dq 83.3
+const218: dq 53.1
+const219: dq 38.09
+const220: dq 31.08
+const221: dq 55.34
+const222: dq 59.1
+const223: dq 50.19
+const224: dq 36.49
+const225: dq 9.31
+const226: dq 87.77
+const227: dq 205
+const228: dq 905
+const229: dq 860
+const230: dq 229
+const231: dq 829
+const232: dq 815
+const233: dq 867
+const234: dq 386
+const235: dq 539
+const236: dq 131
+const237: dq 477
+const238: dq 231
+const239: dq 613
+const240: dq 249
+const241: db `(ArrayType (ArrayType (ArrayType (IntType) 1) 1) 1)`, 0
+const242: dq 80.56
+const243: dq 70.74
+const244: dq 38.45
+const245: dq 46.39
+const246: dq 75.37
+const247: dq 61.87
+const248: dq 0.09
+const249: dq 52.54
+const250: dq 21.02
+const251: dq 6.12
+const252: dq 10.8
+const253: dq 97.09
+const254: dq 34.16
+const255: dq 11.59
+const256: dq 42.76
+const257: dq 57.21
+const258: dq 75.81
+const259: dq 65.7
+const260: dq 29.5
+const261: dq 23.31
+const262: dq 46.26
+const263: dq 68.34
+const264: dq 63.32
+const265: dq 56.0
+const266: dq 32.13
+const267: dq 18.89
+const268: dq 48.22
+const269: dq 168
+const270: dq 430
+const271: dq 805
+const272: dq 823
+const273: dq 378
+const274: dq 969
+const275: dq 509
+const276: dq 159
+const277: dq 20
+const278: dq 746
+const279: dq 450
+const280: dq 266
+const281: dq 81
+const282: dq 314
+const283: dq 282
+const284: dq 55
+const285: dq 605
+const286: dq 600
+const287: dq 993
+const288: dq 816
+const289: dq 14.84
+const290: dq 24.38
+const291: dq 12.67
+
+section .text
+jpl_main:
+_jpl_main:
+	push rbp
+	mov rbp, rsp
+	push r12
+	mov r12, rbp ; end of jpl_main prelude
+	mov rax, [rel const0] ; 7.48
+	push rax
+	mov rax, [rel const1] ; 69.44
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const3] ; 586
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const4] ; 308
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const5] ; 184
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	mov rax, [rel const6] ; 813
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	mov rax, [rel const7] ; 939
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	mov rax, [rel const8] ; 689
+	push rax
+	mov rax, [rel const9] ; 799
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const10] ; 127
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	pop r10
+	cmp rax, r10
+	setg al
+	and rax, 1
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	mov rax, [rel const11] ; True
+	push rax
+	pop rax
+	pop r10
+	cmp rax, r10
+	sete al
+	and rax, 1
+	push rax
+	mov rax, [rel const11] ; True
+	push rax
+	pop rax
+	pop r10
+	cmp rax, r10
+	sete al
+	and rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const13] ; 576
+	push rax
+	lea rdi, [rel const14] ; '(IntType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const11] ; True
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const15] ; 4.68
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const16] ; 89.03
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const17] ; 37.02
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const18] ; 84.91
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const19] ; False
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const20] ; 82.09
+	push rax
+	mov rax, [rel const21] ; 39.94
+	push rax
+	mov rax, [rel const22] ; 52.07
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const23] ; 2.09
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const24] ; 77.45
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const25] ; 70.2
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const26] ; 5.96
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const27] ; 22.11
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const28] ; 4.82
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const29] ; 906
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const30] ; 690
+	push rax
+	mov rax, [rel const31] ; 869
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const32] ; 145
+	push rax
+	mov rax, [rel const33] ; 460
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump1
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+.jump1:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	mov rax, [rel const35] ; 74
+	push rax
+	mov rax, [rel const36] ; 770
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const37] ; 298
+	push rax
+	mov rax, [rel const38] ; 427
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	mov rax, [rel const39] ; 557
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump2
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+.jump2:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	mov rax, [rel const40] ; 534
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump3
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump3:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	mov rax, [rel const41] ; 772
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump4
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+.jump4:
+	cqo
+	idiv r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const43] ; 13
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump5
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump5:
+	cqo
+	idiv r10
+	push rax
+	mov rax, [rel const44] ; 325
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	lea rdi, [rel const14] ; '(IntType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const45] ; 9.27
+	push rax
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const11] ; True
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const46] ; 90.02
+	push rax
+	mov rax, [rel const47] ; 74.42
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const48] ; 42.63
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const49] ; 14.51
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmplesd xmm1, xmm0
+	movq rax, xmm1
+	and rax, 1
+	push rax
+	mov rax, [rel const50] ; 708
+	push rax
+	mov rax, [rel const51] ; 889
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump6
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+.jump6:
+	cqo
+	idiv r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const52] ; 550
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const53] ; 77
+	push rax
+	mov rax, [rel const54] ; 522
+	push rax
+	mov rax, [rel const55] ; 864
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const56] ; 856
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump7
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump7:
+	cqo
+	idiv r10
+	push rax
+	pop rax
+	pop r10
+	cmp rax, r10
+	setle al
+	and rax, 1
+	push rax
+	pop rax
+	pop r10
+	cmp rax, r10
+	setne al
+	and rax, 1
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const57] ; 23.6
+	push rax
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const58] ; 16.09
+	push rax
+	mov rax, [rel const59] ; 74.13
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const60] ; 95.81
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const11] ; True
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const61] ; 79.86
+	push rax
+	mov rax, [rel const62] ; 12.53
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmplesd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const63] ; 501
+	push rax
+	mov rax, [rel const64] ; 877
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump8
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump8:
+	cqo
+	idiv r10
+	push rax
+	lea rdi, [rel const14] ; '(IntType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const65] ; 84.65
+	push rax
+	mov rax, [rel const66] ; 57.41
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const67] ; 35.3
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const68] ; 58.83
+	push rax
+	mov rax, [rel const69] ; 62.87
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const70] ; 24.46
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const71] ; 7.86
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const72] ; 96.16
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const73] ; 73.26
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const74] ; 46.83
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const75] ; 27.76
+	push rax
+	mov rax, [rel const76] ; 92.07
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmplesd xmm1, xmm0
+	movq rax, xmm1
+	and rax, 1
+	push rax
+	mov rax, [rel const77] ; 62.75
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const78] ; 37.58
+	push rax
+	mov rax, [rel const79] ; 30.71
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const80] ; 73.63
+	push rax
+	mov rax, [rel const81] ; 66.35
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const82] ; 3.31
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const83] ; 88.66
+	push rax
+	mov rax, [rel const84] ; 70.94
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const85] ; 20.48
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmpeqsd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	pop rax
+	pop r10
+	cmp rax, r10
+	sete al
+	and rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const86] ; 13.86
+	push rax
+	mov rax, [rel const87] ; 61.97
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmpltsd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const88] ; 44.92
+	push rax
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const89] ; 68.88
+	push rax
+	mov rax, [rel const90] ; 80.54
+	push rax
+	mov rax, [rel const91] ; 55.03
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const92] ; 34.66
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmpeqsd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const19] ; False
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const93] ; 17.37
+	push rax
+	mov rax, [rel const94] ; 19.91
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmplesd xmm1, xmm0
+	movq rax, xmm1
+	and rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const95] ; 53.14
+	push rax
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const96] ; 696
+	push rax
+	lea rdi, [rel const14] ; '(IntType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const97] ; 7.79
+	push rax
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const98] ; 49.91
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const99] ; 6.05
+	push rax
+	mov rax, [rel const100] ; 27.66
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const101] ; 50.7
+	push rax
+	mov rax, [rel const102] ; 45.86
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const103] ; 96.76
+	push rax
+	mov rax, [rel const104] ; 97.24
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const105] ; 2.34
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const106] ; 53.64
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const107] ; 55.49
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const108] ; 197
+	push rax
+	mov rax, [rel const35] ; 74
+	push rax
+	mov rax, [rel const109] ; 648
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump9
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump9:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const110] ; 914
+	push rax
+	mov rax, [rel const111] ; 558
+	push rax
+	mov rax, [rel const112] ; 904
+	push rax
+	mov rax, [rel const113] ; 495
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump10
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+.jump10:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const114] ; 842
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump11
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump11:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump12
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+.jump12:
+	cqo
+	idiv r10
+	push rax
+	mov rax, [rel const115] ; 365
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const116] ; 629
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const117] ; 997
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	mov rdi, 16
+	call _jpl_alloc
+	; Moving 16 bytes from rsp to rax 
+		mov r10, [rsp + 8]
+		mov [rax + 8], r10
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 16
+	push rax
+	mov rax, 2
+	push rax
+	lea rdi, [rel const118] ; '(ArrayType (IntType) 1)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 16
+	add rsp, 8 ; Remove alignment
+	mov rax, [rel const19] ; False
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const11] ; True
+	push rax
+	mov rax, [rel const11] ; True
+	push rax
+	mov rax, [rel const50] ; 708
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const119] ; 668
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump13
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+.jump13:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	mov rax, [rel const120] ; 975
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump14
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+.jump14:
+	cqo
+	idiv r10
+	push rax
+	mov rax, [rel const121] ; 384
+	push rax
+	pop rax
+	pop r10
+	cmp rax, r10
+	setge al
+	and rax, 1
+	push rax
+	mov rdi, 24
+	sub rsp, 8 ; Add alignment
+	call _jpl_alloc
+	add rsp, 8 ; Remove alignment
+	; Moving 24 bytes from rsp to rax 
+		mov r10, [rsp + 16]
+		mov [rax + 16], r10
+		mov r10, [rsp + 8]
+		mov [rax + 8], r10
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 24
+	push rax
+	mov rax, 3
+	push rax
+	lea rdi, [rel const122] ; '(ArrayType (BoolType) 1)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 16
+	add rsp, 8 ; Remove alignment
+	mov rax, [rel const123] ; 67.67
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const106] ; 53.64
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmplesd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const124] ; 14.33
+	push rax
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const125] ; 187
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const126] ; 434
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	mov rax, [rel const127] ; 768
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	mov rax, [rel const128] ; 742
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const129] ; 368
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	pop r10
+	cmp rax, r10
+	setle al
+	and rax, 1
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const130] ; 941
+	push rax
+	mov rax, [rel const131] ; 366
+	push rax
+	pop rax
+	pop r10
+	cmp rax, r10
+	setl al
+	and rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const132] ; 727
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const133] ; 715
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const134] ; 354
+	push rax
+	mov rax, [rel const135] ; 784
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump15
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+.jump15:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	mov rax, [rel const136] ; 465
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump16
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+.jump16:
+	cqo
+	idiv r10
+	push rax
+	mov rax, [rel const137] ; 23
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump17
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+.jump17:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	cmp rax, r10
+	setne al
+	and rax, 1
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const112] ; 904
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const138] ; 395
+	push rax
+	mov rax, [rel const139] ; 448
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const140] ; 537
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const141] ; 123
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const37] ; 298
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const142] ; 703
+	push rax
+	mov rax, [rel const143] ; 355
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	mov rax, [rel const144] ; 469
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const145] ; 323
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	mov rax, [rel const146] ; 36
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	mov rax, [rel const147] ; 517
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump18
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+.jump18:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	mov rax, [rel const148] ; 658
+	push rax
+	mov rax, [rel const149] ; 667
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump19
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump19:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump20
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+.jump20:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump21
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump21:
+	cqo
+	idiv r10
+	push rax
+	mov rax, [rel const150] ; 69
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump22
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump22:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	lea rdi, [rel const14] ; '(IntType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const151] ; 0.92
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const11] ; True
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const152] ; 62.66
+	push rax
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const153] ; 514
+	push rax
+	mov rdi, 8
+	sub rsp, 8 ; Add alignment
+	call _jpl_alloc
+	add rsp, 8 ; Remove alignment
+	; Moving 8 bytes from rsp to rax 
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 8
+	push rax
+	mov rax, 1
+	push rax
+	mov rax, [rel const154] ; 909
+	push rax
+	mov rax, [rel const155] ; 647
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const156] ; 228
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump23
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump23:
+	cqo
+	idiv r10
+	push rax
+	mov rax, [rel const157] ; 215
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	mov rdi, 16
+	call _jpl_alloc
+	; Moving 16 bytes from rsp to rax 
+		mov r10, [rsp + 8]
+		mov [rax + 8], r10
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 16
+	push rax
+	mov rax, 2
+	push rax
+	mov rax, [rel const158] ; 399
+	push rax
+	mov rax, [rel const159] ; 593
+	push rax
+	mov rax, [rel const160] ; 382
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const161] ; 281
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump24
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+.jump24:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump25
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+.jump25:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const162] ; 476
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const163] ; 316
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const116] ; 629
+	push rax
+	mov rax, [rel const164] ; 957
+	push rax
+	mov rax, [rel const165] ; 619
+	push rax
+	mov rax, [rel const166] ; 202
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump26
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump26:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	mov rdi, 16
+	call _jpl_alloc
+	; Moving 16 bytes from rsp to rax 
+		mov r10, [rsp + 8]
+		mov [rax + 8], r10
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 16
+	push rax
+	mov rax, 2
+	push rax
+	mov rdi, 48
+	call _jpl_alloc
+	; Moving 48 bytes from rsp to rax 
+		mov r10, [rsp + 40]
+		mov [rax + 40], r10
+		mov r10, [rsp + 32]
+		mov [rax + 32], r10
+		mov r10, [rsp + 24]
+		mov [rax + 24], r10
+		mov r10, [rsp + 16]
+		mov [rax + 16], r10
+		mov r10, [rsp + 8]
+		mov [rax + 8], r10
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 48
+	push rax
+	mov rax, 3
+	push rax
+	lea rdi, [rel const167] ; '(ArrayType (ArrayType (IntType) 1) 1)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 16
+	add rsp, 8 ; Remove alignment
+	mov rax, [rel const168] ; 53.54
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const169] ; 38.73
+	push rax
+	mov rax, [rel const170] ; 88.75
+	push rax
+	mov rax, [rel const171] ; 73.05
+	push rax
+	mov rax, [rel const172] ; 48.55
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const173] ; 85.55
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const174] ; 0.83
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const175] ; 82.96
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const176] ; 72.6
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const177] ; 54.77
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const178] ; 1.64
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const179] ; 814
+	push rax
+	mov rax, [rel const180] ; 287
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	mov rax, [rel const181] ; 223
+	push rax
+	mov rax, [rel const182] ; 428
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const183] ; 685
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump27
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump27:
+	cqo
+	idiv r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	lea rdi, [rel const14] ; '(IntType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const11] ; True
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const184] ; 52.73
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const185] ; 27.79
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmpeqsd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const186] ; 62.07
+	push rax
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const187] ; 29
+	push rax
+	lea rdi, [rel const14] ; '(IntType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const11] ; True
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const188] ; 591
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const189] ; 63
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const190] ; 53
+	push rax
+	mov rax, [rel const191] ; 559
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	mov rax, [rel const192] ; 295
+	push rax
+	mov rax, [rel const193] ; 834
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	pop rax
+	pop r10
+	cmp rax, r10
+	setge al
+	and rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const194] ; 86.41
+	push rax
+	mov rax, [rel const195] ; 41.54
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const196] ; 77.56
+	push rax
+	mov rax, [rel const197] ; 27.23
+	push rax
+	mov rax, [rel const198] ; 7.42
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const199] ; 69.21
+	push rax
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const200] ; 31.9
+	push rax
+	mov rax, [rel const73] ; 73.26
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const201] ; 23.53
+	push rax
+	mov rax, [rel const202] ; 4.65
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	sub rsp, 8
+	movsd [rsp], xmm0
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const203] ; 34.62
+	push rax
+	mov rax, [rel const204] ; 34.37
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const205] ; 91.81
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const206] ; 64.58
+	push rax
+	mov rax, [rel const207] ; 89.57
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const208] ; 38.64
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const209] ; 72.97
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const210] ; 88.74
+	push rax
+	mov rax, [rel const211] ; 76.14
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const212] ; 3.51
+	push rax
+	mov rax, [rel const213] ; 78.09
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const214] ; 91.32
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const215] ; 38.91
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const216] ; 79.29
+	push rax
+	mov rax, [rel const217] ; 83.3
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const218] ; 53.1
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const219] ; 38.09
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const220] ; 31.08
+	push rax
+	mov rax, [rel const221] ; 55.34
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const222] ; 59.1
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const223] ; 50.19
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const224] ; 36.49
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const225] ; 9.31
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const226] ; 87.77
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const6] ; 813
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const227] ; 205
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const228] ; 905
+	push rax
+	mov rax, [rel const229] ; 860
+	push rax
+	mov rax, [rel const230] ; 229
+	push rax
+	mov rax, [rel const231] ; 829
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	mov rax, [rel const232] ; 815
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump28
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+.jump28:
+	cqo
+	idiv r10
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	mov rdi, 24
+	sub rsp, 8 ; Add alignment
+	call _jpl_alloc
+	add rsp, 8 ; Remove alignment
+	; Moving 24 bytes from rsp to rax 
+		mov r10, [rsp + 16]
+		mov [rax + 16], r10
+		mov r10, [rsp + 8]
+		mov [rax + 8], r10
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 24
+	push rax
+	mov rax, 3
+	push rax
+	mov rax, [rel const233] ; 867
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const157] ; 215
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	mov rax, [rel const234] ; 386
+	push rax
+	mov rax, [rel const235] ; 539
+	push rax
+	mov rax, [rel const236] ; 131
+	push rax
+	mov rax, [rel const237] ; 477
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const238] ; 231
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump29
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+.jump29:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump30
+	lea rdi, [rel const34] ; 'mod by zero'
+	call _fail_assertion
+.jump30:
+	cqo
+	idiv r10
+	mov rax, rdx
+	push rax
+	mov rax, [rel const239] ; 613
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump31
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump31:
+	cqo
+	idiv r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const240] ; 249
+	push rax
+	mov rdi, 24
+	sub rsp, 8 ; Add alignment
+	call _jpl_alloc
+	add rsp, 8 ; Remove alignment
+	; Moving 24 bytes from rsp to rax 
+		mov r10, [rsp + 16]
+		mov [rax + 16], r10
+		mov r10, [rsp + 8]
+		mov [rax + 8], r10
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 24
+	push rax
+	mov rax, 3
+	push rax
+	mov rdi, 32
+	call _jpl_alloc
+	; Moving 32 bytes from rsp to rax 
+		mov r10, [rsp + 24]
+		mov [rax + 24], r10
+		mov r10, [rsp + 16]
+		mov [rax + 16], r10
+		mov r10, [rsp + 8]
+		mov [rax + 8], r10
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 32
+	push rax
+	mov rax, 2
+	push rax
+	mov rdi, 16
+	call _jpl_alloc
+	; Moving 16 bytes from rsp to rax 
+		mov r10, [rsp + 8]
+		mov [rax + 8], r10
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 16
+	push rax
+	mov rax, 1
+	push rax
+	lea rdi, [rel const241] ; '(ArrayType (ArrayType (ArrayType (IntType) 1) 1) 1)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 16
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const242] ; 80.56
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const243] ; 70.74
+	push rax
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const244] ; 38.45
+	push rax
+	mov rax, [rel const245] ; 46.39
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const246] ; 75.37
+	push rax
+	mov rax, [rel const247] ; 61.87
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const248] ; 0.09
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const249] ; 52.54
+	push rax
+	mov rax, [rel const250] ; 21.02
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	mulsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const251] ; 6.12
+	push rax
+	mov rax, [rel const252] ; 10.8
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const253] ; 97.09
+	push rax
+	mov rax, [rel const254] ; 34.16
+	push rax
+	mov rax, [rel const255] ; 11.59
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const256] ; 42.76
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const257] ; 57.21
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const258] ; 75.81
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const259] ; 65.7
+	push rax
+	mov rax, [rel const260] ; 29.5
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const261] ; 23.31
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const262] ; 46.26
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmpltsd xmm1, xmm0
+	movq rax, xmm1
+	and rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const169] ; 38.73
+	push rax
+	mov rax, [rel const263] ; 68.34
+	push rax
+	mov rax, [rel const264] ; 63.32
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const265] ; 56.0
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	add rsp, 8 ; Remove alignment
+	sub rsp, 8
+	movsd [rsp], xmm0
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const266] ; 32.13
+	push rax
+	mov rax, [rel const267] ; 18.89
+	push rax
+	mov rax, [rel const268] ; 48.22
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	call _fmod
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmpneqsd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const11] ; True
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const269] ; 168
+	push rax
+	mov rax, [rel const270] ; 430
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const271] ; 805
+	push rax
+	mov rax, [rel const272] ; 823
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump32
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+.jump32:
+	cqo
+	idiv r10
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	lea rdi, [rel const14] ; '(IntType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const273] ; 378
+	push rax
+	mov rdi, 8
+	sub rsp, 8 ; Add alignment
+	call _jpl_alloc
+	add rsp, 8 ; Remove alignment
+	; Moving 8 bytes from rsp to rax 
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 8
+	push rax
+	mov rax, 1
+	push rax
+	lea rdi, [rel const118] ; '(ArrayType (IntType) 1)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 16
+	add rsp, 8 ; Remove alignment
+	mov rax, [rel const274] ; 969
+	push rax
+	pop rax
+	neg rax
+	push rax
+	lea rdi, [rel const14] ; '(IntType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const275] ; 509
+	push rax
+	mov rax, [rel const276] ; 159
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump33
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump33:
+	cqo
+	idiv r10
+	push rax
+	mov rax, [rel const52] ; 550
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const179] ; 814
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const156] ; 228
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const277] ; 20
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const278] ; 746
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump34
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+.jump34:
+	cqo
+	idiv r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	mov rax, [rel const279] ; 450
+	push rax
+	mov rax, [rel const280] ; 266
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump35
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump35:
+	cqo
+	idiv r10
+	push rax
+	mov rax, [rel const281] ; 81
+	push rax
+	mov rax, [rel const282] ; 314
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	mov rax, [rel const283] ; 282
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const278] ; 746
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const284] ; 55
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const285] ; 605
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const150] ; 69
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	sub rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const286] ; 600
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const287] ; 993
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump36
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+.jump36:
+	cqo
+	idiv r10
+	push rax
+	mov rax, [rel const288] ; 816
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	cmp r10, 0
+	jne .jump37
+	lea rdi, [rel const42] ; 'divide by zero'
+	call _fail_assertion
+.jump37:
+	cqo
+	idiv r10
+	push rax
+	pop rax
+	pop r10
+	cmp rax, r10
+	setl al
+	and rax, 1
+	push rax
+	lea rdi, [rel const12] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const289] ; 14.84
+	push rax
+	mov rax, [rel const290] ; 24.38
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	mov rax, [rel const291] ; 12.67
+	push rax
+	lea rdi, [rel const2] ; '(FloatType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	pop r12 ; begin jpl_main postlude
+	pop rbp
+	ret
+
