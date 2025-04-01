@@ -36,7 +36,7 @@ _jpl_main:
 	mov rbp, rsp
 	push r12
 	mov r12, rbp ; end of jpl_main prelude
-	sub asp, 8 ; Add alignment
+	sub rsp, 8 ; Add alignment
 	; Allocating 8 bytes for the pointer
 	sub rsp, 8
 	; Computing bound for 'i'
@@ -107,7 +107,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 16
-	add asp, 8 ; Remove alignment
+	add rsp, 8 ; Remove alignment
 	pop r12 ; begin jpl_main postlude
 	pop rbp
 	ret

@@ -48,10 +48,10 @@ _jpl_main:
 	mov rax, [rsp]
 	cmp rax, 0
 	jg .jump1
-	sub asp, 8 ; Add alignment
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const1] ; 'non-positive loop bound'
 	call _fail_assertion
-	add asp, 8 ; Remove alignment
+	add rsp, 8 ; Remove alignment
 .jump1:
 	; Computing bound for 'j'
 	mov rax, [rel const0] ; 100
@@ -68,37 +68,37 @@ _jpl_main:
 	mov rax, [rsp]
 	cmp rax, 0
 	jg .jump3
-	sub asp, 8 ; Add alignment
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const1] ; 'non-positive loop bound'
 	call _fail_assertion
-	add asp, 8 ; Remove alignment
+	add rsp, 8 ; Remove alignment
 .jump3:
 	; Computing total size of heap memory to allocate
 	mov rdi, 8 ; sizeof int 
 	imul rdi, [rsp + 0 + 0] ; multiply by 100 
 	jno .jump4
-	sub asp, 8 ; Add alignment
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const2] ; 'overflow computing array size'
 	call _fail_assertion
-	add asp, 8 ; Remove alignment
+	add rsp, 8 ; Remove alignment
 .jump4:
 	imul rdi, [rsp + 0 + 8] ; multiply by 100 
 	jno .jump5
-	sub asp, 8 ; Add alignment
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const2] ; 'overflow computing array size'
 	call _fail_assertion
-	add asp, 8 ; Remove alignment
+	add rsp, 8 ; Remove alignment
 .jump5:
 	imul rdi, [rsp + 0 + 16] ; multiply by 100 
 	jno .jump6
-	sub asp, 8 ; Add alignment
+	sub rsp, 8 ; Add alignment
 	lea rdi, [rel const2] ; 'overflow computing array size'
 	call _fail_assertion
-	add asp, 8 ; Remove alignment
+	add rsp, 8 ; Remove alignment
 .jump6:
-	sub asp, 8 ; Add alignment
+	sub rsp, 8 ; Add alignment
 	call _jpl_alloc ; Put pointer to heap space in RAX
-	add asp, 8 ; Remove alignment
+	add rsp, 8 ; Remove alignment
 	mov [rsp + 24], rax ; Move to pre-allocated space
 	; Initialize 'k' to 0
 	mov rax, 0

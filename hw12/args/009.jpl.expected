@@ -48,7 +48,7 @@ _jpl_main:
 	sete al
 	and rax, 1
 	push rax
-	sub asp, 8 ; Add alignment
+	sub rsp, 8 ; Add alignment
 	sub rsp, 8
 	; Moving 8 bytes from rbp - 16 to rsp 
 		mov r10, [rbp - 16 + 0]
@@ -67,7 +67,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	add asp, 8 ; Remove alignment
+	add rsp, 8 ; Remove alignment
 	add rsp, 8 ; Local variables
 	pop r12 ; begin jpl_main postlude
 	pop rbp

@@ -37,7 +37,7 @@ _jpl_main:
 	mov r12, rbp ; end of jpl_main prelude
 	mov rax, [rel const0] ; 1
 	push rax
-	sub asp, 8 ; Add alignment
+	sub rsp, 8 ; Add alignment
 	mov rax, [rel const1] ; 0
 	push rax
 	mov rax, [rel const0] ; 1
@@ -62,7 +62,7 @@ _jpl_main:
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	add asp, 8 ; Remove alignment
+	add rsp, 8 ; Remove alignment
 	add rsp, 8 ; Local variables
 	pop r12 ; begin jpl_main postlude
 	pop rbp
