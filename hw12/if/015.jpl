@@ -1,0 +1,2 @@
+let b = true
+show if b then 1 else 0

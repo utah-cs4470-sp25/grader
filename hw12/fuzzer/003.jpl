@@ -1,0 +1,14 @@
+let a = (13.79 / 91.4)
+let b[c, d, e] = (if (! true) then (if ((- 242) >= (- (245 / (832 + 886)))) then (array[b : (array[b : 699] 685)[209], c : (- 862)] (array[d : b, e : 244, f : (- b)] d))[((sum[b : (61 - 617)] (sum[c : b] b)) / 650), [457, 87][(- (468 % 719))]] else (array[b : 113, c : 222, d : 784] (- (sum[e : (sum[e : d, f : 342] f), f : d, g : (- b)] (sum[h : f, i : d] e))))) else (array[b : 659, c : (sum[b : (- (sum[b : 51, c : (410 - 229)] (b + 740))), c : (- (sum[b : 523] 3)), d : (if (52.47 != a) then 551 else (sum[b : 665, c : 791] (sum[d : b] 1000)))] (array[e : b, f : (- 214)] e)[[b][c], b]), d : (sum[b : (array[b : 1000, c : 532] (- c))[(- 120), 738]] (- (if false then (sum[c : 642, d : 741] 896) else b)))] ((if (b >= (- d)) then (sum[e : c, f : 630] (- b)) else 356) % (- (- 549)))))
+let f[g] = [a, (sum[f : e, g : (if true then (sum[f : (sum[f : (sum[f : e, g : d, h : c] d), g : d] 786), g : e, h : d] c) else (sum[f : (sum[f : e] 501), g : (if (! true) then (- 261) else c)] (- f))), h : d] ((if ((- 990) == e) then (sum[i : g, j : c, k : c] 88.96) else a) + a))]
+let h[i, j, k] = (if (if (! (if true then (if true then false else true) else true)) then (array[h : d, i : g] true)[((g * 973) * e), 887] else ((- 19.11) > (- 36.95))) then (array[h : ((array[h : e] 787)[(g % d)] - g), i : (array[h : d] (g / d))[(- (if false then c else c))]] b) else (array[h : g] (if false then (array[i : d, j : e] b) else (array[i : e, j : d] b)))[e])[(g / e), [(sum[h : e] (sum[i : (- e), j : c, k : 942] d))][(sum[h : c, i : d] g)]]
+let l[m, n] = (array[l : d, m : j] (array[n : k, o : k, p : i] (array[q : j, r : n] h[d, d, j])))[i, (- g)][j, d, 438]
+let o = e
+let p[q, r] = (if (! (! false)) then (if false then (array[p : e, q : (if false then l else l)[g, 387]] l) else (array[p : c, q : n, r : i] (array[s : p, t : c] l))[(d * c), (n / (sum[p : m, q : m, r : o] o)), (sum[p : k, q : n] p)])[(- (- (sum[p : d] p))), j] else (array[p : c, q : k] (array[r : o] l)[n][l[g, (sum[r : 292, s : o, t : e] o)], j]))
+let s = f
+let t = f
+let u = (- f[d])
+let v = (! (n != n))
+let w = s
+let x = (g > r)
+show e

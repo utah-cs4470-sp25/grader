@@ -1,0 +1,38 @@
+let a[b] = (array[a : (if [false, true][(sum[a : 673] 975)] then (array[a : 335, b : 648, c : (sum[a : 539] a)] (array[d : b, e : c] d))[567, (- 262), 479][87, (if (true == (! true)) then (array[a : 499, b : 528] 888)[294, (761 + 868)] else (if true then (sum[a : 828, b : 405] 518) else 410))] else (sum[a : 830, b : (- (sum[a : 109] 423))] (array[c : (sum[c : a, d : a, e : 112] c)] (if false then c else c))[b]))] (if (if (if (! (53.79 >= 95.06)) then (! (12.37 > 27.63)) else (if (! false) then false else (a != a))) then false else ((- (- 815)) <= (a % a))) then a else (array[b : (array[b : 464, c : 248, d : 548] d)[(sum[b : a, c : 984, d : 446] c), a, 568], c : (if (a <= a) then 453 else (a + 259)), d : a] (array[e : 39, f : b, g : b] c)[b, (sum[e : c, f : a, g : b] a), c])[(array[b : a, c : 697] b)[(- (- 605)), (485 * (- a))], (- (- a)), a]))
+let c[d, e] = (if (array[c : a[b], d : (- 815), e : (sum[c : (if true then b else 274), d : b] d)] false)[249, (768 / (if false then 529 else 877)), 786] then (array[c : (if (true != false) then 925 else (b - b)), d : ((sum[c : 961, d : 138, e : b] c) % 909), e : 358] (array[f : (if true then d else e), g : e, h : b] (array[i : b, j : e] 35.33)))[(if (105 >= 576) then (- 707) else (885 / 970)), ((array[c : b, d : b] b)[(- 584), 336] + (- 294)), ((if true then 814 else (if true then b else 313)) * (if (! false) then (678 * 221) else b))] else (if (((- 66.49) % (96.5 - 6.54)) == (sum[c : 459, d : 334] (if true then 67.11 else 24.12))) then (array[c : b, d : b, e : (- b)] (array[f : c, g : (- 828)] 86.35)) else (array[c : [173][(- 743)], d : (if true then (b % 60) else 768), e : (- (- 258))] (array[f : c, g : (sum[f : c] d)] 48.44))))[(- (sum[c : (- b), d : ((- 86) % (sum[c : b, d : 750] 420)), e : b] b)), (sum[c : (array[c : 132] (array[d : b, e : 616] c))[(if true then 321 else (536 + b))][((906 * (if false then b else 816)) * (- 85)), (if true then a[(- b)] else 276)], d : b] 644), (561 * (480 / ((- (- 535)) / (sum[c : 13] (- 238)))))]
+let f[g, h, i] = (if ((a[b] - d) != (sum[f : (sum[f : (if (! false) then e else d)] f)] (sum[g : d, h : b] (sum[i : (- h), j : (if true then 979 else 135)] b)))) then (array[f : (array[f : (sum[f : d, g : (- e), h : (- d)] (d / h)), g : 759] ((e + f) + g))[(if (! (d == 613)) then (- (if false then b else b)) else d), (sum[f : (if (! true) then e else (sum[f : e, g : b] d))] b)], g : e, h : (array[f : d] (array[g : 656, h : f, i : e] e))[d][(if false then b else b), e, (310 % (d - d))]] (if (! (! true)) then h else (- (array[i : b, j : f] e)[h, g]))) else (array[f : 319, g : b, h : (- d)] (if ((- h) < f) then (array[i : 637, j : h, k : a[f]] i) else (array[i : (- f), j : g, k : b] d)))[(if (array[f : e] true)[622] then (if false then (array[f : 180, g : d, h : d] h) else (array[f : 641, g : b, h : 818] g)) else (if (! true) then (array[f : 847, g : b, h : b] 682) else (array[f : 284, g : d, h : b] d)))[(- 157), (sum[f : (sum[f : 512, g : d, h : e] 513)] (a[f] * d)), ((sum[f : 516] (383 - b)) + b)], ((array[f : e] b)[d] * e), (sum[f : ([152][16] / (- d))] (sum[g : (sum[g : e, h : (589 * d)] e), h : 653, i : b] (sum[j : h, k : (- b), l : g] 576)))])
+show i
+
+let j = (array[j : i] h)
+let k = b
+let l[m] = [k, g, (if (! (! (! (! false)))) then i else b)]
+let n = a
+show e
+
+let o[p, q, r] = (if (array[o : h, p : g, q : 896] ((array[r : k, s : k, t : o] i)[k, e, (- m)] != (q / (sum[r : q, s : h, t : b] o))))[(if (! (27.36 == (69.57 % 78.32))) then d else [n][m][h]), h, (if (i <= b) then 277 else k)] then (if false then (if ((array[o : b, p : i] e)[j[h], k] != h) then f else (if (if (b < b) then true else false) then f else (array[o : h, p : (if true then i else m), q : (sum[o : m, p : h] k)] (sum[r : 890] m)))) else (if (k <= e) then f else (array[o : 627, p : (if true then b else 0), q : h] (sum[r : (sum[r : 437, s : g, t : 707] d), s : o] q)))) else (if (if ((- (sum[o : 774, p : 828] m)) == m) then (68.58 == (- (- 62.55))) else ((sum[o : g, p : b, q : (k / i)] (- 8.79)) >= (39.67 / (- 87.22)))) then f else f))
+let s[t, u, v] = (if (! ((sum[s : p] (- 70.47)) >= (if (! true) then 38.86 else 74.01))) then (if ((- (- 57.21)) == ((if false then c[k, p] else 33.87) * (- c[g, r]))) then o else (array[s : 256, t : d, u : r] p)) else (if (m <= d) then o else o))
+show (array[w : k] e)
+
+let w[x, y] = [(array[w : m, x : t, y : m] (array[z : 537, A : k] c))[k, 788, r], (array[w : g, x : 950] c), (array[w : p, x : a[e]] c)][i][k, k]
+fn z(A : bool) : int[,] {
+  return (array[B : m, C : u] e)
+  return (if (A != false) then (if ((array[B : x, C : b, D : y] true)[h, e, (- r)] != true) then (array[B : x, C : (- (489 * y))] (array[D : h, E : y] (- g))) else (array[B : (sum[B : x, C : (- b)] C), C : (sum[B : x, C : m, D : b] e)] (if (if true then false else A) then (array[D : u, E : v] u) else (array[D : m, E : h] p))))[q, t] else (array[B : k, C : h] (array[D : x, E : B] y))[i, (- g)])
+  return (array[B : q, C : p] ((if A then u else v) - u))
+  let B = ((if (62.57 <= (sum[B : (- k), C : (g / k)] 54.35)) then (array[B : y, C : (if A then m else r), D : m] (sum[E : v, F : g, G : D] 26.55)) else (array[B : b] (array[C : t, D : r, E : 511] 99.83))[k])[k, (e + b), (sum[B : (- v)] k)] >= (array[B : g, C : k, D : (if (array[B : 851] A)[y] then (sum[B : q] B) else y)] 39.85)[t, g, h])
+  let C = 584
+  return (if (if B then A else (false != false)) then (array[D : h, E : i] (sum[F : r, G : D, H : u] g)) else (array[D : m] (array[E : D, F : i, G : r] (array[H : x, I : 134] q)))[h][x, C, e])
+}
+
+show (true == false)
+
+let A = d
+let B = g
+fn C(D : float[,]) : float {
+  let E[F, G, H] = s
+  let I[J, K, L] = o
+  let M[N, O] = (if (if (if (if (! true) then false else (false == (44.28 != 74.74))) then ((if (H == t) then false else false) == (F <= h)) else (array[M : i, N : u] (p >= J))[k, r]) then false else (array[M : e, N : K] (array[O : G] false)[u])[e, p]) then D else (if (! (! (! (if true then false else false)))) then (array[M : L, N : b] (if (N <= L) then D else c)[y, (if (x != 17) then F else (if true then k else 285))]) else (array[M : i, N : G] (if (B > i) then D else (array[O : k, P : L] 16.56)))[G, b]))
+  let P[Q] = (if (p >= L) then l else a)
+  return (sum[R : (if false then g else v)] (if [[false], (array[S : u] false), [true, false]][471][t] then (if (array[S : e, T : d] (! true))[K, A] then 42.93 else (sum[S : m, T : k] (sum[U : F, V : N] (sum[W : d, X : b] 82.43)))) else (array[S : q] (if false then 0.48 else (sum[T : q, U : g, V : F] 78.9)))[R]))
+  return ((array[R : d] (if (! true) then (sum[S : e] (35.68 * 11.57)) else 18.27))[F] + (- (sum[R : b, S : x, T : Q] (sum[U : L] ((- 3.82) + (- 87.34))))))
+}
+

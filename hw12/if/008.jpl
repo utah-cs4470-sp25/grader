@@ -1,0 +1,1 @@
+show if 1 < 1 then [1, 2, 3] else [4, 5, 6]

@@ -1,0 +1,2 @@
+let a = (173 + (- (if [false, (! false)][(- 163)] then (sum[a : (- 616)] 812) else (- 531))))
+show (array[b : (if (array[b : a, c : (- (a / a))] true)[(if true then (- 216) else a), a] then ((sum[b : a, c : a] a) / (array[b : (813 + 927), c : a] (sum[d : a] b))[(if false then (a / 465) else (- 378)), (a % (- 220))]) else (if true then (if true then ((if true then a else a) - (a * a)) else (883 % (- a))) else (if (a >= a) then [a] else (array[b : 86] a))[(- 453)]))] false)

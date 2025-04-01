@@ -1,0 +1,1 @@
+show if argnum > 3 then 1 else 3

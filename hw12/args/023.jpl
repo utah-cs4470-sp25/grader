@@ -1,0 +1,2 @@
+let a = [args] // a : int[][]
+show a[0][1]

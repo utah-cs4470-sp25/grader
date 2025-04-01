@@ -1,0 +1,10 @@
+let a = false
+show (! a)
+
+let b = 235
+let c = a
+let d[e] = [a, (! (! (if (array[d : 767, e : b] c)[146, (- b)] then ((- 98.61) > (- 0.51)) else a)))]
+let f[g] = (if (if (if c then a else (if false then a else c)) then (e != e) else c) then [b] else (array[f : (array[f : e, g : (sum[f : b] b), h : (if (if c then c else a) then (- b) else 746)] f)[(if (! false) then e else 340), 41, (array[f : (- 593), g : e, h : (382 * 994)] h)[(e * e), e, (if (if a then a else a) then (sum[f : b] b) else 331)]]] (array[g : (sum[g : b, h : (32 + e), i : e] (if true then h else e)), h : (- e), i : f] f)[(252 + b), b, 533]))
+let h = ((sum[h : (sum[h : ((if c then (if a then g else g) else b) / (b + e)), i : b, j : g] (sum[k : i, l : (if (h != e) then (sum[k : g] h) else 401)] (array[m : k, n : e] g)[(if false then g else j), (- k)]))] (sum[i : 307] (- (- 66.08)))) == (sum[h : 157] 47.48))
+let i[j] = [((sum[i : (array[i : (- g), j : (- 348), k : b] (sum[l : i, m : j, n : 33] g))[e, (b * g), (sum[i : (sum[i : e] 341)] i)], j : b] [g][(- b)]) < ((if ((sum[i : b] 1.69) <= (- 36.35)) then (if (b != e) then g else g) else (sum[i : e, j : g] i)) / e)), h, a]
+show (35.59 == 21.3)

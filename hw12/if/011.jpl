@@ -1,0 +1,2 @@
+let a = 1
+show if true != true then [1, 2, 3] else [5, 6, 7]

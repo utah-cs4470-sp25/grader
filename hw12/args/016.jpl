@@ -1,0 +1,1 @@
+show array[i : argnum, j : argnum, k : argnum] [i,j,k]
