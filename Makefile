@@ -76,6 +76,9 @@ test-hw11:
 test-hw1011:
 	@ python3 grader.py test --hw 1011 --dir $(DIR) --part $(PART)
 
+test-hw12:
+	@ python3 grader.py test --hw 12 --dir $(DIR) --part $(PART)
+
 # ben: completely useless??
 test-hw%:
 	@ python3 grader.py run --hw $*
