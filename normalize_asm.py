@@ -47,15 +47,15 @@ def normalize_line(line):
     line = " ".join(line.split())
     return line
 
-def ppasm(lines, commentmode=False):
-    if commentmode:
-        for x in gather_comments(lines, ";"):
-            yield x
-    else:
-        for line in lines:
-            line2 = normalize_line(line)
-            if line2 and not line2.isspace():
-                yield line2
+def ppasm(lines):
+    for line in lines:
+        line2 = normalize_line(line)
+        if line2 and not line2.isspace():
+            yield line2
+
+def commentasm(lines):
+    for x in gather_comments(lines, ";"):
+        yield x
 
 def normalize_cline(line):
     if ";" in line:

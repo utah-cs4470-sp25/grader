@@ -5,7 +5,7 @@ from dataclasses import dataclass
 import traceback
 import shlex
 import difflib
-from normalize_asm import ppasm, ppc
+from normalize_asm import ppasm, ppc, commentasm
 from ppsexp import ppsexp, unpp
 from pathlib import Path
 import subprocess
@@ -178,12 +178,14 @@ def readd_comments(diff_lines, from_map, to_map):
 class DiffSpec(FileSpec):
     expected_file : Path
     normalize : None
+    comment_map : None
 
-    def __init__(self, in_file, flags, normalize=None):
+    def __init__(self, in_file, flags, normalize=None, comment=None):
         self.in_file = in_file
         self.flags = flags
         self.expected_file = in_file.parent / (in_file.name + ".expected")
         self.normalize = normalize
+        self.comment_map = comment
 
     def run(self):
         assert self.expected_file.exists(), \
@@ -194,10 +196,13 @@ class DiffSpec(FileSpec):
         expected = expected.strip().split("\n")
         out = out.strip().split("\n")
         lcmap = {}
+        exp_cmap = None
+        out_cmap = None
         if self.normalize:
-            exp_cmap = dict(self.normalize(expected, commentmode=True))
+            if self.comment_map:
+                exp_cmap = dict(self.comment_map(expected))
+                out_cmap = dict(self.comment_map(out))
             expected = list(self.normalize(expected))
-            out_cmap = dict(self.normalize(out, commentmode=True))
             out = list(self.normalize(out))
         diff(expected, out, fromfile=self.expected_file.name, tofile="Your compiler", fromcomments=exp_cmap, tocomments=out_cmap)
 
@@ -448,46 +453,38 @@ HWS = {
 
 
    "10": {
-       "1": NullPart(DiffSpec, "hw10/ok/", "-s", normalize=ppasm),
-       "2": NullPart(DiffSpec, "hw10/ok-fuzzer1/", "-s", normalize=ppasm),
-       "3": NullPart(DiffSpec, "hw10/ok-fuzzer2/", "-s", normalize=ppasm),
+       "1": NullPart(DiffSpec, "hw10/ok/", "-s", normalize=ppasm, comment=commentasm),
+       "2": NullPart(DiffSpec, "hw10/ok-fuzzer1/", "-s", normalize=ppasm, comment=commentasm),
+       "3": NullPart(DiffSpec, "hw10/ok-fuzzer2/", "-s", normalize=ppasm, comment=commentasm),
    },
    "11": {
-       "1": NullPart(DiffSpec, "hw11/ok1/", "-s", normalize=ppasm),
-       "2": NullPart(DiffSpec, "hw11/ok2/", "-s", normalize=ppasm),
-       "3": NullPart(DiffSpec, "hw11/ok3/", "-s", normalize=ppasm),
-       "4": NullPart(DiffSpec, "hw11/ok-fuzzer1/", "-s", normalize=ppasm),
-       "5": NullPart(DiffSpec, "hw11/ok-fuzzer2/", "-s", normalize=ppasm),
+       "1": NullPart(DiffSpec, "hw11/ok1/", "-s", normalize=ppasm, comment=commentasm),
+       "2": NullPart(DiffSpec, "hw11/ok2/", "-s", normalize=ppasm, comment=commentasm),
+       "3": NullPart(DiffSpec, "hw11/ok3/", "-s", normalize=ppasm, comment=commentasm),
+       "4": NullPart(DiffSpec, "hw11/ok-fuzzer1/", "-s", normalize=ppasm, comment=commentasm),
+       "5": NullPart(DiffSpec, "hw11/ok-fuzzer2/", "-s", normalize=ppasm, comment=commentasm),
    },
    "1011": {
-       "1": NullPart(DiffSpec, "hw10/ok/", "-s", normalize=ppasm),
-       "2": NullPart(DiffSpec, "hw10/ok-fuzzer12/", "-s", normalize=ppasm),
-       ##"2": NullPart(DiffSpec, "hw10/ok-fuzzer1/", "-s", normalize=ppasm),
-       ## "3": NullPart(DiffSpec, "hw10/ok-fuzzer2/", "-s", normalize=ppasm),
-       "3": NullPart(DiffSpec, "hw11/ok1/", "-s", normalize=ppasm),
-       "4": NullPart(DiffSpec, "hw11/ok2/", "-s", normalize=ppasm),
-       "5": NullPart(DiffSpec, "hw11/ok3/", "-s", normalize=ppasm),
-       "6": NullPart(DiffSpec, "hw11/ok-fuzzer12/", "-s", normalize=ppasm),
-       ##"7": NullPart(DiffSpec, "hw11/ok-fuzzer1/", "-s", normalize=ppasm),
-       ##"8": NullPart(DiffSpec, "hw11/ok-fuzzer2/", "-s", normalize=ppasm),
+       "1": NullPart(DiffSpec, "hw10/ok/", "-s", normalize=ppasm, comment=commentasm),
+       "2": NullPart(DiffSpec, "hw10/ok-fuzzer12/", "-s", normalize=ppasm, comment=commentasm),
+       ##"2": NullPart(DiffSpec, "hw10/ok-fuzzer1/", "-s", normalize=ppasm, comment=commentasm),
+       ## "3": NullPart(DiffSpec, "hw10/ok-fuzzer2/", "-s", normalize=ppasm, comment=commentasm),
+       "3": NullPart(DiffSpec, "hw11/ok1/", "-s", normalize=ppasm, comment=commentasm),
+       "4": NullPart(DiffSpec, "hw11/ok2/", "-s", normalize=ppasm, comment=commentasm),
+       "5": NullPart(DiffSpec, "hw11/ok3/", "-s", normalize=ppasm, comment=commentasm),
+       "6": NullPart(DiffSpec, "hw11/ok-fuzzer12/", "-s", normalize=ppasm, comment=commentasm),
+       ##"7": NullPart(DiffSpec, "hw11/ok-fuzzer1/", "-s", normalize=ppasm, comment=commentasm),
+       ##"8": NullPart(DiffSpec, "hw11/ok-fuzzer2/", "-s", normalize=ppasm, comment=commentasm),
    },
 
 
-#    "11": {
-#        "1": ManualPart(DiffSpec, "hw11/ok1.jpl", "hw11/ok1/", "-s", normalize=ppasm),
-#        "2": ManualPart(DiffSpec, "hw11/ok2.jpl", "hw11/ok2/", "-s", normalize=ppasm),
-#        "3": ManualPart(DiffSpec, "hw11/ok3.jpl", "hw11/ok3/", "-s", normalize=ppasm),
-#        "4": ManualPart(DiffSpec, "hw11/ok4.jpl", "hw11/ok4/", "-s", normalize=ppasm),
-#        "5": NullPart(DiffSpec, "hw11/ok-fuzzer/", "-s", normalize=ppasm),
-#        "ec": NullPart(DiffSpec, "hw11/extra/", "-s", normalize=ppasm),
-#    },
    "12": {
-       "1": NullPart(DiffSpec, "hw12/if/", "-s", normalize=ppasm),
-       "2": NullPart(DiffSpec, "hw12/index/", "-s", normalize=ppasm),
-       "3": NullPart(DiffSpec, "hw12/sum/", "-s", normalize=ppasm),
-       "4": NullPart(DiffSpec, "hw12/array/", "-s", normalize=ppasm),
-       "5": NullPart(DiffSpec, "hw12/args/", "-s", normalize=ppasm),
-       "6": NullPart(DiffSpec, "hw12/fuzzer/", "-s", normalize=ppasm),
+       "1": NullPart(DiffSpec, "hw12/if/", "-s", normalize=ppasm, comment=commentasm),
+       "2": NullPart(DiffSpec, "hw12/index/", "-s", normalize=ppasm, comment=commentasm),
+       "3": NullPart(DiffSpec, "hw12/sum/", "-s", normalize=ppasm, comment=commentasm),
+       "4": NullPart(DiffSpec, "hw12/array/", "-s", normalize=ppasm, comment=commentasm),
+       "5": NullPart(DiffSpec, "hw12/args/", "-s", normalize=ppasm, comment=commentasm),
+       "6": NullPart(DiffSpec, "hw12/fuzzer/", "-s", normalize=ppasm, comment=commentasm),
    },
    "13": {
        "1": ManualPart(OptSpec, "hw13/ok1.jpl", "hw13/ok1/", "-O2"),
