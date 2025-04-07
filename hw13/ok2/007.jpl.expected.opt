@@ -32,10 +32,10 @@ _jpl_main:
 	push rbp
 	mov rbp, rsp
 	push r12
-	mov r12, rbp
+	mov r12, rbp ; end of jpl_main prelude
 	push qword 3
 	sub rsp, 8
-	; Moving 8 bytes from rbp - -16 to rsp
+	; Moving 8 bytes from rbp - -16 to rsp 
 		mov r10, [rbp - -16 + 0]
 		mov [rsp + 0], r10
 	pop rax
@@ -52,11 +52,11 @@ _jpl_main:
 .jump1:
 	push qword 0
 .jump2:
-	lea rdi, [rel const0] ; (IntType)
+	lea rdi, [rel const0] ; '(IntType)'
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	pop r12
+	pop r12 ; begin jpl_main postlude
 	pop rbp
 	ret
 

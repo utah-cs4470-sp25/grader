@@ -34,7 +34,7 @@ _jpl_main:
 	push rbp
 	mov rbp, rsp
 	push r12
-	mov r12, rbp
+	mov r12, rbp ; end of jpl_main prelude
 	mov rax, [rel const0] ; False
 	push rax
 	pop rax
@@ -47,11 +47,11 @@ _jpl_main:
 	mov rax, [rel const0] ; 0
 	push rax
 .jump2:
-	lea rdi, [rel const2] ; (IntType)
+	lea rdi, [rel const2] ; '(IntType)'
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
-	pop r12
+	pop r12 ; begin jpl_main postlude
 	pop rbp
 	ret
 

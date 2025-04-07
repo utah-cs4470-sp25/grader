@@ -36,18 +36,18 @@ _jpl_main:
 	push rbp
 	mov rbp, rsp
 	push r12
-	mov r12, rbp
+	mov r12, rbp ; end of jpl_main prelude
 	sub rsp, 16
-	; Moving 16 bytes from rbp - -16 to rsp
+	; Moving 16 bytes from rbp - -16 to rsp 
 		mov r10, [rbp - -16 + 8]
 		mov [rsp + 8], r10
 		mov r10, [rbp - -16 + 0]
 		mov [rsp + 0], r10
 	mov rdi, 16
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	call _jpl_alloc
 	add rsp, 8 ; Remove alignment
-	; Moving 16 bytes from rsp to rax
+	; Moving 16 bytes from rsp to rax 
 		mov r10, [rsp + 8]
 		mov [rax + 8], r10
 		mov r10, [rsp + 0]
@@ -57,7 +57,7 @@ _jpl_main:
 	mov rax, 1
 	push rax
 	sub rsp, 16
-	; Moving 16 bytes from rbp - 24 to rsp
+	; Moving 16 bytes from rbp - 24 to rsp 
 		mov r10, [rbp - 24 + 8]
 		mov [rsp + 8], r10
 		mov r10, [rbp - 24 + 0]
@@ -67,12 +67,12 @@ _jpl_main:
 	mov rax, [rsp + 0]
 	cmp rax, 0
 	jge .jump1
-	lea rdi, [rel const1] ; negative array index
+	lea rdi, [rel const1] ; 'negative array index'
 	call _fail_assertion
 .jump1:
 	cmp rax, [rsp + 8]
 	jl .jump2
-	lea rdi, [rel const2] ; index too large
+	lea rdi, [rel const2] ; 'index too large'
 	call _fail_assertion
 .jump2:
 	mov rax, 0
@@ -83,7 +83,7 @@ _jpl_main:
 	add rsp, 8
 	add rsp, 16
 	sub rsp, 16
-	; Moving 16 bytes from rax to rsp
+	; Moving 16 bytes from rax to rsp 
 		mov r10, [rax + 8]
 		mov [rsp + 8], r10
 		mov r10, [rax + 0]
@@ -93,12 +93,12 @@ _jpl_main:
 	mov rax, [rsp + 0]
 	cmp rax, 0
 	jge .jump3
-	lea rdi, [rel const1] ; negative array index
+	lea rdi, [rel const1] ; 'negative array index'
 	call _fail_assertion
 .jump3:
 	cmp rax, [rsp + 8]
 	jl .jump4
-	lea rdi, [rel const2] ; index too large
+	lea rdi, [rel const2] ; 'index too large'
 	call _fail_assertion
 .jump4:
 	mov rax, 0
@@ -109,15 +109,15 @@ _jpl_main:
 	add rsp, 8
 	add rsp, 16
 	sub rsp, 8
-	; Moving 8 bytes from rax to rsp
+	; Moving 8 bytes from rax to rsp 
 		mov r10, [rax + 0]
 		mov [rsp + 0], r10
-	lea rdi, [rel const4] ; (IntType)
+	lea rdi, [rel const4] ; '(IntType)'
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
 	add rsp, 16 ; Local variables
-	pop r12
+	pop r12 ; begin jpl_main postlude
 	pop rbp
 	ret
 

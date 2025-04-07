@@ -35,13 +35,13 @@ _jpl_main:
 	push rbp
 	mov rbp, rsp
 	push r12
-	mov r12, rbp
+	mov r12, rbp ; end of jpl_main prelude
 	push qword 3
 	push qword 2
 	push qword 1
 	mov rdi, 24
 	call _jpl_alloc
-	; Moving 24 bytes from rsp to rax
+	; Moving 24 bytes from rsp to rax 
 		mov r10, [rsp + 16]
 		mov [rax + 16], r10
 		mov r10, [rsp + 8]
@@ -54,19 +54,19 @@ _jpl_main:
 	push rax
 	sub rsp, 24
 	lea rdi, [rsp]
-	lea rsi, [rel const0] ; b.png
+	lea rsi, [rel const0] ; 'b.png'
 	call _read_image
-	sub rsp, 8 ; Align stack
+	sub rsp, 8 ; Add alignment
 	push qword 0
 	mov rax, [rsp + 0]
 	cmp rax, 0
 	jge .jump1
-	lea rdi, [rel const1] ; negative array index
+	lea rdi, [rel const1] ; 'negative array index'
 	call _fail_assertion
 .jump1:
 	cmp rax, [rsp + 80]
 	jl .jump2
-	lea rdi, [rel const2] ; index too large
+	lea rdi, [rel const2] ; 'index too large'
 	call _fail_assertion
 .jump2:
 	mov rax, [rsp + 0]
@@ -74,16 +74,16 @@ _jpl_main:
 	add rax, [rsp + 88]
 	add rsp, 8
 	sub rsp, 8
-	; Moving 8 bytes from rax to rsp
+	; Moving 8 bytes from rax to rsp 
 		mov r10, [rax + 0]
 		mov [rsp + 0], r10
-	lea rdi, [rel const3] ; (IntType)
+	lea rdi, [rel const3] ; '(IntType)'
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
 	add rsp, 8 ; Remove alignment
 	add rsp, 40 ; Local variables
-	pop r12
+	pop r12 ; begin jpl_main postlude
 	pop rbp
 	ret
 

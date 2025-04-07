@@ -31,7 +31,7 @@ const3: db `b.png`, 0
 const4: dq 0
 const5: db `negative array index`, 0
 const6: db `index too large`, 0
-const7: db `(TupleType (FloatType) (FloatType) (FloatType) (FloatType))`, 0
+const7: db `(StructType rgba)`, 0
 
 section .text
 jpl_main:
@@ -39,7 +39,7 @@ _jpl_main:
 	push rbp
 	mov rbp, rsp
 	push r12
-	mov r12, rbp
+	mov r12, rbp ; end of jpl_main prelude
 	mov rax, [rel const0] ; 3
 	push rax
 	mov rax, [rel const1] ; 2
@@ -48,7 +48,7 @@ _jpl_main:
 	push rax
 	mov rdi, 24
 	call _jpl_alloc
-	; Moving 24 bytes from rsp to rax
+	; Moving 24 bytes from rsp to rax 
 		mov r10, [rsp + 16]
 		mov [rax + 16], r10
 		mov r10, [rsp + 8]
@@ -61,10 +61,10 @@ _jpl_main:
 	push rax
 	sub rsp, 24
 	lea rdi, [rsp]
-	lea rsi, [rel const3] ; b.png
+	lea rsi, [rel const3] ; 'b.png'
 	call _read_image
 	sub rsp, 24
-	; Moving 24 bytes from rbp - 48 to rsp
+	; Moving 24 bytes from rbp - 48 to rsp 
 		mov r10, [rbp - 48 + 16]
 		mov [rsp + 16], r10
 		mov r10, [rbp - 48 + 8]
@@ -78,30 +78,30 @@ _jpl_main:
 	mov rax, [rsp + 0]
 	cmp rax, 0
 	jge .jump1
-	sub rsp, 8 ; Align stack
-	lea rdi, [rel const5] ; negative array index
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const5] ; 'negative array index'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
 .jump1:
 	cmp rax, [rsp + 16]
 	jl .jump2
-	sub rsp, 8 ; Align stack
-	lea rdi, [rel const6] ; index too large
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const6] ; 'index too large'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
 .jump2:
 	mov rax, [rsp + 8]
 	cmp rax, 0
 	jge .jump3
-	sub rsp, 8 ; Align stack
-	lea rdi, [rel const5] ; negative array index
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const5] ; 'negative array index'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
 .jump3:
 	cmp rax, [rsp + 24]
 	jl .jump4
-	sub rsp, 8 ; Align stack
-	lea rdi, [rel const6] ; index too large
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const6] ; 'index too large'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
 .jump4:
@@ -116,7 +116,7 @@ _jpl_main:
 	add rsp, 8
 	add rsp, 24
 	sub rsp, 32
-	; Moving 32 bytes from rax to rsp
+	; Moving 32 bytes from rax to rsp 
 		mov r10, [rax + 24]
 		mov [rsp + 24], r10
 		mov r10, [rax + 16]
@@ -125,12 +125,12 @@ _jpl_main:
 		mov [rsp + 8], r10
 		mov r10, [rax + 0]
 		mov [rsp + 0], r10
-	lea rdi, [rel const7] ; (TupleType (FloatType) (FloatType) (FloatType) (FloatType))
+	lea rdi, [rel const7] ; '(StructType rgba)'
 	lea rsi, [rsp]
 	call _show
 	add rsp, 32
 	add rsp, 40 ; Local variables
-	pop r12
+	pop r12 ; begin jpl_main postlude
 	pop rbp
 	ret
 
