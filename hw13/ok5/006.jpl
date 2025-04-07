@@ -1,4 +1,4 @@
 let a = [1, 2, 3]
-read image "b.png" to b[H, W]
+let b[H, W] = array[i: 3* 3, j: 3 + 1] 6
 show args[0]
 

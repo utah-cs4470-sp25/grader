@@ -24,10 +24,12 @@ extern _to_int
 extern _to_float
 
 section .data
-const0: db `a.png`, 0
-const1: db `negative array index`, 0
-const2: db `index too large`, 0
-const3: db `(StructType rgba)`, 0
+const0: db `non-positive loop bound`, 0
+const1: db `overflow computing array size`, 0
+const2: dq 1.0
+const3: db `negative array index`, 0
+const4: db `index too large`, 0
+const5: db `(FloatType)`, 0
 
 section .text
 jpl_main:
@@ -36,54 +38,125 @@ _jpl_main:
 	mov rbp, rsp
 	push r12
 	mov r12, rbp ; end of jpl_main prelude
-	sub rsp, 24
-	lea rdi, [rsp]
-	lea rsi, [rel const0] ; 'a.png'
-	call _read_image
+	; Allocating 8 bytes for the pointer
+	sub rsp, 8
+	; Computing bound for 'j'
+	push qword 800
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump1
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const0] ; 'non-positive loop bound'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump1:
+	; Computing bound for 'i'
+	push qword 400
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump2
+	lea rdi, [rel const0] ; 'non-positive loop bound'
+	call _fail_assertion
+.jump2:
+	; Computing total size of heap memory to allocate
+	mov rdi, 8 ; sizeof float 
+	imul rdi, [rsp + 0 + 0] ; multiply by 400 
+	jno .jump3
+	lea rdi, [rel const1] ; 'overflow computing array size'
+	call _fail_assertion
+.jump3:
+	imul rdi, [rsp + 0 + 8] ; multiply by 800 
+	jno .jump4
+	lea rdi, [rel const1] ; 'overflow computing array size'
+	call _fail_assertion
+.jump4:
+	call _jpl_alloc ; Put pointer to heap space in RAX
+	mov [rsp + 16], rax ; Move to pre-allocated space
+	; Initialize 'j' to 0
+	mov rax, 0
+	push rax
+	; Initialize 'i' to 0
+	mov rax, 0
+	push rax
+.jump5: ; Begin body of loop
+	; Compute loop body
+	mov rax, [rel const2] ; 1.0
+	push rax
+	; Index to store in
+	mov rax, [rsp + 8]
+	imul rax, 800
+	add rax, [rsp + 16]
+	shl rax, 3
+	add rax, [rsp + 40]
+	; Move body (8 bytes) to index
+	; Moving 8 bytes from rsp to rax 
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 8
+	; Increment 'j'
+	add qword [rsp + 8], 1
+	; Compare j to its bound
+	mov rax, [rsp + 8]
+	cmp rax, [rsp + 24]
+	jl .jump5 ; If j < bound, next iter
+	mov qword [rsp + 8], 0 ; j = 0
+	add qword [rsp + 0], 1 ; i++
+	; Compare i to its bound
+	mov rax, [rsp + 0]
+	cmp rax, [rsp + 16]
+	jl .jump5 ; If i < bound, next iter
+	; End body of loop
+	; Free all loop variables
+	add rsp, 16
+	; array left on stack
+	sub rsp, 8 ; Add alignment
 	push qword 2
 	push qword 1
 	mov rax, [rsp + 0]
 	cmp rax, 0
-	jge .jump1
-	lea rdi, [rel const1] ; 'negative array index'
+	jge .jump6
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const3] ; 'negative array index'
 	call _fail_assertion
-.jump1:
-	cmp rax, [rsp + 16]
-	jl .jump2
-	lea rdi, [rel const2] ; 'index too large'
+	add rsp, 8 ; Remove alignment
+.jump6:
+	cmp rax, [rsp + 24]
+	jl .jump7
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const4] ; 'index too large'
 	call _fail_assertion
-.jump2:
+	add rsp, 8 ; Remove alignment
+.jump7:
 	mov rax, [rsp + 8]
 	cmp rax, 0
-	jge .jump3
-	lea rdi, [rel const1] ; 'negative array index'
+	jge .jump8
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const3] ; 'negative array index'
 	call _fail_assertion
-.jump3:
-	cmp rax, [rsp + 24]
-	jl .jump4
-	lea rdi, [rel const2] ; 'index too large'
+	add rsp, 8 ; Remove alignment
+.jump8:
+	cmp rax, [rsp + 32]
+	jl .jump9
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const4] ; 'index too large'
 	call _fail_assertion
-.jump4:
+	add rsp, 8 ; Remove alignment
+.jump9:
 	mov rax, [rsp + 0]
-	imul rax, [rsp + 24] ; No overflow if indices in bounds
+	imul rax, [rsp + 32] ; No overflow if indices in bounds
 	add rax, [rsp + 8]
-	shl rax, 5
-	add rax, [rsp + 32]
+	shl rax, 3
+	add rax, [rsp + 40]
 	add rsp, 16
-	sub rsp, 32
-	; Moving 32 bytes from rax to rsp 
-		mov r10, [rax + 24]
-		mov [rsp + 24], r10
-		mov r10, [rax + 16]
-		mov [rsp + 16], r10
-		mov r10, [rax + 8]
-		mov [rsp + 8], r10
+	sub rsp, 8
+	; Moving 8 bytes from rax to rsp 
 		mov r10, [rax + 0]
 		mov [rsp + 0], r10
-	lea rdi, [rel const3] ; '(StructType rgba)'
+	lea rdi, [rel const5] ; '(FloatType)'
 	lea rsi, [rsp]
 	call _show
-	add rsp, 32
+	add rsp, 8
+	add rsp, 8 ; Remove alignment
 	add rsp, 24 ; Local variables
 	pop r12 ; begin jpl_main postlude
 	pop rbp
