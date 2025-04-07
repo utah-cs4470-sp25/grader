@@ -1,2 +1,0 @@
-let a = 1024
-show argnum * a

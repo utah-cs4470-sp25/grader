@@ -1,3 +1,0 @@
-let a = 7
-let b = a
-show b

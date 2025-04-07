@@ -1,7 +1,0 @@
-let a = 7
-let b = 9
-let c = a
-let d = b
-let e = c
-show d
-show e

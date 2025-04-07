@@ -1,2 +1,0 @@
-let a = 19
-show [a, a, a, a, a]
