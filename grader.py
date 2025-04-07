@@ -487,9 +487,16 @@ HWS = {
        "6": NullPart(DiffSpec, "hw12/fuzzer/", "-s", normalize=ppasm, comment=commentasm),
    },
    "13": {
-       "1": ManualPart(OptSpec, "hw13/ok1.jpl", "hw13/ok1/", "-O2"),
-       "2": ManualPart(OptSpec, "hw13/ok2.jpl", "hw13/ok2/", "-O2"),
-       "3": NullPart(OptSpec, "hw13/ok-fuzzer/", "-O2"),
+       "1": NullPart(OptSpec, "hw13/ok1/", "-O1"),
+       "2": NullPart(OptSpec, "hw13/ok2/", "-O1"),
+       "3": NullPart(OptSpec, "hw13/ok3/", "-O1"),
+       "4": NullPart(OptSpec, "hw13/ok4/", "-O1"),
+       "5": NullPart(OptSpec, "hw13/ok5/", "-O1"),
+   },
+   "14": {
+       "1": ManualPart(OptSpec, "hw14/ok1.jpl", "hw14/ok1/", "-O2"),
+       "2": ManualPart(OptSpec, "hw14/ok2.jpl", "hw14/ok2/", "-O2"),
+       "3": NullPart(OptSpec, "hw14/ok-fuzzer/", "-O2"),
    },
 }
 
