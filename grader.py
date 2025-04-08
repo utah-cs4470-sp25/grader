@@ -49,6 +49,8 @@ def parse_success(out : str) -> Tuple[bool, str]:
 
 def run_student(flags, in_file, require=None):
     try:
+        # 2025-04-08: may need to add encoding='utf-8' or encoding='cp437' or encoding='gbk'
+        #  https://stackoverflow.com/questions/73545218/utf-8-encoding-exception-with-subprocess-run
         res = subprocess.run([
             "make",
             "--silent", # Don't print commands as they are run
