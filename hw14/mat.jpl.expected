@@ -24,13 +24,21 @@ extern _to_int
 extern _to_float
 
 section .data
-const0: db `a.png`, 0
+const0: dq 600
 const1: db `non-positive loop bound`, 0
-const2: db `overflow computing array size`, 0
-const3: db `negative array index`, 0
-const4: db `index too large`, 0
-const5: db `b.png`, 0
-const6: db `(ArrayType (FloatType) 2)`, 0
+const2: dq 500
+const3: db `overflow computing array size`, 0
+const4: dq 1.0
+const5: dq 0.0
+const6: db `negative array index`, 0
+const7: db `index too large`, 0
+const8: dq 1
+const9: dq 666
+const10: dq 999
+const11: dq 0.6
+const12: dq 0.4
+const13: dq 0.2
+const14: db `(ArrayType (FloatType) 2)`, 0
 
 section .text
 jpl_main:
@@ -38,67 +46,161 @@ _jpl_main:
 	push rbp
 	mov rbp, rsp
 	push r12
-	mov r12, rbp
-	sub rsp, 24
-	lea rdi, [rsp]
-	lea rsi, [rel const0] ; a.png
-	call _read_image
+	mov r12, rbp ; end of jpl_main prelude
 	; Allocating 8 bytes for the pointer
 	sub rsp, 8
-	; Computing bound for j
-	sub rsp, 8
-	; Moving 8 bytes from rbp - 24 to rsp
-		mov r10, [rbp - 24 + 0]
-		mov [rsp + 0], r10
+	; Computing bound for 'w'
+	mov rax, [rel const0] ; 600
+	push rax
 	mov rax, [rsp]
 	cmp rax, 0
 	jg .jump1
-	lea rdi, [rel const1] ; non-positive loop bound
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const1] ; 'non-positive loop bound'
 	call _fail_assertion
+	add rsp, 8 ; Remove alignment
 .jump1:
-	; Computing bound for i
-	sub rsp, 8
-	; Moving 8 bytes from rbp - 32 to rsp
-		mov r10, [rbp - 32 + 0]
-		mov [rsp + 0], r10
+	; Computing bound for 'h'
+	mov rax, [rel const2] ; 500
+	push rax
 	mov rax, [rsp]
 	cmp rax, 0
 	jg .jump2
-	sub rsp, 8 ; Align stack
-	lea rdi, [rel const1] ; non-positive loop bound
+	lea rdi, [rel const1] ; 'non-positive loop bound'
 	call _fail_assertion
-	add rsp, 8 ; Remove alignment
 .jump2:
 	; Computing total size of heap memory to allocate
-	mov rdi, 8 ; sizeof float
-	imul rdi, [rsp + 0 + 0] ; multiply by H
+	mov rdi, 16 ; sizeof float[] 
+	imul rdi, [rsp + 0 + 0] ; multiply by 500 
 	jno .jump3
-	sub rsp, 8 ; Align stack
-	lea rdi, [rel const2] ; overflow computing array size
+	lea rdi, [rel const3] ; 'overflow computing array size'
 	call _fail_assertion
-	add rsp, 8 ; Remove alignment
 .jump3:
-	imul rdi, [rsp + 0 + 8] ; multiply by W
+	imul rdi, [rsp + 0 + 8] ; multiply by 600 
 	jno .jump4
-	sub rsp, 8 ; Align stack
-	lea rdi, [rel const2] ; overflow computing array size
+	lea rdi, [rel const3] ; 'overflow computing array size'
 	call _fail_assertion
-	add rsp, 8 ; Remove alignment
 .jump4:
-	sub rsp, 8 ; Align stack
 	call _jpl_alloc ; Put pointer to heap space in RAX
-	add rsp, 8 ; Remove alignment
 	mov [rsp + 16], rax ; Move to pre-allocated space
-	; Initialize j to 0
+	; Initialize 'w' to 0
 	mov rax, 0
 	push rax
-	; Initialize i to 0
+	; Initialize 'h' to 0
 	mov rax, 0
 	push rax
 .jump5: ; Begin body of loop
 	; Compute loop body
+	mov rax, [rel const4] ; 1.0
+	push rax
+	mov rax, [rel const5] ; 0.0
+	push rax
+	mov rax, [rel const5] ; 0.0
+	push rax
+	mov rax, [rel const4] ; 1.0
+	push rax
+	mov rdi, 32
+	call _jpl_alloc
+	; Moving 32 bytes from rsp to rax 
+		mov r10, [rsp + 24]
+		mov [rax + 24], r10
+		mov r10, [rsp + 16]
+		mov [rax + 16], r10
+		mov r10, [rsp + 8]
+		mov [rax + 8], r10
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 32
+	push rax
+	mov rax, 4
+	push rax
+	; Index to store in
+	mov rax, 0
+	imul rax, [rsp + 32] ; No overflow if indices in bounds
+	add rax, [rsp + 16]
+	imul rax, [rsp + 40] ; No overflow if indices in bounds
+	add rax, [rsp + 24]
+	imul rax, 16
+	add rax, [rsp + 48]
+	; Move body (16 bytes) to index
+	; Moving 16 bytes from rsp to rax 
+		mov r10, [rsp + 8]
+		mov [rax + 8], r10
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 16
+	; Increment 'w'
+	add qword [rsp + 8], 1
+	; Compare w to its bound
+	mov rax, [rsp + 8]
+	cmp rax, [rsp + 24]
+	jl .jump5 ; If w < bound, next iter
+	mov qword [rsp + 8], 0 ; w = 0
+	add qword [rsp + 0], 1 ; h++
+	; Compare h to its bound
+	mov rax, [rsp + 0]
+	cmp rax, [rsp + 16]
+	jl .jump5 ; If h < bound, next iter
+	; End body of loop
+	; Free all loop variables
+	add rsp, 16
+	; array left on stack
+	; Allocating 8 bytes for the pointer
+	sub rsp, 8
+	; Computing bound for 'j'
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 24 to rsp 
+		mov r10, [rbp - 24 + 0]
+		mov [rsp + 0], r10
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump6
+	lea rdi, [rel const1] ; 'non-positive loop bound'
+	call _fail_assertion
+.jump6:
+	; Computing bound for 'i'
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 32 to rsp 
+		mov r10, [rbp - 32 + 0]
+		mov [rsp + 0], r10
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump7
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const1] ; 'non-positive loop bound'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump7:
+	; Computing total size of heap memory to allocate
+	mov rdi, 8 ; sizeof float 
+	imul rdi, [rsp + 0 + 0] ; multiply by H 
+	jno .jump8
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const3] ; 'overflow computing array size'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump8:
+	imul rdi, [rsp + 0 + 8] ; multiply by W 
+	jno .jump9
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const3] ; 'overflow computing array size'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump9:
+	sub rsp, 8 ; Add alignment
+	call _jpl_alloc ; Put pointer to heap space in RAX
+	add rsp, 8 ; Remove alignment
+	mov [rsp + 16], rax ; Move to pre-allocated space
+	; Initialize 'j' to 0
+	mov rax, 0
+	push rax
+	; Initialize 'i' to 0
+	mov rax, 0
+	push rax
+.jump10: ; Begin body of loop
+	; Compute loop body
 	sub rsp, 24
-	; Moving 24 bytes from rbp - 32 to rsp
+	; Moving 24 bytes from rbp - 32 to rsp 
 		mov r10, [rbp - 32 + 16]
 		mov [rsp + 16], r10
 		mov r10, [rbp - 32 + 8]
@@ -106,59 +208,75 @@ _jpl_main:
 		mov r10, [rbp - 32 + 0]
 		mov [rsp + 0], r10
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 64 to rsp
+	; Moving 8 bytes from rbp - 64 to rsp 
 		mov r10, [rbp - 64 + 0]
 		mov [rsp + 0], r10
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 72 to rsp
+	; Moving 8 bytes from rbp - 72 to rsp 
 		mov r10, [rbp - 72 + 0]
 		mov [rsp + 0], r10
 	mov rax, [rsp + 0]
 	cmp rax, 0
-	jge .jump6
-	lea rdi, [rel const3] ; negative array index
+	jge .jump11
+	lea rdi, [rel const6] ; 'negative array index'
 	call _fail_assertion
-.jump6:
+.jump11:
 	cmp rax, [rsp + 16]
-	jl .jump7
-	lea rdi, [rel const4] ; index too large
+	jl .jump12
+	lea rdi, [rel const7] ; 'index too large'
 	call _fail_assertion
-.jump7:
+.jump12:
 	mov rax, [rsp + 8]
 	cmp rax, 0
-	jge .jump8
-	lea rdi, [rel const3] ; negative array index
+	jge .jump13
+	lea rdi, [rel const6] ; 'negative array index'
 	call _fail_assertion
-.jump8:
+.jump13:
 	cmp rax, [rsp + 24]
-	jl .jump9
-	lea rdi, [rel const4] ; index too large
+	jl .jump14
+	lea rdi, [rel const7] ; 'index too large'
 	call _fail_assertion
-.jump9:
+.jump14:
 	mov rax, 0
 	imul rax, [rsp + 16] ; No overflow if indices in bounds
 	add rax, [rsp + 0]
 	imul rax, [rsp + 24] ; No overflow if indices in bounds
 	add rax, [rsp + 8]
-	imul rax, 32
+	imul rax, 16
 	add rax, [rsp + 32]
 	add rsp, 8
 	add rsp, 8
 	add rsp, 24
-	sub rsp, 32
-	; Moving 32 bytes from rax to rsp
-		mov r10, [rax + 24]
-		mov [rsp + 24], r10
-		mov r10, [rax + 16]
-		mov [rsp + 16], r10
+	sub rsp, 16
+	; Moving 16 bytes from rax to rsp 
 		mov r10, [rax + 8]
 		mov [rsp + 8], r10
 		mov r10, [rax + 0]
 		mov [rsp + 0], r10
-	; Moving 8 bytes from rsp + 8 to rsp + 24
-		mov r10, [rsp + 8 + 0]
-		mov [rsp + 24 + 0], r10
-	add rsp, 24
+	mov rax, [rel const8] ; 1
+	push rax
+	mov rax, [rsp + 0]
+	cmp rax, 0
+	jge .jump15
+	lea rdi, [rel const6] ; 'negative array index'
+	call _fail_assertion
+.jump15:
+	cmp rax, [rsp + 8]
+	jl .jump16
+	lea rdi, [rel const7] ; 'index too large'
+	call _fail_assertion
+.jump16:
+	mov rax, 0
+	imul rax, [rsp + 8] ; No overflow if indices in bounds
+	add rax, [rsp + 0]
+	imul rax, 8
+	add rax, [rsp + 16]
+	add rsp, 8
+	add rsp, 16
+	sub rsp, 8
+	; Moving 8 bytes from rax to rsp 
+		mov r10, [rax + 0]
+		mov [rsp + 0], r10
 	; Index to store in
 	mov rax, 0
 	imul rax, [rsp + 24] ; No overflow if indices in bounds
@@ -168,86 +286,180 @@ _jpl_main:
 	imul rax, 8
 	add rax, [rsp + 40]
 	; Move body (8 bytes) to index
-	; Moving 8 bytes from rsp to rax
+	; Moving 8 bytes from rsp to rax 
 		mov r10, [rsp + 0]
 		mov [rax + 0], r10
 	add rsp, 8
-	; Increment j
+	; Increment 'j'
 	add qword [rsp + 8], 1
 	; Compare j to its bound
 	mov rax, [rsp + 8]
 	cmp rax, [rsp + 24]
-	jl .jump5 ; If j < bound, next iter
+	jl .jump10 ; If j < bound, next iter
 	mov qword [rsp + 8], 0 ; j = 0
 	add qword [rsp + 0], 1 ; i++
 	; Compare i to its bound
 	mov rax, [rsp + 0]
 	cmp rax, [rsp + 16]
-	jl .jump5 ; If i < bound, next iter
+	jl .jump10 ; If i < bound, next iter
 	; End body of loop
 	; Free all loop variables
 	add rsp, 16
 	; array left on stack
-	sub rsp, 24
-	lea rdi, [rsp]
-	lea rsi, [rel const5] ; b.png
-	call _read_image
 	; Allocating 8 bytes for the pointer
 	sub rsp, 8
-	; Computing bound for j
+	; Computing bound for 'w'
+	mov rax, [rel const9] ; 666
+	push rax
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump17
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const1] ; 'non-positive loop bound'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump17:
+	; Computing bound for 'h'
+	mov rax, [rel const10] ; 999
+	push rax
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump18
+	lea rdi, [rel const1] ; 'non-positive loop bound'
+	call _fail_assertion
+.jump18:
+	; Computing total size of heap memory to allocate
+	mov rdi, 16 ; sizeof float[] 
+	imul rdi, [rsp + 0 + 0] ; multiply by 999 
+	jno .jump19
+	lea rdi, [rel const3] ; 'overflow computing array size'
+	call _fail_assertion
+.jump19:
+	imul rdi, [rsp + 0 + 8] ; multiply by 666 
+	jno .jump20
+	lea rdi, [rel const3] ; 'overflow computing array size'
+	call _fail_assertion
+.jump20:
+	call _jpl_alloc ; Put pointer to heap space in RAX
+	mov [rsp + 16], rax ; Move to pre-allocated space
+	; Initialize 'w' to 0
+	mov rax, 0
+	push rax
+	; Initialize 'h' to 0
+	mov rax, 0
+	push rax
+.jump21: ; Begin body of loop
+	; Compute loop body
+	mov rax, [rel const4] ; 1.0
+	push rax
+	mov rax, [rel const11] ; 0.6
+	push rax
+	mov rax, [rel const12] ; 0.4
+	push rax
+	mov rax, [rel const13] ; 0.2
+	push rax
+	mov rdi, 32
+	call _jpl_alloc
+	; Moving 32 bytes from rsp to rax 
+		mov r10, [rsp + 24]
+		mov [rax + 24], r10
+		mov r10, [rsp + 16]
+		mov [rax + 16], r10
+		mov r10, [rsp + 8]
+		mov [rax + 8], r10
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 32
+	push rax
+	mov rax, 4
+	push rax
+	; Index to store in
+	mov rax, 0
+	imul rax, [rsp + 32] ; No overflow if indices in bounds
+	add rax, [rsp + 16]
+	imul rax, [rsp + 40] ; No overflow if indices in bounds
+	add rax, [rsp + 24]
+	imul rax, 16
+	add rax, [rsp + 48]
+	; Move body (16 bytes) to index
+	; Moving 16 bytes from rsp to rax 
+		mov r10, [rsp + 8]
+		mov [rax + 8], r10
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 16
+	; Increment 'w'
+	add qword [rsp + 8], 1
+	; Compare w to its bound
+	mov rax, [rsp + 8]
+	cmp rax, [rsp + 24]
+	jl .jump21 ; If w < bound, next iter
+	mov qword [rsp + 8], 0 ; w = 0
+	add qword [rsp + 0], 1 ; h++
+	; Compare h to its bound
+	mov rax, [rsp + 0]
+	cmp rax, [rsp + 16]
+	jl .jump21 ; If h < bound, next iter
+	; End body of loop
+	; Free all loop variables
+	add rsp, 16
+	; array left on stack
+	; Allocating 8 bytes for the pointer
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 72 to rsp
+	; Computing bound for 'j'
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 72 to rsp 
 		mov r10, [rbp - 72 + 0]
 		mov [rsp + 0], r10
 	mov rax, [rsp]
 	cmp rax, 0
-	jg .jump10
-	lea rdi, [rel const1] ; non-positive loop bound
+	jg .jump22
+	lea rdi, [rel const1] ; 'non-positive loop bound'
 	call _fail_assertion
-.jump10:
-	; Computing bound for i
+.jump22:
+	; Computing bound for 'i'
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 80 to rsp
+	; Moving 8 bytes from rbp - 80 to rsp 
 		mov r10, [rbp - 80 + 0]
 		mov [rsp + 0], r10
 	mov rax, [rsp]
 	cmp rax, 0
-	jg .jump11
-	sub rsp, 8 ; Align stack
-	lea rdi, [rel const1] ; non-positive loop bound
+	jg .jump23
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const1] ; 'non-positive loop bound'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
-.jump11:
+.jump23:
 	; Computing total size of heap memory to allocate
-	mov rdi, 8 ; sizeof float
-	imul rdi, [rsp + 0 + 0] ; multiply by H2
-	jno .jump12
-	sub rsp, 8 ; Align stack
-	lea rdi, [rel const2] ; overflow computing array size
+	mov rdi, 8 ; sizeof float 
+	imul rdi, [rsp + 0 + 0] ; multiply by H2 
+	jno .jump24
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const3] ; 'overflow computing array size'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
-.jump12:
-	imul rdi, [rsp + 0 + 8] ; multiply by W2
-	jno .jump13
-	sub rsp, 8 ; Align stack
-	lea rdi, [rel const2] ; overflow computing array size
+.jump24:
+	imul rdi, [rsp + 0 + 8] ; multiply by W2 
+	jno .jump25
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const3] ; 'overflow computing array size'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
-.jump13:
-	sub rsp, 8 ; Align stack
+.jump25:
+	sub rsp, 8 ; Add alignment
 	call _jpl_alloc ; Put pointer to heap space in RAX
 	add rsp, 8 ; Remove alignment
 	mov [rsp + 16], rax ; Move to pre-allocated space
-	; Initialize j to 0
+	; Initialize 'j' to 0
 	mov rax, 0
 	push rax
-	; Initialize i to 0
+	; Initialize 'i' to 0
 	mov rax, 0
 	push rax
-.jump14: ; Begin body of loop
+.jump26: ; Begin body of loop
 	; Compute loop body
 	sub rsp, 24
-	; Moving 24 bytes from rbp - 80 to rsp
+	; Moving 24 bytes from rbp - 80 to rsp 
 		mov r10, [rbp - 80 + 16]
 		mov [rsp + 16], r10
 		mov r10, [rbp - 80 + 8]
@@ -255,59 +467,75 @@ _jpl_main:
 		mov r10, [rbp - 80 + 0]
 		mov [rsp + 0], r10
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 112 to rsp
+	; Moving 8 bytes from rbp - 112 to rsp 
 		mov r10, [rbp - 112 + 0]
 		mov [rsp + 0], r10
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 120 to rsp
+	; Moving 8 bytes from rbp - 120 to rsp 
 		mov r10, [rbp - 120 + 0]
 		mov [rsp + 0], r10
 	mov rax, [rsp + 0]
 	cmp rax, 0
-	jge .jump15
-	lea rdi, [rel const3] ; negative array index
+	jge .jump27
+	lea rdi, [rel const6] ; 'negative array index'
 	call _fail_assertion
-.jump15:
+.jump27:
 	cmp rax, [rsp + 16]
-	jl .jump16
-	lea rdi, [rel const4] ; index too large
+	jl .jump28
+	lea rdi, [rel const7] ; 'index too large'
 	call _fail_assertion
-.jump16:
+.jump28:
 	mov rax, [rsp + 8]
 	cmp rax, 0
-	jge .jump17
-	lea rdi, [rel const3] ; negative array index
+	jge .jump29
+	lea rdi, [rel const6] ; 'negative array index'
 	call _fail_assertion
-.jump17:
+.jump29:
 	cmp rax, [rsp + 24]
-	jl .jump18
-	lea rdi, [rel const4] ; index too large
+	jl .jump30
+	lea rdi, [rel const7] ; 'index too large'
 	call _fail_assertion
-.jump18:
+.jump30:
 	mov rax, 0
 	imul rax, [rsp + 16] ; No overflow if indices in bounds
 	add rax, [rsp + 0]
 	imul rax, [rsp + 24] ; No overflow if indices in bounds
 	add rax, [rsp + 8]
-	imul rax, 32
+	imul rax, 16
 	add rax, [rsp + 32]
 	add rsp, 8
 	add rsp, 8
 	add rsp, 24
-	sub rsp, 32
-	; Moving 32 bytes from rax to rsp
-		mov r10, [rax + 24]
-		mov [rsp + 24], r10
-		mov r10, [rax + 16]
-		mov [rsp + 16], r10
+	sub rsp, 16
+	; Moving 16 bytes from rax to rsp 
 		mov r10, [rax + 8]
 		mov [rsp + 8], r10
 		mov r10, [rax + 0]
 		mov [rsp + 0], r10
-	; Moving 8 bytes from rsp + 8 to rsp + 24
-		mov r10, [rsp + 8 + 0]
-		mov [rsp + 24 + 0], r10
-	add rsp, 24
+	mov rax, [rel const8] ; 1
+	push rax
+	mov rax, [rsp + 0]
+	cmp rax, 0
+	jge .jump31
+	lea rdi, [rel const6] ; 'negative array index'
+	call _fail_assertion
+.jump31:
+	cmp rax, [rsp + 8]
+	jl .jump32
+	lea rdi, [rel const7] ; 'index too large'
+	call _fail_assertion
+.jump32:
+	mov rax, 0
+	imul rax, [rsp + 8] ; No overflow if indices in bounds
+	add rax, [rsp + 0]
+	imul rax, 8
+	add rax, [rsp + 16]
+	add rsp, 8
+	add rsp, 16
+	sub rsp, 8
+	; Moving 8 bytes from rax to rsp 
+		mov r10, [rax + 0]
+		mov [rsp + 0], r10
 	; Index to store in
 	mov rax, 0
 	imul rax, [rsp + 24] ; No overflow if indices in bounds
@@ -317,97 +545,97 @@ _jpl_main:
 	imul rax, 8
 	add rax, [rsp + 40]
 	; Move body (8 bytes) to index
-	; Moving 8 bytes from rsp to rax
+	; Moving 8 bytes from rsp to rax 
 		mov r10, [rsp + 0]
 		mov [rax + 0], r10
 	add rsp, 8
-	; Increment j
+	; Increment 'j'
 	add qword [rsp + 8], 1
 	; Compare j to its bound
 	mov rax, [rsp + 8]
 	cmp rax, [rsp + 24]
-	jl .jump14 ; If j < bound, next iter
+	jl .jump26 ; If j < bound, next iter
 	mov qword [rsp + 8], 0 ; j = 0
 	add qword [rsp + 0], 1 ; i++
 	; Compare i to its bound
 	mov rax, [rsp + 0]
 	cmp rax, [rsp + 16]
-	jl .jump14 ; If i < bound, next iter
+	jl .jump26 ; If i < bound, next iter
 	; End body of loop
 	; Free all loop variables
 	add rsp, 16
 	; array left on stack
 	; Allocating 8 bytes for the pointer
 	sub rsp, 8
-	; Computing bound for j
+	; Computing bound for 'j'
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 72 to rsp
+	; Moving 8 bytes from rbp - 72 to rsp 
 		mov r10, [rbp - 72 + 0]
 		mov [rsp + 0], r10
 	mov rax, [rsp]
 	cmp rax, 0
-	jg .jump19
-	sub rsp, 8 ; Align stack
-	lea rdi, [rel const1] ; non-positive loop bound
+	jg .jump33
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const1] ; 'non-positive loop bound'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
-.jump19:
-	; Computing bound for i
+.jump33:
+	; Computing bound for 'i'
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 32 to rsp
+	; Moving 8 bytes from rbp - 32 to rsp 
 		mov r10, [rbp - 32 + 0]
 		mov [rsp + 0], r10
 	mov rax, [rsp]
 	cmp rax, 0
-	jg .jump20
-	lea rdi, [rel const1] ; non-positive loop bound
+	jg .jump34
+	lea rdi, [rel const1] ; 'non-positive loop bound'
 	call _fail_assertion
-.jump20:
+.jump34:
 	; Computing total size of heap memory to allocate
-	mov rdi, 8 ; sizeof float
-	imul rdi, [rsp + 0 + 0] ; multiply by H
-	jno .jump21
-	lea rdi, [rel const2] ; overflow computing array size
+	mov rdi, 8 ; sizeof float 
+	imul rdi, [rsp + 0 + 0] ; multiply by H 
+	jno .jump35
+	lea rdi, [rel const3] ; 'overflow computing array size'
 	call _fail_assertion
-.jump21:
-	imul rdi, [rsp + 0 + 8] ; multiply by W2
-	jno .jump22
-	lea rdi, [rel const2] ; overflow computing array size
+.jump35:
+	imul rdi, [rsp + 0 + 8] ; multiply by W2 
+	jno .jump36
+	lea rdi, [rel const3] ; 'overflow computing array size'
 	call _fail_assertion
-.jump22:
+.jump36:
 	call _jpl_alloc ; Put pointer to heap space in RAX
 	mov [rsp + 16], rax ; Move to pre-allocated space
-	; Initialize j to 0
+	; Initialize 'j' to 0
 	mov rax, 0
 	push rax
-	; Initialize i to 0
+	; Initialize 'i' to 0
 	mov rax, 0
 	push rax
-.jump23: ; Begin body of loop
+.jump37: ; Begin body of loop
 	; Compute loop body
 	; Allocating 8 bytes for the sum
 	sub rsp, 8
-	; Computing bound for k
+	; Computing bound for 'k'
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 24 to rsp
+	; Moving 8 bytes from rbp - 24 to rsp 
 		mov r10, [rbp - 24 + 0]
 		mov [rsp + 0], r10
 	mov rax, [rsp]
 	cmp rax, 0
-	jg .jump24
-	lea rdi, [rel const1] ; non-positive loop bound
+	jg .jump38
+	lea rdi, [rel const1] ; 'non-positive loop bound'
 	call _fail_assertion
-.jump24:
+.jump38:
 	; Initialize sum to 0
 	mov rax, 0
 	mov [rsp + 8], rax ; Move to pre-allocated space
-	; Initialize k to 0
+	; Initialize 'k' to 0
 	mov rax, 0
 	push rax
-.jump25: ; Begin body of loop
+.jump39: ; Begin body of loop
 	; Compute loop body
 	sub rsp, 24
-	; Moving 24 bytes from rbp - 104 to rsp
+	; Moving 24 bytes from rbp - 104 to rsp 
 		mov r10, [rbp - 104 + 16]
 		mov [rsp + 16], r10
 		mov r10, [rbp - 104 + 8]
@@ -415,35 +643,35 @@ _jpl_main:
 		mov r10, [rbp - 104 + 0]
 		mov [rsp + 0], r10
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 136 to rsp
+	; Moving 8 bytes from rbp - 136 to rsp 
 		mov r10, [rbp - 136 + 0]
 		mov [rsp + 0], r10
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 168 to rsp
+	; Moving 8 bytes from rbp - 168 to rsp 
 		mov r10, [rbp - 168 + 0]
 		mov [rsp + 0], r10
 	mov rax, [rsp + 0]
 	cmp rax, 0
-	jge .jump26
-	lea rdi, [rel const3] ; negative array index
+	jge .jump40
+	lea rdi, [rel const6] ; 'negative array index'
 	call _fail_assertion
-.jump26:
+.jump40:
 	cmp rax, [rsp + 16]
-	jl .jump27
-	lea rdi, [rel const4] ; index too large
+	jl .jump41
+	lea rdi, [rel const7] ; 'index too large'
 	call _fail_assertion
-.jump27:
+.jump41:
 	mov rax, [rsp + 8]
 	cmp rax, 0
-	jge .jump28
-	lea rdi, [rel const3] ; negative array index
+	jge .jump42
+	lea rdi, [rel const6] ; 'negative array index'
 	call _fail_assertion
-.jump28:
+.jump42:
 	cmp rax, [rsp + 24]
-	jl .jump29
-	lea rdi, [rel const4] ; index too large
+	jl .jump43
+	lea rdi, [rel const7] ; 'index too large'
 	call _fail_assertion
-.jump29:
+.jump43:
 	mov rax, 0
 	imul rax, [rsp + 16] ; No overflow if indices in bounds
 	add rax, [rsp + 0]
@@ -455,11 +683,11 @@ _jpl_main:
 	add rsp, 8
 	add rsp, 24
 	sub rsp, 8
-	; Moving 8 bytes from rax to rsp
+	; Moving 8 bytes from rax to rsp 
 		mov r10, [rax + 0]
 		mov [rsp + 0], r10
 	sub rsp, 24
-	; Moving 24 bytes from rbp - 56 to rsp
+	; Moving 24 bytes from rbp - 56 to rsp 
 		mov r10, [rbp - 56 + 16]
 		mov [rsp + 16], r10
 		mov r10, [rbp - 56 + 8]
@@ -467,43 +695,43 @@ _jpl_main:
 		mov r10, [rbp - 56 + 0]
 		mov [rsp + 0], r10
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 168 to rsp
+	; Moving 8 bytes from rbp - 168 to rsp 
 		mov r10, [rbp - 168 + 0]
 		mov [rsp + 0], r10
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 144 to rsp
+	; Moving 8 bytes from rbp - 144 to rsp 
 		mov r10, [rbp - 144 + 0]
 		mov [rsp + 0], r10
 	mov rax, [rsp + 0]
 	cmp rax, 0
-	jge .jump30
-	sub rsp, 8 ; Align stack
-	lea rdi, [rel const3] ; negative array index
+	jge .jump44
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const6] ; 'negative array index'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
-.jump30:
+.jump44:
 	cmp rax, [rsp + 16]
-	jl .jump31
-	sub rsp, 8 ; Align stack
-	lea rdi, [rel const4] ; index too large
+	jl .jump45
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const7] ; 'index too large'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
-.jump31:
+.jump45:
 	mov rax, [rsp + 8]
 	cmp rax, 0
-	jge .jump32
-	sub rsp, 8 ; Align stack
-	lea rdi, [rel const3] ; negative array index
+	jge .jump46
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const6] ; 'negative array index'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
-.jump32:
+.jump46:
 	cmp rax, [rsp + 24]
-	jl .jump33
-	sub rsp, 8 ; Align stack
-	lea rdi, [rel const4] ; index too large
+	jl .jump47
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const7] ; 'index too large'
 	call _fail_assertion
 	add rsp, 8 ; Remove alignment
-.jump33:
+.jump47:
 	mov rax, 0
 	imul rax, [rsp + 16] ; No overflow if indices in bounds
 	add rax, [rsp + 0]
@@ -515,7 +743,7 @@ _jpl_main:
 	add rsp, 8
 	add rsp, 24
 	sub rsp, 8
-	; Moving 8 bytes from rax to rsp
+	; Moving 8 bytes from rax to rsp 
 		mov r10, [rax + 0]
 		mov [rsp + 0], r10
 	movsd xmm0, [rsp]
@@ -529,12 +757,12 @@ _jpl_main:
 	add rsp, 8
 	addsd xmm0, [rsp + 16] ; Load sum
 	movsd [rsp + 16], xmm0 ; Save sum
-	; Increment k
+	; Increment 'k'
 	add qword [rsp + 0], 1
 	; Compare k to its bound
 	mov rax, [rsp + 0]
 	cmp rax, [rsp + 8]
-	jl .jump25 ; If k < bound, next iter
+	jl .jump39 ; If k < bound, next iter
 	; End body of loop
 	; Free all loop variables
 	add rsp, 8
@@ -550,32 +778,32 @@ _jpl_main:
 	imul rax, 8
 	add rax, [rsp + 40]
 	; Move body (8 bytes) to index
-	; Moving 8 bytes from rsp to rax
+	; Moving 8 bytes from rsp to rax 
 		mov r10, [rsp + 0]
 		mov [rax + 0], r10
 	add rsp, 8
-	; Increment j
+	; Increment 'j'
 	add qword [rsp + 8], 1
 	; Compare j to its bound
 	mov rax, [rsp + 8]
 	cmp rax, [rsp + 24]
-	jl .jump23 ; If j < bound, next iter
+	jl .jump37 ; If j < bound, next iter
 	mov qword [rsp + 8], 0 ; j = 0
 	add qword [rsp + 0], 1 ; i++
 	; Compare i to its bound
 	mov rax, [rsp + 0]
 	cmp rax, [rsp + 16]
-	jl .jump23 ; If i < bound, next iter
+	jl .jump37 ; If i < bound, next iter
 	; End body of loop
 	; Free all loop variables
 	add rsp, 16
 	; array left on stack
-	lea rdi, [rel const6] ; (ArrayType (FloatType) 2)
+	lea rdi, [rel const14] ; '(ArrayType (FloatType) 2)'
 	lea rsi, [rsp]
 	call _show
 	add rsp, 24
 	add rsp, 96 ; Local variables
-	pop r12
+	pop r12 ; begin jpl_main postlude
 	pop rbp
 	ret
 
