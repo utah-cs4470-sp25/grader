@@ -1,6 +1,6 @@
-read image "a.png" to a[H, W]
-let v1 = array[j : W] to_int(a[0, j]{1} * 256.0)
-let v2 = array[j : W] to_int(a[1, j]{1} * 256.0)
+let a[H, W] = array [h: 400, w: 300] [0.5, 0.0, 0.5, 1.0]
+let v1 = array[j : W] to_int(a[0, j][0] * 256.0)
+let v2 = array[j : W] to_int(a[1, j][0] * 256.0)
 let lvc = array[i : W, j : W, k : W] \
     ((if i < j then 1 else 2) + \
      (if i < k then 1 else 2) + \
