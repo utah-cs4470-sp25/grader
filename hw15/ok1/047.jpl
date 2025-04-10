@@ -1,0 +1,8 @@
+struct arr {
+  x: int[,,]
+  y: float[,,,]
+}
+fn f() : arr {
+   return arr{ array[i: 10, j: 10, k: 10] 0 , array[a: 2, b: 3, c: 4, d: 5] 0.0 }
+}
+show f()

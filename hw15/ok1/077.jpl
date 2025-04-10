@@ -1,0 +1,4 @@
+fn f(d : int) : void {
+   let x = d * d
+}
+show f(13)
