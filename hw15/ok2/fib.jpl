@@ -1,0 +1,17 @@
+fn fib_helper(n: int, k1: int, k2: int) : int {
+  return if n == 0 then k1 else fib_helper(n - 1, k1 + k2, k1)
+}
+
+fn fib(n: int) : int {
+  return if n < 3 then 1 else fib_helper(n - 2, 1, 1)
+}
+
+show fib(1)
+show fib(2)
+show fib(3)
+show fib(4)
+show fib(5)
+show fib(6)
+show fib(7)
+show fib(8)
+

@@ -1,0 +1,425 @@
+// Code by Kelly. Taken from #jplk discord channel.
+
+struct pixel {
+  pixel : rgba
+  sort : float
+}
+
+fn max_i(a : int, b : int) : int {
+  return if a > b then a else b
+}
+
+fn min_i(a : int, b : int) : int {
+  return if a <= b then a else b
+}
+
+fn max(a : float, b : float) : float {
+  return if a > b then a else b
+}
+
+fn min(a : float, b : float) : float {
+  return if a <= b then a else b
+}
+
+fn max_p(a : pixel, b : pixel) : pixel {
+  return if a.sort > b.sort then a else b
+}
+
+fn min_p(a : pixel, b : pixel) : pixel {
+  return if a.sort <= b.sort then a else b
+}
+
+/**
+ * Slices an array. Returns the values in [start, end).
+ */
+fn slice_array_p(a[N] : pixel[], start : int, end : int) : pixel[] {
+  return \
+    if end - start == 0 then \
+      [pixel{rgba{1.0, 0.0, 1.0, 1.0}, -1.0}] \
+    else \
+      array[i : end - start] \
+        a[start + i]
+}
+
+/**
+ * Appends b to a and returns the resulting pixel array.
+ */
+fn merge_arrays_p(a[N] : pixel[], b[M] : pixel[]) : pixel[] {
+  return array[i : N + M] if i < N then a[i] else b[i - N]
+}
+
+/**
+ * Merges pixel[][] into pixel[] sequentialy and returns the pixel array.
+ */
+fn merge_arrays_of_arrays_p(a[N] : pixel[][], index : int) : pixel[] {
+  return \
+    if index < N - 1 then \
+      merge_arrays_p(a[index], merge_arrays_of_arrays_p(a, index + 1)) \
+    else \
+      a[index]
+}
+
+/**
+ * Prepends first to a and returns the resulting pixel array.
+ */
+fn prepend_array_p(first : pixel, a : pixel[]) : pixel[] {
+  return merge_arrays_p([first], a)
+}
+
+/**
+ * Removes the first item of a pixel array and returns the result.
+ */
+fn tail_array_p(a[N] : pixel[]) : pixel[] {
+  return slice_array_p(a, 1, N)
+}
+
+/**
+ * Recursively merges two sorted pixel arrays in a sorted order.
+ */
+fn merge_arrays_sorted_p( \
+  a[N] : pixel[], \
+  b[M] : pixel[] \
+) : pixel[] {
+  return \
+    if N == 0 || M == 0 then \
+      [pixel{rgba{1.0, 0.0, 1.0, 1.0}, -1.0}] \
+    else if N == 1 && M == 1 then \
+      [min_p(a[0], b[0]), max_p(a[0], b[0])] \
+    else if a[0].sort <= b[0].sort then \
+      if N > 1 then \
+        prepend_array_p(a[0], merge_arrays_sorted_p(tail_array_p(a), b)) \
+      else \
+        prepend_array_p(a[0], b) \
+    else if M > 1 then \
+      prepend_array_p(b[0], merge_arrays_sorted_p(a, tail_array_p(b))) \
+    else \
+      prepend_array_p(b[0], a)
+}
+
+/**
+ * Recursive merge sort of sortable pixels.
+ */
+fn merge_sort_p(x[N] : pixel[], start : int, end : int) : pixel[] {
+  return \
+    if (end - start < 2) then \
+      [x[start]] \
+    else \
+      merge_arrays_sorted_p( \
+        merge_sort_p(x, start, (start + end) / 2), \
+        merge_sort_p(x, (start + end) / 2, end) \
+      )
+}
+
+fn merge_sort_wrapper_p(x[N] : pixel[]) : pixel[] {
+  return merge_sort_p(x, 0, N)
+}
+
+/**
+ * Appends b to a and returns the resulting int array.
+ */
+fn merge_arrays(a[N] : int[], b[M] : int[]) : int[] {
+  return array[i : N + M] if i < N then a[i] else b[i - N]
+}
+
+/**
+ * Prepends first to a and returns the resulting int array.
+ */
+fn prepend_array(first : int, a : int[]) : int[] {
+  return merge_arrays([first], a)
+}
+
+/**
+ * Returns the next number in middle square Weyl sequence.
+ */
+fn prng_next_helper(seed : int) : int {
+  return ((seed * seed) % 65536 + (seed * 37) % 65536 + 97) % 256
+}
+
+/**
+ * Returns the next number in middle square Weyl sequence.
+ */
+fn prng_next(seed : int) : int {
+  return ((seed * prng_next_helper(seed)) % 65536 + \
+    (prng_next_helper(seed) * 17) % 65536 + 37) % 65536
+}
+
+/**
+ * This is a recursive pseudorandom function using whatever algorithm is in
+ * prng_next.
+ */
+fn pseudorandom_function ( \
+  seed : int, n : int, min_val : int, max_val : int \
+) : int[] {
+  return \
+    if n == 1 then \
+      [max_i(seed % max_val, min_val)] \
+    else \
+      prepend_array(max_i(seed % max_val, min_val), pseudorandom_function( \
+        prng_next(seed), n - 1, min_val, max_val \
+      ))
+}
+
+/**
+ * This wraps the pseudorandom function and prevents the seed from being the
+ * first results.
+ */
+fn pseudorandom_function_wrapper ( \
+  seed : int, n : int, min_val : int, max_val : int \
+) : int[] {
+  return \
+    if n == 1 then \
+      [max_i(prng_next(seed) % max_val, min_val)] \
+    else \
+      prepend_array(max_i( \
+          prng_next(seed) % max_val, min_val \
+        ), \
+        pseudorandom_function( \
+          prng_next(seed), \
+          n - 1, \
+          min_val, \
+          max_val \
+        ) \
+      )
+}
+
+/**
+ * Given a sortable pixel, convert it to an rgba.
+ */
+fn pixel_to_rgba(p : pixel) : rgba {
+  return rgba {p.pixel.r, p.pixel.g, p.pixel.b, p.pixel.a}
+}
+
+/**
+ * Given a list of sortable pixels, convert them to a list of rgba.
+ */
+fn pixels_to_rgbas(p[N] : pixel[]) : rgba[] {
+  return \
+    array[i : N] \
+      pixel_to_rgba(p[i])
+}
+
+/**
+ * Given an RGBA values, convert it to a sortable pixels.
+ */
+fn rgba_to_pixel(p : rgba, algorithm : int) : pixel {
+  return pixel { \
+    p, \
+    if algorithm == 0 then \
+      (p.r + p.g + p.b) / 3.0 \
+    else if algorithm == 1 then \
+      p.r / ((p.r + p.g + p.b) / 3.0) \
+    else if algorithm == 2 then \
+      p.g / ((p.r + p.g + p.b) / 3.0) \
+    else if algorithm == 3 then \
+      p.b / ((p.r + p.g + p.b) / 3.0) \
+    else if algorithm == 4 then \
+      p.a \
+    else \
+      -1.0 \
+  }
+}
+
+/**
+ * Given a list of RGBA values, convert them to a list of sortable pixels.
+ */
+fn rgbas_to_pixels(p[N] : rgba[], algorithm : int) : pixel[] {
+  return \
+    array[i : N] \
+      rgba_to_pixel(p[i], algorithm)
+}
+
+/**
+ * Given a list of pixels, convert them to an image of w * h.
+ */
+fn line_to_image(a[N] : rgba[], w : int, h : int) : rgba[,] {
+  return \
+    array[i : min_i(N / w, h), j : w] \
+      a[i * w + j]
+}
+
+/**
+ * Given a list of rows, convert them to an image of w * h.
+ */
+fn rows_to_image(a : rgba[][], w : int, h : int) : rgba[,] {
+  return \
+    array[i : h, j : w] \
+      a[i][j]
+}
+
+/**
+ * Given an image, extract a row denoted by the row argument.
+ */
+fn get_row_of_image(img[H, W] : rgba[,], row : int) : rgba[] {
+  return \
+    array[i : W] \
+      img[row, i]
+}
+
+
+/**
+ * Conversts four arrays with r, g, b, and a into pixels. Assumes that they are
+ * in [0, 256)
+ */
+fn arrays_to_pixels(r[N] : int[], g : int[], b : int[], a : int[]) : rgba[] {
+  return \
+    array[i : N] \
+      rgba{ \
+        to_float(r[i]) / 255.0, \
+        to_float(g[i]) / 255.0, \
+        to_float(b[i]) / 255.0, \
+        to_float(a[i]) / 255.0 \
+      }
+}
+
+/**
+ * Given a list of seeds, width, and height, generate a psuedorandom image.
+ */
+fn pseudorandom_image(seeds : int[], w : int, h : int) : rgba[,] {
+  return \
+    line_to_image( \
+      arrays_to_pixels( \
+        pseudorandom_function_wrapper(seeds[0], w * h, 0, 256), \
+        pseudorandom_function_wrapper(seeds[1], w * h, 0, 256), \
+        pseudorandom_function_wrapper(seeds[2], w * h, 0, 256), \
+        pseudorandom_function_wrapper(seeds[2], w * h, 255, 256) \
+      ), \
+      w, \
+      h \
+    )
+}
+
+/**
+ * Given a period (list of random numbers), sum from 0 to index.
+ */
+fn sum_period(period[N] : int[], index : int) : int {
+  return if index == 0 then \
+      0 \
+    else \
+      sum[i : index] period[i]
+}
+
+/**
+ * Given a list of periods (list of random numbers) and a target sum, find the
+ * number of periods required to reach the target sum.
+ */
+fn find_min_sum_period(period : int[], period_i : int, target_sum : int) : int {
+  return if sum_period(period, period_i) < target_sum then \
+      period_i + 1 \
+    else \
+      find_min_sum_period(period, period_i - 1, target_sum)
+}
+
+/**
+ * Given a row of pixels, the list of lengths they should be divided into (the
+ * period, and the number of periods required for the list of lengths to exceed
+ * the width of the row when summed, return the summed row after it has been 
+ * divided into segments.
+ */
+fn sort_pixels_in_jagged_row( \
+  row[N] : pixel[], period : int[], max_period : int \
+) : pixel[] {
+  return \
+    merge_arrays_of_arrays_p( \
+      array[j : max_period] \
+        merge_sort_wrapper_p( \
+          slice_array_p( \
+            row, \
+            sum_period(period, j), \
+            min_i(sum_period(period, j + 1), N) \
+          ) \
+        ), \
+      0 \
+    )
+}
+
+/**
+ * Given a row of pixels and the list of lengths they should be divided into
+ * (the periods), return the sorted row after it has been divided into segments
+ * according to the period.
+ */
+fn sort_pixels_in_jagged_row_wrapper( \
+  segment[N] : pixel[], periods[M] : int[] \
+) : pixel[] {
+  return \
+    sort_pixels_in_jagged_row ( \
+      segment, \
+      periods, \
+      find_min_sum_period(periods, M, N) \
+    )
+}
+
+/**
+ * Given a row of pixels and the row number (which is used as a key), return
+ * the sorted row after it has been divided into segments.
+ */
+fn sort_pixels_in_jagged_row_wrapper_wrapper( \
+  row[N] : pixel[], row_number : int, segments : int \
+) : pixel[] {
+  return \
+    sort_pixels_in_jagged_row_wrapper ( \
+      row, \
+      pseudorandom_function_wrapper( \
+        row_number, \
+        (N / 2 + segments) / 2, \
+        2, \
+        N / segments \
+      ) \
+    )
+}
+
+/**
+ * Given an image, sort the rows. Jagged determines if the rows should be
+ * divided into random segments. Segments, if jagged is enabled, determines the
+ * minimum number of segments the row is separated into. key_algorithm 
+ * determines how the key for the sorting should be determined.
+ */
+fn sort_pixels( \
+  img[H, W] : rgba[,], jagged : bool, segments : int, key_algorithm : int \
+) : rgba[,] {
+  return \
+    rows_to_image( \
+      array[row : H] \
+        pixels_to_rgbas ( \
+          if jagged then \
+            sort_pixels_in_jagged_row_wrapper_wrapper( \
+              rgbas_to_pixels(get_row_of_image(img, row), key_algorithm), \
+              row, \
+              segments \
+            ) \
+          else \
+            merge_sort_wrapper_p( \
+              rgbas_to_pixels(get_row_of_image(img, row), key_algorithm) \
+            ) \
+        ), \
+      W, \
+      H \
+    )
+}
+
+/**
+ * Given an image, rotate it counter clockwise by rotates.
+ */
+fn rotate_image(img[H, W] : rgba[,], rotates : int) : rgba[,] {
+  return if rotates == 1 then \
+      array[i : W, j : H] img[j, W - i - 1] \
+    else \
+      rotate_image(array[i : W, j : H] img[j, W - i - 1], rotates - 1)
+}
+
+read image "sample.png" to sample
+
+print "Time taken to generate sorted sample image:"
+time let sorted_sample = sort_pixels(sample, false, 0, 0)
+write image sorted_sample to "sample-sorted.png"
+time let sorted_sample_rotated = sort_pixels(rotate_image(sample, 3), false, 0, 0)
+write image rotate_image(sorted_sample_rotated, 1) to "sample-sorted-rotated.png"
+time let sorted_sample_green = sort_pixels(sample, false, 0, 2)
+write image sorted_sample_green to "sample-sorted-green.png"
+time let sorted_sample_rotated_blue = sort_pixels(rotate_image(sample, 3), false, 0, 3)
+write image rotate_image(sorted_sample_rotated_blue, 1) to "sample-sorted-rotated-blue.png"
+time let sorted_sample_jagged = sort_pixels(sample, true, 8, 0)
+write image sorted_sample_jagged to "sample-sorted-jagged.png"
+time let sorted_sample_jagged_rotated = sort_pixels(rotate_image(sample, 3), true, 8, 0)
+write image rotate_image(sorted_sample_jagged_rotated, 1) to "sample-sorted-jagged-rotated.png"
+time let sorted_sample_jagged_rotated_blue = sort_pixels(rotate_image(sample, 3), true, 8, 3)
+write image rotate_image(sorted_sample_jagged_rotated_blue, 1) to "sample-sorted-jagged-rotated-blue.png"

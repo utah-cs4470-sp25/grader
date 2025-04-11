@@ -1,0 +1,47 @@
+struct complex {
+  x : float
+  y : float
+}
+
+fn mandelstep(z : complex, c : complex): complex {
+   return complex { \
+     z.x * z.x - z.y * z.y + c.x, \
+     2.0 * z.x * z.y + c.y \
+   }
+}
+
+fn mandelcount(z : complex, c : complex, fuel : int): int {
+   return if fuel == 0 \
+   then 0 \
+   else if z.x * z.x + z.y * z.y > 2.0 \
+   then 0 \
+   else 1 + mandelcount(mandelstep(z, c), c, fuel - 1)
+}
+
+fn colormap(c : float) : rgba {
+   return if c < 0.5 \
+   then rgba { 0.0, 0.0, 2.0 * c, 1.0 } \
+   else rgba { 2.0 * c - 1.0, 2.0 * c - 1.0, 1.0, 1.0}
+}
+
+fn mandelpixel(c : complex, fuel : int) : rgba {
+   let count = mandelcount(complex {0.0, 0.0}, c, fuel)
+   let c2 = if count == fuel then 0.0 else (to_float(count + 1) / to_float(fuel))
+   return colormap(c2)
+}
+
+let iter = if argnum > 0 then to_float(args[0]) / 250.0 else 0.0
+let xlo = 0.0 - 1.3
+let xhi = 1.0 - 2.3 * iter
+let ylo = 0.9 * iter - 1.0
+let yhi = 1.0 - 0.9 * iter
+
+let W = 2000
+let H = 1600
+
+time let mandelbrot = array[j : H, i : W] mandelpixel( \
+    complex { xlo + to_float(i) / to_float(W) * (xhi - xlo) \
+            , ylo + to_float(j) / to_float(H) * (yhi - ylo)}, \
+    50)
+write image mandelbrot to "mandelbrot.png"
+

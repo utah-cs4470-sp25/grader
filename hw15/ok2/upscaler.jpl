@@ -1,0 +1,7 @@
+// Code by Kelly. Taken from #jplk discord channel.
+
+fn upscale(img[H, W] : rgba[,], scale : int) : rgba[,] {
+  return array[i : (H * scale), j : (W * scale)] img[i / scale, j / scale]
+}
+read image "sample.png" to sample
+write image upscale(sample, 4) to "sample-scaled.png"

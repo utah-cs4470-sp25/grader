@@ -1,0 +1,8 @@
+let blu_color = rgba { 0.0, 0.0, 1.0, 1.0 }
+
+fn blu(W : int, H : int) : rgba[,] {
+    return array[i : H, j : W] blu_color
+}
+
+write image blu(800, 600) to "blu.png"
+

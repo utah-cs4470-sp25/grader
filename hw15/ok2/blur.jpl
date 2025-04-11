@@ -1,0 +1,18 @@
+fn blur_pixel(matte[H,W] : rgba[,], mask[H2, W2] : float[,], i : int, j : int) : rgba {
+    assert H == H2 && W == W2, "Matte and mask must have same size"
+    let num_r = sum[i2 : 3, j2 : 3] matte[i - 1 + i2, j - 1 + j2].r
+    let num_g = sum[i2 : 3, j2 : 3] matte[i - 1 + i2, j - 1 + j2].g
+    let num_b = sum[i2 : 3, j2 : 3] matte[i - 1 + i2, j - 1 + j2].b
+    let num_a = sum[i2 : 3, j2 : 3] matte[i - 1 + i2, j - 1 + j2].a
+    let den   = sum[i2 : 3, j2 : 3] mask[i - 1 + i2, j - 1 + j2]
+    return rgba { num_r / den, num_g / den, num_b / den, num_a / den }
+}
+
+fn blur(img[H,W] : rgba[,]) : rgba[,] {
+    let mask = array[i : H + 2, j : W + 2] if i == 0 || j == 0 || i == H + 1 || j == W + 1 then 0.0 else 1.0
+    let matte = array[i : H + 2, j : W + 2] if mask[i, j] == 1.0 then img[i - 1, j - 1] else rgba { 0.0, 0.0, 0.0, 0.0 }
+    return array[i : H, j : W] blur_pixel(matte, mask, i + 1, j + 1)
+}
+
+read image "sample.png" to img
+time write image blur(img) to "sample-blurry.png"
