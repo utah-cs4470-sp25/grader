@@ -1,0 +1,4 @@
+fn f(d : int) : void {
+   let a = 1
+}
+show f(13)

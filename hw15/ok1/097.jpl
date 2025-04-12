@@ -1,0 +1,6 @@
+struct ab {
+  a: int
+  b: int
+}
+let a = [ab{1, 2}, ab{3, 4}, ab{5, 6}]
+show a[0]

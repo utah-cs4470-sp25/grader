@@ -1,0 +1,7 @@
+struct iiii {
+  a: int
+  b: int
+  c: int
+  d: int
+}
+show array[i : 10, j : 10, k : 10, l : 10] iiii{i, j, k, l}

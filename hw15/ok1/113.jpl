@@ -1,0 +1,5 @@
+struct two {
+  uno: int
+  dos: int
+}
+show two{1, 2}.dos

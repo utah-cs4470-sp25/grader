@@ -1,0 +1,16 @@
+struct posn {
+  x: int
+  y: int
+}
+struct x1 {
+  a: int
+  b: int
+  c: posn
+  d: int[]
+}
+struct x2 {
+  a: int
+  b: x1
+  c: int
+}
+show x2{1, x1{2, 3, posn{4, 5}, [4, 5, 6]}, 3}.b.d

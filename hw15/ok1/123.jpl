@@ -1,0 +1,11 @@
+struct ii {
+  z: int
+  w: int
+}
+
+fn f(d : int) : int {
+   let x = d * d
+   let y = ii{x, x}
+   let foo = y
+   return foo.z + foo.w
+}

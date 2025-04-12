@@ -1,0 +1,4 @@
+struct x {
+  m: float
+}
+show x{1.0}.m

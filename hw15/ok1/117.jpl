@@ -1,0 +1,6 @@
+struct foo {
+  bar: int
+  baz: int
+  bob: int
+}
+show if true then foo{1, 2, 3} else foo{5, 6, 7}

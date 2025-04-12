@@ -1,0 +1,8 @@
+struct mt {
+}
+struct threek {
+  left: int
+  mid: mt
+  right: float
+}
+show threek{1, mt{}, 2.0}.right
