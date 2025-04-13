@@ -1,0 +1,14 @@
+let a[b] = (if (! true) then (array[a : (- 696)] a) else (array[a : (856 * 564)] a))
+assert (! [true][(b % b)]), "c"
+fn c(d[e, f] : int[,], g[h, i] : float[,]) : float {
+  return (sum[j : e] (- (sum[k : 234] 67.92)))
+  let j = (- (array[j : i, k : h] 93.3)[(f / h), i])
+  return (sum[k : (- e), l : (array[k : h] 606)[i]] (- 42.15))
+}
+
+fn d() : bool {
+  let e = true
+  let f[g] = (array[f : 659] false)
+  return e
+}
+

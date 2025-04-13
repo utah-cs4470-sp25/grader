@@ -1,0 +1,14 @@
+fn a(b[c] : bool[], d : bool) : void {
+  let e[f] = [true]
+  let g[h, i] = (if (! (! d)) then (array[g : 409, h : c] d) else (array[g : c, h : (- c)] (false || true)))
+}
+
+read image "b.png" to b
+
+let c = (array[c : (sum[c : (- 744), d : 398] c), d : (- 125)] ((if false then d else 639) - c))
+fn d(e[f] : void[], g[h, i] : bool[,]) : float[] {
+  return (array[j : i] (array[k : j] 22.45))[h]
+  return [(- 11.35), 3.24]
+  return (array[j : f] ((sum[k : h, l : h] 51.95) % 48.6))
+}
+

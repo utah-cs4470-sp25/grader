@@ -1,0 +1,6 @@
+let a = ((886 % (- 343)) == 377)
+time let b = ((- 660) * 853)
+read image "c.png" to c
+
+read image "d.png" to d
+

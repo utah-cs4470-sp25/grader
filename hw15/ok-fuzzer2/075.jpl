@@ -1,0 +1,11 @@
+print "a"
+
+fn a() : bool {
+  let b = (((! a()) || a()) != a())
+  let c[d] = [599, (array[c : 882] c)[(- 876)]]
+  return (! (if b then (b && b) else a()))
+}
+
+let b[c] = [[804, 458][(if a() then 414 else 814)], (- 680)]
+show (sum[d : 881, e : (if a() then c else 514)] (- 4.28))
+

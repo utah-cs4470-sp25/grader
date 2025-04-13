@@ -1,0 +1,11 @@
+let a = 13.59
+read image "b.png" to b
+
+fn c(d : float, e[f] : bool[]) : int {
+  let g = (143 > (f + (572 * f)))
+  let h = [((- 989) > 783), (g || (! g))]
+  return c(36.1, (if e[f] then [true, true] else h))
+}
+
+show ((- 40.71) % (a / a))
+

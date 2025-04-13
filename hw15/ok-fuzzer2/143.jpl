@@ -1,0 +1,9 @@
+assert (! (true && (true == true))), "a"
+let a = ((! true) || ((986 >= 79) && true))
+let b = (sum[b : (- 183), c : (sum[b : 682] b)] (sum[d : c, e : (- 325)] (e * c)))
+fn c(d : int[,], e : float) : rgba {
+  let f = true
+  let g = c((array[g : (- 82), h : b] b), e)
+  return g
+}
+

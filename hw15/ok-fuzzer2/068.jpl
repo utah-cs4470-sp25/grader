@@ -1,0 +1,13 @@
+fn a(b[c, d] : float[,], e : void) : bool {
+  let f[g] = (array[f : (- 207)] true)
+  let h[i, j] = (if true then (array[h : 343, i : (- g)] f) else (array[h : (sum[h : g, i : c] c), i : c] f))
+  return a(b, [e][d])
+}
+
+show true
+
+struct b {
+a : bool
+b : int
+}
+let c = (array[c : (sum[c : 251, d : 553] c)] (! true))[(- (sum[c : 854] 157))]

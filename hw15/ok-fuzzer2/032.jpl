@@ -1,0 +1,16 @@
+struct a {
+a : void[]
+}
+let b[c, d] = (array[b : (- 576), c : (- 906)] (array[d : c, e : b] 89.0))[(if (! true) then (- 656) else 783), 536]
+fn e(f[g, h] : float[,]) : int[,] {
+  let i[j, k] = [(if true then b else f), f][(array[i : c] g)[h]]
+  return (array[l : d, m : k] (array[n : l, o : d] l))[j, (- h)]
+  return e(f)
+}
+
+fn f() : rgba {
+  return (if ((! true) || (if true then false else true)) then f() else f())
+  let g[h] = (array[g : (if false then 141 else (d / c))] b)
+  return rgba {(5.67 - (- 8.74)), (sum[i : (sum[i : d, j : h] d), j : (- c)] (sum[k : c] 55.74)), (b[690, h] * (sum[i : d, j : 662] 88.97)), (if (466 == c) then f().b else 16.65)}
+}
+

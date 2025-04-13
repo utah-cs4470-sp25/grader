@@ -1,0 +1,10 @@
+print "a"
+
+fn a(b : rgba) : rgba[,] {
+  let c = (21.56 > (86.91 / (sum[c : 291] 89.1)))
+  let d = (if c then (- 62.62) else (if c then b else b).b)
+  return (array[e : 330, f : (- 573)] b)
+}
+
+let b = (array[b : (- 37)] rgba {48.22, 51.75, 89.67, 46.02}.r)
+let c[d] = b

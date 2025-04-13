@@ -1,0 +1,11 @@
+print "a"
+
+fn a(b[c] : void[], d : rgba) : float {
+  let e = 45.88
+  let f[g, h] = (array[f : (424 / c), g : (if false then (if true then 602 else c) else (- 625))] [3])
+  return (sum[i : 369, j : (array[i : g, j : 859] c)[382, (sum[i : 529] c)]] (array[k : i] e)[684])
+}
+
+let b = (array[b : (- (- 155)), c : (sum[b : 429, c : 647] 485)] (83.46 > 53.97))
+show 19.14
+

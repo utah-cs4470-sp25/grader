@@ -1,0 +1,7 @@
+let a[b, c] = (array[a : (- 978)] (array[b : a, c : a] a))[(- 545)]
+assert true, "d"
+let d[e, f] = (array[d : 106, e : (sum[d : c, e : 904] 867)] b)
+struct g {
+a : rgba
+b : rgba
+}

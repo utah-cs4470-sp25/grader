@@ -1,0 +1,14 @@
+fn a() : rgba {
+  let b[c] = [(739 % (845 - 973)), (if true then 434 else 308)]
+  let d = 97.35
+  return a()
+}
+
+let b[c] = [(array[b : (- 85), c : (967 - 586)] b)]
+let d[e, f] = (array[d : (sum[d : c, e : c] (- e)), e : 482] a().a)
+fn g(h[i, j] : bool[,], k[l] : int[]) : float {
+  assert (if (! (l >= c)) then true else ((f != c) != h[562, l])), "m"
+  let m[n, o] = b[404]
+  return (- 72.27)
+}
+

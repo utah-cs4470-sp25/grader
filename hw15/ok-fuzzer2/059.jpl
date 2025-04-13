@@ -1,0 +1,18 @@
+let a = (493 + (- (- 654)))
+fn b(c[d] : int[], e : void) : void {
+  return (if true then e else [e][d])
+  let f = ((! true) && false)
+}
+
+fn c(d[e, f] : float[,], g : int) : rgba {
+  let h[i, j] = (array[h : (if (e <= f) then (- e) else g), i : (- f)] c(d, f))
+  assert true, "k"
+  return (if ((sum[k : i] 6.73) >= (- 20.43)) then c(d, a) else c(d, i))
+}
+
+fn d(e[f, g] : bool[,]) : bool {
+  let h = ((a >= f) && (a > g))
+  return (if (if h then (a >= a) else (677 <= a)) then h else h)
+  return (array[i : (if true then g else f)] (! h))[(sum[i : (sum[i : 764, j : 868] g), j : g] (sum[k : j, l : j] 736))]
+}
+

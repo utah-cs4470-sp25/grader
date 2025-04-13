@@ -1,0 +1,11 @@
+print "a"
+
+fn a(b[c] : int[], d : float[,]) : void {
+  let e[f, g] = (array[e : [120, 113][c], f : 960] 68.66)
+  assert (false && (41 >= g)), "h"
+  return a([(f - f)], d)
+}
+
+time print "b"
+
+assert ([457][(- 798)] < (sum[b : 72] (- b))), "b"

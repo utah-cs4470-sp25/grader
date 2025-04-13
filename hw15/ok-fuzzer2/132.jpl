@@ -1,0 +1,5 @@
+let a[b] = [66.11, 4.09]
+time let c[d, e] = (array[c : (b * 870), d : b] (sum[e : d] 30.08))
+let f[g, h] = (array[f : ((sum[f : b] d) - (if true then d else b)), g : d] c)
+read image "i.png" to i
+

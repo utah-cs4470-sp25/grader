@@ -1,0 +1,15 @@
+let a[b, c] = (array[a : (if false then (281 % 620) else 349), b : (sum[a : (- 585)] (if true then 320 else 233))] 482)
+read image "d.png" to d
+
+fn e(f[g] : void[]) : int {
+  let h = c
+  assert (if (! (! true)) then ((sum[i : c, j : g] 7.56) >= (if false then 15.97 else 82.74)) else ((! true) || (! false))), "i"
+  return (- g)
+}
+
+fn f(g : float, h[i, j] : rgba[,]) : bool {
+  return (i < c)
+  let k = i
+  return f((sum[l : (sum[l : b] c), m : 338] g), d)
+}
+

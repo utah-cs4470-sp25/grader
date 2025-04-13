@@ -1,0 +1,10 @@
+fn a(b : int) : float {
+  assert true, "c"
+  let c[d] = (array[c : 278] [28.69])[(- (- 595))]
+  return (sum[e : d] (sum[f : 944] a(e)))
+}
+
+read image "b.png" to b
+
+let c[d, e] = (if (! false) then b else b)
+let f = e

@@ -1,0 +1,14 @@
+fn a(b : int, c[d] : void[]) : void {
+  let e = (((- 11.57) != 8.68) || true)
+  return (if e then a((- d), c) else a(d, c))
+  return (if (false || true) then a((- 622), c) else a((sum[f : b] f), (if e then c else c)))
+}
+
+let b[c, d] = (array[b : [43, 914][(- 58)], c : (array[b : 107, c : 939] c)[871, 875]] b)
+let e = (! (263 >= (if true then d else 118)))
+fn f() : rgba {
+  let g = rgba {[66.5, 27.48][(sum[g : 444] 762)], (sum[g : 521] f().b), (sum[g : 731, h : c] (37.44 * 43.55)), (sum[g : 184] f().a)}
+  let h = g
+  return g
+}
+

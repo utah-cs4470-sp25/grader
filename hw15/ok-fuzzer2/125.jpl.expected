@@ -1,0 +1,235 @@
+global jpl_main
+global _jpl_main
+extern _fail_assertion
+extern _jpl_alloc
+extern _get_time
+extern _show
+extern _print
+extern _print_time
+extern _read_image
+extern _write_image
+extern _fmod
+extern _sqrt
+extern _exp
+extern _sin
+extern _cos
+extern _tan
+extern _asin
+extern _acos
+extern _atan
+extern _log
+extern _pow
+extern _atan2
+extern _to_int
+extern _to_float
+
+section .data
+const0: dq 0
+const1: dq 1
+const2: dq 766
+const3: dq 69
+const4: db `non-positive loop bound`, 0
+const5: dq 950
+const6: dq 722
+const7: dq 55.91
+const8: dq 71.95
+const9: dq 86.15
+const10: db `c`, 0
+const11: db `c.png`, 0
+
+section .text
+a:
+_a:
+	push rbp
+	mov rbp, rsp
+	push rdi
+	sub rsp, 32
+	sub rsp, 8
+	; Moving 8 bytes from rbp - -16 to rsp 
+		mov r10, [rbp - -16 + 0]
+		mov [rsp + 0], r10
+	lea rdi, [rsp + 8]
+	call _a
+	add rsp, 8
+	mov rax, [rel const0] ; False
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	mov rax, [rel const1] ; True
+	push rax
+	pop rax
+	cmp rax, 0
+	je .jump1
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 48 to rsp 
+		mov r10, [rbp - 48 + 0]
+		mov [rsp + 0], r10
+	jmp .jump2
+.jump1:
+	mov rax, [rel const1] ; True
+	push rax
+.jump2:
+	mov rax, [rel const0] ; False
+	push rax
+	pop rax
+	pop r10
+	cmp rax, r10
+	sete al
+	and rax, 1
+	push rax
+	pop rax
+	cmp rax, 0
+	je .jump3
+	sub rsp, 32
+	; Moving 32 bytes from rbp - 40 to rsp 
+		mov r10, [rbp - 40 + 24]
+		mov [rsp + 24], r10
+		mov r10, [rbp - 40 + 16]
+		mov [rsp + 16], r10
+		mov r10, [rbp - 40 + 8]
+		mov [rsp + 8], r10
+		mov r10, [rbp - 40 + 0]
+		mov [rsp + 0], r10
+	jmp .jump4
+.jump3:
+	sub rsp, 32
+	; Moving 32 bytes from rbp - 40 to rsp 
+		mov r10, [rbp - 40 + 24]
+		mov [rsp + 24], r10
+		mov r10, [rbp - 40 + 16]
+		mov [rsp + 16], r10
+		mov r10, [rbp - 40 + 8]
+		mov [rsp + 8], r10
+		mov r10, [rbp - 40 + 0]
+		mov [rsp + 0], r10
+.jump4:
+	mov rax, [rbp - 8] ; Address to write return value into
+	; Moving 32 bytes from rsp to rax 
+		mov r10, [rsp + 24]
+		mov [rax + 24], r10
+		mov r10, [rsp + 16]
+		mov [rax + 16], r10
+		mov r10, [rsp + 8]
+		mov [rax + 8], r10
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 80 ; Local variables
+	pop rbp
+	ret
+
+jpl_main:
+_jpl_main:
+	push rbp
+	mov rbp, rsp
+	push r12
+	mov r12, rbp ; end of jpl_main prelude
+	; Allocating 8 bytes for the sum
+	sub rsp, 8
+	; Computing bound for 'b'
+	mov rax, [rel const2] ; 766
+	push rax
+	mov rax, [rel const3] ; 69
+	push rax
+	pop rax
+	pop r10
+	add rax, r10
+	push rax
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump5
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const4] ; 'non-positive loop bound'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump5:
+	; Initialize sum to 0
+	mov rax, 0
+	mov [rsp + 8], rax ; Move to pre-allocated space
+	; Initialize 'b' to 0
+	mov rax, 0
+	push rax
+.jump6: ; Begin body of loop
+	; Compute loop body
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 32 to rsp 
+		mov r10, [rbp - 32 + 0]
+		mov [rsp + 0], r10
+	pop rax
+	add [rsp + 16], rax ; Add loop body to sum
+	; Increment 'b'
+	add qword [rsp + 0], 1
+	; Compare b to its bound
+	mov rax, [rsp + 0]
+	cmp rax, [rsp + 8]
+	jl .jump6 ; If b < bound, next iter
+	; End body of loop
+	; Free all loop variables
+	add rsp, 8
+	; Free all loop bounds
+	add rsp, 8
+	; sum left on stack
+	mov rax, [rel const5] ; 950
+	push rax
+	pop rax
+	neg rax
+	push rax
+	mov rax, [rel const6] ; 722
+	push rax
+	pop rax
+	neg rax
+	push rax
+	pop rax
+	pop r10
+	imul rax, r10
+	push rax
+	pop rax
+	pop r10
+	cmp rax, r10
+	sete al
+	and rax, 1
+	push rax
+	mov rax, [rel const7] ; 55.91
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const8] ; 71.95
+	push rax
+	mov rax, [rel const9] ; 86.15
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	divsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmpneqsd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
+	push rax
+	pop rax
+	cmp rax, 0
+	jne .jump7
+	lea rdi, [rel const10] ; 'c'
+	call _fail_assertion
+.jump7:
+	sub rsp, 24
+	lea rdi, [rsp]
+	sub rsp, 8 ; Add alignment
+	lea rsi, [rel const11] ; 'c.png'
+	call _read_image
+	add rsp, 8 ; Remove alignment
+	add rsp, 32 ; Local variables
+	pop r12 ; begin jpl_main postlude
+	pop rbp
+	ret
+

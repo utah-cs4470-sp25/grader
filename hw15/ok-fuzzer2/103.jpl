@@ -1,0 +1,7 @@
+struct a {
+a : void
+b : int[,]
+}
+let b[c] = (if false then (if (627 < 268) then (array[b : 875] 44.08) else [59.66]) else (if (false && true) then (array[b : 73] 12.94) else (array[b : 370] 85.04)))
+let d = (array[d : (sum[d : 836] 948), e : (- 550)] b[d])[((- c) * 207), (sum[d : (- c)] (sum[e : c] 772))]
+let e = 307

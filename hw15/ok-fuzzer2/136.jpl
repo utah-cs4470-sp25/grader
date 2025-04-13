@@ -1,0 +1,10 @@
+assert ((854 < (sum[a : 328, b : 466] a)) != ((- 846) != (sum[a : 431] a))), "a"
+fn a() : bool[] {
+  let b[c] = (array[b : 825] (a()[629] && (b <= b)))
+  let d[e, f] = (array[d : (array[d : 508] d)[38], e : (- 142)] (array[f : (if false then c else e)] f))
+  return (array[g : e] [true])[[c, 459][(- e)]]
+}
+
+print "b"
+
+time let b[c] = a()

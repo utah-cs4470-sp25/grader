@@ -1,0 +1,9 @@
+let a = 500
+fn b(c : rgba) : int {
+  let d[e] = (if (if false then (! false) else true) then (if (200 != 299) then [260] else (array[d : 289] 840)) else (array[d : a] a))
+  assert (if (a >= (if true then 566 else 752)) then (! (! true)) else (if (! false) then (true && false) else true)), "f"
+  return (if false then (- (if true then a else 708)) else (- b(c)))
+}
+
+let c[d, e] = (array[c : (- 1), d : ((if true then a else 720) * (sum[c : 511] c))] a)
+let f = c

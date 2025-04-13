@@ -1,0 +1,9 @@
+fn a(b : bool, c[d] : int[]) : rgba {
+  let e = 64.71
+  let f[g] = (array[f : (if (true == true) then 310 else c[d])] c)
+  return a(((if b then e else 65.14) == (1.12 / e)), (if true then f else f)[d])
+}
+
+let b[c] = [false, (! (134 <= 980))]
+let d = 30.36
+let e[f, g] = (array[e : (if (c == 489) then (sum[e : 678] c) else (sum[e : c] c)), f : ((- c) % (- 154))] (! (! false)))

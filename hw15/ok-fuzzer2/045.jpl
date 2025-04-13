@@ -1,0 +1,7 @@
+show (72.85 <= (1.26 - (- 19.97)))
+
+show (array[a : 99, b : (if (72.75 != 38.57) then 989 else 413)] [861, 542])
+
+print "a"
+
+assert (if true then (if (! true) then (! false) else (46.63 <= 38.84)) else (if true then false else false)), "a"

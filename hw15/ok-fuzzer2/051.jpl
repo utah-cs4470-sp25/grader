@@ -1,0 +1,14 @@
+fn a() : int {
+  return 967
+  assert ((if (841 > 486) then (222 != a()) else (56.94 < 98.52)) && (a() == a())), "b"
+  return (sum[b : (- 103)] (- (if true then a() else a())))
+}
+
+let b = (! (! true))
+let c = [false]
+fn d(e : float, f[g] : bool[]) : bool {
+  let h = b
+  let i = ((48.76 / e) / (if h then 14.99 else (sum[i : 787] e)))
+  return d(44.78, [true, (g > 114)])
+}
+

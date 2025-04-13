@@ -1,0 +1,10 @@
+fn a(b : bool, c[d] : float[]) : float {
+  let e = (if ((if b then b else false) && (! b)) then 385 else ((- d) * 414))
+  return 4.5
+  return c[(e + (422 * d))]
+}
+
+let b = (array[b : 887, c : (- 381)] c)
+print "c"
+
+time let c[d, e] = (array[c : 414, d : 678] b)[(sum[c : 388] 213), (- 972)]

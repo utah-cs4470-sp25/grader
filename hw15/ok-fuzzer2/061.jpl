@@ -1,0 +1,10 @@
+let a = ((true && false) && (! (false || true)))
+show 92
+
+let b[c, d] = (array[b : 326, c : (- (504 * 768))] (! (79.63 <= 76.46)))
+fn e() : float {
+  return ((e() / (- e())) - 70.69)
+  let f[g] = (array[f : (if a then d else d), g : d] [12.56])[(sum[f : d] f), c]
+  return (- (- e()))
+}
+

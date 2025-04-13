@@ -1,0 +1,11 @@
+fn a(b : float, c[d, e] : bool[,]) : bool {
+  assert a((25.14 / 93.43), (array[f : 699, g : 873] c)[d, d]), "f"
+  let f = (54.44 == 26.52)
+  return (! [false][e])
+}
+
+time struct b {
+a : float
+}
+let c[d] = [b {5.85}]
+assert (if ((sum[e : d] e) >= (d / d)) then true else (! (false != true))), "e"

@@ -1,0 +1,9 @@
+let a = (- (sum[a : (- 691)] 270))
+let b = (22.98 * 35.65)
+fn c() : bool {
+  assert (array[d : 922] c())[503], "d"
+  let d = b
+  return (false == ((! c()) && (c() && c())))
+}
+
+let d = (array[d : [a][7]] false)

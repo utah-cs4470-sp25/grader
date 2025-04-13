@@ -1,0 +1,9 @@
+let a[b] = [(- 59.32), (20.34 + 31.4)]
+let c = false
+let d = b
+fn e(f[g, h] : void[,], i : bool) : rgba {
+  assert (114 == (if true then d else g)), "j"
+  let j = f
+  return e(j, ((true || i) && (! true)))
+}
+

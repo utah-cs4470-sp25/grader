@@ -1,0 +1,5 @@
+let a = (sum[a : (sum[a : (sum[a : 51] 116)] 533)] (sum[b : 883, c : 916] (sum[d : b, e : b] a)))
+let b = 906
+let c = (a < b)
+read image "d.png" to d[e, f]
+

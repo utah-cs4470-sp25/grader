@@ -1,0 +1,286 @@
+global jpl_main
+global _jpl_main
+extern _fail_assertion
+extern _jpl_alloc
+extern _get_time
+extern _show
+extern _print
+extern _print_time
+extern _read_image
+extern _write_image
+extern _fmod
+extern _sqrt
+extern _exp
+extern _sin
+extern _cos
+extern _tan
+extern _asin
+extern _acos
+extern _atan
+extern _log
+extern _pow
+extern _atan2
+extern _to_int
+extern _to_float
+
+section .data
+const0: dq 51
+const1: db `non-positive loop bound`, 0
+const2: dq 116
+const3: dq 533
+const4: dq 916
+const5: dq 883
+const6: dq 906
+const7: db `d.png`, 0
+
+section .text
+jpl_main:
+_jpl_main:
+	push rbp
+	mov rbp, rsp
+	push r12
+	mov r12, rbp ; end of jpl_main prelude
+	; Allocating 8 bytes for the sum
+	sub rsp, 8
+	; Computing bound for 'a'
+	; Allocating 8 bytes for the sum
+	sub rsp, 8
+	; Computing bound for 'a'
+	; Allocating 8 bytes for the sum
+	sub rsp, 8
+	; Computing bound for 'a'
+	mov rax, [rel const0] ; 51
+	push rax
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump1
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const1] ; 'non-positive loop bound'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump1:
+	; Initialize sum to 0
+	mov rax, 0
+	mov [rsp + 8], rax ; Move to pre-allocated space
+	; Initialize 'a' to 0
+	mov rax, 0
+	push rax
+.jump2: ; Begin body of loop
+	; Compute loop body
+	mov rax, [rel const2] ; 116
+	push rax
+	pop rax
+	add [rsp + 16], rax ; Add loop body to sum
+	; Increment 'a'
+	add qword [rsp + 0], 1
+	; Compare a to its bound
+	mov rax, [rsp + 0]
+	cmp rax, [rsp + 8]
+	jl .jump2 ; If a < bound, next iter
+	; End body of loop
+	; Free all loop variables
+	add rsp, 8
+	; Free all loop bounds
+	add rsp, 8
+	; sum left on stack
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump3
+	lea rdi, [rel const1] ; 'non-positive loop bound'
+	call _fail_assertion
+.jump3:
+	; Initialize sum to 0
+	mov rax, 0
+	mov [rsp + 8], rax ; Move to pre-allocated space
+	; Initialize 'a' to 0
+	mov rax, 0
+	push rax
+.jump4: ; Begin body of loop
+	; Compute loop body
+	mov rax, [rel const3] ; 533
+	push rax
+	pop rax
+	add [rsp + 16], rax ; Add loop body to sum
+	; Increment 'a'
+	add qword [rsp + 0], 1
+	; Compare a to its bound
+	mov rax, [rsp + 0]
+	cmp rax, [rsp + 8]
+	jl .jump4 ; If a < bound, next iter
+	; End body of loop
+	; Free all loop variables
+	add rsp, 8
+	; Free all loop bounds
+	add rsp, 8
+	; sum left on stack
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump5
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const1] ; 'non-positive loop bound'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump5:
+	; Initialize sum to 0
+	mov rax, 0
+	mov [rsp + 8], rax ; Move to pre-allocated space
+	; Initialize 'a' to 0
+	mov rax, 0
+	push rax
+.jump6: ; Begin body of loop
+	; Compute loop body
+	; Allocating 8 bytes for the sum
+	sub rsp, 8
+	; Computing bound for 'c'
+	mov rax, [rel const4] ; 916
+	push rax
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump7
+	lea rdi, [rel const1] ; 'non-positive loop bound'
+	call _fail_assertion
+.jump7:
+	; Computing bound for 'b'
+	mov rax, [rel const5] ; 883
+	push rax
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump8
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const1] ; 'non-positive loop bound'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump8:
+	; Initialize sum to 0
+	mov rax, 0
+	mov [rsp + 16], rax ; Move to pre-allocated space
+	; Initialize 'c' to 0
+	mov rax, 0
+	push rax
+	; Initialize 'b' to 0
+	mov rax, 0
+	push rax
+.jump9: ; Begin body of loop
+	; Compute loop body
+	; Allocating 8 bytes for the sum
+	sub rsp, 8
+	; Computing bound for 'e'
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 72 to rsp 
+		mov r10, [rbp - 72 + 0]
+		mov [rsp + 0], r10
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump10
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const1] ; 'non-positive loop bound'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump10:
+	; Computing bound for 'd'
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 72 to rsp 
+		mov r10, [rbp - 72 + 0]
+		mov [rsp + 0], r10
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump11
+	lea rdi, [rel const1] ; 'non-positive loop bound'
+	call _fail_assertion
+.jump11:
+	; Initialize sum to 0
+	mov rax, 0
+	mov [rsp + 16], rax ; Move to pre-allocated space
+	; Initialize 'e' to 0
+	mov rax, 0
+	push rax
+	; Initialize 'd' to 0
+	mov rax, 0
+	push rax
+.jump12: ; Begin body of loop
+	; Compute loop body
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 32 to rsp 
+		mov r10, [rbp - 32 + 0]
+		mov [rsp + 0], r10
+	pop rax
+	add [rsp + 32], rax ; Add loop body to sum
+	; Increment 'e'
+	add qword [rsp + 8], 1
+	; Compare e to its bound
+	mov rax, [rsp + 8]
+	cmp rax, [rsp + 24]
+	jl .jump12 ; If e < bound, next iter
+	mov qword [rsp + 8], 0 ; e = 0
+	add qword [rsp + 0], 1 ; d++
+	; Compare d to its bound
+	mov rax, [rsp + 0]
+	cmp rax, [rsp + 16]
+	jl .jump12 ; If d < bound, next iter
+	; End body of loop
+	; Free all loop variables
+	add rsp, 16
+	; Free all loop bounds
+	add rsp, 16
+	; sum left on stack
+	pop rax
+	add [rsp + 32], rax ; Add loop body to sum
+	; Increment 'c'
+	add qword [rsp + 8], 1
+	; Compare c to its bound
+	mov rax, [rsp + 8]
+	cmp rax, [rsp + 24]
+	jl .jump9 ; If c < bound, next iter
+	mov qword [rsp + 8], 0 ; c = 0
+	add qword [rsp + 0], 1 ; b++
+	; Compare b to its bound
+	mov rax, [rsp + 0]
+	cmp rax, [rsp + 16]
+	jl .jump9 ; If b < bound, next iter
+	; End body of loop
+	; Free all loop variables
+	add rsp, 16
+	; Free all loop bounds
+	add rsp, 16
+	; sum left on stack
+	pop rax
+	add [rsp + 16], rax ; Add loop body to sum
+	; Increment 'a'
+	add qword [rsp + 0], 1
+	; Compare a to its bound
+	mov rax, [rsp + 0]
+	cmp rax, [rsp + 8]
+	jl .jump6 ; If a < bound, next iter
+	; End body of loop
+	; Free all loop variables
+	add rsp, 8
+	; Free all loop bounds
+	add rsp, 8
+	; sum left on stack
+	mov rax, [rel const6] ; 906
+	push rax
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 24 to rsp 
+		mov r10, [rbp - 24 + 0]
+		mov [rsp + 0], r10
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 16 to rsp 
+		mov r10, [rbp - 16 + 0]
+		mov [rsp + 0], r10
+	pop rax
+	pop r10
+	cmp rax, r10
+	setl al
+	and rax, 1
+	push rax
+	sub rsp, 24
+	lea rdi, [rsp]
+	sub rsp, 8 ; Add alignment
+	lea rsi, [rel const7] ; 'd.png'
+	call _read_image
+	add rsp, 8 ; Remove alignment
+	add rsp, 48 ; Local variables
+	pop r12 ; begin jpl_main postlude
+	pop rbp
+	ret
+

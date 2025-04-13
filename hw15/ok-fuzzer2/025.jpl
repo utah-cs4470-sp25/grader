@@ -1,0 +1,6 @@
+time let a = (sum[a : (- 474)] 79.94)
+show ((- (122 % 60)) == (sum[b : (- 644)] 729))
+
+time assert (! (186 == 892)), "b"
+print "b"
+

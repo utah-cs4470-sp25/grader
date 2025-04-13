@@ -1,0 +1,12 @@
+let a = ((93.11 + 23.21) < 16.37)
+struct b {
+a : rgba
+b : bool
+}
+fn c(d : float) : float {
+  let e = rgba {c(39.91), d, (- d), d}.g
+  assert ((! (600 != 41)) && ((false || a) && (e == e))), "f"
+  return ((- e) % c(c(e)))
+}
+
+time let d[e, f] = (array[d : (- 284), e : (if false then 323 else 655)] (array[f : d, g : 775] 97.49))

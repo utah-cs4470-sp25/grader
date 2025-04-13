@@ -1,0 +1,12 @@
+fn a(b[c, d] : bool[,], e : rgba) : float {
+  let f = (array[f : 489] (- c))
+  let g = [(d <= 525), (! b[d, 202])]
+  return e.b
+}
+
+struct b {
+a : rgba[,]
+b : int[]
+}
+let c = ((sum[c : 611, d : (- 631)] 694) < (- (- 593)))
+let d = ((if true then (- 49.26) else 49.85) <= 80.39)

@@ -1,0 +1,4 @@
+let a[b] = (if true then (array[a : 36] 39.45) else [(if false then 3.92 else 19.16)])
+let c[d, e] = (array[c : ((b + b) + b), d : (array[c : b] b)[b]] b)
+time time let f = [true]
+let g[h, i] = (array[g : (sum[g : 206, h : (sum[g : d, h : d] h)] 878), h : (sum[g : d, h : (sum[g : d, h : 470] b)] e)] (g / b))

@@ -1,0 +1,6 @@
+let a[b] = [false, (! (if true then false else true))]
+read image "c.png" to c
+
+let d = a
+time write image (if true then c else c) to "e.png"
+

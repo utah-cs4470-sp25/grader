@@ -1,0 +1,10 @@
+let a[b, c] = (array[a : 548] (array[b : 567, c : a] c))[174]
+fn d() : int {
+  let e = c
+  let f[g] = (array[f : (sum[f : e, g : 227] e)] [d()])[(array[f : c, g : c] f)[c, d()]]
+  return (array[h : 857, i : (- d())] (i / d()))[790, d()]
+}
+
+read image "e.png" to e
+
+let f[g] = (if [true][(974 % d())] then (if true then (array[f : b] a) else [a]) else (array[f : d()] a))

@@ -1,0 +1,14 @@
+fn a(b : void) : bool {
+  return (array[c : 907, d : (724 + 928)] true)[(- (sum[c : 32] 853)), (- 409)]
+  let c[d, e] = (array[c : (871 + 658), d : (78 * 467)] b)
+  return true
+}
+
+fn b() : rgba[] {
+  let c[d, e] = (if (744 == (- 708)) then (array[c : (- 86), d : 270] (! true)) else (array[c : (- 556), d : (if false then 622 else 827)] (d <= d)))
+  assert ((if (d < e) then (e <= e) else (d < 171)) || ((! true) || (3.67 != 98.75))), "f"
+  return (if true then b() else (array[f : d] b()[d]))
+}
+
+let c = ((! (! false)) && ((- 599) > 82))
+let d[e] = b()

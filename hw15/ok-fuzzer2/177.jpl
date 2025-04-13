@@ -1,0 +1,11 @@
+print "a"
+
+fn a(b : bool) : int {
+  assert b, "c"
+  let c = (array[c : (if b then 168 else 262), d : 962] b)[a(b), (sum[c : a(b)] (c + c))]
+  return (sum[d : 996, e : 446] (- d))
+}
+
+let b = (sum[b : 123] [91.32, 99.7][796])
+print "c"
+

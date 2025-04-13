@@ -1,0 +1,14 @@
+fn a() : float {
+  let b[c, d] = (array[b : 856, c : ((sum[b : 302] 939) % (563 - 895))] ((sum[d : b, e : 53] c) <= (sum[d : c, e : b] d)))
+  let e = b
+  return ((sum[f : d, g : d] a()) - 82.67)
+}
+
+assert (a() < a()), "b"
+fn b(c[d, e] : bool[,], f : bool) : float {
+  assert ((13.98 == a()) != f), "g"
+  let g[h] = (if (if (! false) then false else (false && f)) then (array[g : (if f then 929 else d)] a()) else (array[g : d] (sum[h : g] 26.74)))
+  return [g[e], 6.42][h]
+}
+
+let c = (array[c : (- (sum[c : 503] c)), d : 27] a())

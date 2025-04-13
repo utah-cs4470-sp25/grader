@@ -1,0 +1,10 @@
+let a = ((if true then (sum[a : 300] 369) else 685) >= (- 69))
+let b = 887
+show (((a || true) || a) || ((- 343) >= 218))
+
+fn c(d : bool, e[f] : void[]) : rgba {
+  let g[h] = (if a then (array[g : (if a then 40 else 225)] e[212]) else e)
+  let i[j, k] = (if d then (if true then (array[i : f, j : f] true) else (array[i : 665, j : 945] d)) else (array[i : 962, j : h] a))
+  return c(true, e)
+}
+

@@ -1,0 +1,14 @@
+let a[b, c] = (array[a : (sum[a : (- 771)] 401), b : 896] 425)
+let d[e] = (array[d : (sum[d : b, e : 672] c)] 518)
+fn f() : rgba {
+  let g[h] = (array[g : (e / (b * e))] ((- 16) != e))
+  assert (! true), "i"
+  return f()
+}
+
+fn g() : float {
+  return ((if (70.73 > g()) then (88.45 % g()) else (60.53 % g())) - (if true then (sum[h : c, i : e] g()) else f().g))
+  assert (g() > ((sum[h : 948, i : 121] g()) % g())), "h"
+  return f().g
+}
+

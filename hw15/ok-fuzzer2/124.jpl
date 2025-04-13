@@ -1,0 +1,16 @@
+fn a() : void {
+  let b = a()
+  let c[d] = (if (498 > 694) then [a(), a()] else [b, b])
+  return (array[e : d, f : d] a())[572, 875]
+}
+
+fn b() : rgba[] {
+  let c = ((true == false) || true)
+  return [rgba {32.68, (- 49.93), (sum[d : 891] 66.97), (if c then 42.06 else 58.38)}, (if c then b() else b())[(- 240)]]
+  return b()
+}
+
+let c[d] = [b()][(- 750)]
+struct e {
+a : void
+}

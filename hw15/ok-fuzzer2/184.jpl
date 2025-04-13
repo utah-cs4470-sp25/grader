@@ -1,0 +1,7 @@
+let a = false
+show (((! a) && false) && false)
+
+struct b {
+a : int
+}
+let c = (if (! (if true then false else a)) then a else a)

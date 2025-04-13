@@ -1,0 +1,10 @@
+let a = [10.71]
+fn b(c[d] : rgba[], e : bool[,]) : rgba {
+  let f = (60.65 < (- (sum[f : 177] 13.3)))
+  return rgba {a[d], (sum[g : d, h : 679] (- 31.68)), (sum[g : (sum[g : d] d)] a[d]), 17.74}
+  return c[(- d)]
+}
+
+let c[d] = (array[c : (array[c : 363, d : 614] c)[(if false then 266 else 44), 639]] ((! false) || true))
+print "e"
+

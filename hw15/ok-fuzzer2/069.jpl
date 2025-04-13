@@ -1,0 +1,14 @@
+let a[b] = (array[a : (- 364)] (482 * (- a)))
+struct c {
+a : float
+b : int
+}
+fn d(e : c, f[g, h] : int[,]) : float {
+  let i[j] = (array[i : (sum[i : 928] g), j : h] (array[k : b] b))[h, f[(- 61), b]]
+  let k[l, m] = (array[k : (if (909 == b) then (- h) else g), l : h] k)
+  return (- d(e, k))
+}
+
+struct e {
+a : c
+}

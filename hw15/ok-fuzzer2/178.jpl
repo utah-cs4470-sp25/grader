@@ -1,0 +1,19 @@
+let a = 62.38
+fn b() : float {
+  let c = (! true)
+  let d = c
+  return (if true then (if false then (if c then a else b()) else b()) else (if (if c then false else c) then a else (- a)))
+}
+
+fn c() : rgba {
+  let d = [(139 >= 232)][(- 508)]
+  let e = false
+  return (array[f : (if d then 18 else 316)] c())[133]
+}
+
+fn d() : float[] {
+  let e = (! false)
+  let f = true
+  return (array[g : (if f then (sum[g : 430] 154) else 585)] b())
+}
+

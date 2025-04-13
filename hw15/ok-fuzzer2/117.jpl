@@ -1,0 +1,10 @@
+show (971 > (sum[a : 156] a))
+
+fn a() : bool[] {
+  let b = (((- 28.66) > (sum[b : 579, c : 295] 68.21)) && true)
+  return [(if b then (! b) else (! true))]
+  return (array[c : 660] (b || b))
+}
+
+let b = a()
+let c[d] = b

@@ -1,0 +1,9 @@
+fn a(b[c] : void[]) : rgba {
+  let d[e, f] = (array[d : (sum[d : (- 914), e : c] (- c)), e : 181] b)
+  return rgba {51.0, (- (sum[g : e, h : e] 23.83)), 49.91, (array[g : c, h : e] 42.25)[(if true then 64 else c), (sum[g : 74] e)]}
+  return rgba {a(b).g, 59.98, (- (- 47.81)), ((- 84.21) - 7.41)}
+}
+
+let b[c] = (array[b : ((if true then 996 else 513) % 170)] b)
+let d = (987 * (array[d : c] d)[c])
+let e[f, g] = (array[e : (c - (- d)), f : (sum[e : (c % d), f : (- c)] c)] 46.07)

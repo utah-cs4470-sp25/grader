@@ -1,0 +1,9 @@
+let a = 10.11
+let b = (! (! (! false)))
+fn c() : void[] {
+  let d[e] = c()
+  assert b, "f"
+  return (array[f : e] d)[((- 848) / (if true then 839 else 610))]
+}
+
+time let d = true

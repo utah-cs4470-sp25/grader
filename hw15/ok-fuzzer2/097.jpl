@@ -1,0 +1,5 @@
+let a = (false == (true == (true || false)))
+print "b"
+
+let b = true
+let c[d] = [b]

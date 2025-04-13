@@ -1,0 +1,7 @@
+let a[b] = (if true then [false] else (array[a : 437] true))
+let c[d] = (if [true, true][b] then [(sum[c : b] c)] else (if (! true) then (array[c : b] b) else [302]))
+struct e {
+a : void
+b : int
+}
+let f[g] = c

@@ -1,0 +1,15 @@
+let a = rgba {(- (if true then 69.25 else 33.93)), 9.56, (- 8.42), ((sum[a : 817] 20.25) % (- 50.55))}
+fn b(c : void, d[e, f] : bool[,]) : float {
+  let g[h, i] = (if (false || d[153, f]) then d else (if false then d else d))
+  let j[k] = (array[j : (array[j : 867, k : h] 634)[f, i]] h)
+  return a.r
+}
+
+fn c(d[e] : bool[], f : bool) : float {
+  let g = e
+  let h = ((sum[h : (if true then 973 else 958)] (h + 932)) != 294)
+  return (sum[i : (sum[i : (- g)] i)] (- (sum[j : i] 39.94)))
+}
+
+write image (array[d : 564, e : 491] (array[f : d] a)[e]) to "d.png"
+

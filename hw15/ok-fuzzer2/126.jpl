@@ -1,0 +1,14 @@
+fn a(b : void, c : rgba) : int[] {
+  let d = ((- 50.72) == (sum[d : 868] 70.12))
+  assert (c.a < 75.13), "e"
+  return [181, (if true then (- 370) else 615)]
+}
+
+let b = [54.58, (sum[b : 162, c : 562] (sum[d : b] 51.44))]
+fn c(d[e] : bool[]) : int {
+  let f = d
+  let g = (- (24.26 % 88.58))
+  return (c(f) + (if true then 350 else e))
+}
+
+time let d[e, f] = (array[d : 993, e : 529] false)

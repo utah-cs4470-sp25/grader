@@ -1,0 +1,17 @@
+fn a() : int[] {
+  let b = a()
+  let c[d] = [a()]
+  return (array[e : ((- d) + 28)] ((sum[f : 673] 549) + (sum[f : d] e)))
+}
+
+struct b {
+a : bool
+b : rgba[]
+}
+fn c(d[e] : float[], f : rgba) : int {
+  assert true, "g"
+  let g[h] = (array[g : c(d, f), h : (- 113)] d)[(sum[g : 20] (sum[h : g] 33)), ((- 895) + e)]
+  return (sum[i : 150, j : (sum[i : 955, j : (- e)] (e * 617))] (sum[k : 527, l : h] h))
+}
+
+let d[e, f] = (array[d : (sum[d : (- 175), e : 680] e), e : (- 335)] (array[f : (- 16), g : (- e)] a()[70]))

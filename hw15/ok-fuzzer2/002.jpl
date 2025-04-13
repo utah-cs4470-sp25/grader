@@ -1,0 +1,10 @@
+let a = (! true)
+read image "b.png" to b
+
+assert true, "c"
+fn c() : void {
+  return c()
+  let d[e, f] = [b, b][(- 406)]
+  return (if (! (! a)) then c() else c())
+}
+

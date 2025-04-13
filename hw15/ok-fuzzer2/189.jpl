@@ -1,0 +1,20 @@
+fn a(b[c] : float[], d[e] : int[]) : bool {
+  let f[g] = d
+  let h[i] = [e, 659]
+  return (true == (! false))
+}
+
+print "b"
+
+fn b(c[d] : void[]) : int[,] {
+  let e = (if false then ((379 - d) / 640) else (if (! true) then (sum[e : 43, f : d] 697) else d))
+  let f = (sum[f : (if false then d else (- 579))] 88.84)
+  return (array[g : (sum[g : (if true then 856 else e)] 123), h : (sum[g : (- 458), h : e] d)] (array[i : 146] d)[e])
+}
+
+fn c(d[e] : float[]) : bool[] {
+  let f[g] = c(d)
+  return f
+  return [f[721], (e == 73)]
+}
+

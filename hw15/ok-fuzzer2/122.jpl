@@ -1,0 +1,4 @@
+assert true, "a"
+let a = 484
+let b[c, d] = [(array[b : a, c : a] 98.98)][(sum[b : a] b)]
+let e[f] = (array[e : (if true then c else 540), f : (- 142)] (array[g : c] f))[((- 994) - a), a]

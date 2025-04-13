@@ -1,0 +1,10 @@
+fn a() : int {
+  let b = [207]
+  return a()
+  return (if (if (78.4 > 67.14) then false else true) then a() else (- (- 664)))
+}
+
+let b[c, d] = (array[b : a(), c : (- (- 62))] (b > b))
+let e = (array[e : d] (- (sum[f : d] e)))
+print "f"
+

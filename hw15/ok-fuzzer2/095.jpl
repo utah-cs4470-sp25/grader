@@ -1,0 +1,19 @@
+fn a(b[c, d] : float[,], e : float) : bool {
+  return a(b, 50.1)
+  let f[g, h] = b
+  return (e < b[h, d])
+}
+
+fn b() : float[] {
+  return b()
+  let c[d] = b()
+  return (if true then (array[e : 685] c) else (array[e : d] b()))[(- 12)]
+}
+
+fn c(d : void[]) : float {
+  let e = ((508 / 655) >= (sum[e : 978] (- 215)))
+  let f[g] = [d, (if e then d else (if true then d else d))]
+  return (sum[h : (g * g), i : (- g)] c(d))
+}
+
+let d[e] = (array[d : (- 776), e : 163] [d, d])[256, 484]

@@ -1,0 +1,9 @@
+time let a = 10.67
+fn b() : void {
+  return b()
+  let c = 169
+  return b()
+}
+
+let c = (sum[c : (if (if true then false else false) then 837 else 95)] 204)
+let d[e] = [(c - 531), (c / (- c))]

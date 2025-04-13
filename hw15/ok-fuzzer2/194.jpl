@@ -1,0 +1,9 @@
+let a = (! (! false))
+let b[c] = (array[b : (267 % 64)] (! (a && true)))
+let d[e, f] = (if false then (array[d : 808, e : 251] a) else (array[d : (- c), e : (if false then c else c)] a))
+fn g(h[i, j] : int[,]) : bool {
+  let k = 98.67
+  let l = (- k)
+  return ((a || false) && (! (a || false)))
+}
+

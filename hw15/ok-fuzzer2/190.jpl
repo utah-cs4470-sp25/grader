@@ -1,0 +1,5 @@
+let a = ((true && false) != (if true then (! false) else (if false then true else false)))
+let b = rgba {99.47, (23.18 - 73.35), 91.1, (if a then 13.61 else 61.0)}.a
+show (array[c : (if true then (if true then 268 else 277) else 500)] 824)
+
+let c = (sum[c : 516, d : 183] (array[e : d, f : d] 65)[198, c])

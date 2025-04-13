@@ -1,0 +1,5 @@
+assert true, "a"
+print "a"
+
+let a = (if ((- 32.73) == (sum[a : 643] 29.07)) then (! (false || true)) else (79.99 < 51.7))
+let b = (sum[b : 340, c : 601] b)

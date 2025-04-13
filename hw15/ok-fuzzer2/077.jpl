@@ -1,0 +1,5 @@
+let a[b, c] = (array[a : (- (sum[a : 422] a)), b : (189 - 272)] (b == (sum[c : b] c)))
+print "d"
+
+let d = (if ((true || true) && true) then (true || (b > c)) else false)
+time assert (false || d), "e"

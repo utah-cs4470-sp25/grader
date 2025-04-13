@@ -1,0 +1,18 @@
+fn a() : bool {
+  let b = false
+  assert (if true then true else (if a() then true else true)), "c"
+  return a()
+}
+
+let b = (if false then [a()] else [false])[495]
+fn c() : void {
+  assert (if false then b else (if a() then (! a()) else a())), "d"
+  assert a(), "d"
+}
+
+fn d(e : int) : float[] {
+  let f[g, h] = (array[f : e, g : 79] (array[h : e, i : g] false))[e, (- 230)]
+  let i[j, k] = (if (false && true) then f else f)
+  return (array[l : (- g)] 97.97)
+}
+

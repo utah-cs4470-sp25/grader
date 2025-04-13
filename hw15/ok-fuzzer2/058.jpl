@@ -1,0 +1,14 @@
+fn a(b[c] : float[], d : void) : float {
+  let e[f, g] = (array[e : (- (905 / c)), f : c] true)
+  let h = d
+  return (sum[i : ((- f) / (f % g))] 80.15)
+}
+
+let b = 80.36
+let c = false
+fn d(e[f] : int[], g : void[]) : int[] {
+  let h[i, j] = (array[h : (- 929), i : (if false then f else (sum[h : 598] 422))] b)
+  let k = (sum[k : (sum[k : f, l : j] (- l))] b)
+  return d((array[l : (i - 217)] (- 35)), g)
+}
+

@@ -1,0 +1,13 @@
+time let a = (- (if false then 93.3 else 8.96))
+show (if ((sum[b : 761, c : 505] 85) == 818) then (6 != 208) else (! false))
+
+fn b(c : void) : void {
+  let d = (- [294][665])
+  return (if (d < d) then b(b(c)) else b(b(c)))
+  return b((if (81.17 != 65.46) then c else b(c)))
+}
+
+struct c {
+a : int
+b : void
+}

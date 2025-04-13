@@ -1,0 +1,13 @@
+let a = (70.32 >= rgba {3.25, 51.53, 90.29, 43.93}.b)
+let b[c] = [(8.58 != 3.41)]
+fn d(e : void, f : rgba) : void {
+  assert (if ((if true then 270 else 277) != (679 / c)) then (539 == c) else (array[g : c, h : c] a)[(c - 502), 689]), "g"
+  let g = (if a then (- f.r) else (85.49 + f.r))
+}
+
+fn e(f[g] : void[]) : float {
+  let h = (! ((g - 966) == (if a then 965 else c)))
+  let i = [(e(f) != e(f))]
+  return 89.08
+}
+

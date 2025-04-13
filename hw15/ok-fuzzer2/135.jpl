@@ -1,0 +1,4 @@
+let a[b] = [(sum[a : 930] (sum[b : a] b)), (sum[a : 618] 600)]
+let c[d] = a
+let e = c
+let f = false

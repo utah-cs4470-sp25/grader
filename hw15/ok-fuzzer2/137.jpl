@@ -1,0 +1,10 @@
+read image "a.png" to a[b, c]
+
+fn d(e : void) : rgba {
+  return d(e)
+  assert ((sum[f : 142, g : (sum[f : 729] 859)] (- 37.47)) > (- 28.9)), "f"
+  return a[(if false then b else (- 415)), (b - c)]
+}
+
+let e = a[4, 499].b
+let f = b

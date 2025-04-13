@@ -1,0 +1,13 @@
+fn a() : int {
+  let b = [(12.9 > 59.31)]
+  let c[d] = [[b], (array[c : a()] b)][(a() - 728)]
+  return 413
+}
+
+let b = false
+let c = false
+fn d() : void {
+  let e[f] = (if (! (259 < 98)) then (array[e : 826] (sum[f : e, g : e] 969)) else [a(), 166])
+  assert true, "g"
+}
+

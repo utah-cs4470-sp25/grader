@@ -1,0 +1,10 @@
+let a[b, c] = (array[a : (- (- 896)), b : 330] b)
+fn d(e[f] : void[]) : void {
+  let g = (array[g : (- a[f, 748]), h : (sum[g : c] c)] (sum[i : h, j : (sum[i : h] b)] (sum[k : i] 8.27)))
+  assert (((285 == c) || (true == false)) && false), "h"
+  return (if true then d(e) else e[(- c)])
+}
+
+print "e"
+
+let e = [[true]]

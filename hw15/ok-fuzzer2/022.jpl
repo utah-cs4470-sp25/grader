@@ -1,0 +1,20 @@
+fn a(b[c, d] : int[,]) : rgba {
+  let e = a((array[e : (sum[e : 449] 302), f : d] (- d)))
+  let f[g, h] = (array[f : d, g : c] b[(sum[h : d, i : d] g), 357])
+  return (if (! (! false)) then a((array[i : c, j : 808] d)) else e)
+}
+
+struct b {
+a : void
+b : void
+}
+fn c() : bool {
+  let d = ((59.3 != 21.05) && c())
+  assert (! c()), "e"
+  return ((! d) != (if (if true then d else false) then d else true))
+}
+
+struct d {
+a : bool
+b : void
+}

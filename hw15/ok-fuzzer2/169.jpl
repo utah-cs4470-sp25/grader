@@ -1,0 +1,9 @@
+fn a(b : float) : int {
+  let c = 38.8
+  let d[e, f] = (if (a(c) > 872) then (array[d : (- 781), e : a(c)] [c, b]) else (array[d : (if true then 698 else 912), e : 842] (array[f : e] b)))
+  return (373 * a(b))
+}
+
+let b[c] = (if (if (true && false) then false else true) then (array[b : 824] b) else (array[b : (if false then 345 else 968)] 698))
+let d[e, f] = (array[d : (- c), e : a(12.37)] 89.04)
+let g[h, i] = (if (97.5 != 72.58) then d else (array[g : (- f), h : 811] (sum[i : f] 14.11)))

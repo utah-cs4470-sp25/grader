@@ -1,0 +1,6 @@
+let a = ((! true) || ((34.6 != 80.05) || (true || true)))
+let b = 89.77
+print "c"
+
+read image "c.png" to c
+

@@ -1,0 +1,9 @@
+assert [false][720], "a"
+let a = 409
+let b = a
+fn c(d[e, f] : void[,], g[h] : int[]) : int {
+  let i[j, k] = (if (! true) then (array[i : f] d) else [d])[b]
+  return 686
+  return h
+}
+

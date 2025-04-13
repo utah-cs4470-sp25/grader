@@ -1,0 +1,14 @@
+let a[b] = (array[a : (- 929), b : 692] [true])[(if (! true) then 783 else 917), (884 % (955 + 339))]
+fn c(d[e, f] : int[,], g[h, i] : rgba[,]) : rgba {
+  let j = c(d, (array[j : (sum[j : f, k : b] i), k : h] c(d, g)))
+  let k = j.b
+  return c((array[l : (b + b), m : i] i), (array[l : e] g)[627])
+}
+
+let d = (1.37 < (array[d : 171] 33.99)[(if true then 535 else 207)])
+fn e(f : int[], g[h, i] : void[,]) : void {
+  let j = a
+  assert (! (716 == b)), "k"
+  return e(f, g)
+}
+

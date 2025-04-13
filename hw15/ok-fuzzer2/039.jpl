@@ -1,0 +1,14 @@
+fn a(b : void) : int {
+  let c = (! ((- 481) >= 378))
+  let d[e] = (array[d : (sum[d : a(b)] 536)] ((! c) || (! true)))
+  return ((sum[f : 120, g : 975] e) / (- (if c then e else e)))
+}
+
+assert true, "b"
+let b[c] = (array[b : (sum[b : (- 756), c : (- 644)] b)] 39.27)
+fn d(e : bool, f : rgba) : rgba {
+  let g = f
+  return [g][c]
+  return d(false, f)
+}
+

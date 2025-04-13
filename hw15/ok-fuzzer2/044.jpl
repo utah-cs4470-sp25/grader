@@ -1,0 +1,10 @@
+print "a"
+
+let a[b] = [(sum[a : (sum[a : 95] 365)] (a % a)), 201]
+fn c(d : float) : bool {
+  let e[f, g] = (array[e : b, f : (- b)] 81.23)
+  let h[i] = (if false then (array[h : (g / g)] (sum[i : h, j : f] b)) else (if (! true) then [g] else (array[h : 163] f)))
+  return (i < (- g))
+}
+
+let d = a

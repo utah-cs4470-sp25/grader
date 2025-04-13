@@ -1,0 +1,9 @@
+fn a() : bool {
+  let b = (sum[b : (- 271)] (46 + b))
+  return true
+  return ((if a() then (! false) else true) || false)
+}
+
+let b[c, d] = (array[b : (sum[b : (227 + 433)] (- 8)), c : (array[b : 153] 837)[111]] ((- 740) <= (- b)))
+let e = (c % c)
+let f[g, h] = (array[f : 97, g : d] [f, d][(sum[h : g] f)])

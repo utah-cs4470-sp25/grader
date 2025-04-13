@@ -1,0 +1,16 @@
+fn a(b[c] : float[]) : rgba {
+  return a(b)
+  let d[e] = (array[d : (if (! false) then 14 else 720)] (- (- 38.69)))
+  return a((array[f : (c + 306)] (10.13 % 21.76)))
+}
+
+read image "b.png" to b
+
+fn c(d[e, f] : bool[,], g[h] : bool[]) : int {
+  let i[j] = (if (! g[f]) then (array[i : h] d) else (array[i : f] d))
+  return f
+  return j
+}
+
+print "d"
+

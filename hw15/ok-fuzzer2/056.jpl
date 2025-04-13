@@ -1,0 +1,7 @@
+read image "a.png" to a
+
+assert ((sum[b : (- 698)] 571) >= 886), "b"
+read image "b.png" to b
+
+print "c"
+

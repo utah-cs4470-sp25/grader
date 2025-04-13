@@ -1,0 +1,10 @@
+show (92 + ((- 994) * 685))
+
+fn a(b[c, d] : void[,], e : float) : bool {
+  assert (if ((e != e) || false) then false else (e > (e - e))), "f"
+  let f = (array[f : (if true then (c + 916) else (sum[f : d] c))] (sum[g : d, h : (- f)] c))
+  return (if false then (if (! false) then true else a(b, 41.69)) else (false || true))
+}
+
+assert (((! true) && (if false then false else false)) && true), "b"
+let b = ((! false) || (! true))

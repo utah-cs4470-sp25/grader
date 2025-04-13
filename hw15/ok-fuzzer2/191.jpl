@@ -1,0 +1,10 @@
+read image "a.png" to a
+
+let b = (sum[b : 905] (sum[c : (- 259)] (sum[d : 205, e : c] 91.66)))
+let c = a[(if true then 108 else (47 - 121)), ((- 186) / 970)]
+fn d() : float {
+  let e[f] = (if false then (array[e : (182 - 772)] c) else (array[e : (sum[e : 88, f : 402] f)] c))
+  let g = 135
+  return 38.48
+}
+

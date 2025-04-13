@@ -1,0 +1,14 @@
+read image "a.png" to a[b, c]
+
+show 77.74
+
+struct d {
+a : rgba
+b : bool
+}
+fn e() : rgba {
+  assert (array[f : 250, g : c] (g < g))[352, (c % b)], "f"
+  return e()
+  return d {e(), (! false)}.a
+}
+

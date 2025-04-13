@@ -1,0 +1,5 @@
+assert (! ((true || true) != true)), "a"
+let a = false
+let b[c] = [51.76]
+print "d"
+

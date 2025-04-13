@@ -1,0 +1,5 @@
+read image "a.png" to a[b, c]
+
+let d[e, f] = a
+let g = f
+let h[i, j] = a

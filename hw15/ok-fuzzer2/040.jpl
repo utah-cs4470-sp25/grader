@@ -1,0 +1,5 @@
+assert (! (! (false && false))), "a"
+let a[b] = (if (! true) then [180] else (array[a : (- 426)] a))
+show 83.05
+
+let c = true

@@ -1,0 +1,19 @@
+fn a(b : void, c : float) : float {
+  assert (376 >= (if false then (- 553) else (- 230))), "d"
+  let d[e, f] = (array[d : (if (! true) then (sum[d : 772] d) else 834), e : (if false then 603 else (- 777))] [(if false then c else c), a(b, c)])
+  return (if true then (array[g : f, h : f] c) else (array[g : f, h : 502] 88.28))[(if (298 < e) then (sum[g : e, h : f] f) else (- f)), (array[g : 515, h : e] h)[(sum[g : e, h : f] h), (- 529)]]
+}
+
+show (sum[b : (470 - (sum[b : 621, c : 310] 61))] b)
+
+fn b(c : float) : void {
+  return b(6.85)
+  assert (((sum[d : 226] 234) / (- 858)) >= (- 69)), "d"
+}
+
+fn c(d[e] : int[]) : bool {
+  let f[g] = d
+  let h = (! (false == false))
+  return (! (true && (! h)))
+}
+

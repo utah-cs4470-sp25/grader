@@ -1,0 +1,9 @@
+fn a() : bool {
+  let b = (((49.06 != 94.28) == true) && (if (! a()) then (if false then true else true) else (a() || a())))
+  assert (448 != 656), "c"
+  return (if false then a() else a())
+}
+
+let b = (((a() == false) || (a() == false)) && (if (! a()) then true else true))
+let c = rgba {34.15, 40.75, (- (- 23.19)), 30.62}
+let d = ((if false then c else c).g > (43.05 * (- 10.88)))

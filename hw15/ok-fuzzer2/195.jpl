@@ -1,0 +1,9 @@
+fn a(b[c] : void[], d[e, f] : bool[,]) : int {
+  let g = false
+  let h[i] = [g]
+  return (if g then f else c)
+}
+
+time time let b = (- 896)
+let c = false
+time let d = ((- 57.24) <= 60.1)

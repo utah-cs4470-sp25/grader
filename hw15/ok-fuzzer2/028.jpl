@@ -1,0 +1,4 @@
+assert [(16.09 != 34.87)][(- (sum[a : 928] a))], "a"
+let a[b, c] = (if false then (array[a : 977, b : (sum[a : 155, b : 113] a)] (b - a)) else (array[a : 79, b : (sum[a : 994] a)] a))
+let d[e] = [((if true then c else b) - 958), 258]
+let f[g, h] = (if ((! false) || false) then [a][228] else a)

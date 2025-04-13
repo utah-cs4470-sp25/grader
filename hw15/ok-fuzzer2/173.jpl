@@ -1,0 +1,9 @@
+assert (((sum[a : 132] 211) % (- 331)) > (- 304)), "a"
+let a = (- (sum[a : 866] a))
+let b[c] = (array[b : 456] b)
+fn d() : bool {
+  assert (if d() then false else (! (! d()))), "e"
+  let e = (if ((a % a) <= 677) then false else (array[e : c] d())[a])
+  return d()
+}
+

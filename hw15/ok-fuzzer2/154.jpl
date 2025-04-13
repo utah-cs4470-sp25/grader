@@ -1,0 +1,9 @@
+fn a() : rgba {
+  let b[c] = [(- (- 321)), 607]
+  let d = (! (! true))
+  return rgba {(- (- 60.79)), (- a().g), 54.18, a().a}
+}
+
+let b[c] = (if true then [true, (952 >= 402)] else [false])
+assert (! b[c]), "d"
+let d[e] = (array[d : (c % c), e : c] [e])[(sum[d : (798 + c), e : (- 732)] 640), (- (- 341))]

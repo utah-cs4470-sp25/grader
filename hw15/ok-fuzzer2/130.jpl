@@ -1,0 +1,14 @@
+fn a() : int {
+  assert ((if (644 > 134) then a() else 969) >= 411), "b"
+  let b[c] = [a()]
+  return (if (! (! false)) then c else b[(111 * a())])
+}
+
+let b = (if false then true else true)
+let c[d, e] = (array[c : (if (! b) then (- a()) else 985), d : a()] (sum[e : c] e))
+fn f(g : bool) : bool {
+  let h = (! g)
+  return (if h then (array[i : a(), j : e] g) else (array[i : d, j : d] g))[(a() * (sum[i : d] d)), (if (565 == d) then d else d)]
+  return ((if (e <= e) then (55.58 % 55.86) else 4.43) >= (- (- 38.32)))
+}
+

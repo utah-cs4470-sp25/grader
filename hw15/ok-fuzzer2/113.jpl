@@ -1,0 +1,9 @@
+let a = true
+let b = (92.3 != 51.12)
+let c[d, e] = (array[c : (681 + (644 / 300)), d : (- (- 889))] ((- 171) <= d))
+fn f(g : float, h[i, j] : bool[,]) : bool {
+  let k = c
+  let l[m] = [[g], [(- g), (- g)]]
+  return (if (! a) then a else false)
+}
+

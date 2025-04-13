@@ -1,0 +1,18 @@
+fn a(b : bool, c[d, e] : int[,]) : int {
+  let f = (sum[f : (sum[f : e, g : 629] e)] f)
+  return (sum[g : 607, h : (if false then d else d)] d)
+  return (if (! false) then (sum[g : e, h : (351 / e)] e) else (- (- e)))
+}
+
+fn b(c : rgba[], d[e] : float[]) : int {
+  let f[g] = (array[f : b(c, d)] (array[g : f] e))[(- (- 614))]
+  assert (if (280 != e) then ((false == true) || true) else false), "h"
+  return (if true then (- 663) else (- e))
+}
+
+show 95.93
+
+time struct c {
+a : float[]
+b : float
+}

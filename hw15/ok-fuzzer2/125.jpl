@@ -1,0 +1,10 @@
+fn a(b : void) : rgba {
+  let c = a(b)
+  let d = (! false)
+  return (if (false == (if true then d else true)) then c else c)
+}
+
+let b = (((- 722) * (- 950)) == (sum[b : (69 + 766)] b))
+assert ((86.15 / 71.95) != (- 55.91)), "c"
+read image "c.png" to c
+

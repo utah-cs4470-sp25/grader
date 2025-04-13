@@ -1,0 +1,14 @@
+assert ((sum[a : (- 559)] (if true then a else a)) == 141), "a"
+fn a(b : rgba, c : int) : float {
+  let d = (((547 <= c) && true) || ((c < 413) || (c < 98)))
+  let e = (686 * (array[e : 271, f : c] c)[(if d then 581 else 655), 983])
+  return 77.49
+}
+
+let b = false
+fn c(d[e, f] : rgba[,]) : float {
+  let g[h, i] = d
+  let j[k] = [g[f, e].r]
+  return d[(- e), f].r
+}
+

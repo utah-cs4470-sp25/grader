@@ -1,0 +1,9 @@
+let a = [97.12]
+fn b() : float {
+  let c[d] = (array[c : (if false then (if false then 718 else 389) else 256)] [(array[d : 267] a)])
+  let e[f, g] = (if true then (array[e : (if true then 107 else d), f : 423] a) else (array[e : 492, f : d] a))
+  return 72.95
+}
+
+let c[d, e] = (array[c : 434] (array[d : 686, e : c] 175))[(- 66)]
+let f[g, h] = c

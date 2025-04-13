@@ -1,0 +1,10 @@
+let a = (- ((- 65.44) - (- 98.0)))
+fn b(c : int, d : rgba) : bool {
+  let e = (- 19.24)
+  let f[g, h] = (array[f : 29, g : (- c)] (array[h : f, i : c] true))[c, (- c)]
+  return ((- (h - g)) == (sum[i : g] g))
+}
+
+time let c = a
+show rgba {(- a), (c / c), 92.55, (sum[d : (- 278)] (- a))}
+

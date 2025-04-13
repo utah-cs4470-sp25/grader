@@ -1,0 +1,16 @@
+struct a {
+a : rgba
+}
+let b = (array[b : 913, c : (- 344)] b)
+fn c(d : rgba, e[f, g] : a[,]) : a {
+  let h[i, j] = (if (false != false) then (array[h : f, i : 954] b)[(- 312), 64] else (array[h : (- 648), i : g] g))
+  let k = ((i != h[i, f]) && true)
+  return a {rgba {d.b, (- 2.06), d.g, 10.35}}
+}
+
+fn d(e[f] : bool[]) : a {
+  let g[h, i] = (array[g : (- 711), h : 961] (array[i : f, j : h] b))[(521 - f), ((if true then 726 else 458) / (- 449))]
+  return d(e)
+  return a {rgba {16.2, 99.75, 28.51, 83.78}}
+}
+

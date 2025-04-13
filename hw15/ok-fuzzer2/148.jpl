@@ -1,0 +1,19 @@
+fn a(b : int) : float {
+  let c[d, e] = (array[c : (sum[c : 963] 843), d : ((- 164) * (if false then 198 else 645))] (array[e : d, f : b] (sum[g : 727] 69.73)))
+  let f[g] = (array[f : b, g : (e * 289)] (array[h : 559] d))[207, d]
+  return (if (if false then (d <= 477) else false) then a(78) else (if false then 87.65 else 45.64))
+}
+
+let b[c, d] = (array[b : (if true then 987 else 627), c : (if false then (261 + 127) else (35 % 226))] c)
+fn e() : float {
+  let f[g] = (if ((- 99.65) > (sum[f : d, g : c] 87.57)) then [d] else [815, d])
+  let h = (20 % (sum[h : b[d, 141], i : (sum[h : d, i : d] 797)] g))
+  return (if ((if false then false else true) || true) then (array[i : 116] 13.28)[(sum[i : 886] g)] else a(948))
+}
+
+fn f(g[h, i] : rgba[,], j : rgba) : float {
+  let k[l] = (if true then (if true then [c] else [d, d]) else (if false then [i] else (array[k : h] h)))
+  assert ((- k[d]) >= b[d, 953]), "m"
+  return (if ((true && true) != (! false)) then 94.9 else (- (- 3.56)))
+}
+

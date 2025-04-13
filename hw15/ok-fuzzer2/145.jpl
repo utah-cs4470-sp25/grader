@@ -1,0 +1,14 @@
+struct a {
+a : int
+b : float
+}
+print "b"
+
+print "b"
+
+fn b(c[d] : bool[], e : void) : a {
+  let f = 6.8
+  let g[h] = [a {282, (- f)}]
+  return b((array[i : 256] false), e)
+}
+

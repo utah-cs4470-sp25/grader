@@ -1,0 +1,12 @@
+let a[b, c] = (array[a : ((- 396) - (- 18)), b : (sum[a : 150] 752)] (a != (- 524)))
+struct d {
+a : bool
+b : bool
+}
+let e = b
+fn f(g : int) : int {
+  let h = (array[h : f(b)] g)[588]
+  let i = 554
+  return e
+}
+

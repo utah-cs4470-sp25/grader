@@ -1,0 +1,11 @@
+show 85.75
+
+struct a {
+a : float
+b : float
+}
+struct b {
+a : float
+b : void
+}
+let c = (- (sum[c : (- 900)] (- 98.25)))

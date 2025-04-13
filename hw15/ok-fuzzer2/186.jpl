@@ -1,0 +1,8 @@
+assert (if (false && (! true)) then (! true) else (! (! true))), "a"
+struct a {
+a : rgba
+}
+read image "b.png" to b
+
+read image "c.png" to c[d, e]
+

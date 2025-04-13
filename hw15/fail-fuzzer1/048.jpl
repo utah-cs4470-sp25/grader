@@ -1,0 +1,31 @@
+let a = (if (! (! (! false))) then (array[a : ((if true then 57 else 410) + (- 528))] rgba {(sum[b : 114] 92.34), (sum[b : a] 29.37), (sum[b : 961] 40.29), (sum[b : a, c : 755, d : a] 26.4)})[((if true then 592 else (- 308)) - ((288 + 157) - 620))] else rgba {(- (- 4.82)), 47.1, (- (sum[a : (- 991), b : 617] 25.4)), 18.8}).g
+time let b = a
+let c[d, e] = (array[c : (- rgba {29.69, (b + b), a, (- 77.03)}.b), d : (- 316)] (- ((if false then (array[e : c, f : 453] f) else (array[e : c, f : d] d))[d, (d * d)] % (- ((sum[e : c, f : d] f) + (d % d))))))
+let f = a
+let g[h] = [(- (if (! ((18.93 <= b) && true)) then e else e)), 406]
+read image "i.png" to i
+
+let j[k, l] = c
+let m = (((i >= a) != ((942 + (- k)) != e)) || ((! (((sum[m : d, n : d] n) <= 908) || (! (! false)))) == (14.79 < f)))
+let n = m
+print "o"
+
+print "o"
+
+let o[p, q, r] = (if m then (if ((if (h > d) then b else f) >= b) then (array[o : 602, p : k, q : e] (if (k != h) then (array[r : 913, s : o, t : o] p) else (array[r : e, s : o, t : d] r))) else (array[o : (array[o : k, p : 983, q : e] d)[h, k, k], p : k, q : d] (array[r : g[e], s : 103, t : k] e)))[(sum[o : (if (930 == (k % e)) then 223 else (l / 433)), p : 915] (- (l + o))), k, (if true then l else e)] else (array[o : n, p : 914, q : e] h))
+show h
+
+time let s[t, u] = c
+show k
+
+let v = rgba {[((8.19 % b) / b), (sum[v : q, w : h, x : d] f), b][(array[v : q, w : 955] u)[t, d]], (b / (- a)), (sum[v : (- (if true then t else u)), w : e, x : r] rgba {(if m then a else f), f, f, b}.a), f}.a
+fn w(x[y] : float[,,][]) : int[] {
+  let z = [(if m then rgba {v, v, (v % v), (- v)} else (if (l <= e) then rgba {b, v, a, a} else rgba {b, a, 72.36, 7.8})), rgba {(89.09 - (if n then b else f)), (- 63.31), q, f}][(if (h >= w(x)[y]) then r else (if false then t else y))].a
+  assert false, "A"
+  let A[B, C, D] = n[t, y, e]
+  return g
+  assert m, "E"
+  return w([(if m then (array[E : 52, F : k, G : D] (array[H : G, I : G, J : q] 34.64)) else (array[E : 813, F : p, G : q] l))[p, D, D], (if (B > y) then (array[E : (r / t), F : y, G : l] x[r])[k, r, p] else (array[E : l, F : d, G : (D - h)] (array[H : G, I : C, J : r] z))[D, q, y]), (if (m != true[g[B], l]) then (array[E : t, F : r, G : k] (- v)) else x[r])])
+}
+
+let x = rgba {f, (if m then (array[x : 977, y : r] (- (sum[z : 701, A : d] a))) else (array[x : d, y : u] f))[(sum[x : 485, y : t] l), q], v, (if n then (array[x : h, y : r, z : r] f) else (array[x : d, y : 171, z : q] v))[q, p, q]}

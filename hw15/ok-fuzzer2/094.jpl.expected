@@ -1,0 +1,116 @@
+global jpl_main
+global _jpl_main
+extern _fail_assertion
+extern _jpl_alloc
+extern _get_time
+extern _show
+extern _print
+extern _print_time
+extern _read_image
+extern _write_image
+extern _fmod
+extern _sqrt
+extern _exp
+extern _sin
+extern _cos
+extern _tan
+extern _asin
+extern _acos
+extern _atan
+extern _log
+extern _pow
+extern _atan2
+extern _to_int
+extern _to_float
+
+section .data
+const0: dq 1.17
+const1: dq 47.51
+const2: dq 99.7
+const3: db `e`, 0
+const4: dq 0
+const5: db `d`, 0
+
+section .text
+c:
+_c:
+	push rbp
+	mov rbp, rsp
+	mov rax, [rel const2] ; 99.7
+	push rax
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 8 to rsp 
+		mov r10, [rbp - 8 + 0]
+		mov [rsp + 0], r10
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 8 to rsp 
+		mov r10, [rbp - 8 + 0]
+		mov [rsp + 0], r10
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	addsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 8 to rsp 
+		mov r10, [rbp - 8 + 0]
+		mov [rsp + 0], r10
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmplesd xmm1, xmm0
+	movq rax, xmm1
+	and rax, 1
+	push rax
+	pop rax
+	cmp rax, 0
+	jne .jump1
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const3] ; 'e'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump1:
+	mov rax, [rel const4] ; False
+	push rax
+	pop rax
+	add rsp, 8 ; Local variables
+	pop rbp
+	ret
+
+jpl_main:
+_jpl_main:
+	push rbp
+	mov rbp, rsp
+	push r12
+	mov r12, rbp ; end of jpl_main prelude
+	mov rax, [rel const0] ; 1.17
+	push rax
+	mov rax, [rel const1] ; 47.51
+	push rax
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 16 to rsp 
+		mov r10, [rbp - 16 + 0]
+		mov [rsp + 0], r10
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmpltsd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	lea rdi, [rel const5] ; 'd'
+	sub rsp, 8 ; Add alignment
+	call _print
+	add rsp, 8 ; Remove alignment
+	add rsp, 16 ; Local variables
+	pop r12 ; begin jpl_main postlude
+	pop rbp
+	ret
+

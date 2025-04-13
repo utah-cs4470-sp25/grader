@@ -1,0 +1,12 @@
+fn a() : float {
+  let b = (824 > (sum[b : 865] (sum[c : 81, d : 374] 768)))
+  let c = (array[c : (586 - 956), d : 400] (sum[e : d, f : 199] f))[((sum[c : 112] 679) + (- 631)), 845]
+  return a()
+}
+
+struct b {
+a : bool
+}
+let c[d, e] = (array[c : [225][121], d : (4 / 502)] b {true}.a)
+print "f"
+

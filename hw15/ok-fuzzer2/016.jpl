@@ -1,0 +1,10 @@
+let a = 91.69
+let b = (- (- (- a)))
+fn c(d[e, f] : bool[,], g[h] : bool[]) : bool[,] {
+  let i[j, k] = (if ((if true then true else false) || (! true)) then (array[i : f] d)[(sum[i : e] i)] else (array[i : e, j : f] d)[(sum[i : 662, j : 942] j), f])
+  let l[m] = [f, (sum[l : k, m : (- e)] e)]
+  return i
+}
+
+show (array[d : (- 453)] (- 833))[(- (sum[d : 332] 780))]
+

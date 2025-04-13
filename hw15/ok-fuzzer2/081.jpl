@@ -1,0 +1,10 @@
+let a[b] = (if (! (688 == 746)) then [true, false] else (array[a : (sum[a : 912] a)] (a >= a)))
+fn c(d[e] : rgba[], f : void) : int {
+  return c(d, (if a[e] then f else (if false then f else f)))
+  let g = d
+  return (sum[h : c(g, f)] (c(g, f) * b))
+}
+
+print "d"
+
+let d[e, f] = (array[d : (- 675), e : b] a)

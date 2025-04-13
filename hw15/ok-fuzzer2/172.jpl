@@ -1,0 +1,5 @@
+let a = (! (! (! false)))
+show (- 1.01)
+
+let b[c] = [(- 319)]
+let d[e] = (array[d : (sum[d : c] d)] [d])[(if (! a) then c else c)]

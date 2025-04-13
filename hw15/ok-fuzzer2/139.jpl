@@ -1,0 +1,14 @@
+print "a"
+
+fn a(b : void) : bool {
+  let c = (a(b) != (if a(b) then false else a(b)))
+  let d = a((if c then (if c then b else b) else (if c then b else b)))
+  return (if a(b) then d else (! (39.35 <= 3.24)))
+}
+
+let b = (16.51 > (sum[b : (if false then 968 else 985)] (- 31.58)))
+fn c(d[e, f] : rgba[,], g[h, i] : float[,]) : void {
+  let j = [f, ((- 818) + i)]
+  return c(d, (array[k : (- i), l : (h / f)] (sum[m : 625] 48.46)))
+}
+

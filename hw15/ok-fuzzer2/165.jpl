@@ -1,0 +1,14 @@
+let a[b] = (array[a : 630] ((- a) == a))
+fn c() : bool[] {
+  let d[e] = [[97.48]]
+  let f[g, h] = (array[f : e] (array[g : 909, h : e] c()))[(- 421)]
+  return (if (if true then c() else c())[e] then [true, (! true)] else c())
+}
+
+fn d() : rgba[,] {
+  let e = (array[e : (- 231)] (! (! false)))
+  let f = (array[f : b, g : (52 - 533)] true)
+  return (if ((- 553) == (b * 67)) then d() else d())
+}
+
+let e[f, g] = d()

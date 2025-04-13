@@ -1,0 +1,5 @@
+print "a"
+
+assert (451 > (218 + (483 / 344))), "a"
+let a[b, c] = (array[a : 673, b : (sum[a : 110, b : 396] 155)] (! false))
+let d[e] = (array[d : c, e : c] [84])[654, c]

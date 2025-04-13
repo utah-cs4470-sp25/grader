@@ -1,0 +1,20 @@
+read image "a.png" to a
+
+fn b(c[d, e] : float[,]) : int {
+  let f = (array[f : e, g : (- e)] a)[[498, e][b(c)], (155 + 808)]
+  let g[h] = (array[g : (if false then d else (d - e))] c)
+  return e
+}
+
+fn c() : bool {
+  let d[e, f] = (if (c() != (c() || false)) then a else (if (c() != c()) then a else a))
+  assert false, "g"
+  return (if (if false then true else (true && c())) then c() else true)
+}
+
+fn d() : int {
+  let e[f, g] = (if ((! c()) && c()) then (if true then a else a) else (array[e : 556, f : 192] a[d(), d()]))
+  let h = 795
+  return d()
+}
+

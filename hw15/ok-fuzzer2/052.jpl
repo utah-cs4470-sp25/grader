@@ -1,0 +1,6 @@
+let a[b, c] = (array[a : ((sum[a : 178, b : 434] b) / 348), b : 361] (sum[c : (sum[c : a, d : a] b), d : b] (sum[e : c] 0.79)))
+read image "d.png" to d
+
+assert (true || (! (! false))), "e"
+print "e"
+

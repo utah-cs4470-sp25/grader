@@ -1,0 +1,14 @@
+fn a() : void {
+  assert true, "b"
+  let b[c, d] = (array[b : (- 289), c : (if (! false) then 362 else 683)] (777 * (sum[d : c, e : b] c)))
+  return a()
+}
+
+fn b() : bool[,] {
+  let c = false
+  let d[e] = [(sum[d : (- 689)] (sum[e : 665, f : d] f)), (sum[d : 793] (d * 57))]
+  return (array[f : (e - 64)] (array[g : e, h : e] false))[e]
+}
+
+let c = false
+time time let d = 33

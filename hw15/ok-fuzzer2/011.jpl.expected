@@ -1,0 +1,207 @@
+global jpl_main
+global _jpl_main
+extern _fail_assertion
+extern _jpl_alloc
+extern _get_time
+extern _show
+extern _print
+extern _print_time
+extern _read_image
+extern _write_image
+extern _fmod
+extern _sqrt
+extern _exp
+extern _sin
+extern _cos
+extern _tan
+extern _asin
+extern _acos
+extern _atan
+extern _log
+extern _pow
+extern _atan2
+extern _to_int
+extern _to_float
+
+section .data
+const0: dq 1
+const1: db `a`, 0
+const2: dq 643
+const3: db `non-positive loop bound`, 0
+const4: dq 29.07
+const5: dq 32.73
+const6: dq 0
+const7: dq 51.7
+const8: dq 79.99
+const9: dq 601
+const10: dq 340
+
+section .text
+jpl_main:
+_jpl_main:
+	push rbp
+	mov rbp, rsp
+	push r12
+	mov r12, rbp ; end of jpl_main prelude
+	mov rax, [rel const0] ; True
+	push rax
+	pop rax
+	cmp rax, 0
+	jne .jump1
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const1] ; 'a'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump1:
+	lea rdi, [rel const1] ; 'a'
+	sub rsp, 8 ; Add alignment
+	call _print
+	add rsp, 8 ; Remove alignment
+	; Allocating 8 bytes for the sum
+	sub rsp, 8
+	; Computing bound for 'a'
+	mov rax, [rel const2] ; 643
+	push rax
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump2
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const3] ; 'non-positive loop bound'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump2:
+	; Initialize sum to 0
+	mov rax, 0
+	mov [rsp + 8], rax ; Move to pre-allocated space
+	; Initialize 'a' to 0
+	mov rax, 0
+	push rax
+.jump3: ; Begin body of loop
+	; Compute loop body
+	mov rax, [rel const4] ; 29.07
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	addsd xmm0, [rsp + 16] ; Load sum
+	movsd [rsp + 16], xmm0 ; Save sum
+	; Increment 'a'
+	add qword [rsp + 0], 1
+	; Compare a to its bound
+	mov rax, [rsp + 0]
+	cmp rax, [rsp + 8]
+	jl .jump3 ; If a < bound, next iter
+	; End body of loop
+	; Free all loop variables
+	add rsp, 8
+	; Free all loop bounds
+	add rsp, 8
+	; sum left on stack
+	mov rax, [rel const5] ; 32.73
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmpeqsd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
+	push rax
+	pop rax
+	cmp rax, 0
+	je .jump4
+	mov rax, [rel const6] ; False
+	push rax
+	pop rax
+	cmp rax, 0
+	jne .jump6
+	mov rax, [rel const0] ; True
+	push rax
+	pop rax
+.jump6:
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	jmp .jump5
+.jump4:
+	mov rax, [rel const7] ; 51.7
+	push rax
+	mov rax, [rel const8] ; 79.99
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmpltsd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
+	push rax
+.jump5:
+	; Allocating 8 bytes for the sum
+	sub rsp, 8
+	; Computing bound for 'c'
+	mov rax, [rel const9] ; 601
+	push rax
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump7
+	lea rdi, [rel const3] ; 'non-positive loop bound'
+	call _fail_assertion
+.jump7:
+	; Computing bound for 'b'
+	mov rax, [rel const10] ; 340
+	push rax
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump8
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const3] ; 'non-positive loop bound'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump8:
+	; Initialize sum to 0
+	mov rax, 0
+	mov [rsp + 16], rax ; Move to pre-allocated space
+	; Initialize 'c' to 0
+	mov rax, 0
+	push rax
+	; Initialize 'b' to 0
+	mov rax, 0
+	push rax
+.jump9: ; Begin body of loop
+	; Compute loop body
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 56 to rsp 
+		mov r10, [rbp - 56 + 0]
+		mov [rsp + 0], r10
+	pop rax
+	add [rsp + 32], rax ; Add loop body to sum
+	; Increment 'c'
+	add qword [rsp + 8], 1
+	; Compare c to its bound
+	mov rax, [rsp + 8]
+	cmp rax, [rsp + 24]
+	jl .jump9 ; If c < bound, next iter
+	mov qword [rsp + 8], 0 ; c = 0
+	add qword [rsp + 0], 1 ; b++
+	; Compare b to its bound
+	mov rax, [rsp + 0]
+	cmp rax, [rsp + 16]
+	jl .jump9 ; If b < bound, next iter
+	; End body of loop
+	; Free all loop variables
+	add rsp, 16
+	; Free all loop bounds
+	add rsp, 16
+	; sum left on stack
+	add rsp, 16 ; Local variables
+	pop r12 ; begin jpl_main postlude
+	pop rbp
+	ret
+

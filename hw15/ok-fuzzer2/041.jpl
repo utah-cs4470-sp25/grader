@@ -1,0 +1,11 @@
+let a[b] = (array[a : (489 * (- 880))] (! true))
+fn c() : rgba {
+  let d[e, f] = (array[d : (if a[600] then 234 else b), e : b] (array[f : (- e)] a))
+  assert (((! true) == false) || true), "g"
+  return c()
+}
+
+time struct d {
+a : int
+}
+let e[f, g] = (array[e : 508, f : (sum[e : (- 869), f : 867] (sum[g : e] e))] (- f))

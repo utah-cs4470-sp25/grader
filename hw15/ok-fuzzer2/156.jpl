@@ -1,0 +1,5 @@
+let a[b, c] = (array[a : (if (! false) then (- 973) else 546), b : (- 447)] (7.76 + (- 6.42)))
+let d[e, f] = (array[d : (sum[d : 930] c), e : 469] a)[b, (- (- b))]
+read image "g.png" to g[h, i]
+
+assert (! (! (960 <= i))), "j"

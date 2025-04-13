@@ -1,0 +1,14 @@
+time let a = [33.03, 66.67]
+fn b() : int {
+  return b()
+  let c[d] = (array[c : (array[c : 84] 623)[b()]] true)
+  return (b() % [156, b()][693])
+}
+
+let c = a
+fn d(e[f, g] : int[,], h : rgba) : void[] {
+  let i = g
+  let j[k] = c
+  return d(e, rgba {h.a, 22.3, h.a, (sum[l : g, m : f] 23.48)})
+}
+

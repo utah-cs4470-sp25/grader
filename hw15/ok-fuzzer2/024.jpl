@@ -1,0 +1,8 @@
+show (((- 91.19) / (sum[a : 346] 74.31)) > 36.76)
+
+read image "a.png" to a
+
+write image [a][421] to "b.png"
+
+time print "b"
+

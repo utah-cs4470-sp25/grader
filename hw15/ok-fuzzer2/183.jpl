@@ -1,0 +1,18 @@
+fn a() : void {
+  let b[c, d] = (array[b : (sum[b : 626, c : (- 197)] b), c : (sum[b : 535, c : 795] c)] ((sum[d : b, e : 260] d) != 369))
+  return a()
+  return (if (! (! true)) then a() else (if b[d, 32] then a() else a()))
+}
+
+fn b() : int[,] {
+  let c = (sum[c : (- (sum[c : 464] c)), d : (- (if true then 886 else 314))] (if (57.73 >= 79.0) then (757 % c) else (if false then 632 else d)))
+  let d[e] = (array[d : c, e : 477] (array[f : c] 760))[(- 944), 312]
+  return (if (! (! true)) then (array[f : 598] b())[e] else b())
+}
+
+assert true, "c"
+fn c() : void {
+  let d = (array[d : 132, e : 959] b()[b()[358, d], (e * e)])
+  assert (((false || true) == (! false)) == false), "e"
+}
+

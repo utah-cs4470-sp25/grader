@@ -1,0 +1,9 @@
+let a = (- (sum[a : 366, b : (- 147)] (if true then 0.77 else 38.67)))
+let b = (sum[b : (636 % 661)] (- (a % a)))
+let c[d] = (array[c : ((- 539) - (- 192))] ((- 68.69) > 50.8))
+fn e() : void[] {
+  let f = (if (array[f : d] true)[(- d)] then c else [true])
+  let g[h] = f
+  return e()
+}
+

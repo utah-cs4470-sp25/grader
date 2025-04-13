@@ -1,0 +1,9 @@
+let a[b, c] = (if (96.14 != 32.95) then (array[a : 853, b : (sum[a : 74] a)] b) else (array[a : (993 * 731), b : (- 480)] b))
+fn d(e[f] : bool[], g[h] : int[]) : bool {
+  let i = f
+  return (if d([false], (if false then g else g)) then true else (! false))
+  return (! (array[j : h] true)[i])
+}
+
+assert (array[e : b, f : (sum[e : c] c)] false)[(a[b, c] + (- b)), ((- c) - 926)], "e"
+let e[f] = (array[e : (if true then c else c)] (! false))

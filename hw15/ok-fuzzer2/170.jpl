@@ -1,0 +1,6 @@
+assert (if (224 <= (916 - 524)) then true else (! (! false))), "a"
+let a[b] = (array[a : 973, b : (- 674)] [a, b])[597, (710 % (sum[a : 662] 5))]
+print "c"
+
+show true
+

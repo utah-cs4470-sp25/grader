@@ -1,0 +1,15 @@
+let a = (787 * 548)
+write image (array[b : (sum[b : a] (if true then b else 960)), c : (- (sum[b : 264, c : a] c))] rgba {65.39, 90.77, (sum[d : 507] 71.83), (- 72.95)}) to "b.png"
+
+fn b(c : bool[]) : void {
+  let d[e] = (array[d : (if c[578] then (if false then a else 714) else a)] d)
+  let f = (array[f : (array[f : e, g : a] e)[(sum[f : a] 151), e], g : 196] ((if false then false else true) && true))
+  return (if ((84.93 >= 6.27) || (! false)) then b(c) else b(c))
+}
+
+fn c(d : float) : float {
+  let e[f] = [(sum[e : (- a), f : a] c(d)), (sum[e : (- a), f : (if true then a else a)] d)]
+  let g[h, i] = (if false then (array[g : a, h : f] d) else (array[g : (167 - 951), h : (sum[g : a, h : 296] h)] e[612]))
+  return [g][i][436, h]
+}
+

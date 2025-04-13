@@ -1,0 +1,4 @@
+let a = ((484 != 309) != (false && (true && true)))
+let b[c] = (array[b : (sum[b : 527] 421)] (a && false))
+let d[e] = (array[d : (sum[d : 364] c)] [48.55])[(- (if a then c else 521))]
+let f = [a, (! (false || a))]

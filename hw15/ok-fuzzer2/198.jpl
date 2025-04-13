@@ -1,0 +1,9 @@
+let a[b, c] = (array[a : 487, b : (- 159)] (array[c : a, d : 346] d))[(if true then 951 else (- 619)), 490]
+let d = c
+fn e(f : float[,]) : rgba[,] {
+  assert (69.98 <= (sum[g : (- b)] (sum[h : b] 86.66))), "g"
+  let g[h, i] = e((if (c <= 848) then f else f))
+  return (array[j : (- h), k : b] g)[(- c), (- 858)]
+}
+
+time let f = c

@@ -1,0 +1,10 @@
+fn a(b : bool) : int {
+  assert (b == ((86.17 - 63.68) <= (if true then 71.39 else 41.89))), "c"
+  let c = (sum[c : (- (sum[c : 609, d : 142] d))] (- (if false then 26.84 else 70.11)))
+  return ((a(true) % (- 69)) / (sum[d : 793, e : 779] d))
+}
+
+let b = (! true)
+let c = rgba {(- 25.66), 35.9, 63.88, 36.34}.g
+print "d"
+

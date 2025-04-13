@@ -1,0 +1,15 @@
+assert true, "a"
+show (array[a : 966] 90.01)[(- (- 938))]
+
+fn a(b[c, d] : bool[,]) : void {
+  let e = 68.37
+  return a((array[f : c, g : c] b)[59, 102])
+  return a((array[f : 207, g : c] b)[(- 66), 948])
+}
+
+fn b(c[d, e] : float[,]) : float {
+  let f = a((if (true != false) then (array[f : d, g : d] false) else (array[f : d, g : d] true)))
+  let g[h] = (array[g : (- d)] rgba {42.15, 37.4, 78.17, c[600, 699]})
+  return (sum[i : d] 52.66)
+}
+

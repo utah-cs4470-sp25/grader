@@ -1,0 +1,9 @@
+let a = (if (607 <= (- 797)) then 238 else (if true then 637 else (813 * 136)))
+let b = true
+fn c(d[e, f] : rgba[,], g : bool[]) : rgba {
+  let h[i, j] = d
+  let k = j
+  return (if false then c((if b then h else d), (if false then g else g)) else rgba {83.97, (- 38.28), (if b then 69.02 else 65.39), 64.23})
+}
+
+let d[e] = (array[d : ((sum[d : 784] 346) - 724)] (array[e : d, f : (- d)] e))

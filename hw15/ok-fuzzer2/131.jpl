@@ -1,0 +1,10 @@
+let a = (sum[a : 62, b : (188 / 99)] 107)
+fn b() : int {
+  let c[d, e] = (array[c : b(), d : b()] (array[e : 906, f : d] c))[a, b()]
+  let f[g, h] = c
+  return (if (e > g) then (- h) else b())
+}
+
+let c[d, e] = (array[c : a, d : a] 83.76)
+time print "f"
+

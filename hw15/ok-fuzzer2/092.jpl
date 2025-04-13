@@ -1,0 +1,10 @@
+fn a() : float {
+  let b = [a()]
+  let c[d, e] = (array[c : (sum[c : 667] (if true then 88 else c)), d : 230] (array[e : c] a()))
+  return 69.64
+}
+
+show true
+
+let b[c, d] = (array[b : (array[b : 539] b)[648], c : ((if true then 68 else 546) / 254)] b)
+time let e[f, g] = (if (d >= c) then (array[e : c, f : c] f) else b)

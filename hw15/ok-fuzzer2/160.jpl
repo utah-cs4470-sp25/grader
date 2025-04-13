@@ -1,0 +1,15 @@
+show (- (sum[a : 440, b : 189] (sum[c : a] 54.42)))
+
+let a = ((- (- 28.39)) + (- (33.68 * 12.82)))
+fn b(c : void, d : bool) : bool[] {
+  let e = ((d && true) && (! (! true)))
+  let f = d
+  return b(c, f)
+}
+
+fn c(d[e, f] : bool[,]) : bool {
+  let g[h, i] = (array[g : f] d)[(- e)]
+  let j = 68.69
+  return ((if (f < e) then j else (sum[k : 796, l : i] j)) == a)
+}
+

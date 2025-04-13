@@ -1,0 +1,6 @@
+let a[b] = [false]
+show rgba {(sum[c : b] 8.7), 21.34, (82.9 * 82.53), (sum[c : 253] 52.05)}.r
+
+write image (array[c : 72, d : b] rgba {11.64, (if false then 32.89 else 18.35), (- 39.31), 7.01}) to "c.png"
+
+let c[d, e] = [(array[c : 292, d : 364] a)][((sum[c : 217] c) / 593)]

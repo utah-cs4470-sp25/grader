@@ -1,0 +1,12 @@
+let a[b, c] = (array[a : (- 682), b : (sum[a : 570, b : 380] a)] 858)
+let d[e, f] = a
+fn g() : int {
+  let h[i] = (if (39.34 != (sum[h : c] 77.29)) then (array[h : e] f) else (array[h : g()] g()))
+  let j = a
+  return 117
+}
+
+time struct h {
+a : int
+b : bool
+}

@@ -1,0 +1,10 @@
+let a = (590 > 889)
+let b = (if true then [a][(- 113)] else a)
+fn c() : int {
+  return (sum[d : (sum[d : c()] c())] d)
+  let d = (if (! b) then 65.44 else ((sum[d : 688, e : c()] 94.08) % (sum[d : 217] 4.53)))
+  return (array[e : c(), f : 265] c())[(if false then (c() % 605) else c()), ((if true then c() else c()) + 867)]
+}
+
+show (93.93 == (sum[d : 244, e : c()] (- 27.2)))
+

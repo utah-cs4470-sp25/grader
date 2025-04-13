@@ -1,0 +1,11 @@
+show 878
+
+let a = (sum[a : (if false then 945 else 285), b : 52] (sum[c : (sum[c : 878] a), d : (- a)] a))
+fn b(c[d] : bool[]) : rgba {
+  let e = 84.43
+  let f = (! ((50.71 >= 77.47) && (! true)))
+  return (if f then rgba {(sum[g : 446, h : 955] 92.72), 95.99, (e / e), (- 90.85)} else rgba {(- e), 93.08, (sum[g : a] 98.18), (- 75.82)})
+}
+
+write image (array[c : (- 207), d : (if false then 474 else (524 * 121))] b((array[e : c] false))) to "c.png"
+

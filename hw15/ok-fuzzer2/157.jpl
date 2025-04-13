@@ -1,0 +1,15 @@
+let a[b, c] = (array[a : (sum[a : (- 155), b : 401] (- b)), b : 880] 54)
+fn d() : bool {
+  let e = d()
+  let f = rgba {2.68, 85.83, 85.77, 10.5}.r
+  return d()
+}
+
+fn e() : bool {
+  let f[g] = [((c / b) == (b * 63)), ((b == c) && (c == 702))]
+  let h[i, j] = [a][(- c)]
+  return (if (! true) then (d() && d()) else d())
+}
+
+read image "f.png" to f
+

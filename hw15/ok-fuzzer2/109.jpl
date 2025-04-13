@@ -1,0 +1,9 @@
+let a = ((true == (! false)) && ((825 % 588) == 6))
+fn b() : bool {
+  assert a, "c"
+  return a
+  return (! (339 > 832))
+}
+
+let c[d, e] = (array[c : 681, d : 411] (if true then c else (- 778)))
+time let f[g, h] = (if a then (if a then c else c) else (array[f : e, g : 53] 862))

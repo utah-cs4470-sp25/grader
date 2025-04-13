@@ -1,0 +1,10 @@
+let a[b] = [(array[a : 500, b : 489] 263), (array[a : 135, b : 610] a)]
+let c[d, e] = (array[c : (- b), d : b] (array[e : b, f : (sum[e : d, f : d] 697)] (98.19 - 21.9)))
+fn f() : void {
+  let g[h] = (if (! (! false)) then a else (array[g : d] (array[h : b, i : e] g)))
+  let i = false
+  return (if false then f() else (array[j : h, k : e] f())[b, d])
+}
+
+print "g"
+

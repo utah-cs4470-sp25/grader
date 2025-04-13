@@ -1,0 +1,9 @@
+time time show (! true)
+
+fn a(b[c] : rgba[], d : int) : void {
+  let e = ((! (! true)) || true)
+  return a(b, (- d))
+}
+
+assert (65.93 >= 57.38), "b"
+assert true, "b"

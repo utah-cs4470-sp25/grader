@@ -1,0 +1,6 @@
+read image "a.png" to a
+
+write image [a, a][(sum[b : (605 - 813), c : (if true then 806 else 54)] c)] to "b.png"
+
+time let b[c] = (array[b : (sum[b : 363] 595)] (! true))
+let d[e, f] = [a][((sum[d : 350] 889) + c)]

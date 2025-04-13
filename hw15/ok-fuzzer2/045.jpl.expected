@@ -1,0 +1,262 @@
+global jpl_main
+global _jpl_main
+extern _fail_assertion
+extern _jpl_alloc
+extern _get_time
+extern _show
+extern _print
+extern _print_time
+extern _read_image
+extern _write_image
+extern _fmod
+extern _sqrt
+extern _exp
+extern _sin
+extern _cos
+extern _tan
+extern _asin
+extern _acos
+extern _atan
+extern _log
+extern _pow
+extern _atan2
+extern _to_int
+extern _to_float
+
+section .data
+const0: dq 19.97
+const1: dq 1.26
+const2: dq 72.85
+const3: db `(BoolType)`, 0
+const4: dq 38.57
+const5: dq 72.75
+const6: dq 989
+const7: dq 413
+const8: db `non-positive loop bound`, 0
+const9: dq 99
+const10: db `overflow computing array size`, 0
+const11: dq 542
+const12: dq 861
+const13: db `(ArrayType (ArrayType (IntType) 1) 2)`, 0
+const14: db `a`, 0
+const15: dq 1
+const16: dq 0
+const17: dq 38.84
+const18: dq 46.63
+
+section .text
+jpl_main:
+_jpl_main:
+	push rbp
+	mov rbp, rsp
+	push r12
+	mov r12, rbp ; end of jpl_main prelude
+	mov rax, [rel const0] ; 19.97
+	push rax
+	movsd xmm1, [rsp]
+	add rsp, 8
+	pxor xmm0, xmm0
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const1] ; 1.26
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	subsd xmm0, xmm1
+	sub rsp, 8
+	movsd [rsp], xmm0
+	mov rax, [rel const2] ; 72.85
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmplesd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
+	push rax
+	lea rdi, [rel const3] ; '(BoolType)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 8
+	; Allocating 8 bytes for the pointer
+	sub rsp, 8
+	; Computing bound for 'b'
+	mov rax, [rel const4] ; 38.57
+	push rax
+	mov rax, [rel const5] ; 72.75
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmpneqsd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
+	push rax
+	pop rax
+	cmp rax, 0
+	je .jump1
+	mov rax, [rel const6] ; 989
+	push rax
+	jmp .jump2
+.jump1:
+	mov rax, [rel const7] ; 413
+	push rax
+.jump2:
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump3
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const8] ; 'non-positive loop bound'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump3:
+	; Computing bound for 'a'
+	mov rax, [rel const9] ; 99
+	push rax
+	mov rax, [rsp]
+	cmp rax, 0
+	jg .jump4
+	lea rdi, [rel const8] ; 'non-positive loop bound'
+	call _fail_assertion
+.jump4:
+	; Computing total size of heap memory to allocate
+	mov rdi, 16 ; sizeof int[] 
+	imul rdi, [rsp + 0 + 0] ; multiply by 99 
+	jno .jump5
+	lea rdi, [rel const10] ; 'overflow computing array size'
+	call _fail_assertion
+.jump5:
+	imul rdi, [rsp + 0 + 8] ; multiply by (if (72.75 != 38.57) then 989 else 413) 
+	jno .jump6
+	lea rdi, [rel const10] ; 'overflow computing array size'
+	call _fail_assertion
+.jump6:
+	call _jpl_alloc ; Put pointer to heap space in RAX
+	mov [rsp + 16], rax ; Move to pre-allocated space
+	; Initialize 'b' to 0
+	mov rax, 0
+	push rax
+	; Initialize 'a' to 0
+	mov rax, 0
+	push rax
+.jump7: ; Begin body of loop
+	; Compute loop body
+	mov rax, [rel const11] ; 542
+	push rax
+	mov rax, [rel const12] ; 861
+	push rax
+	mov rdi, 16
+	call _jpl_alloc
+	; Moving 16 bytes from rsp to rax 
+		mov r10, [rsp + 8]
+		mov [rax + 8], r10
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 16
+	push rax
+	mov rax, 2
+	push rax
+	; Index to store in
+	mov rax, 0
+	imul rax, [rsp + 32] ; No overflow if indices in bounds
+	add rax, [rsp + 16]
+	imul rax, [rsp + 40] ; No overflow if indices in bounds
+	add rax, [rsp + 24]
+	imul rax, 16
+	add rax, [rsp + 48]
+	; Move body (16 bytes) to index
+	; Moving 16 bytes from rsp to rax 
+		mov r10, [rsp + 8]
+		mov [rax + 8], r10
+		mov r10, [rsp + 0]
+		mov [rax + 0], r10
+	add rsp, 16
+	; Increment 'b'
+	add qword [rsp + 8], 1
+	; Compare b to its bound
+	mov rax, [rsp + 8]
+	cmp rax, [rsp + 24]
+	jl .jump7 ; If b < bound, next iter
+	mov qword [rsp + 8], 0 ; b = 0
+	add qword [rsp + 0], 1 ; a++
+	; Compare a to its bound
+	mov rax, [rsp + 0]
+	cmp rax, [rsp + 16]
+	jl .jump7 ; If a < bound, next iter
+	; End body of loop
+	; Free all loop variables
+	add rsp, 16
+	; array left on stack
+	lea rdi, [rel const13] ; '(ArrayType (ArrayType (IntType) 1) 2)'
+	lea rsi, [rsp]
+	call _show
+	add rsp, 24
+	lea rdi, [rel const14] ; 'a'
+	sub rsp, 8 ; Add alignment
+	call _print
+	add rsp, 8 ; Remove alignment
+	mov rax, [rel const15] ; True
+	push rax
+	pop rax
+	cmp rax, 0
+	je .jump8
+	mov rax, [rel const15] ; True
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	pop rax
+	cmp rax, 0
+	je .jump10
+	mov rax, [rel const16] ; False
+	push rax
+	pop rax
+	xor rax, 1
+	push rax
+	jmp .jump11
+.jump10:
+	mov rax, [rel const17] ; 38.84
+	push rax
+	mov rax, [rel const18] ; 46.63
+	push rax
+	movsd xmm0, [rsp]
+	add rsp, 8
+	movsd xmm1, [rsp]
+	add rsp, 8
+	cmplesd xmm0, xmm1
+	movq rax, xmm0
+	and rax, 1
+	push rax
+.jump11:
+	jmp .jump9
+.jump8:
+	mov rax, [rel const15] ; True
+	push rax
+	pop rax
+	cmp rax, 0
+	je .jump12
+	mov rax, [rel const16] ; False
+	push rax
+	jmp .jump13
+.jump12:
+	mov rax, [rel const16] ; False
+	push rax
+.jump13:
+.jump9:
+	pop rax
+	cmp rax, 0
+	jne .jump14
+	sub rsp, 8 ; Add alignment
+	lea rdi, [rel const14] ; 'a'
+	call _fail_assertion
+	add rsp, 8 ; Remove alignment
+.jump14:
+	pop r12 ; begin jpl_main postlude
+	pop rbp
+	ret
+

@@ -1,0 +1,18 @@
+let a = (- (if true then (- 14.56) else (if false then 48.78 else 29.12)))
+fn b(c[d, e] : rgba[,], f[g] : float[]) : bool {
+  let h[i, j] = (if false then (array[h : e, i : 656] h) else (array[h : d, i : (sum[h : e] d)] (- d)))
+  let k = (a * 15.33)
+  return (a != k)
+}
+
+fn c() : void {
+  let d = c()
+  let e[f, g] = (array[e : (sum[e : 169] (- e)), f : (- 476)] (array[g : e] (array[h : g] c())))
+}
+
+fn d(e : rgba[], f[g] : bool[]) : rgba {
+  let h[i] = [e, e]
+  let j[k] = h
+  return d((if (! false) then e else j[k]), [(a != a)])
+}
+

@@ -1,0 +1,9 @@
+let a = (sum[a : 733, b : 580] 12.19)
+let b = (a * (sum[b : (874 / 425), c : (903 % 610)] (a / 62.92)))
+let c[d, e] = (array[c : 98, d : (- (- 908))] false)
+fn f(g : bool) : int[] {
+  let h[i, j] = (if ((sum[h : d, i : 277] a) <= a) then (array[h : (- d), i : (if g then e else 401)] (e == 747)) else c)
+  let k = ((sum[k : 289] (- d)) <= 517)
+  return (if (if g then (if false then k else true) else (918 <= d)) then (if k then [i] else [i, i]) else (if k then (array[l : 257] d) else f(true)))
+}
+

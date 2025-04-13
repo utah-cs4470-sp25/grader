@@ -1,0 +1,14 @@
+let a = rgba {((99.22 * 7.64) * (if false then 13.23 else 26.89)), ((54.2 - 24.63) + (81.55 + 61.53)), 58.6, 16.41}
+fn b(c : int) : int {
+  return (c - 88)
+  let d = ((- 99.4) % (a.b * 12.26))
+  return b((sum[e : 337] b(730)))
+}
+
+let c[d] = [true]
+fn e() : rgba {
+  let f = (! (! false))
+  return (if true then a else rgba {34.6, 36.97, e().b, 24.92})
+  return (array[g : (if f then 919 else 837), h : (d + 156)] e())[155, 630]
+}
+

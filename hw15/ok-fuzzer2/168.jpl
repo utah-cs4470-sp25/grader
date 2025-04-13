@@ -1,0 +1,14 @@
+fn a(b : float) : float {
+  let c[d] = (if (a(51.14) < b) then [false] else (array[c : 539] (true && false)))
+  return a((sum[e : d] (sum[f : e] b)))
+  return [(if true then 49.11 else b)][735]
+}
+
+fn b(c[d] : rgba[]) : int {
+  let e[f, g] = (if false then (if (d <= 320) then (array[e : 995, f : d] c) else (array[e : d, f : d] c)) else (array[e : 413, f : 988] c))
+  let h[i] = (array[h : (sum[h : f] 933)] 180)
+  return (- (f + (g * i)))
+}
+
+time let c = (sum[c : 522] (- 769))
+assert ((! false) || (! (! true))), "d"

@@ -1,0 +1,14 @@
+fn a() : rgba[,] {
+  let b = 47.85
+  let c = ((sum[c : (- 434), d : 811] (d + 813)) > (sum[c : 446] c))
+  return (if ((b % 38.25) != (if c then b else b)) then a() else a())
+}
+
+fn b(c[d] : bool[], e[f] : rgba[]) : rgba {
+  let g[h] = (array[g : (sum[g : f, h : f] (if false then 58 else d))] 5.73)
+  return b(c, (array[i : 330] e)[h])
+  return rgba {80.75, (sum[i : (if false then f else 469)] (- 42.45)), b(c, e).a, 14.9}
+}
+
+let c[d, e] = (array[c : (- 595), d : (array[c : 104] c)[(439 * 368)]] 45.22)
+let f[g, h] = c

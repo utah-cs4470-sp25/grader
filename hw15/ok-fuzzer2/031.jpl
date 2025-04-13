@@ -1,0 +1,9 @@
+fn a(b : rgba, c : rgba[]) : void {
+  assert ((if false then (362 % 684) else (sum[d : 794] 548)) < (if true then 159 else 166)), "d"
+  let d = ((b.g >= 76.18) && (! true))
+}
+
+assert ((false && false) || true), "b"
+let b = false
+read image "c.png" to c[d, e]
+

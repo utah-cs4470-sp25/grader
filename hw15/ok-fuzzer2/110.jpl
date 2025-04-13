@@ -1,0 +1,10 @@
+fn a(b : void, c[d, e] : rgba[,]) : float {
+  return (if true then (- 55.05) else (sum[f : 749, g : d] 43.18))
+  return a(b, [c][e])
+  return (44.64 * c[810, 697].g)
+}
+
+assert (if (false || (if true then false else true)) then true else (! false)), "b"
+let b[c] = (if true then (array[b : 111] 73.44) else [(- 8.27)])
+read image "d.png" to d
+

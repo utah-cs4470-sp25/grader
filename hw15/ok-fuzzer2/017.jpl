@@ -1,0 +1,10 @@
+read image "a.png" to a
+
+time let b = 84.77
+fn c(d[e, f] : void[,], g : float) : bool {
+  let h[i] = (array[h : (sum[h : 648] f)] b)
+  assert false, "j"
+  return c([d][(sum[j : i, k : e] k)], (sum[j : i, k : f] (sum[l : j, m : 317] g)))
+}
+
+let d[e] = [102]

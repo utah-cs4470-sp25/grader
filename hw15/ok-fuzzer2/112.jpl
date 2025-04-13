@@ -1,0 +1,9 @@
+let a = (! (! (true || true)))
+let b = 61.8
+fn c() : int {
+  let d[e] = [(true && a), false]
+  let f = (((- c()) / c()) >= ((e - 355) - 52))
+  return e
+}
+
+let d = true

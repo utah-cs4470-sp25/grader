@@ -1,0 +1,9 @@
+read image "a.png" to a
+
+fn b(c : bool[], d[e] : int[]) : void {
+  let f[g] = c
+  let h = (false || false)
+}
+
+let c = ((if (! true) then (sum[c : 412] 657) else 842) / (sum[c : (- 432)] c))
+let d[e] = (array[d : 625] (false && (! false)))

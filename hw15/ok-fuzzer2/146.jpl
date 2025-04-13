@@ -1,0 +1,11 @@
+read image "a.png" to a
+
+let b[c, d] = a
+time write image (array[e : c, f : (d - d)] b[f, f]) to "e.png"
+
+fn e() : bool {
+  let f = (array[f : c, g : (c % (41 % 733))] f)
+  assert ((sum[g : d, h : (c % 194)] (if true then 15.68 else 15.19)) <= (sum[g : (c - 714), h : 178] 98.1)), "g"
+  return (array[g : 459, h : c] e())[(- 13), (sum[g : (620 % c)] (sum[h : 596] g))]
+}
+

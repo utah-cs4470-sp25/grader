@@ -1,0 +1,15 @@
+read image "a.png" to a[b, c]
+
+fn d() : float {
+  let e[f] = (array[e : 661] (sum[f : c, g : (c % e)] g))
+  assert ((! (600 == b)) && (d() > d())), "g"
+  return (- (d() + d()))
+}
+
+let e = (false == (! false))
+fn f(g[h] : float[]) : void {
+  assert (a[h, b].a < (58.03 % g[h])), "i"
+  let i = c
+  return f(g)
+}
+
