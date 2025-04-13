@@ -89,6 +89,9 @@ test-hw%:
 test-hw14:
 	@ sh hw14/test-part $(DIR) $(PART)
 
+test-hw15:
+	@ python3 grader.py test --hw 15 --dir $(DIR) --part $(PART)
+
 jplc:
 	curl -L 'https://github.com/utah-cs4470-sp25/class/releases/latest/download/jplc-$(OS)' -o ./jplc
 	chmod +x jplc
