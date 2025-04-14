@@ -1,0 +1,224 @@
+// Code by Kelly. Taken from #jplk discord channel.
+
+let img_width = 512
+let img_height = 512
+let pi = 3.1415926535
+
+fn abs_i(i : int) : int {
+  return if i >= 0 then i else -1 * i
+}
+
+fn abs_f(f : float) : float {
+  return if f >= 0.0 then f else -1.0 * f
+}
+
+fn max_i(a : int, b : int) : int {
+  return if a > b then a else b
+}
+
+fn max_f(a : float, b : float) : float {
+  return if a > b then a else b
+}
+
+fn min_i(a : int, b : int) : int {
+  return if a > b then b else a
+}
+
+fn min_f(a : float, b : float) : float {
+  return if a > b then b else a
+}
+
+fn sqr_distance(a : float, b : float, x : float, y : float) : float {
+  return (a - x) * (a - x) + (b - y) * (b - y)
+}
+
+fn cart_to_radius(x : int, y : int) : float {
+  return sqrt(pow(to_float(x), 2.0) + pow(to_float(y), 2.0))
+}
+
+fn cart_to_angle(x : int, y : int) : float {
+  return \
+    atan(to_float(y) / to_float(x)) + \
+    if x >= 0 then \
+      0.0 \
+    else if y >= 0 then \
+      pi \
+    else \
+      -1.0 * pi
+}
+
+/*
+ * raw_hue:      [-360, 360)
+ * saturation:   [0, 1]
+ * value:        [0, 1]
+ * alpha:        [0, 1]
+ */
+fn hsva_to_rgba( \
+  raw_hue : int, \
+  saturation : float, \
+  value : float, \
+  alpha : float \
+) : rgba {
+  let hue = (raw_hue + 360 * 10) % 360
+  let c = value * saturation
+  let mod_res = (to_float(hue) / 60.0) % 2.0 - 1.0
+  let x = c * (1.0 - abs_f(mod_res))
+  let m = value - c
+
+  let r = \
+    if (0 <= hue && hue < 60) || (300 <= hue && hue < 360) then \
+      c \
+    else if (60 <= hue && hue < 120) || (240 <= hue && hue < 300) then \
+      x \
+    else \
+      0.0
+
+  let g = \
+    if (60 <= hue && hue < 120) || (120 <= hue && hue < 180) then \
+      c \
+    else if (0 <= hue && hue < 60) || (180 <= hue && hue < 240) then \
+      x \
+    else \
+      0.0
+
+  let b = \
+    if (180 <= hue && hue < 240) || (240 <= hue && hue < 300) then \
+      c \
+    else if (120 <= hue && hue < 180) || (300 <= hue && hue < 360) then \
+      x \
+    else \
+      0.0
+
+  return rgba {r + m, g + m, b + m, alpha}
+}
+
+/* from https://math.stackexchange.com/a/4293385 */
+fn get_star_radius( \
+    theta : float, \
+    scale : float, \
+    petals : int, \
+    sharpness : float \
+) : float {
+  let k = 1.0
+  let m = sharpness
+  let n = to_float(petals)
+  let numerator = cos((2.0 * asin(k) + m * pi) / (2.0 * n))
+  let denominator = cos((2.0 * asin(k * cos(n * theta)) + m * pi) / (2.0 * n))
+  let radius = numerator / denominator
+  return scale * radius
+}
+
+fn star_color(x : int, y : int, scale : float, petals : int, sharpness : float) : rgba {
+  let radius = cart_to_radius(x, y)
+  let theta = cart_to_angle(x, y) + 0.5 * pi
+  let star_radius = get_star_radius(theta, scale, petals, sharpness)
+
+  return \
+    if radius <= star_radius then \
+      hsva_to_rgba(to_int(theta * 180.0 / pi), radius / star_radius, 1.0, 1.0) \
+    else if (x == 0 && y == 0) then \
+      rgba {1.0, 1.0, 1.0, 1.0} \
+    else \
+      rgba {0.0, 0.0, 0.0, 0.0}
+}
+
+fn star(scale : float, petals : int, sharpness : float) : rgba[,] {
+  let c_x = img_width / 2
+  let c_y = img_height / 2
+  return array[y : img_height, x : img_width] \
+    star_color(x - c_x, y - c_y, scale, petals, sharpness)
+}
+
+fn cross_color(x : int, y : int, length : int, thickness : int) : rgba {
+  let s = x + y
+  let d = x - y
+  let thic = thickness / 2
+
+  return \
+    if \
+      (s < thic && s > -1 * thic && d < length && d > -1 * length) || \
+      (d < thic && d > -1 * thic && s < length && s > -1 * length) \
+    then \
+      rgba {1.0, 0.0, 0.0, 1.0} \
+    else \
+      rgba {0.0, 0.0, 0.0, 0.0}
+}
+
+fn cross(length : int, thickness : int) : rgba[,] {
+  let c_x = img_width / 2
+  let c_y = img_height / 2
+  return array[y : img_height, x : img_width] \
+    cross_color(x - c_x, y - c_y, length, thickness)
+}
+
+/* from Pavel Panchekha at https://pavpanchekha.com/blog/heart-polar-coordinates.html */
+fn get_heart_radius( \
+    theta : float, \
+    scale : float \
+) : float {
+  let radius = \
+    (sin(theta) * sqrt(abs_f(cos(theta)))) / (sin(theta) + 7.0 / 5.0) - \
+    2.0 * sin(theta) + 2.5
+  return scale * radius
+}
+
+fn heart_color(x : int, y : int, scale : float) : rgba {
+  let radius = cart_to_radius(x, y)
+  let radius_adjusted = cart_to_radius(x, y - img_height / 6)
+  let theta = cart_to_angle(x, y) + pi
+  let theta_adjusted = cart_to_angle(x, y - img_height / 6) + pi
+  let heart_radius = get_heart_radius(theta, scale)
+  let heart_radius_adjusted = get_heart_radius(theta_adjusted, scale)
+
+  return \
+    if (x == 0 && y - img_height / 6 == 0) || (x == 0 && y == 0) then \
+      rgba {1.0, 1.0, 1.0, 1.0} \
+    else if radius <= heart_radius then \
+      hsva_to_rgba( \
+        to_int(theta_adjusted * 180.0 / pi), \
+        radius_adjusted / heart_radius_adjusted, \
+        1.0, \
+        1.0 \
+      ) \
+    else \
+      rgba {0.0, 0.0, 0.0, 0.0}
+}
+
+fn heart(scale : float) : rgba[,] {
+  let c_x = img_width / 2
+  let c_y = img_height / 2 - img_height / 6
+  return array[y : img_height, x : img_width] \
+    heart_color(x - c_x, y - c_y, scale)
+}
+
+// The output is sized and centered around the first image.
+fn blend(a[Ha, Wa] : rgba[,], b[Hb, Wb] : rgba[,]) : rgba[,] {
+  let w_offset = (Wa - Wb) / 2
+  let h_offset = (Ha - Hb) / 2
+
+  return array[y : Ha, x : Wa] \
+    if \
+      y - h_offset >= 0 && y - h_offset < Hb && \
+      x - w_offset >= 0 && x - w_offset < Wb \
+    then \
+      rgba { \
+        (a[y, x].r + b[y - h_offset, x - w_offset].r) / 2.0, \
+        (a[y, x].g + b[y - h_offset, x - w_offset].g) / 2.0, \
+        (a[y, x].b + b[y - h_offset, x - w_offset].b) / 2.0, \
+        min_f(a[y, x].a, b[y - h_offset, x - w_offset].a) \
+      } \
+    else \
+      rgba { \
+        a[y, x].r, \
+        a[y, x].g, \
+        a[y, x].b, \
+        a[y, x].a \
+      }
+}
+
+write image star(196.0, 5, 3.0) to "star.png"
+write image cross(320, 128) to "cross.png"
+write image heart(64.0) to "heart.png"
+read image "sample.png" to sample
+write image blend(star(160.0, 5, 3.0), sample) to "pavpan-star.png"
+write image blend(heart(54.0), sample) to "pavpan-heart.png"
