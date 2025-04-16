@@ -139,7 +139,10 @@ _jpl_main:
 	; Allocating 8 bytes for the pointer
 	sub rsp, 8
 	; Computing bound for 'j'
-	push qword 300
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 24 to rsp 
+		mov r10, [rbp - 24 + 0]
+		mov [rsp + 0], r10
 	mov rax, [rsp]
 	cmp rax, 0
 	jg .jump6
@@ -147,7 +150,10 @@ _jpl_main:
 	call _fail_assertion
 .jump6:
 	; Computing bound for 'i'
-	push qword 400
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 32 to rsp 
+		mov r10, [rbp - 32 + 0]
+		mov [rsp + 0], r10
 	mov rax, [rsp]
 	cmp rax, 0
 	jg .jump7
@@ -223,7 +229,7 @@ _jpl_main:
 	add rsp, 8 ; Remove alignment
 .jump14:
 	mov rax, [rsp + 0]
-	imul rax, 300
+	imul rax, [rsp + 64] ; No overflow if indices in bounds
 	add rax, [rsp + 8]
 	shl rax, 4
 	add rax, [rsp + 72]
@@ -257,7 +263,7 @@ _jpl_main:
 		mov [rsp + 0], r10
 	; Index to store in
 	mov rax, [rsp + 8]
-	imul rax, 300
+	imul rax, [rsp + 32] ; No overflow if indices in bounds
 	add rax, [rsp + 16]
 	shl rax, 3
 	add rax, [rsp + 40]
@@ -396,7 +402,10 @@ _jpl_main:
 	add rsp, 8 ; Remove alignment
 .jump22:
 	; Computing bound for 'j'
-	push qword 300
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 24 to rsp 
+		mov r10, [rbp - 24 + 0]
+		mov [rsp + 0], r10
 	mov rax, [rsp]
 	cmp rax, 0
 	jg .jump23
@@ -404,7 +413,10 @@ _jpl_main:
 	call _fail_assertion
 .jump23:
 	; Computing bound for 'i'
-	push qword 999
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 80 to rsp 
+		mov r10, [rbp - 80 + 0]
+		mov [rsp + 0], r10
 	mov rax, [rsp]
 	cmp rax, 0
 	jg .jump24
@@ -455,7 +467,10 @@ _jpl_main:
 	; Moving 8 bytes from rbp - 136 to rsp 
 		mov r10, [rbp - 136 + 0]
 		mov [rsp + 0], r10
-	push qword 300
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 24 to rsp 
+		mov r10, [rbp - 24 + 0]
+		mov [rsp + 0], r10
 	sub rsp, 8
 	; Moving 8 bytes from rbp - 128 to rsp 
 		mov r10, [rbp - 128 + 0]
@@ -495,7 +510,7 @@ _jpl_main:
 	call _fail_assertion
 .jump32:
 	mov rax, [rsp + 0]
-	imul rax, 666
+	imul rax, [rsp + 88] ; No overflow if indices in bounds
 	add rax, [rsp + 8]
 	shl rax, 4
 	add rax, [rsp + 96]
@@ -533,7 +548,7 @@ _jpl_main:
 		mov [rsp + 0], r10
 	; Index to store in
 	mov rax, [rsp + 8]
-	imul rax, 300
+	imul rax, [rsp + 40] ; No overflow if indices in bounds
 	add rax, [rsp + 16]
 	imul rax, [rsp + 48] ; No overflow if indices in bounds
 	add rax, [rsp + 24]
@@ -569,7 +584,7 @@ _jpl_main:
 	sub rsp, 8 ; Add alignment
 	; Tensor contraction detected
 	;   Nodes = n, i, j 
-	;   Edges = (i, j), (j, n), (i, n) 
+	;   Edges = (i, n), (j, n), (i, j) 
 	;   Order = i, j, n 
 	; Allocating 8 bytes for the pointer
 	sub rsp, 8
@@ -585,7 +600,10 @@ _jpl_main:
 	call _fail_assertion
 .jump35:
 	; Computing bound for 'j'
-	push qword 400
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 32 to rsp 
+		mov r10, [rbp - 32 + 0]
+		mov [rsp + 0], r10
 	mov rax, [rsp]
 	cmp rax, 0
 	jg .jump36
@@ -595,7 +613,10 @@ _jpl_main:
 	add rsp, 8 ; Remove alignment
 .jump36:
 	; Computing bound for 'i'
-	push qword 300
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 24 to rsp 
+		mov r10, [rbp - 24 + 0]
+		mov [rsp + 0], r10
 	mov rax, [rsp]
 	cmp rax, 0
 	jg .jump37
@@ -669,7 +690,7 @@ _jpl_main:
 	call _fail_assertion
 .jump45:
 	mov rax, [rsp + 0]
-	imul rax, 300
+	imul rax, [rsp + 96] ; No overflow if indices in bounds
 	add rax, [rsp + 8]
 	imul rax, [rsp + 104] ; No overflow if indices in bounds
 	add rax, [rsp + 16]
@@ -711,7 +732,7 @@ _jpl_main:
 	call _fail_assertion
 .jump49:
 	mov rax, [rsp + 0]
-	imul rax, 300
+	imul rax, [rsp + 160] ; No overflow if indices in bounds
 	add rax, [rsp + 8]
 	shl rax, 3
 	add rax, [rsp + 168]
