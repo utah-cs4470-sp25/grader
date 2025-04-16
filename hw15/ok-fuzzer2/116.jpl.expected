@@ -244,6 +244,9 @@ _a:
 	add rsp, 16
 	; array left on stack
 .jump2:
+	mov rax, [rel const0] ; 1
+	push rax
+	pop rax
 	add rsp, 48 ; Local variables
 	pop rbp
 	ret

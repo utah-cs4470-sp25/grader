@@ -46,9 +46,10 @@ _b:
 	mov rbp, rsp
 	push rdi
 	push rsi
+	push rdx
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 16 to rsp 
-		mov r10, [rbp - 16 + 0]
+	; Moving 8 bytes from rbp - 24 to rsp 
+		mov r10, [rbp - 24 + 0]
 		mov [rsp + 0], r10
 	pop rax
 	cmp rax, 0
@@ -73,23 +74,23 @@ _b:
 .jump7:
 	push rax
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 16 to rsp 
-		mov r10, [rbp - 16 + 0]
+	; Moving 8 bytes from rbp - 24 to rsp 
+		mov r10, [rbp - 24 + 0]
 		mov [rsp + 0], r10
 	sub rsp, 16
 	sub rsp, 8 ; Add alignment
 	sub rsp, 8
-	; Moving 8 bytes from rbp - -16 to rsp 
-		mov r10, [rbp - -16 + 0]
+	; Moving 8 bytes from rbp - 40 to rsp 
+		mov r10, [rbp - 40 + 0]
 		mov [rsp + 0], r10
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 32 to rsp 
-		mov r10, [rbp - 32 + 0]
+	; Moving 8 bytes from rbp - 16 to rsp 
+		mov r10, [rbp - 16 + 0]
 		mov [rsp + 0], r10
 	pop rsi
-	lea rdi, [rsp + 16]
+	pop rdx
+	lea rdi, [rsp + 8]
 	call _b
-	add rsp, 8
 	add rsp, 8 ; Remove alignment
 	mov rax, [rbp - 8] ; Address to write return value into
 	; Moving 16 bytes from rsp to rax 
@@ -97,7 +98,7 @@ _b:
 		mov [rax + 8], r10
 		mov r10, [rsp + 0]
 		mov [rax + 0], r10
-	add rsp, 48 ; Local variables
+	add rsp, 56 ; Local variables
 	pop rbp
 	ret
 

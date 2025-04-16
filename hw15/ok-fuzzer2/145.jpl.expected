@@ -38,11 +38,12 @@ _b:
 	push rbp
 	mov rbp, rsp
 	push rdi
+	push rsi
 	mov rax, [rel const1] ; 6.8
 	push rax
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 16 to rsp 
-		mov r10, [rbp - 16 + 0]
+	; Moving 8 bytes from rbp - 24 to rsp 
+		mov r10, [rbp - 24 + 0]
 		mov [rsp + 0], r10
 	movsd xmm1, [rsp]
 	add rsp, 8
@@ -53,7 +54,9 @@ _b:
 	mov rax, [rel const2] ; 282
 	push rax
 	mov rdi, 16
+	sub rsp, 8 ; Add alignment
 	call _jpl_alloc
+	add rsp, 8 ; Remove alignment
 	; Moving 16 bytes from rsp to rax 
 		mov r10, [rsp + 8]
 		mov [rax + 8], r10
@@ -65,10 +68,6 @@ _b:
 	push rax
 	sub rsp, 16
 	sub rsp, 8 ; Add alignment
-	sub rsp, 8
-	; Moving 8 bytes from rbp - -32 to rsp 
-		mov r10, [rbp - -32 + 0]
-		mov [rsp + 0], r10
 	; Allocating 8 bytes for the pointer
 	sub rsp, 8
 	; Computing bound for 'i'
@@ -117,10 +116,14 @@ _b:
 	; Free all loop variables
 	add rsp, 8
 	; array left on stack
-	lea rdi, [rsp + 32]
+	sub rsp, 8
+	; Moving 8 bytes from rbp - 16 to rsp 
+		mov r10, [rbp - 16 + 0]
+		mov [rsp + 0], r10
+	pop rsi
+	lea rdi, [rsp + 24]
 	call _b
 	add rsp, 16
-	add rsp, 8
 	add rsp, 8 ; Remove alignment
 	mov rax, [rbp - 8] ; Address to write return value into
 	; Moving 16 bytes from rsp to rax 
@@ -128,7 +131,7 @@ _b:
 		mov [rax + 8], r10
 		mov r10, [rsp + 0]
 		mov [rax + 0], r10
-	add rsp, 48 ; Local variables
+	add rsp, 56 ; Local variables
 	pop rbp
 	ret
 

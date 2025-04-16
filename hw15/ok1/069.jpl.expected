@@ -24,8 +24,8 @@ extern _to_int
 extern _to_float
 
 section .data
-const0: dq 1
-const1: dq 21
+const0: dq 21
+const1: dq 1
 const2: dq 13
 const3: db `(IntType)`, 0
 
@@ -36,9 +36,10 @@ _f:
 	mov rbp, rsp
 	push rdi
 	push rsi
+	push rdx
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 16 to rsp 
-		mov r10, [rbp - 16 + 0]
+	; Moving 8 bytes from rbp - 24 to rsp 
+		mov r10, [rbp - 24 + 0]
 		mov [rsp + 0], r10
 	sub rsp, 8
 	; Moving 8 bytes from rbp - 8 to rsp 
@@ -49,7 +50,7 @@ _f:
 	add rax, r10
 	push rax
 	pop rax
-	add rsp, 16 ; Local variables
+	add rsp, 24 ; Local variables
 	pop rbp
 	ret
 
@@ -59,16 +60,18 @@ _jpl_main:
 	mov rbp, rsp
 	push r12
 	mov r12, rbp ; end of jpl_main prelude
-	mov rax, [rel const0] ; 1
+	sub rsp, 8 ; Add alignment
+	mov rax, [rel const0] ; 21
 	push rax
-	mov rax, [rel const1] ; 21
+	mov rax, [rel const1] ; 1
 	push rax
 	mov rax, [rel const2] ; 13
 	push rax
 	pop rdi
 	pop rsi
+	pop rdx
 	call _f
-	add rsp, 8
+	add rsp, 8 ; Remove alignment
 	push rax
 	lea rdi, [rel const3] ; '(IntType)'
 	lea rsi, [rsp]

@@ -44,13 +44,14 @@ a:
 _a:
 	push rbp
 	mov rbp, rsp
+	push rdi
 	sub rsp, 8 ; Add alignment
 	sub rsp, 8
-	; Moving 8 bytes from rbp - -16 to rsp 
-		mov r10, [rbp - -16 + 0]
+	; Moving 8 bytes from rbp - 8 to rsp 
+		mov r10, [rbp - 8 + 0]
 		mov [rsp + 0], r10
+	pop rdi
 	call _a
-	add rsp, 8
 	add rsp, 8 ; Remove alignment
 	push rax
 	pop rax
@@ -62,20 +63,20 @@ _a:
 .jump1:
 	sub rsp, 8 ; Add alignment
 	sub rsp, 8
-	; Moving 8 bytes from rbp - -16 to rsp 
-		mov r10, [rbp - -16 + 0]
+	; Moving 8 bytes from rbp - 8 to rsp 
+		mov r10, [rbp - 8 + 0]
 		mov [rsp + 0], r10
+	pop rdi
 	call _a
-	add rsp, 8
 	add rsp, 8 ; Remove alignment
 	push rax
 .jump2:
 	sub rsp, 8
-	; Moving 8 bytes from rbp - -16 to rsp 
-		mov r10, [rbp - -16 + 0]
+	; Moving 8 bytes from rbp - 8 to rsp 
+		mov r10, [rbp - 8 + 0]
 		mov [rsp + 0], r10
+	pop rdi
 	call _a
-	add rsp, 8
 	push rax
 	pop rax
 	pop r10
@@ -84,69 +85,69 @@ _a:
 	and rax, 1
 	push rax
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 8 to rsp 
-		mov r10, [rbp - 8 + 0]
+	; Moving 8 bytes from rbp - 16 to rsp 
+		mov r10, [rbp - 16 + 0]
 		mov [rsp + 0], r10
 	pop rax
 	cmp rax, 0
 	je .jump3
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 8 to rsp 
-		mov r10, [rbp - 8 + 0]
+	; Moving 8 bytes from rbp - 16 to rsp 
+		mov r10, [rbp - 16 + 0]
 		mov [rsp + 0], r10
 	pop rax
 	cmp rax, 0
 	je .jump5
 	sub rsp, 8
-	; Moving 8 bytes from rbp - -16 to rsp 
-		mov r10, [rbp - -16 + 0]
+	; Moving 8 bytes from rbp - 8 to rsp 
+		mov r10, [rbp - 8 + 0]
 		mov [rsp + 0], r10
 	jmp .jump6
 .jump5:
 	sub rsp, 8
-	; Moving 8 bytes from rbp - -16 to rsp 
-		mov r10, [rbp - -16 + 0]
+	; Moving 8 bytes from rbp - 8 to rsp 
+		mov r10, [rbp - 8 + 0]
 		mov [rsp + 0], r10
 .jump6:
 	jmp .jump4
 .jump3:
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 8 to rsp 
-		mov r10, [rbp - 8 + 0]
+	; Moving 8 bytes from rbp - 16 to rsp 
+		mov r10, [rbp - 16 + 0]
 		mov [rsp + 0], r10
 	pop rax
 	cmp rax, 0
 	je .jump7
 	sub rsp, 8
-	; Moving 8 bytes from rbp - -16 to rsp 
-		mov r10, [rbp - -16 + 0]
+	; Moving 8 bytes from rbp - 8 to rsp 
+		mov r10, [rbp - 8 + 0]
 		mov [rsp + 0], r10
 	jmp .jump8
 .jump7:
 	sub rsp, 8
-	; Moving 8 bytes from rbp - -16 to rsp 
-		mov r10, [rbp - -16 + 0]
+	; Moving 8 bytes from rbp - 8 to rsp 
+		mov r10, [rbp - 8 + 0]
 		mov [rsp + 0], r10
 .jump8:
 .jump4:
+	pop rdi
 	call _a
-	add rsp, 8
 	push rax
 	sub rsp, 8 ; Add alignment
 	sub rsp, 8
-	; Moving 8 bytes from rbp - -16 to rsp 
-		mov r10, [rbp - -16 + 0]
+	; Moving 8 bytes from rbp - 8 to rsp 
+		mov r10, [rbp - 8 + 0]
 		mov [rsp + 0], r10
+	pop rdi
 	call _a
-	add rsp, 8
 	add rsp, 8 ; Remove alignment
 	push rax
 	pop rax
 	cmp rax, 0
 	je .jump9
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 16 to rsp 
-		mov r10, [rbp - 16 + 0]
+	; Moving 8 bytes from rbp - 24 to rsp 
+		mov r10, [rbp - 24 + 0]
 		mov [rsp + 0], r10
 	jmp .jump10
 .jump9:
@@ -167,7 +168,7 @@ _a:
 	push rax
 .jump10:
 	pop rax
-	add rsp, 16 ; Local variables
+	add rsp, 24 ; Local variables
 	pop rbp
 	ret
 

@@ -130,6 +130,10 @@ _c:
 	lea rdi, [rel const6] ; 'd'
 	call _fail_assertion
 .jump15:
+	mov rax, [rel const1] ; 1
+	push rax
+	pop rax
+	add rsp, 0 ; Local variables
 	pop rbp
 	ret
 

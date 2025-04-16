@@ -43,14 +43,15 @@ _a:
 	push rbp
 	mov rbp, rsp
 	push rdi
+	push rsi
 	sub rsp, 32
 	sub rsp, 8
-	; Moving 8 bytes from rbp - -16 to rsp 
-		mov r10, [rbp - -16 + 0]
+	; Moving 8 bytes from rbp - 16 to rsp 
+		mov r10, [rbp - 16 + 0]
 		mov [rsp + 0], r10
-	lea rdi, [rsp + 8]
+	pop rsi
+	lea rdi, [rsp + 0]
 	call _a
-	add rsp, 8
 	mov rax, [rel const0] ; False
 	push rax
 	pop rax
@@ -62,8 +63,8 @@ _a:
 	cmp rax, 0
 	je .jump1
 	sub rsp, 8
-	; Moving 8 bytes from rbp - 48 to rsp 
-		mov r10, [rbp - 48 + 0]
+	; Moving 8 bytes from rbp - 56 to rsp 
+		mov r10, [rbp - 56 + 0]
 		mov [rsp + 0], r10
 	jmp .jump2
 .jump1:
@@ -82,26 +83,26 @@ _a:
 	cmp rax, 0
 	je .jump3
 	sub rsp, 32
-	; Moving 32 bytes from rbp - 40 to rsp 
-		mov r10, [rbp - 40 + 24]
+	; Moving 32 bytes from rbp - 48 to rsp 
+		mov r10, [rbp - 48 + 24]
 		mov [rsp + 24], r10
-		mov r10, [rbp - 40 + 16]
+		mov r10, [rbp - 48 + 16]
 		mov [rsp + 16], r10
-		mov r10, [rbp - 40 + 8]
+		mov r10, [rbp - 48 + 8]
 		mov [rsp + 8], r10
-		mov r10, [rbp - 40 + 0]
+		mov r10, [rbp - 48 + 0]
 		mov [rsp + 0], r10
 	jmp .jump4
 .jump3:
 	sub rsp, 32
-	; Moving 32 bytes from rbp - 40 to rsp 
-		mov r10, [rbp - 40 + 24]
+	; Moving 32 bytes from rbp - 48 to rsp 
+		mov r10, [rbp - 48 + 24]
 		mov [rsp + 24], r10
-		mov r10, [rbp - 40 + 16]
+		mov r10, [rbp - 48 + 16]
 		mov [rsp + 16], r10
-		mov r10, [rbp - 40 + 8]
+		mov r10, [rbp - 48 + 8]
 		mov [rsp + 8], r10
-		mov r10, [rbp - 40 + 0]
+		mov r10, [rbp - 48 + 0]
 		mov [rsp + 0], r10
 .jump4:
 	mov rax, [rbp - 8] ; Address to write return value into
@@ -114,7 +115,7 @@ _a:
 		mov [rax + 8], r10
 		mov r10, [rsp + 0]
 		mov [rax + 0], r10
-	add rsp, 80 ; Local variables
+	add rsp, 88 ; Local variables
 	pop rbp
 	ret
 

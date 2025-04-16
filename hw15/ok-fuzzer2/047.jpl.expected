@@ -34,6 +34,7 @@ const6: dq 23.84
 const7: dq 52.49
 const8: db `negative array index`, 0
 const9: db `index too large`, 0
+const10: dq 1
 
 section .text
 e:
@@ -198,6 +199,9 @@ _e:
 		mov [rsp + 8], r10
 		mov r10, [rbp - -16 + 0]
 		mov [rsp + 0], r10
+	mov rax, [rel const10] ; 1
+	push rax
+	pop rax
 	add rsp, 40 ; Local variables
 	pop rbp
 	ret

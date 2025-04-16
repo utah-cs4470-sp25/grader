@@ -156,6 +156,7 @@ g:
 _g:
 	push rbp
 	mov rbp, rsp
+	push rdi
 	mov rax, [rel const14] ; 110
 	push rax
 	sub rsp, 8
@@ -167,7 +168,7 @@ _g:
 		mov r10, [r12 - 32 + 0]
 		mov [rsp + 0], r10
 	pop rax
-	add rsp, 16 ; Local variables
+	add rsp, 24 ; Local variables
 	pop rbp
 	ret
 

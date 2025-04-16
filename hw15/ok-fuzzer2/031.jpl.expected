@@ -165,6 +165,9 @@ _a:
 	pop rax
 .jump9:
 	push rax
+	mov rax, [rel const0] ; 1
+	push rax
+	pop rax
 	add rsp, 8 ; Local variables
 	pop rbp
 	ret

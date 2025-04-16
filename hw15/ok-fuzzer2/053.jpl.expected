@@ -41,6 +41,7 @@ const13: dq 745
 const14: db `g`, 0
 const15: dq 710
 const16: db `mod by zero`, 0
+const17: dq 1
 
 section .text
 d:
@@ -301,6 +302,9 @@ _d:
 		mov [rsp + 8], r10
 		mov r10, [rax + 0]
 		mov [rsp + 0], r10
+	mov rax, [rel const17] ; 1
+	push rax
+	pop rax
 	add rsp, 24 ; Local variables
 	pop rbp
 	ret

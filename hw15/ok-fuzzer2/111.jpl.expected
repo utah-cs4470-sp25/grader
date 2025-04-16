@@ -527,6 +527,9 @@ imul rdi, [rsp + 0 + 0] ; multiply by (sum[e : 169] (- e))
 	; Free all loop variables
 	add rsp, 16
 	; array left on stack
+	mov rax, [rel const0] ; 1
+	push rax
+	pop rax
 	add rsp, 32 ; Local variables
 	pop rbp
 	ret
