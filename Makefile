@@ -1,6 +1,6 @@
 .PHONY: test-current test-hw1 count-hw1 upgrade
 
-CURRENT=hw13
+CURRENT=hw14
 PART=all
 DIR=..
 
