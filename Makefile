@@ -87,7 +87,7 @@ test-hw%:
 	@ python3 grader.py run --hw $*
 
 test-hw14:
-	@ sh hw14/test-part $(DIR) $(PART)
+	@ python3 grader.py test --hw 14 --dir $(DIR) --part $(PART)
 
 test-hw15:
 	@ python3 grader.py test --hw 15 --dir $(DIR) --part $(PART)

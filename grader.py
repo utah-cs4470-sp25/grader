@@ -496,9 +496,7 @@ HWS = {
        "5": NullPart(OptSpec, "hw13/ok5/", "-O1"),
    },
    "14": {
-       "1": ManualPart(OptSpec, "hw14/ok1.jpl", "hw14/ok1/", "-O3"),
-       "2": ManualPart(OptSpec, "hw14/ok2.jpl", "hw14/ok2/", "-O3"),
-       "3": NullPart(OptSpec, "hw14/ok-fuzzer/", "-O3"),
+       "1": NullPart(OptSpec, "hw14/", "-O3"),
    },
    "15": {
        "1": NullPart(DiffSpec, "hw15/ok1/", "-s", normalize=ppasm, comment=commentasm),
