@@ -33,9 +33,6 @@ count-hw1:
 count-hw%:
 	@ python3 grader.py count --hw $*
 
-count-hw14:
-	@ sh hw14/test-part $(DIR) count
-
 
 test-hw1: jplc
 	@ sh hw1/test-part $(DIR) $(PART)
