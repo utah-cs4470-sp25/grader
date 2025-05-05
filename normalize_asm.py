@@ -29,11 +29,16 @@ def domath(m):
         return "[" + reg + " - " + str(abs(ctr)) + "]"
     elif ctr > 0:
         return "[" + reg + " + " + str(abs(ctr)) + "]"
-    
+
 def redo_float(m):
     name, val, rest = m.group(1, 2, 3)
     if "." in val or "e" in val or "E" in val:
-        val = str(float(val))
+        # May 2025: student reported `ValueError: could not convert string to float: 'e'`
+        #  should we check length of val?
+        try:
+            val = str(float(val))
+        except ValueError:
+            pass
     return name + val + rest
 
 FLOAT_RE = re.compile(r"^(const[0-9]+:\s*dq\s*)([0-9\.eE+-]+)(.*)$")
